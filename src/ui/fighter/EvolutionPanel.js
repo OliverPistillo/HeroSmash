@@ -1,0 +1,5 @@
+import { FighterTheme, drawBeveledPanel } from "./FighterTheme.js";
+export class EvolutionPanel {
+  constructor(o={}){Object.assign(this,o)}
+  draw(r,{level=1,max=15,stage=1,name="Evolution"}={}){const x=this.x??1056,y=this.y??560,w=this.w??292,h=this.h??112;drawBeveledPanel(r,x,y,w,h,{cut:18,fill:"rgba(6,8,16,.82)",stroke:"rgba(255,202,58,.24)"});r.text("EVOLUTION",x+22,y+16,{size:14,weight:950,color:FighterTheme.colors.gold});r.text(`Stage ${stage}`,x+w-22,y+16,{align:"right",size:13,weight:950,color:"#fff"});const bx=x+24,by=y+60,bw=w-48;r.roundRect(bx,by,bw,14,7,"rgba(255,255,255,.10)");r.roundRect(bx,by,bw*Math.max(0,Math.min(1,level/max)),14,7,FighterTheme.colors.cyan);[5,10,15].forEach(t=>{const xx=bx+bw*(t/max);r.ctx.strokeStyle=t<=level?FighterTheme.colors.gold:"rgba(255,255,255,.22)";r.ctx.lineWidth=2;r.ctx.beginPath();r.ctx.moveTo(xx,by-6);r.ctx.lineTo(xx,by+22);r.ctx.stroke();r.text(t,xx,by+28,{align:"center",size:10,weight:900,color:t<=level?FighterTheme.colors.gold:FighterTheme.colors.muted});});r.text(name,x+22,y+86,{size:11,weight:850,color:FighterTheme.colors.muted});}
+}

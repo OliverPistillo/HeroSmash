@@ -1,0 +1,1 @@
+export class SceneManager{constructor(app){this.app=app;this.scene=null}set(C,p={}){this.scene?.exit?.();this.scene=new C(this.app,p);this.scene.enter?.()}update(dt){this.scene?.update?.(dt)}draw(r){this.scene?.draw?.(r)}handleInput(e){this.scene?.handleInput?.(e)}}

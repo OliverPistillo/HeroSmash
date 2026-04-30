@@ -1,0 +1,41 @@
+{
+  "version": "1.12.10",
+  "cardFrames": {
+    "frame_normale_1": "assets/cards/frames/normale_1.png",
+    "frame_normale_2": "assets/cards/frames/normale_2.png",
+    "frame_epica": "assets/cards/frames/epica.png",
+    "frame_leggendaria": "assets/cards/frames/leggendaria.png"
+  },
+  "branchIcons": {
+    "branch_assault": "assets/branches/assault.png",
+    "branch_dodge": "assets/branches/dodge.png",
+    "branch_essence": "assets/branches/essence.png",
+    "branch_guardian": "assets/branches/guardian.png",
+    "branch_healing": "assets/branches/healing.png",
+    "branch_ice": "assets/branches/ice.png",
+    "branch_power": "assets/branches/power.png",
+    "branch_precision": "assets/branches/precision.png",
+    "branch_rage": "assets/branches/rage.png",
+    "branch_shield": "assets/branches/shield.png",
+    "branch_toxin": "assets/branches/toxin.png",
+    "branch_wound": "assets/branches/wound.png"
+  },
+  "marketUi": {
+    "ui_market_btn_ready": "assets/ui/market/btn_ready.png",
+    "ui_market_btn_lock": "assets/ui/market/btn_lock.png",
+    "ui_market_btn_reroll": "assets/ui/market/btn_reroll.png",
+    "ui_market_btn_cards": "assets/ui/market/btn_cards.png",
+    "ui_market_btn_undo": "assets/ui/market/btn_undo.png",
+    "ui_market_gold_panel": "assets/ui/market/gold_panel.png",
+    "ui_market_top_round_badge": "assets/ui/market/top_round_badge.png",
+    "ui_market_left_standings_panel": "assets/ui/market/left_standings_panel.png",
+    "ui_market_right_banned_panel": "assets/ui/market/right_banned_panel.png",
+    "ui_market_right_traits_panel": "assets/ui/market/right_traits_panel.png",
+    "ui_market_right_damage_panel": "assets/ui/market/right_damage_panel.png",
+    "ui_market_hero_panel": "assets/ui/market/hero_panel.png",
+    "ui_market_recap_pill": "assets/ui/market/recap_pill.png",
+    "ui_market_btn_market": "assets/ui/market/btn_market.png",
+    "ui_market_btn_random": "assets/ui/market/btn_random.png",
+    "ui_market_btn_unlock": "assets/ui/market/btn_unlock.png"
+  }
+}

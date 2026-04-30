@@ -1,0 +1,206 @@
+{
+  "id": "arena01_beast_crucible",
+  "name": "Solar Crystal Coliseum",
+  "theme": "Solar crystal coliseum",
+  "version": "0.1.0",
+  "sourceResolution": {
+    "width": 2048,
+    "height": 1152
+  },
+  "runtimeCanvas": {
+    "width": 1366,
+    "height": 768
+  },
+  "notes": [
+    "Runtime-ready first pass built from 5 available layers.",
+    "Foreground props are intentionally absent in this build; add arena01_fg_props.png later for stronger occlusion depth.",
+    "Central crystal is a standalone prop and is scaled/positioned by config rather than drawn full-screen.",
+    "v1.4 uses the user-provided arena layers: sky, mountains, architecture, crystal, combat floor."
+  ],
+  "camera": {
+    "idleDrift": {
+      "enabled": true,
+      "x": 16,
+      "y": 7,
+      "speed": 0.22
+    },
+    "intro": {
+      "zoomFrom": 1.075,
+      "zoomTo": 1.0,
+      "duration": 1.15
+    },
+    "combat": {
+      "zoom": 1.0
+    },
+    "victory": {
+      "zoom": 1.08,
+      "panToWinner": true,
+      "duration": 1.4
+    },
+    "impact": {
+      "shakeSmall": 4,
+      "shakeMedium": 8,
+      "shakeHeavy": 13
+    }
+  },
+  "fightPlane": {
+    "baselineY": 852,
+    "centerX": 1024,
+    "floorEllipse": {
+      "x": 1024,
+      "y": 800,
+      "radiusX": 530,
+      "radiusY": 150
+    },
+    "shadow": {
+      "enabled": true,
+      "width": 184,
+      "height": 46,
+      "alpha": 0.34
+    }
+  },
+  "fighters": {
+    "player": {
+      "x": 760,
+      "y": 852,
+      "facing": "right",
+      "scale": 1.0
+    },
+    "enemy": {
+      "x": 1288,
+      "y": 852,
+      "facing": "left",
+      "scale": 1.0
+    }
+  },
+  "layers": [
+    {
+      "id": "sky",
+      "asset": "assets/arenas/arena01_beast_crucible/arena01_bg_sky.png",
+      "z": 0,
+      "parallax": 0.08,
+      "x": -40,
+      "y": -24,
+      "scale": 1.04,
+      "alpha": 1.0,
+      "drawMode": "image"
+    },
+    {
+      "id": "mountains",
+      "asset": "assets/arenas/arena01_beast_crucible/arena01_bg_mountains.png",
+      "z": 1,
+      "parallax": 0.2,
+      "x": -30,
+      "y": 0,
+      "scale": 1.03,
+      "alpha": 1.0,
+      "drawMode": "image"
+    },
+    {
+      "id": "back_architecture",
+      "asset": "assets/arenas/arena01_beast_crucible/arena01_mg_back_architecture.png",
+      "z": 2,
+      "parallax": 0.48,
+      "x": 0,
+      "y": 0,
+      "scale": 1.0,
+      "alpha": 1.0,
+      "drawMode": "image"
+    },
+    {
+      "id": "crystal_core",
+      "asset": "assets/arenas/arena01_beast_crucible/arena01_mg_crystal_core.png",
+      "z": 3,
+      "parallax": 0.7,
+      "x": 725,
+      "y": 148,
+      "scale": 0.3,
+      "alpha": 1.0,
+      "drawMode": "prop",
+      "animation": {
+        "type": "float_glow",
+        "amplitudeY": 8,
+        "speed": 0.9,
+        "glowColor": "#42b7ff",
+        "glowRadius": 190,
+        "glowAlphaMin": 0.1,
+        "glowAlphaMax": 0.28
+      }
+    },
+    {
+      "id": "combat_floor",
+      "asset": "assets/arenas/arena01_beast_crucible/arena01_fg_combat_floor.png",
+      "z": 4,
+      "parallax": 1.0,
+      "x": 0,
+      "y": 0,
+      "scale": 1.0,
+      "alpha": 1.0,
+      "drawMode": "image"
+    },
+    {
+      "id": "fighter_shadows",
+      "type": "runtime",
+      "z": 5,
+      "parallax": 1.0
+    },
+    {
+      "id": "fighters",
+      "type": "runtime",
+      "z": 6,
+      "parallax": 1.0
+    },
+    {
+      "id": "combat_fx",
+      "type": "runtime",
+      "z": 7,
+      "parallax": 1.0
+    }
+  ],
+  "lighting": {
+    "sunGlow": {
+      "enabled": true,
+      "x": 1024,
+      "y": 160,
+      "radius": 640,
+      "color": "#ffd36a",
+      "alpha": 0.12
+    },
+    "crystalGlow": {
+      "enabled": true,
+      "x": 1024,
+      "y": 360,
+      "radius": 260,
+      "color": "#42aaff",
+      "alpha": 0.2
+    },
+    "floorGlow": {
+      "enabled": true,
+      "x": 1024,
+      "y": 790,
+      "radius": 360,
+      "color": "#ffb703",
+      "alpha": 0.14
+    }
+  },
+  "runtimeFx": {
+    "dust": {
+      "enabled": true,
+      "spawnArea": {
+        "x": 460,
+        "y": 690,
+        "w": 1120,
+        "h": 220
+      },
+      "count": 34,
+      "color": "#ffd36a",
+      "alpha": 0.2
+    },
+    "sparkles": {
+      "enabled": true,
+      "count": 22,
+      "color": "#4db8ff",
+      "alpha": 0.23
+    }
+  }
+}

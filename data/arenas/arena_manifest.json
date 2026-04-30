@@ -1,0 +1,16 @@
+{
+  "arenas": [
+    {
+      "id": "arena01_beast_crucible",
+      "name": "Beast Crucible",
+      "config": "data/arenas/arena01_beast_crucible.json",
+      "status": "runtime_ready_first_pass",
+      "layers": 5,
+      "missingOptionalLayers": [
+        "arena01_fg_props.png",
+        "arena01_fx_particles_front.png",
+        "arena01_fx_particles_back.png"
+      ]
+    }
+  ]
+}

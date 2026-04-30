@@ -1,0 +1,21 @@
+{
+  "starting_player_hp": 100,
+  "starting_coins": 300,
+  "base_income": 300,
+  "reroll_cost": 20,
+  "random_card_cost": 100,
+  "interest_per_100": 10,
+  "interest_cap": 100,
+  "win_reward": 50,
+  "win_streak_per_win": 20,
+  "win_streak_cap": 100,
+  "loss_hp_compensation": 15,
+  "lose_streak_per_loss": 15,
+  "lose_streak_cap": 60,
+  "branch_thresholds": [
+    4,
+    10,
+    20,
+    40
+  ]
+}

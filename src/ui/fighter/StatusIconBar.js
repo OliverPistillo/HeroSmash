@@ -1,0 +1,7 @@
+import { FighterTheme } from "./FighterTheme.js";
+export const STATUS_ICON_MAP={toxin:"☠️",burn:"🔥",wound:"🩸",ice:"❄️",stun:"💫",shield:"🛡️",rage:"🔥",frost:"❄️",venom:"☠️",guardian:"🛡️",arcane:"✴️",precision:"🎯",assault:"⚔️",dodge:"🌪",healing:"✚",power:"✊"};
+export const STATUS_COLOR_MAP={toxin:"#70e000",venom:"#70e000",burn:"#fb5607",rage:"#fb5607",wound:"#ef233c",ice:"#7bdff2",frost:"#7bdff2",stun:"#ffca3a",shield:"#48cae4",guardian:"#d9a441",arcane:"#9b5cff",precision:"#ffca3a",assault:"#ef233c",dodge:"#00b4d8",healing:"#8ac926",power:"#ffca3a"};
+export class StatusIconBar {
+  constructor(o={}){Object.assign(this,o)}
+  draw(r,statuses=[]){const x=this.x??0,y=this.y??0,align=this.align??"left",size=this.size??28,gap=this.gap??6,list=statuses.slice(0,this.max??8);const total=list.length*size+Math.max(0,list.length-1)*gap,start=align==="center"?x-total/2:align==="right"?x-total:x;list.forEach((s,i)=>{const xx=start+i*(size+gap),color=STATUS_COLOR_MAP[s.type]||FighterTheme.colors.gold;r.roundRect(xx,y,size,size,8,"rgba(0,0,0,.70)",color,1.5);r.text(STATUS_ICON_MAP[s.type]||"•",xx+size/2,y+size/2,{align:"center",baseline:"middle",size:size*.52,weight:950});if((s.stacks||1)>1){r.roundRect(xx+size-12,y+size-12,14,14,7,"rgba(0,0,0,.86)",color);r.text(s.stacks,xx+size-5,y+size-5,{align:"center",baseline:"middle",size:8,weight:950,color:"#fff"});}if(s.dur){r.roundRect(xx+3,y+size-4,(size-6)*Math.max(0,Math.min(1,s.dur/5)),2,1,color);}})}
+}

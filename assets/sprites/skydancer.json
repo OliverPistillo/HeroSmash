@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "hero": "skydancer",
+    "image": "assets/sprites/skydancer.png",
+    "frameW": 200,
+    "frameH": 200,
+    "sheetW": 1200,
+    "sheetH": 1400,
+    "source": "concept_art"
+  },
+  "animations": {
+    "idle": {
+      "row": 0,
+      "frames": 4,
+      "fps": 7,
+      "loop": true
+    },
+    "attack": {
+      "row": 1,
+      "frames": 6,
+      "fps": 14,
+      "loop": false
+    },
+    "skill": {
+      "row": 2,
+      "frames": 6,
+      "fps": 10,
+      "loop": false
+    },
+    "hit": {
+      "row": 3,
+      "frames": 3,
+      "fps": 12,
+      "loop": false
+    },
+    "death": {
+      "row": 4,
+      "frames": 6,
+      "fps": 8,
+      "loop": false
+    },
+    "victory": {
+      "row": 5,
+      "frames": 5,
+      "fps": 8,
+      "loop": true
+    },
+    "intro": {
+      "row": 6,
+      "frames": 5,
+      "fps": 10,
+      "loop": false
+    }
+  }
+}

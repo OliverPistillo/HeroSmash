@@ -1,0 +1,9 @@
+{
+  "version": "1.14.3",
+  "label": "v1.14.3",
+  "title": "Hero Smash",
+  "subtitle": "Hero Draft Direct Replacement",
+  "homeTagline": "Mode Select · Hero Draft · Bot Training",
+  "buildNote": "Hero Draft direct replacement: click card seleziona senza avviare, conferma manuale, timer 20 secondi con auto-pick del primo eroe se nessuno selezionato, sfondo più scuro, reroll mini e layout più pulito.",
+  "footer": "v1.14.3 Hero Draft Direct Replacement"
+}

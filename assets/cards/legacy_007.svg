@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="620" viewBox="0 0 420 620">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#171c34"/>
+      <stop offset="0.52" stop-color="#0b0d17"/>
+      <stop offset="1" stop-color="#05040a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="34%" r="55%">
+      <stop offset="0" stop-color="#9b5cff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#9b5cff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="420" height="620" rx="42" fill="url(#bg)"/>
+  <rect x="18" y="18" width="384" height="584" rx="34" fill="url(#glow)" stroke="#38bdf8" stroke-width="7"/>
+  <path d="M42 92 L378 92" stroke="#38bdf8" stroke-width="3" opacity="0.8"/>
+  <text x="52" y="70" fill="#f6e6b8" font-family="Arial, sans-serif" font-size="22" font-weight="900">#7</text>
+  <text x="368" y="70" text-anchor="end" fill="#ffca3a" font-family="Arial" font-size="26" font-weight="900">100</text>
+  <text x="210" y="255" text-anchor="middle" font-size="118">🔮</text>
+  <text x="210" y="346" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="27" font-weight="900">MYSTIC BARRIER</text>
+  <text x="210" y="382" text-anchor="middle" fill="#38bdf8" font-family="Arial" font-size="18" font-weight="900">Normale</text>
+  <text x="210" y="425" text-anchor="middle" fill="#d8cfe8" font-family="Arial" font-size="15" font-weight="700">Essence / Shield</text>
+  <foreignObject x="48" y="452" width="324" height="92">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family:Arial,sans-serif;color:#cfc4dd;font-size:18px;font-weight:700;text-align:center;line-height:1.15;">Each instance of casting Essence grants 15 stacks of Shield.</div>
+  </foreignObject>
+  <text x="210" y="570" text-anchor="middle" fill="#8a8f98" font-family="Arial" font-size="14" font-weight="900">LEGACY DECK IMPORT</text>
+</svg>

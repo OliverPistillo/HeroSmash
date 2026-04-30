@@ -1,0 +1,86 @@
+[
+  {
+    "id": "wound",
+    "name": "Wound",
+    "icon": "🩸",
+    "color": "#ef476f",
+    "desc": "Amplifica i danni subiti."
+  },
+  {
+    "id": "essence",
+    "name": "Essence",
+    "icon": "🔮",
+    "color": "#9b5cff",
+    "desc": "Mana e skill power."
+  },
+  {
+    "id": "rage",
+    "name": "Rage",
+    "icon": "🔥",
+    "color": "#fb5607",
+    "desc": "Velocità e furia."
+  },
+  {
+    "id": "ice",
+    "name": "Ice",
+    "icon": "❄️",
+    "color": "#7bdff2",
+    "desc": "Slow e controllo."
+  },
+  {
+    "id": "toxin",
+    "name": "Toxin",
+    "icon": "☠️",
+    "color": "#70e000",
+    "desc": "Veleno a stack."
+  },
+  {
+    "id": "shield",
+    "name": "Shield",
+    "icon": "🛡️",
+    "color": "#48cae4",
+    "desc": "Barriere e mitigazione."
+  },
+  {
+    "id": "healing",
+    "name": "Healing",
+    "icon": "💚",
+    "color": "#06d6a0",
+    "desc": "Cure e rigenerazione."
+  },
+  {
+    "id": "power",
+    "name": "Power",
+    "icon": "💥",
+    "color": "#ff006e",
+    "desc": "Burst e danno puro."
+  },
+  {
+    "id": "precision",
+    "name": "Precision",
+    "icon": "🎯",
+    "color": "#ffb703",
+    "desc": "Critico ed execute."
+  },
+  {
+    "id": "guardian",
+    "name": "Guardian",
+    "icon": "🗿",
+    "color": "#adb5bd",
+    "desc": "HP e armor."
+  },
+  {
+    "id": "assault",
+    "name": "Assault",
+    "icon": "⚔️",
+    "color": "#f77f00",
+    "desc": "Danno fisico."
+  },
+  {
+    "id": "dodge",
+    "name": "Dodge",
+    "icon": "🌪️",
+    "color": "#8ecae6",
+    "desc": "Schivata e counter."
+  }
+]

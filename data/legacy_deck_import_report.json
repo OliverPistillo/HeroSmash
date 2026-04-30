@@ -1,0 +1,62 @@
+{
+  "version": "1.5.0",
+  "source": "deck.json",
+  "cardsImported": 150,
+  "legacyIdRange": [
+    1,
+    150
+  ],
+  "rarityCounts": {
+    "Normale": 90,
+    "Leggendaria": 24,
+    "Epica": 36
+  },
+  "branchAppearanceCounts": {
+    "assault": 18,
+    "dodge": 18,
+    "essence": 18,
+    "guardian": 18,
+    "healing": 18,
+    "ice": 18,
+    "power": 18,
+    "precision": 18,
+    "rage": 18,
+    "shield": 18,
+    "toxin": 18,
+    "wound": 18
+  },
+  "branchComboCounts": {
+    "2": 66,
+    "1": 84
+  },
+  "costCounts": {
+    "100": 90,
+    "300": 25,
+    "200": 35
+  },
+  "maxLevelCounts": {
+    "5": 90,
+    "1": 24,
+    "3": 36
+  },
+  "normalizationFixes": [
+    {
+      "legacy": "Guadian",
+      "normalized": "guardian",
+      "cardId": 70,
+      "cardName": "FROST WARD"
+    },
+    {
+      "legacy": "comma_or_semicolon_joined_branch_strings",
+      "normalized": "split_into_branch_array"
+    }
+  ],
+  "anomalies": [],
+  "notes": [
+    "Converted deck.json as the authoritative card list.",
+    "No cards were dropped or invented.",
+    "Original effect text preserved in desc and legacyEffect.",
+    "Playable numeric effects generated as conservative first-pass mappings for the existing combat engine.",
+    "Legacy Godot asset paths preserved in legacyImageCard/legacyImageBackground; runtime uses generated SVG placeholders until final card art is available."
+  ]
+}

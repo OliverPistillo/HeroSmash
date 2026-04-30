@@ -1,0 +1,2090 @@
+{
+  "version": "1.1.0",
+  "generated_at": 1777316167,
+  "base_path": ".",
+  "images": {
+    "card:legacy_001": {
+      "id": "legacy_001",
+      "type": "card",
+      "path": "assets/cards/legacy_001.svg",
+      "exists": true,
+      "hash": "9e0203d81043",
+      "rarity": "Normale",
+      "branches": [
+        "dodge",
+        "guardian"
+      ]
+    },
+    "card:legacy_002": {
+      "id": "legacy_002",
+      "type": "card",
+      "path": "assets/cards/legacy_002.svg",
+      "exists": true,
+      "hash": "b9ca838b07d7",
+      "rarity": "Normale",
+      "branches": [
+        "assault"
+      ]
+    },
+    "card:legacy_003": {
+      "id": "legacy_003",
+      "type": "card",
+      "path": "assets/cards/legacy_003.svg",
+      "exists": true,
+      "hash": "f3ea4fb35bed",
+      "rarity": "Normale",
+      "branches": [
+        "assault"
+      ]
+    },
+    "card:legacy_004": {
+      "id": "legacy_004",
+      "type": "card",
+      "path": "assets/cards/legacy_004.svg",
+      "exists": true,
+      "hash": "13d048864325",
+      "rarity": "Leggendaria",
+      "branches": [
+        "shield"
+      ]
+    },
+    "card:legacy_005": {
+      "id": "legacy_005",
+      "type": "card",
+      "path": "assets/cards/legacy_005.svg",
+      "exists": true,
+      "hash": "2963e308e9c9",
+      "rarity": "Normale",
+      "branches": [
+        "assault",
+        "essence"
+      ]
+    },
+    "card:legacy_006": {
+      "id": "legacy_006",
+      "type": "card",
+      "path": "assets/cards/legacy_006.svg",
+      "exists": true,
+      "hash": "bec6e3530ed2",
+      "rarity": "Normale",
+      "branches": [
+        "essence",
+        "ice"
+      ]
+    },
+    "card:legacy_007": {
+      "id": "legacy_007",
+      "type": "card",
+      "path": "assets/cards/legacy_007.svg",
+      "exists": true,
+      "hash": "9e446ccd91fd",
+      "rarity": "Normale",
+      "branches": [
+        "essence",
+        "shield"
+      ]
+    },
+    "card:legacy_008": {
+      "id": "legacy_008",
+      "type": "card",
+      "path": "assets/cards/legacy_008.svg",
+      "exists": true,
+      "hash": "38f3b7d02a12",
+      "rarity": "Normale",
+      "branches": [
+        "essence",
+        "rage"
+      ]
+    },
+    "card:legacy_009": {
+      "id": "legacy_009",
+      "type": "card",
+      "path": "assets/cards/legacy_009.svg",
+      "exists": true,
+      "hash": "07627874fda2",
+      "rarity": "Leggendaria",
+      "branches": [
+        "assault"
+      ]
+    },
+    "card:legacy_010": {
+      "id": "legacy_010",
+      "type": "card",
+      "path": "assets/cards/legacy_010.svg",
+      "exists": true,
+      "hash": "a53517bf3609",
+      "rarity": "Epica",
+      "branches": [
+        "assault"
+      ]
+    },
+    "card:legacy_011": {
+      "id": "legacy_011",
+      "type": "card",
+      "path": "assets/cards/legacy_011.svg",
+      "exists": true,
+      "hash": "218b4591abfd",
+      "rarity": "Normale",
+      "branches": [
+        "essence",
+        "toxin"
+      ]
+    },
+    "card:legacy_012": {
+      "id": "legacy_012",
+      "type": "card",
+      "path": "assets/cards/legacy_012.svg",
+      "exists": true,
+      "hash": "61575c1dfb2b",
+      "rarity": "Normale",
+      "branches": [
+        "essence",
+        "wound"
+      ]
+    },
+    "card:legacy_013": {
+      "id": "legacy_013",
+      "type": "card",
+      "path": "assets/cards/legacy_013.svg",
+      "exists": true,
+      "hash": "c995526fa43c",
+      "rarity": "Normale",
+      "branches": [
+        "essence",
+        "guardian"
+      ]
+    },
+    "card:legacy_014": {
+      "id": "legacy_014",
+      "type": "card",
+      "path": "assets/cards/legacy_014.svg",
+      "exists": true,
+      "hash": "9dbad3b147e7",
+      "rarity": "Epica",
+      "branches": [
+        "assault"
+      ]
+    },
+    "card:legacy_015": {
+      "id": "legacy_015",
+      "type": "card",
+      "path": "assets/cards/legacy_015.svg",
+      "exists": true,
+      "hash": "e209acca7f1c",
+      "rarity": "Normale",
+      "branches": [
+        "assault",
+        "guardian"
+      ]
+    },
+    "card:legacy_016": {
+      "id": "legacy_016",
+      "type": "card",
+      "path": "assets/cards/legacy_016.svg",
+      "exists": true,
+      "hash": "98cd5ac1f8d8",
+      "rarity": "Epica",
+      "branches": [
+        "assault"
+      ]
+    },
+    "card:legacy_017": {
+      "id": "legacy_017",
+      "type": "card",
+      "path": "assets/cards/legacy_017.svg",
+      "exists": true,
+      "hash": "4d2ba7f335b3",
+      "rarity": "Leggendaria",
+      "branches": [
+        "precision"
+      ]
+    },
+    "card:legacy_018": {
+      "id": "legacy_018",
+      "type": "card",
+      "path": "assets/cards/legacy_018.svg",
+      "exists": true,
+      "hash": "666e9d2a28b7",
+      "rarity": "Normale",
+      "branches": [
+        "assault",
+        "power"
+      ]
+    },
+    "card:legacy_019": {
+      "id": "legacy_019",
+      "type": "card",
+      "path": "assets/cards/legacy_019.svg",
+      "exists": true,
+      "hash": "1ee05d34cea0",
+      "rarity": "Normale",
+      "branches": [
+        "power",
+        "wound"
+      ]
+    },
+    "card:legacy_020": {
+      "id": "legacy_020",
+      "type": "card",
+      "path": "assets/cards/legacy_020.svg",
+      "exists": true,
+      "hash": "2ddba750c826",
+      "rarity": "Normale",
+      "branches": [
+        "power",
+        "essence"
+      ]
+    },
+    "card:legacy_021": {
+      "id": "legacy_021",
+      "type": "card",
+      "path": "assets/cards/legacy_021.svg",
+      "exists": true,
+      "hash": "ae4c860a17dc",
+      "rarity": "Normale",
+      "branches": [
+        "power",
+        "ice"
+      ]
+    },
+    "card:legacy_022": {
+      "id": "legacy_022",
+      "type": "card",
+      "path": "assets/cards/legacy_022.svg",
+      "exists": true,
+      "hash": "ddea706a3668",
+      "rarity": "Normale",
+      "branches": [
+        "power",
+        "toxin"
+      ]
+    },
+    "card:legacy_023": {
+      "id": "legacy_023",
+      "type": "card",
+      "path": "assets/cards/legacy_023.svg",
+      "exists": true,
+      "hash": "f38c3f75fac3",
+      "rarity": "Normale",
+      "branches": [
+        "power",
+        "shield"
+      ]
+    },
+    "card:legacy_024": {
+      "id": "legacy_024",
+      "type": "card",
+      "path": "assets/cards/legacy_024.svg",
+      "exists": true,
+      "hash": "87277c7c97e9",
+      "rarity": "Leggendaria",
+      "branches": [
+        "ice"
+      ]
+    },
+    "card:legacy_025": {
+      "id": "legacy_025",
+      "type": "card",
+      "path": "assets/cards/legacy_025.svg",
+      "exists": true,
+      "hash": "749b0bbf4aac",
+      "rarity": "Epica",
+      "branches": [
+        "precision"
+      ]
+    },
+    "card:legacy_026": {
+      "id": "legacy_026",
+      "type": "card",
+      "path": "assets/cards/legacy_026.svg",
+      "exists": true,
+      "hash": "29459b90c675",
+      "rarity": "Normale",
+      "branches": [
+        "power",
+        "dodge"
+      ]
+    },
+    "card:legacy_027": {
+      "id": "legacy_027",
+      "type": "card",
+      "path": "assets/cards/legacy_027.svg",
+      "exists": true,
+      "hash": "9090142f961e",
+      "rarity": "Normale",
+      "branches": [
+        "precision",
+        "power"
+      ]
+    },
+    "card:legacy_028": {
+      "id": "legacy_028",
+      "type": "card",
+      "path": "assets/cards/legacy_028.svg",
+      "exists": true,
+      "hash": "a976fc1adfd1",
+      "rarity": "Normale",
+      "branches": [
+        "healing",
+        "power"
+      ]
+    },
+    "card:legacy_029": {
+      "id": "legacy_029",
+      "type": "card",
+      "path": "assets/cards/legacy_029.svg",
+      "exists": true,
+      "hash": "b176ea560ed2",
+      "rarity": "Normale",
+      "branches": [
+        "precision"
+      ]
+    },
+    "card:legacy_030": {
+      "id": "legacy_030",
+      "type": "card",
+      "path": "assets/cards/legacy_030.svg",
+      "exists": true,
+      "hash": "96a264471175",
+      "rarity": "Normale",
+      "branches": [
+        "assault",
+        "shield"
+      ]
+    },
+    "card:legacy_031": {
+      "id": "legacy_031",
+      "type": "card",
+      "path": "assets/cards/legacy_031.svg",
+      "exists": true,
+      "hash": "3ed8542c0745",
+      "rarity": "Normale",
+      "branches": [
+        "rage",
+        "power"
+      ]
+    },
+    "card:legacy_032": {
+      "id": "legacy_032",
+      "type": "card",
+      "path": "assets/cards/legacy_032.svg",
+      "exists": true,
+      "hash": "62ab27831147",
+      "rarity": "Normale",
+      "branches": [
+        "precision"
+      ]
+    },
+    "card:legacy_033": {
+      "id": "legacy_033",
+      "type": "card",
+      "path": "assets/cards/legacy_033.svg",
+      "exists": true,
+      "hash": "722f77d847d3",
+      "rarity": "Normale",
+      "branches": [
+        "shield",
+        "rage"
+      ]
+    },
+    "card:legacy_034": {
+      "id": "legacy_034",
+      "type": "card",
+      "path": "assets/cards/legacy_034.svg",
+      "exists": true,
+      "hash": "dfb93d879cb7",
+      "rarity": "Normale",
+      "branches": [
+        "toxin",
+        "rage"
+      ]
+    },
+    "card:legacy_035": {
+      "id": "legacy_035",
+      "type": "card",
+      "path": "assets/cards/legacy_035.svg",
+      "exists": true,
+      "hash": "710f5424c44c",
+      "rarity": "Normale",
+      "branches": [
+        "wound",
+        "rage"
+      ]
+    },
+    "card:legacy_036": {
+      "id": "legacy_036",
+      "type": "card",
+      "path": "assets/cards/legacy_036.svg",
+      "exists": true,
+      "hash": "1b5a22627709",
+      "rarity": "Normale",
+      "branches": [
+        "assault",
+        "precision"
+      ]
+    },
+    "card:legacy_037": {
+      "id": "legacy_037",
+      "type": "card",
+      "path": "assets/cards/legacy_037.svg",
+      "exists": true,
+      "hash": "69df3a2bc9fc",
+      "rarity": "Normale",
+      "branches": [
+        "precision",
+        "ice"
+      ]
+    },
+    "card:legacy_038": {
+      "id": "legacy_038",
+      "type": "card",
+      "path": "assets/cards/legacy_038.svg",
+      "exists": true,
+      "hash": "2731cf62c752",
+      "rarity": "Normale",
+      "branches": [
+        "precision",
+        "rage"
+      ]
+    },
+    "card:legacy_039": {
+      "id": "legacy_039",
+      "type": "card",
+      "path": "assets/cards/legacy_039.svg",
+      "exists": true,
+      "hash": "b7398775cde2",
+      "rarity": "Normale",
+      "branches": [
+        "precision",
+        "essence"
+      ]
+    },
+    "card:legacy_040": {
+      "id": "legacy_040",
+      "type": "card",
+      "path": "assets/cards/legacy_040.svg",
+      "exists": true,
+      "hash": "542e1072a554",
+      "rarity": "Normale",
+      "branches": [
+        "healing",
+        "precision"
+      ]
+    },
+    "card:legacy_041": {
+      "id": "legacy_041",
+      "type": "card",
+      "path": "assets/cards/legacy_041.svg",
+      "exists": true,
+      "hash": "87ff0ae7142f",
+      "rarity": "Normale",
+      "branches": [
+        "precision",
+        "shield"
+      ]
+    },
+    "card:legacy_042": {
+      "id": "legacy_042",
+      "type": "card",
+      "path": "assets/cards/legacy_042.svg",
+      "exists": true,
+      "hash": "c0ab98a37d03",
+      "rarity": "Normale",
+      "branches": [
+        "precision",
+        "toxin"
+      ]
+    },
+    "card:legacy_043": {
+      "id": "legacy_043",
+      "type": "card",
+      "path": "assets/cards/legacy_043.svg",
+      "exists": true,
+      "hash": "bfbec199b188",
+      "rarity": "Normale",
+      "branches": [
+        "precision",
+        "wound"
+      ]
+    },
+    "card:legacy_044": {
+      "id": "legacy_044",
+      "type": "card",
+      "path": "assets/cards/legacy_044.svg",
+      "exists": true,
+      "hash": "40b0b1d3deee",
+      "rarity": "Leggendaria",
+      "branches": [
+        "precision"
+      ]
+    },
+    "card:legacy_045": {
+      "id": "legacy_045",
+      "type": "card",
+      "path": "assets/cards/legacy_045.svg",
+      "exists": true,
+      "hash": "1369aa2372b7",
+      "rarity": "Epica",
+      "branches": [
+        "precision"
+      ]
+    },
+    "card:legacy_046": {
+      "id": "legacy_046",
+      "type": "card",
+      "path": "assets/cards/legacy_046.svg",
+      "exists": true,
+      "hash": "ef74d72dddbc",
+      "rarity": "Epica",
+      "branches": [
+        "dodge"
+      ]
+    },
+    "card:legacy_047": {
+      "id": "legacy_047",
+      "type": "card",
+      "path": "assets/cards/legacy_047.svg",
+      "exists": true,
+      "hash": "0f947ec4c044",
+      "rarity": "Epica",
+      "branches": [
+        "dodge"
+      ]
+    },
+    "card:legacy_048": {
+      "id": "legacy_048",
+      "type": "card",
+      "path": "assets/cards/legacy_048.svg",
+      "exists": true,
+      "hash": "be8eaf60f4a8",
+      "rarity": "Epica",
+      "branches": [
+        "dodge"
+      ]
+    },
+    "card:legacy_049": {
+      "id": "legacy_049",
+      "type": "card",
+      "path": "assets/cards/legacy_049.svg",
+      "exists": true,
+      "hash": "9f11bdb1524b",
+      "rarity": "Leggendaria",
+      "branches": [
+        "dodge"
+      ]
+    },
+    "card:legacy_050": {
+      "id": "legacy_050",
+      "type": "card",
+      "path": "assets/cards/legacy_050.svg",
+      "exists": true,
+      "hash": "a6f9bbc4124b",
+      "rarity": "Normale",
+      "branches": [
+        "dodge"
+      ]
+    },
+    "card:legacy_051": {
+      "id": "legacy_051",
+      "type": "card",
+      "path": "assets/cards/legacy_051.svg",
+      "exists": true,
+      "hash": "44f9b8a9026f",
+      "rarity": "Leggendaria",
+      "branches": [
+        "dodge"
+      ]
+    },
+    "card:legacy_052": {
+      "id": "legacy_052",
+      "type": "card",
+      "path": "assets/cards/legacy_052.svg",
+      "exists": true,
+      "hash": "5d39d074f7d9",
+      "rarity": "Normale",
+      "branches": [
+        "ice",
+        "rage"
+      ]
+    },
+    "card:legacy_053": {
+      "id": "legacy_053",
+      "type": "card",
+      "path": "assets/cards/legacy_053.svg",
+      "exists": true,
+      "hash": "2d789361336d",
+      "rarity": "Normale",
+      "branches": [
+        "dodge"
+      ]
+    },
+    "card:legacy_054": {
+      "id": "legacy_054",
+      "type": "card",
+      "path": "assets/cards/legacy_054.svg",
+      "exists": true,
+      "hash": "36b0954b1b06",
+      "rarity": "Normale",
+      "branches": [
+        "rage"
+      ]
+    },
+    "card:legacy_055": {
+      "id": "legacy_055",
+      "type": "card",
+      "path": "assets/cards/legacy_055.svg",
+      "exists": true,
+      "hash": "0b6decc070a3",
+      "rarity": "Normale",
+      "branches": [
+        "guardian"
+      ]
+    },
+    "card:legacy_056": {
+      "id": "legacy_056",
+      "type": "card",
+      "path": "assets/cards/legacy_056.svg",
+      "exists": true,
+      "hash": "e7831fab82a7",
+      "rarity": "Epica",
+      "branches": [
+        "rage"
+      ]
+    },
+    "card:legacy_057": {
+      "id": "legacy_057",
+      "type": "card",
+      "path": "assets/cards/legacy_057.svg",
+      "exists": true,
+      "hash": "75f12ab93492",
+      "rarity": "Normale",
+      "branches": [
+        "guardian"
+      ]
+    },
+    "card:legacy_058": {
+      "id": "legacy_058",
+      "type": "card",
+      "path": "assets/cards/legacy_058.svg",
+      "exists": true,
+      "hash": "41859a6f8d0f",
+      "rarity": "Epica",
+      "branches": [
+        "rage"
+      ]
+    },
+    "card:legacy_059": {
+      "id": "legacy_059",
+      "type": "card",
+      "path": "assets/cards/legacy_059.svg",
+      "exists": true,
+      "hash": "4e11e060344d",
+      "rarity": "Epica",
+      "branches": [
+        "wound"
+      ]
+    },
+    "card:legacy_060": {
+      "id": "legacy_060",
+      "type": "card",
+      "path": "assets/cards/legacy_060.svg",
+      "exists": true,
+      "hash": "4ae585dc9ab7",
+      "rarity": "Leggendaria",
+      "branches": [
+        "rage"
+      ]
+    },
+    "card:legacy_061": {
+      "id": "legacy_061",
+      "type": "card",
+      "path": "assets/cards/legacy_061.svg",
+      "exists": true,
+      "hash": "91e67a9b6058",
+      "rarity": "Epica",
+      "branches": [
+        "guardian"
+      ]
+    },
+    "card:legacy_062": {
+      "id": "legacy_062",
+      "type": "card",
+      "path": "assets/cards/legacy_062.svg",
+      "exists": true,
+      "hash": "36b62cf13601",
+      "rarity": "Normale",
+      "branches": [
+        "healing",
+        "rage"
+      ]
+    },
+    "card:legacy_063": {
+      "id": "legacy_063",
+      "type": "card",
+      "path": "assets/cards/legacy_063.svg",
+      "exists": true,
+      "hash": "f72ef0313e0c",
+      "rarity": "Normale",
+      "branches": [
+        "guardian",
+        "rage"
+      ]
+    },
+    "card:legacy_064": {
+      "id": "legacy_064",
+      "type": "card",
+      "path": "assets/cards/legacy_064.svg",
+      "exists": true,
+      "hash": "8b8d0717777b",
+      "rarity": "Normale",
+      "branches": [
+        "healing",
+        "ice"
+      ]
+    },
+    "card:legacy_065": {
+      "id": "legacy_065",
+      "type": "card",
+      "path": "assets/cards/legacy_065.svg",
+      "exists": true,
+      "hash": "9a0776a0abd9",
+      "rarity": "Epica",
+      "branches": [
+        "ice"
+      ]
+    },
+    "card:legacy_066": {
+      "id": "legacy_066",
+      "type": "card",
+      "path": "assets/cards/legacy_066.svg",
+      "exists": true,
+      "hash": "05b33ce989a7",
+      "rarity": "Normale",
+      "branches": [
+        "rage"
+      ]
+    },
+    "card:legacy_067": {
+      "id": "legacy_067",
+      "type": "card",
+      "path": "assets/cards/legacy_067.svg",
+      "exists": true,
+      "hash": "056e42d4f502",
+      "rarity": "Epica",
+      "branches": [
+        "ice"
+      ]
+    },
+    "card:legacy_068": {
+      "id": "legacy_068",
+      "type": "card",
+      "path": "assets/cards/legacy_068.svg",
+      "exists": true,
+      "hash": "d4d3d451dd49",
+      "rarity": "Normale",
+      "branches": [
+        "ice",
+        "shield"
+      ]
+    },
+    "card:legacy_069": {
+      "id": "legacy_069",
+      "type": "card",
+      "path": "assets/cards/legacy_069.svg",
+      "exists": true,
+      "hash": "a7f425674ae8",
+      "rarity": "Normale",
+      "branches": [
+        "assault",
+        "ice"
+      ]
+    },
+    "card:legacy_070": {
+      "id": "legacy_070",
+      "type": "card",
+      "path": "assets/cards/legacy_070.svg",
+      "exists": true,
+      "hash": "446f69ecfd2e",
+      "rarity": "Normale",
+      "branches": [
+        "ice",
+        "guardian"
+      ]
+    },
+    "card:legacy_071": {
+      "id": "legacy_071",
+      "type": "card",
+      "path": "assets/cards/legacy_071.svg",
+      "exists": true,
+      "hash": "c38099c7573a",
+      "rarity": "Epica",
+      "branches": [
+        "precision"
+      ]
+    },
+    "card:legacy_072": {
+      "id": "legacy_072",
+      "type": "card",
+      "path": "assets/cards/legacy_072.svg",
+      "exists": true,
+      "hash": "87c9b65adc4b",
+      "rarity": "Normale",
+      "branches": [
+        "assault",
+        "rage"
+      ]
+    },
+    "card:legacy_073": {
+      "id": "legacy_073",
+      "type": "card",
+      "path": "assets/cards/legacy_073.svg",
+      "exists": true,
+      "hash": "b0f9eb8b54f4",
+      "rarity": "Leggendaria",
+      "branches": [
+        "ice"
+      ]
+    },
+    "card:legacy_074": {
+      "id": "legacy_074",
+      "type": "card",
+      "path": "assets/cards/legacy_074.svg",
+      "exists": true,
+      "hash": "01d01fb1ca0d",
+      "rarity": "Epica",
+      "branches": [
+        "ice"
+      ]
+    },
+    "card:legacy_075": {
+      "id": "legacy_075",
+      "type": "card",
+      "path": "assets/cards/legacy_075.svg",
+      "exists": true,
+      "hash": "227f22961f6b",
+      "rarity": "Normale",
+      "branches": [
+        "guardian",
+        "healing"
+      ]
+    },
+    "card:legacy_076": {
+      "id": "legacy_076",
+      "type": "card",
+      "path": "assets/cards/legacy_076.svg",
+      "exists": true,
+      "hash": "969828f2ff63",
+      "rarity": "Normale",
+      "branches": [
+        "ice"
+      ]
+    },
+    "card:legacy_077": {
+      "id": "legacy_077",
+      "type": "card",
+      "path": "assets/cards/legacy_077.svg",
+      "exists": true,
+      "hash": "a2510ef21151",
+      "rarity": "Normale",
+      "branches": [
+        "healing",
+        "shield"
+      ]
+    },
+    "card:legacy_078": {
+      "id": "legacy_078",
+      "type": "card",
+      "path": "assets/cards/legacy_078.svg",
+      "exists": true,
+      "hash": "b6a409de6cb4",
+      "rarity": "Normale",
+      "branches": [
+        "assault",
+        "healing"
+      ]
+    },
+    "card:legacy_079": {
+      "id": "legacy_079",
+      "type": "card",
+      "path": "assets/cards/legacy_079.svg",
+      "exists": true,
+      "hash": "50654c1eb071",
+      "rarity": "Leggendaria",
+      "branches": [
+        "guardian"
+      ]
+    },
+    "card:legacy_080": {
+      "id": "legacy_080",
+      "type": "card",
+      "path": "assets/cards/legacy_080.svg",
+      "exists": true,
+      "hash": "23f4624cdace",
+      "rarity": "Leggendaria",
+      "branches": [
+        "guardian"
+      ]
+    },
+    "card:legacy_081": {
+      "id": "legacy_081",
+      "type": "card",
+      "path": "assets/cards/legacy_081.svg",
+      "exists": true,
+      "hash": "2cdbf2c22321",
+      "rarity": "Epica",
+      "branches": [
+        "guardian"
+      ]
+    },
+    "card:legacy_082": {
+      "id": "legacy_082",
+      "type": "card",
+      "path": "assets/cards/legacy_082.svg",
+      "exists": true,
+      "hash": "76f9858ad3b4",
+      "rarity": "Leggendaria",
+      "branches": [
+        "assault"
+      ]
+    },
+    "card:legacy_083": {
+      "id": "legacy_083",
+      "type": "card",
+      "path": "assets/cards/legacy_083.svg",
+      "exists": true,
+      "hash": "8ce175b4d742",
+      "rarity": "Epica",
+      "branches": [
+        "guardian"
+      ]
+    },
+    "card:legacy_084": {
+      "id": "legacy_084",
+      "type": "card",
+      "path": "assets/cards/legacy_084.svg",
+      "exists": true,
+      "hash": "242a1c88d663",
+      "rarity": "Leggendaria",
+      "branches": [
+        "wound"
+      ]
+    },
+    "card:legacy_085": {
+      "id": "legacy_085",
+      "type": "card",
+      "path": "assets/cards/legacy_085.svg",
+      "exists": true,
+      "hash": "61edee14ad29",
+      "rarity": "Normale",
+      "branches": [
+        "ice"
+      ]
+    },
+    "card:legacy_086": {
+      "id": "legacy_086",
+      "type": "card",
+      "path": "assets/cards/legacy_086.svg",
+      "exists": true,
+      "hash": "d5880e18a72d",
+      "rarity": "Normale",
+      "branches": [
+        "wound"
+      ]
+    },
+    "card:legacy_087": {
+      "id": "legacy_087",
+      "type": "card",
+      "path": "assets/cards/legacy_087.svg",
+      "exists": true,
+      "hash": "9b9884153492",
+      "rarity": "Normale",
+      "branches": [
+        "wound"
+      ]
+    },
+    "card:legacy_088": {
+      "id": "legacy_088",
+      "type": "card",
+      "path": "assets/cards/legacy_088.svg",
+      "exists": true,
+      "hash": "7ba8b9ee4593",
+      "rarity": "Normale",
+      "branches": [
+        "healing"
+      ]
+    },
+    "card:legacy_089": {
+      "id": "legacy_089",
+      "type": "card",
+      "path": "assets/cards/legacy_089.svg",
+      "exists": true,
+      "hash": "383b6eec88f8",
+      "rarity": "Normale",
+      "branches": [
+        "healing"
+      ]
+    },
+    "card:legacy_090": {
+      "id": "legacy_090",
+      "type": "card",
+      "path": "assets/cards/legacy_090.svg",
+      "exists": true,
+      "hash": "e4d5cd80c02a",
+      "rarity": "Leggendaria",
+      "branches": [
+        "wound"
+      ]
+    },
+    "card:legacy_091": {
+      "id": "legacy_091",
+      "type": "card",
+      "path": "assets/cards/legacy_091.svg",
+      "exists": true,
+      "hash": "889fcaf78873",
+      "rarity": "Epica",
+      "branches": [
+        "shield"
+      ]
+    },
+    "card:legacy_092": {
+      "id": "legacy_092",
+      "type": "card",
+      "path": "assets/cards/legacy_092.svg",
+      "exists": true,
+      "hash": "64f614804a35",
+      "rarity": "Normale",
+      "branches": [
+        "essence",
+        "healing"
+      ]
+    },
+    "card:legacy_093": {
+      "id": "legacy_093",
+      "type": "card",
+      "path": "assets/cards/legacy_093.svg",
+      "exists": true,
+      "hash": "06caa59b1219",
+      "rarity": "Normale",
+      "branches": [
+        "shield"
+      ]
+    },
+    "card:legacy_094": {
+      "id": "legacy_094",
+      "type": "card",
+      "path": "assets/cards/legacy_094.svg",
+      "exists": true,
+      "hash": "b1b5b4ff368b",
+      "rarity": "Normale",
+      "branches": [
+        "shield"
+      ]
+    },
+    "card:legacy_095": {
+      "id": "legacy_095",
+      "type": "card",
+      "path": "assets/cards/legacy_095.svg",
+      "exists": true,
+      "hash": "07d171507616",
+      "rarity": "Epica",
+      "branches": [
+        "wound"
+      ]
+    },
+    "card:legacy_096": {
+      "id": "legacy_096",
+      "type": "card",
+      "path": "assets/cards/legacy_096.svg",
+      "exists": true,
+      "hash": "2c4ea73619ab",
+      "rarity": "Epica",
+      "branches": [
+        "wound"
+      ]
+    },
+    "card:legacy_097": {
+      "id": "legacy_097",
+      "type": "card",
+      "path": "assets/cards/legacy_097.svg",
+      "exists": true,
+      "hash": "78779af067d0",
+      "rarity": "Leggendaria",
+      "branches": [
+        "healing"
+      ]
+    },
+    "card:legacy_098": {
+      "id": "legacy_098",
+      "type": "card",
+      "path": "assets/cards/legacy_098.svg",
+      "exists": true,
+      "hash": "24e61fad3138",
+      "rarity": "Epica",
+      "branches": [
+        "healing"
+      ]
+    },
+    "card:legacy_099": {
+      "id": "legacy_099",
+      "type": "card",
+      "path": "assets/cards/legacy_099.svg",
+      "exists": true,
+      "hash": "0be6d8e51aec",
+      "rarity": "Normale",
+      "branches": [
+        "power"
+      ]
+    },
+    "card:legacy_100": {
+      "id": "legacy_100",
+      "type": "card",
+      "path": "assets/cards/legacy_100.svg",
+      "exists": true,
+      "hash": "23c1047b4a87",
+      "rarity": "Leggendaria",
+      "branches": [
+        "healing"
+      ]
+    },
+    "card:legacy_101": {
+      "id": "legacy_101",
+      "type": "card",
+      "path": "assets/cards/legacy_101.svg",
+      "exists": true,
+      "hash": "979f9a4908a8",
+      "rarity": "Normale",
+      "branches": [
+        "ice",
+        "wound"
+      ]
+    },
+    "card:legacy_102": {
+      "id": "legacy_102",
+      "type": "card",
+      "path": "assets/cards/legacy_102.svg",
+      "exists": true,
+      "hash": "9b6e90330194",
+      "rarity": "Epica",
+      "branches": [
+        "healing"
+      ]
+    },
+    "card:legacy_103": {
+      "id": "legacy_103",
+      "type": "card",
+      "path": "assets/cards/legacy_103.svg",
+      "exists": true,
+      "hash": "16f0d9523dd5",
+      "rarity": "Epica",
+      "branches": [
+        "healing"
+      ]
+    },
+    "card:legacy_104": {
+      "id": "legacy_104",
+      "type": "card",
+      "path": "assets/cards/legacy_104.svg",
+      "exists": true,
+      "hash": "238430a8c7a6",
+      "rarity": "Normale",
+      "branches": [
+        "toxin",
+        "guardian"
+      ]
+    },
+    "card:legacy_105": {
+      "id": "legacy_105",
+      "type": "card",
+      "path": "assets/cards/legacy_105.svg",
+      "exists": true,
+      "hash": "5d8b9a06ee10",
+      "rarity": "Normale",
+      "branches": [
+        "healing",
+        "toxin"
+      ]
+    },
+    "card:legacy_106": {
+      "id": "legacy_106",
+      "type": "card",
+      "path": "assets/cards/legacy_106.svg",
+      "exists": true,
+      "hash": "2f584fd21665",
+      "rarity": "Leggendaria",
+      "branches": [
+        "rage"
+      ]
+    },
+    "card:legacy_107": {
+      "id": "legacy_107",
+      "type": "card",
+      "path": "assets/cards/legacy_107.svg",
+      "exists": true,
+      "hash": "6cde923a20ea",
+      "rarity": "Epica",
+      "branches": [
+        "shield"
+      ]
+    },
+    "card:legacy_108": {
+      "id": "legacy_108",
+      "type": "card",
+      "path": "assets/cards/legacy_108.svg",
+      "exists": true,
+      "hash": "c343123ed26a",
+      "rarity": "Epica",
+      "branches": [
+        "shield"
+      ]
+    },
+    "card:legacy_109": {
+      "id": "legacy_109",
+      "type": "card",
+      "path": "assets/cards/legacy_109.svg",
+      "exists": true,
+      "hash": "789d97cdbae2",
+      "rarity": "Normale",
+      "branches": [
+        "power"
+      ]
+    },
+    "card:legacy_110": {
+      "id": "legacy_110",
+      "type": "card",
+      "path": "assets/cards/legacy_110.svg",
+      "exists": true,
+      "hash": "54f7a3036908",
+      "rarity": "Normale",
+      "branches": [
+        "precision",
+        "guardian"
+      ]
+    },
+    "card:legacy_111": {
+      "id": "legacy_111",
+      "type": "card",
+      "path": "assets/cards/legacy_111.svg",
+      "exists": true,
+      "hash": "6d4157b1f9ab",
+      "rarity": "Leggendaria",
+      "branches": [
+        "shield"
+      ]
+    },
+    "card:legacy_112": {
+      "id": "legacy_112",
+      "type": "card",
+      "path": "assets/cards/legacy_112.svg",
+      "exists": true,
+      "hash": "6b52f4cc86f1",
+      "rarity": "Epica",
+      "branches": [
+        "power"
+      ]
+    },
+    "card:legacy_113": {
+      "id": "legacy_113",
+      "type": "card",
+      "path": "assets/cards/legacy_113.svg",
+      "exists": true,
+      "hash": "f4c0398ae525",
+      "rarity": "Leggendaria",
+      "branches": [
+        "power"
+      ]
+    },
+    "card:legacy_114": {
+      "id": "legacy_114",
+      "type": "card",
+      "path": "assets/cards/legacy_114.svg",
+      "exists": true,
+      "hash": "22707d92e4f1",
+      "rarity": "Normale",
+      "branches": [
+        "power",
+        "guardian"
+      ]
+    },
+    "card:legacy_115": {
+      "id": "legacy_115",
+      "type": "card",
+      "path": "assets/cards/legacy_115.svg",
+      "exists": true,
+      "hash": "2a3b2b10e739",
+      "rarity": "Normale",
+      "branches": [
+        "toxin"
+      ]
+    },
+    "card:legacy_116": {
+      "id": "legacy_116",
+      "type": "card",
+      "path": "assets/cards/legacy_116.svg",
+      "exists": true,
+      "hash": "a7e16a5e23e2",
+      "rarity": "Epica",
+      "branches": [
+        "power"
+      ]
+    },
+    "card:legacy_117": {
+      "id": "legacy_117",
+      "type": "card",
+      "path": "assets/cards/legacy_117.svg",
+      "exists": true,
+      "hash": "a3fd54591197",
+      "rarity": "Normale",
+      "branches": [
+        "shield",
+        "guardian"
+      ]
+    },
+    "card:legacy_118": {
+      "id": "legacy_118",
+      "type": "card",
+      "path": "assets/cards/legacy_118.svg",
+      "exists": true,
+      "hash": "529f6bce6aba",
+      "rarity": "Normale",
+      "branches": [
+        "healing",
+        "wound"
+      ]
+    },
+    "card:legacy_119": {
+      "id": "legacy_119",
+      "type": "card",
+      "path": "assets/cards/legacy_119.svg",
+      "exists": true,
+      "hash": "e8cde7f64041",
+      "rarity": "Epica",
+      "branches": [
+        "power"
+      ]
+    },
+    "card:legacy_120": {
+      "id": "legacy_120",
+      "type": "card",
+      "path": "assets/cards/legacy_120.svg",
+      "exists": true,
+      "hash": "d73f701cedc8",
+      "rarity": "Leggendaria",
+      "branches": [
+        "power"
+      ]
+    },
+    "card:legacy_121": {
+      "id": "legacy_121",
+      "type": "card",
+      "path": "assets/cards/legacy_121.svg",
+      "exists": true,
+      "hash": "c6b3e1452d9c",
+      "rarity": "Epica",
+      "branches": [
+        "rage"
+      ]
+    },
+    "card:legacy_122": {
+      "id": "legacy_122",
+      "type": "card",
+      "path": "assets/cards/legacy_122.svg",
+      "exists": true,
+      "hash": "19404e1623ac",
+      "rarity": "Leggendaria",
+      "branches": [
+        "toxin"
+      ]
+    },
+    "card:legacy_123": {
+      "id": "legacy_123",
+      "type": "card",
+      "path": "assets/cards/legacy_123.svg",
+      "exists": true,
+      "hash": "bf5a3e8623ec",
+      "rarity": "Leggendaria",
+      "branches": [
+        "toxin"
+      ]
+    },
+    "card:legacy_124": {
+      "id": "legacy_124",
+      "type": "card",
+      "path": "assets/cards/legacy_124.svg",
+      "exists": true,
+      "hash": "b313f24d1472",
+      "rarity": "Epica",
+      "branches": [
+        "toxin"
+      ]
+    },
+    "card:legacy_125": {
+      "id": "legacy_125",
+      "type": "card",
+      "path": "assets/cards/legacy_125.svg",
+      "exists": true,
+      "hash": "d6e17e8591f8",
+      "rarity": "Epica",
+      "branches": [
+        "toxin"
+      ]
+    },
+    "card:legacy_126": {
+      "id": "legacy_126",
+      "type": "card",
+      "path": "assets/cards/legacy_126.svg",
+      "exists": true,
+      "hash": "bd24ec69ec12",
+      "rarity": "Normale",
+      "branches": [
+        "shield",
+        "wound"
+      ]
+    },
+    "card:legacy_127": {
+      "id": "legacy_127",
+      "type": "card",
+      "path": "assets/cards/legacy_127.svg",
+      "exists": true,
+      "hash": "55fc9e66d489",
+      "rarity": "Normale",
+      "branches": [
+        "toxin",
+        "shield"
+      ]
+    },
+    "card:legacy_128": {
+      "id": "legacy_128",
+      "type": "card",
+      "path": "assets/cards/legacy_128.svg",
+      "exists": true,
+      "hash": "58e7926a0d1e",
+      "rarity": "Epica",
+      "branches": [
+        "toxin"
+      ]
+    },
+    "card:legacy_129": {
+      "id": "legacy_129",
+      "type": "card",
+      "path": "assets/cards/legacy_129.svg",
+      "exists": true,
+      "hash": "848721861ebc",
+      "rarity": "Normale",
+      "branches": [
+        "toxin",
+        "ice"
+      ]
+    },
+    "card:legacy_130": {
+      "id": "legacy_130",
+      "type": "card",
+      "path": "assets/cards/legacy_130.svg",
+      "exists": true,
+      "hash": "dbb58395b1ac",
+      "rarity": "Normale",
+      "branches": [
+        "toxin"
+      ]
+    },
+    "card:legacy_131": {
+      "id": "legacy_131",
+      "type": "card",
+      "path": "assets/cards/legacy_131.svg",
+      "exists": true,
+      "hash": "223d595f7bc8",
+      "rarity": "Leggendaria",
+      "branches": [
+        "essence"
+      ]
+    },
+    "card:legacy_132": {
+      "id": "legacy_132",
+      "type": "card",
+      "path": "assets/cards/legacy_132.svg",
+      "exists": true,
+      "hash": "07961c15f868",
+      "rarity": "Normale",
+      "branches": [
+        "assault",
+        "dodge"
+      ]
+    },
+    "card:legacy_133": {
+      "id": "legacy_133",
+      "type": "card",
+      "path": "assets/cards/legacy_133.svg",
+      "exists": true,
+      "hash": "eeb260c02d51",
+      "rarity": "Leggendaria",
+      "branches": [
+        "essence"
+      ]
+    },
+    "card:legacy_134": {
+      "id": "legacy_134",
+      "type": "card",
+      "path": "assets/cards/legacy_134.svg",
+      "exists": true,
+      "hash": "32311d962263",
+      "rarity": "Normale",
+      "branches": [
+        "dodge",
+        "ice"
+      ]
+    },
+    "card:legacy_135": {
+      "id": "legacy_135",
+      "type": "card",
+      "path": "assets/cards/legacy_135.svg",
+      "exists": true,
+      "hash": "cd0fec41f6ef",
+      "rarity": "Normale",
+      "branches": [
+        "dodge",
+        "rage"
+      ]
+    },
+    "card:legacy_136": {
+      "id": "legacy_136",
+      "type": "card",
+      "path": "assets/cards/legacy_136.svg",
+      "exists": true,
+      "hash": "ea5afa927986",
+      "rarity": "Normale",
+      "branches": [
+        "dodge",
+        "healing"
+      ]
+    },
+    "card:legacy_137": {
+      "id": "legacy_137",
+      "type": "card",
+      "path": "assets/cards/legacy_137.svg",
+      "exists": true,
+      "hash": "5f67e2a83e91",
+      "rarity": "Normale",
+      "branches": [
+        "dodge",
+        "essence"
+      ]
+    },
+    "card:legacy_138": {
+      "id": "legacy_138",
+      "type": "card",
+      "path": "assets/cards/legacy_138.svg",
+      "exists": true,
+      "hash": "7c8133cb5fbd",
+      "rarity": "Normale",
+      "branches": [
+        "precision",
+        "dodge"
+      ]
+    },
+    "card:legacy_139": {
+      "id": "legacy_139",
+      "type": "card",
+      "path": "assets/cards/legacy_139.svg",
+      "exists": true,
+      "hash": "fd2d26c8ac0f",
+      "rarity": "Normale",
+      "branches": [
+        "dodge",
+        "shield"
+      ]
+    },
+    "card:legacy_140": {
+      "id": "legacy_140",
+      "type": "card",
+      "path": "assets/cards/legacy_140.svg",
+      "exists": true,
+      "hash": "99952d34d6a5",
+      "rarity": "Normale",
+      "branches": [
+        "dodge",
+        "toxin"
+      ]
+    },
+    "card:legacy_141": {
+      "id": "legacy_141",
+      "type": "card",
+      "path": "assets/cards/legacy_141.svg",
+      "exists": true,
+      "hash": "ff2957a1bb12",
+      "rarity": "Normale",
+      "branches": [
+        "dodge",
+        "wound"
+      ]
+    },
+    "card:legacy_142": {
+      "id": "legacy_142",
+      "type": "card",
+      "path": "assets/cards/legacy_142.svg",
+      "exists": true,
+      "hash": "a02b4fce3f58",
+      "rarity": "Epica",
+      "branches": [
+        "essence"
+      ]
+    },
+    "card:legacy_143": {
+      "id": "legacy_143",
+      "type": "card",
+      "path": "assets/cards/legacy_143.svg",
+      "exists": true,
+      "hash": "85b3cba0ca1a",
+      "rarity": "Normale",
+      "branches": [
+        "assault",
+        "toxin"
+      ]
+    },
+    "card:legacy_144": {
+      "id": "legacy_144",
+      "type": "card",
+      "path": "assets/cards/legacy_144.svg",
+      "exists": true,
+      "hash": "d08cc4b27401",
+      "rarity": "Normale",
+      "branches": [
+        "wound",
+        "guardian"
+      ]
+    },
+    "card:legacy_145": {
+      "id": "legacy_145",
+      "type": "card",
+      "path": "assets/cards/legacy_145.svg",
+      "exists": true,
+      "hash": "6cbbf659131b",
+      "rarity": "Normale",
+      "branches": [
+        "essence"
+      ]
+    },
+    "card:legacy_146": {
+      "id": "legacy_146",
+      "type": "card",
+      "path": "assets/cards/legacy_146.svg",
+      "exists": true,
+      "hash": "787c90e1ca5b",
+      "rarity": "Normale",
+      "branches": [
+        "assault",
+        "wound"
+      ]
+    },
+    "card:legacy_147": {
+      "id": "legacy_147",
+      "type": "card",
+      "path": "assets/cards/legacy_147.svg",
+      "exists": true,
+      "hash": "9398249cded4",
+      "rarity": "Epica",
+      "branches": [
+        "essence"
+      ]
+    },
+    "card:legacy_148": {
+      "id": "legacy_148",
+      "type": "card",
+      "path": "assets/cards/legacy_148.svg",
+      "exists": true,
+      "hash": "111480bcb46c",
+      "rarity": "Normale",
+      "branches": [
+        "essence"
+      ]
+    },
+    "card:legacy_149": {
+      "id": "legacy_149",
+      "type": "card",
+      "path": "assets/cards/legacy_149.svg",
+      "exists": true,
+      "hash": "9c94102430d9",
+      "rarity": "Normale",
+      "branches": [
+        "toxin",
+        "wound"
+      ]
+    },
+    "card:legacy_150": {
+      "id": "legacy_150",
+      "type": "card",
+      "path": "assets/cards/legacy_150.svg",
+      "exists": true,
+      "hash": "28f00e19a53c",
+      "rarity": "Epica",
+      "branches": [
+        "essence"
+      ]
+    },
+    "hero:fireheart": {
+      "id": "fireheart",
+      "type": "hero",
+      "path": "assets/heroes/fireheart.svg",
+      "exists": true,
+      "hash": "16d7ce10173c",
+      "favoredBranch": "rage",
+      "favoredBranches": [
+        "rage",
+        "power"
+      ]
+    },
+    "hero:frostfang": {
+      "id": "frostfang",
+      "type": "hero",
+      "path": "assets/heroes/frostfang.svg",
+      "exists": true,
+      "hash": "e809e081419b",
+      "favoredBranch": "ice",
+      "favoredBranches": [
+        "ice",
+        "precision"
+      ]
+    },
+    "hero:bloodthorn": {
+      "id": "bloodthorn",
+      "type": "hero",
+      "path": "assets/heroes/bloodthorn.svg",
+      "exists": true,
+      "hash": "c940285c5f91",
+      "favoredBranch": "wound",
+      "favoredBranches": [
+        "wound",
+        "assault"
+      ]
+    },
+    "hero:stormblade": {
+      "id": "stormblade",
+      "type": "hero",
+      "path": "assets/heroes/stormblade.svg",
+      "exists": true,
+      "hash": "96ff265bf071",
+      "favoredBranch": "rage",
+      "favoredBranches": [
+        "rage",
+        "assault"
+      ]
+    },
+    "hero:duskwhisper": {
+      "id": "duskwhisper",
+      "type": "hero",
+      "path": "assets/heroes/duskwhisper.svg",
+      "exists": true,
+      "hash": "63f3a58c177d",
+      "favoredBranch": "essence",
+      "favoredBranches": [
+        "essence",
+        "shield"
+      ]
+    },
+    "hero:windrider": {
+      "id": "windrider",
+      "type": "hero",
+      "path": "assets/heroes/windrider.svg",
+      "exists": true,
+      "hash": "1b812d02bb8f",
+      "favoredBranch": "dodge",
+      "favoredBranches": [
+        "dodge",
+        "precision"
+      ]
+    },
+    "hero:darkbane": {
+      "id": "darkbane",
+      "type": "hero",
+      "path": "assets/heroes/darkbane.svg",
+      "exists": true,
+      "hash": "8f2ffbb4a935",
+      "favoredBranch": "power",
+      "favoredBranches": [
+        "power",
+        "wound"
+      ]
+    },
+    "hero:nightshade": {
+      "id": "nightshade",
+      "type": "hero",
+      "path": "assets/heroes/nightshade.svg",
+      "exists": true,
+      "hash": "0d27028746e9",
+      "favoredBranch": "toxin",
+      "favoredBranches": [
+        "toxin",
+        "dodge"
+      ]
+    },
+    "hero:emberforge": {
+      "id": "emberforge",
+      "type": "hero",
+      "path": "assets/heroes/emberforge.svg",
+      "exists": true,
+      "hash": "ac26688ee46e",
+      "favoredBranch": "shield",
+      "favoredBranches": [
+        "shield",
+        "power"
+      ]
+    },
+    "hero:ironfist": {
+      "id": "ironfist",
+      "type": "hero",
+      "path": "assets/heroes/ironfist.svg",
+      "exists": true,
+      "hash": "14efe3599632",
+      "favoredBranch": "guardian",
+      "favoredBranches": [
+        "guardian",
+        "healing"
+      ]
+    },
+    "hero:darion": {
+      "id": "darion",
+      "type": "hero",
+      "path": "assets/heroes/darion.svg",
+      "exists": true,
+      "hash": "03d1ad85adf6",
+      "favoredBranch": "essence",
+      "favoredBranches": [
+        "essence",
+        "precision"
+      ]
+    },
+    "hero:shadowflame": {
+      "id": "shadowflame",
+      "type": "hero",
+      "path": "assets/heroes/shadowflame.svg",
+      "exists": true,
+      "hash": "44c882bb6084",
+      "favoredBranch": "precision",
+      "favoredBranches": [
+        "precision",
+        "dodge"
+      ]
+    },
+    "hero:steelbane": {
+      "id": "steelbane",
+      "type": "hero",
+      "path": "assets/heroes/steelbane.svg",
+      "exists": true,
+      "hash": "d6024183c36c",
+      "favoredBranch": "assault",
+      "favoredBranches": [
+        "assault",
+        "guardian"
+      ]
+    },
+    "hero:voidwalker": {
+      "id": "voidwalker",
+      "type": "hero",
+      "path": "assets/heroes/voidwalker.svg",
+      "exists": true,
+      "hash": "209fc39f2852",
+      "favoredBranch": "power",
+      "favoredBranches": [
+        "power",
+        "essence"
+      ]
+    },
+    "hero:blackthorn": {
+      "id": "blackthorn",
+      "type": "hero",
+      "path": "assets/heroes/blackthorn.svg",
+      "exists": true,
+      "hash": "d24fe500218d",
+      "favoredBranch": "toxin",
+      "favoredBranches": [
+        "toxin",
+        "wound"
+      ]
+    },
+    "hero:skydancer": {
+      "id": "skydancer",
+      "type": "hero",
+      "path": "assets/heroes/skydancer.svg",
+      "exists": true,
+      "hash": "0648345500d8",
+      "favoredBranch": "dodge",
+      "favoredBranches": [
+        "dodge",
+        "healing"
+      ]
+    }
+  },
+  "categories": {
+    "cards": [
+      "card:legacy_001",
+      "card:legacy_002",
+      "card:legacy_003",
+      "card:legacy_004",
+      "card:legacy_005",
+      "card:legacy_006",
+      "card:legacy_007",
+      "card:legacy_008",
+      "card:legacy_009",
+      "card:legacy_010",
+      "card:legacy_011",
+      "card:legacy_012",
+      "card:legacy_013",
+      "card:legacy_014",
+      "card:legacy_015",
+      "card:legacy_016",
+      "card:legacy_017",
+      "card:legacy_018",
+      "card:legacy_019",
+      "card:legacy_020",
+      "card:legacy_021",
+      "card:legacy_022",
+      "card:legacy_023",
+      "card:legacy_024",
+      "card:legacy_025",
+      "card:legacy_026",
+      "card:legacy_027",
+      "card:legacy_028",
+      "card:legacy_029",
+      "card:legacy_030",
+      "card:legacy_031",
+      "card:legacy_032",
+      "card:legacy_033",
+      "card:legacy_034",
+      "card:legacy_035",
+      "card:legacy_036",
+      "card:legacy_037",
+      "card:legacy_038",
+      "card:legacy_039",
+      "card:legacy_040",
+      "card:legacy_041",
+      "card:legacy_042",
+      "card:legacy_043",
+      "card:legacy_044",
+      "card:legacy_045",
+      "card:legacy_046",
+      "card:legacy_047",
+      "card:legacy_048",
+      "card:legacy_049",
+      "card:legacy_050",
+      "card:legacy_051",
+      "card:legacy_052",
+      "card:legacy_053",
+      "card:legacy_054",
+      "card:legacy_055",
+      "card:legacy_056",
+      "card:legacy_057",
+      "card:legacy_058",
+      "card:legacy_059",
+      "card:legacy_060",
+      "card:legacy_061",
+      "card:legacy_062",
+      "card:legacy_063",
+      "card:legacy_064",
+      "card:legacy_065",
+      "card:legacy_066",
+      "card:legacy_067",
+      "card:legacy_068",
+      "card:legacy_069",
+      "card:legacy_070",
+      "card:legacy_071",
+      "card:legacy_072",
+      "card:legacy_073",
+      "card:legacy_074",
+      "card:legacy_075",
+      "card:legacy_076",
+      "card:legacy_077",
+      "card:legacy_078",
+      "card:legacy_079",
+      "card:legacy_080",
+      "card:legacy_081",
+      "card:legacy_082",
+      "card:legacy_083",
+      "card:legacy_084",
+      "card:legacy_085",
+      "card:legacy_086",
+      "card:legacy_087",
+      "card:legacy_088",
+      "card:legacy_089",
+      "card:legacy_090",
+      "card:legacy_091",
+      "card:legacy_092",
+      "card:legacy_093",
+      "card:legacy_094",
+      "card:legacy_095",
+      "card:legacy_096",
+      "card:legacy_097",
+      "card:legacy_098",
+      "card:legacy_099",
+      "card:legacy_100",
+      "card:legacy_101",
+      "card:legacy_102",
+      "card:legacy_103",
+      "card:legacy_104",
+      "card:legacy_105",
+      "card:legacy_106",
+      "card:legacy_107",
+      "card:legacy_108",
+      "card:legacy_109",
+      "card:legacy_110",
+      "card:legacy_111",
+      "card:legacy_112",
+      "card:legacy_113",
+      "card:legacy_114",
+      "card:legacy_115",
+      "card:legacy_116",
+      "card:legacy_117",
+      "card:legacy_118",
+      "card:legacy_119",
+      "card:legacy_120",
+      "card:legacy_121",
+      "card:legacy_122",
+      "card:legacy_123",
+      "card:legacy_124",
+      "card:legacy_125",
+      "card:legacy_126",
+      "card:legacy_127",
+      "card:legacy_128",
+      "card:legacy_129",
+      "card:legacy_130",
+      "card:legacy_131",
+      "card:legacy_132",
+      "card:legacy_133",
+      "card:legacy_134",
+      "card:legacy_135",
+      "card:legacy_136",
+      "card:legacy_137",
+      "card:legacy_138",
+      "card:legacy_139",
+      "card:legacy_140",
+      "card:legacy_141",
+      "card:legacy_142",
+      "card:legacy_143",
+      "card:legacy_144",
+      "card:legacy_145",
+      "card:legacy_146",
+      "card:legacy_147",
+      "card:legacy_148",
+      "card:legacy_149",
+      "card:legacy_150"
+    ],
+    "heroes": [
+      "hero:fireheart",
+      "hero:frostfang",
+      "hero:bloodthorn",
+      "hero:stormblade",
+      "hero:duskwhisper",
+      "hero:windrider",
+      "hero:darkbane",
+      "hero:nightshade",
+      "hero:emberforge",
+      "hero:ironfist",
+      "hero:darion",
+      "hero:shadowflame",
+      "hero:steelbane",
+      "hero:voidwalker",
+      "hero:blackthorn",
+      "hero:skydancer"
+    ],
+    "ui": [],
+    "fx": []
+  },
+  "missing": []
+}

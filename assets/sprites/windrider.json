@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "hero": "windrider",
+    "image": "assets/sprites/windrider.png",
+    "frameW": 128,
+    "frameH": 192,
+    "sheetW": 1024,
+    "sheetH": 1344,
+    "source": "generated"
+  },
+  "animations": {
+    "idle": {
+      "row": 0,
+      "frames": 4,
+      "fps": 7,
+      "loop": true
+    },
+    "attack": {
+      "row": 1,
+      "frames": 4,
+      "fps": 14,
+      "loop": false
+    },
+    "skill": {
+      "row": 2,
+      "frames": 6,
+      "fps": 10,
+      "loop": false
+    },
+    "hit": {
+      "row": 3,
+      "frames": 2,
+      "fps": 12,
+      "loop": false
+    },
+    "death": {
+      "row": 4,
+      "frames": 6,
+      "fps": 8,
+      "loop": false
+    },
+    "victory": {
+      "row": 5,
+      "frames": 4,
+      "fps": 8,
+      "loop": true
+    },
+    "intro": {
+      "row": 6,
+      "frames": 4,
+      "fps": 10,
+      "loop": false
+    }
+  }
+}

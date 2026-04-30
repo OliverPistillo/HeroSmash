@@ -1,0 +1,45 @@
+{
+  "version": "1.3.0",
+  "images": {
+    "final_home_keyart": {
+      "path": "assets/final/backgrounds/home_keyart.png",
+      "category": "backgrounds"
+    },
+    "final_market_bg": {
+      "path": "assets/final/backgrounds/market_bg.png",
+      "category": "backgrounds"
+    },
+    "final_combat_bg": {
+      "path": "assets/final/backgrounds/combat_bg.png",
+      "category": "backgrounds"
+    },
+    "final_arena_bg": {
+      "path": "assets/final/backgrounds/arena_bg.png",
+      "category": "backgrounds"
+    },
+    "final_hero_select_bg": {
+      "path": "assets/final/backgrounds/hero_select_bg.png",
+      "category": "backgrounds"
+    },
+    "final_branch_sheet": {
+      "path": "assets/final/ui/branch_sheet.png",
+      "category": "ui"
+    },
+    "final_ui_sheet": {
+      "path": "assets/final/ui/ui_sheet.png",
+      "category": "ui"
+    },
+    "final_style_guide": {
+      "path": "assets/final/style/style_guide.png",
+      "category": "style"
+    },
+    "fighter_ui_sheet": {
+      "path": "assets/final/ui/fighter_ui_sheet.png",
+      "category": "ui"
+    },
+    "fighter_art_bible": {
+      "path": "assets/final/ui/art_bible.png",
+      "category": "ui"
+    }
+  }
+}

@@ -1,0 +1,124 @@
+# Hero Smash .gitignore
+# Keep source, data, docs and runtime assets versioned.
+# Ignore local junk, build packages, caches and generated temp folders.
+
+# OS / editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.example.json
+.idea/
+*.iml
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+
+# Node / package managers
+node_modules/
+.npm/
+.pnpm-store/
+.yarn/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# Python tooling used by local scripts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Build / distribution output
+dist/
+build/
+out/
+release/
+releases/
+.cache/
+.parcel-cache/
+.vite/
+.next/
+.tmp/
+tmp/
+temp/
+
+# Generated archives / exported packages
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# Local extracted/generated Hero Smash builds
+HeroSmash_CustomEngine_*/
+HeroSmash_Arena01_*/
+_build*/
+_inspect*/
+_extract*/
+*_Runtime/
+*_Integrated/
+
+# Local save/debug exports
+localStorage*.json
+save_export*.json
+debug_export*.json
+coverage/
+
+# Browser / PWA generated artifacts
+workbox-*.js
+sw.js.map
+
+# Large raw art source files - keep exported runtime PNG/SVG assets instead
+*.psd
+*.psb
+*.ai
+*.afdesign
+*.clip
+*.kra
+*.blend
+*.fbx
+*.obj
+*.glb
+*.gltf
+
+# Video/audio raw working files
+*.prproj
+*.aep
+*.aup3
+*.wav
+*.aiff
+*.flac
+
+# Keep these project folders tracked:
+# src/
+# data/
+# assets/
+# docs/
+# tools/
+# index.html
+# manifest.webmanifest

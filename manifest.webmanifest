@@ -1,0 +1,11 @@
+{
+  "name": "Hero Smash",
+  "short_name": "HS v1.12",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#08060d",
+  "theme_color": "#00b4d8",
+  "orientation": "landscape",
+  "icons": [],
+  "version": "1.12"
+}

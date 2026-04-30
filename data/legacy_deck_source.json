@@ -1,0 +1,6724 @@
+[
+  {
+    "id": 1,
+    "name": "SWIFT GUARDIAN",
+    "effect": "Increases the first GUARDIAN HP by 40, each Evasion-Sect XP extra increases by 1.",
+    "branch": [
+      "Dodge",
+      "Guardian"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/1.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "SHARP EDGE",
+    "effect": "Increase base damage by 5.",
+    "branch": [
+      "Assault"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/2.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "ENDURING BLADE",
+    "effect": "Reduces enemy's Assault by 8%.",
+    "branch": [
+      "Assault"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/3.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "VEIL SHADOW",
+    "effect": "For every 100 points of shield lost, clear 100 points of magic damage.",
+    "branch": [
+      "Shield"
+    ],
+    "rarity": "Legendary",
+    "image_card": "res://data/images/cards/cards/4.jpeg",
+    "cost": 300,
+    "image_background": "res://data/images/cards/background/background_gold.png",
+    "levels": [
+      {
+        "level": 1,
+        "level_card": "res://data/images/cards/levels/lv_legendary.png"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "MYSTIC SABER",
+    "effect": "Each Assault has a 60% chance to restore 1.5 MP.",
+    "branch": [
+      "Assault",
+      "Essence"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/5.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "MYSTIC FROSTBITE",
+    "effect": "Each instance of casting Essence applies 20 stacks of Ice.",
+    "branch": [
+      "Essence",
+      "Ice"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/6.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "MYSTIC BARRIER",
+    "effect": "Each instance of casting Essence grants 15 stacks of Shield.",
+    "branch": [
+      "Essence",
+      "Shield"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/7.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "MYSTIC FLARE",
+    "effect": "Each instance of casting Essence grants 20 stacks of Fire.",
+    "branch": [
+      "Essence, Rage"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/8.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "BERSERKER FRENZY",
+    "effect": "Triggers upon taking lethal damage, silencing itself and preventing death for 1.4 seconds, and granting 80 Assault speed and 45% Lifesteal.",
+    "branch": [
+      "Assault"
+    ],
+    "rarity": "Legendary",
+    "image_card": "res://data/images/cards/cards/9.jpeg",
+    "cost": 300,
+    "image_background": "res://data/images/cards/background/background_gold.png",
+    "levels": [
+      {
+        "level": 1,
+        "level_card": "res://data/images/cards/levels/lv_legendary.png"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "BLOODTHIRST SLASH",
+    "effect": "Each Assault increases Assault damage by 4%, up to 20%.",
+    "branch": [
+      "Assault"
+    ],
+    "rarity": "Epic",
+    "image_card": "res://data/images/cards/cards/10.jpeg",
+    "cost": 200,
+    "image_background": "res://data/images/cards/background/background_violet.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_epic.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv2_epic.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv3_epic.png"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "MYSTIC VENOM",
+    "effect": "Each instance of casting Essence applies 15 stacks of Toxin.",
+    "branch": [
+      "Essence",
+      "Toxin"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/11.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "ARCANE WEAKNESS",
+    "effect": "Each instance of casting Essence inflicts 14 stacks of Wound.",
+    "branch": [
+      "Essence",
+      "Wound"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/12.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "MYSTIC WARD",
+    "effect": "Each Guardian restores 1.5 mana for the hero every 1.5 seconds.",
+    "branch": [
+      "Essence",
+      "Guardian"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/13.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "FERVENT ZEAL",
+    "effect": "Each Assault increases your Assault speed by 25, up to a maximum of 100",
+    "branch": [
+      "Assault"
+    ],
+    "rarity": "Epic",
+    "image_card": "res://data/images/cards/cards/14.jpeg",
+    "cost": 200,
+    "image_background": "res://data/images/cards/background/background_violet.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_epic.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv2_epic.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv3_epic.png"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "ARMORED SENTINEL",
+    "effect": "Increase the first GUARDIAN HP by 80, each Assault-Sect XP increase by an additional 2 points.",
+    "branch": [
+      "Assault",
+      "Guardian"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/15.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "COURAGEOUS MOMENT",
+    "effect": "A 20% chance of immediately performing a counterAssault. Assault when taking damage;",
+    "branch": [
+      "Assault"
+    ],
+    "rarity": "Epic",
+    "image_card": "res://data/images/cards/cards/16.jpeg",
+    "cost": 200,
+    "image_background": "res://data/images/cards/background/background_violet.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_epic.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv2_epic.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv3_epic.png"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "GIFT OF FREEDOM",
+    "effect": "Increases critical damage by 80%. At the start of the battle, temporarily raises critical chance to 100; lasts for 3 Crit.",
+    "branch": [
+      "Precision"
+    ],
+    "rarity": "Legendary",
+    "image_card": "res://data/images/cards/cards/17.jpeg",
+    "cost": 300,
+    "image_background": "res://data/images/cards/background/background_gold.png",
+    "levels": [
+      {
+        "level": 1,
+        "level_card": "res://data/images/cards/levels/lv_legendary.png"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "BLOOD EDGE",
+    "effect": "Grants 4 Assault for every 400 Health lost",
+    "branch": [
+      "Assault",
+      "Power"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/18.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "BLOOD OF WOUNDING",
+    "effect": "For avery 400 Health lost, applies 20 stacka of Wound.",
+    "branch": [
+      "Power",
+      "Wound"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/19.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "BLOOD OF ARCANE",
+    "effect": "For every 400 Health lost, gains 6 Mana",
+    "branch": [
+      "Power",
+      "Essence"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/20.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "name": "BLOOD OF ICE",
+    "effect": "For every 400 HP lost, applies 7 stacks of Ice",
+    "branch": [
+      "Power",
+      "Ice"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/21.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "name": "BLOOD OF POISON",
+    "effect": "For every 400 HP lost, applies 6 stacks of Toxin",
+    "branch": [
+      "Power",
+      "Toxin"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/22.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "name": "BLOOD GUARD",
+    "effect": "For every 400 Health lost, gains 13 stacks of Shield.",
+    "branch": [
+      "Power",
+      "Shield"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/23.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "name": "CHILLING EMBRACE",
+    "effect": "When HP falls below 25% for the first time, applies COLD EMBRACE on itself.",
+    "branch": [
+      "Ice"
+    ],
+    "rarity": "Legendary",
+    "image_card": "res://data/images/cards/cards/24.jpeg",
+    "cost": 300,
+    "image_background": "res://data/images/cards/background/background_gold.png",
+    "levels": [
+      {
+        "level": 1,
+        "level_card": "res://data/images/cards/levels/lv_legendary.png"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "name": "MANA BURST",
+    "effect": "Magical damage can be Crit grants 3 stack of Rage.",
+    "branch": [
+      "Precision"
+    ],
+    "rarity": "Epic",
+    "image_card": "res://data/images/cards/cards/25.jpeg",
+    "cost": 200,
+    "image_background": "res://data/images/cards/background/background_violet.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_epic.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv2_epic.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv3_epic.png"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "name": "BODY OF AGILITY",
+    "effect": "Grants 4 health for every 1 evasion you have at the start of the battle.",
+    "branch": [
+      "Power",
+      "Dodge"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/26.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "name": "BODY OF FURY",
+    "effect": "Bincrease HP by 40, each Critical-Strike-Sec XP increases by an additional 1 points.",
+    "branch": [
+      "Precision, Power"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/27.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "name": "BODY OF RENEWAL",
+    "effect": "Every 1 seconds, regenerates 1% of lost health, at least 1 points.",
+    "branch": [
+      "Healing",
+      "Power"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/28.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "name": "EAGLE SIGHT",
+    "effect": "Increases base critical chance by 2.",
+    "branch": [
+      "Precision"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/29.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "name": "FORTRESS",
+    "effect": "Has a 60% chance to gain 4 stacks of Shield with each Assault.",
+    "branch": [
+      "Assault",
+      "Shield"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/30.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "name": "BURNING FLESH",
+    "effect": "For every 400 Health lost, gains 10 stacks of Rage.",
+    "branch": [
+      "Rage",
+      "Power"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/31.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "name": "RAGE RESISTANCE",
+    "effect": "Opponent has a 8 chance to not perform a critical strike when dealing damage.",
+    "branch": [
+      "Precision"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/32.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "name": "FLAMING BARRIER",
+    "effect": "For every 15 stacks of Fire owned, increases the Shield stacks by 2.",
+    "branch": [
+      "Shield",
+      "Rage"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/33.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "name": "VENOMOUS BURN",
+    "effect": "For every 15 stacks of Fire owned, increases the Toxin damage dealt by 2.",
+    "branch": [
+      "Toxin, Rage"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/34.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "name": "SCORCHING WOUND",
+    "effect": "With each Crit, applies 3 stacks of Wound.",
+    "branch": [
+      "Wound",
+      "Rage"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/35.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "name": "BURSTING EDGE",
+    "effect": "Each time triggers a Crit, increases Assault by 6 for 3 seconds, up to 6 points.",
+    "branch": [
+      "Assault",
+      "Precision"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/36.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "name": "BURST FROSTBITE",
+    "effect": "With easch CRIT, applies 5 stacks of Ice.",
+    "branch": [
+      "Precision",
+      "Ice"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/37.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "name": "BURST RAGE",
+    "effect": "Each instance of Crit grants 5 stacks of Rage.",
+    "branch": [
+      "Precision",
+      "Rage"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/38.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "name": "BURST ARCANE",
+    "effect": "Eith each CRIT, gains 1.5 points of MP.",
+    "branch": [
+      "Precision",
+      "Essence"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/39.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "name": "BURST RENEWAL",
+    "effect": "With each Crit, Regen 10 HP.",
+    "branch": [
+      "Healing",
+      "Precision"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/40.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "name": "BURST BARRIER",
+    "effect": "Whith each Crit, gains 4 stacks of Shield.",
+    "branch": [
+      "Precision",
+      "Shield"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/41.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "name": "BURST VENOM",
+    "effect": "With each Crit, applies 4 stacks of TOXIN",
+    "branch": [
+      "Precision",
+      "Toxin"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/42.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "name": "BURST SCAR",
+    "effect": "With each Crit, applies 3 stacks of Wound.",
+    "branch": [
+      "Precision",
+      "Wound"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/43.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "name": "SOURCE EXPLOSION",
+    "effect": "Upon a Crit, there is a 25% chance to deal 200 Health Loss damage and stun the target for 0.2 seconds.",
+    "branch": [
+      "Precision"
+    ],
+    "rarity": "Legendary",
+    "image_card": "res://data/images/cards/cards/44.jpeg",
+    "cost": 300,
+    "image_background": "res://data/images/cards/background/background_gold.png",
+    "levels": [
+      {
+        "level": 1,
+        "level_card": "res://data/images/cards/levels/lv_legendary.png"
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "name": "WAR CRY",
+    "effect": "Each time while Crit, increases critical strike rate by 1 for 3 sec, up to 5.",
+    "branch": [
+      "Precision"
+    ],
+    "rarity": "Epic",
+    "image_card": "res://data/images/cards/cards/45.jpeg",
+    "cost": 200,
+    "image_background": "res://data/images/cards/background/background_violet.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_epic.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv2_epic.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv3_epic.png"
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "name": "ARCANE DEFLECTION",
+    "effect": "Magical damage can subject to Evasion whit a chance equal to 10% of the current evasion.",
+    "branch": [
+      "Dodge"
+    ],
+    "rarity": "Epic",
+    "image_card": "res://data/images/cards/cards/46.jpeg",
+    "cost": 200,
+    "image_background": "res://data/images/cards/background/background_violet.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_epic.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv2_epic.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv3_epic.png"
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "name": "SPIDER SENSE",
+    "effect": "Each time Evasion, increases evasion rate by 1 for 3 sec, up to 5.",
+    "branch": [
+      "Dodge"
+    ],
+    "rarity": "Epic",
+    "image_card": "res://data/images/cards/cards/47.jpeg",
+    "cost": 200,
+    "image_background": "res://data/images/cards/background/background_violet.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_epic.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv2_epic.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv3_epic.png"
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "name": "INVISIBLE COUNTER",
+    "effect": "Deals 15 points of magic damage to the enemy with each Evasion.",
+    "branch": [
+      "Dodge"
+    ],
+    "rarity": "Epic",
+    "image_card": "res://data/images/cards/cards/48.jpeg",
+    "cost": 200,
+    "image_background": "res://data/images/cards/background/background_violet.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_epic.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv2_epic.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv3_epic.png"
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "name": "DIVINE REFLECTION",
+    "effect": "When Evasion, there is a 50% chance to reflect incoming damage as magical damage. This reflected damage won't be reflected again.",
+    "branch": [
+      "Dodge"
+    ],
+    "rarity": "Legendary",
+    "image_card": "res://data/images/cards/cards/49.jpeg",
+    "cost": 300,
+    "image_background": "res://data/images/cards/background/background_gold.png",
+    "levels": [
+      {
+        "level": 1,
+        "level_card": "res://data/images/cards/levels/lv_legendary.png"
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "name": "AGILE SHACKLES",
+    "effect": "Has 8% chance to ignore opponent's evade.",
+    "branch": [
+      "Dodge"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/50.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "name": "TRICKERY",
+    "effect": "When taking any damage, there is a [8% + 20%* evasion rate] chance to change form and is immune to damage for 0.2 sec. Has a 0.5 sec cooldown.",
+    "branch": [
+      "Dodge"
+    ],
+    "rarity": "Legendary",
+    "image_card": "res://data/images/cards/cards/51.jpeg",
+    "cost": 300,
+    "image_background": "res://data/images/cards/background/background_gold.png",
+    "levels": [
+      {
+        "level": 1,
+        "level_card": "res://data/images/cards/levels/lv_legendary.png"
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "name": "TWIN BREATH",
+    "effect": "Each time Ice is inflicted, there is 30% chance to grant 4 stack(s) of Fire",
+    "branch": [
+      "Ice, Rage"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/52.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "name": "AGILITY BOOST",
+    "effect": "Increase Evasion by 3 points.",
+    "branch": [
+      "Dodge"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/53.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "name": "BURNING FURY",
+    "effect": "Grants 6 stacks of Fire every 1 seconds",
+    "branch": [
+      "Rage"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/54.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "name": "ENHANCED WARD",
+    "effect": "Increase the HP of first Guardian by 100.",
+    "branch": [
+      "Guardian"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/55.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "name": "INNER FLAME",
+    "effect": "Gains 80 stacks of Rage and 30 stacks of PERPETUAL FIRE before thee battle starts.",
+    "branch": [
+      "Rage"
+    ],
+    "rarity": "Epic",
+    "image_card": "res://data/images/cards/cards/56.jpeg",
+    "cost": 200,
+    "image_background": "res://data/images/cards/background/background_violet.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_epic.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv2_epic.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv3_epic.png"
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "name": "EXCLUSION WARD",
+    "effect": "Increases the damage taken by enemy Guardian by 15%.",
+    "branch": [
+      "Guardian"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/57.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "name": "MORTAR BARRAGE",
+    "effect": "When gaining Fire, there is a 30% chance to summon a ball of fire, dealing 30 magical damage.",
+    "branch": [
+      "Rage"
+    ],
+    "rarity": "Epic",
+    "image_card": "res://data/images/cards/cards/58.jpeg",
+    "cost": 200,
+    "image_background": "res://data/images/cards/background/background_violet.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_epic.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv2_epic.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv3_epic.png"
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "name": "CURSE OF WEAKENING",
+    "effect": "Applies [current battle duration] * 2stacks of Wound on the enemy every 1 sec.",
+    "branch": [
+      "Wound"
+    ],
+    "rarity": "Epic",
+    "image_card": "res://data/images/cards/cards/59.jpeg",
+    "cost": 200,
+    "image_background": "res://data/images/cards/background/background_violet.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_epic.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv2_epic.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv3_epic.png"
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "name": "SOUL FURY",
+    "effect": "Deals magical damage equal to [Fire stacks gained within duration]* 3 to enemies every 2 second.",
+    "branch": [
+      "Rage"
+    ],
+    "rarity": "Legendary",
+    "image_card": "res://data/images/cards/cards/60.jpeg",
+    "cost": 300,
+    "image_background": "res://data/images/cards/background/background_gold.png",
+    "levels": [
+      {
+        "level": 1,
+        "level_card": "res://data/images/cards/levels/lv_legendary.png"
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "name": "BRAVE CHARGE",
+    "effect": "The Guardian explodes on its death, dealing magic damage equal to 130 + [Guardian's Maximum Health] * 35%.",
+    "branch": [
+      "Guardian"
+    ],
+    "rarity": "Epic",
+    "image_card": "res://data/images/cards/cards/61.jpeg",
+    "cost": 200,
+    "image_background": "res://data/images/cards/background/background_violet.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_epic.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv2_epic.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv3_epic.png"
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "name": "HEALING FLAME",
+    "effect": "Each instance of health Regen has a 30% chance of gaining 4 stacks of Rage.",
+    "branch": [
+      "Healing",
+      "Rage"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/62.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "name": "FLAME WARD",
+    "effect": "For every 1.5 sec, each Guardian provides the hero with 10 stacks of Fire.",
+    "branch": [
+      "Guardian",
+      "Rage"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/63.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "name": "FROZEN HEALING",
+    "effect": "Every time REGEN helat, has a 30% chance to apply 4 Stack of Ice.",
+    "branch": [
+      "Healing,",
+      "Ice"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/64.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "name": "FROST SNAP",
+    "effect": "Applies 80 stacks of Ice and 30 stacks of PERPETUAL Ice before the battle starts.",
+    "branch": [
+      "Ice"
+    ],
+    "rarity": "Epic",
+    "image_card": "res://data/images/cards/cards/65.jpeg",
+    "cost": 200,
+    "image_background": "res://data/images/cards/background/background_violet.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_epic.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv2_epic.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv3_epic.png"
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "name": "DISRUPTIVE FURY",
+    "effect": "There is a 8% chance for he enemy's Fire to be failed uppon receving it.",
+    "branch": [
+      "Rage"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/66.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "name": "FRIGID CHILL",
+    "effect": "There is a 30% chance to summon Ice Shards when inflicting Ice, dealing 30 magical damage.",
+    "branch": [
+      "Ice"
+    ],
+    "rarity": "Epic",
+    "image_card": "res://data/images/cards/cards/67.jpeg",
+    "cost": 200,
+    "image_background": "res://data/images/cards/background/background_violet.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_epic.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv2_epic.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv3_epic.png"
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "name": "ICE BARRIER",
+    "effect": "For every 15 stacks of Ice owned, increases the Shield stacks by 2.",
+    "branch": [
+      "Ice",
+      "Shield"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/68.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "name": "FROST SLASH",
+    "effect": "Has  60% change to apply 4 stacks of Ice with each Assault.",
+    "branch": [
+      "Assault",
+      "Ice"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/69.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "name": "FROST WARD",
+    "effect": "For every 1.5 sec, each Guardian provides the hero with 10 stacks of Ice.",
+    "branch": [
+      "Ice",
+      "Guadian"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/70.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "name": "HEAVY BASH",
+    "effect": "Deals additional 25 HP loss damage when Crit.",
+    "branch": [
+      "Precision"
+    ],
+    "rarity": "Epic",
+    "image_card": "res://data/images/cards/cards/71.jpeg",
+    "cost": 300,
+    "image_background": "res://data/images/cards/background/background_violet.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_epic.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv2_epic.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv3_epic.png"
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "name": "RAGE SLASH",
+    "effect": "Each instance of Assault has a 40% chance to obtain 3 stacks of Fire",
+    "branch": [
+      "Assault",
+      "Rage"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/72.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "name": "FROST NOVA",
+    "effect": "Summons a Ice Matrix every 1.8 seconds, dealing magical damage equal to (180 + CurrentIce stacks * 1)",
+    "branch": [
+      "Ice"
+    ],
+    "rarity": "Legendary",
+    "image_card": "res://data/images/cards/cards/73.jpeg",
+    "cost": 300,
+    "image_background": "res://data/images/cards/background/background_gold.png",
+    "levels": [
+      {
+        "level": 1,
+        "level_card": "res://data/images/cards/levels/lv_legendary.png"
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "name": "ICE ENCHANTMENT",
+    "effect": "When taking damage, there is 33% chance to apply 12 stacks of Ice",
+    "branch": [
+      "Ice"
+    ],
+    "rarity": "Epic",
+    "image_card": "res://data/images/cards/cards/74.jpeg",
+    "cost": 200,
+    "image_background": "res://data/images/cards/background/background_violet.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_epic.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv2_epic.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv3_epic.png"
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "name": "HEALING WARD",
+    "effect": "Every 1.5 sec, heals Guardian 8 HP.",
+    "branch": [
+      "Guardian",
+      "Healing"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/75.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 76,
+    "name": "FROST IMMUNITY",
+    "effect": "There is a 15% chance for the enemy's Ice to be voided.",
+    "branch": [
+      "Ice"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/76.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "name": "HEALING BARRIER",
+    "effect": "Each instance of health Regen has a 30% chance of gaining 4 stacks of Shield.",
+    "branch": [
+      "Healing",
+      "Shield"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/77.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 78,
+    "name": "HEALING SLASH",
+    "effect": "Has  60% change to regenerate 10 health with each Assault.",
+    "branch": [
+      "Assault",
+      "Healing"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/78.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 79,
+    "name": "SPIRIT LINK",
+    "effect": "Reduces 0.1s Guardian trigger interval, 30% chance to restore 60 HP to Guardian when damage dealt.",
+    "branch": [
+      "Guardian"
+    ],
+    "rarity": "Legendary",
+    "image_card": "res://data/images/cards/cards/79.jpeg",
+    "cost": 300,
+    "image_background": "res://data/images/cards/background/background_gold.png",
+    "levels": [
+      {
+        "level": 1,
+        "level_card": "res://data/images/cards/levels/lv_legendary.png"
+      }
+    ]
+  },
+  {
+    "id": 80,
+    "name": "TWIN SANCTUM",
+    "effect": "At the start of the battle, summons 1 Guardian that have 50% health of the first Guardian.",
+    "branch": [
+      "Guardian"
+    ],
+    "rarity": "Legendary",
+    "image_card": "res://data/images/cards/cards/80.jpeg",
+    "cost": 300,
+    "image_background": "res://data/images/cards/background/background_gold.png",
+    "levels": [
+      {
+        "level": 1,
+        "level_card": "res://data/images/cards/levels/lv_legendary.png"
+      }
+    ]
+  },
+  {
+    "id": 81,
+    "name": "ARCHER WARD",
+    "effect": "Each Guardian shoots bouncing balls every 1.5 seconds, dealing 60 physical damage",
+    "branch": [
+      "Guardian"
+    ],
+    "rarity": "Epic",
+    "image_card": "res://data/images/cards/cards/81.jpeg",
+    "cost": 200,
+    "image_background": "res://data/images/cards/background/background_violet.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_epic.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv2_epic.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv3_epic.png"
+      }
+    ]
+  },
+  {
+    "id": 82,
+    "name": "UNENDING STRIKE",
+    "effect": "After an Assault, there is a 40% chance to re-invoke the Assault once.",
+    "branch": [
+      "Assault"
+    ],
+    "rarity": "Legendary",
+    "image_card": "res://data/images/cards/cards/82.jpeg",
+    "cost": 300,
+    "image_background": "res://data/images/cards/background/background_gold.png",
+    "levels": [
+      {
+        "level": 1,
+        "level_card": "res://data/images/cards/levels/lv_legendary.png"
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "name": "SUMMONING WARD",
+    "effect": "Effective 1 time in each battle. When the hero's health drops below 50%, summons a Guardian with 300 health",
+    "branch": [
+      "Guardian"
+    ],
+    "rarity": "Epic",
+    "image_card": "res://data/images/cards/cards/83.jpeg",
+    "cost": 200,
+    "image_background": "res://data/images/cards/background/background_violet.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_epic.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv2_epic.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv3_epic.png"
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "name": "SHADOW VENOM",
+    "effect": "Every 1 sec strikes a Shadow Toxin, dealing 50 points of magic damage and taking 15 points of/Perpetual Wound.",
+    "branch": [
+      "Wound"
+    ],
+    "rarity": "Legendary",
+    "image_card": "res://data/images/cards/cards/84.jpeg",
+    "cost": 300,
+    "image_background": "res://data/images/cards/background/background_gold.png",
+    "levels": [
+      {
+        "level": 1,
+        "level_card": "res://data/images/cards/levels/lv_legendary.png"
+      }
+    ]
+  },
+  {
+    "id": 85,
+    "name": "ENDLESS FROSTBITE",
+    "effect": "Applies 12 stacks of Ice every 1 second.",
+    "branch": [
+      "Ice"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/85.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 86,
+    "name": "ENDLESS WEAKNESS",
+    "effect": "Applies 4 stacks of Wound every 1 sec.",
+    "branch": [
+      "Wound"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/86.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 87,
+    "name": "WEAKNESS IMMUNITY",
+    "effect": "There is a 8% chance for the enemy's Wound fails.",
+    "branch": [
+      "Wound"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/87.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 88,
+    "name": "HEALING DISRUPTION",
+    "effect": "Enemies have a 15% chance to fail Regen effects.",
+    "branch": [
+      "Healing"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/88.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 89,
+    "name": "NATURAL RECOVERY",
+    "effect": "Every 1 sec, Regen 8 HP.",
+    "branch": [
+      "Healing"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/89.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 90,
+    "name": "SOUL SNARE",
+    "effect": "Every 0.5 seconds, deal 20 magic damage, which does not consume Wound.",
+    "branch": [
+      "Wound"
+    ],
+    "rarity": "Legendary",
+    "image_card": "res://data/images/cards/cards/90.jpeg",
+    "cost": 300,
+    "image_background": "res://data/images/cards/background/background_gold.png",
+    "levels": [
+      {
+        "level": 1,
+        "level_card": "res://data/images/cards/levels/lv_legendary.png"
+      }
+    ]
+  },
+  {
+    "id": 91,
+    "name": "GUARDING SLASH",
+    "effect": "When Shield is activated, there is a 25% chance to deal 40 physical damage to an enemy.",
+    "branch": [
+      "Shield"
+    ],
+    "rarity": "Epic",
+    "image_card": "res://data/images/cards/cards/91.jpeg",
+    "cost": 200,
+    "image_background": "res://data/images/cards/background/background_violet.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_epic.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv2_epic.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv3_epic.png"
+      }
+    ]
+  },
+  {
+    "id": 92,
+    "name": "ARCANE HEALING",
+    "effect": "Eache cast of Essence will Regen 50 health.",
+    "branch": [
+      "Essence",
+      "Healing"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/92.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 93,
+    "name": "ENDLESS GUARD",
+    "effect": "Grants 4 stacks of Shield every 1 sec.",
+    "branch": [
+      "Shield"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/93.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 94,
+    "name": "SHIELD BREAKER",
+    "effect": "There is a 8% chance for the enemy's Shield to be failed upon receving it.",
+    "branch": [
+      "Shield"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/94.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 95,
+    "name": "DAMAGE MASTERY",
+    "effect": "Deals bonus damage equal to 40 points of Wound.",
+    "branch": [
+      "Wound"
+    ],
+    "rarity": "Epic",
+    "image_card": "res://data/images/cards/cards/95.jpeg",
+    "cost": 200,
+    "image_background": "res://data/images/cards/background/background_violet.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_epic.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv2_epic.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv3_epic.png"
+      }
+    ]
+  },
+  {
+    "id": 96,
+    "name": "SOUL ABSORPTION",
+    "effect": "For every 120 stacks of Wound applied, deals 30 magical damage to the enemy.",
+    "branch": [
+      "Wound"
+    ],
+    "rarity": "Epic",
+    "image_card": "res://data/images/cards/cards/96.jpeg",
+    "cost": 200,
+    "image_background": "res://data/images/cards/background/background_violet.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_epic.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv2_epic.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv3_epic.png"
+      }
+    ]
+  },
+  {
+    "id": 97,
+    "name": "OATHBREAKER",
+    "effect": "Triggers 1 time when health drops below 30%; damage and Regen will be calculated after 2 seconds, but the Regen effect will be doubled",
+    "branch": [
+      "Healing"
+    ],
+    "rarity": "Legendary",
+    "image_card": "res://data/images/cards/cards/97.jpeg",
+    "cost": 300,
+    "image_background": "res://data/images/cards/background/background_gold.png",
+    "levels": [
+      {
+        "level": 1,
+        "level_card": "res://data/images/cards/levels/lv_legendary.png"
+      }
+    ]
+  },
+  {
+    "id": 98,
+    "name": "DIVINE DETONATION",
+    "effect": "Every time Regen 400 HP, deal 50 physical damage.",
+    "branch": [
+      "Healing"
+    ],
+    "rarity": "Epic",
+    "image_card": "res://data/images/cards/cards/98.jpeg",
+    "cost": 200,
+    "image_background": "res://data/images/cards/background/background_violet.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_epic.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv2_epic.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv3_epic.png"
+      }
+    ]
+  },
+  {
+    "id": 99,
+    "name": "BODY OF FORTITUDE",
+    "effect": "Grants 100 base HP.",
+    "branch": [
+      "Power"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/99.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 100,
+    "name": "HEARTSEEKER AURA",
+    "effect": "Deal [period regeneration HP * 40%] magical damage per second. Winning each battle +2 regeneration bonus.",
+    "branch": [
+      "Healing"
+    ],
+    "rarity": "Legendary",
+    "image_card": "res://data/images/cards/cards/100.jpeg",
+    "cost": 300,
+    "image_background": "res://data/images/cards/background/background_gold.png",
+    "levels": [
+      {
+        "level": 1,
+        "level_card": "res://data/images/cards/levels/lv_legendary.png"
+      }
+    ]
+  },
+  {
+    "id": 101,
+    "name": "VENOMOUS FROSTBITE",
+    "effect": "Each time Ice is applied, there is a 30% chance to apply 4 stack(s) of Wound",
+    "branch": [
+      "Ice",
+      "Wound"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/101.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 102,
+    "name": "POWER OF EARTH",
+    "effect": "Regen 6% health every 6 seconds.",
+    "branch": [
+      "Healing"
+    ],
+    "rarity": "Epic",
+    "image_card": "res://data/images/cards/cards/102.jpeg",
+    "cost": 200,
+    "image_background": "res://data/images/cards/background/background_violet.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_epic.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv2_epic.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv3_epic.png"
+      }
+    ]
+  },
+  {
+    "id": 103,
+    "name": "SHADOW RAYS",
+    "effect": "Each instance of health Regen has a 20% chance of dealing 50 magical damage",
+    "branch": [
+      "Healing"
+    ],
+    "rarity": "Epic",
+    "image_card": "res://data/images/cards/cards/103.jpeg",
+    "cost": 200,
+    "image_background": "res://data/images/cards/background/background_violet.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_epic.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv2_epic.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv3_epic.png"
+      }
+    ]
+  },
+  {
+    "id": 104,
+    "name": "PLAGUE DEFENDER",
+    "effect": "For every 1.5 seconds, wach GUARDIAN applies 10 stacks of TOXIN.",
+    "branch": [
+      "Toxin",
+      "Guardian"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/104.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 105,
+    "name": "POISONOUS REMEDY",
+    "effect": "Every time REGEN helat, has a 30% chance to apply 4 Stack of TOXIN.",
+    "branch": [
+      "Healing",
+      "Toxin"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/105.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 106,
+    "name": "SUPERNOVA",
+    "effect": "Upon first death, trasform to a FIXED STAR",
+    "branch": [
+      "Rage"
+    ],
+    "rarity": "Legendary",
+    "image_card": "res://data/images/cards/cards/106.jpeg",
+    "cost": 300,
+    "image_background": "res://data/images/cards/background/background_gold.png",
+    "levels": [
+      {
+        "level": 1,
+        "level_card": "res://data/images/cards/levels/lv_legendary.png"
+      }
+    ]
+  },
+  {
+    "id": 107,
+    "name": "DEFENSE MASTERY",
+    "effect": "Getting 10 Perpetual Shield",
+    "branch": [
+      "Shield"
+    ],
+    "rarity": "Epic",
+    "image_card": "res://data/images/cards/cards/107.jpeg",
+    "cost": 200,
+    "image_background": "res://data/images/cards/background/background_violet.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_epic.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv2_epic.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv3_epic.png"
+      }
+    ]
+  },
+  {
+    "id": 108,
+    "name": "ION SHELL",
+    "effect": "Deals 60 maical damage to the enemy on every 60 stack of Shield gained.",
+    "branch": [
+      "Shield"
+    ],
+    "rarity": "Epic",
+    "image_card": "res://data/images/cards/cards/108.jpeg",
+    "cost": 200,
+    "image_background": "res://data/images/cards/background/background_violet.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_epic.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv2_epic.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv3_epic.png"
+      }
+    ]
+  },
+  {
+    "id": 109,
+    "name": "ENERGY DISCHARGE",
+    "effect": "For every 1 sec, enemies suffer Health Loss 1% of their current Health.",
+    "branch": [
+      "Power"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/109.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 110,
+    "name": "RAGE WARD",
+    "effect": "Increase the first Guardian HP by 40, each Critical-Strike-Sec XP increases by an additional 1 points.",
+    "branch": [
+      "Precision",
+      "Guardian"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/110.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 111,
+    "name": "LAST STAND",
+    "effect": "Become immune to death 1 time and immediately gains 1200 stack(s) of Shield, and in the next 3 seconds, Shield weaknes once per second.",
+    "branch": [
+      "Shield"
+    ],
+    "rarity": "Legendary",
+    "image_card": "res://data/images/cards/cards/111.jpeg",
+    "cost": 300,
+    "image_background": "res://data/images/cards/background/background_gold.png",
+    "levels": [
+      {
+        "level": 1,
+        "level_card": "res://data/images/cards/levels/lv_legendary.png"
+      }
+    ]
+  },
+  {
+    "id": 112,
+    "name": "UNBREAKABLE SPIRIT",
+    "effect": "Increases the damage dealt by 1% for every 600 HP lost.",
+    "branch": [
+      "Power"
+    ],
+    "rarity": "Epic",
+    "image_card": "res://data/images/cards/cards/112.jpeg",
+    "cost": 200,
+    "image_background": "res://data/images/cards/background/background_violet.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_epic.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv2_epic.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv3_epic.png"
+      }
+    ]
+  },
+  {
+    "id": 113,
+    "name": "WARSONG DRUMS",
+    "effect": "Every 2 sec deals magical damage equal to 4% max HP; Every 500 HP loss reduces 0.2 sec interval, no less than 0.6 sec.",
+    "branch": [
+      "Power"
+    ],
+    "rarity": "Legendary",
+    "image_card": "res://data/images/cards/cards/113.jpeg",
+    "cost": 300,
+    "image_background": "res://data/images/cards/background/background_gold.png",
+    "levels": [
+      {
+        "level": 1,
+        "level_card": "res://data/images/cards/levels/lv_legendary.png"
+      }
+    ]
+  },
+  {
+    "id": 114,
+    "name": "VITALITY SHARING",
+    "effect": "Increase the first Guardian HP by 40, each Health-Sect XP increases by an additional 1 points",
+    "branch": [
+      "Power",
+      "Guardian"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/114.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 115,
+    "name": "ENDLESS VENOM",
+    "effect": "Applies 4 stacks of Toxin every 1 sec.",
+    "branch": [
+      "Toxin"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/115.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 116,
+    "name": "BEAST BLOODLINE",
+    "effect": "Increases 20% HP.",
+    "branch": [
+      "Power"
+    ],
+    "rarity": "Epic",
+    "image_card": "res://data/images/cards/cards/116.jpeg",
+    "cost": 200,
+    "image_background": "res://data/images/cards/background/background_violet.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_epic.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv2_epic.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv3_epic.png"
+      }
+    ]
+  },
+  {
+    "id": 117,
+    "name": "GUARDIAN WARD",
+    "effect": "For every 1.5 sec, each Guardian grants the hero with 9 stacks of Shield.",
+    "branch": [
+      "Shield",
+      "Guardian"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/117.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 118,
+    "name": "WOUND TRANSFER",
+    "effect": "Every time Regen helath, has a 20% chance to apply 5 stacks of Wound.",
+    "branch": [
+      "Healing",
+      "Wound"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/118.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 119,
+    "name": "BLOOD SLASH",
+    "effect": "Deals physical damage equal to 5% of self max Health to enemies every 6 sec.",
+    "branch": [
+      "Power"
+    ],
+    "rarity": "Epic",
+    "image_card": "res://data/images/cards/cards/119.jpeg",
+    "cost": 200,
+    "image_background": "res://data/images/cards/background/background_violet.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_epic.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv2_epic.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv3_epic.png"
+      }
+    ]
+  },
+  {
+    "id": 120,
+    "name": "LIGHTBRINGER",
+    "effect": "Respawns 1 time upon death, removing all debuffs and restoring 40% HP.",
+    "branch": [
+      "Power"
+    ],
+    "rarity": "Legendary",
+    "image_card": "res://data/images/cards/cards/120.jpeg",
+    "cost": 300,
+    "image_background": "res://data/images/cards/background/background_gold.png",
+    "levels": [
+      {
+        "level": 1,
+        "level_card": "res://data/images/cards/levels/lv_legendary.png"
+      }
+    ]
+  },
+  {
+    "id": 121,
+    "name": "REVENGE SPIRIT",
+    "effect": "When taking damage, there is 33% chance to gain 12 stacks of Rage.",
+    "branch": [
+      "Rage"
+    ],
+    "rarity": "Epic",
+    "image_card": "res://data/images/cards/cards/121.jpeg",
+    "cost": 200,
+    "image_background": "res://data/images/cards/background/background_violet.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_epic.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv2_epic.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv3_epic.png"
+      }
+    ]
+  },
+  {
+    "id": 122,
+    "name": "NETHER VENOM",
+    "effect": "Reduces the tick interval of Toxin damage by o.3 seconds, and each tick of Toxin damage has a 40% chance not to weaken.",
+    "branch": [
+      "Toxin"
+    ],
+    "rarity": "Legendary",
+    "image_card": "res://data/images/cards/cards/122.jpeg",
+    "cost": 300,
+    "image_background": "res://data/images/cards/background/background_gold.png",
+    "levels": [
+      {
+        "level": 1,
+        "level_card": "res://data/images/cards/levels/lv_legendary.png"
+      }
+    ]
+  },
+  {
+    "id": 123,
+    "name": "DOOM PLAGUE",
+    "effect": "When your healts falls below 40%, summons a Venomous Matrix to inflict 400 stacks of Toxin.",
+    "branch": [
+      "Toxin"
+    ],
+    "rarity": "Legendary",
+    "image_card": "res://data/images/cards/cards/123.jpeg",
+    "cost": 300,
+    "image_background": "res://data/images/cards/background/background_gold.png",
+    "levels": [
+      {
+        "level": 1,
+        "level_card": "res://data/images/cards/levels/lv_legendary.png"
+      }
+    ]
+  },
+  {
+    "id": 124,
+    "name": "CORROSIVE SKIN",
+    "effect": "There is a 50% chance to apply 10 stades of Toxin when taking damage.",
+    "branch": [
+      "Toxin"
+    ],
+    "rarity": "Epic",
+    "image_card": "res://data/images/cards/cards/124.jpeg",
+    "cost": 200,
+    "image_background": "res://data/images/cards/background/background_violet.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_epic.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv2_epic.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv3_epic.png"
+      }
+    ]
+  },
+  {
+    "id": 125,
+    "name": "PRE-BATTLE VENOM",
+    "effect": "Inflict 100 stacks of Toxin before the battle begins.",
+    "branch": [
+      "Toxin"
+    ],
+    "rarity": "Epic",
+    "image_card": "res://data/images/cards/cards/125.jpeg",
+    "cost": 200,
+    "image_background": "res://data/images/cards/background/background_violet.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_epic.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv2_epic.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv3_epic.png"
+      }
+    ]
+  },
+  {
+    "id": 126,
+    "name": "THORN BARRIER",
+    "effect": "Each time when a Shield is gained, there is a 30% chance to apply 4 stacks of Wound.",
+    "branch": [
+      "Shield",
+      "Wound"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/126.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 127,
+    "name": "VENOM GUARD",
+    "effect": "Each time when a Shield is gained, there is a 30% chance to apply 4 stacks Toxin.",
+    "branch": [
+      "Toxin",
+      "Shield"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/127.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 128,
+    "name": "TOXIC TEAR",
+    "effect": "There is a 30% chance to apply 8 stacks of Toxin when dealing damage to enemies.",
+    "branch": [
+      "Toxin"
+    ],
+    "rarity": "Epic",
+    "image_card": "res://data/images/cards/cards/128.jpeg",
+    "cost": 200,
+    "image_background": "res://data/images/cards/background/background_violet.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_epic.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv2_epic.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv3_epic.png"
+      }
+    ]
+  },
+  {
+    "id": 129,
+    "name": "VENOM FROSTBITE",
+    "effect": "Every time Ice helat, has a 30% chance to apply 4 Stack of TOXIN.",
+    "branch": [
+      "Toxin",
+      "Ice"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/129.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 130,
+    "name": "VENOM IMMUNITY",
+    "effect": "Reduces 8% Toxin damage.",
+    "branch": [
+      "Toxin"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/130.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 131,
+    "name": "ARCANE TEMPEST",
+    "effect": "Gains 1 stack of the effect when battle begins and when cast Essence, each stack increases 20% Essence effect and deals 40 magical damager second.",
+    "branch": [
+      "Essence"
+    ],
+    "rarity": "Legendary",
+    "image_card": "res://data/images/cards/cards/131.jpeg",
+    "cost": 300,
+    "image_background": "res://data/images/cards/background/background_gold.png",
+    "levels": [
+      {
+        "level": 1,
+        "level_card": "res://data/images/cards/levels/lv_legendary.png"
+      }
+    ]
+  },
+  {
+    "id": 132,
+    "name": "INVISIBLE BLADE",
+    "effect": "Each instance of Evasion increase 5 Assault for 1 sec.",
+    "branch": [
+      "Assault",
+      "Dodge"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/132.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 133,
+    "name": "PARAGON STRIKE",
+    "effect": "Casts Essence once immediately upon starting a battle",
+    "branch": [
+      "Essence"
+    ],
+    "rarity": "Legendary",
+    "image_card": "res://data/images/cards/cards/133.jpeg",
+    "cost": 300,
+    "image_background": "res://data/images/cards/background/background_gold.png",
+    "levels": [
+      {
+        "level": 1,
+        "level_card": "res://data/images/cards/levels/lv_legendary.png"
+      }
+    ]
+  },
+  {
+    "id": 134,
+    "name": "INVISIBLE FROST",
+    "effect": "Applies 3 stacks of Ice after each Evasion.",
+    "branch": [
+      "Dodge",
+      "Ice"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/134.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 135,
+    "name": "INVISIBLE RAGE",
+    "effect": "Each instance of Evasion grants 4 stacks of Fire.",
+    "branch": [
+      "Dodge",
+      "Rage"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/135.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 136,
+    "name": "INVISIBLE HEALING",
+    "effect": "REGEN 10 HP with each EVASION.",
+    "branch": [
+      "Dodge",
+      "Healing"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/136.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 137,
+    "name": "INVISIBLE ARCANE",
+    "effect": "Restores 15 points of MP with each Evasion.",
+    "branch": [
+      "Dodge",
+      "Essence"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/137.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 138,
+    "name": "INVISIBLE WRATH",
+    "effect": "Every 3 evasion chance increases critial strike damage by 4%",
+    "branch": [
+      "Precision",
+      "Dodge"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/138.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 139,
+    "name": "INVISIBLE GUARD",
+    "effect": "Gains 4 stack of Shield with each Evasion.",
+    "branch": [
+      "Dodge",
+      "Shield"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/139.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 140,
+    "name": "INVISIBLE VENOM",
+    "effect": "Applies 3 stacks of Toxin after each Evasion.",
+    "branch": [
+      "Dodge",
+      "Toxin"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/140.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 141,
+    "name": "INVISIBLE SCAR",
+    "effect": "Applies 3 stacks of Wound after each Evasion.",
+    "branch": [
+      "Dodge",
+      "Wound"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/141.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 142,
+    "name": "ARCANE TORRENT",
+    "effect": "Each instance of casting Essence immediately deals 120 magical damage to the enemy",
+    "branch": [
+      "Essence"
+    ],
+    "rarity": "Epic",
+    "image_card": "res://data/images/cards/cards/142.jpeg",
+    "cost": 200,
+    "image_background": "res://data/images/cards/background/background_violet.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_epic.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv2_epic.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv3_epic.png"
+      }
+    ]
+  },
+  {
+    "id": 143,
+    "name": "VENOM STRIKE",
+    "effect": "Has  60% change to apply 4 stacks of TOXIN with each Assault.",
+    "branch": [
+      "Assault",
+      "Toxin"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/143.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 144,
+    "name": "WEAKNESS SENTINEL",
+    "effect": "For every 1.5 seconds, each Guardian applies 9 stacks of Wound.",
+    "branch": [
+      "Wound",
+      "Guardian"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/144.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 145,
+    "name": "ARCANE SUPPRESSION",
+    "effect": "Reduces the enemy's mana regeneration by 15%.",
+    "branch": [
+      "Essence"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/145.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 146,
+    "name": "WEAKNESS SLASH",
+    "effect": "Has a 40% chance to apply 5 stacks of Wound with each Assault.",
+    "branch": [
+      "Assault",
+      "Wound"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/146.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 147,
+    "name": "ESSENCE FLUX",
+    "effect": "Restores 10% MP after casting Essence",
+    "branch": [
+      "Essence"
+    ],
+    "rarity": "Epic",
+    "image_card": "res://data/images/cards/cards/147.jpeg",
+    "cost": 200,
+    "image_background": "res://data/images/cards/background/background_violet.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_epic.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv2_epic.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv3_epic.png"
+      }
+    ]
+  },
+  {
+    "id": 148,
+    "name": "ARCANE SURGE",
+    "effect": "Increase the Essence effect by 10%.",
+    "branch": [
+      "Essence"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/148.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 149,
+    "name": "POISON WOUNDS",
+    "effect": "Each time when Wound is applied, there is a 30% chnce to apply 4 stacks of Toxin.",
+    "branch": [
+      "Toxin",
+      "Wound"
+    ],
+    "rarity": "Normal",
+    "image_card": "res://data/images/cards/cards/149.jpeg",
+    "cost": 100,
+    "image_background": "res://data/images/cards/background/background_blue.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_normal.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 14,
+          "chance": 20
+        },
+        "level_card": "res://data/images/cards/levels/lv2_normal.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv3_normal.png"
+      },
+      {
+        "level": 4,
+        "parameters": {
+          "stacks": 34,
+          "chance": 40
+        },
+        "level_card": "res://data/images/cards/levels/lv4_normal.png"
+      },
+      {
+        "level": 5,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv5_normal.png"
+      }
+    ]
+  },
+  {
+    "id": 150,
+    "name": "OVERLOAD",
+    "effect": "Each 10% Essence effect gains 0.4 base mana regeneration.",
+    "branch": [
+      "Essence"
+    ],
+    "rarity": "Epic",
+    "image_card": "res://data/images/cards/cards/150.jpeg",
+    "cost": 200,
+    "image_background": "res://data/images/cards/background/background_violet.png",
+    "levels": [
+      {
+        "level": 1,
+        "parameters": {
+          "stacks": 4,
+          "chance": 10
+        },
+        "level_card": "res://data/images/cards/levels/lv1_epic.png"
+      },
+      {
+        "level": 2,
+        "parameters": {
+          "stacks": 24,
+          "chance": 30
+        },
+        "level_card": "res://data/images/cards/levels/lv2_epic.png"
+      },
+      {
+        "level": 3,
+        "parameters": {
+          "stacks": 44,
+          "chance": 50
+        },
+        "level_card": "res://data/images/cards/levels/lv3_epic.png"
+      }
+    ]
+  }
+]

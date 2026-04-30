@@ -1,0 +1,85 @@
+{
+  "heroes": {
+    "fireheart": {
+      "manifest": "assets/sprites/fireheart.json",
+      "image": "assets/sprites/fireheart.png",
+      "source": "generated"
+    },
+    "frostfang": {
+      "manifest": "assets/sprites/frostfang.json",
+      "image": "assets/sprites/frostfang.png",
+      "source": "final",
+      "note": "Real sprites from TexturePacker, 200x200 frames, 7 animations"
+    },
+    "bloodthorn": {
+      "manifest": "assets/sprites/bloodthorn.json",
+      "image": "assets/sprites/bloodthorn.png",
+      "source": "generated"
+    },
+    "stormblade": {
+      "manifest": "assets/sprites/stormblade.json",
+      "image": "assets/sprites/stormblade.png",
+      "source": "generated"
+    },
+    "duskwhisper": {
+      "manifest": "assets/sprites/duskwhisper.json",
+      "image": "assets/sprites/duskwhisper.png",
+      "source": "generated"
+    },
+    "windrider": {
+      "manifest": "assets/sprites/windrider.json",
+      "image": "assets/sprites/windrider.png",
+      "source": "generated"
+    },
+    "darkbane": {
+      "manifest": "assets/sprites/darkbane.json",
+      "image": "assets/sprites/darkbane.png",
+      "source": "generated"
+    },
+    "nightshade": {
+      "manifest": "assets/sprites/nightshade.json",
+      "image": "assets/sprites/nightshade.png",
+      "source": "concept_art"
+    },
+    "emberforge": {
+      "manifest": "assets/sprites/emberforge.json",
+      "image": "assets/sprites/emberforge.png",
+      "source": "generated"
+    },
+    "ironfist": {
+      "manifest": "assets/sprites/ironfist.json",
+      "image": "assets/sprites/ironfist.png",
+      "source": "concept_art"
+    },
+    "darion": {
+      "manifest": "assets/sprites/darion.json",
+      "image": "assets/sprites/darion.png",
+      "source": "concept_art"
+    },
+    "shadowflame": {
+      "manifest": "assets/sprites/shadowflame.json",
+      "image": "assets/sprites/shadowflame.png",
+      "source": "concept_art"
+    },
+    "steelbane": {
+      "manifest": "assets/sprites/steelbane.json",
+      "image": "assets/sprites/steelbane.png",
+      "source": "concept_art"
+    },
+    "voidwalker": {
+      "manifest": "assets/sprites/voidwalker.json",
+      "image": "assets/sprites/voidwalker.png",
+      "source": "concept_art"
+    },
+    "blackthorn": {
+      "manifest": "assets/sprites/blackthorn.json",
+      "image": "assets/sprites/blackthorn.png",
+      "source": "concept_art"
+    },
+    "skydancer": {
+      "manifest": "assets/sprites/skydancer.json",
+      "image": "assets/sprites/skydancer.png",
+      "source": "concept_art"
+    }
+  }
+}

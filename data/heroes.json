@@ -1,0 +1,546 @@
+[
+  {
+    "id": "fireheart",
+    "name": "Fireheart",
+    "title": "Flame Duelist",
+    "icon": "🔥",
+    "color": "#fb5607",
+    "favoredBranch": "rage",
+    "stats": {
+      "hp": 930,
+      "atk": 26,
+      "arm": 6,
+      "focus": 24,
+      "spd": 0.96,
+      "crit": 0.08,
+      "critD": 1.5,
+      "regen": 9,
+      "dodge": 0.07
+    },
+    "skill": {
+      "name": "Flame Duelist Art",
+      "cd": 6,
+      "energy": 45,
+      "pow": 1.05,
+      "type": "phys",
+      "status": "burn",
+      "dur": 3,
+      "dot": 14
+    },
+    "image": "assets/heroes/fireheart.svg",
+    "favoredBranches": [
+      "rage",
+      "power"
+    ]
+  },
+  {
+    "id": "frostfang",
+    "name": "Frostfang",
+    "title": "Winter Hunter",
+    "icon": "❄️",
+    "color": "#7bdff2",
+    "favoredBranch": "ice",
+    "stats": {
+      "hp": 975,
+      "atk": 26,
+      "arm": 9,
+      "focus": 33,
+      "spd": 0.94,
+      "crit": 0.11,
+      "critD": 1.5,
+      "regen": 10,
+      "dodge": 0.09000000000000001
+    },
+    "skill": {
+      "name": "Winter Hunter Art",
+      "cd": 6,
+      "energy": 45,
+      "pow": 1.05,
+      "type": "magic",
+      "status": "ice",
+      "dur": 3,
+      "dot": 14
+    },
+    "image": "assets/heroes/frostfang.svg",
+    "favoredBranches": [
+      "ice",
+      "precision"
+    ]
+  },
+  {
+    "id": "bloodthorn",
+    "name": "Bloodthorn",
+    "title": "Wound Reaver",
+    "icon": "🩸",
+    "color": "#ef476f",
+    "favoredBranch": "wound",
+    "stats": {
+      "hp": 1020,
+      "atk": 32,
+      "arm": 8,
+      "focus": 30,
+      "spd": 1.0,
+      "crit": 0.17,
+      "critD": 1.5,
+      "regen": 11,
+      "dodge": 0.11000000000000001
+    },
+    "skill": {
+      "name": "Wound Reaver Art",
+      "cd": 6,
+      "energy": 45,
+      "pow": 1.05,
+      "type": "phys",
+      "status": "wound",
+      "dur": 3,
+      "dot": 14
+    },
+    "image": "assets/heroes/bloodthorn.svg",
+    "favoredBranches": [
+      "wound",
+      "assault"
+    ]
+  },
+  {
+    "id": "stormblade",
+    "name": "Stormblade",
+    "title": "Rage Striker",
+    "icon": "⚡",
+    "color": "#ffd166",
+    "favoredBranch": "rage",
+    "stats": {
+      "hp": 1065,
+      "atk": 32,
+      "arm": 9,
+      "focus": 33,
+      "spd": 1.1400000000000001,
+      "crit": 0.16999999999999998,
+      "critD": 1.5,
+      "regen": 12,
+      "dodge": 0.13
+    },
+    "skill": {
+      "name": "Rage Striker Art",
+      "cd": 6,
+      "energy": 45,
+      "pow": 1.05,
+      "type": "phys",
+      "status": "burn",
+      "dur": 3,
+      "dot": 14
+    },
+    "image": "assets/heroes/stormblade.svg",
+    "favoredBranches": [
+      "rage",
+      "assault"
+    ]
+  },
+  {
+    "id": "duskwhisper",
+    "name": "Duskwhisper",
+    "title": "Essence Seer",
+    "icon": "🔮",
+    "color": "#9b5cff",
+    "favoredBranch": "essence",
+    "stats": {
+      "hp": 1110,
+      "atk": 24,
+      "arm": 6,
+      "focus": 50,
+      "spd": 1.12,
+      "crit": 0.08,
+      "critD": 1.5,
+      "regen": 11,
+      "dodge": 0.15000000000000002
+    },
+    "skill": {
+      "name": "Essence Seer Art",
+      "cd": 6,
+      "energy": 45,
+      "pow": 1.05,
+      "type": "magic",
+      "status": null,
+      "dur": 3,
+      "dot": 14
+    },
+    "image": "assets/heroes/duskwhisper.svg",
+    "favoredBranches": [
+      "essence",
+      "shield"
+    ]
+  },
+  {
+    "id": "windrider",
+    "name": "Windrider",
+    "title": "Dodge Adept",
+    "icon": "🌪️",
+    "color": "#8ecae6",
+    "favoredBranch": "dodge",
+    "stats": {
+      "hp": 930,
+      "atk": 26,
+      "arm": 7,
+      "focus": 39,
+      "spd": 0.94,
+      "crit": 0.11,
+      "critD": 1.5,
+      "regen": 10,
+      "dodge": 0.16
+    },
+    "skill": {
+      "name": "Dodge Adept Art",
+      "cd": 6,
+      "energy": 45,
+      "pow": 1.05,
+      "type": "phys",
+      "status": null,
+      "dur": 3,
+      "dot": 14
+    },
+    "image": "assets/heroes/windrider.svg",
+    "favoredBranches": [
+      "dodge",
+      "precision"
+    ]
+  },
+  {
+    "id": "darkbane",
+    "name": "Darkbane",
+    "title": "Power Breaker",
+    "icon": "💥",
+    "color": "#ff006e",
+    "favoredBranch": "power",
+    "stats": {
+      "hp": 975,
+      "atk": 34,
+      "arm": 8,
+      "focus": 29,
+      "spd": 0.94,
+      "crit": 0.14,
+      "critD": 1.5,
+      "regen": 11,
+      "dodge": 0.09000000000000001
+    },
+    "skill": {
+      "name": "Power Breaker Art",
+      "cd": 6,
+      "energy": 45,
+      "pow": 1.05,
+      "type": "magic",
+      "status": null,
+      "dur": 3,
+      "dot": 14
+    },
+    "image": "assets/heroes/darkbane.svg",
+    "favoredBranches": [
+      "power",
+      "wound"
+    ]
+  },
+  {
+    "id": "nightshade",
+    "name": "Nightshade",
+    "title": "Toxin Assassin",
+    "icon": "☠️",
+    "color": "#5ec800",
+    "favoredBranch": "toxin",
+    "stats": {
+      "hp": 1020,
+      "atk": 30,
+      "arm": 9,
+      "focus": 35,
+      "spd": 1.0,
+      "crit": 0.18999999999999997,
+      "critD": 1.5,
+      "regen": 12,
+      "dodge": 0.11000000000000001
+    },
+    "skill": {
+      "name": "Toxin Assassin Art",
+      "cd": 6,
+      "energy": 45,
+      "pow": 1.05,
+      "type": "magic",
+      "status": "toxin",
+      "dur": 3,
+      "dot": 14
+    },
+    "image": "assets/heroes/nightshade.svg",
+    "favoredBranches": [
+      "toxin",
+      "dodge"
+    ]
+  },
+  {
+    "id": "emberforge",
+    "name": "Emberforge",
+    "title": "Shield Smith",
+    "icon": "🛡️",
+    "color": "#48cae4",
+    "favoredBranch": "shield",
+    "stats": {
+      "hp": 1165,
+      "atk": 24,
+      "arm": 11,
+      "focus": 30,
+      "spd": 1.06,
+      "crit": 0.08,
+      "critD": 1.5,
+      "regen": 9,
+      "dodge": 0.13
+    },
+    "skill": {
+      "name": "Shield Smith Art",
+      "cd": 6,
+      "energy": 45,
+      "pow": 1.05,
+      "type": "phys",
+      "status": null,
+      "dur": 3,
+      "dot": 14
+    },
+    "image": "assets/heroes/emberforge.svg",
+    "favoredBranches": [
+      "shield",
+      "power"
+    ]
+  },
+  {
+    "id": "ironfist",
+    "name": "Ironfist",
+    "title": "Guardian Brawler",
+    "icon": "🗿",
+    "color": "#c8a020",
+    "favoredBranch": "guardian",
+    "stats": {
+      "hp": 1270,
+      "atk": 26,
+      "arm": 14,
+      "focus": 33,
+      "spd": 1.12,
+      "crit": 0.11,
+      "critD": 1.5,
+      "regen": 10,
+      "dodge": 0.15000000000000002
+    },
+    "skill": {
+      "name": "Guardian Brawler Art",
+      "cd": 6,
+      "energy": 45,
+      "pow": 1.05,
+      "type": "phys",
+      "status": null,
+      "dur": 3,
+      "dot": 14
+    },
+    "image": "assets/heroes/ironfist.svg",
+    "favoredBranches": [
+      "guardian",
+      "healing"
+    ]
+  },
+  {
+    "id": "darion",
+    "name": "Darion Starseer",
+    "title": "Astral Tactician",
+    "icon": "🌌",
+    "color": "#4488cc",
+    "favoredBranch": "essence",
+    "stats": {
+      "hp": 930,
+      "atk": 28,
+      "arm": 8,
+      "focus": 50,
+      "spd": 0.88,
+      "crit": 0.14,
+      "critD": 1.5,
+      "regen": 13,
+      "dodge": 0.07
+    },
+    "skill": {
+      "name": "Astral Tactician Art",
+      "cd": 6,
+      "energy": 45,
+      "pow": 1.05,
+      "type": "magic",
+      "status": null,
+      "dur": 3,
+      "dot": 14
+    },
+    "image": "assets/heroes/darion.svg",
+    "favoredBranches": [
+      "essence",
+      "precision"
+    ]
+  },
+  {
+    "id": "shadowflame",
+    "name": "Shadowflame",
+    "title": "Precision Shade",
+    "icon": "🗡️",
+    "color": "#b366cc",
+    "favoredBranch": "precision",
+    "stats": {
+      "hp": 975,
+      "atk": 30,
+      "arm": 9,
+      "focus": 39,
+      "spd": 0.94,
+      "crit": 0.25,
+      "critD": 1.7,
+      "regen": 12,
+      "dodge": 0.09000000000000001
+    },
+    "skill": {
+      "name": "Precision Shade Art",
+      "cd": 6,
+      "energy": 45,
+      "pow": 1.05,
+      "type": "phys",
+      "status": null,
+      "dur": 3,
+      "dot": 14
+    },
+    "image": "assets/heroes/shadowflame.svg",
+    "favoredBranches": [
+      "precision",
+      "dodge"
+    ]
+  },
+  {
+    "id": "steelbane",
+    "name": "Steelbane",
+    "title": "Assault Captain",
+    "icon": "⚔️",
+    "color": "#e87020",
+    "favoredBranch": "assault",
+    "stats": {
+      "hp": 1020,
+      "atk": 32,
+      "arm": 6,
+      "focus": 24,
+      "spd": 1.04,
+      "crit": 0.08,
+      "critD": 1.5,
+      "regen": 9,
+      "dodge": 0.11000000000000001
+    },
+    "skill": {
+      "name": "Assault Captain Art",
+      "cd": 6,
+      "energy": 45,
+      "pow": 1.05,
+      "type": "phys",
+      "status": null,
+      "dur": 3,
+      "dot": 14
+    },
+    "image": "assets/heroes/steelbane.svg",
+    "favoredBranches": [
+      "assault",
+      "guardian"
+    ]
+  },
+  {
+    "id": "voidwalker",
+    "name": "Voidwalker",
+    "title": "Chaos Mystic",
+    "icon": "🕳️",
+    "color": "#6a1faa",
+    "favoredBranch": "power",
+    "stats": {
+      "hp": 1065,
+      "atk": 32,
+      "arm": 7,
+      "focus": 32,
+      "spd": 1.06,
+      "crit": 0.11,
+      "critD": 1.5,
+      "regen": 10,
+      "dodge": 0.13
+    },
+    "skill": {
+      "name": "Chaos Mystic Art",
+      "cd": 6,
+      "energy": 45,
+      "pow": 1.05,
+      "type": "magic",
+      "status": null,
+      "dur": 3,
+      "dot": 14
+    },
+    "image": "assets/heroes/voidwalker.svg",
+    "favoredBranches": [
+      "power",
+      "essence"
+    ]
+  },
+  {
+    "id": "blackthorn",
+    "name": "Blackthorn",
+    "title": "Poison Thorn",
+    "icon": "🕷️",
+    "color": "#3ab830",
+    "favoredBranch": "toxin",
+    "stats": {
+      "hp": 1110,
+      "atk": 28,
+      "arm": 8,
+      "focus": 38,
+      "spd": 1.12,
+      "crit": 0.16,
+      "critD": 1.5,
+      "regen": 11,
+      "dodge": 0.15000000000000002
+    },
+    "skill": {
+      "name": "Poison Thorn Art",
+      "cd": 6,
+      "energy": 45,
+      "pow": 1.05,
+      "type": "magic",
+      "status": "toxin",
+      "dur": 3,
+      "dot": 14
+    },
+    "image": "assets/heroes/blackthorn.svg",
+    "favoredBranches": [
+      "toxin",
+      "wound"
+    ]
+  },
+  {
+    "id": "skydancer",
+    "name": "Skydancer",
+    "title": "Evasive Duelist",
+    "icon": "🕊️",
+    "color": "#48a8e8",
+    "favoredBranch": "dodge",
+    "stats": {
+      "hp": 930,
+      "atk": 30,
+      "arm": 9,
+      "focus": 33,
+      "spd": 0.94,
+      "crit": 0.16999999999999998,
+      "critD": 1.5,
+      "regen": 12,
+      "dodge": 0.16
+    },
+    "skill": {
+      "name": "Evasive Duelist Art",
+      "cd": 6,
+      "energy": 45,
+      "pow": 1.05,
+      "type": "phys",
+      "status": null,
+      "dur": 3,
+      "dot": 14
+    },
+    "image": "assets/heroes/skydancer.svg",
+    "favoredBranches": [
+      "dodge",
+      "healing"
+    ]
+  }
+]
