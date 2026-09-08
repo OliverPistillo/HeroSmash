@@ -47,7 +47,7 @@ Combat entry points:
 - `migration/V1_17_UNRESOLVED_SEMANTICS.md` — explicit semantic and economy debt.
 - `qa/V1_17_BALANCE_REPORT.md` — 12,000-fight results,performance,retention and tests.
 - `qa/evidence/v1.17/REVIEW.md` — executed clean-checkout evidence and machine metrics.
-- `exec-plans/active/V1_18_HERO_ROSTER_REFERENCE_LOCK.md` — current roster/reference phase.
+- `exec-plans/completed/V1_18_HERO_ROSTER_REFERENCE_LOCK.md` — completed roster/reference phase and gates.
 
 Roster and visual-production entry points:
 - `product-specs/roster/LAUNCH_ROSTER.md` — 16 launch / 4 reserve and all-candidate audit.
@@ -62,4 +62,6 @@ Roster and visual-production entry points:
 - `art/BRAND_UI_LANGUAGE.md`, `art/CARD_VISUAL_LANGUAGE.md` — tokens, hierarchy and state grammar.
 - `art/UNRESOLVED_AND_REFERENCE_GAPS.md` — per-hero view gaps and unresolved decisions.
 - `qa/ROSTER_REFERENCE_VALIDATION.md` — reproducible spec/rights/phone-proof checks and prior gates.
+- `qa/V1_18_ROSTER_REFERENCE_REPORT.md` — macro report, decisions, evidence and retained debt.
+- `qa/evidence/v1.18/REVIEW.md` — executed clean-checkout results and limitations.
 - `exec-plans/active/V1_19_BLENDER_CHARACTER_PIPELINE.md` — proposed next phase, not started.

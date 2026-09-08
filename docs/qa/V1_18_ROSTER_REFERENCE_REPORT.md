@@ -14,9 +14,11 @@ data and runtime code unchanged. Full local gates passed at implementation commi
 | `4d1cf44` | Exact candidate-source snapshot, reference inventory, hashes/duplicates and visual provenance review |
 | `22db872` | Launch/reserve identities, matrices, sheets, production/brand contracts, generators and validators |
 | `50fdb58` | Card body-size consistency, MAX proof correction retained, complete rig summary and validation regression |
+| `8ba2380` | Curated passing evidence, reference navigation and precise v1.19 first-fighter proposal |
 
-The evidence/report and documentation-only closeout commits are recorded exactly in
-`PROJECT_STATE.md` and the task completion report. `main` remains
+The documentation-only closeout commit is identified in `PROJECT_STATE.md` and
+the task completion report. Post-evidence clean-checkout validation at `8ba2380`
+passed all 12 roster gates and all 13 artifact length/SHA/Git-byte checks. `main` remains
 `66a5ba67f0691b7d50a11fa873f4ed24c80a14ef`; no push or merge occurred.
 
 ```text
