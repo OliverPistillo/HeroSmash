@@ -1,0 +1,11 @@
+# Godot rewrites text resources as LF. Keep fresh imports clean on Windows.
+game/**/*.gd text eol=lf
+game/**/*.gd.uid text eol=lf
+game/**/*.tscn text eol=lf
+game/**/*.tres text eol=lf
+game/**/*.import text eol=lf
+game/project.godot text eol=lf
+game/export_presets.cfg text eol=lf
+game/**/*.glb -text
+art/**/*.glb -text
+art/**/*.blend -text
