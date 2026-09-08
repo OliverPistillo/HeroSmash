@@ -66,6 +66,7 @@ def main():
         clean=add("clean_after",["git","status","--porcelain"])
         if clean.get("output","").strip(): clean["status"]="fail"
     packages={name:importlib.metadata.version(name) for name in ("jsonschema","attrs","referencing","rpds-py","jsonschema-specifications")}
+    if sys.version_info < (3,13): packages["typing-extensions"]=importlib.metadata.version("typing-extensions")
     report=dict(phase="v1.16",status="pass" if all(c["status"]=="pass" for c in checks) else "fail",commit=subprocess.check_output(["git","rev-parse","HEAD"],cwd=ROOT,text=True).strip(),branch=branch.get("output","").strip(),baseline=BASELINE,python=platform.python_version(),platform=platform.platform(),packages=packages,clean_checkout=args.require_clean,checks=checks,limits=["Only base_text_v1; numbered levels and global combat/status/death rules remain unresolved.","Foundation full profile is a separate required local gate.","No Android/iOS package/device or final-art gate is claimed.","Local execution is not evidence of a remote GitHub Actions run."])
     args.report.parent.mkdir(parents=True,exist_ok=True)
     args.report.write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
