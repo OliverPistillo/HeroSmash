@@ -30,3 +30,6 @@ Canonical-data entry points:
 - `migration/V1_16_DATA_COMPARISON.md` — generated full-deck preservation report.
 - `migration/V1_16_PILOT_PARITY.md` — 15 original-text/JS/proposal comparisons.
 - `qa/CANONICAL_DATA_VALIDATION.md` — Python/Godot tests and clean-checkout procedure.
+- `migration/V1_16_MIGRATION_REPORT.md` — completed phase, commits, differences and debt.
+- `qa/evidence/v1.16/REVIEW.md` — executed results, failed attempts and limits.
+- `exec-plans/active/V1_17_COMBAT_BALANCE_LAB.md` — precise next-phase proposal.
