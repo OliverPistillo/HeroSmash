@@ -66,6 +66,10 @@ def validate(path, fixture=False):
     names=[n.get('name','') for n in d['nodes']]
     assert len(names)==len(set(names)), 'Duplicate node/bone names'
     assert 'HeroSkeleton' in names and 'root' in names
+    for name in ['HeroSkeleton','root','mesh_solkael_lionheart']:
+        if name not in names:continue
+        node=d['nodes'][names.index(name)]
+        assert node.get('translation',[0,0,0])==[0,0,0] and node.get('rotation',[0,0,0,1])==[0,0,0,1] and 'matrix' not in node,'Object/root origin transform'
     skin=d['skins'][0];joints=skin['joints'];assert len(joints)==len(set(joints))
     assert len(glb.values(skin['inverseBindMatrices']))==len(joints)
     assert all(re.fullmatch('[a-z][a-z0-9_]*',names[j]) for j in joints)

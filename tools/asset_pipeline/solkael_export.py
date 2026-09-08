@@ -10,13 +10,18 @@ ROOT=Path(__file__).resolve().parents[2]
 HERO='solkael_lionheart'
 
 
-def validate_scene():
+def validate_scene(source_manifest):
     assert bpy.app.version[:2]==(5,2)
     scene=bpy.context.scene
     assert scene.unit_settings.system=='METRIC' and scene.unit_settings.scale_length==1 and scene.render.fps==30
     rigs=[o for o in scene.objects if o.type=='ARMATURE']
     assert len(rigs)==1 and rigs[0].name=='HeroSkeleton'
     rig=rigs[0]
+    assert set(source_manifest['bones'])==set(b.name for b in rig.data.bones)
+    for bone in rig.data.bones:
+        recorded=source_manifest['bones'][bone.name]
+        assert (bone.parent.name if bone.parent else None)==recorded['parent']
+        assert all(abs(actual-expected)<1e-6 for row,other in zip(bone.matrix_local,recorded['rest_matrix']) for actual,expected in zip(row,other)),bone.name
     family=json.loads((ROOT/'docs/art/rig_families.json').read_text())['families'][0]
     for name,parent in {**family['base_hierarchy'],**family['sockets']}.items():
         assert name in rig.data.bones,name
@@ -60,7 +65,8 @@ def main():
     p=argparse.ArgumentParser();p.add_argument('--source',type=Path,required=True);p.add_argument('--output',type=Path,required=True)
     a=p.parse_args(sys.argv[sys.argv.index('--')+1:])
     bpy.ops.wm.open_mainfile(filepath=str(a.source.resolve()))
-    rig,mesh=validate_scene()
+    source_manifest=json.loads((a.source.parent.parent/'solkael_asset.json').read_text())
+    rig,mesh=validate_scene(source_manifest)
     bpy.ops.object.select_all(action='DESELECT');rig.select_set(True);mesh.select_set(True)
     bpy.context.view_layer.objects.active=rig
     a.output.parent.mkdir(parents=True,exist_ok=True)

@@ -17,6 +17,8 @@ var barrier: MeshInstance3D
 var replay_events: Array = []
 var replay_hash: String = ""
 var barrier_until_ms: int = 0
+var subtitle: Label
+var profile_animation: bool = false
 
 
 func _initialize() -> void:
@@ -32,6 +34,7 @@ func setup() -> void:
 	pose_time = OS.get_environment("HERO_FIGHTER_POSE").to_float()
 	expression = OS.get_environment("HERO_FIGHTER_EXPRESSION")
 	turntable = OS.get_environment("HERO_FIGHTER_VIDEO") == "1"
+	profile_animation = OS.get_environment("HERO_FIGHTER_PROFILE") == "1"
 	if OS.get_environment("HERO_FIGHTER_REPLAY") == "1":
 		var catalog: CombatCatalog = CombatCatalog.new()
 		assert(catalog.load_data())
@@ -84,6 +87,10 @@ func setup() -> void:
 	mesh_stage.add_child(camera)
 	camera.position = Vector3(2.8,1.9,5)
 	camera.look_at(Vector3(0,1.05,0))
+	if OS.get_environment("HERO_FIGHTER_PORTRAIT") == "1":
+		camera.size = .72
+		camera.position = Vector3(.45,1.92,3.5)
+		camera.look_at(Vector3(0,1.81,0))
 	camera.current = true
 	fighter = (load("res://scenes/characters/solkael_lionheart/hero_solkael_lionheart.tscn") as PackedScene).instantiate() as SolkaelFighter
 	mesh_stage.add_child(fighter)
@@ -118,7 +125,7 @@ func setup() -> void:
 	title.add_theme_font_size_override("font_size",24)
 	title.add_theme_color_override("font_color",Color("dac494"))
 	canvas.add_child(title)
-	var subtitle: Label = Label.new()
+	subtitle = Label.new()
 	subtitle.text = "GUARDIAN + SHIELD   •   ART LOCK v1   •   " + clip.to_upper()
 	subtitle.position = Vector2(44,48)
 	subtitle.add_theme_font_size_override("font_size",14)
@@ -142,14 +149,16 @@ func step() -> void:
 		fighter.show_clip(String(names[index]), float(frame_count % 90)/30.0)
 		fighter.rotation.y = sin(float(frame_count)/90.0)*0.35
 	else:
-		fighter.show_clip(clip,pose_time)
+		fighter.show_clip(clip,pose_time+float(frame_count)/60.0 if profile_animation else pose_time)
 	if expression != "":
 		fighter.set_expression(expression)
+	var displayed_clip: String = fighter.adapter.current_clip if not replay_events.is_empty() else String(fighter.animation_player.current_animation).get_slice("/",String(fighter.animation_player.current_animation).get_slice_count("/")-1)
+	subtitle.text = "GUARDIAN + SHIELD   •   " + ("RESOLVER REPLAY   •   " if not replay_events.is_empty() else "ART LOCK v1   •   ") + displayed_clip.to_upper()
 	if frame_count > 60:
 		cpu_ms.append(RenderingServer.viewport_get_measured_render_time_cpu(root.get_viewport_rid()))
 		gpu_ms.append(RenderingServer.viewport_get_measured_render_time_gpu(root.get_viewport_rid()))
 		frame_ms.append(elapsed)
-	if frame_count == (900 if turntable else 180):
+	if frame_count == (1800 if profile_animation else 360 if turntable and not replay_events.is_empty() else 900 if turntable else 180):
 		process_frame.disconnect(step)
 		await RenderingServer.frame_post_draw
 		if captures != "":
@@ -163,6 +172,7 @@ func step() -> void:
 		report["cosmetic_cues"] = fighter.adapter.cue_count
 		report["adapter_errors"] = fighter.adapter.errors
 		report["movie_mode"] = turntable
+		report["animated_profile"] = profile_animation
 		if captures != "":
 			var file: FileAccess = FileAccess.open(captures.get_basename()+".json",FileAccess.WRITE)
 			file.store_string(JSON.stringify(report,"  "))
