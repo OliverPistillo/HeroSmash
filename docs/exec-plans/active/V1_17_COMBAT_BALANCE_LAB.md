@@ -1,6 +1,25 @@
 # v1.17 — Deterministic combat simulation and balance lab
 
-Status: proposed next macro phase; **not executed in v1.16**.
+Status: executing on `revival/v1.17-combat-balance-lab`, baseline
+`v1.16-canonical-data` / `87c1d0e4ba519e082feaf70848c84862acedc0ff`.
+
+Current task explicitly requires entity-agnostic rules, 12 scenarios ×1,000 seeds,
+integer combat time, replay hashes and no rebalance. Godot 4.7.2 and existing Python
+3.12/jsonschema tooling were detected; no installation is required.
+
+Source audit: all 582 raw level records remain available, but the JS never reads
+their `parameters`; it multiplies approximate `card.effects` by the acquired level.
+Normal/Epic parameters are two universal templates, not proved per-card semantics.
+The new level API will expose exact source values and separate execution eligibility
+from the known acquisition transition. Unproved bindings remain unresolved.
+
+Status parameters must be explicit per application; no unspecified universal
+Shield stack→HP or Toxin stack→damage conversion will be invented. Mechanics-lab
+fixtures may supply labeled scalar status inputs without pretending to implement
+an ambiguous leveled card. Literal v1.16 profiles remain distinct from resolved
+single-level cards. LIGHTBRINGER (120) is added to the bounded pilot because its
+single-level text explicitly specifies one rebirth at40% HP, clearing debuffs;
+LAST STAND remains unresolved.
 
 ## Preconditions
 
