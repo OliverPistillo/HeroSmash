@@ -1,0 +1,198 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://herosmash.invalid/schemas/v1/economy.schema.json",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "logicalVersion": {
+      "const": "v1.16.1"
+    },
+    "dataset": {
+      "const": "economy"
+    },
+    "generator": {
+      "const": "tools/migration/canonical_data.py"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "normalization": {
+            "const": "utf8_lf"
+          }
+        },
+        "required": [
+          "path",
+          "sha256",
+          "normalization"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "maxItems": 3
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "const": "legacy_economy"
+          },
+          "role": {
+            "const": "constants_only"
+          },
+          "values": {
+            "type": "object",
+            "properties": {
+              "starting_player_hp": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000
+              },
+              "starting_coins": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000
+              },
+              "base_income": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000
+              },
+              "reroll_cost": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000
+              },
+              "random_card_cost": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000
+              },
+              "interest_per_100": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000
+              },
+              "interest_cap": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000
+              },
+              "win_reward": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000
+              },
+              "win_streak_per_win": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000
+              },
+              "win_streak_cap": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000
+              },
+              "loss_hp_compensation": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000
+              },
+              "lose_streak_per_loss": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000
+              },
+              "lose_streak_cap": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000
+              },
+              "branch_thresholds": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 1000000000
+                },
+                "minItems": 4,
+                "maxItems": 4
+              }
+            },
+            "required": [
+              "starting_player_hp",
+              "starting_coins",
+              "base_income",
+              "reroll_cost",
+              "random_card_cost",
+              "interest_per_100",
+              "interest_cap",
+              "win_reward",
+              "win_streak_per_win",
+              "win_streak_cap",
+              "loss_hp_compensation",
+              "lose_streak_per_loss",
+              "lose_streak_cap",
+              "branch_thresholds"
+            ],
+            "additionalProperties": false
+          },
+          "provenance": {
+            "type": "object",
+            "properties": {
+              "source": {
+                "type": "string",
+                "minLength": 1
+              },
+              "pointer": {
+                "type": "string",
+                "pattern": "^/"
+              },
+              "sourceSha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              }
+            },
+            "required": [
+              "source",
+              "pointer",
+              "sourceSha256"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "id",
+          "role",
+          "values",
+          "provenance"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "maxItems": 1
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "logicalVersion",
+    "dataset",
+    "generator",
+    "sources",
+    "records"
+  ],
+  "additionalProperties": false
+}

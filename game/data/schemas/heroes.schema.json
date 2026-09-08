@@ -1,0 +1,392 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://herosmash.invalid/schemas/v1/heroes.schema.json",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "logicalVersion": {
+      "const": "v1.16.1"
+    },
+    "dataset": {
+      "const": "heroes"
+    },
+    "generator": {
+      "const": "tools/migration/canonical_data.py"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "normalization": {
+            "const": "utf8_lf"
+          }
+        },
+        "required": [
+          "path",
+          "sha256",
+          "normalization"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "maxItems": 3
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "role": {
+            "const": "legacy_oracle"
+          },
+          "branches": {
+            "type": "array",
+            "items": {
+              "enum": [
+                "assault",
+                "guardian",
+                "essence",
+                "rage",
+                "ice",
+                "toxin",
+                "shield",
+                "healing",
+                "power",
+                "precision",
+                "wound",
+                "dodge"
+              ]
+            },
+            "minItems": 1,
+            "maxItems": 2,
+            "uniqueItems": true
+          },
+          "stats": {
+            "type": "object",
+            "properties": {
+              "hp": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1000000
+              },
+              "atk": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1000000
+              },
+              "arm": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1000000
+              },
+              "focus": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1000000
+              },
+              "spd": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1000000
+              },
+              "crit": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1000000
+              },
+              "critD": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1000000
+              },
+              "regen": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1000000
+              },
+              "dodge": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1000000
+              }
+            },
+            "required": [
+              "hp",
+              "atk",
+              "arm",
+              "focus",
+              "spd",
+              "crit",
+              "critD",
+              "regen",
+              "dodge"
+            ],
+            "additionalProperties": false
+          },
+          "legacy": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "name": {
+                "type": "string",
+                "minLength": 1
+              },
+              "title": {
+                "type": "string",
+                "minLength": 1
+              },
+              "icon": {
+                "type": "string",
+                "minLength": 1
+              },
+              "color": {
+                "type": "string",
+                "minLength": 1
+              },
+              "favoredBranch": {
+                "enum": [
+                  "assault",
+                  "guardian",
+                  "essence",
+                  "rage",
+                  "ice",
+                  "toxin",
+                  "shield",
+                  "healing",
+                  "power",
+                  "precision",
+                  "wound",
+                  "dodge"
+                ]
+              },
+              "favoredBranches": {
+                "type": "array",
+                "items": {
+                  "enum": [
+                    "assault",
+                    "guardian",
+                    "essence",
+                    "rage",
+                    "ice",
+                    "toxin",
+                    "shield",
+                    "healing",
+                    "power",
+                    "precision",
+                    "wound",
+                    "dodge"
+                  ]
+                },
+                "minItems": 1,
+                "maxItems": 2,
+                "uniqueItems": true
+              },
+              "stats": {
+                "type": "object",
+                "properties": {
+                  "hp": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1000000
+                  },
+                  "atk": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1000000
+                  },
+                  "arm": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1000000
+                  },
+                  "focus": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1000000
+                  },
+                  "spd": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1000000
+                  },
+                  "crit": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1000000
+                  },
+                  "critD": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1000000
+                  },
+                  "regen": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1000000
+                  },
+                  "dodge": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1000000
+                  }
+                },
+                "required": [
+                  "hp",
+                  "atk",
+                  "arm",
+                  "focus",
+                  "spd",
+                  "crit",
+                  "critD",
+                  "regen",
+                  "dodge"
+                ],
+                "additionalProperties": false
+              },
+              "skill": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "cd": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1000000
+                  },
+                  "energy": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1000000
+                  },
+                  "pow": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1000000
+                  },
+                  "type": {
+                    "enum": [
+                      "phys",
+                      "magic"
+                    ]
+                  },
+                  "status": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "dur": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1000000
+                  },
+                  "dot": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1000000
+                  }
+                },
+                "required": [
+                  "name",
+                  "cd",
+                  "energy",
+                  "pow",
+                  "type",
+                  "status",
+                  "dur",
+                  "dot"
+                ],
+                "additionalProperties": false
+              },
+              "image": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "id",
+              "name",
+              "title",
+              "icon",
+              "color",
+              "favoredBranch",
+              "favoredBranches",
+              "stats",
+              "skill",
+              "image"
+            ],
+            "additionalProperties": false
+          },
+          "provenance": {
+            "type": "object",
+            "properties": {
+              "source": {
+                "type": "string",
+                "minLength": 1
+              },
+              "pointer": {
+                "type": "string",
+                "pattern": "^/"
+              },
+              "sourceSha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              }
+            },
+            "required": [
+              "source",
+              "pointer",
+              "sourceSha256"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "role",
+          "branches",
+          "stats",
+          "legacy",
+          "provenance"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 16,
+      "maxItems": 16
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "logicalVersion",
+    "dataset",
+    "generator",
+    "sources",
+    "records"
+  ],
+  "additionalProperties": false
+}

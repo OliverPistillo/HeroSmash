@@ -1,11 +1,7 @@
-# Godot rewrites text resources as LF. Keep fresh imports clean on Windows.
-game/**/*.gd text eol=lf
-game/**/*.gd.uid text eol=lf
-game/**/*.tscn text eol=lf
-game/**/*.tres text eol=lf
-game/**/*.import text eol=lf
-game/project.godot text eol=lf
-game/export_presets.cfg text eol=lf
-game/**/*.glb -text
-art/**/*.glb -text
-art/**/*.blend -text
+# Reproducible new data/tooling; legacy attributes are deliberately untouched.
+game/data/*.json text eol=lf
+game/data/canonical/*.json text eol=lf
+game/data/schemas/*.json text eol=lf
+tools/migration/source_lock.json text eol=lf
+docs/migration/V1_16_DATA_COMPARISON.md text eol=lf
+docs/migration/V1_16_PILOT_PARITY.md text eol=lf

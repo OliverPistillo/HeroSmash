@@ -1,0 +1,305 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://herosmash.invalid/schemas/v1/effects.schema.json",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "logicalVersion": {
+      "const": "v1.16.1"
+    },
+    "dataset": {
+      "const": "effects"
+    },
+    "generator": {
+      "const": "tools/migration/canonical_data.py"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "normalization": {
+            "const": "utf8_lf"
+          }
+        },
+        "required": [
+          "path",
+          "sha256",
+          "normalization"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "maxItems": 3
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^legacy_[0-9]{3}$"
+          },
+          "cardId": {
+            "type": "string",
+            "pattern": "^legacy_[0-9]{3}$"
+          },
+          "profile": {
+            "const": "base_text_v1"
+          },
+          "lifecycle": {
+            "enum": [
+              "unreviewed",
+              "implemented",
+              "unresolved"
+            ]
+          },
+          "parity": {
+            "enum": [
+              "exact",
+              "equivalent",
+              "legacy approximation",
+              "unresolved",
+              "requires special handler"
+            ]
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          },
+          "originalTextSha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "rules": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "trigger": {
+                  "enum": [
+                    "combat_start",
+                    "basic_attack",
+                    "basic_hit",
+                    "skill_cast",
+                    "skill_hit",
+                    "damage_taken",
+                    "hp_threshold",
+                    "status_applied",
+                    "dodge",
+                    "heal",
+                    "interval",
+                    "death_prevention",
+                    "combat_end",
+                    "shop_enter",
+                    "card_purchased",
+                    "round_end"
+                  ]
+                },
+                "chance_bp": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 10000
+                },
+                "interval_ms": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 3600000
+                },
+                "loss_threshold_milli": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 1000000000
+                },
+                "condition": {
+                  "type": "object",
+                  "properties": {
+                    "kind": {
+                      "enum": [
+                        "always",
+                        "critical",
+                        "regen",
+                        "status",
+                        "reflectable"
+                      ]
+                    },
+                    "value": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "kind",
+                    "value"
+                  ],
+                  "additionalProperties": false
+                },
+                "actions": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "enum": [
+                          "deal_damage",
+                          "modify_stat",
+                          "apply_status",
+                          "heal",
+                          "add_shield",
+                          "gain_energy",
+                          "modify_cooldown",
+                          "extra_attack",
+                          "repeat_skill",
+                          "execute",
+                          "resource_conversion",
+                          "shop_modification",
+                          "special_handler"
+                        ]
+                      },
+                      "target": {
+                        "enum": [
+                          "self",
+                          "opponent"
+                        ]
+                      },
+                      "amount": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 1000000000
+                      },
+                      "unit": {
+                        "enum": [
+                          "milli",
+                          "basis_points",
+                          "stacks"
+                        ]
+                      },
+                      "field": {
+                        "type": "string"
+                      },
+                      "formula": {
+                        "enum": [
+                          "flat",
+                          "missing_hp_percent"
+                        ]
+                      },
+                      "factor_bp": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 10000
+                      },
+                      "minimum": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 1000000000
+                      },
+                      "cap": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 1000000000
+                      },
+                      "damage_kind": {
+                        "enum": [
+                          "none",
+                          "magic",
+                          "phys",
+                          "health_loss"
+                        ]
+                      },
+                      "handler": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "target",
+                      "amount",
+                      "unit",
+                      "field",
+                      "formula",
+                      "factor_bp",
+                      "minimum",
+                      "cap",
+                      "damage_kind",
+                      "handler"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "minItems": 1,
+                  "maxItems": 8
+                }
+              },
+              "required": [
+                "trigger",
+                "chance_bp",
+                "interval_ms",
+                "loss_threshold_milli",
+                "condition",
+                "actions"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 0,
+            "maxItems": 8
+          },
+          "provenance": {
+            "type": "object",
+            "properties": {
+              "source": {
+                "type": "string",
+                "minLength": 1
+              },
+              "pointer": {
+                "type": "string",
+                "pattern": "^/"
+              },
+              "sourceSha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              }
+            },
+            "required": [
+              "source",
+              "pointer",
+              "sourceSha256"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "id",
+          "cardId",
+          "profile",
+          "lifecycle",
+          "parity",
+          "reason",
+          "originalTextSha256",
+          "rules",
+          "provenance"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 150,
+      "maxItems": 150
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "logicalVersion",
+    "dataset",
+    "generator",
+    "sources",
+    "records"
+  ],
+  "additionalProperties": false
+}

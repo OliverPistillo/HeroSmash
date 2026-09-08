@@ -1,0 +1,260 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://herosmash.invalid/schemas/v1/cards.schema.json",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "logicalVersion": {
+      "const": "v1.16.1"
+    },
+    "dataset": {
+      "const": "cards"
+    },
+    "generator": {
+      "const": "tools/migration/canonical_data.py"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "normalization": {
+            "const": "utf8_lf"
+          }
+        },
+        "required": [
+          "path",
+          "sha256",
+          "normalization"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "maxItems": 3
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^legacy_[0-9]{3}$"
+          },
+          "legacyId": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 150
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "originalText": {
+            "type": "string",
+            "minLength": 1
+          },
+          "branches": {
+            "type": "array",
+            "items": {
+              "enum": [
+                "assault",
+                "guardian",
+                "essence",
+                "rage",
+                "ice",
+                "toxin",
+                "shield",
+                "healing",
+                "power",
+                "precision",
+                "wound",
+                "dodge"
+              ]
+            },
+            "minItems": 1,
+            "maxItems": 2,
+            "uniqueItems": true
+          },
+          "rarity": {
+            "enum": [
+              "Normal",
+              "Epic",
+              "Legendary"
+            ]
+          },
+          "cost": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1000000000
+          },
+          "maxLevel": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 5
+          },
+          "legacy": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 150
+              },
+              "name": {
+                "type": "string",
+                "minLength": 1
+              },
+              "effect": {
+                "type": "string",
+                "minLength": 1
+              },
+              "branch": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 1,
+                "maxItems": 2
+              },
+              "rarity": {
+                "enum": [
+                  "Normal",
+                  "Epic",
+                  "Legendary"
+                ]
+              },
+              "cost": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000
+              },
+              "image_card": {
+                "type": "string",
+                "minLength": 1
+              },
+              "image_background": {
+                "type": "string",
+                "minLength": 1
+              },
+              "levels": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "level": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 5
+                    },
+                    "level_card": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "parameters": {
+                      "type": "object",
+                      "properties": {
+                        "stacks": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 1000000000
+                        },
+                        "chance": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 100
+                        }
+                      },
+                      "required": [
+                        "stacks",
+                        "chance"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "required": [
+                    "level",
+                    "level_card"
+                  ],
+                  "additionalProperties": false
+                },
+                "minItems": 1,
+                "maxItems": 5
+              }
+            },
+            "required": [
+              "id",
+              "name",
+              "effect",
+              "branch",
+              "rarity",
+              "cost",
+              "image_card",
+              "image_background",
+              "levels"
+            ],
+            "additionalProperties": false
+          },
+          "provenance": {
+            "type": "object",
+            "properties": {
+              "source": {
+                "type": "string",
+                "minLength": 1
+              },
+              "pointer": {
+                "type": "string",
+                "pattern": "^/"
+              },
+              "sourceSha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              }
+            },
+            "required": [
+              "source",
+              "pointer",
+              "sourceSha256"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "id",
+          "legacyId",
+          "name",
+          "originalText",
+          "branches",
+          "rarity",
+          "cost",
+          "maxLevel",
+          "legacy",
+          "provenance"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 150,
+      "maxItems": 150
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "logicalVersion",
+    "dataset",
+    "generator",
+    "sources",
+    "records"
+  ],
+  "additionalProperties": false
+}

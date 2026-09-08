@@ -1,0 +1,404 @@
+[
+  {
+    "name": "unsupported_version",
+    "dataset": "cards",
+    "path": [
+      "schemaVersion"
+    ],
+    "op": "set",
+    "value": 2,
+    "expected": "constant"
+  },
+  {
+    "name": "missing_name",
+    "dataset": "cards",
+    "path": [
+      "records",
+      0,
+      "name"
+    ],
+    "op": "remove",
+    "value": null,
+    "expected": "missing"
+  },
+  {
+    "name": "unknown_card_field",
+    "dataset": "cards",
+    "path": [
+      "records",
+      0,
+      "invented"
+    ],
+    "op": "set",
+    "value": 1,
+    "expected": "unknown"
+  },
+  {
+    "name": "boolean_cost",
+    "dataset": "cards",
+    "path": [
+      "records",
+      0,
+      "cost"
+    ],
+    "op": "set",
+    "value": true,
+    "expected": "integer"
+  },
+  {
+    "name": "fractional_id",
+    "dataset": "cards",
+    "path": [
+      "records",
+      0,
+      "legacyId"
+    ],
+    "op": "set",
+    "value": 1.5,
+    "expected": "integer"
+  },
+  {
+    "name": "duplicate_id",
+    "dataset": "cards",
+    "path": [
+      "records",
+      1,
+      "id"
+    ],
+    "op": "set",
+    "value": "legacy_001",
+    "expected": "duplicate"
+  },
+  {
+    "name": "unknown_branch",
+    "dataset": "cards",
+    "path": [
+      "records",
+      0,
+      "branches",
+      0
+    ],
+    "op": "set",
+    "value": "fire",
+    "expected": "enum"
+  },
+  {
+    "name": "raw_unknown_alias",
+    "dataset": "cards",
+    "path": [
+      "records",
+      0,
+      "legacy",
+      "branch",
+      0
+    ],
+    "op": "set",
+    "value": "Arcane",
+    "expected": "branch"
+  },
+  {
+    "name": "raw_typo_wrong_card",
+    "dataset": "cards",
+    "path": [
+      "records",
+      0,
+      "legacy",
+      "branch",
+      0
+    ],
+    "op": "set",
+    "value": "Guadian",
+    "expected": "branch"
+  },
+  {
+    "name": "cost_not_preserved",
+    "dataset": "cards",
+    "path": [
+      "records",
+      70,
+      "cost"
+    ],
+    "op": "set",
+    "value": 200,
+    "expected": "metadata"
+  },
+  {
+    "name": "max_level_not_preserved",
+    "dataset": "cards",
+    "path": [
+      "records",
+      0,
+      "maxLevel"
+    ],
+    "op": "set",
+    "value": 4,
+    "expected": "maxLevel"
+  },
+  {
+    "name": "level_sequence",
+    "dataset": "cards",
+    "path": [
+      "records",
+      0,
+      "legacy",
+      "levels",
+      1,
+      "level"
+    ],
+    "op": "set",
+    "value": 4,
+    "expected": "level"
+  },
+  {
+    "name": "level_parameter_type",
+    "dataset": "cards",
+    "path": [
+      "records",
+      0,
+      "legacy",
+      "levels",
+      0,
+      "parameters",
+      "stacks"
+    ],
+    "op": "set",
+    "value": "four",
+    "expected": "integer"
+  },
+  {
+    "name": "hero_bad_stat",
+    "dataset": "heroes",
+    "path": [
+      "records",
+      0,
+      "stats",
+      "hp"
+    ],
+    "op": "set",
+    "value": -1,
+    "expected": "bounds"
+  },
+  {
+    "name": "hero_branch_mismatch",
+    "dataset": "heroes",
+    "path": [
+      "records",
+      0,
+      "branches",
+      0
+    ],
+    "op": "set",
+    "value": "ice",
+    "expected": "hero"
+  },
+  {
+    "name": "negative_economy",
+    "dataset": "economy",
+    "path": [
+      "records",
+      0,
+      "values",
+      "reroll_cost"
+    ],
+    "op": "set",
+    "value": -1,
+    "expected": "bounds"
+  },
+  {
+    "name": "missing_economy",
+    "dataset": "economy",
+    "path": [
+      "records",
+      0,
+      "values",
+      "base_income"
+    ],
+    "op": "remove",
+    "value": null,
+    "expected": "missing"
+  },
+  {
+    "name": "effect_unknown_trigger",
+    "dataset": "effects",
+    "path": [
+      "records",
+      1,
+      "rules",
+      0,
+      "trigger"
+    ],
+    "op": "set",
+    "value": "unknown",
+    "expected": "enum"
+  },
+  {
+    "name": "effect_reserved_trigger",
+    "dataset": "effects",
+    "path": [
+      "records",
+      1,
+      "rules",
+      0,
+      "trigger"
+    ],
+    "op": "set",
+    "value": "shop_enter",
+    "expected": "unsupported_trigger"
+  },
+  {
+    "name": "effect_reserved_action",
+    "dataset": "effects",
+    "path": [
+      "records",
+      1,
+      "rules",
+      0,
+      "actions",
+      0,
+      "type"
+    ],
+    "op": "set",
+    "value": "execute",
+    "expected": "unsupported_action"
+  },
+  {
+    "name": "effect_bad_handler",
+    "dataset": "effects",
+    "path": [
+      "records",
+      48,
+      "rules",
+      0,
+      "actions",
+      0,
+      "handler"
+    ],
+    "op": "set",
+    "value": "invented",
+    "expected": "unsupported_handler"
+  },
+  {
+    "name": "zero_interval",
+    "dataset": "effects",
+    "path": [
+      "records",
+      89,
+      "rules",
+      0,
+      "interval_ms"
+    ],
+    "op": "set",
+    "value": 0,
+    "expected": "interval"
+  },
+  {
+    "name": "bad_condition",
+    "dataset": "effects",
+    "path": [
+      "records",
+      1,
+      "rules",
+      0,
+      "condition",
+      "kind"
+    ],
+    "op": "set",
+    "value": "critical",
+    "expected": "condition"
+  },
+  {
+    "name": "unhandled_field",
+    "dataset": "effects",
+    "path": [
+      "records",
+      1,
+      "rules",
+      0,
+      "actions",
+      0,
+      "field"
+    ],
+    "op": "set",
+    "value": "speed",
+    "expected": "stat"
+  },
+  {
+    "name": "wrong_unit",
+    "dataset": "effects",
+    "path": [
+      "records",
+      4,
+      "rules",
+      0,
+      "actions",
+      0,
+      "unit"
+    ],
+    "op": "set",
+    "value": "stacks",
+    "expected": "unit"
+  },
+  {
+    "name": "wrong_formula",
+    "dataset": "effects",
+    "path": [
+      "records",
+      4,
+      "rules",
+      0,
+      "actions",
+      0,
+      "formula"
+    ],
+    "op": "set",
+    "value": "missing_hp_percent",
+    "expected": "formula"
+  },
+  {
+    "name": "effect_text_guard",
+    "dataset": "effects",
+    "path": [
+      "records",
+      1,
+      "originalTextSha256"
+    ],
+    "op": "set",
+    "value": "0000000000000000000000000000000000000000000000000000000000000000",
+    "expected": "guard"
+  },
+  {
+    "name": "bad_provenance",
+    "dataset": "cards",
+    "path": [
+      "records",
+      0,
+      "provenance",
+      "sourceSha256"
+    ],
+    "op": "set",
+    "value": "0000000000000000000000000000000000000000000000000000000000000000",
+    "expected": "provenance"
+  },
+  {
+    "name": "incomplete_coverage",
+    "dataset": "effects",
+    "path": [
+      "records"
+    ],
+    "op": "pop",
+    "value": null,
+    "expected": "length"
+  },
+  {
+    "name": "unresolved_with_rules",
+    "dataset": "effects",
+    "path": [
+      "records",
+      1,
+      "lifecycle"
+    ],
+    "op": "set",
+    "value": "unresolved",
+    "expected": "lifecycle"
+  }
+]

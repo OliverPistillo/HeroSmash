@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "logicalVersion": "v1.16.1",
+  "dataset": "branches",
+  "generator": "tools/migration/canonical_data.py",
+  "sources": [
+    {
+      "path": "legacy/web-prototype/data/branches.json",
+      "sha256": "d90b20d6e4a37d06c3e2d43cb7d49f4e50031fba03da1e9a33f3eca9b1cb2593",
+      "normalization": "utf8_lf"
+    }
+  ],
+  "records": [
+    {
+      "id": "assault",
+      "name": "Assault",
+      "legacy": {
+        "id": "assault",
+        "name": "Assault",
+        "icon": "⚔️",
+        "color": "#f77f00",
+        "desc": "Danno fisico."
+      },
+      "provenance": {
+        "source": "legacy/web-prototype/data/branches.json",
+        "pointer": "/10",
+        "sourceSha256": "d90b20d6e4a37d06c3e2d43cb7d49f4e50031fba03da1e9a33f3eca9b1cb2593"
+      }
+    },
+    {
+      "id": "guardian",
+      "name": "Guardian",
+      "legacy": {
+        "id": "guardian",
+        "name": "Guardian",
+        "icon": "🗿",
+        "color": "#adb5bd",
+        "desc": "HP e armor."
+      },
+      "provenance": {
+        "source": "legacy/web-prototype/data/branches.json",
+        "pointer": "/9",
+        "sourceSha256": "d90b20d6e4a37d06c3e2d43cb7d49f4e50031fba03da1e9a33f3eca9b1cb2593"
+      }
+    },
+    {
+      "id": "essence",
+      "name": "Essence",
+      "legacy": {
+        "id": "essence",
+        "name": "Essence",
+        "icon": "🔮",
+        "color": "#9b5cff",
+        "desc": "Mana e skill power."
+      },
+      "provenance": {
+        "source": "legacy/web-prototype/data/branches.json",
+        "pointer": "/1",
+        "sourceSha256": "d90b20d6e4a37d06c3e2d43cb7d49f4e50031fba03da1e9a33f3eca9b1cb2593"
+      }
+    },
+    {
+      "id": "rage",
+      "name": "Rage",
+      "legacy": {
+        "id": "rage",
+        "name": "Rage",
+        "icon": "🔥",
+        "color": "#fb5607",
+        "desc": "Velocità e furia."
+      },
+      "provenance": {
+        "source": "legacy/web-prototype/data/branches.json",
+        "pointer": "/2",
+        "sourceSha256": "d90b20d6e4a37d06c3e2d43cb7d49f4e50031fba03da1e9a33f3eca9b1cb2593"
+      }
+    },
+    {
+      "id": "ice",
+      "name": "Ice",
+      "legacy": {
+        "id": "ice",
+        "name": "Ice",
+        "icon": "❄️",
+        "color": "#7bdff2",
+        "desc": "Slow e controllo."
+      },
+      "provenance": {
+        "source": "legacy/web-prototype/data/branches.json",
+        "pointer": "/3",
+        "sourceSha256": "d90b20d6e4a37d06c3e2d43cb7d49f4e50031fba03da1e9a33f3eca9b1cb2593"
+      }
+    },
+    {
+      "id": "toxin",
+      "name": "Toxin",
+      "legacy": {
+        "id": "toxin",
+        "name": "Toxin",
+        "icon": "☠️",
+        "color": "#70e000",
+        "desc": "Veleno a stack."
+      },
+      "provenance": {
+        "source": "legacy/web-prototype/data/branches.json",
+        "pointer": "/4",
+        "sourceSha256": "d90b20d6e4a37d06c3e2d43cb7d49f4e50031fba03da1e9a33f3eca9b1cb2593"
+      }
+    },
+    {
+      "id": "shield",
+      "name": "Shield",
+      "legacy": {
+        "id": "shield",
+        "name": "Shield",
+        "icon": "🛡️",
+        "color": "#48cae4",
+        "desc": "Barriere e mitigazione."
+      },
+      "provenance": {
+        "source": "legacy/web-prototype/data/branches.json",
+        "pointer": "/5",
+        "sourceSha256": "d90b20d6e4a37d06c3e2d43cb7d49f4e50031fba03da1e9a33f3eca9b1cb2593"
+      }
+    },
+    {
+      "id": "healing",
+      "name": "Healing",
+      "legacy": {
+        "id": "healing",
+        "name": "Healing",
+        "icon": "💚",
+        "color": "#06d6a0",
+        "desc": "Cure e rigenerazione."
+      },
+      "provenance": {
+        "source": "legacy/web-prototype/data/branches.json",
+        "pointer": "/6",
+        "sourceSha256": "d90b20d6e4a37d06c3e2d43cb7d49f4e50031fba03da1e9a33f3eca9b1cb2593"
+      }
+    },
+    {
+      "id": "power",
+      "name": "Power",
+      "legacy": {
+        "id": "power",
+        "name": "Power",
+        "icon": "💥",
+        "color": "#ff006e",
+        "desc": "Burst e danno puro."
+      },
+      "provenance": {
+        "source": "legacy/web-prototype/data/branches.json",
+        "pointer": "/7",
+        "sourceSha256": "d90b20d6e4a37d06c3e2d43cb7d49f4e50031fba03da1e9a33f3eca9b1cb2593"
+      }
+    },
+    {
+      "id": "precision",
+      "name": "Precision",
+      "legacy": {
+        "id": "precision",
+        "name": "Precision",
+        "icon": "🎯",
+        "color": "#ffb703",
+        "desc": "Critico ed execute."
+      },
+      "provenance": {
+        "source": "legacy/web-prototype/data/branches.json",
+        "pointer": "/8",
+        "sourceSha256": "d90b20d6e4a37d06c3e2d43cb7d49f4e50031fba03da1e9a33f3eca9b1cb2593"
+      }
+    },
+    {
+      "id": "wound",
+      "name": "Wound",
+      "legacy": {
+        "id": "wound",
+        "name": "Wound",
+        "icon": "🩸",
+        "color": "#ef476f",
+        "desc": "Amplifica i danni subiti."
+      },
+      "provenance": {
+        "source": "legacy/web-prototype/data/branches.json",
+        "pointer": "/0",
+        "sourceSha256": "d90b20d6e4a37d06c3e2d43cb7d49f4e50031fba03da1e9a33f3eca9b1cb2593"
+      }
+    },
+    {
+      "id": "dodge",
+      "name": "Dodge",
+      "legacy": {
+        "id": "dodge",
+        "name": "Dodge",
+        "icon": "🌪️",
+        "color": "#8ecae6",
+        "desc": "Schivata e counter."
+      },
+      "provenance": {
+        "source": "legacy/web-prototype/data/branches.json",
+        "pointer": "/11",
+        "sourceSha256": "d90b20d6e4a37d06c3e2d43cb7d49f4e50031fba03da1e9a33f3eca9b1cb2593"
+      }
+    }
+  ]
+}
