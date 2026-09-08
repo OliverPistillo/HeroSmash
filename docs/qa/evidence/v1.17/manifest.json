@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "validatedCommit": "ec34ebb1a7bebc781c8f9806c045031d28597dcc",
+  "metricsRows": 12000,
+  "gzipUncompressedBytes": 15040061,
+  "gzipCompressedBytes": 1609970,
+  "outcomes": {
+    "win": 9896,
+    "timeout": 2006,
+    "draw": 98
+  },
+  "wins": {
+    "beta": 7483,
+    "alpha": 2413
+  },
+  "actorMetricTotals": {
+    "basic_attacks": 607327,
+    "crit_attempts": 701500,
+    "crit_count": 79902,
+    "damage_taken_milli": 20195957944,
+    "death_prevention_count": 1000,
+    "dodge_attempts": 667847,
+    "dodge_count": 77150,
+    "dot_damage_milli": 4198700692,
+    "healing_milli": 1122602658,
+    "ko_count": 10092,
+    "magic_damage_milli": 6981396617,
+    "physical_damage_milli": 13214561327,
+    "rebirth_count": 1000,
+    "shield_absorbed_milli": 109042000,
+    "shield_generated_milli": 111904000,
+    "skill_casts": 94173,
+    "status_applications": 93233
+  },
+  "totalEvents": 2424013,
+  "artifacts": [
+    {
+      "path": "canonical-gates.json",
+      "bytes": 7515,
+      "sha256": "34522503c7013f9e9cb4545158a866b0216e985185fb6bcdaac7c31b25eb0a24"
+    },
+    {
+      "path": "combat-gates.json",
+      "bytes": 10109,
+      "sha256": "3070efb7dec33b65a8212536d0d64cded27a371676a02fcfba278acc382459e9"
+    },
+    {
+      "path": "foundation-gates.json",
+      "bytes": 12938,
+      "sha256": "72597c25c3f7d4991c6cba495a7479aef507d97bee1364d965633da0057052d3"
+    },
+    {
+      "path": "godot-mobile-1366x768.png",
+      "bytes": 25010,
+      "sha256": "24e036f404f9dd2b44aa704c0142d8ddb2e116afecb2d3fd511d61eae33dcefb"
+    },
+    {
+      "path": "godot-mobile-844x390.png",
+      "bytes": 13666,
+      "sha256": "817b310e2d0a253d9d044f34a92b9635f6724b4af1738769f0182233a8407a49"
+    },
+    {
+      "path": "lab-metrics.jsonl.gz",
+      "bytes": 1609970,
+      "sha256": "7741dbdd233d164bbe1a6b25e3fe870b7ea69113ffdae6697ef36380b332d481"
+    },
+    {
+      "path": "lab-summary.json",
+      "bytes": 58313,
+      "sha256": "600555f88813d1eee0082fc0fc5474583513a49c981f1d864cd75558c78447a4"
+    },
+    {
+      "path": "profile-samples.json",
+      "bytes": 3283,
+      "sha256": "014ff823c833827131318f67313b16cb0049b6b3c5f1e95293cbc20ec4b96abe"
+    },
+    {
+      "path": "reflection-lethal-seed0.replay.json",
+      "bytes": 51835,
+      "sha256": "d61242a8bde6f43264e2840b8b901eaf85c0f9051e3e3f93fe88c626e73e3ef0"
+    }
+  ]
+}

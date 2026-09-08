@@ -19,3 +19,5 @@ docs/migration/V1_16_DATA_COMPARISON.md text eol=lf
 docs/migration/V1_16_PILOT_PARITY.md text eol=lf
 game/data/combat/*.json text eol=lf
 game/data/generated/v1_17/*.json text eol=lf
+docs/qa/evidence/v1.17/*.json text eol=lf
+docs/qa/evidence/v1.17/*.jsonl.gz -text
