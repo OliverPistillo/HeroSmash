@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "rulesetVersion": "combat_v1.17.1",
+  "seedCorpus": {"first": 0, "count": 1000},
+  "scope": "Mechanics coverage; unchanged canonical hero stats; base_text_v1 is a literal fixture, not numbered progression. No branch bonuses.",
+  "statusFixtures": {
+    "shield": {"type":"shield","duration_ms":3000,"stacks":1,"max_stacks":20,"magnitude":1000,"stacking_policy":"independent_instances","refresh_policy":"none","interval_ms":0,"debuff":false,"metadata":{"origin":"mechanics_fixture","meaning":"1000 milli-HP capacity per stack; arbitrary explicit lab input, not a canonical card conversion"}},
+    "toxin": {"type":"toxin","duration_ms":3000,"stacks":1,"max_stacks":20,"magnitude":14000,"stacking_policy":"add_stack_and_refresh","refresh_policy":"extend_if_longer","interval_ms":1000,"debuff":true,"metadata":{"origin":"mechanics_fixture","meaning":"14 damage/sec/stack copied from hero skill for coverage only; not inferred for card115/149"}},
+    "stun": {"type":"stun","duration_ms":2000,"stacks":1,"max_stacks":1,"magnitude":1,"stacking_policy":"refresh_duration","refresh_policy":"reset","interval_ms":0,"debuff":true,"metadata":{"origin":"mechanics_fixture","meaning":"explicit 2s starting stun for clock coverage; not a new card"}},
+    "wound": {"type":"wound","duration_ms":3000,"stacks":1,"max_stacks":20,"magnitude":500,"stacking_policy":"add_stack_and_refresh","refresh_policy":"extend_if_longer","interval_ms":0,"debuff":true,"metadata":{"origin":"mechanics_fixture","meaning":"legacy hero Wound fallback, injected for interaction coverage"}}
+  },
+  "records": [
+    {"id":"01_baseline","description":"No cards: physical attacks, energy, burn skills.","heroes":["fireheart","steelbane"],"cards":[[],[]],"initial":[[],[]],"templates":[[],[]],"prevention":[0,0]},
+    {"id":"02_stats","description":"002 literal base damage and010 bounded basic bonus.","heroes":["fireheart","steelbane"],"cards":[["002","010"],["002"]],"initial":[[],[]],"templates":[[],[]],"prevention":[0,0]},
+    {"id":"03_crit_dodge","description":"Unchanged high crit and dodge hero fixtures;040 critical healing.","heroes":["shadowflame","windrider"],"cards":[["040"],["040"]],"initial":[[],[]],"templates":[[],[]],"prevention":[0,0]},
+    {"id":"04_shield_healing","description":"Two FIFO starting shields per hero;028 regeneration and077 grants with explicit scalar fixture.","heroes":["ironfist","emberforge"],"cards":[["028","077"],["028","077"]],"initial":[["shield","shield"],["shield","shield"]],"templates":[["shield"],["shield"]],"prevention":[0,0]},
+    {"id":"05_toxin_dot","description":"Hero Toxin plus115 literal stacks with labeled hero-DPS template.","heroes":["nightshade","blackthorn"],"cards":[["115"],["115"]],"initial":[[],[]],"templates":[["toxin"],["toxin"]],"prevention":[0,0]},
+    {"id":"06_wound_amplification","description":"Hero Wound and149 conditional Toxin application.","heroes":["bloodthorn","blackthorn"],"cards":[["149"],[]],"initial":[[],[]],"templates":[["toxin"],[]],"prevention":[0,0]},
+    {"id":"07_ice_stun","description":"Hero Ice, explicit starting stun and asymmetric cooldown readiness.","heroes":["frostfang","stormblade"],"cards":[[],[]],"initial":[[],["stun"]],"templates":[[],[]],"prevention":[0,0]},
+    {"id":"08_skill_essence","description":"Canonical focus/energy fixtures and005/092 energy/cast triggers.","heroes":["darion","duskwhisper"],"cards":[["005","092"],["005","092"]],"initial":[[],[]],"templates":[[],[]],"prevention":[0,0]},
+    {"id":"09_rage_speed","description":"Rage-associated Stormblade's existing speed versus Darion;010 basic pressure. No invented Rage-stack conversion.","heroes":["stormblade","darion"],"cards":[["010"],[]],"initial":[[],[]],"templates":[[],[]],"prevention":[0,0]},
+    {"id":"10_reflection_lethal","description":"049 exact one-level reflection,120 rebirth, explicit1HP finite prevention fixture and090 pressure.","heroes":["windrider","nightshade"],"cards":[["049","120"],["090"]],"initial":[[],[]],"templates":[[],[]],"prevention":[1,0]},
+    {"id":"11_cross_timed","description":"Energy/loss/regen/Wound/Toxin/periodic magic interactions; fixture parameters are explicit.","heroes":["bloodthorn","nightshade"],"cards":[["005","020","028","149"],["090","115"]],"initial":[[],["wound"]],"templates":[["toxin"],["toxin"]],"prevention":[0,0]},
+    {"id":"12_mirrored_sides","description":"Scenario11 with identical stable combatant identities and reversed presentation sides/input ordering.","mirrorOf":"11_cross_timed"}
+  ]
+}

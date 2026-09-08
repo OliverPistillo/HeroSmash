@@ -11,7 +11,7 @@ permissions:
 jobs:
   portable-gates:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
         with:
@@ -32,6 +32,8 @@ jobs:
         run: python -m pip install -r tools/requirements-canonical.txt
       - name: Run canonical data and deterministic effect gates
         run: python tools/validation/canonical.py --godot .work/tools/Godot_v4.7.2-stable_linux.x86_64 --require-clean
+      - name: Run deterministic combat, replay and repeated 12000-fight lab
+        run: python tools/validation/combat.py --godot .work/tools/Godot_v4.7.2-stable_linux.x86_64 --require-clean
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -39,6 +41,7 @@ jobs:
           path: |
             .work/reports/foundation.json
             .work/reports/canonical.json
+            .work/reports/combat/
 
   # Physical Android / GPU / Blender rebuild gates remain explicit local checks.
   # This CI profile does not claim external-archive preservation or device QA.
