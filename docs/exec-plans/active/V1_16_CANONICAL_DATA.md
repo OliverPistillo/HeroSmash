@@ -1,6 +1,14 @@
 # v1.16 — Canonical Data Migration + Exact Card Semantics Framework
 
-Status: ready after v1.15 closeout; **not executed in v1.15**.
+Status: executing on `revival/v1.16-canonical-data`, baseline tag
+`v1.15-foundation`, commit `80c098b256f5855d4c5dfb9869135fd2bad6c709`.
+
+Current task overrides the illustrative pilot size below with 15 representative
+cards. Scope and unresolved product decisions are specified in
+`docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md`.
+Python 3.14.7 and Godot 4.7.2 were detected before changes. `jsonschema` was absent;
+dependencies are isolated under `.work/venvs/canonical-data/`, never installed
+globally. Android, Blender, MCP and global engine installations are unchanged.
 
 ## Preconditions
 
