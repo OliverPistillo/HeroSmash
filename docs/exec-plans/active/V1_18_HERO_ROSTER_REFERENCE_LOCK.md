@@ -1,6 +1,11 @@
 # v1.18 — Final hero roster and visual reference lock
 
-Status: proposed next macro phase; no final art production authorized by this plan.
+Status: executing on `revival/v1.18-hero-reference-lock`, baseline `337710e`.
+The current owner task explicitly authorizes deciding 16 launch + 4 reserve and
+the production specification. It supersedes the earlier separate roster-selection
+approval step below. This does not establish rights clearance or approval of
+source-unsupported visual attributes: those remain marked proposal/unresolved.
+No final art production is authorized by this plan.
 Start from completed v1.17 and its exact validated/evidence/state commits. Preserve
 the combat baseline and all v1.15/v1.16/v1.17 gates; no balance tuning in this phase.
 

@@ -1,0 +1,204 @@
+{
+  "characters": [
+    {
+      "id": "solkael_lionheart",
+      "name": "Solkael Lionheart",
+      "title": "The Sun-Crowned Guardian",
+      "animal_species": "Lion",
+      "combat_role": "Tank / Frontline Defender",
+      "branches": ["Guardian", "Shield"],
+      "weapon_or_fighting_style": "Tower gauntlets, solar shield stance, heavy counter punches",
+      "personality": "Noble, disciplined, protective, born leader"
+    },
+    {
+      "id": "fenrox_bloodhowl",
+      "name": "Fenrox Bloodhowl",
+      "title": "The Ember Alpha",
+      "animal_species": "Wolf",
+      "combat_role": "Melee DPS / Rampage Fighter",
+      "branches": ["Rage", "Assault"],
+      "weapon_or_fighting_style": "Twin claw blades, lunging strikes, burning combo chains",
+      "personality": "Aggressive, loyal, fearless, thrives under pressure"
+    },
+    {
+      "id": "kitsara_moonveil",
+      "name": "Kitsara Moonveil",
+      "title": "The Nine-Step Mirage",
+      "animal_species": "Fox",
+      "combat_role": "Duelist / Evasive Assassin",
+      "branches": ["Dodge", "Precision"],
+      "weapon_or_fighting_style": "Twin daggers, feints, mirage steps, wind-cut counters",
+      "personality": "Clever, playful, unpredictable, dangerously calm"
+    },
+    {
+      "id": "aethryon_stormwing",
+      "name": "Aethryon Stormwing",
+      "title": "The Thunder-Eyed Herald",
+      "animal_species": "Eagle",
+      "combat_role": "Ranged Caster / Crit Specialist",
+      "branches": ["Arcane", "Precision"],
+      "weapon_or_fighting_style": "Lightning spear, aerial glyph casting, charged feather bolts",
+      "personality": "Proud, sharp-minded, visionary, intense"
+    },
+    {
+      "id": "brumgar_earthhide",
+      "name": "Brumgar Earthhide",
+      "title": "The Sleeping Mountain",
+      "animal_species": "Bear",
+      "combat_role": "Bruiser / Sustain Tank",
+      "branches": ["Guardian", "Healing"],
+      "weapon_or_fighting_style": "Stone-plated fists, grapples, ground slams, regeneration aura",
+      "personality": "Patient, warm-hearted, stubborn, impossible to intimidate"
+    },
+    {
+      "id": "sylvex_venomkiss",
+      "name": "Sylvex Venomkiss",
+      "title": "The Emerald Curse",
+      "animal_species": "Cobra",
+      "combat_role": "Damage Over Time / Debuff Assassin",
+      "branches": ["Venom", "Wound"],
+      "weapon_or_fighting_style": "Poison blades, toxic mist, fang strikes, alchemical darts",
+      "personality": "Elegant, cold, calculating, speaks softly before striking"
+    },
+    {
+      "id": "rajuro_strikefang",
+      "name": "Rajuro Strikefang",
+      "title": "The Golden Palm",
+      "animal_species": "Tiger",
+      "combat_role": "Burst DPS / Martial Artist",
+      "branches": ["Assault", "Precision"],
+      "weapon_or_fighting_style": "Explosive palm strikes, clawed boxing, pressure-point combos",
+      "personality": "Confident, competitive, honorable, obsessed with perfect technique"
+    },
+    {
+      "id": "morvayne_blackquill",
+      "name": "Morvayne Blackquill",
+      "title": "The Eclipse Hexblade",
+      "animal_species": "Raven",
+      "combat_role": "Spellblade / Curse Fighter",
+      "branches": ["Arcane", "Wound"],
+      "weapon_or_fighting_style": "Void rapier, curse sigils, feather shadows, delayed rupture spells",
+      "personality": "Mysterious, theatrical, intelligent, enjoys psychological warfare"
+    },
+    {
+      "id": "karchar_reefbreaker",
+      "name": "Karchar Reefbreaker",
+      "title": "The Abyssal Hammer",
+      "animal_species": "Shark",
+      "combat_role": "Heavy Bruiser / Execution Fighter",
+      "branches": ["Power", "Wound"],
+      "weapon_or_fighting_style": "Anchor hammer, brutal charges, jaw-armor headbutts, rupture slams",
+      "personality": "Blunt, relentless, loud, laughs during danger"
+    },
+    {
+      "id": "elunor_lifethorn",
+      "name": "Elunor Lifethorn",
+      "title": "The Worldroot Saint",
+      "animal_species": "Stag",
+      "combat_role": "Healer / Defensive Support",
+      "branches": ["Healing", "Guardian"],
+      "weapon_or_fighting_style": "Crystal antler magic, root barriers, life pulses, sanctuary circles",
+      "personality": "Wise, serene, compassionate, quietly unbreakable"
+    },
+    {
+      "id": "gruttar_tuskgold",
+      "name": "Gruttar Tuskgold",
+      "title": "The Warhorn Breaker",
+      "animal_species": "Boar",
+      "combat_role": "Disruptor / Shielded Brawler",
+      "branches": ["Assault", "Shield"],
+      "weapon_or_fighting_style": "Massive warhammer, armored charges, tusk rushes, shockwave blocks",
+      "personality": "Rowdy, brave, impatient, loyal to the last breath"
+    },
+    {
+      "id": "nyxara_nightstep",
+      "name": "Nyxara Nightstep",
+      "title": "The Lunar Bleed",
+      "animal_species": "Panther",
+      "combat_role": "Assassin / Bleed Duelist",
+      "branches": ["Dodge", "Wound"],
+      "weapon_or_fighting_style": "Shadow claws, silent dashes, bleed cuts, vanish-counter strikes",
+      "personality": "Quiet, focused, ruthless, impossible to read"
+    },
+    {
+      "id": "oromir_frostclock",
+      "name": "Oromir Frostclock",
+      "title": "The Timebound Oracle",
+      "animal_species": "Owl",
+      "combat_role": "Control Mage / Tempo Manipulator",
+      "branches": ["Arcane", "Frost"],
+      "weapon_or_fighting_style": "Time glyphs, frost orbs, staff casting, slow-field rituals",
+      "personality": "Ancient-minded, analytical, cryptic, never surprised"
+    },
+    {
+      "id": "rhazgor_crystalhorn",
+      "name": "Rhazgor Crystalhorn",
+      "title": "The Living Bastion",
+      "animal_species": "Rhinoceros",
+      "combat_role": "Shield Tank / Siege Fighter",
+      "branches": ["Shield", "Power"],
+      "weapon_or_fighting_style": "Energy tower shield, seismic horn charge, crystal armor, barrier crush",
+      "personality": "Steady, dutiful, direct, believes every problem has a door-sized solution"
+    },
+    {
+      "id": "zelkara_jadeclaw",
+      "name": "Zelkara Jadeclaw",
+      "title": "The Silent Execution",
+      "animal_species": "Praying Mantis",
+      "combat_role": "Counter Assassin / Precision Duelist",
+      "branches": ["Precision", "Dodge"],
+      "weapon_or_fighting_style": "Blade arms, rapid parries, execution cuts, spinning counterattacks",
+      "personality": "Graceful, patient, disciplined, frighteningly precise"
+    },
+    {
+      "id": "vulkaryn_emberlord",
+      "name": "Vulkaryn Emberlord",
+      "title": "The Crown of Cinders",
+      "animal_species": "Dragon-Lizard",
+      "combat_role": "Fire Bruiser / Explosive Caster",
+      "branches": ["Rage", "Power"],
+      "weapon_or_fighting_style": "Molten claws, volcanic breath, lava armor, explosive tail strikes",
+      "personality": "Proud, volatile, charismatic, treats every fight like a coronation"
+    },
+    {
+      "id": "kongaru_ironpalm",
+      "name": "Kongaru Ironpalm",
+      "title": "The Thunderhand Monk",
+      "animal_species": "Gorilla",
+      "combat_role": "Brawler / Crowd Control Tank",
+      "branches": ["Power", "Guardian"],
+      "weapon_or_fighting_style": "Iron palm martial arts, ground pounds, shockwave grapples, armor-breaking blows",
+      "personality": "Calm, immense, protective, speaks little and hits like a collapsing wall"
+    },
+    {
+      "id": "lupika_swiftkick",
+      "name": "Lupika Swiftkick",
+      "title": "The Laughing Comet",
+      "animal_species": "Hare",
+      "combat_role": "Speed Fighter / Evasion Striker",
+      "branches": ["Dodge", "Assault"],
+      "weapon_or_fighting_style": "Acrobatic kickboxing, spring-step dashes, aerial heel strikes, rapid feints",
+      "personality": "Energetic, sarcastic, fearless, always moving before others think"
+    },
+    {
+      "id": "tortugan_runewarden",
+      "name": "Tortugan Runewarden",
+      "title": "The Shell of Ages",
+      "animal_species": "Turtle",
+      "combat_role": "Defensive Caster / Barrier Support",
+      "branches": ["Shield", "Arcane"],
+      "weapon_or_fighting_style": "Rune shell barriers, ward circles, staff counters, reflective magic shields",
+      "personality": "Patient, scholarly, dry-humored, wins fights by outlasting bad decisions"
+    },
+    {
+      "id": "skarvex_stinglash",
+      "name": "Skarvex Stinglash",
+      "title": "The Last Sting",
+      "animal_species": "Scorpion",
+      "combat_role": "Debuff Duelist / Poison Executioner",
+      "branches": ["Venom", "Precision"],
+      "weapon_or_fighting_style": "Chain stinger, venom hooks, puncture strikes, precision tail executions",
+      "personality": "Dangerous, disciplined, merciless, enjoys ending fights cleanly"
+    }
+  ]
+}

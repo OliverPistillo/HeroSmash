@@ -1,0 +1,1013 @@
+{
+  "schema_version": 1,
+  "review_authority": "Current v1.18 task authorizes design selection. Direction-selected is limited internal planning approval, not rights clearance or owner approval of final art.",
+  "by_sha256": {
+    "7218dbfe589d667649575163c5441091ae007038e6633d789ec216ee67ff81db": {
+      "category": "arenas",
+      "associations": [
+        {
+          "type": "arenas",
+          "id": "unresolved",
+          "basis": "visual subject review"
+        }
+      ],
+      "approval_status": "reference-only",
+      "production_usable": false,
+      "notes": "Arena/parallax breakdown; no character turnaround.",
+      "tags": [
+        "v1.18-visual-review",
+        "rights-unresolved"
+      ],
+      "review_method": "Visual inspection at contact-sheet scale; named roster boards and Solkael primary also inspected at source resolution.",
+      "rights_status": "unknown-rights"
+    },
+    "58f997286a52e894d726bb03a56ca5cf85dc83df67c457a5879ad9c8fdbbb98b": {
+      "category": "brand-ui",
+      "associations": [
+        {
+          "type": "UI",
+          "id": "unresolved",
+          "basis": "visual subject review"
+        }
+      ],
+      "approval_status": "reference-only",
+      "production_usable": false,
+      "notes": "Combined brand/combat/card/VFX board. Useful hierarchy; microtext and dense ornament require simplification.",
+      "tags": [
+        "v1.18-visual-review",
+        "rights-unresolved"
+      ],
+      "review_method": "Visual inspection at contact-sheet scale; named roster boards and Solkael primary also inspected at source resolution.",
+      "rights_status": "unknown-rights"
+    },
+    "88431d8426208f992c4c5696a035ad9e2ee05331dea25aacfe169015cd83fc54": {
+      "category": "arenas",
+      "associations": [
+        {
+          "type": "arenas",
+          "id": "unresolved",
+          "basis": "visual subject review"
+        }
+      ],
+      "approval_status": "reference-only",
+      "production_usable": false,
+      "notes": "Five arena mood variants; decorative depth only, no arena production approval.",
+      "tags": [
+        "v1.18-visual-review",
+        "rights-unresolved"
+      ],
+      "review_method": "Visual inspection at contact-sheet scale; named roster boards and Solkael primary also inspected at source resolution.",
+      "rights_status": "unknown-rights"
+    },
+    "e6831cdc15e23311dd9dd16e6f0e553065f8392666b8e80b5adf052a289085fe": {
+      "category": "arenas",
+      "associations": [
+        {
+          "type": "arenas",
+          "id": "unresolved",
+          "basis": "visual subject review"
+        }
+      ],
+      "approval_status": "reference-only",
+      "production_usable": false,
+      "notes": "Arena layer plans; no new gameplay zones or elements inferred.",
+      "tags": [
+        "v1.18-visual-review",
+        "rights-unresolved"
+      ],
+      "review_method": "Visual inspection at contact-sheet scale; named roster boards and Solkael primary also inspected at source resolution.",
+      "rights_status": "unknown-rights"
+    },
+    "ba8e7fb8437f2755486739ce0ece4e31f5dbed64304eb04a13379bfc97a49df1": {
+      "category": "arenas",
+      "associations": [
+        {
+          "type": "arenas",
+          "id": "unresolved",
+          "basis": "visual subject review"
+        }
+      ],
+      "approval_status": "reference-only",
+      "production_usable": false,
+      "notes": "Central fighting floor with side architecture and VFX; reference direction only.",
+      "tags": [
+        "v1.18-visual-review",
+        "rights-unresolved"
+      ],
+      "review_method": "Visual inspection at contact-sheet scale; named roster boards and Solkael primary also inspected at source resolution.",
+      "rights_status": "unknown-rights"
+    },
+    "79910d377b0f447931a30f7d36d7bc5ef58ae1b06417860c39ec2f0e7ba63503": {
+      "category": "brand-ui",
+      "associations": [
+        {
+          "type": "UI",
+          "id": "unresolved",
+          "basis": "visual subject review"
+        }
+      ],
+      "approval_status": "direction-selected",
+      "production_usable": false,
+      "notes": "Fighter HUD with central timer, health bars and market. Evolution labels are not economy authority.",
+      "tags": [
+        "v1.18-visual-review",
+        "rights-unresolved"
+      ],
+      "review_method": "Visual inspection at contact-sheet scale; named roster boards and Solkael primary also inspected at source resolution.",
+      "rights_status": "unknown-rights"
+    },
+    "057571b68ec8796e055db88af1a45a5c04caf025bc3618167863a09d02ca59b0": {
+      "category": "brand-ui",
+      "associations": [
+        {
+          "type": "UI",
+          "id": "unresolved",
+          "basis": "visual subject review"
+        }
+      ],
+      "approval_status": "reference-only",
+      "production_usable": false,
+      "notes": "Gold/slanted logo variants and app icon; owner and generator session unverified.",
+      "tags": [
+        "v1.18-visual-review",
+        "rights-unresolved"
+      ],
+      "review_method": "Visual inspection at contact-sheet scale; named roster boards and Solkael primary also inspected at source resolution.",
+      "rights_status": "unknown-rights"
+    },
+    "566d7bd59b125c7ca318577f73add64e7c55c92555ea80afeb56cb04909f5811": {
+      "category": "characters",
+      "associations": [
+        {
+          "type": "characters",
+          "id": "unresolved",
+          "basis": "visual subject review"
+        }
+      ],
+      "approval_status": "reference-only",
+      "production_usable": false,
+      "notes": "Unnamed lion evolution with sword/shield conflicts with sourced tower-gauntlet style; hypothesis Solkael, not an approved equipment change.",
+      "tags": [
+        "v1.18-visual-review",
+        "rights-unresolved"
+      ],
+      "review_method": "Visual inspection at contact-sheet scale; named roster boards and Solkael primary also inspected at source resolution.",
+      "rights_status": "unknown-rights"
+    },
+    "0abf8d17bf43b1f2758497dee21fbc55676a9bd9f2a6793c676c5744b3b775cd": {
+      "category": "characters",
+      "associations": [
+        {
+          "type": "characters",
+          "id": "unresolved",
+          "basis": "visual subject review"
+        }
+      ],
+      "approval_status": "reference-only",
+      "production_usable": false,
+      "notes": "Unnamed ice wolf evolution conflicts with Fenrox ember affinity; do not infer Ice hero or rename.",
+      "tags": [
+        "v1.18-visual-review",
+        "rights-unresolved"
+      ],
+      "review_method": "Visual inspection at contact-sheet scale; named roster boards and Solkael primary also inspected at source resolution.",
+      "rights_status": "unknown-rights"
+    },
+    "069119b4f6b4115339be683d907943dff7a61f00521a58405532a4bbf7c0eb8a": {
+      "category": "characters",
+      "associations": [
+        {
+          "type": "characters",
+          "id": "unresolved",
+          "basis": "visual subject review"
+        }
+      ],
+      "approval_status": "reference-only",
+      "production_usable": false,
+      "notes": "Unnamed eagle evolution and blue lightning; hypothesis Aethryon only.",
+      "tags": [
+        "v1.18-visual-review",
+        "rights-unresolved"
+      ],
+      "review_method": "Visual inspection at contact-sheet scale; named roster boards and Solkael primary also inspected at source resolution.",
+      "rights_status": "unknown-rights"
+    },
+    "8884fa6ee1961cf82279f19dae2d0185d6f0f9f92860cff65e2ce96b9c2e6b45": {
+      "category": "characters",
+      "associations": [
+        {
+          "type": "characters",
+          "id": "unresolved",
+          "basis": "visual subject review"
+        }
+      ],
+      "approval_status": "reference-only",
+      "production_usable": false,
+      "notes": "Unnamed fox evolution purple magic; hypothesis Kitsara only, do not add Essence.",
+      "tags": [
+        "v1.18-visual-review",
+        "rights-unresolved"
+      ],
+      "review_method": "Visual inspection at contact-sheet scale; named roster boards and Solkael primary also inspected at source resolution.",
+      "rights_status": "unknown-rights"
+    },
+    "51afcccfa3ed652dac366a37ed62402e8021e2b62f5d5541dfad7c11283b611c": {
+      "category": "characters",
+      "associations": [
+        {
+          "type": "characters",
+          "id": "unresolved",
+          "basis": "visual subject review"
+        }
+      ],
+      "approval_status": "reference-only",
+      "production_usable": false,
+      "notes": "Unnamed bear evolution with bark/stone; hypothesis Brumgar only.",
+      "tags": [
+        "v1.18-visual-review",
+        "rights-unresolved"
+      ],
+      "review_method": "Visual inspection at contact-sheet scale; named roster boards and Solkael primary also inspected at source resolution.",
+      "rights_status": "unknown-rights"
+    },
+    "ceaaaeda1d71ac23332b70943943dec5197ae4493021ab3abb52d90d849b9977": {
+      "category": "characters",
+      "associations": [
+        {
+          "type": "characters",
+          "id": "unresolved",
+          "basis": "visual subject review"
+        }
+      ],
+      "approval_status": "reference-only",
+      "production_usable": false,
+      "notes": "Unnamed hooded forest figure; subject uncertain, not enough evidence for Sylvex or Elunor.",
+      "tags": [
+        "v1.18-visual-review",
+        "rights-unresolved"
+      ],
+      "review_method": "Visual inspection at contact-sheet scale; named roster boards and Solkael primary also inspected at source resolution.",
+      "rights_status": "unknown-rights"
+    },
+    "3963bc021a8927befb19714f15f1c0ac76151ff5126fe89ea2c9a8b3d52884bd": {
+      "category": "characters",
+      "associations": [
+        {
+          "type": "characters",
+          "id": "unresolved",
+          "basis": "visual subject review"
+        }
+      ],
+      "approval_status": "reference-only",
+      "production_usable": false,
+      "notes": "Unnamed tiger evolution with antler-like ornaments; hypothesis Rajuro only, antlers not locked.",
+      "tags": [
+        "v1.18-visual-review",
+        "rights-unresolved"
+      ],
+      "review_method": "Visual inspection at contact-sheet scale; named roster boards and Solkael primary also inspected at source resolution.",
+      "rights_status": "unknown-rights"
+    },
+    "97119fd1ecbed7d9c5d8436ddf18c6e61fcd3da6def1753dcf987add13718da0": {
+      "category": "characters",
+      "associations": [
+        {
+          "type": "characters",
+          "id": "unresolved",
+          "basis": "visual subject review"
+        }
+      ],
+      "approval_status": "reference-only",
+      "production_usable": false,
+      "notes": "Unnamed dark armored fighter; subject uncertain, do not assign Morvayne from palette alone.",
+      "tags": [
+        "v1.18-visual-review",
+        "rights-unresolved"
+      ],
+      "review_method": "Visual inspection at contact-sheet scale; named roster boards and Solkael primary also inspected at source resolution.",
+      "rights_status": "unknown-rights"
+    },
+    "39af6fb3c03a5d303c54f323c401dfd9242dc9a5de6b022fb577a413e9764513": {
+      "category": "characters",
+      "associations": [
+        {
+          "type": "characters",
+          "id": "unresolved",
+          "basis": "visual subject review"
+        }
+      ],
+      "approval_status": "reference-only",
+      "production_usable": false,
+      "notes": "Unnamed shark evolution; hypothesis Karchar only.",
+      "tags": [
+        "v1.18-visual-review",
+        "rights-unresolved"
+      ],
+      "review_method": "Visual inspection at contact-sheet scale; named roster boards and Solkael primary also inspected at source resolution.",
+      "rights_status": "unknown-rights"
+    },
+    "cdf690f2ab4663fe0bb051304f63f5c7ebdf01093a29993f5bef02e4b8023d3c": {
+      "category": "brand-ui",
+      "associations": [
+        {
+          "type": "UI",
+          "id": "unresolved",
+          "basis": "visual subject review"
+        }
+      ],
+      "approval_status": "direction-selected",
+      "production_usable": false,
+      "notes": "Market phone composition, three large cards and restrained HUD; hierarchy reference, no approval of prices or text.",
+      "tags": [
+        "v1.18-visual-review",
+        "rights-unresolved"
+      ],
+      "review_method": "Visual inspection at contact-sheet scale; named roster boards and Solkael primary also inspected at source resolution.",
+      "rights_status": "unknown-rights"
+    },
+    "14bac01d944138648e39e716b7653e03dfc991cb463fad70f9226e7f023ed600": {
+      "category": "characters",
+      "associations": [
+        {
+          "type": "characters",
+          "id": "unresolved",
+          "basis": "visual subject review"
+        }
+      ],
+      "approval_status": "reference-only",
+      "production_usable": false,
+      "notes": "White/ice wolf sprite sheet; cannot identify as Fenrox. Raster movement study only.",
+      "tags": [
+        "v1.18-visual-review",
+        "rights-unresolved"
+      ],
+      "review_method": "Visual inspection at contact-sheet scale; named roster boards and Solkael primary also inspected at source resolution.",
+      "rights_status": "unknown-rights"
+    },
+    "74ea2844d74f9e977a4ea347dfe3e72168376f4a9b21374a41ae6e9c0ca1de28": {
+      "category": "characters",
+      "associations": [
+        {
+          "type": "hero",
+          "id": "solkael_lionheart",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "fenrox_bloodhowl",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "kitsara_moonveil",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "aethryon_stormwing",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "brumgar_earthhide",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "sylvex_venomkiss",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "rajuro_strikefang",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "morvayne_blackquill",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "karchar_reefbreaker",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "elunor_lifethorn",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "gruttar_tuskgold",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "nyxara_nightstep",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "oromir_frostclock",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "rhazgor_crystalhorn",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "zelkara_jadeclaw",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "vulkaryn_emberlord",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "kongaru_ironpalm",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "lupika_swiftkick",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "tortugan_runewarden",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "skarvex_stinglash",
+          "basis": "visible name on roster board"
+        }
+      ],
+      "approval_status": "reference-only",
+      "production_usable": false,
+      "notes": "Named 20-candidate board; all names/species linked visually. Branch badges contradict JSON and some entries have three badges. Dense armor and changing anatomy must be resolved; no evolution thresholds accepted from image.",
+      "tags": [
+        "v1.18-visual-review",
+        "rights-unresolved"
+      ],
+      "review_method": "Visual inspection at contact-sheet scale; named roster boards and Solkael primary also inspected at source resolution.",
+      "rights_status": "unknown-rights"
+    },
+    "c12669cf42a03d0562d254a585afcbb0bc73fccb1af229ddf162d25ad530c252": {
+      "category": "characters",
+      "associations": [
+        {
+          "type": "hero",
+          "id": "solkael_lionheart",
+          "basis": "visible Solkael name"
+        }
+      ],
+      "approval_status": "reference-only",
+      "production_usable": false,
+      "notes": "Named Solkael action sheet with gold fire. Single-angle raster sequences are not full 3D references or valid runtime animation.",
+      "tags": [
+        "v1.18-visual-review",
+        "rights-unresolved"
+      ],
+      "review_method": "Visual inspection at contact-sheet scale; named roster boards and Solkael primary also inspected at source resolution.",
+      "rights_status": "unknown-rights"
+    },
+    "bae70c4b7e018fb20e7243388415ab191a692d88be87776d1d0736a391fc946c": {
+      "category": "cards",
+      "associations": [
+        {
+          "type": "UI",
+          "id": "unresolved",
+          "basis": "visual subject review"
+        }
+      ],
+      "approval_status": "reference-only",
+      "production_usable": false,
+      "notes": "Card frames/level examples and 12 branch samples; labels include inconsistent rarity/branch vocabulary. Use placement study only.",
+      "tags": [
+        "v1.18-visual-review",
+        "rights-unresolved"
+      ],
+      "review_method": "Visual inspection at contact-sheet scale; named roster boards and Solkael primary also inspected at source resolution.",
+      "rights_status": "unknown-rights"
+    },
+    "d6da79b11e95f7953ffb75d666adfce6ed711409c3179c2dd99119bcc12d9fde": {
+      "category": "characters",
+      "associations": [
+        {
+          "type": "hero",
+          "id": "solkael_lionheart",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "fenrox_bloodhowl",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "kitsara_moonveil",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "aethryon_stormwing",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "brumgar_earthhide",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "sylvex_venomkiss",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "rajuro_strikefang",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "morvayne_blackquill",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "karchar_reefbreaker",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "elunor_lifethorn",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "gruttar_tuskgold",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "nyxara_nightstep",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "oromir_frostclock",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "rhazgor_crystalhorn",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "zelkara_jadeclaw",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "vulkaryn_emberlord",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "kongaru_ironpalm",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "lupika_swiftkick",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "tortugan_runewarden",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "skarvex_stinglash",
+          "basis": "visible name on roster board"
+        }
+      ],
+      "approval_status": "direction-selected",
+      "production_usable": false,
+      "notes": "Named complete 20-candidate board. Selected for relative silhouette/species and restrained base-stage shapes. Textual JSON wins on weapons/branches. Snake biped-to-coil, eagle-to-bird, panther-to-quadruped and human-to-mantis changes are not a shared-rig specification.",
+      "tags": [
+        "v1.18-visual-review",
+        "rights-unresolved"
+      ],
+      "review_method": "Visual inspection at contact-sheet scale; named roster boards and Solkael primary also inspected at source resolution.",
+      "rights_status": "unknown-rights"
+    },
+    "4feb0ddb0593b57d9c65c8b9cca217f743e4a90219b43c324f6afb1a1434c7d6": {
+      "category": "characters",
+      "associations": [
+        {
+          "type": "hero",
+          "id": "solkael_lionheart",
+          "basis": "visible Solkael name"
+        }
+      ],
+      "approval_status": "reference-only",
+      "production_usable": false,
+      "notes": "Named Solkael evolution sprite study; action silhouettes only, not turnaround or verified animation.",
+      "tags": [
+        "v1.18-visual-review",
+        "rights-unresolved"
+      ],
+      "review_method": "Visual inspection at contact-sheet scale; named roster boards and Solkael primary also inspected at source resolution.",
+      "rights_status": "unknown-rights"
+    },
+    "678d237f3c938deb9132c076b3f35d4f4b0c5910b63c1dd5beec4c7328b5440c": {
+      "category": "characters",
+      "associations": [
+        {
+          "type": "characters",
+          "id": "unresolved",
+          "basis": "visual subject review"
+        }
+      ],
+      "approval_status": "reference-only",
+      "production_usable": false,
+      "notes": "Full roster sprite grid with tiny rows; IDs/text and anatomy are insufficient to certify reference views or clips.",
+      "tags": [
+        "v1.18-visual-review",
+        "rights-unresolved"
+      ],
+      "review_method": "Visual inspection at contact-sheet scale; named roster boards and Solkael primary also inspected at source resolution.",
+      "rights_status": "unknown-rights"
+    },
+    "2b803f546d4dd6c6860c395bde26ad310a49a1eb58fd426a1cd7e30675e944f8": {
+      "category": "characters",
+      "associations": [
+        {
+          "type": "characters",
+          "id": "unresolved",
+          "basis": "visual subject review"
+        }
+      ],
+      "approval_status": "reference-only",
+      "production_usable": false,
+      "notes": "Unnamed lion-like combat sprite sheet; possible Solkael, identity not certified.",
+      "tags": [
+        "v1.18-visual-review",
+        "rights-unresolved"
+      ],
+      "review_method": "Visual inspection at contact-sheet scale; named roster boards and Solkael primary also inspected at source resolution.",
+      "rights_status": "unknown-rights"
+    },
+    "4fe1b3cd8d6749def47306de30acb352fae4da61b760348425101b08c8257f52": {
+      "category": "characters",
+      "associations": [
+        {
+          "type": "hero",
+          "id": "solkael_lionheart",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "fenrox_bloodhowl",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "kitsara_moonveil",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "aethryon_stormwing",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "brumgar_earthhide",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "sylvex_venomkiss",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "rajuro_strikefang",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "morvayne_blackquill",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "karchar_reefbreaker",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "elunor_lifethorn",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "gruttar_tuskgold",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "nyxara_nightstep",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "oromir_frostclock",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "rhazgor_crystalhorn",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "zelkara_jadeclaw",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "vulkaryn_emberlord",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "kongaru_ironpalm",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "lupika_swiftkick",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "tortugan_runewarden",
+          "basis": "visible name on roster board"
+        },
+        {
+          "type": "hero",
+          "id": "skarvex_stinglash",
+          "basis": "visible name on roster board"
+        }
+      ],
+      "approval_status": "reference-only",
+      "production_usable": false,
+      "notes": "Named roster master sprite index; action overview only, no minimum-view completion.",
+      "tags": [
+        "v1.18-visual-review",
+        "rights-unresolved"
+      ],
+      "review_method": "Visual inspection at contact-sheet scale; named roster boards and Solkael primary also inspected at source resolution.",
+      "rights_status": "unknown-rights"
+    },
+    "0323e2c2441059e554dc48695b5e7133f74d58b7f3a718d82c9fd80bb23e968d": {
+      "category": "characters",
+      "associations": [
+        {
+          "type": "hero",
+          "id": "solkael_lionheart",
+          "basis": "visible Solkael name"
+        }
+      ],
+      "approval_status": "direction-selected",
+      "production_usable": false,
+      "notes": "Named Solkael gauntlet concept, clear neutral 3/4 front, mane and forearm shields. Selected primary Solkael direction. Crown/body scale and three-stage labels require separate policy; no rear/side/expressions sheet.",
+      "tags": [
+        "v1.18-visual-review",
+        "rights-unresolved"
+      ],
+      "review_method": "Visual inspection at contact-sheet scale; named roster boards and Solkael primary also inspected at source resolution.",
+      "rights_status": "unknown-rights"
+    },
+    "7ec89515bcf3873329fe1ad137dbbf0408c2a6679c7298380480886ba9b2e84a": {
+      "category": "characters",
+      "associations": [
+        {
+          "type": "characters",
+          "id": "unresolved",
+          "basis": "visual subject review"
+        }
+      ],
+      "approval_status": "reference-only",
+      "production_usable": false,
+      "notes": "White wolf sprite sheet similar to transparent derivative; visual near-duplicate, different file bytes; no automatic merge.",
+      "tags": [
+        "v1.18-visual-review",
+        "rights-unresolved"
+      ],
+      "review_method": "Visual inspection at contact-sheet scale; named roster boards and Solkael primary also inspected at source resolution.",
+      "rights_status": "unknown-rights"
+    },
+    "67f026abf63e4f4c21ec1cfd33e88f716acfa9267eab4d4039121d2b80c22446": {
+      "category": "arenas",
+      "associations": [
+        {
+          "type": "arenas",
+          "id": "unresolved",
+          "basis": "visual subject review"
+        }
+      ],
+      "approval_status": "direction-selected",
+      "production_usable": false,
+      "notes": "Arena plate with open central floor; presentation reference only.",
+      "tags": [
+        "v1.18-visual-review",
+        "rights-unresolved"
+      ],
+      "review_method": "Visual inspection at contact-sheet scale; named roster boards and Solkael primary also inspected at source resolution.",
+      "rights_status": "unknown-rights"
+    },
+    "2613f3b6b3bb3123d16ffee7ab5876f81d5ca8eba43f116b7f07f8bc405ded66": {
+      "category": "brand-ui",
+      "associations": [
+        {
+          "type": "UI",
+          "id": "unresolved",
+          "basis": "visual subject review"
+        }
+      ],
+      "approval_status": "reference-only",
+      "production_usable": false,
+      "notes": "Combat composition with central timer and large fighters; small side data should move to inspection.",
+      "tags": [
+        "v1.18-visual-review",
+        "rights-unresolved"
+      ],
+      "review_method": "Visual inspection at contact-sheet scale; named roster boards and Solkael primary also inspected at source resolution.",
+      "rights_status": "unknown-rights"
+    },
+    "b969ca7690b70579998566f690a24539c87e46f0b99083b14437b67c2f1f700e": {
+      "category": "brand-ui",
+      "associations": [
+        {
+          "type": "UI",
+          "id": "unresolved",
+          "basis": "visual subject review"
+        }
+      ],
+      "approval_status": "reference-only",
+      "production_usable": false,
+      "notes": "Hero-select board contains names outside both candidate and oracle sets; reference for card hierarchy only, no roster authority.",
+      "tags": [
+        "v1.18-visual-review",
+        "rights-unresolved"
+      ],
+      "review_method": "Visual inspection at contact-sheet scale; named roster boards and Solkael primary also inspected at source resolution.",
+      "rights_status": "unknown-rights"
+    },
+    "1d79e51d3bfc170a58f661706248f89c9c3e6bd32a0bc9c95a3cffe3ae3018af": {
+      "category": "brand-ui",
+      "associations": [
+        {
+          "type": "UI",
+          "id": "unresolved",
+          "basis": "visual subject review"
+        }
+      ],
+      "approval_status": "reference-only",
+      "production_usable": false,
+      "notes": "Home key art with inconsistent humanoid lineup; do not import those heroes.",
+      "tags": [
+        "v1.18-visual-review",
+        "rights-unresolved"
+      ],
+      "review_method": "Visual inspection at contact-sheet scale; named roster boards and Solkael primary also inspected at source resolution.",
+      "rights_status": "unknown-rights"
+    },
+    "ae3813d300308ffc1bddb35cd3017e5d2465c77d437d384e75f59eb243aa083b": {
+      "category": "brand-ui",
+      "associations": [
+        {
+          "type": "UI",
+          "id": "unresolved",
+          "basis": "visual subject review"
+        }
+      ],
+      "approval_status": "reference-only",
+      "production_usable": false,
+      "notes": "Market composition; candidate IDs and card texts are not canonical.",
+      "tags": [
+        "v1.18-visual-review",
+        "rights-unresolved"
+      ],
+      "review_method": "Visual inspection at contact-sheet scale; named roster boards and Solkael primary also inspected at source resolution.",
+      "rights_status": "unknown-rights"
+    },
+    "093500bfc260b63cc96362754db59e6fd07bd2c0da6757971fadd1d332834a48": {
+      "category": "brand-ui",
+      "associations": [
+        {
+          "type": "UI",
+          "id": "unresolved",
+          "basis": "visual subject review"
+        }
+      ],
+      "approval_status": "direction-selected",
+      "production_usable": false,
+      "notes": "Style guide useful gold/dark-surface hierarchy; strong neon and tiny text should be reduced.",
+      "tags": [
+        "v1.18-visual-review",
+        "rights-unresolved"
+      ],
+      "review_method": "Visual inspection at contact-sheet scale; named roster boards and Solkael primary also inspected at source resolution.",
+      "rights_status": "unknown-rights"
+    },
+    "b0572020851d2785580c81e4a896c231a32fcbc7e116f7b7c461e37fba7295d6": {
+      "category": "brand-ui",
+      "associations": [
+        {
+          "type": "UI",
+          "id": "unresolved",
+          "basis": "visual subject review"
+        }
+      ],
+      "approval_status": "reference-only",
+      "production_usable": false,
+      "notes": "Dense art bible composed of HUD, card, fighter, VFX panels; direction study only.",
+      "tags": [
+        "v1.18-visual-review",
+        "rights-unresolved"
+      ],
+      "review_method": "Visual inspection at contact-sheet scale; named roster boards and Solkael primary also inspected at source resolution.",
+      "rights_status": "unknown-rights"
+    },
+    "40f01ded7b0d3e61f2918bb0a8906cae180a03068487352091ecba6d74493d26": {
+      "category": "brand-ui",
+      "associations": [
+        {
+          "type": "UI",
+          "id": "unresolved",
+          "basis": "visual subject review"
+        }
+      ],
+      "approval_status": "reference-only",
+      "production_usable": false,
+      "notes": "Branch sheet contains noncanonical Force/Nature/Shadow/Light/Tech/Elemental/Beast/Assassin/Ranger/Support. Prohibited as branch taxonomy; artwork rights unknown.",
+      "tags": [
+        "v1.18-visual-review",
+        "rights-unresolved"
+      ],
+      "review_method": "Visual inspection at contact-sheet scale; named roster boards and Solkael primary also inspected at source resolution.",
+      "rights_status": "unknown-rights"
+    },
+    "f8d31e91e30cca702ca47df77ea852579ffd565dce1c910593eb706919723121": {
+      "category": "brand-ui",
+      "associations": [
+        {
+          "type": "UI",
+          "id": "unresolved",
+          "basis": "visual subject review"
+        }
+      ],
+      "approval_status": "reference-only",
+      "production_usable": false,
+      "notes": "Fighter HUD and banners; align with central timer, simplify ornaments and microscopic tables.",
+      "tags": [
+        "v1.18-visual-review",
+        "rights-unresolved"
+      ],
+      "review_method": "Visual inspection at contact-sheet scale; named roster boards and Solkael primary also inspected at source resolution.",
+      "rights_status": "unknown-rights"
+    },
+    "3858b4445e7ed97388177ce0240be4976180c73b6dab3b751a45f0be0c9c20fd": {
+      "category": "cards",
+      "associations": [
+        {
+          "type": "UI",
+          "id": "unresolved",
+          "basis": "visual subject review"
+        }
+      ],
+      "approval_status": "reference-only",
+      "production_usable": false,
+      "notes": "Frame sheet includes Rare/Mythic and inconsistent levels; only Normal/Epic/Legendary retained in new specification.",
+      "tags": [
+        "v1.18-visual-review",
+        "rights-unresolved"
+      ],
+      "review_method": "Visual inspection at contact-sheet scale; named roster boards and Solkael primary also inspected at source resolution.",
+      "rights_status": "unknown-rights"
+    }
+  }
+}

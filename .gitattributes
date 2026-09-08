@@ -21,3 +21,11 @@ game/data/combat/*.json text eol=lf
 game/data/generated/v1_17/*.json text eol=lf
 docs/qa/evidence/v1.17/*.json text eol=lf
 docs/qa/evidence/v1.17/*.jsonl.gz -text
+
+# v1.18 metadata is portable; the captured source retains its exact original bytes.
+docs/references/visual/v1.18/*.json text eol=lf
+docs/references/visual/v1.18/hero_candidates.source.json -text
+docs/product-specs/roster/** text eol=lf
+docs/art/** text eol=lf
+docs/qa/evidence/v1.18/** text eol=lf
+docs/qa/evidence/v1.18/*.png -text
