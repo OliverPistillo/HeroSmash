@@ -1,0 +1,299 @@
+{
+  "schema_version": 1,
+  "tested_commit": "50fdb5820a4b5241885378dcb5215d68bf31920b",
+  "working_tree_changes": false,
+  "checks": [
+    {
+      "name": "inventory_and_retention",
+      "status": "pass",
+      "details": {
+        "baseline_paths": 427,
+        "unchanged_relocations": 393,
+        "archive_files": 1152,
+        "archive_integrity": "pass",
+        "duplicate_groups": 86
+      }
+    },
+    {
+      "name": "canonical_metadata",
+      "status": "pass",
+      "details": {
+        "status": "pass",
+        "cards": 150,
+        "branches": 12,
+        "rarity_counts": {
+          "Normale": 90,
+          "Leggendaria": 24,
+          "Epica": 36
+        },
+        "membership_counts": {
+          "2": 66,
+          "1": 84
+        },
+        "alternate_source_differences": {
+          "vecchio/deck.json": {
+            "image_card": 150
+          },
+          "vecchio/cards.json": {
+            "image_card": 150,
+            "levels": 24
+          },
+          "vecchio/cards_updated.json": {
+            "image_card": 150,
+            "levels": 24
+          },
+          "HeroSmash/data/legacy_deck_source.json": {}
+        },
+        "semantics": "metadata parity only; numeric effects remain legacy approximations"
+      }
+    },
+    {
+      "name": "validator_negative_cases",
+      "status": "pass",
+      "details": {
+        "command": [
+          "C:\\Python314\\python.exe",
+          "-X",
+          "utf8",
+          "D:\\Dev\\HeroSmash\\.work\\clean-v118-validation\\tools\\validation\\test_validators.py"
+        ],
+        "exit_code": 0,
+        "output": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.096s\n\nOK\n"
+      }
+    },
+    {
+      "name": "reference_manifest",
+      "status": "pass",
+      "details": {
+        "groups": 736,
+        "verified_origins": 832,
+        "archive_origins_not_requested": 0
+      }
+    },
+    {
+      "name": "web_modules_assets_http",
+      "status": "pass",
+      "details": {
+        "modules": 45,
+        "http_resources": 300,
+        "current_status_component": true,
+        "current_event_text": true
+      }
+    },
+    {
+      "name": "web_seeded_oracle",
+      "status": "pass",
+      "details": {
+        "command": [
+          "node",
+          "--experimental-default-type=module",
+          "D:\\Dev\\HeroSmash\\.work\\clean-v118-validation\\tools\\validation\\web_oracle.mjs"
+        ],
+        "exit_code": 0,
+        "output": "PASS: 8 seeds x 3 rounds, repeated; draft, 8/4, shop, lock, buy/undo, RNG, economy caps, league, combat, direct preparation, save fallback.\n"
+      }
+    },
+    {
+      "name": "legacy_asset_validator",
+      "status": "pass",
+      "details": {
+        "command": [
+          "C:\\Python314\\python.exe",
+          "-X",
+          "utf8",
+          "D:\\Dev\\HeroSmash\\.work\\clean-v118-validation\\legacy\\web-prototype\\tools\\asset_pipeline.py",
+          "validate"
+        ],
+        "exit_code": 0,
+        "output": "OK: assets/data valid\n"
+      }
+    },
+    {
+      "name": "legacy_readability_failure_unchanged",
+      "status": "pass",
+      "details": {
+        "command": [
+          "C:\\Python314\\python.exe",
+          "-X",
+          "utf8",
+          "D:\\Dev\\HeroSmash\\.work\\clean-v118-validation\\legacy\\web-prototype\\tools\\combat_readability_check.py"
+        ],
+        "exit_code": 1,
+        "output": "recap_physical: OK\nrecap_magic: OK\nrecap_dot: OK\nstatus_icons: MISSING\ncombat_log: MISSING\nskill_ready: OK\nhelp_overlay: OK\nshielded: OK\n",
+        "meaning": "Expected pre-existing stale identifier failure; not a successful legacy check. Current component/HTTP and browser evidence replace it for relocation."
+      }
+    },
+    {
+      "name": "glb_structure",
+      "status": "pass",
+      "details": {
+        "status": "pass",
+        "sha256": "7a58433128676fe8ab5a7542f64be851e5dbc76b547749b3bd101fac82ab1de2",
+        "bytes": 4764,
+        "gltf": "2.0",
+        "meshes": 1,
+        "skins": 1,
+        "joints": 1,
+        "materials": 1,
+        "textures": 0,
+        "animations": [
+          "idle"
+        ],
+        "bounds_meters": [
+          [
+            -0.5,
+            0.5
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            -0.5,
+            0.5
+          ]
+        ],
+        "triangles": 12
+      }
+    },
+    {
+      "name": "runtime_glb_provenance",
+      "status": "pass",
+      "details": {
+        "sha256": "7a58433128676fe8ab5a7542f64be851e5dbc76b547749b3bd101fac82ab1de2",
+        "bytes": 4764
+      }
+    },
+    {
+      "name": "legacy_arena_dimensions_alpha",
+      "status": "pass",
+      "details": {
+        "command": [
+          "C:/Users/olive/AppData/Local/Programs/Python/Python312/python.exe",
+          "D:\\Dev\\HeroSmash\\.work\\clean-v118-validation\\legacy\\web-prototype\\tools\\validate_arena_assets.py"
+        ],
+        "exit_code": 0,
+        "output": "assets/arenas/arena01_beast_crucible/arena01_bg_sky.png: (2048, 1152) RGBA\nassets/arenas/arena01_beast_crucible/arena01_bg_mountains.png: (2048, 1152) RGBA\nassets/arenas/arena01_beast_crucible/arena01_mg_back_architecture.png: (2048, 1152) RGBA\nassets/arenas/arena01_beast_crucible/arena01_mg_crystal_core.png: (2048, 1152) RGBA\nassets/arenas/arena01_beast_crucible/arena01_fg_combat_floor.png: (2048, 1152) RGBA\n\nOK: arena assets valid\n"
+      }
+    },
+    {
+      "name": "blender_version",
+      "status": "pass",
+      "details": {
+        "command": [
+          "C:/Program Files (x86)/Steam/steamapps/common/Blender/blender.exe",
+          "--version"
+        ],
+        "exit_code": 0,
+        "output": "Blender 5.2.1 LTS\n\tbuild date: 2026-08-25\n\tbuild time: 02:38:20\n\tbuild commit date: 2026-08-24\n\tbuild commit time: 16:50\n\tbuild hash: 9e2066aef7ef\n\tbuild branch: blender-v5.2-release\n\tbuild platform: Windows\n\tbuild type: Release\n\tbuild c flags:  /W3 -Werror=implicit-function-declaration -Werror=return-type -Wno-tautological-compare -Wno-unknown-pragmas -Wno-char-subscripts -Wstrict-prototypes -Wmissing-prototypes -Wunused-parameter -Wundef -Wundef-prefix -Werror=unguarded-availability-new /DWIN32 /D_WINDOWS /MP /nologo /J /Gy /Gd /showFilenames -Wno-unused-command-line-argument -Wno-microsoft-enum-forward-reference /clang:-funsigned-char /clang:-fno-strict-aliasing /clang:-ffp-contract=off -march=x86-64-v2 \n\tbuild c++ flags:  /W3 -Wno-tautological-compare -Wno-unknown-pragmas -Wno-char-subscripts -Wno-overloaded-virtual -Wno-sign-compare -Wno-invalid-offsetof -Wno-suggest-override -Wundef -Wundef-prefix -Wunused-parameter -Wmismatched-tags -Werror=unguarded-availability-new /DWIN32 /D_WINDOWS /EHsc  /Gy /MP /nologo /J /Gd /showFilenames /EHsc -Wno-unused-command-line-argument -Wno-microsoft-enum-forward-reference /clang:-funsigned-char /clang:-fno-strict-aliasing /clang:-ffp-contract=off -march=x86-64-v2 \n\tbuild link flags: /MACHINE:X64  /SUBSYSTEM:CONSOLE /STACK:2097152 /ignore:4049 /ignore:4217 /ignore:4221\n\tbuild system: CMake\n"
+      }
+    },
+    {
+      "name": "godot_version",
+      "status": "pass",
+      "details": {
+        "command": [
+          "D:/Dev/HeroSmash/.work/tools/godot-4.7.2/Godot_v4.7.2-stable_win64_console.exe",
+          "--version"
+        ],
+        "exit_code": 0,
+        "output": "4.7.2.stable.official.ed1daf0bf\n"
+      }
+    },
+    {
+      "name": "godot_import",
+      "status": "pass",
+      "details": {
+        "command": [
+          "D:/Dev/HeroSmash/.work/tools/godot-4.7.2/Godot_v4.7.2-stable_win64_console.exe",
+          "--headless",
+          "--path",
+          "D:\\Dev\\HeroSmash\\.work\\clean-v118-validation\\game",
+          "--editor",
+          "--import"
+        ],
+        "exit_code": 0,
+        "output": "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org\n\n[   0% ] \u001b[90m\u001b[1mfirst_scan_filesystem\u001b[22m | Started Inizializzazione del progetto (5 steps)\u001b[39m\u001b[0m\n[   0% ] \u001b[90m\u001b[1mfirst_scan_filesystem\u001b[22m | Scansione della struttura dei file...\u001b[39m\u001b[0m\n[  16% ] \u001b[90m\u001b[1mfirst_scan_filesystem\u001b[22m | Caricamento dei nomi delle classi globali…\u001b[39m\u001b[0m\n[  33% ] \u001b[90m\u001b[1mfirst_scan_filesystem\u001b[22m | Verifica dei GDExtension...\u001b[39m\u001b[0m\n[  50% ] \u001b[90m\u001b[1mfirst_scan_filesystem\u001b[22m | Creazione degli script autoload...\u001b[39m\u001b[0m\n[  66% ] \u001b[90m\u001b[1mfirst_scan_filesystem\u001b[22m | Inizializzazione delle estensioni...\u001b[39m\u001b[0m\n[  83% ] \u001b[90m\u001b[1mfirst_scan_filesystem\u001b[22m | Avvio della scansione dei file...\u001b[39m\u001b[0m\n\u001b[92m[ DONE ]\u001b[39m \u001b[1mfirst_scan_filesystem\u001b[22m\n\u001b[0m\n[   0% ] \u001b[90m\u001b[1mloading_editor_layout\u001b[22m | Started Caricamento dell'editor (5 steps)\u001b[39m\u001b[0m\n[   0% ] \u001b[90m\u001b[1mloading_editor_layout\u001b[22m | Caricamento della disposizione dell'editor...\u001b[39m\u001b[0m\n[  16% ] \u001b[90m\u001b[1mloading_editor_layout\u001b[22m | Caricamento dei pannelli…\u001b[39m\u001b[0m\n\u001b[92m[ DONE ]\u001b[39m \u001b[1mloading_editor_layout\u001b[22m\n\u001b[0m\n"
+      }
+    },
+    {
+      "name": "godot_headless_boot",
+      "status": "pass",
+      "details": {
+        "command": [
+          "D:/Dev/HeroSmash/.work/tools/godot-4.7.2/Godot_v4.7.2-stable_win64_console.exe",
+          "--headless",
+          "--path",
+          "D:\\Dev\\HeroSmash\\.work\\clean-v118-validation\\game",
+          "--quit-after",
+          "10"
+        ],
+        "exit_code": 0,
+        "output": "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org\n\nFOUNDATION_BOOT_OK renderer=mobile\n"
+      }
+    },
+    {
+      "name": "godot_determinism_and_scene",
+      "status": "pass",
+      "details": {
+        "command": [
+          "D:/Dev/HeroSmash/.work/tools/godot-4.7.2/Godot_v4.7.2-stable_win64_console.exe",
+          "--headless",
+          "--path",
+          "D:\\Dev\\HeroSmash\\.work\\clean-v118-validation\\game",
+          "--script",
+          "res://tests/foundation_test.gd"
+        ],
+        "exit_code": 0,
+        "output": "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org\n\nFOUNDATION_BOOT_OK renderer=mobile\nFOUNDATION_TEST_PASS seed_vectors=3 repeated_values=1000 imported_skeleton=1 animation=idle\n"
+      }
+    },
+    {
+      "name": "godot_mobile_1366x768",
+      "status": "pass",
+      "details": {
+        "command": [
+          "D:/Dev/HeroSmash/.work/tools/godot-4.7.2/Godot_v4.7.2-stable_win64_console.exe",
+          "--path",
+          "D:\\Dev\\HeroSmash\\.work\\clean-v118-validation\\game",
+          "--rendering-method",
+          "mobile",
+          "--resolution",
+          "1366x768",
+          "--",
+          "--capture-foundation"
+        ],
+        "exit_code": 0,
+        "output": "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org\nVulkan 1.4.349 - Forward Mobile - Using Device #0: AMD - AMD Radeon RX 7900 XT\n\nFOUNDATION_BOOT_OK renderer=mobile\nFOUNDATION_CAPTURE result=0 path=D:\\Dev\\HeroSmash\\.work\\clean-v118-validation\\.work\\reports\\godot-mobile-1366x768.png\n",
+        "screenshot": "D:\\Dev\\HeroSmash\\.work\\clean-v118-validation\\.work\\reports\\godot-mobile-1366x768.png"
+      }
+    },
+    {
+      "name": "godot_mobile_844x390",
+      "status": "pass",
+      "details": {
+        "command": [
+          "D:/Dev/HeroSmash/.work/tools/godot-4.7.2/Godot_v4.7.2-stable_win64_console.exe",
+          "--path",
+          "D:\\Dev\\HeroSmash\\.work\\clean-v118-validation\\game",
+          "--rendering-method",
+          "mobile",
+          "--resolution",
+          "844x390",
+          "--",
+          "--capture-foundation"
+        ],
+        "exit_code": 0,
+        "output": "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org\nVulkan 1.4.349 - Forward Mobile - Using Device #0: AMD - AMD Radeon RX 7900 XT\n\nFOUNDATION_BOOT_OK renderer=mobile\nFOUNDATION_CAPTURE result=0 path=D:\\Dev\\HeroSmash\\.work\\clean-v118-validation\\.work\\reports\\godot-mobile-844x390.png\n",
+        "screenshot": "D:\\Dev\\HeroSmash\\.work\\clean-v118-validation\\.work\\reports\\godot-mobile-844x390.png"
+      }
+    }
+  ],
+  "limitations": [
+    "Android SDK and export templates not installed; package/device QA deferred",
+    "iOS export/signing requires Apple toolchain; not part of foundation",
+    "No representative fighters yet; performance budgets intentionally not set"
+  ],
+  "status": "pass",
+  "profile": "local-foundation"
+}

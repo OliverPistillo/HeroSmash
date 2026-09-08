@@ -92,6 +92,9 @@ Role:
 
 ## Source admission rule
 
+The current v1.18 audit and source snapshot are under
+`docs/references/visual/v1.18/`; the original v1.15 manifest remains historical.
+
 When adding a new source, record:
 - URL/path;
 - owner/author;
@@ -101,6 +104,25 @@ When adding a new source, record:
 - date checked.
 
 Do not treat search-engine summaries or random tutorial code as authoritative project sources.
+
+## v1.18 verified sources (2026-09-08)
+
+- `.work/legacy-source/hero.json.txt`: exact 20-candidate text source, supplied in
+  project legacy material; author/owner and image-use rights unresolved. The byte
+  snapshot and SHA are recorded in `visual/v1.18/source_provenance.json`.
+- Named 20-candidate roster boards and `sheet sprite/Solkael.png`: local visual
+  inspection only; stable IDs and limitations are in `visual/v1.18/review_decisions.json`.
+  Useful direction does not establish a production license. Original external
+  OneDrive archive was not accessed.
+- [Godot model export considerations](https://docs.godotengine.org/en/stable/tutorials/assets_pipeline/importing_3d_scenes/model_export_considerations.html):
+  Godot Engine documentation; technical source for model axes and export/rest
+  conventions, not a project art source.
+- [Godot skeleton retargeting](https://docs.godotengine.org/en/stable/tutorials/assets_pipeline/retargeting_3d_skeletons.html):
+  Godot Engine documentation; technical source for BoneMap/rest compatibility.
+- Existing local Godot `4.7.2.stable.official.ed1daf0bf` and Steam Blender
+  `5.2.1 LTS` were detected again and exercised by foundation gates. Blender web
+  manual fetch was unavailable; no unsupported claim about a new exporter release
+  or installation is made. Shared pipeline values are explicit project contracts.
 
 ## v1.15 verified sources (2026-09-08)
 

@@ -1,7 +1,8 @@
 # Visual Reference Library
 
 This folder defines how visual references are organized.
-Actual binary references live under `/references/visual/`.
+Binary references remain at the indexed legacy paths; `/references/visual/`
+contains category indexes. No production image admission is implied by location.
 
 ## Categories
 
@@ -122,13 +123,20 @@ Examples:
 
 ## Manifest
 
-Every important reference should be registered in:
-`docs/references/visual/reference_manifest.json`
+The frozen v1.15 census remains `docs/references/visual/reference_manifest.json`.
+The current audit is `v1.18/reference_inventory.json`, with source/owner, hashes,
+associations, review decisions and explicit rights classes. See `v1.18/README.md`
+and `v1.18/RIGHTS_REVIEW.md`. Rebuild with `tools/art/reference_lock.py`; do not
+rewrite the historical census or copy its old `unknown` enum into production metadata.
 
 A reference may be:
-- `approved-direction`;
+- `direction-selected` (internal planning only, not rights clearance);
 - `reference-only`;
-- `legacy-candidate`;
+- `production-approved` (requires documented allowed rights and use);
 - `rejected`.
 
-Copyrighted third-party material should almost always be `reference-only`.
+Unknown-rights and proprietary reference-only material cannot be production-approved.
+The ten-view character entry gate, including expression sheet, is in
+`docs/art/CHARACTER_PRODUCTION_BIBLE.md`; the ten-expression shared library is in
+`docs/art/expression_library.json`. Older suggested extra expressions are optional,
+not additional required clips or gameplay states.
