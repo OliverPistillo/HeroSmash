@@ -91,7 +91,17 @@ Future trigger/action names are representable but capabilities are explicit;
 unsupported combinations fail validation/binding. There is no card-ID dispatch.
 Runtime input bounds limit actors to 1,000,000 HP/energy/stat units, input events to
 one hour and per-call interval catch-up to 10,000 ticks. Invalid requests must fail
-before mutation or RNG consumption.
+  without observable mutation or RNG consumption. Each public execution call is
+  transactional: timer/action/numeric-limit errors restore state, queues and RNG.
+
+HP input facts carry `amount_milli` (actual loss/heal) and `hp_after_milli`, which
+must agree with the ledger after due timers. Heal facts additionally carry
+`kind=regen|direct`; hit facts carry boolean `critical`; dodge facts carry positive
+`incoming_milli` and boolean `reflectable`; status facts carry `status` and positive
+`stacks`. Unknown fields/types fail. HP reaching zero is explicitly rejected until
+the death lifecycle is specified; the pilot never implicitly resurrects an actor.
+Commands can be drained by the caller; an undrained 100,000-command buffer fails
+transactionally. Per-action stacking caps remain independent within composed rules.
 
 ## Legacy conflicts retained
 

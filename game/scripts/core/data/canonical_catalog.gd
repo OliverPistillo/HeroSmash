@@ -137,6 +137,7 @@ func _validate_relations(documents: Dictionary) -> void:
 		_require(effect_record["cardId"] == record["id"] and effect_record["id"] == record["id"], "effect coverage/order")
 		_require(effect_record["originalTextSha256"] == String(record["originalText"]).sha256_text(), "effect text guard mismatch")
 		_require((not effect_record["rules"].is_empty()) == (effect_record["lifecycle"] == "implemented"), "lifecycle/rules mismatch")
+		_require(effect_record["executionCoverage"] == ("base_text_contract" if effect_record["lifecycle"] == "implemented" else "rejection_only"), "coverage mismatch")
 		errors.append_array(EffectCapabilities.validate_rules(effect_record["rules"]))
 	_require(rarities == {"Normal":90, "Epic":36, "Legendary":24}, "rarity distribution mismatch")
 	_require(memberships == {1:84, 2:66}, "membership distribution mismatch")

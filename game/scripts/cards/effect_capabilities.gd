@@ -27,6 +27,8 @@ static func validate_rules(rules: Array) -> Array[String]:
 				errors.append("unsupported_action: " + kind)
 			if action["formula"] != "flat" and kind != "heal":
 				errors.append("formula only supported for heal")
+			if action["formula"] == "missing_hp_percent" and action["amount"] != 0:
+				errors.append("formula amount must be zero")
 			if action["formula"] == "flat" and (action["factor_bp"] != 0 or action["minimum"] != 0):
 				errors.append("unused formula fields")
 			if action["cap"] != 0 and kind != "modify_stat":

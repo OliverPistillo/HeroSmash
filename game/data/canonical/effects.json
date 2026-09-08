@@ -29,7 +29,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/0/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_002",
@@ -70,7 +73,10 @@
         "source": "game/data/effect_contracts.json",
         "pointer": "/pilots/0",
         "sourceSha256": "bc3e142e5085d9cb37bd7e6e71e075bf73d1bba77f377b3d3b2ff69a1d4ffdc3"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "base_text_contract"
     },
     {
       "id": "legacy_003",
@@ -85,7 +91,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/2/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_004",
@@ -100,7 +109,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/3/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_005",
@@ -141,7 +153,10 @@
         "source": "game/data/effect_contracts.json",
         "pointer": "/pilots/1",
         "sourceSha256": "bc3e142e5085d9cb37bd7e6e71e075bf73d1bba77f377b3d3b2ff69a1d4ffdc3"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "base_text_contract"
     },
     {
       "id": "legacy_006",
@@ -156,7 +171,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/5/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_007",
@@ -171,7 +189,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/6/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_008",
@@ -186,7 +207,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/7/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_009",
@@ -201,7 +225,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/8/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_010",
@@ -242,7 +269,10 @@
         "source": "game/data/effect_contracts.json",
         "pointer": "/pilots/2",
         "sourceSha256": "bc3e142e5085d9cb37bd7e6e71e075bf73d1bba77f377b3d3b2ff69a1d4ffdc3"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "base_text_contract"
     },
     {
       "id": "legacy_011",
@@ -257,7 +287,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/10/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_012",
@@ -272,7 +305,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/11/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_013",
@@ -287,7 +323,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/12/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_014",
@@ -302,7 +341,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/13/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_015",
@@ -317,7 +359,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/14/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_016",
@@ -332,7 +377,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/15/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_017",
@@ -347,7 +395,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/16/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_018",
@@ -362,7 +413,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/17/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_019",
@@ -377,7 +431,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/18/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_020",
@@ -418,7 +475,10 @@
         "source": "game/data/effect_contracts.json",
         "pointer": "/pilots/3",
         "sourceSha256": "bc3e142e5085d9cb37bd7e6e71e075bf73d1bba77f377b3d3b2ff69a1d4ffdc3"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "base_text_contract"
     },
     {
       "id": "legacy_021",
@@ -433,7 +493,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/20/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_022",
@@ -448,7 +511,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/21/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_023",
@@ -463,7 +529,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/22/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_024",
@@ -478,7 +547,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/23/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_025",
@@ -493,7 +565,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/24/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_026",
@@ -508,7 +583,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/25/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_027",
@@ -523,7 +601,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/26/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_028",
@@ -564,7 +645,10 @@
         "source": "game/data/effect_contracts.json",
         "pointer": "/pilots/4",
         "sourceSha256": "bc3e142e5085d9cb37bd7e6e71e075bf73d1bba77f377b3d3b2ff69a1d4ffdc3"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "base_text_contract"
     },
     {
       "id": "legacy_029",
@@ -579,7 +663,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/28/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_030",
@@ -594,7 +681,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/29/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_031",
@@ -609,7 +699,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/30/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_032",
@@ -624,7 +717,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/31/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_033",
@@ -639,7 +735,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/32/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_034",
@@ -654,7 +753,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/33/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_035",
@@ -669,7 +771,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/34/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_036",
@@ -684,7 +789,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/35/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_037",
@@ -699,7 +807,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/36/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_038",
@@ -714,7 +825,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/37/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_039",
@@ -729,7 +843,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/38/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_040",
@@ -795,7 +912,10 @@
         "source": "game/data/effect_contracts.json",
         "pointer": "/pilots/5",
         "sourceSha256": "bc3e142e5085d9cb37bd7e6e71e075bf73d1bba77f377b3d3b2ff69a1d4ffdc3"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "base_text_contract"
     },
     {
       "id": "legacy_041",
@@ -810,7 +930,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/40/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_042",
@@ -825,7 +948,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/41/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_043",
@@ -840,7 +966,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/42/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_044",
@@ -855,7 +984,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/43/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_045",
@@ -870,7 +1002,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/44/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_046",
@@ -885,7 +1020,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/45/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_047",
@@ -900,7 +1038,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/46/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_048",
@@ -915,7 +1056,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/47/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_049",
@@ -956,7 +1100,10 @@
         "source": "game/data/effect_contracts.json",
         "pointer": "/pilots/6",
         "sourceSha256": "bc3e142e5085d9cb37bd7e6e71e075bf73d1bba77f377b3d3b2ff69a1d4ffdc3"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "base_text_contract"
     },
     {
       "id": "legacy_050",
@@ -971,7 +1118,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/49/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_051",
@@ -986,7 +1136,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/50/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_052",
@@ -1001,7 +1154,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/51/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_053",
@@ -1016,7 +1172,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/52/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_054",
@@ -1031,7 +1190,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/53/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_055",
@@ -1046,7 +1208,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/54/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_056",
@@ -1061,7 +1226,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/55/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_057",
@@ -1076,7 +1244,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/56/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_058",
@@ -1091,7 +1262,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/57/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_059",
@@ -1106,7 +1280,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/58/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_060",
@@ -1121,7 +1298,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/59/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_061",
@@ -1136,7 +1316,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/60/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_062",
@@ -1151,7 +1334,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/61/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_063",
@@ -1166,7 +1352,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/62/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_064",
@@ -1181,7 +1370,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/63/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_065",
@@ -1196,7 +1388,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/64/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_066",
@@ -1211,7 +1406,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/65/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_067",
@@ -1226,7 +1424,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/66/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_068",
@@ -1241,7 +1442,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/67/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_069",
@@ -1256,7 +1460,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/68/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_070",
@@ -1271,7 +1478,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/69/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_071",
@@ -1286,7 +1496,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/70/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_072",
@@ -1301,7 +1514,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/71/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_073",
@@ -1316,7 +1532,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/72/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_074",
@@ -1331,7 +1550,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/73/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_075",
@@ -1346,7 +1568,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/74/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_076",
@@ -1361,7 +1586,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/75/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_077",
@@ -1402,7 +1630,10 @@
         "source": "game/data/effect_contracts.json",
         "pointer": "/pilots/7",
         "sourceSha256": "bc3e142e5085d9cb37bd7e6e71e075bf73d1bba77f377b3d3b2ff69a1d4ffdc3"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "base_text_contract"
     },
     {
       "id": "legacy_078",
@@ -1417,7 +1648,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/77/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_079",
@@ -1432,7 +1666,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/78/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_080",
@@ -1447,7 +1684,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/79/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_081",
@@ -1462,7 +1702,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/80/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_082",
@@ -1477,7 +1720,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/81/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_083",
@@ -1492,7 +1738,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/82/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_084",
@@ -1507,7 +1756,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/83/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_085",
@@ -1522,7 +1774,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/84/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_086",
@@ -1537,7 +1792,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/85/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_087",
@@ -1552,7 +1810,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/86/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_088",
@@ -1567,7 +1828,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/87/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_089",
@@ -1582,7 +1846,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/88/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_090",
@@ -1623,7 +1890,10 @@
         "source": "game/data/effect_contracts.json",
         "pointer": "/pilots/8",
         "sourceSha256": "bc3e142e5085d9cb37bd7e6e71e075bf73d1bba77f377b3d3b2ff69a1d4ffdc3"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "base_text_contract"
     },
     {
       "id": "legacy_091",
@@ -1638,7 +1908,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/90/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_092",
@@ -1679,7 +1952,10 @@
         "source": "game/data/effect_contracts.json",
         "pointer": "/pilots/9",
         "sourceSha256": "bc3e142e5085d9cb37bd7e6e71e075bf73d1bba77f377b3d3b2ff69a1d4ffdc3"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "base_text_contract"
     },
     {
       "id": "legacy_093",
@@ -1694,7 +1970,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/92/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_094",
@@ -1709,7 +1988,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/93/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_095",
@@ -1724,7 +2006,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/94/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_096",
@@ -1739,7 +2024,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/95/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_097",
@@ -1754,7 +2042,10 @@
         "source": "game/data/effect_contracts.json",
         "pointer": "/pilots/10",
         "sourceSha256": "bc3e142e5085d9cb37bd7e6e71e075bf73d1bba77f377b3d3b2ff69a1d4ffdc3"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_098",
@@ -1769,7 +2060,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/97/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_099",
@@ -1784,7 +2078,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/98/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_100",
@@ -1799,7 +2096,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/99/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_101",
@@ -1814,7 +2114,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/100/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_102",
@@ -1829,7 +2132,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/101/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_103",
@@ -1844,7 +2150,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/102/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_104",
@@ -1859,7 +2168,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/103/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_105",
@@ -1874,7 +2186,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/104/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_106",
@@ -1889,7 +2204,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/105/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_107",
@@ -1904,7 +2222,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/106/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_108",
@@ -1919,7 +2240,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/107/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_109",
@@ -1934,7 +2258,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/108/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_110",
@@ -1949,7 +2276,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/109/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_111",
@@ -1964,7 +2294,10 @@
         "source": "game/data/effect_contracts.json",
         "pointer": "/pilots/11",
         "sourceSha256": "bc3e142e5085d9cb37bd7e6e71e075bf73d1bba77f377b3d3b2ff69a1d4ffdc3"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_112",
@@ -1979,7 +2312,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/111/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_113",
@@ -1994,7 +2330,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/112/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_114",
@@ -2009,7 +2348,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/113/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_115",
@@ -2050,7 +2392,10 @@
         "source": "game/data/effect_contracts.json",
         "pointer": "/pilots/12",
         "sourceSha256": "bc3e142e5085d9cb37bd7e6e71e075bf73d1bba77f377b3d3b2ff69a1d4ffdc3"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "base_text_contract"
     },
     {
       "id": "legacy_116",
@@ -2065,7 +2410,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/115/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_117",
@@ -2080,7 +2428,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/116/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_118",
@@ -2095,7 +2446,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/117/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_119",
@@ -2110,7 +2464,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/118/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_120",
@@ -2125,7 +2482,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/119/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_121",
@@ -2140,7 +2500,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/120/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_122",
@@ -2155,7 +2518,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/121/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_123",
@@ -2170,7 +2536,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/122/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_124",
@@ -2185,7 +2554,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/123/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_125",
@@ -2200,7 +2572,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/124/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_126",
@@ -2215,7 +2590,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/125/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_127",
@@ -2230,7 +2608,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/126/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_128",
@@ -2245,7 +2626,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/127/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_129",
@@ -2260,7 +2644,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/128/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_130",
@@ -2275,7 +2662,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/129/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_131",
@@ -2290,7 +2680,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/130/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_132",
@@ -2305,7 +2698,10 @@
         "source": "game/data/effect_contracts.json",
         "pointer": "/pilots/13",
         "sourceSha256": "bc3e142e5085d9cb37bd7e6e71e075bf73d1bba77f377b3d3b2ff69a1d4ffdc3"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_133",
@@ -2320,7 +2716,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/132/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_134",
@@ -2335,7 +2734,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/133/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_135",
@@ -2350,7 +2752,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/134/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_136",
@@ -2365,7 +2770,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/135/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_137",
@@ -2380,7 +2788,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/136/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_138",
@@ -2395,7 +2806,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/137/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_139",
@@ -2410,7 +2824,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/138/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_140",
@@ -2425,7 +2842,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/139/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_141",
@@ -2440,7 +2860,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/140/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_142",
@@ -2455,7 +2878,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/141/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_143",
@@ -2470,7 +2896,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/142/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_144",
@@ -2485,7 +2914,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/143/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_145",
@@ -2500,7 +2932,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/144/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_146",
@@ -2515,7 +2950,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/145/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_147",
@@ -2530,7 +2968,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/146/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_148",
@@ -2545,7 +2986,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/147/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     },
     {
       "id": "legacy_149",
@@ -2586,7 +3030,10 @@
         "source": "game/data/effect_contracts.json",
         "pointer": "/pilots/14",
         "sourceSha256": "bc3e142e5085d9cb37bd7e6e71e075bf73d1bba77f377b3d3b2ff69a1d4ffdc3"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "base_text_contract"
     },
     {
       "id": "legacy_150",
@@ -2601,7 +3048,10 @@
         "source": "legacy/web-prototype/data/legacy_deck_source.json",
         "pointer": "/149/effect",
         "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
-      }
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
     }
   ]
 }

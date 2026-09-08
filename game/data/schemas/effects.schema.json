@@ -274,6 +274,18 @@
               "sourceSha256"
             ],
             "additionalProperties": false
+          },
+          "specification": {
+            "const": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md"
+          },
+          "tests": {
+            "const": "game/tests/effect_test.gd"
+          },
+          "executionCoverage": {
+            "enum": [
+              "base_text_contract",
+              "rejection_only"
+            ]
           }
         },
         "required": [
@@ -285,7 +297,10 @@
           "reason",
           "originalTextSha256",
           "rules",
-          "provenance"
+          "provenance",
+          "specification",
+          "tests",
+          "executionCoverage"
         ],
         "additionalProperties": false
       },

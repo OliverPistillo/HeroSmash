@@ -76,6 +76,7 @@ def validate_rule(rule: dict):
         kind = action["type"]
         require(kind in ACTIONS, f"unsupported_action: {kind}")
         require(action["formula"] == "flat" or kind == "heal", "formula only supported for heal")
+        require(action["formula"] != "missing_hp_percent" or action["amount"] == 0, "formula amount must be zero")
         require(action["formula"] != "flat" or (action["factor_bp"] == action["minimum"] == 0), "unused formula fields")
         require(action["cap"] == 0 or kind == "modify_stat", "cap only supported for modify_stat")
         require(action["handler"] == ("reflect_incoming_once" if kind == "special_handler" else ""), "unsupported_handler")
@@ -121,6 +122,7 @@ def validate_catalog(datasets: dict):
         require(effect["id"] == effect["cardId"], "effect identity mismatch")
         require(effect["originalTextSha256"] == text_hash(card["originalText"]), "effect text guard mismatch")
         require(bool(effect["rules"]) == (effect["lifecycle"] == "implemented"), "lifecycle/rules mismatch")
+        require(effect["executionCoverage"] == ("base_text_contract" if effect["lifecycle"] == "implemented" else "rejection_only"), "coverage mismatch")
         for rule in effect["rules"]:
             validate_rule(rule)
     for name, document in datasets.items():
@@ -156,6 +158,8 @@ def build(root: Path = ROOT) -> dict[str,str]:
         rows["cards"].append(dict(id=cid,legacyId=raw["id"],name=raw["name"],originalText=raw["effect"],branches=memberships(raw["branch"],raw["id"]),rarity=raw["rarity"],cost=raw["cost"],maxLevel=len(raw["levels"]),legacy=raw,provenance=provenance(DATA+"legacy_deck_source.json",f"/{i}")))
         pilot = pilots.get(raw["id"])
         rows["effects"].append(dict(id=cid,cardId=cid,profile="base_text_v1",lifecycle=pilot["lifecycle"] if pilot else "unreviewed",parity=pilot["parity"] if pilot else "unresolved",reason=pilot["proposal"] if pilot else "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",originalTextSha256=text_hash(raw["effect"]),rules=pilot["rules"] if pilot else [],provenance=provenance(CONTRACTS,f"/pilots/{contracts['pilots'].index(pilot)}") if pilot else provenance(DATA+"legacy_deck_source.json",f"/{i}/effect")))
+    for effect in rows["effects"]:
+        effect.update(specification="docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md", tests="game/tests/effect_test.gd", executionCoverage="base_text_contract" if effect["lifecycle"] == "implemented" else "rejection_only")
     for i, raw in enumerate(sources["heroes"]):
         rows["heroes"].append(dict(id=raw["id"],name=raw["name"],role="legacy_oracle",branches=raw["favoredBranches"],stats=raw["stats"],legacy=raw,provenance=provenance(DATA+"heroes.json",f"/{i}")))
     rows["economy"].append(dict(id="legacy_economy",role="constants_only",values=sources["economy"],provenance=provenance(DATA+"economy.json","/")))
