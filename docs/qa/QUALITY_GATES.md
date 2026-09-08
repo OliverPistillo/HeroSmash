@@ -31,6 +31,13 @@ required; remote CI and mobile-device coverage must not be inferred from local p
 
 ## Asset gate
 
+v1.17 gameplay closure additionally requires the full `tools/validation/combat.py`
+profile: damage/timing/status/lethal/reflection vectors,582 exact levels,malformed
+inputs/replays,entity symmetry,12 scenarios×1000 seeds repeated,full replay hashes,
+and clean-checkout reproducibility. See `COMBAT_VALIDATION.md`. A smoke-only profile
+cannot close the phase. Canonical/foundation gates remain required independently.
+
+
 For a character/arena:
 - naming validation;
 - scale/origin validation;

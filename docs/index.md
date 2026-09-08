@@ -32,4 +32,16 @@ Canonical-data entry points:
 - `qa/CANONICAL_DATA_VALIDATION.md` — Python/Godot tests and clean-checkout procedure.
 - `migration/V1_16_MIGRATION_REPORT.md` — completed phase, commits, differences and debt.
 - `qa/evidence/v1.16/REVIEW.md` — executed results, failed attempts and limits.
-- `exec-plans/active/V1_17_COMBAT_BALANCE_LAB.md` — precise next-phase proposal.
+- `exec-plans/active/V1_17_COMBAT_BALANCE_LAB.md` — current execution/closure checklist.
+
+Combat entry points:
+- `architecture/ADR-0004-headless-combat-and-replay.md` — deterministic execution boundaries.
+- `product-specs/COMBAT_RULES.md` — integer clock,identity,operators and limits.
+- `product-specs/DAMAGE_PIPELINE.md` — mitigation,reflection and attribution.
+- `product-specs/STATUS_SEMANTICS.md` — stacking,refresh and periodic timing.
+- `product-specs/LETHAL_RESOLUTION.md` — prevention,rebirth and finalKO.
+- `product-specs/CARD_LEVEL_PROGRESSION.md` — exact582-level APIs and unresolved bindings.
+- `product-specs/REPLAY_FORMAT.md` — input,event,replay and metric contracts.
+- `qa/COMBAT_VALIDATION.md` — headless CLI,lab and clean-checkout commands.
+- `migration/V1_17_LEGACY_DIVERGENCES.md` — executable JS observations and decisions.
+- `migration/V1_17_UNRESOLVED_SEMANTICS.md` — explicit semantic and economy debt.

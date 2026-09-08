@@ -33,7 +33,7 @@ bindings. Several values conflict directly with original effect text (005 says60
   only and is not accepted as a canonical combat loadout.
 - `combat_values(cardId,N)` is allowed only for explicitly supported single-level
   texts (049,090,120 in this phase), whose quantities do not require interpolation.
-  Other numbered effect bindings remain unresolved, including24 single-level cards
+  Other numbered effect bindings remain unresolved, including21 single-level cards
   whose mechanics are not implemented; known level count is not semantic coverage.
 - Existing v1.16 base-text proposals can be selected explicitly as mechanics-lab
   fixtures. They have no implicit level. Their fixed quantities are not multiplied
