@@ -1,0 +1,38 @@
+name: Foundation
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  portable-gates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20.19.6'
+      - name: Acquire pinned official Godot in runner workspace
+        shell: bash
+        run: |
+          python tools/validation/fetch_ci_godot.py
+      - name: Run portable gates
+        run: python tools/validation/foundation.py --godot .work/tools/Godot_v4.7.2-stable_linux.x86_64
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: foundation-report
+          path: .work/reports/foundation.json
+
+  # Physical Android / GPU / Blender rebuild gates remain explicit local checks.
+  # This CI profile does not claim external-archive preservation or device QA.

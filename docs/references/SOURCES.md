@@ -101,3 +101,10 @@ When adding a new source, record:
 - date checked.
 
 Do not treat search-engine summaries or random tutorial code as authoritative project sources.
+
+## v1.15 verified sources (2026-09-08)
+
+- Production legacy copy: `.work/legacy-source/`, supplied by the project owner; read-only inventory source. External original path above was not accessed. `docs/migration/archive_inventory.csv` records all 1,152 physical files and SHA-256 hashes; visual rights are unknown and items remain reference-only.
+- Godot official pinned release: https://godotengine.org/download/archive/4.7.2-stable/ and https://api.github.com/repos/godotengine/godot-builds/releases/tags/4.7.2-stable . Owner: Godot Engine project. Used only for official portable engine download and digest verification; engine license MIT. Version 4.7.2 verified locally; archive digest recorded in `docs/migration/ENVIRONMENT.md`.
+- Godot command-line and glTF documentation listed above were checked for import/headless/renderer and GLB workflow; authoritative technical references, not project art sources.
+- Blender installed executable: `C:\Program Files (x86)\Steam\steamapps\common\Blender\blender.exe`, Blender Foundation distribution via Steam; `--version` reports 5.2.1 LTS. Existing tool used for procedural sample creation; no proprietary reference asset is consumed. Public Blender 5.2/docs web fetches were unavailable during this task; local executable/exporter output is the evidence of actual version and successful export.

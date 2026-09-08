@@ -16,3 +16,10 @@ Root documents:
 - `PROJECT_MASTER.md` = product/architecture decisions.
 - `PROJECT_STATE.md` = current reality.
 - `AGENTS.md` = Codex navigation and guardrails.
+
+Foundation entry points:
+- `migration/MIGRATION_PROPOSAL.md` — exact approved-tree move contract and rollback.
+- `migration/data_source_map.md` — canonical choices and unresolved source conflicts.
+- `migration/js_to_godot_system_map.md` — preserved behavior and future parity work.
+- `qa/FOUNDATION_VALIDATION.md` — local/CI commands, evidence strategy and applicability.
+- `references/visual/reference_manifest.json` — indexed, reference-only visual origins.
