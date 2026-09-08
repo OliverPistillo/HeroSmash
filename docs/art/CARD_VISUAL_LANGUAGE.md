@@ -68,7 +68,7 @@ Normal; Epic; Legendary
 | --- | --- |
 | field | effect_summary |
 | location | below art, two readable lines; tap card for exact effect |
-| minimum font | 13 |
+| minimum font | 14 |
 
 
 | Field | Contract / value |

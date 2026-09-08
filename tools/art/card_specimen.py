@@ -61,8 +61,8 @@ def main():
                 draw.rectangle((x+8, 186, right-8, 236), fill=tokens["surface_raised"])
                 center = (x+right)//2
                 draw.polygon([(center, 192), (center+16, 211), (center, 230), (center-16, 211)], outline=accent, width=2)
-                text((x+8, 242), "Riepilogo effetto", 13, region=(x+8, 240, right-8, 261))
-                text((x+8, 258), "Dettagli: tocca carta", 13, tokens["text_secondary"], (x+8, 258, right-8, 278))
+                text((x+8, 242), "Riepilogo effetto", 14, region=(x+8, 240, right-8, 258))
+                text((x+8, 260), "Dettagli: tocca carta", 14, tokens["text_secondary"], (x+8, 260, right-8, 278))
                 # Short display labels retain full meaning in the inspection flow.
                 short = {"ACQUISTABILE":"PRONTA", "SELEZIONATA":"SCELTA", "NON DISPONIBILE":"BLOCCATA", "POSSEDUTA":"OWNED", "MAX":"MAX", "NORMALE":"NORMALE"}[states[n]]
                 text((x+8, 286), short, 12, tokens["text_secondary"], (x+8, 283, right-66, 300))

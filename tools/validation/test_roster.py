@@ -92,6 +92,11 @@ class RosterContracts(unittest.TestCase):
         brand['color_tokens']['text_secondary']=brand['color_tokens']['surface']
         with self.assertRaises(AssertionError): gate.validate_brand(brand,gate.read('docs/art/card_visual_language.json'))
 
+    def test_card_body_font_cannot_shrink_below_brand(self):
+        cards=gate.read('docs/art/card_visual_language.json')
+        next(h for h in cards['hierarchy'] if h['field']=='effect_summary')['minimum_font']=10
+        with self.assertRaises(AssertionError): gate.validate_brand(gate.read('docs/art/brand_ui_language.json'),cards)
+
 
 if __name__ == '__main__':
     unittest.main()

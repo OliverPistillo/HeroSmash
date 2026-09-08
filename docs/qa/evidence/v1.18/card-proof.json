@@ -73,19 +73,19 @@
   "artifacts": [
     {
       "path": "card-proof-844x390-0.png",
-      "sha256": "107b8bd1e02420e01bf81423cb8383176c1fc9c705edc88de16f52c10508dc7a"
+      "sha256": "556b0a8ade3c6fff26b6027fc63dce707074067f84c3dfd6fe48815bdbdd81ad"
     },
     {
       "path": "card-proof-844x390-1.png",
-      "sha256": "2567e48f6884ab6212b28b8554c9a19ed5768b877cc28005e8c2a06463b1be24"
+      "sha256": "371e8e06f554d92a6a4179236190a6eb93a3903264ffae91aac7bbec52e7c1f6"
     },
     {
       "path": "card-proof-667x375-0.png",
-      "sha256": "e0fd2373cb0254136c45d9857b90e78a11a1f83416de003759a7dad5642e25ed"
+      "sha256": "688b675fba4d2917bc6a717b5735e1c375a1be143672b16922046149d387c996"
     },
     {
       "path": "card-proof-667x375-1.png",
-      "sha256": "7ae517727f6b01fd9bd34b0dae9eef48dcdd7c386cef992862b66f180bda0bf9"
+      "sha256": "e6ba8f0da854d18c6cc734a36e39a47515c53dfbccf4838506add7f1af3919a0"
     }
   ]
 }

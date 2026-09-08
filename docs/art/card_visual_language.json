@@ -40,7 +40,7 @@
     {
       "field": "effect_summary",
       "location": "below art, two readable lines; tap card for exact effect",
-      "minimum_font": 13
+      "minimum_font": 14
     },
     {
       "field": "level_state",

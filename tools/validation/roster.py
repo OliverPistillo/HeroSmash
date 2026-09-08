@@ -3,7 +3,6 @@ from __future__ import annotations
 
 import argparse
 from collections import Counter
-import copy
 import hashlib
 import importlib.util
 import json
@@ -30,7 +29,7 @@ def digest(data):
 
 
 def command(args):
-    return subprocess.check_output(args, cwd=ROOT).decode("utf-8").strip()
+    return subprocess.check_output(args, cwd=ROOT, stderr=subprocess.STDOUT).decode("utf-8").strip()
 
 
 def module(name):
@@ -179,6 +178,7 @@ def validate_brand(brand, cards):
     assert {h["field"] for h in cards["hierarchy"]} == {"rarity", "cost", "title", "branch_icons", "illustration", "effect_summary", "level_state"}
     assert brand["touch"]["minimum_target_logical_px"] >= 44
     assert brand["typography"]["body"]["size_logical_px"] >= 14
+    assert next(h for h in cards["hierarchy"] if h["field"] == "effect_summary")["minimum_font"] >= brand["typography"]["body"]["size_logical_px"], "card body font disagrees with brand"
     ratios = {}
     for text in ["text_primary", "text_secondary"]:
         for surface in ["canvas", "surface", "surface_raised"]:

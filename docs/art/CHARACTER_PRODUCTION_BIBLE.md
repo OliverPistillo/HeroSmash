@@ -34,8 +34,8 @@ manifest flag. Final model work starts only after a concrete packet is approved.
 ## Body and rig policy
 
 Medium biped covers Solkael, Rajuro, Aethryon, Morvayne, Elunor, Oromir and Tortugan.
-Heavy biped covers Brumgar, Karchar, Rhazgor and Vulkaryn. Agile biped covers Kitsara,
-Lupika and Skarvex. Sylvex uses a serpentine lower chain. These are four shared
+Heavy biped covers Brumgar, Karchar, Rhazgor and Vulkaryn. Agile biped covers Fenrox,
+Kitsara, Lupika and Skarvex. Sylvex uses a serpentine lower chain. These are four shared
 topology/profile families, not four already built skeletons. The three biped
 families share semantic hierarchy but have distinct rest matrices/proportions and
 contact offsets. Reserve Gruttar/Kongaru extend heavy and Nyxara/Zelkara agile;
