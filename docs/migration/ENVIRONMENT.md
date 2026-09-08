@@ -20,3 +20,5 @@ Detection included PATH, uninstall registry and Steam library metadata. Blender 
 Godot official source: https://godotengine.org/download/archive/4.7.2-stable/ and official `godotengine/godot-builds` release API. ZIP SHA-256 verified against release asset digest: `731980f9608d61333e5baf54a2ef17210acc7a538446c0cb9969f002aca1e953`. Portable ZIP extracted only in ignored `.work/tools/godot-4.7.2`; no PATH or system installation changes. Release metadata retained locally in `.work/tools/godot-release.json`.
 
 Commands: `Get-Command`, `py -0p`, `python --version`, `git --version`, `node --version`, `java -version`, explicit Blender/Godot paths with `--version`. Default Python console encoding required `-X utf8` for emoji-containing legacy records; the initial probe's encoding failure did not change files.
+
+Additional detection: `C:\Users\olive\AppData\Local\Programs\Python\Python312\python.exe` already provides Pillow **12.1.0** and PyYAML, used for arena validation and local workflow parsing. Checked Unity editor roots contain no `adb.exe`/`sdkmanager.bat`; `%APPDATA%\Godot\export_templates` exists but is empty. No SDK/templates were installed during this task.

@@ -24,5 +24,6 @@ Baseline: `4ef9eeb503c3c1c69efa36b7b1a3ae5d23cc4816`; paths below use the propos
 5. `preGold || gold` treats zero as absent in interest calculation. Preserve as an explicit oracle edge case, not a new design rule.
 6. Random-comparator sorting is JS-engine-dependent; fixed seeds in Node preserve this baseline only. Production needs a specified shuffle/RNG contract.
 7. `.work/legacy-source` includes 299 original asset/data files, a 405-file nested web checkout and 448 Git metadata files. The former “299 total” statement applied only to the original asset/data portion. The external OneDrive original is not read or modified.
+8. `MarketScene` explicitly requests **3 shop slots**, while `CardSystem` helper defaults and its displayed-at-least-one probability formula use **4**. The seeded foundation fixture exercises the helper API; the actual three-card UI is evidenced in browser captures. v1.16 must distinguish UI behavior from helper defaults before defining a production shop contract.
 
 The v1.16 validator must fail on unknown aliases, ID loss, mismatched texts/costs/levels, changed distributions, or ambiguous source selection. It must never silently assign an unknown branch to Power as the old importer can do.
