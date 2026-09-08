@@ -35,6 +35,14 @@ inputs/replays,entity symmetry,12 scenarios×1000 seeds repeated,full replay has
 and clean-checkout reproducibility. See `COMBAT_VALIDATION.md`. A smoke-only profile
 cannot close the phase. Canonical/foundation gates remain required independently.
 
+v1.18 closure additionally requires `tools/validation/roster.py`: 20 sourced IDs,
+16 launch/4 reserve, all 12 branches, 320 oracle/candidate cells, 16 identity sheets,
+reference scope/hashes/rights rules, rig coverage, animation/expression/convention
+contracts, brand/card contrast and deterministic generated documents. Run the full
+archive profile and phone planning proof in a fresh checkout, plus all previous
+full local profiles. See `ROSTER_REFERENCE_VALIDATION.md`. Missing final character
+assets are future asset-entry gates, not claimed as passed by specification checks.
+
 ## Asset gate
 
 For a character/arena:

@@ -143,7 +143,13 @@ Examples include:
 - Elunor Lifethorn;
 - and the remaining roster in the legacy character source.
 
-The roster is **candidate-authoritative**, pending the dedicated Hero Roster macro phase.
+The current v1.18 owner instruction locks the target at **16 launch + 4 reserve**,
+preserving all 20 sourced candidates. The selected identities and affinities are
+authored in `docs/product-specs/roster/hero_roster.json`; readable roster, scoring,
+coverage, oracle mapping and 16 identity sheets are generated alongside it.
+Source-unsupported visual details remain explicit proposals. No identity selection
+grants rights to legacy imagery or replaces the 16 runtime oracle datasets.
+`docs/art/CHARACTER_PRODUCTION_BIBLE.md` owns the shared production entry contract.
 
 Before mass production, every final hero needs:
 - identity sheet;

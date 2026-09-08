@@ -166,9 +166,17 @@ See `docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md`.
 
 `EffectRunner` consumes typed definitions and caller-owned events. Its integer
 state, seeded RNG, timer ordering, bounded transactions and command log are entirely
-headless. `base_text_v1` is an opt-in proposal profile: numbered card progression,
-damage mitigation, status physics and death resolution remain explicit errors or
-pending intents. No production scene is wired to this experimental framework yet.
+headless. `base_text_v1` remains the opt-in v1.16 proposal profile. v1.17 adds the
+headless resolver, damage/status/lethal pipeline and exact numbered-level access,
+with explicit unresolved effect bindings; see ADR 0004 and the combat product specs.
+No final fighter presentation is wired to this laboratory framework yet.
+
+v1.18 adds a separate production identity/reference specification under
+`docs/product-specs/roster/` and `docs/art/`. JSON is authored once; identity sheets,
+matrices and contract Markdown are generated. This metadata is not loaded as
+runtime hero data. Animation markers consume resolver events; they never apply
+damage. The 16 oracle IDs and all 150 cards remain unchanged. The four proposed
+rig families and Blender/GLB/Godot conventions are validated before final asset work.
 
 ## 3D asset flow
 

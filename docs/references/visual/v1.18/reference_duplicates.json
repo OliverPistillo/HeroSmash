@@ -3410,6 +3410,22 @@
     {
       "path": "docs/qa/evidence/v1.17/godot-mobile-844x390.png",
       "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.18/card-proof-667x375-0.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.18/card-proof-667x375-1.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.18/card-proof-844x390-0.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.18/card-proof-844x390-1.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
     }
   ],
   "copied_images": 0,

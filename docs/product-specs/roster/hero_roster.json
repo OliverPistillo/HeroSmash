@@ -1,0 +1,3607 @@
+{
+  "schema_version": 1,
+  "logical_version": "v1.18.1",
+  "scope": "Production identity/specification only; runtime oracle IDs, stats, cards and replay format remain unchanged.",
+  "decision_authority": "Current owner task explicitly delegates selection of 16 launch + 4 reserve; this supersedes the earlier plan requesting a separate roster-selection approval. Source-unsupported visual details remain proposal; rights clearance is not delegated or inferred.",
+  "source": "docs/references/visual/v1.18/hero_candidates.source.json",
+  "branch_aliases": {
+    "Arcane": "Essence",
+    "Venom": "Toxin",
+    "Frost": "Ice"
+  },
+  "selection_policy": "Constraint-first editorial decision: cover all 12 branches; retain both Healing, both Rage and both Toxin candidates; retain distinct caster/defender/duelist/striker/DoT/execute roles; then reduce duplicate weapons and silhouettes with small rig families. Scores support this decision, not a measured quality or balance ranking.",
+  "scoring_rubric": {
+    "scale": "0 absent/unverified, 1 weak/high cost, 2 limited, 3 adequate, 4 strong, 5 distinctive/low cost. All columns higher is favorable. Ordinal editorial estimates, not measured runtime evidence.",
+    "criteria": {
+      "silhouette": "Distinctness/contribution relative to the full 20; higher favorable",
+      "species_body": "Distinctness/contribution relative to the full 20; higher favorable",
+      "combat_style": "Distinctness/contribution relative to the full 20; higher favorable",
+      "branch_coverage": "Distinctness/contribution relative to the full 20; higher favorable",
+      "branch_redundancy": "Distinctness/contribution relative to the full 20; higher favorable",
+      "role_coverage": "Distinctness/contribution relative to the full 20; higher favorable",
+      "weapon_diversity": "Distinctness/contribution relative to the full 20; higher favorable",
+      "personality": "Distinctness/contribution relative to the full 20; higher favorable",
+      "vfx": "Distinctness/contribution relative to the full 20; higher favorable",
+      "mobile_readability": "Distinctness/contribution relative to the full 20; higher favorable",
+      "rig_reuse": "Distinctness/contribution relative to the full 20; higher favorable",
+      "production_cost": "5 low, 3 medium, 1 high estimated production effort",
+      "reference_quality": "1 roster thumbnails only; 3 named readable primary sheet still missing production views",
+      "rights_confidence": "0 for every candidate: no rights evidence",
+      "low_overlap": "Distinctness/contribution relative to the full 20; higher favorable"
+    },
+    "weights": {
+      "silhouette": 1,
+      "species_body": 1,
+      "combat_style": 1,
+      "branch_coverage": 1,
+      "branch_redundancy": 1,
+      "role_coverage": 1,
+      "weapon_diversity": 1,
+      "personality": 1,
+      "vfx": 1,
+      "mobile_readability": 1,
+      "rig_reuse": 1,
+      "production_cost": 1,
+      "reference_quality": 1,
+      "rights_confidence": 1,
+      "low_overlap": 1
+    },
+    "caveat": "No aggregate threshold grants production approval. Ties and overlap are resolved by the explicit coverage policy."
+  },
+  "required_reference_views": [
+    "front",
+    "three_quarter_front",
+    "side",
+    "back",
+    "silhouette",
+    "neutral",
+    "combat_stance",
+    "materials_palette",
+    "weapon_detail",
+    "expression_sheet"
+  ],
+  "heroes": [
+    {
+      "id": "solkael_lionheart",
+      "source": {
+        "pointer": "/characters/0",
+        "record": {
+          "id": "solkael_lionheart",
+          "name": "Solkael Lionheart",
+          "title": "The Sun-Crowned Guardian",
+          "animal_species": "Lion",
+          "combat_role": "Tank / Frontline Defender",
+          "branches": [
+            "Guardian",
+            "Shield"
+          ],
+          "weapon_or_fighting_style": "Tower gauntlets, solar shield stance, heavy counter punches",
+          "personality": "Noble, disciplined, protective, born leader"
+        }
+      },
+      "identity": {
+        "canonical_name": "Solkael Lionheart",
+        "species": "Lion",
+        "title": "The Sun-Crowned Guardian",
+        "personality": "Noble, disciplined, protective, born leader",
+        "combat_fantasy": "Tank / Frontline Defender",
+        "weapon_fighting_style": "Tower gauntlets, solar shield stance, heavy counter punches",
+        "primary_branch": "Guardian",
+        "secondary_branch": "Shield",
+        "branch_basis": "Source array order; normalized aliases only; presentation affinities, no runtime replacement.",
+        "gender_presentation": {
+          "status": "unresolved",
+          "value": null,
+          "reason": "Not defined in source; no inference from names, voice, body or art."
+        }
+      },
+      "design_proposal": {
+        "status": "proposal",
+        "basis": "v1.18 authored production interpretation of sourced identity and reviewed images; unsupported details are proposals, not recovered facts.",
+        "visual": {
+          "body_type": "Broad upright biped",
+          "silhouette": "mane-framed wall",
+          "proportions": "6.5 heads with large forearms",
+          "major_shapes": "trapezoid chest and round mane",
+          "palette_intent": "warm ivory/gold over dark leather, restrained solar amber",
+          "materials": "brushed metal, short fur, leather",
+          "distinctive_feature": "paired tower gauntlets below an open face",
+          "speed_impression": "deliberate",
+          "weight_impression": "planted medium-heavy",
+          "range_impression": "contact counter",
+          "rig_family": "medium_biped",
+          "unique_rig_requirements": "mane clusters, ears, tail_04",
+          "complexity": "medium"
+        },
+        "combat_presentation": {
+          "stance": "Squared gauntlet guard",
+          "locomotion": "Heel-led patrol, mane settles late",
+          "attack_light": "Short solar jab",
+          "attack_heavy": "Both forearms drive a counter punch",
+          "skill_cast": "Gauntlets meet to frame a shield plane",
+          "hit_react": "Shoulders absorb impact before face breaks",
+          "dodge": "One braced sidestep behind gauntlet",
+          "KO": "Drops to one knee then settles onto side",
+          "victory": "Raises one open gauntlet in a calm salute"
+        },
+        "vfx": {
+          "shape_language": "Shield facets and sun disks",
+          "motion_language": "Fast impact then stable protective plane",
+          "palette_branch_relationship": "Warm solar center within canonical Guardian/Shield cues"
+        },
+        "height_m_proposal": 1.95,
+        "weapon_sockets": [
+          "socket_weapon_l",
+          "socket_weapon_r"
+        ],
+        "vfx_sockets": [
+          "socket_vfx_l",
+          "socket_vfx_r",
+          "socket_vfx_head",
+          "socket_vfx_chest"
+        ],
+        "expression_deviation": "Use species muzzle/ears or head plates; preserve recognizable neutral anatomy."
+      },
+      "selection": {
+        "status": "launch",
+        "decision": "Readable central defender and strongest named gauntlet reference; establishes the medium rig and brand face."
+      },
+      "scoring": {
+        "silhouette": 4,
+        "species_body": 4,
+        "combat_style": 4,
+        "branch_coverage": 3,
+        "branch_redundancy": 3,
+        "role_coverage": 5,
+        "weapon_diversity": 4,
+        "personality": 4,
+        "vfx": 4,
+        "mobile_readability": 5,
+        "rig_reuse": 5,
+        "production_cost": 3,
+        "reference_quality": 3,
+        "rights_confidence": 0,
+        "low_overlap": 4
+      },
+      "references": {
+        "primary": "ref_0323e2c2441059e5",
+        "supporting": [
+          "ref_74ea2844d74f9e97"
+        ],
+        "coverage": {
+          "front": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "three_quarter_front": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_0323e2c2441059e5"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "side": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "back": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "silhouette": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "neutral": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_0323e2c2441059e5"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "combat_stance": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "materials_palette": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_0323e2c2441059e5"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "weapon_detail": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_0323e2c2441059e5"
+            ],
+            "reason": "Gauntlet front/outer faces visible; grip, rear, attachment and underside missing."
+          },
+          "expression_sheet": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          }
+        },
+        "rights_status": "unknown-rights",
+        "production_ready": false
+      },
+      "unresolved": [
+        "Rights evidence and authorship for legacy concept imagery",
+        "Gender/presentation and voice casting",
+        "Ten-view consistent reference packet before modeling",
+        "Approve proposed dimensions, material separation and species facial controls",
+        "Evolution stages remain visual reference; no unlock/rarity/mechanics adopted",
+        "Performance budgets await representative fighter and arena measurements"
+      ]
+    },
+    {
+      "id": "fenrox_bloodhowl",
+      "source": {
+        "pointer": "/characters/1",
+        "record": {
+          "id": "fenrox_bloodhowl",
+          "name": "Fenrox Bloodhowl",
+          "title": "The Ember Alpha",
+          "animal_species": "Wolf",
+          "combat_role": "Melee DPS / Rampage Fighter",
+          "branches": [
+            "Rage",
+            "Assault"
+          ],
+          "weapon_or_fighting_style": "Twin claw blades, lunging strikes, burning combo chains",
+          "personality": "Aggressive, loyal, fearless, thrives under pressure"
+        }
+      },
+      "identity": {
+        "canonical_name": "Fenrox Bloodhowl",
+        "species": "Wolf",
+        "title": "The Ember Alpha",
+        "personality": "Aggressive, loyal, fearless, thrives under pressure",
+        "combat_fantasy": "Melee DPS / Rampage Fighter",
+        "weapon_fighting_style": "Twin claw blades, lunging strikes, burning combo chains",
+        "primary_branch": "Rage",
+        "secondary_branch": "Assault",
+        "branch_basis": "Source array order; normalized aliases only; presentation affinities, no runtime replacement.",
+        "gender_presentation": {
+          "status": "unresolved",
+          "value": null,
+          "reason": "Not defined in source; no inference from names, voice, body or art."
+        }
+      },
+      "design_proposal": {
+        "status": "proposal",
+        "basis": "v1.18 authored production interpretation of sourced identity and reviewed images; unsupported details are proposals, not recovered facts.",
+        "visual": {
+          "body_type": "Lean forward biped",
+          "silhouette": "diagonal claw wedge",
+          "proportions": "6 heads and long forearms",
+          "major_shapes": "triangles and split claw tips",
+          "palette_intent": "charcoal fur, rust red wraps, ember orange",
+          "materials": "scorched steel, coarse fur, cloth",
+          "distinctive_feature": "split claw trails behind shoulders",
+          "speed_impression": "fast bursts",
+          "weight_impression": "light-medium",
+          "range_impression": "contact lunge",
+          "rig_family": "agile_biped",
+          "unique_rig_requirements": "ears, tail_04",
+          "complexity": "medium"
+        },
+        "combat_presentation": {
+          "stance": "Forward claw guard",
+          "locomotion": "Low prowling steps with sharp starts",
+          "attack_light": "Alternating raking claws",
+          "attack_heavy": "Full shoulder lunge with split slash",
+          "skill_cast": "Chest lifts in a restrained ember howl",
+          "hit_react": "Snaps head back, claws stay forward",
+          "dodge": "Low lateral bound",
+          "KO": "Momentum carries a skid then collapse",
+          "victory": "One fierce howl, claws lowered afterward"
+        },
+        "vfx": {
+          "shape_language": "Two claw wedges and compact ember crescents",
+          "motion_language": "Accelerating chained cuts with short decay",
+          "palette_branch_relationship": "Ember theme; Rage/Assault symbols stay canonical"
+        },
+        "height_m_proposal": 1.85,
+        "weapon_sockets": [
+          "socket_weapon_l",
+          "socket_weapon_r"
+        ],
+        "vfx_sockets": [
+          "socket_vfx_l",
+          "socket_vfx_r",
+          "socket_vfx_head",
+          "socket_vfx_chest"
+        ],
+        "expression_deviation": "Use species muzzle/ears or head plates; preserve recognizable neutral anatomy."
+      },
+      "selection": {
+        "status": "launch",
+        "decision": "Keeps second Rage hero and supplies aggressive claw-chain motion distinct from heavy Vulkaryn."
+      },
+      "scoring": {
+        "silhouette": 4,
+        "species_body": 4,
+        "combat_style": 4,
+        "branch_coverage": 4,
+        "branch_redundancy": 4,
+        "role_coverage": 4,
+        "weapon_diversity": 3,
+        "personality": 4,
+        "vfx": 4,
+        "mobile_readability": 4,
+        "rig_reuse": 5,
+        "production_cost": 3,
+        "reference_quality": 1,
+        "rights_confidence": 0,
+        "low_overlap": 4
+      },
+      "references": {
+        "primary": "ref_d6da79b11e95f795",
+        "supporting": [
+          "ref_74ea2844d74f9e97"
+        ],
+        "coverage": {
+          "front": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "three_quarter_front": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "side": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "back": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "silhouette": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "neutral": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "combat_stance": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "materials_palette": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "weapon_detail": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "expression_sheet": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          }
+        },
+        "rights_status": "unknown-rights",
+        "production_ready": false
+      },
+      "unresolved": [
+        "Rights evidence and authorship for legacy concept imagery",
+        "Gender/presentation and voice casting",
+        "Ten-view consistent reference packet before modeling",
+        "Approve proposed dimensions, material separation and species facial controls",
+        "Evolution stages remain visual reference; no unlock/rarity/mechanics adopted",
+        "Performance budgets await representative fighter and arena measurements"
+      ]
+    },
+    {
+      "id": "kitsara_moonveil",
+      "source": {
+        "pointer": "/characters/2",
+        "record": {
+          "id": "kitsara_moonveil",
+          "name": "Kitsara Moonveil",
+          "title": "The Nine-Step Mirage",
+          "animal_species": "Fox",
+          "combat_role": "Duelist / Evasive Assassin",
+          "branches": [
+            "Dodge",
+            "Precision"
+          ],
+          "weapon_or_fighting_style": "Twin daggers, feints, mirage steps, wind-cut counters",
+          "personality": "Clever, playful, unpredictable, dangerously calm"
+        }
+      },
+      "identity": {
+        "canonical_name": "Kitsara Moonveil",
+        "species": "Fox",
+        "title": "The Nine-Step Mirage",
+        "personality": "Clever, playful, unpredictable, dangerously calm",
+        "combat_fantasy": "Duelist / Evasive Assassin",
+        "weapon_fighting_style": "Twin daggers, feints, mirage steps, wind-cut counters",
+        "primary_branch": "Dodge",
+        "secondary_branch": "Precision",
+        "branch_basis": "Source array order; normalized aliases only; presentation affinities, no runtime replacement.",
+        "gender_presentation": {
+          "status": "unresolved",
+          "value": null,
+          "reason": "Not defined in source; no inference from names, voice, body or art."
+        }
+      },
+      "design_proposal": {
+        "status": "proposal",
+        "basis": "v1.18 authored production interpretation of sourced identity and reviewed images; unsupported details are proposals, not recovered facts.",
+        "visual": {
+          "body_type": "Slender biped",
+          "silhouette": "scarf-and-tail S curve",
+          "proportions": "6.5 heads, narrow waist and broad ear tips",
+          "major_shapes": "crescents and paired short blades",
+          "palette_intent": "orange fur, midnight blue, pale cyan edge",
+          "materials": "matte cloth, smooth metal, soft fur",
+          "distinctive_feature": "one physical tail and two readable daggers",
+          "speed_impression": "quick feints",
+          "weight_impression": "light",
+          "range_impression": "contact counter",
+          "rig_family": "agile_biped",
+          "unique_rig_requirements": "ears, tail_04, scarf_03",
+          "complexity": "medium"
+        },
+        "combat_presentation": {
+          "stance": "Offset daggers, tail opposite leading hand",
+          "locomotion": "Light cross-steps and deceptive stops",
+          "attack_light": "Quick wrist cut",
+          "attack_heavy": "Feint then crossed dagger release",
+          "skill_cast": "Scarf and tail frame a single mirage pose",
+          "hit_react": "Recoils sideways with eyes tracking foe",
+          "dodge": "One clean pivot with short afterimage",
+          "KO": "Daggers lower before balanced pose breaks",
+          "victory": "Small knowing bow and dagger flourish"
+        },
+        "vfx": {
+          "shape_language": "Thin crescents and one broken outline",
+          "motion_language": "Sharp feint followed by one fading echo",
+          "palette_branch_relationship": "Pale cyan Dodge motion and gold Precision contact, no Essence badge"
+        },
+        "height_m_proposal": 1.72,
+        "weapon_sockets": [
+          "socket_weapon_l",
+          "socket_weapon_r"
+        ],
+        "vfx_sockets": [
+          "socket_vfx_l",
+          "socket_vfx_r",
+          "socket_vfx_head",
+          "socket_vfx_chest"
+        ],
+        "expression_deviation": "Use species muzzle/ears or head plates; preserve recognizable neutral anatomy."
+      },
+      "selection": {
+        "status": "launch",
+        "decision": "Evasive precision specialist with feints; tail/scarf silhouette differs from Lupika kicking."
+      },
+      "scoring": {
+        "silhouette": 4,
+        "species_body": 4,
+        "combat_style": 5,
+        "branch_coverage": 3,
+        "branch_redundancy": 3,
+        "role_coverage": 5,
+        "weapon_diversity": 3,
+        "personality": 5,
+        "vfx": 4,
+        "mobile_readability": 4,
+        "rig_reuse": 5,
+        "production_cost": 3,
+        "reference_quality": 1,
+        "rights_confidence": 0,
+        "low_overlap": 4
+      },
+      "references": {
+        "primary": "ref_d6da79b11e95f795",
+        "supporting": [
+          "ref_74ea2844d74f9e97"
+        ],
+        "coverage": {
+          "front": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "three_quarter_front": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "side": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "back": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "silhouette": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "neutral": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "combat_stance": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "materials_palette": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "weapon_detail": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "expression_sheet": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          }
+        },
+        "rights_status": "unknown-rights",
+        "production_ready": false
+      },
+      "unresolved": [
+        "Rights evidence and authorship for legacy concept imagery",
+        "Gender/presentation and voice casting",
+        "Ten-view consistent reference packet before modeling",
+        "Approve proposed dimensions, material separation and species facial controls",
+        "Evolution stages remain visual reference; no unlock/rarity/mechanics adopted",
+        "Performance budgets await representative fighter and arena measurements"
+      ]
+    },
+    {
+      "id": "aethryon_stormwing",
+      "source": {
+        "pointer": "/characters/3",
+        "record": {
+          "id": "aethryon_stormwing",
+          "name": "Aethryon Stormwing",
+          "title": "The Thunder-Eyed Herald",
+          "animal_species": "Eagle",
+          "combat_role": "Ranged Caster / Crit Specialist",
+          "branches": [
+            "Arcane",
+            "Precision"
+          ],
+          "weapon_or_fighting_style": "Lightning spear, aerial glyph casting, charged feather bolts",
+          "personality": "Proud, sharp-minded, visionary, intense"
+        }
+      },
+      "identity": {
+        "canonical_name": "Aethryon Stormwing",
+        "species": "Eagle",
+        "title": "The Thunder-Eyed Herald",
+        "personality": "Proud, sharp-minded, visionary, intense",
+        "combat_fantasy": "Ranged Caster / Crit Specialist",
+        "weapon_fighting_style": "Lightning spear, aerial glyph casting, charged feather bolts",
+        "primary_branch": "Essence",
+        "secondary_branch": "Precision",
+        "branch_basis": "Source array order; normalized aliases only; presentation affinities, no runtime replacement.",
+        "gender_presentation": {
+          "status": "unresolved",
+          "value": null,
+          "reason": "Not defined in source; no inference from names, voice, body or art."
+        }
+      },
+      "design_proposal": {
+        "status": "proposal",
+        "basis": "v1.18 authored production interpretation of sourced identity and reviewed images; unsupported details are proposals, not recovered facts.",
+        "visual": {
+          "body_type": "Tall avian biped",
+          "silhouette": "spear-and-wing Y",
+          "proportions": "7 heads with narrow hips",
+          "major_shapes": "swept feather fans and one long spear",
+          "palette_intent": "white head, navy feathers, electric cyan",
+          "materials": "layered feathers, brushed steel, insulated wraps",
+          "distinctive_feature": "wing mantle frames exposed beak",
+          "speed_impression": "suspended anticipation then sharp release",
+          "weight_impression": "medium",
+          "range_impression": "projected bolt",
+          "rig_family": "medium_biped",
+          "unique_rig_requirements": "wing_03 pair, feather fans",
+          "complexity": "high"
+        },
+        "combat_presentation": {
+          "stance": "Spear upright, wing mantle half folded",
+          "locomotion": "Tall precise steps, no permanent flight",
+          "attack_light": "Short spear flick or one feather bolt",
+          "attack_heavy": "Two-handed charged thrust",
+          "skill_cast": "Wing mantle opens behind a held lightning glyph",
+          "hit_react": "Feathers flare then fold toward body",
+          "dodge": "Spear-assisted sidestep, feet remain readable",
+          "KO": "Knees fold and spear falls beside body",
+          "victory": "Spear planted, crest lifted, wings settle"
+        },
+        "vfx": {
+          "shape_language": "Spear line and angular feather glyph",
+          "motion_language": "Charged hold followed by straight bolt",
+          "palette_branch_relationship": "Cyan lightning is identity; Essence violet casting cue and Precision gold contact"
+        },
+        "height_m_proposal": 2.05,
+        "weapon_sockets": [
+          "socket_weapon_l",
+          "socket_weapon_r"
+        ],
+        "vfx_sockets": [
+          "socket_vfx_l",
+          "socket_vfx_r",
+          "socket_vfx_head",
+          "socket_vfx_chest"
+        ],
+        "expression_deviation": "Beak and facial feather planes replace lip shapes; no beak deformation beyond hinge."
+      },
+      "selection": {
+        "status": "launch",
+        "decision": "Clear spear caster and second avian role; preserves oracle precision-caster coverage."
+      },
+      "scoring": {
+        "silhouette": 5,
+        "species_body": 5,
+        "combat_style": 5,
+        "branch_coverage": 3,
+        "branch_redundancy": 3,
+        "role_coverage": 5,
+        "weapon_diversity": 5,
+        "personality": 4,
+        "vfx": 4,
+        "mobile_readability": 4,
+        "rig_reuse": 4,
+        "production_cost": 1,
+        "reference_quality": 1,
+        "rights_confidence": 0,
+        "low_overlap": 5
+      },
+      "references": {
+        "primary": "ref_d6da79b11e95f795",
+        "supporting": [
+          "ref_74ea2844d74f9e97"
+        ],
+        "coverage": {
+          "front": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "three_quarter_front": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "side": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "back": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "silhouette": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "neutral": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "combat_stance": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "materials_palette": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "weapon_detail": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "expression_sheet": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          }
+        },
+        "rights_status": "unknown-rights",
+        "production_ready": false
+      },
+      "unresolved": [
+        "Rights evidence and authorship for legacy concept imagery",
+        "Gender/presentation and voice casting",
+        "Ten-view consistent reference packet before modeling",
+        "Approve proposed dimensions, material separation and species facial controls",
+        "Evolution stages remain visual reference; no unlock/rarity/mechanics adopted",
+        "Performance budgets await representative fighter and arena measurements"
+      ]
+    },
+    {
+      "id": "brumgar_earthhide",
+      "source": {
+        "pointer": "/characters/4",
+        "record": {
+          "id": "brumgar_earthhide",
+          "name": "Brumgar Earthhide",
+          "title": "The Sleeping Mountain",
+          "animal_species": "Bear",
+          "combat_role": "Bruiser / Sustain Tank",
+          "branches": [
+            "Guardian",
+            "Healing"
+          ],
+          "weapon_or_fighting_style": "Stone-plated fists, grapples, ground slams, regeneration aura",
+          "personality": "Patient, warm-hearted, stubborn, impossible to intimidate"
+        }
+      },
+      "identity": {
+        "canonical_name": "Brumgar Earthhide",
+        "species": "Bear",
+        "title": "The Sleeping Mountain",
+        "personality": "Patient, warm-hearted, stubborn, impossible to intimidate",
+        "combat_fantasy": "Bruiser / Sustain Tank",
+        "weapon_fighting_style": "Stone-plated fists, grapples, ground slams, regeneration aura",
+        "primary_branch": "Guardian",
+        "secondary_branch": "Healing",
+        "branch_basis": "Source array order; normalized aliases only; presentation affinities, no runtime replacement.",
+        "gender_presentation": {
+          "status": "unresolved",
+          "value": null,
+          "reason": "Not defined in source; no inference from names, voice, body or art."
+        }
+      },
+      "design_proposal": {
+        "status": "proposal",
+        "basis": "v1.18 authored production interpretation of sourced identity and reviewed images; unsupported details are proposals, not recovered facts.",
+        "visual": {
+          "body_type": "Wide bear biped",
+          "silhouette": "rounded mountain",
+          "proportions": "5.5 heads, massive torso and hands",
+          "major_shapes": "boulders and blunt cylinders",
+          "palette_intent": "umber fur, moss green, muted jade",
+          "materials": "rough stone plates, fur, bark accents",
+          "distinctive_feature": "stone fists below a soft round face",
+          "speed_impression": "slow setup",
+          "weight_impression": "heavy",
+          "range_impression": "contact slam",
+          "rig_family": "heavy_biped",
+          "unique_rig_requirements": "ears, short tail_02",
+          "complexity": "medium"
+        },
+        "combat_presentation": {
+          "stance": "Wide open-fist guard",
+          "locomotion": "Slow rolling shoulder gait",
+          "attack_light": "Heavy compact swat",
+          "attack_heavy": "Two fists descend into ground slam",
+          "skill_cast": "Palms open around a low regeneration aura",
+          "hit_react": "Torso rolls through impact with delayed head shake",
+          "dodge": "Short weight shift rather than acrobatics",
+          "KO": "Seated drop then gentle side roll",
+          "victory": "Warm nod and one chest pat"
+        },
+        "vfx": {
+          "shape_language": "Low circles and blunt stone fragments",
+          "motion_language": "Slow pulse outward with compact impact",
+          "palette_branch_relationship": "Moss identity with Healing green pulse and Guardian earth cue"
+        },
+        "height_m_proposal": 2.15,
+        "weapon_sockets": [
+          "socket_weapon_l",
+          "socket_weapon_r"
+        ],
+        "vfx_sockets": [
+          "socket_vfx_l",
+          "socket_vfx_r",
+          "socket_vfx_head",
+          "socket_vfx_chest"
+        ],
+        "expression_deviation": "Use species muzzle/ears or head plates; preserve recognizable neutral anatomy."
+      },
+      "selection": {
+        "status": "launch",
+        "decision": "Required second Healing source and slow warm sustain bruiser distinct from Elunor ritual casting."
+      },
+      "scoring": {
+        "silhouette": 4,
+        "species_body": 4,
+        "combat_style": 4,
+        "branch_coverage": 5,
+        "branch_redundancy": 3,
+        "role_coverage": 5,
+        "weapon_diversity": 3,
+        "personality": 5,
+        "vfx": 4,
+        "mobile_readability": 5,
+        "rig_reuse": 5,
+        "production_cost": 3,
+        "reference_quality": 1,
+        "rights_confidence": 0,
+        "low_overlap": 4
+      },
+      "references": {
+        "primary": "ref_d6da79b11e95f795",
+        "supporting": [
+          "ref_74ea2844d74f9e97"
+        ],
+        "coverage": {
+          "front": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "three_quarter_front": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "side": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "back": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "silhouette": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "neutral": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "combat_stance": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "materials_palette": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "weapon_detail": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "expression_sheet": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          }
+        },
+        "rights_status": "unknown-rights",
+        "production_ready": false
+      },
+      "unresolved": [
+        "Rights evidence and authorship for legacy concept imagery",
+        "Gender/presentation and voice casting",
+        "Ten-view consistent reference packet before modeling",
+        "Approve proposed dimensions, material separation and species facial controls",
+        "Evolution stages remain visual reference; no unlock/rarity/mechanics adopted",
+        "Performance budgets await representative fighter and arena measurements"
+      ]
+    },
+    {
+      "id": "sylvex_venomkiss",
+      "source": {
+        "pointer": "/characters/5",
+        "record": {
+          "id": "sylvex_venomkiss",
+          "name": "Sylvex Venomkiss",
+          "title": "The Emerald Curse",
+          "animal_species": "Cobra",
+          "combat_role": "Damage Over Time / Debuff Assassin",
+          "branches": [
+            "Venom",
+            "Wound"
+          ],
+          "weapon_or_fighting_style": "Poison blades, toxic mist, fang strikes, alchemical darts",
+          "personality": "Elegant, cold, calculating, speaks softly before striking"
+        }
+      },
+      "identity": {
+        "canonical_name": "Sylvex Venomkiss",
+        "species": "Cobra",
+        "title": "The Emerald Curse",
+        "personality": "Elegant, cold, calculating, speaks softly before striking",
+        "combat_fantasy": "Damage Over Time / Debuff Assassin",
+        "weapon_fighting_style": "Poison blades, toxic mist, fang strikes, alchemical darts",
+        "primary_branch": "Toxin",
+        "secondary_branch": "Wound",
+        "branch_basis": "Source array order; normalized aliases only; presentation affinities, no runtime replacement.",
+        "gender_presentation": {
+          "status": "unresolved",
+          "value": null,
+          "reason": "Not defined in source; no inference from names, voice, body or art."
+        }
+      },
+      "design_proposal": {
+        "status": "proposal",
+        "basis": "v1.18 authored production interpretation of sourced identity and reviewed images; unsupported details are proposals, not recovered facts.",
+        "visual": {
+          "body_type": "Upright cobra torso over coiled lower body",
+          "silhouette": "hooded S column",
+          "proportions": "torso 3 heads above grounded coil, height recorded in reference pose",
+          "major_shapes": "hood fan, needles and coil",
+          "palette_intent": "deep olive, ivory fangs, acidic green sparingly",
+          "materials": "satin scales, dark metal, glass vials",
+          "distinctive_feature": "cobra hood with low coil footprint",
+          "speed_impression": "smooth approach then dart",
+          "weight_impression": "medium",
+          "range_impression": "short projected darts",
+          "rig_family": "serpentine",
+          "unique_rig_requirements": "hood_02 pair, tail_08",
+          "complexity": "high"
+        },
+        "combat_presentation": {
+          "stance": "Hood half open above stable coil",
+          "locomotion": "Coil glides with torso leading subtly",
+          "attack_light": "Needle-fast blade dart",
+          "attack_heavy": "Hood expands before fang-led strike",
+          "skill_cast": "One hand releases low mist while other stays guarded",
+          "hit_react": "Hood flattens and neck recoils in S",
+          "dodge": "Coil pulls torso aside without teleport",
+          "KO": "Coil loosens, hood folds, head rests safely",
+          "victory": "Blades return slowly to crossed guard"
+        },
+        "vfx": {
+          "shape_language": "Needles, low droplets and a hood arc",
+          "motion_language": "Quiet accumulation then sharp puncture",
+          "palette_branch_relationship": "Toxin lime separated from Wound crimson cut marker"
+        },
+        "height_m_proposal": 1.85,
+        "weapon_sockets": [
+          "socket_weapon_l",
+          "socket_weapon_r"
+        ],
+        "vfx_sockets": [
+          "socket_vfx_l",
+          "socket_vfx_r",
+          "socket_vfx_head",
+          "socket_vfx_chest"
+        ],
+        "expression_deviation": "Hood angle and jaw communicate affect; do not require mammal lips."
+      },
+      "selection": {
+        "status": "launch",
+        "decision": "Primary DoT/debuff identity and unique cobra hood/coil; high cost accepted for systemic and silhouette coverage."
+      },
+      "scoring": {
+        "silhouette": 5,
+        "species_body": 5,
+        "combat_style": 5,
+        "branch_coverage": 4,
+        "branch_redundancy": 4,
+        "role_coverage": 5,
+        "weapon_diversity": 4,
+        "personality": 5,
+        "vfx": 5,
+        "mobile_readability": 4,
+        "rig_reuse": 1,
+        "production_cost": 1,
+        "reference_quality": 1,
+        "rights_confidence": 0,
+        "low_overlap": 5
+      },
+      "references": {
+        "primary": "ref_d6da79b11e95f795",
+        "supporting": [
+          "ref_74ea2844d74f9e97"
+        ],
+        "coverage": {
+          "front": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "three_quarter_front": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "side": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "back": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "silhouette": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "neutral": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "combat_stance": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "materials_palette": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "weapon_detail": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "expression_sheet": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          }
+        },
+        "rights_status": "unknown-rights",
+        "production_ready": false
+      },
+      "unresolved": [
+        "Rights evidence and authorship for legacy concept imagery",
+        "Gender/presentation and voice casting",
+        "Ten-view consistent reference packet before modeling",
+        "Approve proposed dimensions, material separation and species facial controls",
+        "Evolution stages remain visual reference; no unlock/rarity/mechanics adopted",
+        "Performance budgets await representative fighter and arena measurements"
+      ]
+    },
+    {
+      "id": "rajuro_strikefang",
+      "source": {
+        "pointer": "/characters/6",
+        "record": {
+          "id": "rajuro_strikefang",
+          "name": "Rajuro Strikefang",
+          "title": "The Golden Palm",
+          "animal_species": "Tiger",
+          "combat_role": "Burst DPS / Martial Artist",
+          "branches": [
+            "Assault",
+            "Precision"
+          ],
+          "weapon_or_fighting_style": "Explosive palm strikes, clawed boxing, pressure-point combos",
+          "personality": "Confident, competitive, honorable, obsessed with perfect technique"
+        }
+      },
+      "identity": {
+        "canonical_name": "Rajuro Strikefang",
+        "species": "Tiger",
+        "title": "The Golden Palm",
+        "personality": "Confident, competitive, honorable, obsessed with perfect technique",
+        "combat_fantasy": "Burst DPS / Martial Artist",
+        "weapon_fighting_style": "Explosive palm strikes, clawed boxing, pressure-point combos",
+        "primary_branch": "Assault",
+        "secondary_branch": "Precision",
+        "branch_basis": "Source array order; normalized aliases only; presentation affinities, no runtime replacement.",
+        "gender_presentation": {
+          "status": "unresolved",
+          "value": null,
+          "reason": "Not defined in source; no inference from names, voice, body or art."
+        }
+      },
+      "design_proposal": {
+        "status": "proposal",
+        "basis": "v1.18 authored production interpretation of sourced identity and reviewed images; unsupported details are proposals, not recovered facts.",
+        "visual": {
+          "body_type": "Athletic tiger biped",
+          "silhouette": "open palm triangle",
+          "proportions": "6.5 heads, broad wrists and compact torso",
+          "major_shapes": "wedges, palm disks and stripes",
+          "palette_intent": "amber fur, burnt orange wraps, cream muzzle",
+          "materials": "matte wraps, worn brass bracers, short fur",
+          "distinctive_feature": "open hands with visible pressure-point aim",
+          "speed_impression": "explosive short beats",
+          "weight_impression": "medium",
+          "range_impression": "contact palm",
+          "rig_family": "medium_biped",
+          "unique_rig_requirements": "ears, tail_04",
+          "complexity": "low"
+        },
+        "combat_presentation": {
+          "stance": "Open palms, one foot forward",
+          "locomotion": "Measured martial steps and controlled hip turn",
+          "attack_light": "Sharp leading palm",
+          "attack_heavy": "Hip-driven double palm burst",
+          "skill_cast": "Hands align at chest then press forward",
+          "hit_react": "Tight guard recoil and a focused exhale",
+          "dodge": "Hip pivot with feet close to ground",
+          "KO": "Stance holds a beat then knees buckle",
+          "victory": "Formal palm-to-fist salute"
+        },
+        "vfx": {
+          "shape_language": "Palm disk and short triangular burst",
+          "motion_language": "Abrupt expansion with clean end",
+          "palette_branch_relationship": "Amber identity with Assault orange and Precision gold accent"
+        },
+        "height_m_proposal": 1.9,
+        "weapon_sockets": [
+          "socket_weapon_l",
+          "socket_weapon_r"
+        ],
+        "vfx_sockets": [
+          "socket_vfx_l",
+          "socket_vfx_r",
+          "socket_vfx_head",
+          "socket_vfx_chest"
+        ],
+        "expression_deviation": "Use species muzzle/ears or head plates; preserve recognizable neutral anatomy."
+      },
+      "selection": {
+        "status": "launch",
+        "decision": "Dedicated open-palm burst specialist; no held weapon and reusable medium rig."
+      },
+      "scoring": {
+        "silhouette": 4,
+        "species_body": 3,
+        "combat_style": 5,
+        "branch_coverage": 2,
+        "branch_redundancy": 2,
+        "role_coverage": 4,
+        "weapon_diversity": 4,
+        "personality": 4,
+        "vfx": 4,
+        "mobile_readability": 5,
+        "rig_reuse": 5,
+        "production_cost": 5,
+        "reference_quality": 1,
+        "rights_confidence": 0,
+        "low_overlap": 4
+      },
+      "references": {
+        "primary": "ref_d6da79b11e95f795",
+        "supporting": [
+          "ref_74ea2844d74f9e97"
+        ],
+        "coverage": {
+          "front": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "three_quarter_front": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "side": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "back": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "silhouette": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "neutral": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "combat_stance": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "materials_palette": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "weapon_detail": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "expression_sheet": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          }
+        },
+        "rights_status": "unknown-rights",
+        "production_ready": false
+      },
+      "unresolved": [
+        "Rights evidence and authorship for legacy concept imagery",
+        "Gender/presentation and voice casting",
+        "Ten-view consistent reference packet before modeling",
+        "Approve proposed dimensions, material separation and species facial controls",
+        "Evolution stages remain visual reference; no unlock/rarity/mechanics adopted",
+        "Performance budgets await representative fighter and arena measurements"
+      ]
+    },
+    {
+      "id": "morvayne_blackquill",
+      "source": {
+        "pointer": "/characters/7",
+        "record": {
+          "id": "morvayne_blackquill",
+          "name": "Morvayne Blackquill",
+          "title": "The Eclipse Hexblade",
+          "animal_species": "Raven",
+          "combat_role": "Spellblade / Curse Fighter",
+          "branches": [
+            "Arcane",
+            "Wound"
+          ],
+          "weapon_or_fighting_style": "Void rapier, curse sigils, feather shadows, delayed rupture spells",
+          "personality": "Mysterious, theatrical, intelligent, enjoys psychological warfare"
+        }
+      },
+      "identity": {
+        "canonical_name": "Morvayne Blackquill",
+        "species": "Raven",
+        "title": "The Eclipse Hexblade",
+        "personality": "Mysterious, theatrical, intelligent, enjoys psychological warfare",
+        "combat_fantasy": "Spellblade / Curse Fighter",
+        "weapon_fighting_style": "Void rapier, curse sigils, feather shadows, delayed rupture spells",
+        "primary_branch": "Essence",
+        "secondary_branch": "Wound",
+        "branch_basis": "Source array order; normalized aliases only; presentation affinities, no runtime replacement.",
+        "gender_presentation": {
+          "status": "unresolved",
+          "value": null,
+          "reason": "Not defined in source; no inference from names, voice, body or art."
+        }
+      },
+      "design_proposal": {
+        "status": "proposal",
+        "basis": "v1.18 authored production interpretation of sourced identity and reviewed images; unsupported details are proposals, not recovered facts.",
+        "visual": {
+          "body_type": "Slender raven biped",
+          "silhouette": "rapier-and-cape slash",
+          "proportions": "7 heads, long neck and narrow torso",
+          "major_shapes": "tapered feather planes and thin blade",
+          "palette_intent": "ink black, desaturated violet, silver edge",
+          "materials": "satin feathers, dark cloth, polished rapier",
+          "distinctive_feature": "beak profile and split feather cape",
+          "speed_impression": "measured fencing",
+          "weight_impression": "light-medium",
+          "range_impression": "blade plus projected sigil",
+          "rig_family": "medium_biped",
+          "unique_rig_requirements": "feather_cape_03 pair",
+          "complexity": "medium"
+        },
+        "combat_presentation": {
+          "stance": "Rapier extended, feather cape offset",
+          "locomotion": "Elegant narrow fencing steps",
+          "attack_light": "Quick point thrust",
+          "attack_heavy": "Long diagonal lunge with cape counterflow",
+          "skill_cast": "Free hand sketches one delayed rupture sigil",
+          "hit_react": "Hand masks pain briefly, cape snaps",
+          "dodge": "Rapier-side pivot and theatrical withdrawal",
+          "KO": "Rapier dips, cape folds around fallen torso",
+          "victory": "Blade traces a small arc before a bow"
+        },
+        "vfx": {
+          "shape_language": "Thin sigil ring and torn feather slash",
+          "motion_language": "Delayed ring closes after a precise thrust",
+          "palette_branch_relationship": "Essence violet separated from Wound crimson rupture cue"
+        },
+        "height_m_proposal": 1.95,
+        "weapon_sockets": [
+          "socket_weapon_l",
+          "socket_weapon_r"
+        ],
+        "vfx_sockets": [
+          "socket_vfx_l",
+          "socket_vfx_r",
+          "socket_vfx_head",
+          "socket_vfx_chest"
+        ],
+        "expression_deviation": "Beak and facial feather planes replace lip shapes; no beak deformation beyond hinge."
+      },
+      "selection": {
+        "status": "launch",
+        "decision": "Only sourced Essence/Wound spellblade; fencing gives a different cadence from casters and claws."
+      },
+      "scoring": {
+        "silhouette": 4,
+        "species_body": 4,
+        "combat_style": 5,
+        "branch_coverage": 3,
+        "branch_redundancy": 3,
+        "role_coverage": 5,
+        "weapon_diversity": 5,
+        "personality": 5,
+        "vfx": 4,
+        "mobile_readability": 4,
+        "rig_reuse": 5,
+        "production_cost": 3,
+        "reference_quality": 1,
+        "rights_confidence": 0,
+        "low_overlap": 5
+      },
+      "references": {
+        "primary": "ref_d6da79b11e95f795",
+        "supporting": [
+          "ref_74ea2844d74f9e97"
+        ],
+        "coverage": {
+          "front": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "three_quarter_front": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "side": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "back": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "silhouette": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "neutral": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "combat_stance": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "materials_palette": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "weapon_detail": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "expression_sheet": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          }
+        },
+        "rights_status": "unknown-rights",
+        "production_ready": false
+      },
+      "unresolved": [
+        "Rights evidence and authorship for legacy concept imagery",
+        "Gender/presentation and voice casting",
+        "Ten-view consistent reference packet before modeling",
+        "Approve proposed dimensions, material separation and species facial controls",
+        "Evolution stages remain visual reference; no unlock/rarity/mechanics adopted",
+        "Performance budgets await representative fighter and arena measurements"
+      ]
+    },
+    {
+      "id": "karchar_reefbreaker",
+      "source": {
+        "pointer": "/characters/8",
+        "record": {
+          "id": "karchar_reefbreaker",
+          "name": "Karchar Reefbreaker",
+          "title": "The Abyssal Hammer",
+          "animal_species": "Shark",
+          "combat_role": "Heavy Bruiser / Execution Fighter",
+          "branches": [
+            "Power",
+            "Wound"
+          ],
+          "weapon_or_fighting_style": "Anchor hammer, brutal charges, jaw-armor headbutts, rupture slams",
+          "personality": "Blunt, relentless, loud, laughs during danger"
+        }
+      },
+      "identity": {
+        "canonical_name": "Karchar Reefbreaker",
+        "species": "Shark",
+        "title": "The Abyssal Hammer",
+        "personality": "Blunt, relentless, loud, laughs during danger",
+        "combat_fantasy": "Heavy Bruiser / Execution Fighter",
+        "weapon_fighting_style": "Anchor hammer, brutal charges, jaw-armor headbutts, rupture slams",
+        "primary_branch": "Power",
+        "secondary_branch": "Wound",
+        "branch_basis": "Source array order; normalized aliases only; presentation affinities, no runtime replacement.",
+        "gender_presentation": {
+          "status": "unresolved",
+          "value": null,
+          "reason": "Not defined in source; no inference from names, voice, body or art."
+        }
+      },
+      "design_proposal": {
+        "status": "proposal",
+        "basis": "v1.18 authored production interpretation of sourced identity and reviewed images; unsupported details are proposals, not recovered facts.",
+        "visual": {
+          "body_type": "Wide shark biped",
+          "silhouette": "anchor-and-dorsal block",
+          "proportions": "5.5 heads, thick neck and large hands",
+          "major_shapes": "anchor T, dorsal triangle, blunt jaw",
+          "palette_intent": "slate blue, off-white belly, oxidized bronze",
+          "materials": "rough dock metal, matte skin, rope",
+          "distinctive_feature": "one anchor hammer beside dorsal fin",
+          "speed_impression": "slow windup, committed release",
+          "weight_impression": "very heavy",
+          "range_impression": "contact sweep",
+          "rig_family": "heavy_biped",
+          "unique_rig_requirements": "tail_04, rigid dorsal fin",
+          "complexity": "medium"
+        },
+        "combat_presentation": {
+          "stance": "Anchor rests low beside broad guard",
+          "locomotion": "Weighty dockside stomps and shoulder sway",
+          "attack_light": "Short hammer-head shove",
+          "attack_heavy": "Full-body anchor sweep and slam",
+          "skill_cast": "Anchor plants to frame a rupture pulse",
+          "hit_react": "Jaw grits and shoulders overcorrect",
+          "dodge": "One short committed sidestep",
+          "KO": "Anchor lands first, torso follows with weight",
+          "victory": "Loud laugh and anchor over shoulder"
+        },
+        "vfx": {
+          "shape_language": "Anchor T and broad broken impact ring",
+          "motion_language": "Heavy compression then low outward burst",
+          "palette_branch_relationship": "Sea-blue identity with Power bright core and Wound crimson fissure"
+        },
+        "height_m_proposal": 2.2,
+        "weapon_sockets": [
+          "socket_weapon_l",
+          "socket_weapon_r"
+        ],
+        "vfx_sockets": [
+          "socket_vfx_l",
+          "socket_vfx_r",
+          "socket_vfx_head",
+          "socket_vfx_chest"
+        ],
+        "expression_deviation": "Use species muzzle/ears or head plates; preserve recognizable neutral anatomy."
+      },
+      "selection": {
+        "status": "launch",
+        "decision": "Anchor weapon and shark jaw add heavy execution identity; supplies Power/Wound combination."
+      },
+      "scoring": {
+        "silhouette": 5,
+        "species_body": 5,
+        "combat_style": 5,
+        "branch_coverage": 3,
+        "branch_redundancy": 3,
+        "role_coverage": 5,
+        "weapon_diversity": 5,
+        "personality": 4,
+        "vfx": 4,
+        "mobile_readability": 5,
+        "rig_reuse": 5,
+        "production_cost": 3,
+        "reference_quality": 1,
+        "rights_confidence": 0,
+        "low_overlap": 5
+      },
+      "references": {
+        "primary": "ref_d6da79b11e95f795",
+        "supporting": [
+          "ref_74ea2844d74f9e97"
+        ],
+        "coverage": {
+          "front": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "three_quarter_front": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "side": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "back": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "silhouette": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "neutral": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "combat_stance": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "materials_palette": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "weapon_detail": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "expression_sheet": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          }
+        },
+        "rights_status": "unknown-rights",
+        "production_ready": false
+      },
+      "unresolved": [
+        "Rights evidence and authorship for legacy concept imagery",
+        "Gender/presentation and voice casting",
+        "Ten-view consistent reference packet before modeling",
+        "Approve proposed dimensions, material separation and species facial controls",
+        "Evolution stages remain visual reference; no unlock/rarity/mechanics adopted",
+        "Performance budgets await representative fighter and arena measurements"
+      ]
+    },
+    {
+      "id": "elunor_lifethorn",
+      "source": {
+        "pointer": "/characters/9",
+        "record": {
+          "id": "elunor_lifethorn",
+          "name": "Elunor Lifethorn",
+          "title": "The Worldroot Saint",
+          "animal_species": "Stag",
+          "combat_role": "Healer / Defensive Support",
+          "branches": [
+            "Healing",
+            "Guardian"
+          ],
+          "weapon_or_fighting_style": "Crystal antler magic, root barriers, life pulses, sanctuary circles",
+          "personality": "Wise, serene, compassionate, quietly unbreakable"
+        }
+      },
+      "identity": {
+        "canonical_name": "Elunor Lifethorn",
+        "species": "Stag",
+        "title": "The Worldroot Saint",
+        "personality": "Wise, serene, compassionate, quietly unbreakable",
+        "combat_fantasy": "Healer / Defensive Support",
+        "weapon_fighting_style": "Crystal antler magic, root barriers, life pulses, sanctuary circles",
+        "primary_branch": "Healing",
+        "secondary_branch": "Guardian",
+        "branch_basis": "Source array order; normalized aliases only; presentation affinities, no runtime replacement.",
+        "gender_presentation": {
+          "status": "unresolved",
+          "value": null,
+          "reason": "Not defined in source; no inference from names, voice, body or art."
+        }
+      },
+      "design_proposal": {
+        "status": "proposal",
+        "basis": "v1.18 authored production interpretation of sourced identity and reviewed images; unsupported details are proposals, not recovered facts.",
+        "visual": {
+          "body_type": "Tall stag biped",
+          "silhouette": "antler candelabra",
+          "proportions": "7 heads, long neck, small hands",
+          "major_shapes": "branching antlers and vertical robe folds",
+          "palette_intent": "muted bark brown, cream, life green with warm white center",
+          "materials": "bark, woven cloth, translucent crystal tips",
+          "distinctive_feature": "branching antlers over calm open face",
+          "speed_impression": "smooth sustained gestures",
+          "weight_impression": "light-medium",
+          "range_impression": "projected life pulses",
+          "rig_family": "medium_biped",
+          "unique_rig_requirements": "tail_02, ears, rigid antlers",
+          "complexity": "medium"
+        },
+        "combat_presentation": {
+          "stance": "Open hands beneath antlers",
+          "locomotion": "Long quiet steps, robe follows a beat later",
+          "attack_light": "Small hand pulse",
+          "attack_heavy": "Two hands gather then release a broad life wave",
+          "skill_cast": "Palms create a sanctuary circle around rooted feet",
+          "hit_react": "Antlers tilt, hands protect the chest",
+          "dodge": "Smooth half-step with roots dissolving visually",
+          "KO": "Hands lower, antlers settle clear of floor",
+          "victory": "Quiet blessing gesture toward the arena"
+        },
+        "vfx": {
+          "shape_language": "Root rings and branching lines",
+          "motion_language": "Gentle outward flow with persistent clear perimeter",
+          "palette_branch_relationship": "Healing green center, Guardian earth-colored outer roots"
+        },
+        "height_m_proposal": 2.05,
+        "weapon_sockets": [
+          "socket_weapon_l",
+          "socket_weapon_r"
+        ],
+        "vfx_sockets": [
+          "socket_vfx_l",
+          "socket_vfx_r",
+          "socket_vfx_head",
+          "socket_vfx_chest"
+        ],
+        "expression_deviation": "Use species muzzle/ears or head plates; preserve recognizable neutral anatomy."
+      },
+      "selection": {
+        "status": "launch",
+        "decision": "Explicit healer with antler silhouette; preserves Healing coverage without turning every healer into a tank."
+      },
+      "scoring": {
+        "silhouette": 5,
+        "species_body": 5,
+        "combat_style": 5,
+        "branch_coverage": 5,
+        "branch_redundancy": 3,
+        "role_coverage": 5,
+        "weapon_diversity": 4,
+        "personality": 5,
+        "vfx": 4,
+        "mobile_readability": 4,
+        "rig_reuse": 5,
+        "production_cost": 3,
+        "reference_quality": 1,
+        "rights_confidence": 0,
+        "low_overlap": 5
+      },
+      "references": {
+        "primary": "ref_d6da79b11e95f795",
+        "supporting": [
+          "ref_74ea2844d74f9e97"
+        ],
+        "coverage": {
+          "front": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "three_quarter_front": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "side": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "back": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "silhouette": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "neutral": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "combat_stance": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "materials_palette": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "weapon_detail": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "expression_sheet": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          }
+        },
+        "rights_status": "unknown-rights",
+        "production_ready": false
+      },
+      "unresolved": [
+        "Rights evidence and authorship for legacy concept imagery",
+        "Gender/presentation and voice casting",
+        "Ten-view consistent reference packet before modeling",
+        "Approve proposed dimensions, material separation and species facial controls",
+        "Evolution stages remain visual reference; no unlock/rarity/mechanics adopted",
+        "Performance budgets await representative fighter and arena measurements"
+      ]
+    },
+    {
+      "id": "gruttar_tuskgold",
+      "source": {
+        "pointer": "/characters/10",
+        "record": {
+          "id": "gruttar_tuskgold",
+          "name": "Gruttar Tuskgold",
+          "title": "The Warhorn Breaker",
+          "animal_species": "Boar",
+          "combat_role": "Disruptor / Shielded Brawler",
+          "branches": [
+            "Assault",
+            "Shield"
+          ],
+          "weapon_or_fighting_style": "Massive warhammer, armored charges, tusk rushes, shockwave blocks",
+          "personality": "Rowdy, brave, impatient, loyal to the last breath"
+        }
+      },
+      "identity": {
+        "canonical_name": "Gruttar Tuskgold",
+        "species": "Boar",
+        "title": "The Warhorn Breaker",
+        "personality": "Rowdy, brave, impatient, loyal to the last breath",
+        "combat_fantasy": "Disruptor / Shielded Brawler",
+        "weapon_fighting_style": "Massive warhammer, armored charges, tusk rushes, shockwave blocks",
+        "primary_branch": "Assault",
+        "secondary_branch": "Shield",
+        "branch_basis": "Source array order; normalized aliases only; presentation affinities, no runtime replacement.",
+        "gender_presentation": {
+          "status": "unresolved",
+          "value": null,
+          "reason": "Not defined in source; no inference from names, voice, body or art."
+        }
+      },
+      "design_proposal": {
+        "status": "proposal",
+        "basis": "v1.18 authored production interpretation of sourced identity and reviewed images; unsupported details are proposals, not recovered facts.",
+        "visual": {
+          "body_type": "Low boar biped",
+          "silhouette": "tusk-and-hammer wedge",
+          "proportions": "5.5 heads, short neck and wide shoulders",
+          "major_shapes": "wedges, block hammer and tusk arcs",
+          "palette_intent": "russet, tarnished gold, iron",
+          "materials": "coarse bristle, riveted plate, wood",
+          "distinctive_feature": "forward tusks balanced by hammer",
+          "speed_impression": "impatient bursts",
+          "weight_impression": "heavy",
+          "range_impression": "contact charge",
+          "rig_family": "heavy_biped",
+          "unique_rig_requirements": "tail_02, ears, rigid tusks",
+          "complexity": "medium"
+        },
+        "combat_presentation": {
+          "stance": "Hammer raised beside tusks",
+          "locomotion": "Stomping impatient advances",
+          "attack_light": "Short hammer butt",
+          "attack_heavy": "Low tusk-led rush",
+          "skill_cast": "Hammer plants to frame a shockwave block",
+          "hit_react": "Angry head shake",
+          "dodge": "Short lateral shove-step",
+          "KO": "Hammer pulls torso to one side",
+          "victory": "Boisterous hammer salute"
+        },
+        "vfx": {
+          "shape_language": "Short wedges and shield ring",
+          "motion_language": "Abrupt forward pulse",
+          "palette_branch_relationship": "Assault orange and Shield cyan"
+        },
+        "height_m_proposal": 1.75,
+        "weapon_sockets": [
+          "socket_weapon_l",
+          "socket_weapon_r"
+        ],
+        "vfx_sockets": [
+          "socket_vfx_l",
+          "socket_vfx_r",
+          "socket_vfx_head",
+          "socket_vfx_chest"
+        ],
+        "expression_deviation": "Use species muzzle/ears or head plates; preserve recognizable neutral anatomy."
+      },
+      "selection": {
+        "status": "reserve",
+        "decision": "Hammer/charge heavy overlaps Karchar and Rhazgor. Assault and Shield remain covered three times; preserve as future disruptor."
+      },
+      "scoring": {
+        "silhouette": 3,
+        "species_body": 4,
+        "combat_style": 3,
+        "branch_coverage": 2,
+        "branch_redundancy": 2,
+        "role_coverage": 3,
+        "weapon_diversity": 2,
+        "personality": 4,
+        "vfx": 3,
+        "mobile_readability": 4,
+        "rig_reuse": 5,
+        "production_cost": 3,
+        "reference_quality": 1,
+        "rights_confidence": 0,
+        "low_overlap": 1
+      },
+      "references": {
+        "primary": "ref_d6da79b11e95f795",
+        "supporting": [
+          "ref_74ea2844d74f9e97"
+        ],
+        "coverage": {
+          "front": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "three_quarter_front": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "side": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "back": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "silhouette": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "neutral": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "combat_stance": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "materials_palette": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "weapon_detail": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "expression_sheet": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          }
+        },
+        "rights_status": "unknown-rights",
+        "production_ready": false
+      },
+      "unresolved": [
+        "Rights evidence and authorship for legacy concept imagery",
+        "Gender/presentation and voice casting",
+        "Ten-view consistent reference packet before modeling",
+        "Approve proposed dimensions, material separation and species facial controls",
+        "Evolution stages remain visual reference; no unlock/rarity/mechanics adopted",
+        "Performance budgets await representative fighter and arena measurements"
+      ]
+    },
+    {
+      "id": "nyxara_nightstep",
+      "source": {
+        "pointer": "/characters/11",
+        "record": {
+          "id": "nyxara_nightstep",
+          "name": "Nyxara Nightstep",
+          "title": "The Lunar Bleed",
+          "animal_species": "Panther",
+          "combat_role": "Assassin / Bleed Duelist",
+          "branches": [
+            "Dodge",
+            "Wound"
+          ],
+          "weapon_or_fighting_style": "Shadow claws, silent dashes, bleed cuts, vanish-counter strikes",
+          "personality": "Quiet, focused, ruthless, impossible to read"
+        }
+      },
+      "identity": {
+        "canonical_name": "Nyxara Nightstep",
+        "species": "Panther",
+        "title": "The Lunar Bleed",
+        "personality": "Quiet, focused, ruthless, impossible to read",
+        "combat_fantasy": "Assassin / Bleed Duelist",
+        "weapon_fighting_style": "Shadow claws, silent dashes, bleed cuts, vanish-counter strikes",
+        "primary_branch": "Dodge",
+        "secondary_branch": "Wound",
+        "branch_basis": "Source array order; normalized aliases only; presentation affinities, no runtime replacement.",
+        "gender_presentation": {
+          "status": "unresolved",
+          "value": null,
+          "reason": "Not defined in source; no inference from names, voice, body or art."
+        }
+      },
+      "design_proposal": {
+        "status": "proposal",
+        "basis": "v1.18 authored production interpretation of sourced identity and reviewed images; unsupported details are proposals, not recovered facts.",
+        "visual": {
+          "body_type": "Lean panther biped",
+          "silhouette": "low stalking crescent",
+          "proportions": "6.5 heads, narrow waist and long tail",
+          "major_shapes": "crescents and claw diagonals",
+          "palette_intent": "near-black violet, pale eyes, restrained wound crimson",
+          "materials": "matte hide, flexible cloth, small metal claws",
+          "distinctive_feature": "tail counterbalances low shoulder line",
+          "speed_impression": "silent fast dash",
+          "weight_impression": "light",
+          "range_impression": "contact cuts",
+          "rig_family": "agile_biped",
+          "unique_rig_requirements": "ears, tail_04, cape_03",
+          "complexity": "medium"
+        },
+        "combat_presentation": {
+          "stance": "Low claw guard",
+          "locomotion": "Quiet deliberate stalking",
+          "attack_light": "Small alternating claw cuts",
+          "attack_heavy": "Long crossing slash",
+          "skill_cast": "Brief vanish-counter pose without actual teleport mechanics",
+          "hit_react": "Minimal flinch until heavy impact",
+          "dodge": "Low dash with readable start and end",
+          "KO": "Body curls then goes still",
+          "victory": "Silent claw retraction"
+        },
+        "vfx": {
+          "shape_language": "Thin claw crescents",
+          "motion_language": "Quick cuts with brief dark afterimage",
+          "palette_branch_relationship": "Wound crimson and Dodge cyan; near-black body preserved"
+        },
+        "height_m_proposal": 1.78,
+        "weapon_sockets": [
+          "socket_weapon_l",
+          "socket_weapon_r"
+        ],
+        "vfx_sockets": [
+          "socket_vfx_l",
+          "socket_vfx_r",
+          "socket_vfx_head",
+          "socket_vfx_chest"
+        ],
+        "expression_deviation": "Use species muzzle/ears or head plates; preserve recognizable neutral anatomy."
+      },
+      "selection": {
+        "status": "reserve",
+        "decision": "Bleed assassin overlaps Sylvex/Morvayne while evasive duelist is held by Kitsara/Lupika. Keeping Skarvex instead preserves a second Toxin entry and adds chitin morphology."
+      },
+      "scoring": {
+        "silhouette": 3,
+        "species_body": 3,
+        "combat_style": 3,
+        "branch_coverage": 3,
+        "branch_redundancy": 2,
+        "role_coverage": 3,
+        "weapon_diversity": 2,
+        "personality": 4,
+        "vfx": 3,
+        "mobile_readability": 4,
+        "rig_reuse": 5,
+        "production_cost": 3,
+        "reference_quality": 1,
+        "rights_confidence": 0,
+        "low_overlap": 2
+      },
+      "references": {
+        "primary": "ref_d6da79b11e95f795",
+        "supporting": [
+          "ref_74ea2844d74f9e97"
+        ],
+        "coverage": {
+          "front": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "three_quarter_front": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "side": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "back": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "silhouette": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "neutral": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "combat_stance": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "materials_palette": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "weapon_detail": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "expression_sheet": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          }
+        },
+        "rights_status": "unknown-rights",
+        "production_ready": false
+      },
+      "unresolved": [
+        "Rights evidence and authorship for legacy concept imagery",
+        "Gender/presentation and voice casting",
+        "Ten-view consistent reference packet before modeling",
+        "Approve proposed dimensions, material separation and species facial controls",
+        "Evolution stages remain visual reference; no unlock/rarity/mechanics adopted",
+        "Performance budgets await representative fighter and arena measurements"
+      ]
+    },
+    {
+      "id": "oromir_frostclock",
+      "source": {
+        "pointer": "/characters/12",
+        "record": {
+          "id": "oromir_frostclock",
+          "name": "Oromir Frostclock",
+          "title": "The Timebound Oracle",
+          "animal_species": "Owl",
+          "combat_role": "Control Mage / Tempo Manipulator",
+          "branches": [
+            "Arcane",
+            "Frost"
+          ],
+          "weapon_or_fighting_style": "Time glyphs, frost orbs, staff casting, slow-field rituals",
+          "personality": "Ancient-minded, analytical, cryptic, never surprised"
+        }
+      },
+      "identity": {
+        "canonical_name": "Oromir Frostclock",
+        "species": "Owl",
+        "title": "The Timebound Oracle",
+        "personality": "Ancient-minded, analytical, cryptic, never surprised",
+        "combat_fantasy": "Control Mage / Tempo Manipulator",
+        "weapon_fighting_style": "Time glyphs, frost orbs, staff casting, slow-field rituals",
+        "primary_branch": "Essence",
+        "secondary_branch": "Ice",
+        "branch_basis": "Source array order; normalized aliases only; presentation affinities, no runtime replacement.",
+        "gender_presentation": {
+          "status": "unresolved",
+          "value": null,
+          "reason": "Not defined in source; no inference from names, voice, body or art."
+        }
+      },
+      "design_proposal": {
+        "status": "proposal",
+        "basis": "v1.18 authored production interpretation of sourced identity and reviewed images; unsupported details are proposals, not recovered facts.",
+        "visual": {
+          "body_type": "Compact owl biped",
+          "silhouette": "clock-ring column",
+          "proportions": "5.5 heads with large head and narrow robe",
+          "major_shapes": "concentric rings, disks and short staff",
+          "palette_intent": "cream face, midnight blue robe, ice cyan",
+          "materials": "soft feathers, woven cloth, frosted crystal",
+          "distinctive_feature": "facial disk inside a thin clock ring",
+          "speed_impression": "deliberate held pauses",
+          "weight_impression": "light-medium",
+          "range_impression": "projected control orbs",
+          "rig_family": "medium_biped",
+          "unique_rig_requirements": "feather_cape_03 pair",
+          "complexity": "medium"
+        },
+        "combat_presentation": {
+          "stance": "Staff central beneath facial disk",
+          "locomotion": "Short unhurried steps and still head",
+          "attack_light": "Single staff tap or frost orb",
+          "attack_heavy": "Staff sweep frames expanding ice ring",
+          "skill_cast": "Head locks forward while one clock glyph turns",
+          "hit_react": "Blink first, body tilts second",
+          "dodge": "Small measured step through a fading glyph",
+          "KO": "Staff lowers and robe gathers around seated fall",
+          "victory": "One slow blink and precise staff tap"
+        },
+        "vfx": {
+          "shape_language": "Clock rings and six-point ice shards",
+          "motion_language": "Held ring then discrete pulse; no simulated time reversal",
+          "palette_branch_relationship": "Ice cyan shards inside Essence violet casting ring"
+        },
+        "height_m_proposal": 1.55,
+        "weapon_sockets": [
+          "socket_weapon_l",
+          "socket_weapon_r"
+        ],
+        "vfx_sockets": [
+          "socket_vfx_l",
+          "socket_vfx_r",
+          "socket_vfx_head",
+          "socket_vfx_chest"
+        ],
+        "expression_deviation": "Beak and facial feather planes replace lip shapes; no beak deformation beyond hinge."
+      },
+      "selection": {
+        "status": "launch",
+        "decision": "Only sourced Ice candidate; mandatory tempo/control coverage with small caster silhouette."
+      },
+      "scoring": {
+        "silhouette": 5,
+        "species_body": 5,
+        "combat_style": 5,
+        "branch_coverage": 5,
+        "branch_redundancy": 5,
+        "role_coverage": 5,
+        "weapon_diversity": 4,
+        "personality": 5,
+        "vfx": 5,
+        "mobile_readability": 5,
+        "rig_reuse": 5,
+        "production_cost": 3,
+        "reference_quality": 1,
+        "rights_confidence": 0,
+        "low_overlap": 5
+      },
+      "references": {
+        "primary": "ref_d6da79b11e95f795",
+        "supporting": [
+          "ref_74ea2844d74f9e97"
+        ],
+        "coverage": {
+          "front": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "three_quarter_front": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "side": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "back": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "silhouette": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "neutral": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "combat_stance": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "materials_palette": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "weapon_detail": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "expression_sheet": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          }
+        },
+        "rights_status": "unknown-rights",
+        "production_ready": false
+      },
+      "unresolved": [
+        "Rights evidence and authorship for legacy concept imagery",
+        "Gender/presentation and voice casting",
+        "Ten-view consistent reference packet before modeling",
+        "Approve proposed dimensions, material separation and species facial controls",
+        "Evolution stages remain visual reference; no unlock/rarity/mechanics adopted",
+        "Performance budgets await representative fighter and arena measurements"
+      ]
+    },
+    {
+      "id": "rhazgor_crystalhorn",
+      "source": {
+        "pointer": "/characters/13",
+        "record": {
+          "id": "rhazgor_crystalhorn",
+          "name": "Rhazgor Crystalhorn",
+          "title": "The Living Bastion",
+          "animal_species": "Rhinoceros",
+          "combat_role": "Shield Tank / Siege Fighter",
+          "branches": [
+            "Shield",
+            "Power"
+          ],
+          "weapon_or_fighting_style": "Energy tower shield, seismic horn charge, crystal armor, barrier crush",
+          "personality": "Steady, dutiful, direct, believes every problem has a door-sized solution"
+        }
+      },
+      "identity": {
+        "canonical_name": "Rhazgor Crystalhorn",
+        "species": "Rhinoceros",
+        "title": "The Living Bastion",
+        "personality": "Steady, dutiful, direct, believes every problem has a door-sized solution",
+        "combat_fantasy": "Shield Tank / Siege Fighter",
+        "weapon_fighting_style": "Energy tower shield, seismic horn charge, crystal armor, barrier crush",
+        "primary_branch": "Shield",
+        "secondary_branch": "Power",
+        "branch_basis": "Source array order; normalized aliases only; presentation affinities, no runtime replacement.",
+        "gender_presentation": {
+          "status": "unresolved",
+          "value": null,
+          "reason": "Not defined in source; no inference from names, voice, body or art."
+        }
+      },
+      "design_proposal": {
+        "status": "proposal",
+        "basis": "v1.18 authored production interpretation of sourced identity and reviewed images; unsupported details are proposals, not recovered facts.",
+        "visual": {
+          "body_type": "Massive rhino biped",
+          "silhouette": "tower shield rectangle",
+          "proportions": "5 heads, thick legs and broad torso",
+          "major_shapes": "rectangle shield, horn triangle, faceted shoulders",
+          "palette_intent": "cool grey skin, cobalt inset, pale blue crystal",
+          "materials": "rough hide, opaque crystal, heavy metal",
+          "distinctive_feature": "central horn above one tower shield",
+          "speed_impression": "short forceful steps",
+          "weight_impression": "very heavy",
+          "range_impression": "contact shield crush",
+          "rig_family": "heavy_biped",
+          "unique_rig_requirements": "tail_02, ears, rigid horn",
+          "complexity": "medium"
+        },
+        "combat_presentation": {
+          "stance": "Tower shield forward, horn clear above",
+          "locomotion": "Short heavy steps with low center",
+          "attack_light": "Shield edge bump",
+          "attack_heavy": "Shoulder-led barrier crush",
+          "skill_cast": "Shield plants and crystal barrier facets rise",
+          "hit_react": "Shield shudders before body gives ground",
+          "dodge": "Small shield-led lateral brace",
+          "KO": "Shield leans, knees fold, torso falls clear of horn",
+          "victory": "Shield planted, single resolute nod"
+        },
+        "vfx": {
+          "shape_language": "Broad shield facets and compact horn wedge",
+          "motion_language": "Stable plane, heavy compression at impact",
+          "palette_branch_relationship": "Shield cyan perimeter and Power bright impact core"
+        },
+        "height_m_proposal": 2.3,
+        "weapon_sockets": [
+          "socket_weapon_l",
+          "socket_weapon_r"
+        ],
+        "vfx_sockets": [
+          "socket_vfx_l",
+          "socket_vfx_r",
+          "socket_vfx_head",
+          "socket_vfx_chest"
+        ],
+        "expression_deviation": "Use species muzzle/ears or head plates; preserve recognizable neutral anatomy."
+      },
+      "selection": {
+        "status": "launch",
+        "decision": "Explicit Shield/Power siege identity and a shield-dominant silhouette distinct from gauntlets."
+      },
+      "scoring": {
+        "silhouette": 5,
+        "species_body": 5,
+        "combat_style": 4,
+        "branch_coverage": 3,
+        "branch_redundancy": 3,
+        "role_coverage": 5,
+        "weapon_diversity": 5,
+        "personality": 4,
+        "vfx": 4,
+        "mobile_readability": 5,
+        "rig_reuse": 5,
+        "production_cost": 3,
+        "reference_quality": 1,
+        "rights_confidence": 0,
+        "low_overlap": 4
+      },
+      "references": {
+        "primary": "ref_d6da79b11e95f795",
+        "supporting": [
+          "ref_74ea2844d74f9e97"
+        ],
+        "coverage": {
+          "front": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "three_quarter_front": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "side": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "back": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "silhouette": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "neutral": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "combat_stance": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "materials_palette": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "weapon_detail": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "expression_sheet": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          }
+        },
+        "rights_status": "unknown-rights",
+        "production_ready": false
+      },
+      "unresolved": [
+        "Rights evidence and authorship for legacy concept imagery",
+        "Gender/presentation and voice casting",
+        "Ten-view consistent reference packet before modeling",
+        "Approve proposed dimensions, material separation and species facial controls",
+        "Evolution stages remain visual reference; no unlock/rarity/mechanics adopted",
+        "Performance budgets await representative fighter and arena measurements"
+      ]
+    },
+    {
+      "id": "zelkara_jadeclaw",
+      "source": {
+        "pointer": "/characters/14",
+        "record": {
+          "id": "zelkara_jadeclaw",
+          "name": "Zelkara Jadeclaw",
+          "title": "The Silent Execution",
+          "animal_species": "Praying Mantis",
+          "combat_role": "Counter Assassin / Precision Duelist",
+          "branches": [
+            "Precision",
+            "Dodge"
+          ],
+          "weapon_or_fighting_style": "Blade arms, rapid parries, execution cuts, spinning counterattacks",
+          "personality": "Graceful, patient, disciplined, frighteningly precise"
+        }
+      },
+      "identity": {
+        "canonical_name": "Zelkara Jadeclaw",
+        "species": "Praying Mantis",
+        "title": "The Silent Execution",
+        "personality": "Graceful, patient, disciplined, frighteningly precise",
+        "combat_fantasy": "Counter Assassin / Precision Duelist",
+        "weapon_fighting_style": "Blade arms, rapid parries, execution cuts, spinning counterattacks",
+        "primary_branch": "Precision",
+        "secondary_branch": "Dodge",
+        "branch_basis": "Source array order; normalized aliases only; presentation affinities, no runtime replacement.",
+        "gender_presentation": {
+          "status": "unresolved",
+          "value": null,
+          "reason": "Not defined in source; no inference from names, voice, body or art."
+        }
+      },
+      "design_proposal": {
+        "status": "proposal",
+        "basis": "v1.18 authored production interpretation of sourced identity and reviewed images; unsupported details are proposals, not recovered facts.",
+        "visual": {
+          "body_type": "Upright mantis with two legs and two primary blade arms",
+          "silhouette": "long blade diamond",
+          "proportions": "7.5 heads with elongated forearms",
+          "major_shapes": "narrow diamonds and scythe arcs",
+          "palette_intent": "jade, dark green, pale cut edges",
+          "materials": "chitin and smooth blade surfaces",
+          "distinctive_feature": "integrated blade arms and antennae",
+          "speed_impression": "still then exceptionally sharp",
+          "weight_impression": "light",
+          "range_impression": "contact parry",
+          "rig_family": "agile_biped",
+          "unique_rig_requirements": "antenna_02 pair, custom blade-arm chains",
+          "complexity": "high"
+        },
+        "combat_presentation": {
+          "stance": "Blade arms high with open elbow negative space",
+          "locomotion": "Tiny precise steps with long pauses",
+          "attack_light": "One arm snaps shut",
+          "attack_heavy": "Crossed scythe execution cut",
+          "skill_cast": "Balanced spinning counter pose",
+          "hit_react": "Antennae snap, torso recoils",
+          "dodge": "Narrow pivot between blades",
+          "KO": "Blades fold safely under torso",
+          "victory": "Blade tips meet in a formal salute"
+        },
+        "vfx": {
+          "shape_language": "Paired narrow blade arcs",
+          "motion_language": "Still anticipation then crisp counter",
+          "palette_branch_relationship": "Precision gold cut and Dodge cyan motion"
+        },
+        "height_m_proposal": 1.95,
+        "weapon_sockets": [
+          "socket_weapon_l",
+          "socket_weapon_r"
+        ],
+        "vfx_sockets": [
+          "socket_vfx_l",
+          "socket_vfx_r",
+          "socket_vfx_head",
+          "socket_vfx_chest"
+        ],
+        "expression_deviation": "Eye aperture and antenna/tail posture supplement rigid chitin face; no rubber muzzle."
+      },
+      "selection": {
+        "status": "reserve",
+        "decision": "Exact unordered branch pair duplicates Kitsara; blade-arm retargeting and human-to-insect image conflict raise first-wave risk. Preserve for dedicated counter-duelist expansion."
+      },
+      "scoring": {
+        "silhouette": 5,
+        "species_body": 5,
+        "combat_style": 4,
+        "branch_coverage": 2,
+        "branch_redundancy": 1,
+        "role_coverage": 3,
+        "weapon_diversity": 5,
+        "personality": 4,
+        "vfx": 4,
+        "mobile_readability": 3,
+        "rig_reuse": 2,
+        "production_cost": 1,
+        "reference_quality": 1,
+        "rights_confidence": 0,
+        "low_overlap": 2
+      },
+      "references": {
+        "primary": "ref_d6da79b11e95f795",
+        "supporting": [
+          "ref_74ea2844d74f9e97"
+        ],
+        "coverage": {
+          "front": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "three_quarter_front": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "side": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "back": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "silhouette": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "neutral": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "combat_stance": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "materials_palette": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "weapon_detail": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "expression_sheet": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          }
+        },
+        "rights_status": "unknown-rights",
+        "production_ready": false
+      },
+      "unresolved": [
+        "Rights evidence and authorship for legacy concept imagery",
+        "Gender/presentation and voice casting",
+        "Ten-view consistent reference packet before modeling",
+        "Approve proposed dimensions, material separation and species facial controls",
+        "Evolution stages remain visual reference; no unlock/rarity/mechanics adopted",
+        "Performance budgets await representative fighter and arena measurements"
+      ]
+    },
+    {
+      "id": "vulkaryn_emberlord",
+      "source": {
+        "pointer": "/characters/15",
+        "record": {
+          "id": "vulkaryn_emberlord",
+          "name": "Vulkaryn Emberlord",
+          "title": "The Crown of Cinders",
+          "animal_species": "Dragon-Lizard",
+          "combat_role": "Fire Bruiser / Explosive Caster",
+          "branches": [
+            "Rage",
+            "Power"
+          ],
+          "weapon_or_fighting_style": "Molten claws, volcanic breath, lava armor, explosive tail strikes",
+          "personality": "Proud, volatile, charismatic, treats every fight like a coronation"
+        }
+      },
+      "identity": {
+        "canonical_name": "Vulkaryn Emberlord",
+        "species": "Dragon-Lizard",
+        "title": "The Crown of Cinders",
+        "personality": "Proud, volatile, charismatic, treats every fight like a coronation",
+        "combat_fantasy": "Fire Bruiser / Explosive Caster",
+        "weapon_fighting_style": "Molten claws, volcanic breath, lava armor, explosive tail strikes",
+        "primary_branch": "Rage",
+        "secondary_branch": "Power",
+        "branch_basis": "Source array order; normalized aliases only; presentation affinities, no runtime replacement.",
+        "gender_presentation": {
+          "status": "unresolved",
+          "value": null,
+          "reason": "Not defined in source; no inference from names, voice, body or art."
+        }
+      },
+      "design_proposal": {
+        "status": "proposal",
+        "basis": "v1.18 authored production interpretation of sourced identity and reviewed images; unsupported details are proposals, not recovered facts.",
+        "visual": {
+          "body_type": "Broad dragon-lizard biped",
+          "silhouette": "chest-and-tail furnace",
+          "proportions": "6 heads with thick tail and open chest",
+          "major_shapes": "cracked plates, flame wedges and tail arc",
+          "palette_intent": "volcanic charcoal, ember red, molten orange",
+          "materials": "matte scales, dark cracked plates, limited emissive seams",
+          "distinctive_feature": "low jaw and broad tail without full wings",
+          "speed_impression": "proud pauses then explosive strike",
+          "weight_impression": "heavy",
+          "range_impression": "contact plus breath projection",
+          "rig_family": "heavy_biped",
+          "unique_rig_requirements": "tail_04, jaw, rigid horns",
+          "complexity": "high"
+        },
+        "combat_presentation": {
+          "stance": "Open molten claws with tail behind",
+          "locomotion": "Proud heavy steps, tail settles last",
+          "attack_light": "Short heated claw sweep",
+          "attack_heavy": "Tail counterbalances a two-arm explosive strike",
+          "skill_cast": "Chest expands then jaw releases a compact breath cone",
+          "hit_react": "Jaw snaps shut and chest glow dims briefly",
+          "dodge": "Tail-assisted short pivot",
+          "KO": "Glow settles, tail uncoils beside fallen torso",
+          "victory": "Head rises in a restrained coronation roar"
+        },
+        "vfx": {
+          "shape_language": "Cracked plate lines and short breath cone",
+          "motion_language": "Slow chest charge, explosive release, quick fade",
+          "palette_branch_relationship": "Ember red identity; Rage orange rhythm and Power bright impact"
+        },
+        "height_m_proposal": 2.2,
+        "weapon_sockets": [
+          "socket_weapon_l",
+          "socket_weapon_r"
+        ],
+        "vfx_sockets": [
+          "socket_vfx_l",
+          "socket_vfx_r",
+          "socket_vfx_head",
+          "socket_vfx_chest"
+        ],
+        "expression_deviation": "Use species muzzle/ears or head plates; preserve recognizable neutral anatomy."
+      },
+      "selection": {
+        "status": "launch",
+        "decision": "Second Rage candidate and explosive heavy caster; tail/breath language differs from Fenrox claw chains."
+      },
+      "scoring": {
+        "silhouette": 5,
+        "species_body": 5,
+        "combat_style": 5,
+        "branch_coverage": 4,
+        "branch_redundancy": 4,
+        "role_coverage": 5,
+        "weapon_diversity": 4,
+        "personality": 5,
+        "vfx": 4,
+        "mobile_readability": 4,
+        "rig_reuse": 4,
+        "production_cost": 1,
+        "reference_quality": 1,
+        "rights_confidence": 0,
+        "low_overlap": 5
+      },
+      "references": {
+        "primary": "ref_d6da79b11e95f795",
+        "supporting": [
+          "ref_74ea2844d74f9e97"
+        ],
+        "coverage": {
+          "front": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "three_quarter_front": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "side": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "back": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "silhouette": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "neutral": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "combat_stance": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "materials_palette": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "weapon_detail": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "expression_sheet": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          }
+        },
+        "rights_status": "unknown-rights",
+        "production_ready": false
+      },
+      "unresolved": [
+        "Rights evidence and authorship for legacy concept imagery",
+        "Gender/presentation and voice casting",
+        "Ten-view consistent reference packet before modeling",
+        "Approve proposed dimensions, material separation and species facial controls",
+        "Evolution stages remain visual reference; no unlock/rarity/mechanics adopted",
+        "Performance budgets await representative fighter and arena measurements"
+      ]
+    },
+    {
+      "id": "kongaru_ironpalm",
+      "source": {
+        "pointer": "/characters/16",
+        "record": {
+          "id": "kongaru_ironpalm",
+          "name": "Kongaru Ironpalm",
+          "title": "The Thunderhand Monk",
+          "animal_species": "Gorilla",
+          "combat_role": "Brawler / Crowd Control Tank",
+          "branches": [
+            "Power",
+            "Guardian"
+          ],
+          "weapon_or_fighting_style": "Iron palm martial arts, ground pounds, shockwave grapples, armor-breaking blows",
+          "personality": "Calm, immense, protective, speaks little and hits like a collapsing wall"
+        }
+      },
+      "identity": {
+        "canonical_name": "Kongaru Ironpalm",
+        "species": "Gorilla",
+        "title": "The Thunderhand Monk",
+        "personality": "Calm, immense, protective, speaks little and hits like a collapsing wall",
+        "combat_fantasy": "Brawler / Crowd Control Tank",
+        "weapon_fighting_style": "Iron palm martial arts, ground pounds, shockwave grapples, armor-breaking blows",
+        "primary_branch": "Power",
+        "secondary_branch": "Guardian",
+        "branch_basis": "Source array order; normalized aliases only; presentation affinities, no runtime replacement.",
+        "gender_presentation": {
+          "status": "unresolved",
+          "value": null,
+          "reason": "Not defined in source; no inference from names, voice, body or art."
+        }
+      },
+      "design_proposal": {
+        "status": "proposal",
+        "basis": "v1.18 authored production interpretation of sourced identity and reviewed images; unsupported details are proposals, not recovered facts.",
+        "visual": {
+          "body_type": "Gorilla biped",
+          "silhouette": "long-arm pillar",
+          "proportions": "5.5 heads with long forearms and short legs",
+          "major_shapes": "cylinders and huge palm disks",
+          "palette_intent": "charcoal fur, muted bronze, blue-grey wraps",
+          "materials": "short fur, cloth, worn iron",
+          "distinctive_feature": "low-hanging palms and quiet upright head",
+          "speed_impression": "calm economical steps",
+          "weight_impression": "very heavy",
+          "range_impression": "contact grapple",
+          "rig_family": "heavy_biped",
+          "unique_rig_requirements": "shoulder proportion profile, no tail",
+          "complexity": "medium"
+        },
+        "combat_presentation": {
+          "stance": "Open low palms",
+          "locomotion": "Economical heavy steps",
+          "attack_light": "Compact iron-palm push",
+          "attack_heavy": "Both arms descend in ground pound",
+          "skill_cast": "Palms spread for a shockwave grapple pose",
+          "hit_react": "Absorbs with shoulder and deep exhale",
+          "dodge": "Short planted hip shift",
+          "KO": "Palms meet ground before torso settles",
+          "victory": "Quiet palms-together acknowledgment"
+        },
+        "vfx": {
+          "shape_language": "Palm disks and low shockwave",
+          "motion_language": "Heavy abrupt ground pulse",
+          "palette_branch_relationship": "Power bright impact and Guardian earth ring"
+        },
+        "height_m_proposal": 2.2,
+        "weapon_sockets": [
+          "socket_weapon_l",
+          "socket_weapon_r"
+        ],
+        "vfx_sockets": [
+          "socket_vfx_l",
+          "socket_vfx_r",
+          "socket_vfx_head",
+          "socket_vfx_chest"
+        ],
+        "expression_deviation": "Use species muzzle/ears or head plates; preserve recognizable neutral anatomy."
+      },
+      "selection": {
+        "status": "reserve",
+        "decision": "Heavy protective palm fighter overlaps Brumgar sustain, Solkael counter guard and Rajuro palms. Guardian/Power remain covered three times; preserve long-arm retarget extension for later."
+      },
+      "scoring": {
+        "silhouette": 4,
+        "species_body": 4,
+        "combat_style": 3,
+        "branch_coverage": 2,
+        "branch_redundancy": 2,
+        "role_coverage": 3,
+        "weapon_diversity": 2,
+        "personality": 3,
+        "vfx": 3,
+        "mobile_readability": 5,
+        "rig_reuse": 3,
+        "production_cost": 3,
+        "reference_quality": 1,
+        "rights_confidence": 0,
+        "low_overlap": 1
+      },
+      "references": {
+        "primary": "ref_d6da79b11e95f795",
+        "supporting": [
+          "ref_74ea2844d74f9e97"
+        ],
+        "coverage": {
+          "front": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "three_quarter_front": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "side": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "back": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "silhouette": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "neutral": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "combat_stance": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "materials_palette": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "weapon_detail": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "expression_sheet": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          }
+        },
+        "rights_status": "unknown-rights",
+        "production_ready": false
+      },
+      "unresolved": [
+        "Rights evidence and authorship for legacy concept imagery",
+        "Gender/presentation and voice casting",
+        "Ten-view consistent reference packet before modeling",
+        "Approve proposed dimensions, material separation and species facial controls",
+        "Evolution stages remain visual reference; no unlock/rarity/mechanics adopted",
+        "Performance budgets await representative fighter and arena measurements"
+      ]
+    },
+    {
+      "id": "lupika_swiftkick",
+      "source": {
+        "pointer": "/characters/17",
+        "record": {
+          "id": "lupika_swiftkick",
+          "name": "Lupika Swiftkick",
+          "title": "The Laughing Comet",
+          "animal_species": "Hare",
+          "combat_role": "Speed Fighter / Evasion Striker",
+          "branches": [
+            "Dodge",
+            "Assault"
+          ],
+          "weapon_or_fighting_style": "Acrobatic kickboxing, spring-step dashes, aerial heel strikes, rapid feints",
+          "personality": "Energetic, sarcastic, fearless, always moving before others think"
+        }
+      },
+      "identity": {
+        "canonical_name": "Lupika Swiftkick",
+        "species": "Hare",
+        "title": "The Laughing Comet",
+        "personality": "Energetic, sarcastic, fearless, always moving before others think",
+        "combat_fantasy": "Speed Fighter / Evasion Striker",
+        "weapon_fighting_style": "Acrobatic kickboxing, spring-step dashes, aerial heel strikes, rapid feints",
+        "primary_branch": "Dodge",
+        "secondary_branch": "Assault",
+        "branch_basis": "Source array order; normalized aliases only; presentation affinities, no runtime replacement.",
+        "gender_presentation": {
+          "status": "unresolved",
+          "value": null,
+          "reason": "Not defined in source; no inference from names, voice, body or art."
+        }
+      },
+      "design_proposal": {
+        "status": "proposal",
+        "basis": "v1.18 authored production interpretation of sourced identity and reviewed images; unsupported details are proposals, not recovered facts.",
+        "visual": {
+          "body_type": "Spring-legged hare biped",
+          "silhouette": "ear-and-kick zigzag",
+          "proportions": "6 heads, elongated lower legs and upright ears",
+          "major_shapes": "diagonals, long ear forks, heel wedges",
+          "palette_intent": "warm grey, terracotta scarf, pale blue speed streak",
+          "materials": "flexible cloth, matte fur, light shin plates",
+          "distinctive_feature": "two long ears and kicking-first stance",
+          "speed_impression": "bouncing and very quick",
+          "weight_impression": "light",
+          "range_impression": "contact kick",
+          "rig_family": "agile_biped",
+          "unique_rig_requirements": "ears_03 pair, tail_02, scarf_03",
+          "complexity": "medium"
+        },
+        "combat_presentation": {
+          "stance": "High heel guard, ears offset",
+          "locomotion": "Springy footwork with intentional still beats",
+          "attack_light": "Fast shin-level kick",
+          "attack_heavy": "Extended heel strike with scarf counterflow",
+          "skill_cast": "One comet-kick pose held long enough to read",
+          "hit_react": "Ears drop first, torso catches balance",
+          "dodge": "Quick lateral hop with visible landing",
+          "KO": "Bounce stops, ears settle after torso",
+          "victory": "Laughing heel tap and ear flick"
+        },
+        "vfx": {
+          "shape_language": "Heel wedge and dotted comet line",
+          "motion_language": "Quick curved sweep with visible landing point",
+          "palette_branch_relationship": "Dodge cyan trail and Assault orange contact"
+        },
+        "height_m_proposal": 1.7,
+        "weapon_sockets": [
+          "socket_weapon_l",
+          "socket_weapon_r"
+        ],
+        "vfx_sockets": [
+          "socket_vfx_l",
+          "socket_vfx_r",
+          "socket_vfx_head",
+          "socket_vfx_chest"
+        ],
+        "expression_deviation": "Use species muzzle/ears or head plates; preserve recognizable neutral anatomy."
+      },
+      "selection": {
+        "status": "launch",
+        "decision": "Second launch Dodge entry with kicking silhouette and comic motion; agile rig reuse without another blade duelist."
+      },
+      "scoring": {
+        "silhouette": 5,
+        "species_body": 5,
+        "combat_style": 5,
+        "branch_coverage": 3,
+        "branch_redundancy": 4,
+        "role_coverage": 5,
+        "weapon_diversity": 5,
+        "personality": 5,
+        "vfx": 4,
+        "mobile_readability": 5,
+        "rig_reuse": 5,
+        "production_cost": 3,
+        "reference_quality": 1,
+        "rights_confidence": 0,
+        "low_overlap": 5
+      },
+      "references": {
+        "primary": "ref_d6da79b11e95f795",
+        "supporting": [
+          "ref_74ea2844d74f9e97"
+        ],
+        "coverage": {
+          "front": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "three_quarter_front": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "side": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "back": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "silhouette": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "neutral": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "combat_stance": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "materials_palette": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "weapon_detail": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "expression_sheet": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          }
+        },
+        "rights_status": "unknown-rights",
+        "production_ready": false
+      },
+      "unresolved": [
+        "Rights evidence and authorship for legacy concept imagery",
+        "Gender/presentation and voice casting",
+        "Ten-view consistent reference packet before modeling",
+        "Approve proposed dimensions, material separation and species facial controls",
+        "Evolution stages remain visual reference; no unlock/rarity/mechanics adopted",
+        "Performance budgets await representative fighter and arena measurements"
+      ]
+    },
+    {
+      "id": "tortugan_runewarden",
+      "source": {
+        "pointer": "/characters/18",
+        "record": {
+          "id": "tortugan_runewarden",
+          "name": "Tortugan Runewarden",
+          "title": "The Shell of Ages",
+          "animal_species": "Turtle",
+          "combat_role": "Defensive Caster / Barrier Support",
+          "branches": [
+            "Shield",
+            "Arcane"
+          ],
+          "weapon_or_fighting_style": "Rune shell barriers, ward circles, staff counters, reflective magic shields",
+          "personality": "Patient, scholarly, dry-humored, wins fights by outlasting bad decisions"
+        }
+      },
+      "identity": {
+        "canonical_name": "Tortugan Runewarden",
+        "species": "Turtle",
+        "title": "The Shell of Ages",
+        "personality": "Patient, scholarly, dry-humored, wins fights by outlasting bad decisions",
+        "combat_fantasy": "Defensive Caster / Barrier Support",
+        "weapon_fighting_style": "Rune shell barriers, ward circles, staff counters, reflective magic shields",
+        "primary_branch": "Shield",
+        "secondary_branch": "Essence",
+        "branch_basis": "Source array order; normalized aliases only; presentation affinities, no runtime replacement.",
+        "gender_presentation": {
+          "status": "unresolved",
+          "value": null,
+          "reason": "Not defined in source; no inference from names, voice, body or art."
+        }
+      },
+      "design_proposal": {
+        "status": "proposal",
+        "basis": "v1.18 authored production interpretation of sourced identity and reviewed images; unsupported details are proposals, not recovered facts.",
+        "visual": {
+          "body_type": "Compact turtle biped",
+          "silhouette": "shell dome with staff",
+          "proportions": "5.5 heads, low neck and broad back shell",
+          "major_shapes": "dome, concentric wards, short staff",
+          "palette_intent": "moss shell, sandstone robe, violet runes",
+          "materials": "opaque shell, woven cloth, bronze staff",
+          "distinctive_feature": "shell reads above shoulder even in side view",
+          "speed_impression": "slow assured steps",
+          "weight_impression": "medium-heavy",
+          "range_impression": "projected wards",
+          "rig_family": "medium_biped",
+          "unique_rig_requirements": "neck extension, rigid shell",
+          "complexity": "medium"
+        },
+        "combat_presentation": {
+          "stance": "Staff forward, shell turned slightly toward foe",
+          "locomotion": "Small stable steps, shell stays level",
+          "attack_light": "Short staff counter",
+          "attack_heavy": "Two-handed staff brace and push",
+          "skill_cast": "One ward circle emerges from shell perimeter",
+          "hit_react": "Head retracts slightly, shell receives impact",
+          "dodge": "Slow shell-side pivot",
+          "KO": "Staff lowers, body rests against shell",
+          "victory": "Dry amused nod and staff tap"
+        },
+        "vfx": {
+          "shape_language": "Nested ward circles and shell facets",
+          "motion_language": "Deliberate expanding ring with limited persistent glow",
+          "palette_branch_relationship": "Shield cyan barrier and Essence violet rune accents"
+        },
+        "height_m_proposal": 1.6,
+        "weapon_sockets": [
+          "socket_weapon_l",
+          "socket_weapon_r"
+        ],
+        "vfx_sockets": [
+          "socket_vfx_l",
+          "socket_vfx_r",
+          "socket_vfx_head",
+          "socket_vfx_chest"
+        ],
+        "expression_deviation": "Use species muzzle/ears or head plates; preserve recognizable neutral anatomy."
+      },
+      "selection": {
+        "status": "launch",
+        "decision": "Shield/Essence ward caster covers oracle defensive magic; shell breaks biped silhouette with modest extension cost."
+      },
+      "scoring": {
+        "silhouette": 5,
+        "species_body": 5,
+        "combat_style": 4,
+        "branch_coverage": 3,
+        "branch_redundancy": 4,
+        "role_coverage": 5,
+        "weapon_diversity": 4,
+        "personality": 5,
+        "vfx": 4,
+        "mobile_readability": 5,
+        "rig_reuse": 4,
+        "production_cost": 3,
+        "reference_quality": 1,
+        "rights_confidence": 0,
+        "low_overlap": 5
+      },
+      "references": {
+        "primary": "ref_d6da79b11e95f795",
+        "supporting": [
+          "ref_74ea2844d74f9e97"
+        ],
+        "coverage": {
+          "front": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "three_quarter_front": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "side": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "back": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "silhouette": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "neutral": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "combat_stance": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "materials_palette": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "weapon_detail": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "expression_sheet": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          }
+        },
+        "rights_status": "unknown-rights",
+        "production_ready": false
+      },
+      "unresolved": [
+        "Rights evidence and authorship for legacy concept imagery",
+        "Gender/presentation and voice casting",
+        "Ten-view consistent reference packet before modeling",
+        "Approve proposed dimensions, material separation and species facial controls",
+        "Evolution stages remain visual reference; no unlock/rarity/mechanics adopted",
+        "Performance budgets await representative fighter and arena measurements"
+      ]
+    },
+    {
+      "id": "skarvex_stinglash",
+      "source": {
+        "pointer": "/characters/19",
+        "record": {
+          "id": "skarvex_stinglash",
+          "name": "Skarvex Stinglash",
+          "title": "The Last Sting",
+          "animal_species": "Scorpion",
+          "combat_role": "Debuff Duelist / Poison Executioner",
+          "branches": [
+            "Venom",
+            "Precision"
+          ],
+          "weapon_or_fighting_style": "Chain stinger, venom hooks, puncture strikes, precision tail executions",
+          "personality": "Dangerous, disciplined, merciless, enjoys ending fights cleanly"
+        }
+      },
+      "identity": {
+        "canonical_name": "Skarvex Stinglash",
+        "species": "Scorpion",
+        "title": "The Last Sting",
+        "personality": "Dangerous, disciplined, merciless, enjoys ending fights cleanly",
+        "combat_fantasy": "Debuff Duelist / Poison Executioner",
+        "weapon_fighting_style": "Chain stinger, venom hooks, puncture strikes, precision tail executions",
+        "primary_branch": "Toxin",
+        "secondary_branch": "Precision",
+        "branch_basis": "Source array order; normalized aliases only; presentation affinities, no runtime replacement.",
+        "gender_presentation": {
+          "status": "unresolved",
+          "value": null,
+          "reason": "Not defined in source; no inference from names, voice, body or art."
+        }
+      },
+      "design_proposal": {
+        "status": "proposal",
+        "basis": "v1.18 authored production interpretation of sourced identity and reviewed images; unsupported details are proposals, not recovered facts.",
+        "visual": {
+          "body_type": "Armored scorpion biped with one tail",
+          "silhouette": "overhead stinger hook",
+          "proportions": "6.5 heads and low narrow torso",
+          "major_shapes": "hook arc, segmented plates, hooked hands",
+          "palette_intent": "deep plum chitin, dull jade, toxin lime tip",
+          "materials": "opaque chitin, hooked steel, small venom reservoir",
+          "distinctive_feature": "stinger elevated clear of head",
+          "speed_impression": "precise stalking bursts",
+          "weight_impression": "medium",
+          "range_impression": "short chain projection",
+          "rig_family": "agile_biped",
+          "unique_rig_requirements": "stinger_06, two hooked hands",
+          "complexity": "high"
+        },
+        "combat_presentation": {
+          "stance": "Hooked hands forward, stinger clear above head",
+          "locomotion": "Low accurate steps, tail tip follows aim",
+          "attack_light": "Short puncture hook",
+          "attack_heavy": "Tail makes a single committed descending arc",
+          "skill_cast": "Venom reservoir glows before one chain-stinger release",
+          "hit_react": "Tail stiffens, hands draw inward",
+          "dodge": "Narrow lateral step with tail counterbalance",
+          "KO": "Stinger coils away from face before collapse",
+          "victory": "Hooks lower, stinger settles into precise arc"
+        },
+        "vfx": {
+          "shape_language": "Single stinger arc and small puncture star",
+          "motion_language": "Precise strike then tiny dripping residue",
+          "palette_branch_relationship": "Toxin lime tip and Precision gold puncture; plum body stays dark"
+        },
+        "height_m_proposal": 1.9,
+        "weapon_sockets": [
+          "socket_weapon_l",
+          "socket_weapon_r"
+        ],
+        "vfx_sockets": [
+          "socket_vfx_l",
+          "socket_vfx_r",
+          "socket_vfx_head",
+          "socket_vfx_chest"
+        ],
+        "expression_deviation": "Eye aperture and antenna/tail posture supplement rigid chitin face; no rubber muzzle."
+      },
+      "selection": {
+        "status": "launch",
+        "decision": "Second Toxin candidate and precise puncture execution style; tail overhead silhouette offsets the custom extension cost."
+      },
+      "scoring": {
+        "silhouette": 5,
+        "species_body": 5,
+        "combat_style": 5,
+        "branch_coverage": 4,
+        "branch_redundancy": 4,
+        "role_coverage": 5,
+        "weapon_diversity": 5,
+        "personality": 4,
+        "vfx": 5,
+        "mobile_readability": 4,
+        "rig_reuse": 3,
+        "production_cost": 1,
+        "reference_quality": 1,
+        "rights_confidence": 0,
+        "low_overlap": 5
+      },
+      "references": {
+        "primary": "ref_d6da79b11e95f795",
+        "supporting": [
+          "ref_74ea2844d74f9e97"
+        ],
+        "coverage": {
+          "front": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "three_quarter_front": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "side": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "back": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "silhouette": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "neutral": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "combat_stance": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "materials_palette": {
+            "status": "partial-reference",
+            "reference_ids": [
+              "ref_d6da79b11e95f795"
+            ],
+            "reason": "Named concept suggests this view/direction; no consistent production-scale reference or rights clearance."
+          },
+          "weapon_detail": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          },
+          "expression_sheet": {
+            "status": "gap",
+            "reference_ids": [],
+            "reason": "No dedicated consistent production view found; roster/action thumbnails are not a turnaround."
+          }
+        },
+        "rights_status": "unknown-rights",
+        "production_ready": false
+      },
+      "unresolved": [
+        "Rights evidence and authorship for legacy concept imagery",
+        "Gender/presentation and voice casting",
+        "Ten-view consistent reference packet before modeling",
+        "Approve proposed dimensions, material separation and species facial controls",
+        "Evolution stages remain visual reference; no unlock/rarity/mechanics adopted",
+        "Performance budgets await representative fighter and arena measurements"
+      ]
+    }
+  ]
+}

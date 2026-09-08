@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "clips": [
+    {
+      "name": "idle",
+      "semantic_state": "idle",
+      "fps": 30,
+      "loop": true,
+      "root_motion": false,
+      "required_markers": [],
+      "optional_markers": []
+    },
+    {
+      "name": "intro",
+      "semantic_state": "intro",
+      "fps": 30,
+      "loop": false,
+      "root_motion": false,
+      "required_markers": [],
+      "optional_markers": []
+    },
+    {
+      "name": "attack_light",
+      "semantic_state": "attack_light",
+      "fps": 30,
+      "loop": false,
+      "root_motion": false,
+      "required_markers": [
+        "windup_start",
+        "hit",
+        "recover_start",
+        "recover_end"
+      ],
+      "optional_markers": [
+        "projectile_spawn",
+        "vfx_spawn"
+      ]
+    },
+    {
+      "name": "attack_heavy",
+      "semantic_state": "attack_heavy",
+      "fps": 30,
+      "loop": false,
+      "root_motion": false,
+      "required_markers": [
+        "windup_start",
+        "hit",
+        "recover_start",
+        "recover_end"
+      ],
+      "optional_markers": [
+        "projectile_spawn",
+        "vfx_spawn"
+      ]
+    },
+    {
+      "name": "skill_cast",
+      "semantic_state": "skill_cast",
+      "fps": 30,
+      "loop": false,
+      "root_motion": false,
+      "required_markers": [
+        "windup_start",
+        "cast",
+        "recover_start",
+        "recover_end"
+      ],
+      "optional_markers": [
+        "projectile_spawn",
+        "vfx_spawn"
+      ]
+    },
+    {
+      "name": "hit_react",
+      "semantic_state": "hit_react",
+      "fps": 30,
+      "loop": false,
+      "root_motion": false,
+      "required_markers": [],
+      "optional_markers": []
+    },
+    {
+      "name": "dodge",
+      "semantic_state": "dodge",
+      "fps": 30,
+      "loop": false,
+      "root_motion": false,
+      "required_markers": [],
+      "optional_markers": []
+    },
+    {
+      "name": "ko",
+      "semantic_state": "KO",
+      "fps": 30,
+      "loop": false,
+      "root_motion": false,
+      "required_markers": [],
+      "optional_markers": []
+    },
+    {
+      "name": "victory",
+      "semantic_state": "victory",
+      "fps": 30,
+      "loop": false,
+      "root_motion": false,
+      "required_markers": [],
+      "optional_markers": []
+    },
+    {
+      "name": "idle_breathing",
+      "semantic_state": "idle_breathing",
+      "fps": 30,
+      "loop": true,
+      "root_motion": false,
+      "required_markers": [],
+      "optional_markers": []
+    }
+  ],
+  "marker_vocabulary": [
+    "windup_start",
+    "hit",
+    "projectile_spawn",
+    "cast",
+    "vfx_spawn",
+    "recover_start",
+    "recover_end"
+  ],
+  "marker_format": {
+    "name": "one of marker_vocabulary",
+    "phase": "normalized time [0,1] within visual clip",
+    "event_id": "provided at playback by resolver event; never authored damage",
+    "order": "windup_start <= hit/cast <= recover_start <= recover_end; projectile_spawn/vfx_spawn may be at their authored visual phases"
+  },
+  "authority": "Combat resolver event ID and timestamp are authoritative. Clips/markers never calculate, apply, roll, repeat or undo damage. A marker only requests visual/audio presentation.",
+  "synchronization": {
+    "attack": "Fit anticipation/contact/recovery to event timeline without changing event time. If too short, shorten/reduce presentation or use fallback impact; do not delay damage.",
+    "projectile": "Travel VFX to authoritative impact time; no physics collision authority.",
+    "interrupt": "KO cancels outgoing presentation and pending cosmetic markers; already-resolved damage is never rolled back.",
+    "seek_replay": "Reconstruct state at target time; suppress historical one-shot sounds/VFX. Deduplicate by event ID and cue kind.",
+    "dodge": "Show only on authoritative dodge event; clip motion never changes dodge probability.",
+    "reflected_damage": "Reaction follows reflected event, no recursive attack animation generated.",
+    "missing_clip": "Log contract error and use neutral/reaction fallback; do not block simulation."
+  },
+  "locomotion": "Optional later walk/run clips use the same contract; not required while combat remains non-spatial. No jump, flight, taunt or ultimate added without shared need.",
+  "export": "Separate named actions, baked at 30 fps; no strip suffix, automatic .001 names or exporter loop-name suffix. Loop flags live in this contract/import adapter.",
+  "verification": "v1.18 validates specification names and marker schemas only. First GLB must prove actual clip presence/loops/rest/root-motion and runtime event synchronization in v1.19."
+}

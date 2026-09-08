@@ -43,7 +43,12 @@ There are currently multiple generations of hero data:
 1. older placeholder/runtime heroes in the JS prototype;
 2. newer 20-character anthropomorphic roster in the legacy archive.
 
-The newer roster is the preferred candidate direction, but is not final until the Hero Roster phase closes.
+The current v1.18 task authorizes selection of 16 launch and 4 reserve from the
+20 sourced candidates. `roster/hero_roster.json` owns production identity and
+normalized display affinities; the source snapshot retains all original fields.
+Visual/pipeline proposals and reference rights are explicitly separate. Runtime
+hero replacement is not performed: the 16 oracle IDs/stats/skills remain canonical
+for simulation and replay until a separately validated gameplay migration.
 
 ## One-source rule
 
@@ -78,7 +83,8 @@ Only card casing, commas/semicolons, empty delimiter tokens and the Guadian typo
 on ID 070 are normalized. Unknown names and duplicate normalized branches fail.
 Candidate aliases are reserved for the future candidate importer, not permitted
 as fallback spellings in the 150-card deck. The imported 16 heroes are explicitly
-`legacy_oracle`; candidate roster approval remains deferred.
+`legacy_oracle`. v1.18 applies Arcane/Essence, Venom/Toxin and Frost/Ice aliases only
+to production candidate metadata; it does not broaden the runtime card importer.
 
 `game/data/effect_contracts.json` owns 15 reviewed pilot proposals guarded by
 original-text hashes. The generated 150-ID registry distinguishes `unreviewed`,

@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "scope": "Temporary geometry/text planning diagram, no production art or runtime UI",
+  "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+  "font_name": "arial.ttf",
+  "checks": [
+    {
+      "resolution": [
+        844,
+        390
+      ],
+      "variant": 0,
+      "states": [
+        "ACQUISTABILE",
+        "SELEZIONATA",
+        "NON DISPONIBILE"
+      ],
+      "text_regions": 32,
+      "no_overlap": true,
+      "safe_area": true,
+      "minimum_interactive_height": 44
+    },
+    {
+      "resolution": [
+        844,
+        390
+      ],
+      "variant": 1,
+      "states": [
+        "POSSEDUTA",
+        "MAX",
+        "NORMALE"
+      ],
+      "text_regions": 32,
+      "no_overlap": true,
+      "safe_area": true,
+      "minimum_interactive_height": 44
+    },
+    {
+      "resolution": [
+        667,
+        375
+      ],
+      "variant": 0,
+      "states": [
+        "ACQUISTABILE",
+        "SELEZIONATA",
+        "NON DISPONIBILE"
+      ],
+      "text_regions": 32,
+      "no_overlap": true,
+      "safe_area": true,
+      "minimum_interactive_height": 44
+    },
+    {
+      "resolution": [
+        667,
+        375
+      ],
+      "variant": 1,
+      "states": [
+        "POSSEDUTA",
+        "MAX",
+        "NORMALE"
+      ],
+      "text_regions": 32,
+      "no_overlap": true,
+      "safe_area": true,
+      "minimum_interactive_height": 44
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "card-proof-844x390-0.png",
+      "sha256": "107b8bd1e02420e01bf81423cb8383176c1fc9c705edc88de16f52c10508dc7a"
+    },
+    {
+      "path": "card-proof-844x390-1.png",
+      "sha256": "2567e48f6884ab6212b28b8554c9a19ed5768b877cc28005e8c2a06463b1be24"
+    },
+    {
+      "path": "card-proof-667x375-0.png",
+      "sha256": "e0fd2373cb0254136c45d9857b90e78a11a1f83416de003759a7dad5642e25ed"
+    },
+    {
+      "path": "card-proof-667x375-1.png",
+      "sha256": "7ae517727f6b01fd9bd34b0dae9eef48dcdd7c386cef992862b66f180bda0bf9"
+    }
+  ]
+}
