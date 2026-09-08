@@ -37,7 +37,6 @@ def main():
             check=dict(command=list(map(str,command)),status="fail",error=str(error))
         check["name"]=name
         checks.append(check)
-        print(name+": "+check["status"],flush=True)
         return check
 
     add("baseline_ancestor",["git","merge-base","--is-ancestor",BASELINE,"HEAD"])
@@ -70,6 +69,7 @@ def main():
     report=dict(phase="v1.16",status="pass" if all(c["status"]=="pass" for c in checks) else "fail",commit=subprocess.check_output(["git","rev-parse","HEAD"],cwd=ROOT,text=True).strip(),branch=branch.get("output","").strip(),baseline=BASELINE,python=platform.python_version(),platform=platform.platform(),packages=packages,clean_checkout=args.require_clean,checks=checks,limits=["Only base_text_v1; numbered levels and global combat/status/death rules remain unresolved.","Foundation full profile is a separate required local gate.","No Android/iOS package/device or final-art gate is claimed.","Local execution is not evidence of a remote GitHub Actions run."])
     args.report.parent.mkdir(parents=True,exist_ok=True)
     args.report.write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    for check in checks: print(check["name"]+": "+check["status"])
     print(json.dumps({"status":report["status"],"checks":len(checks),"report":str(args.report)}))
     return 0 if report["status"]=="pass" else 1
 
