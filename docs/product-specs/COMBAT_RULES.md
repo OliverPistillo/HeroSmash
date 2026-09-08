@@ -32,8 +32,11 @@ before any fight. Hero statistics are not edited to improve lab outcomes.
   multiplier is3500bp from the existing implemented Ice rule. Skill cooldown itself
   is not slowed. Stun pauses basic/skill cooldown progress and allows30% base energy
   regeneration, matching the actual implemented status behavior for either entity.
-- Resources advance only to the next event boundary. Ready actors act once, then
-  their next readiness is calculated; there is no dependence on frame frequency.
+- Resources advance only to the next event boundary. At that timestamp, actors
+  take at most one action per initiative round (skill priority), repeating rounds
+  until no action is ready. A basic/HP-loss energy proc can make a skill ready in
+  the same millisecond. Positive cooldowns/attack charges bound this to at most
+  two actions per actor; a four-round guard fails visibly if violated.
 - At an exact timestamp: status ticks, expiry, card intervals, actions. Within each
   phase: seeded initiative, then stable status/binding/action order. Nested damage
   and resulting reactions complete before the next action. First card interval is
@@ -63,3 +66,14 @@ No market formula, branch synergy rebalance, XP/Guardian model or general multi-
 effect scaling is introduced. Current legacy branch bonuses remain reference unless
 explicitly used as labeled fixtures. 097/111/132 remain unresolved; LIGHTBRINGER120
 has an explicit single-level rebirth contract in the lethal specification.
+
+Each trigger builds an ordered local reaction queue. Children finish before the
+next parent action; depth16,20,000 events and64 simultaneous status instances per
+target are explicit error limits. A post-critical intent above1,000,000,000
+milli-damage fails before defensive multiplication, keeping every accepted product
+inside signed64-bit range. These are execution limits, not balance clamps.
+
+All status ticks due at a boundary are earned before their damage is drained, so
+simultaneous lethal DoTs can produce a draw even after their source's final KO.
+Rebirth cleanses debuffs and the lethal skill does not immediately reapply its own
+debuff to the new generation. It does not reset cooldowns, energy or spent charges.

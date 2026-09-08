@@ -72,6 +72,8 @@ func expand_refs(node: Variant, definitions: Dictionary) -> Variant:
 			# The v1.16 validator supports boolean additionalProperties only.
 			# Numeric oracle values are checked explicitly when levels load.
 			result[key] = true if key == "additionalProperties" and node[key] is Dictionary else expand_refs(node[key], definitions)
+		if result.has("const") and not result.has("type"):
+			result["type"] = {TYPE_INT:"integer", TYPE_FLOAT:"number", TYPE_STRING:"string", TYPE_BOOL:"boolean", TYPE_DICTIONARY:"object", TYPE_ARRAY:"array"}[typeof(result["const"])]
 		return result
 	return node
 
