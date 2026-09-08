@@ -210,12 +210,21 @@ def main():
             print("FAIL", name, str(exc), flush=True)
     def baseline():
         subprocess.run(["git","merge-base","--is-ancestor",BASELINE,"HEAD"],cwd=ROOT,check=True)
-        assert not command(["git","diff",BASELINE,"--","game","legacy/web-prototype"]), "runtime or oracle changed"
+        # v1.19 may add its explicit presentation assets/tests. Every existing
+        # v1.17 runtime/oracle blob is still protected byte-for-byte.
+        additions = 0
+        allowed_roots = ("game/assets/characters/solkael_lionheart/", "game/scenes/characters/solkael_lionheart/")
+        allowed_files = {"game/scripts/presentation/"+n+s for n in ["fighter_event_adapter", "solkael_fighter"] for s in [".gd", ".gd.uid"]}
+        allowed_files |= {"game/tests/"+n+s for n in ["fighter_test", "fighter_review"] for s in [".gd", ".gd.uid"]}
+        for line in command(["git","diff","--name-status",BASELINE,"--","game","legacy/web-prototype"]).splitlines():
+            status,path=line.split("\t",1)
+            assert status == "A" and (path.startswith(allowed_roots) or path in allowed_files), "baseline runtime or oracle changed: "+line
+            additions += 1
         if args.require_clean:
             assert not report["working_tree_changes"], "working tree not clean"
         if args.expected_branch:
             assert report["branch"] == args.expected_branch
-        return dict(baseline=BASELINE, runtime_changes=0)
+        return dict(baseline=BASELINE, baseline_files_changed=0, authorized_presentation_additions=additions)
     check("baseline_and_runtime_preservation", baseline)
     source = read("docs/references/visual/v1.18/hero_candidates.source.json")
     roster = read("docs/product-specs/roster/hero_roster.json")

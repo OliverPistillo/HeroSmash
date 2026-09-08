@@ -45,6 +45,12 @@ assets are future asset-entry gates, not claimed as passed by specification chec
 
 ## Asset gate
 
+v1.19 additionally requires the full `tools/validation/fighter.py` profile and
+the explicit GPU/footage review in `FIGHTER_VALIDATION.md`, plus all previous full
+local profiles. Owner-approved reference hashes and LFS hydration are asset-entry
+requirements. Existing gameplay/legacy blobs remain unchanged; only the scoped
+Solkael presentation addition is permitted by the historical preservation gate.
+
 For a character/arena:
 - naming validation;
 - scale/origin validation;

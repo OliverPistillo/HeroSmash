@@ -38,6 +38,7 @@ references/visual/characters/solkael_lionheart/production/*.png filter=lfs diff=
 references/visual/characters/solkael_lionheart/production/SOLKAEL_ART_LOCK_v1_MANIFEST.json -text
 art/characters/solkael_lionheart/source/*.blend filter=lfs diff=lfs merge=lfs -text
 game/assets/characters/solkael_lionheart/*.glb filter=lfs diff=lfs merge=lfs -text
+game/assets/characters/solkael_lionheart/*.json text eol=lf
 art/characters/**/*.json text eol=lf
 tools/asset_pipeline/*.py text eol=lf
 tools/validation/fighter*.py text eol=lf
