@@ -19811,5 +19811,191 @@
         }
       ]
     }
+  ],
+  "production_items": [
+    {
+      "id": "solkael_3quarter_v1",
+      "category": "characters",
+      "file": "references/visual/characters/solkael_lionheart/production/SOLKAEL_3quarter_v1.png",
+      "sha256": "ff3517ab731f21ad69f60dbeb0dcdd50815bbf352ddcf228b0ccc5782fbf0032",
+      "bytes": 2037868,
+      "source_type": "generated-for-project",
+      "rights_status": "generated-for-project",
+      "approval_status": "production-approved",
+      "art_lock": "v1",
+      "author_or_owner": "Hero Smash project; owner attestation 2026-09-09",
+      "source_url_or_path": "references/visual/characters/solkael_lionheart/production/SOLKAEL_ART_LOCK_v1_MANIFEST.json",
+      "rights_evidence": "docs/art/SOLKAEL_ART_LOCK.md",
+      "intended_use": "Direct visual production source for Solkael Golden Fighter v1.19",
+      "associations": [
+        "solkael_lionheart"
+      ],
+      "tags": [
+        "v1.19",
+        "approved-art-lock"
+      ],
+      "notes": "Owner-approved exact supplied bytes; no promotion of legacy reference IDs."
+    },
+    {
+      "id": "solkael_back_v1",
+      "category": "characters",
+      "file": "references/visual/characters/solkael_lionheart/production/SOLKAEL_back_v1.png",
+      "sha256": "9dccc50beeb46cb37954a33f9aee0385eb30092362fcd57a11914ddb9ed9f46d",
+      "bytes": 1953157,
+      "source_type": "generated-for-project",
+      "rights_status": "generated-for-project",
+      "approval_status": "production-approved",
+      "art_lock": "v1",
+      "author_or_owner": "Hero Smash project; owner attestation 2026-09-09",
+      "source_url_or_path": "references/visual/characters/solkael_lionheart/production/SOLKAEL_ART_LOCK_v1_MANIFEST.json",
+      "rights_evidence": "docs/art/SOLKAEL_ART_LOCK.md",
+      "intended_use": "Direct visual production source for Solkael Golden Fighter v1.19",
+      "associations": [
+        "solkael_lionheart"
+      ],
+      "tags": [
+        "v1.19",
+        "approved-art-lock"
+      ],
+      "notes": "Owner-approved exact supplied bytes; no promotion of legacy reference IDs."
+    },
+    {
+      "id": "solkael_combat_v1",
+      "category": "characters",
+      "file": "references/visual/characters/solkael_lionheart/production/SOLKAEL_combat_v1.png",
+      "sha256": "3aee5e0b37f5d227caa97f8bd52b955418b721d20f3e567cacabf9ea942a9069",
+      "bytes": 2331923,
+      "source_type": "generated-for-project",
+      "rights_status": "generated-for-project",
+      "approval_status": "production-approved",
+      "art_lock": "v1",
+      "author_or_owner": "Hero Smash project; owner attestation 2026-09-09",
+      "source_url_or_path": "references/visual/characters/solkael_lionheart/production/SOLKAEL_ART_LOCK_v1_MANIFEST.json",
+      "rights_evidence": "docs/art/SOLKAEL_ART_LOCK.md",
+      "intended_use": "Direct visual production source for Solkael Golden Fighter v1.19",
+      "associations": [
+        "solkael_lionheart"
+      ],
+      "tags": [
+        "v1.19",
+        "approved-art-lock"
+      ],
+      "notes": "Owner-approved exact supplied bytes; no promotion of legacy reference IDs."
+    },
+    {
+      "id": "solkael_expressions_v1",
+      "category": "characters",
+      "file": "references/visual/characters/solkael_lionheart/production/SOLKAEL_expressions_v1.png",
+      "sha256": "22f55c27288ed59615870ba2d5c2232a7fd993c24fbcabe2060d90ec40c746e8",
+      "bytes": 2298714,
+      "source_type": "generated-for-project",
+      "rights_status": "generated-for-project",
+      "approval_status": "production-approved",
+      "art_lock": "v1",
+      "author_or_owner": "Hero Smash project; owner attestation 2026-09-09",
+      "source_url_or_path": "references/visual/characters/solkael_lionheart/production/SOLKAEL_ART_LOCK_v1_MANIFEST.json",
+      "rights_evidence": "docs/art/SOLKAEL_ART_LOCK.md",
+      "intended_use": "Direct visual production source for Solkael Golden Fighter v1.19",
+      "associations": [
+        "solkael_lionheart"
+      ],
+      "tags": [
+        "v1.19",
+        "approved-art-lock"
+      ],
+      "notes": "Owner-approved exact supplied bytes; no promotion of legacy reference IDs."
+    },
+    {
+      "id": "solkael_front_v1",
+      "category": "characters",
+      "file": "references/visual/characters/solkael_lionheart/production/SOLKAEL_front_v1.png",
+      "sha256": "fc16f198b43a92633c111a54107affa52c4a160ff9d133c9df561baf2d098878",
+      "bytes": 2042204,
+      "source_type": "generated-for-project",
+      "rights_status": "generated-for-project",
+      "approval_status": "production-approved",
+      "art_lock": "v1",
+      "author_or_owner": "Hero Smash project; owner attestation 2026-09-09",
+      "source_url_or_path": "references/visual/characters/solkael_lionheart/production/SOLKAEL_ART_LOCK_v1_MANIFEST.json",
+      "rights_evidence": "docs/art/SOLKAEL_ART_LOCK.md",
+      "intended_use": "Direct visual production source for Solkael Golden Fighter v1.19",
+      "associations": [
+        "solkael_lionheart"
+      ],
+      "tags": [
+        "v1.19",
+        "approved-art-lock"
+      ],
+      "notes": "Owner-approved exact supplied bytes; no promotion of legacy reference IDs."
+    },
+    {
+      "id": "solkael_gauntlets_v1",
+      "category": "characters",
+      "file": "references/visual/characters/solkael_lionheart/production/SOLKAEL_gauntlets_v1.png",
+      "sha256": "ef7bf42617b3d0328b10ef3f60b1dea4235d3dd9a6b63d92d040fe41bb3c0630",
+      "bytes": 2251147,
+      "source_type": "generated-for-project",
+      "rights_status": "generated-for-project",
+      "approval_status": "production-approved",
+      "art_lock": "v1",
+      "author_or_owner": "Hero Smash project; owner attestation 2026-09-09",
+      "source_url_or_path": "references/visual/characters/solkael_lionheart/production/SOLKAEL_ART_LOCK_v1_MANIFEST.json",
+      "rights_evidence": "docs/art/SOLKAEL_ART_LOCK.md",
+      "intended_use": "Direct visual production source for Solkael Golden Fighter v1.19",
+      "associations": [
+        "solkael_lionheart"
+      ],
+      "tags": [
+        "v1.19",
+        "approved-art-lock"
+      ],
+      "notes": "Owner-approved exact supplied bytes; no promotion of legacy reference IDs."
+    },
+    {
+      "id": "solkael_materials_v1",
+      "category": "characters",
+      "file": "references/visual/characters/solkael_lionheart/production/SOLKAEL_materials_v1.png",
+      "sha256": "30b009215e521e226ab80d66c345a48f5616a48d4321dbe63ee38a5d8d0a11f7",
+      "bytes": 2186433,
+      "source_type": "generated-for-project",
+      "rights_status": "generated-for-project",
+      "approval_status": "production-approved",
+      "art_lock": "v1",
+      "author_or_owner": "Hero Smash project; owner attestation 2026-09-09",
+      "source_url_or_path": "references/visual/characters/solkael_lionheart/production/SOLKAEL_ART_LOCK_v1_MANIFEST.json",
+      "rights_evidence": "docs/art/SOLKAEL_ART_LOCK.md",
+      "intended_use": "Direct visual production source for Solkael Golden Fighter v1.19",
+      "associations": [
+        "solkael_lionheart"
+      ],
+      "tags": [
+        "v1.19",
+        "approved-art-lock"
+      ],
+      "notes": "Owner-approved exact supplied bytes; no promotion of legacy reference IDs."
+    },
+    {
+      "id": "solkael_side_v1",
+      "category": "characters",
+      "file": "references/visual/characters/solkael_lionheart/production/SOLKAEL_side_v1.png",
+      "sha256": "6557dc5321bcc87f86435fec01526896efcf2e9be083debd15b6c30c31d41c6e",
+      "bytes": 1672943,
+      "source_type": "generated-for-project",
+      "rights_status": "generated-for-project",
+      "approval_status": "production-approved",
+      "art_lock": "v1",
+      "author_or_owner": "Hero Smash project; owner attestation 2026-09-09",
+      "source_url_or_path": "references/visual/characters/solkael_lionheart/production/SOLKAEL_ART_LOCK_v1_MANIFEST.json",
+      "rights_evidence": "docs/art/SOLKAEL_ART_LOCK.md",
+      "intended_use": "Direct visual production source for Solkael Golden Fighter v1.19",
+      "associations": [
+        "solkael_lionheart"
+      ],
+      "tags": [
+        "v1.19",
+        "approved-art-lock"
+      ],
+      "notes": "Owner-approved exact supplied bytes; no promotion of legacy reference IDs."
+    }
   ]
 }

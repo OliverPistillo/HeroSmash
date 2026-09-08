@@ -38,6 +38,11 @@ def main() -> None:
                                     sha256=sha, git_sha256=row["sha256"] if row["source"] == "repo" else None))
     manifest = dict(schema_version=1, generated_by="tools/migration/reference_index.py",
                     inventory_baseline="4ef9eeb503c3c1c69efa36b7b1a3ae5d23cc4816", items=list(grouped.values()))
+    existing_path = ROOT / "docs/references/visual/reference_manifest.json"
+    if existing_path.exists():
+        existing = json.loads(existing_path.read_text(encoding="utf-8"))
+        if "production_items" in existing:
+            manifest["production_items"] = existing["production_items"]
     (ROOT / "docs/references/visual/reference_manifest.json").write_text(json.dumps(manifest, indent=2, ensure_ascii=False)+"\n", encoding="utf-8")
     for name in CATEGORIES:
         out = ROOT / "references/visual" / name / "README.md"

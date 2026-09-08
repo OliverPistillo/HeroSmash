@@ -1,8 +1,22 @@
 # v1.19 — Blender Character Pipeline / First Production Fighter
 
-Status: proposed, not started. A new owner instruction is required to execute this
-macro phase. Preserve the completed v1.18 roster/reference contracts and the v1.17
-combat baseline. No character has yet passed the reference entry gate.
+Status: IN PROGRESS — owner authorized execution and Solkael Art Lock on 2026-09-09.
+Branch: `revival/v1.19-golden-fighter-pipeline`; baseline `d5ece76`.
+Preserve the completed v1.18 contracts and the v1.17 combat baseline.
+The eight exact approved production references are admitted by
+`docs/art/SOLKAEL_ART_LOCK.md` and central manifest `production_items`.
+The owner approval supersedes the former unknown-rights entry status for these
+new files only. Historical v1.18 references remain uncleared. Front also provides
+neutral/silhouette review; eight files are not falsely reported as ten images.
+
+Initial Git audit: HEAD/tag exact; no tracked changes, only the owner-supplied
+Art Lock packet untracked. Record and commit that packet before modeling to obtain
+a clean starting tree. Fetch and requested branch/tag pushes succeeded; Draft PR
+#1 already exists toward main, without auto-merge. No force-push or main mutation.
+
+Binary governance uses existing Git LFS 3.7.1 with repository-local setup, dedicated
+new asset patterns and hydrated CI checkout. Source/exports/runtime follow the
+machine-readable convention paths (the architecture tree is conceptual).
 
 ## Candidate and scope
 

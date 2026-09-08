@@ -28,8 +28,37 @@ def git_bytes(path: str) -> bytes:
     return subprocess.check_output(["git", "show", f"HEAD:{path}"], cwd=ROOT)
 
 
+def production_references() -> dict[str, dict]:
+    """Validate the separate owner-approved packet without promoting historical IDs."""
+    items = read("docs/references/visual/reference_manifest.json").get("production_items", [])
+    if not items:
+        return {}
+    folder = "references/visual/characters/solkael_lionheart/production/"
+    packet = read(folder + "SOLKAEL_ART_LOCK_v1_MANIFEST.json")
+    supplied = {folder + f["file"]: f for f in packet["files"]}
+    result = {}
+    ids = set()
+    for item in items:
+        path = item["file"]
+        assert path in supplied and path not in result
+        assert item["id"] == Path(path).stem.lower() and item["id"] not in ids
+        ids.add(item["id"])
+        assert item["source_type"] == item["rights_status"] == "generated-for-project"
+        assert item["approval_status"] == "production-approved" and item["art_lock"] == "v1"
+        assert item["rights_evidence"] == "docs/art/SOLKAEL_ART_LOCK.md"
+        assert (ROOT / item["rights_evidence"]).is_file()
+        data = (ROOT / path).read_bytes()
+        assert len(data) == item["bytes"] == supplied[path]["bytes"], path
+        assert digest(data) == item["sha256"] == supplied[path]["sha256"], path
+        result[path] = item
+    assert set(result) == set(supplied) and len(result) == 8
+    assert {p.name for p in (ROOT / folder).iterdir() if p.is_file()} == {Path(p).name for p in supplied} | {"SOLKAEL_ART_LOCK_v1_MANIFEST.json"}
+    return result
+
+
 def build() -> dict[str, bytes]:
     historical = read("docs/references/visual/reference_manifest.json")
+    production = production_references()
     reviews = read("docs/references/visual/v1.18/review_decisions.json")
     groups: dict[str, dict] = {}
     origins: set[str] = set()
@@ -44,6 +73,8 @@ def build() -> dict[str, bytes]:
     tracked = subprocess.check_output(["git", "ls-files", "-z"], cwd=ROOT).decode().split("\0")
     excluded = []
     for path in sorted(p for p in tracked if Path(p).suffix.lower() in EXTENSIONS):
+        if path in production:
+            continue  # Separately hash-validated owner-approved v1.19 catalog.
         if path in origins:
             continue
         if path.startswith("docs/qa/"):

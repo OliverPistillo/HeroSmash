@@ -112,6 +112,10 @@ sw.js.map
 !game/assets_runtime/
 !game/assets_runtime/**/
 !game/assets_runtime/**/*.glb
+!art/characters/**/source/*.blend
+!game/assets/characters/**/*.glb
+# Staging exports are reproducible copies, not a second tracked GLB authority.
+art/characters/**/exports/
 *.blend1
 *.blend2
 .work/
