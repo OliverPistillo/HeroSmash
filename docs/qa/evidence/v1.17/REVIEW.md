@@ -18,6 +18,9 @@ deterministic metrics hash. Repeated-pass hashes/metrics all match the first pas
 replays were regenerated/verified by the lab; one is curated here to limit repository
 size. `profile-samples.json` records optional instrumented12-seed measurements.
 `manifest.json` records artifact SHA-256 and aggregate counts;gzip metadata mtime0.
+JSON artifacts normalize CRLF to LF before hashing,matching committed Git blobs.
+The initial evidence export exposed that mismatch; normalization and a Git-blob /
+clean-checkout hash check corrected it before PROJECT_STATE closeout.
 
 Exact commands and subprocess output are retained in gate JSON. Environment paths
 refer to existing local tools and the ignored clean clone; clone execution did not

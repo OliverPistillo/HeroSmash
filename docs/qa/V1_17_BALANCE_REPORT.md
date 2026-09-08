@@ -144,7 +144,9 @@ Resolved development failures:cross-trigger seed5 exposed same-millisecond readi
 after energy gain; bounded initiative rounds now cover it. Extending schema checking
 exposed the old validator's boolean-only additionalProperties and float/int nested
 comparison limits; the new adapter and explicit relations handle them,without editing
-the old validator. Final required checks have no failures. The two old JS readability
+the old validator. Evidence export also exposed CRLF/LF hash differences after Git
+normalization; JSON now normalizes before hashing and Git-blob/checkout validation.
+Final required checks have no failures. The two old JS readability
 identifier failures remain the accepted unchanged baseline,not new regressions.
 
 Not run/claimed:remote Actions/Linux execution,cross-platform replay equivalence,

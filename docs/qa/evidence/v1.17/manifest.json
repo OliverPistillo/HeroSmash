@@ -36,18 +36,18 @@
   "artifacts": [
     {
       "path": "canonical-gates.json",
-      "bytes": 7515,
-      "sha256": "34522503c7013f9e9cb4545158a866b0216e985185fb6bcdaac7c31b25eb0a24"
+      "bytes": 7322,
+      "sha256": "e165f59b303ddd6f5657970ecdec1e1407e0e06865bb98d5d3b52e9ae92336ef"
     },
     {
       "path": "combat-gates.json",
-      "bytes": 10109,
-      "sha256": "3070efb7dec33b65a8212536d0d64cded27a371676a02fcfba278acc382459e9"
+      "bytes": 9903,
+      "sha256": "18c2ade270568e3dda6981e1246e8990058219bc09d5ba9e26a2814d9b39ff82"
     },
     {
       "path": "foundation-gates.json",
-      "bytes": 12938,
-      "sha256": "72597c25c3f7d4991c6cba495a7479aef507d97bee1364d965633da0057052d3"
+      "bytes": 12639,
+      "sha256": "b697e7994c5dd17b3a720ddf7f948d7ff87ba2e6514f09939137d89feebb525c"
     },
     {
       "path": "godot-mobile-1366x768.png",
@@ -66,13 +66,13 @@
     },
     {
       "path": "lab-summary.json",
-      "bytes": 58313,
-      "sha256": "600555f88813d1eee0082fc0fc5474583513a49c981f1d864cd75558c78447a4"
+      "bytes": 56434,
+      "sha256": "e1e405beeee17d03b6914b4eb58bdd22a3df40c4a88110028e41783328b06336"
     },
     {
       "path": "profile-samples.json",
-      "bytes": 3283,
-      "sha256": "014ff823c833827131318f67313b16cb0049b6b3c5f1e95293cbc20ec4b96abe"
+      "bytes": 3146,
+      "sha256": "b1c883a096d8a63f69446727174eed654f8f0c91a3921ca72cdfe4717212a16b"
     },
     {
       "path": "reflection-lethal-seed0.replay.json",
