@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "id": "example_character_direction_001",
+      "category": "characters",
+      "file": "references/visual/characters/CHAR_example_direction_01.png",
+      "source_type": "user-owned|generated|third-party-reference|project-legacy",
+      "source_url_or_path": "",
+      "author_or_owner": "",
+      "rights_status": "owned|licensed|reference-only|unknown",
+      "status": "approved-direction|reference-only|legacy-candidate|rejected",
+      "intended_use": "Describe what this image is meant to guide.",
+      "tags": [
+        "silhouette",
+        "materials"
+      ],
+      "notes": ""
+    }
+  ]
+}
