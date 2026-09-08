@@ -1,170 +1,170 @@
 # Hero Smash — Project State
 
 **State date:** 2026-09-08
-**Macro phase completed:** v1.16 Canonical Data + Effect Framework
+**Macro phase completed:** v1.17 Deterministic Combat Resolver + Balance Lab
 **Phase status:** COMPLETE
-**Branch:** `revival/v1.16-canonical-data`
-**Required baseline:** `v1.15-foundation` / `80c098b256f5855d4c5dfb9869135fd2bad6c709`
-**Validated implementation:** `e0185b4bb038a5314490e553c9374d6e3437927e`
-**Committed evidence / next-phase scope:** `d04e340886487f5a4220120989fa230d284f825c`
+**Branch:** `revival/v1.17-combat-balance-lab`
+**Required baseline:** `v1.16-canonical-data` / `87c1d0e4ba519e082feaf70848c84862acedc0ff`
+**Validated implementation:** `ec34ebb1a7bebc781c8f9806c045031d28597dcc`
+**Committed evidence / next-phase plan:** `2259b10a3811e671981387059739504a723b5af1`
+**Verified evidence integrity:** `f34752c2b34133bd7cccb866b735da62793da835`
 **Main unchanged:** `66a5ba67f0691b7d50a11fa873f4ed24c80a14ef`
 
-This is the documentation-only macro closeout after all required v1.16 and full
-foundation gates actually passed. The closing commit is identified by `docs: close
-v1.16 canonical data phase and update project state`; its own SHA is recorded in the
-task completion report. No push or main merge was performed in this task.
+This documentation-only macro closeout follows all required executed gates. Its
+commit is named `docs: close v1.17 combat phase and update project state`; the exact
+closing SHA appears in the task completion report. No push or main merge occurred.
 
-## 1. Current production reality
+## 1. Production reality and decisions
 
-`D:\Dev\HeroSmash` remains the production workspace. Godot **4.7.2 stable**, typed
-GDScript, the **Mobile renderer**, real-time 3D characters, 2.5D arenas and
-Android/iOS landscape remain locked. Blender **5.2.1 LTS** and the existing one-bone,
-one-material animated cube/GLB fixture remain validated. No final art/UI production,
-full combat port, full 150-card implementation or multiplayer was started.
+`D:\Dev\HeroSmash` remains the production workspace. Locked direction remains Godot
+4.7.2 stable,typed GDScript,Mobile renderer,real-time3D characters,2.5D arenas and
+Android/iOS landscape. Blender5.2.1LTS and the existing animated sample GLB remain
+validated. No final characters,arenas,production UI/animation,multiplayer,SDK,
+monetization or online analytics were implemented.
 
-Godot now loads **12 branches, 150 cards, 16 legacy-oracle heroes, 14 economy fields
-and a 150-ID effect registry** through typed `BranchDefinition`, `CardDefinition`,
-`HeroDefinition`, `EconomyDefinition` and `EffectDefinition` APIs. The catalog validates
-before publishing and preserves a prior valid catalog on failed reloads. Scenes and
-presentation remain independent; the bootstrap sample is unchanged.
+The new headless resolver is authoritative for validated inputs under
+**rulesetVersion `combat_v1.17.1`** and **canonicalDataVersion `v1.16.1`**. There is
+one rule path for both stable combatant identities; preparation AI and sides are
+outside gameplay. ADR0004 accepts execution/measurement boundaries,not final balance.
+No hero stat,card value,cost,rarity,economy or branch threshold was tuned.
 
-Technology/product decisions changed: no engine, roster, card identity, branch,
-economy or rarity decision. ADR 0003 adds technical data/validation/event contracts
-and a bounded opt-in pilot profile. It does not approve unresolved progression or
-combat rules as final game balance.
+Integer millisecond scheduling advances directly to event boundaries and retains
+resource/rate remainders. At a timestamp:earned periodic ticks,expiry,card intervals,
+then seeded-initiative readiness rounds. A skill has priority; same-time energy
+triggers can make another action ready without a graphical frame delay.
 
-## 2. Canonical data and ownership
+Damage order:offense/crit,Wound,flat physical armor/floor,physical dodge,FIFO shields,
+actual HP loss/overkill,damage-taken bookkeeping,lethal notification,finite prevention,
+rebirth,finalKO,eligible post-hit reactions. Types are physical/magic; basic,skill,
+dot,reflected,secondary are tags.049 uses50% chance to reflect full post-mitigation
+pre-Shield damage as magic,without crit,dodge or recursive reflection.
 
-`tools/migration/canonical_data.py` is the sole writer of five generated datasets
-under `game/data/canonical/` and two comparison reports. Six authored Draft 2020-12
-schemas validate those datasets and the guarded pilot input. Envelope version is
-`schemaVersion=1`, logical version `v1.16.1`. Source locking, LF-normalized SHA-256,
-JSON pointers and original-text hashes preserve provenance across checkouts.
+StatusInstance covers Shield,Toxin,Burn,Wound,Ice,Stun,source attribution and explicit
+replace/refresh/add-stack/independent/stronger policies. Periodic ticks are delayed
+and expiry-inclusive;refresh preserves phase. Lethal resolution is shared by every
+source.120 has one original-text rebirth at40%HP,cleansing debuffs. General finite
+prevention requires explicit fixture parameters; it does not invent LAST STAND111.
 
-Authoritative card source remains
-`legacy/web-prototype/data/legacy_deck_source.json`. Every raw field and all 582
-level records remain intact. IDs 1–150 / `legacy_001`–`legacy_150`, names, original
-text, costs, rarities, image paths and branch memberships pass source comparison.
-Distributions remain 90 Normal / 36 Epic / 24 Legendary and 84 single / 66 dual
-branch. **ID071 HEAVY BASH is Epic/cost300**, an actual source exception retained
-without rebalance. The 12 canonical branch and 8-active/4-banned rules are unchanged.
+## 2. Canonical data and honest coverage
 
-Other inputs are unchanged `branches.json`, `economy.json` and `heroes.json` in the
-web prototype. The 16 runtime heroes are explicitly `legacy_oracle`. The preferred
-20 candidate concepts remain indexed in the archive pending v1.18, with no invented
-stats or duplicate manually edited dataset. Alternate archive card fields are not
-merged: vecchio/deck has 150 path differences; its two derivatives also differ in
-24 level records. Full foundation validation rechecked these findings.
+All v1.16 canonical datasets remain byte-identical:12 branches,150 cards,16 oracle
+heroes,14 economy fields and150-ID effect registry. The8-active/4-banned branch rule
+and distributions90 Normal/36 Epic/24 Legendary,84 single/66 dual remain unchanged.
+ID071 HEAVY BASH remains Epic/cost300. Authoritative deck is still
+`legacy/web-prototype/data/legacy_deck_source.json`; runtime branches/heroes/economy
+remain the previously chosen sources. The20 newer roster candidates await v1.18.
 
-## 3. Pilot effects and honest coverage
+New generated data under `game/data/generated/v1_17/` preserves all582 level rows
+with provenance:450 Normal,108 Epic,24 Legendary. APIs return exact source rows,
+parameters and separately labeled actual JS approximation values. Acquisition in
+JS advances by1 and rejects max; no market implementation or interpolation was added.
+Generic shared level templates do not prove canonical per-card operator bindings.
 
-`EffectRunner` executes **12 proposed base-text contracts** using integer units,
-seeded local RNG with rejection sampling, explicit input order, chronological timers,
-independent per-action stacking caps and transactional state/RNG/command logs.
-Both actor IDs use the same operators; there is no card-ID dispatch.
+Thirteen IDs execute:002,005,010,020,028,040,049,077,090,092,115,120,149. Twelve retain
+explicit `base_text_v1` literal fixtures with level0; numbered execution is restricted
+to049/090/120 at level1.077/115/149 require labeled status templates. Lab Shield1HP/
+stack and Toxin14DPS/stack are explicit experiment inputs,not approved card conversions.
+The old EffectRunner and its v1.16 tests remain intact as an operator harness.
 
-Fifteen selected cards: **002, 005, 010, 020, 028, 040, 049, 077, 090, 092, 097,
-111, 115, 132, 149**. Coverage includes flat stats, dual branches, chance, energy,
-HP-loss thresholds, healing, critical hits, dodge, skill casts, stacking, timed
-periodic damage and status application, cross-branch interaction and the explicit
-`reflect_incoming_once` handler. No explicit currency/shop card was found in the
-full original-text audit; reserved economy capabilities fail when requested.
+Unresolved:097 buffering/lethal ordering,111 Shield weakening/surviving HP,132 temporary
+Assault units/overlap,009 lethal-window units/lifesteal,most numbered effects and
+card-specific status parameters.134 IDs remain unreviewed;with3 unresolved pilots,
+137 IDs reject unsupported bindings. No full150-card semantic rewrite is claimed.
+See `docs/migration/V1_17_UNRESOLVED_SEMANTICS.md` and `CARD_LEVEL_PROGRESSION.md`.
 
-The profile **`base_text_v1` must be explicitly requested**. It is not a fully
-resolved leveled-card implementation. All numbered levels fail
-`unsupported_progression`; raw generic level parameters are not interpreted.
-The 135 unreviewed cards and three unresolved pilots fail clearly at binding.
-Registry records link specification/tests and distinguish base-text execution from
-rejection-only test coverage. None is falsely claimed exact/equivalent to an entire
-legacy approximation.
+## 3. Replay and laboratory
 
-Unresolved pilots: **097** damage/heal buffering and death order; **111** Shield
-weakening/surviving HP; **132** Assault quantity and temporary-effect overlap.
-Damage actions emit intents, without invented mitigation. Shield/Toxin/Wound stack
-physics, duration/decay and damage remain unspecified; zero-HP facts fail pending a
-death resolver. The prototype's player/bot asymmetry is documented, not silently
-adopted or claimed as full parity. Full comparisons: `docs/migration/V1_16_PILOT_PARITY.md`.
+`CombatReplay` saves versioned inputs,seed,events,final state,data/event/result hashes;
+verification regenerates and compares the complete envelope. Events carry stable
+IDs,timestamp,sequence,parent,payload and resolved combat facts. Presentation can
+consume those facts later; no UI integration or animation timing is claimed.
 
-## 4. Preserved legacy and structure
+CLI supports list,run/save,input-file,verify,batch seed ranges,explicit seed lists,
+custom horizons and opt-in profiling. Python only migrates,validates,orchestrates
+Godot and aggregates measurements. `docs/qa/COMBAT_VALIDATION.md` gives commands.
 
-No legacy file was moved, renamed, deleted or edited in v1.16. All **393 web blobs**
-and **1,152 archive files** retain their exact contents. The external OneDrive source
-was not accessed. The v1.15 inventory, 86 exact duplicate groups/193 paths, 736
-reference groups/832 origins and reference-only rights classifications remain valid
-for their recorded scope. The historical inventory is not a new whole-repo census.
+The committed12-scenario corpus uses seeds0–999 and45,000ms maximum:baseline,stats,
+crit/dodge,Shield/healing,Toxin,Wound,Ice/Stun,skill/Essence,Rage/speed,reflection/lethal,
+cross-timed and identical states with reversed sides. All12,000 fights were repeated,
+with zero event/result/hash differences;1,000 mirror pairs and12 file replay
+roundtrips passed. A previous checkout's full deterministic metrics also match.
 
-The web prototype remains bootable via:
+Final clean measurement:9,896 wins,2,006 timeouts,98 draws;mean duration24.592s,
+median26s,p90/p99 45s;2,424,013 events,max584 per fight. Two full passes took27.675s
+and27.167s with4 Godot processes;total lab including roundtrips/aggregation62.800s.
+Per-fight wall time mean8.114ms,p99 26.688ms under concurrency. These are desktop
+measurements,not phone budgets. Instrumented12 samples attributed39.4% of measured
+time to event serialization/hash;no premature optimization or100k benchmark claim.
 
-```powershell
-python -X utf8 legacy/web-prototype/tools/serve.py
-```
+Extremes retained without tuning:Shield/healing100% timeouts;skill/Essence99%
+timeouts;Toxin roughly6.1s with9.5% draws;several fixtures have100% one-sided wins.
+These mechanics fixtures,including a mirrored duplicate,do not establish a meta.
+All requested damage/heal/shield/status/uptime/crit/dodge/lethal/HP/runtime metrics
+are in `docs/qa/evidence/v1.17/lab-summary.json` and12,000 compressed JSONL records.
 
-Its 45 JS modules, 300 HTTP resources and eight-seed/three-round behavior oracle
-remain validated. Production additions are schemas/generated JSON, typed models and
-catalog under `game/scripts/core/data/`, the effect framework under `scripts/cards/`,
-headless tests, migration/validation tools and documentation/CI gates.
-Only the completed v1.16 plan moves from `active/` to `completed/` at closeout.
+## 4. Retention and resulting structure
 
-## 5. Toolchain
+No legacy/archive/art file moved,renamed,deleted or edited in v1.17. All393 web blobs
+and1,152 archive files passed hash retention again. The external OneDrive source was
+not accessed. Existing inventories,duplicate classifications and canonical/reference
+choices retain their recorded scope;no new whole-repo census is claimed.
 
-- Godot **4.7.2.stable.official.ed1daf0bf** remains at `.work/tools/godot-4.7.2/`.
-- Existing Steam Blender **5.2.1 LTS** remains validated; no install/upgrade.
-- Python **3.14.7** is available; the final clean run uses existing **3.12.0** in an
-  isolated venv, with existing Python/Pillow used by foundation asset validation.
-- Node **20.19.6**, Git **2.55.0.windows.3** and Java **17.0.15** remain available.
-- jsonschema was detected absent before installing pinned validation dependencies
-  only under ignored `.work/venvs/`. Python3.12's conditional typing-extensions is
-  pinned too. No global dependency, engine, MCP or SDK installation.
-- Android SDK/ADB/sdkmanager and export templates remain missing. Android/iOS
-  package/signing/device gates and final mobile performance budgets remain deferred.
+Added `game/scripts/combat/`, `game/data/combat/`, `game/data/generated/v1_17/`,
+combat schema/tests/CLI,`tools/balance_lab/`,combat migration/validation/JS oracle,
+ADR/specs/reports/evidence and a CI gate. The sample scene and production art remain
+unchanged. Only `V1_17_COMBAT_BALANCE_LAB.md` moved active→completed using git mv;
+v1.18's proposed roster/reference plan is now active. All foundation Git attributes
+are retained;new data/evidence attributes are additive.
 
-## 6. Executed validation and failures
+## 5. Executed gates and limitations
 
-Final implementation passed from a **fresh clone of the same branch with no prior
-Godot cache**, remaining clean before/after:
+Final implementation passed from a clean same-branch local clone:
 
-- **11/11 canonical gates**: source lock/baseline/branch, full schema/raw metadata,
-  generated-byte reproducibility, malformed data, fresh import and headless suites.
-- Five Python tests, including the shared **30 malformed-data subcases**.
-- **104 Godot loader assertions**, no failures.
-- **8,150 effect assertions**, no failures; eight seeds ×400 input events repeated,
-  known probability vectors, unbiased RNG rejection, actor-mirror symmetry, timer
-  partition independence, thresholds/min/max/caps/order and rollback.
-- **18/18 full local foundation gates**: unchanged archive/web, alternate-source
-  parity, references, JS oracle, asset/Blender/GLB validation, headless boot and actual
-  Vulkan Mobile rendering at **1366×768 and 844×390** on Radeon RX 7900 XT. Both sample
-  screenshots were inspected; no new gameplay/phone UI claim is made.
+- 15/15 v1.17 gates:2,173 combat assertions,289 replay/catalog assertions,five Python
+ tests,4,167 live-JS oracle assertions including582 level comparisons,seed-list
+ boundary cases,12,000 fights repeated,mirrors,replay roundtrips and schemas.
+- 11/11 canonical gates:104 Godot loader assertions,8,150 effect assertions,five
+ Python tests/shared30 malformed cases,source generation/schema and clean checks.
+- 18/18 full Foundation gates:inventory/archive/web/reference retention,JS oracle,
+ assets/GLB/Blender,Godot headless import/boot/RNG and Vulkan Mobile sample images
+ at1366×768 and844×390. Both sample resolutions were inspected.
+- CI YAML parsed;full clean combat step checked locally. Artifact SHA-256,committed
+ Git bytes,12,000 unique metric rows and12 aggregate hashes verified after checkout.
 
-Exact commands/output and limits: `docs/qa/evidence/v1.16/REVIEW.md`, `canonical.json`
-and `foundation.json`. CI YAML was parsed locally and the dependency/canonical gate
-steps checked. No remote GitHub Actions/Linux run is claimed.
+Resolved development failures:cross-trigger same-time readiness,schema adapter
+limitations/numeric normalization,and report CRLF/LF checksum mismatch during
+Git export. Final required gates have no failure. The old JS readability script's
+2 stale identifiers remain the explicitly checked unchanged baseline exception.
 
-First clean-checkout attempt failed because the initial data change had replaced
-foundation Git attributes. The retained failure evidence and fixes restore **all**
-v1.15 text/binary rules, with only additive JSON attributes. A fresh clone then
-passed all gates. An early cost-uniformity assertion exposed ID071; the data was
-preserved and validation corrected. No required final v1.16 failure remains.
+Not run/claimed:remote GitHub Actions/Linux,cross-platform replay equivalence,
+Android/iOS device performance/export/signing,final art/UI/VFX. These are unavailable
+or non-applicable gates,not inferred passes. Complete commands/output,failures and
+limits: `docs/qa/evidence/v1.17/REVIEW.md` and the three gate JSON reports.
 
-The retained old JS readability script still fails its two v1.15 stale identifier
-searches. The foundation gate verifies that accepted failure is unchanged. Not
-run/applicable: remote CI/Linux, Android/iOS packaging/devices, final art/UI/VFX and
-representative mobile performance. These are not reported as passes.
+## 6. Detected toolchain
+
+Godot4.7.2.stable.official.ed1daf0bf and Steam Blender5.2.1LTS passed actual version
+and execution checks. Python3.14.7 is available;final gates used existing3.12.0 venv
+with pinned jsonschema dependencies. Node20.19.6,Git2.55.0.windows.3,Java17.0.15 remain
+available. No engine,SDK,MCP,dependency or global tool was installed in this phase.
+Android SDK/ADB/sdkmanager/export templates remain absent;Apple tooling/signing
+remain necessary for iOS. Physical mobile profiling stays explicit future work.
 
 ## 7. Debt and next macro phase
 
-Full card semantics/progression, status physics, damage/death ordering and the three
-ambiguous pilots need source-backed specifications. JS conflicts remain: UI3/helper4
-shop slots, zero-preGold interest fallback, no-selling UI/latent API, player/bot HP-loss
-formulas, passive/proc/healing asymmetry and biased random-comparator shuffle.
-The pilot's snapshot/log copying needs profiling before production combat scale.
-Roster/rig/reference rights, SDK/export/signing and physical-device QA remain later work.
+Unproved card progression/status conversions and137 rejected effect IDs remain
+visible. Economy questions stay separate:UI3/helper4 slots,zero-preGold interest,
+latent sell API,player/bot run-HP loss formulas. JS passive/proc/heal/reflection
+asymmetries were executed and documented as legacy divergences,not canonicalized.
+The32-bit LCG needs statistical review before competitive balance conclusions.
+Presentation event consumption,large-corpus profiling,rights/rig conventions and
+mobile toolchain/device gates remain future work.
 
-**v1.17 — Deterministic combat simulation + automated balance lab**.
-Plan: `docs/exec-plans/active/V1_17_COMBAT_BALANCE_LAB.md`. First settle the minimum
-combat/status/death and progression specification; then integrate a headless intent
-resolver and ordered derived-event queue for only the specified pilot. Run at least
-12 representative scenarios ×1,000 fixed seeds, repeat exact replays and invariants,
-record metrics/legacy differences before rebalance. Keep unsupported loadouts explicit.
-Final roster/reference approval remains v1.18.
+**v1.18 — Final hero roster + visual reference lock**:
+`docs/exec-plans/active/V1_18_HERO_ROSTER_REFERENCE_LOCK.md`. Inventory the20 indexed
+candidates,produce an explicit16→20 identity/migration matrix,prepare the complete
+roster/reference/rights proposal for human product approval,and document shared rig/
+GLB conventions. No guessed stat transfer,final art or balance tuning. Preserve this
+combat baseline and its gates;only approved specs can authorize later replacements.
 
-Full macro report and implementation commits: `docs/migration/V1_16_MIGRATION_REPORT.md`.
+Full macro report: `docs/qa/V1_17_BALANCE_REPORT.md`.
