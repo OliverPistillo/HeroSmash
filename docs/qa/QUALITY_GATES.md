@@ -23,6 +23,12 @@ For gameplay/data work:
 - unit tests;
 - simulation regression where applicable.
 
+v1.16 additionally requires `tools/validation/canonical.py`: complete source/schema
+comparison, shared malformed-data corpus, typed Godot loader, deterministic pilot
+effects and clean-checkout reproducibility. Commands and limits are in
+`docs/qa/CANONICAL_DATA_VALIDATION.md`. The full local foundation profile remains
+required; remote CI and mobile-device coverage must not be inferred from local passes.
+
 ## Asset gate
 
 For a character/arena:

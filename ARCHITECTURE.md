@@ -159,6 +159,17 @@ Preferred:
 
 Do not create multiple manually maintained copies of the same card/hero/branch data.
 
+v1.16 implements this boundary with five generated datasets, Draft 2020-12 schemas,
+typed definitions and a transactional `CanonicalCatalog`. Schemas and guarded pilot
+proposals are authored; canonical JSON and comparison reports have one generator.
+See `docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md`.
+
+`EffectRunner` consumes typed definitions and caller-owned events. Its integer
+state, seeded RNG, timer ordering, bounded transactions and command log are entirely
+headless. `base_text_v1` is an opt-in proposal profile: numbered card progression,
+damage mitigation, status physics and death resolution remain explicit errors or
+pending intents. No production scene is wired to this experimental framework yet.
+
 ## 3D asset flow
 
 ```text

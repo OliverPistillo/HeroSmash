@@ -23,3 +23,10 @@ Foundation entry points:
 - `migration/js_to_godot_system_map.md` — preserved behavior and future parity work.
 - `qa/FOUNDATION_VALIDATION.md` — local/CI commands, evidence strategy and applicability.
 - `references/visual/reference_manifest.json` — indexed, reference-only visual origins.
+
+Canonical-data entry points:
+- `product-specs/CANONICAL_DATA.md` — portable schema fields and data ownership.
+- `architecture/ADR-0003-canonical-data-and-effect-contracts.md` — effect boundaries and unresolved rules.
+- `migration/V1_16_DATA_COMPARISON.md` — generated full-deck preservation report.
+- `migration/V1_16_PILOT_PARITY.md` — 15 original-text/JS/proposal comparisons.
+- `qa/CANONICAL_DATA_VALIDATION.md` — Python/Godot tests and clean-checkout procedure.

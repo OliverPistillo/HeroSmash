@@ -28,11 +28,17 @@ jobs:
           python tools/validation/fetch_ci_godot.py
       - name: Run portable gates
         run: python tools/validation/foundation.py --godot .work/tools/Godot_v4.7.2-stable_linux.x86_64
+      - name: Install pinned canonical-data dependencies in runner
+        run: python -m pip install -r tools/requirements-canonical.txt
+      - name: Run canonical data and deterministic effect gates
+        run: python tools/validation/canonical.py --godot .work/tools/Godot_v4.7.2-stable_linux.x86_64 --require-clean
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: foundation-report
-          path: .work/reports/foundation.json
+          path: |
+            .work/reports/foundation.json
+            .work/reports/canonical.json
 
   # Physical Android / GPU / Blender rebuild gates remain explicit local checks.
   # This CI profile does not claim external-archive preservation or device QA.
