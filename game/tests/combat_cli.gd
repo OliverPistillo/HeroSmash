@@ -10,6 +10,16 @@ func _initialize() -> void:
 	if args.is_empty(): finish({"ok":false, "errors":["command_required"]}); return
 	match args[0]:
 		"list": finish({"ok":true, "scenarios":scenarios.ids()})
+		"profile":
+			if args.size() != 3 or not args[2].is_valid_int(): finish({"ok":false, "errors":["invalid_arguments"]}); return
+			var input: Dictionary = scenarios.build(args[1], int(args[2]))
+			var resolver: CombatResolver = CombatResolver.new(catalog)
+			var began: int = Time.get_ticks_usec()
+			var measured: Dictionary = resolver.run(input, false, true)
+			var elapsed: int = Time.get_ticks_usec() - began
+			if not measured["ok"]: finish(measured); return
+			var ordinary: Dictionary = CombatResolver.new(catalog).run(input)
+			finish({"ok":ordinary["ok"] and ordinary["eventHash"] == measured["eventHash"] and ordinary["resultHash"] == measured["resultHash"], "scenarioId":args[1], "seed":int(args[2]), "runtime_us":elapsed, "event_count":measured["result"]["event_count"], "profile":resolver.profiling})
 		"run", "input":
 			var required: int = 4 if args[0] == "run" else 3
 			if args.size() < required or args.size() > required + (1 if args[0] == "run" else 0): finish({"ok":false, "errors":["invalid_arguments"]}); return

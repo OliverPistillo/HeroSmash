@@ -16,11 +16,13 @@ var _hash: HashingContext
 var _record: bool = false
 var _status_serial: int = 0
 var _horizon: int = 45000
+var profiling: Dictionary = {}
+var _profile_events: bool = false
 
 func _init(data: CombatCatalog) -> void:
 	catalog = data
 
-func run(input: Variant, record_events: bool = false) -> Dictionary:
+func run(input: Variant, record_events: bool = false, profile_events: bool = false) -> Dictionary:
 	var validator: CombatInput = CombatInput.new()
 	if not validator.check(input, catalog): return {"ok":false, "errors":validator.errors}
 	actors.clear()
@@ -31,6 +33,8 @@ func run(input: Variant, record_events: bool = false) -> Dictionary:
 	sequence = 0
 	_status_serial = 0
 	_record = record_events
+	_profile_events = profile_events
+	profiling = {"event_serialization_hash_us":0, "serialized_event_bytes":0}
 	_horizon = int(input["horizon_ms"])
 	rng = FoundationRng.new(int(input["seed"]))
 	_hash = HashingContext.new()
@@ -93,7 +97,12 @@ func emit(kind: String, source: String, target: String, payload: Dictionary, par
 		if not "event_limit" in errors: errors.append("event_limit")
 		return sequence
 	var event: Dictionary = CombatEvent.value(sequence, now, kind, source, target, payload, parent)
-	_hash.update((CombatJson.encode(event) + "\n").to_utf8_buffer())
+	var began: int = Time.get_ticks_usec() if _profile_events else 0
+	var encoded: PackedByteArray = (CombatJson.encode(event) + "\n").to_utf8_buffer()
+	_hash.update(encoded)
+	if _profile_events:
+		profiling["event_serialization_hash_us"] += Time.get_ticks_usec() - began
+		profiling["serialized_event_bytes"] += encoded.size()
 	if _record: events.append(event)
 	return sequence
 
