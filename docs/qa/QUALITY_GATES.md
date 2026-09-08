@@ -29,14 +29,13 @@ effects and clean-checkout reproducibility. Commands and limits are in
 `docs/qa/CANONICAL_DATA_VALIDATION.md`. The full local foundation profile remains
 required; remote CI and mobile-device coverage must not be inferred from local passes.
 
-## Asset gate
-
 v1.17 gameplay closure additionally requires the full `tools/validation/combat.py`
 profile: damage/timing/status/lethal/reflection vectors,582 exact levels,malformed
 inputs/replays,entity symmetry,12 scenarios×1000 seeds repeated,full replay hashes,
 and clean-checkout reproducibility. See `COMBAT_VALIDATION.md`. A smoke-only profile
 cannot close the phase. Canonical/foundation gates remain required independently.
 
+## Asset gate
 
 For a character/arena:
 - naming validation;

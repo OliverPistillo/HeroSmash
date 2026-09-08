@@ -33,6 +33,9 @@ close the macro phase. Prior full canonical/foundation profiles remain required:
 Single-fight output directories must exist. `run` accepts an optional final horizon
 in milliseconds. `batch SCENARIO FIRST COUNT OUTPUT [HORIZON]` saves metrics without
 retaining every event. Custom loadouts use `product-specs/REPLAY_FORMAT.md`.
+`batch-seeds SCENARIO 0,5,42 OUTPUT [HORIZON]` accepts an explicit ordered list of
+unique unsigned32-bit seeds; its output records that list. The gate checks0,5 and
+4294967295 at a1000ms horizon in addition to the full fixed corpus.
 
 ```powershell
 & $combatPython -X utf8 tools/balance_lab/run.py --godot $combatGodot --output .work/reports/combat-lab --workers 4 --count 1000 --first-seed 0 --horizon-ms 45000

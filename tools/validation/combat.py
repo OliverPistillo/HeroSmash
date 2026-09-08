@@ -17,11 +17,11 @@ def main():
     parser.add_argument('--smoke-only',action='store_true',help='10 seeds/scenario; cannot close the phase')
     args=parser.parse_args();args.output=args.output.resolve();args.output.mkdir(parents=True,exist_ok=True)
     godot=args.godot.resolve();checks=[]
-    def check(name,command,expected=None,summary=False,timeout=90):
+    def check(name,command,expected=None,summary=False,timeout=90,expected_code=0):
         try:
             run=subprocess.run(list(map(str,command)),cwd=ROOT,capture_output=True,text=True,encoding='utf-8',errors='replace',timeout=timeout)
             output=run.stdout+run.stderr
-            passed=run.returncode==0 and 'SCRIPT ERROR' not in output and 'ERROR:' not in output
+            passed=run.returncode==expected_code and 'SCRIPT ERROR' not in output and 'ERROR:' not in output
             if expected is not None:passed=passed and output.strip()==expected
             if summary:
                 rows=[json.loads(line) for line in output.splitlines() if line.startswith('{')]
@@ -39,6 +39,11 @@ def main():
     check('legacy_divergence_and_582_level_oracle',['node','tools/validation/combat_legacy_oracle.mjs'],summary=True)
     check('godot_import',[godot,'--headless','--path','game','--editor','--import','--quit'])
     for suite in ('combat','combat_replay'):check(suite+'_headless',[godot,'--headless','--path','game','--script',f'res://tests/{suite}_test.gd'],summary=True)
+    check('explicit_seed_list_cli',[godot,'--headless','--path','game','--script','res://tests/combat_cli.gd','--','batch-seeds','01_baseline','0,5,4294967295',args.output/'explicit-seeds.json',1000])
+    if (args.output/'explicit-seeds.json').exists():
+        rows=json.loads((args.output/'explicit-seeds.json').read_text())
+        if rows.get('seedList')!=[0,5,4294967295] or [r['seed'] for r in rows['records']]!=[0,5,4294967295] or any(r['duration_ms']!=1000 for r in rows['records']):checks[-1]['status']='fail'
+    check('duplicate_seed_rejected',[godot,'--headless','--path','game','--script','res://tests/combat_cli.gd','--','batch-seeds','01_baseline','0,0',args.output/'duplicate-seeds.json'],expected_code=1)
     if all(c['status']=='pass' for c in checks):
         command=[sys.executable,'tools/balance_lab/run.py','--godot',godot,'--output',args.output/'lab','--count',10 if args.smoke_only else 1000]
         if args.compare:command+=['--compare',args.compare]
