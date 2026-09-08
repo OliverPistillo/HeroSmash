@@ -10,12 +10,12 @@ Turn the existing repository + legacy archive into a clean, reproducible, agent-
 
 ## Phase A — Environment and baseline
 
-- [ ] Verify Git working tree is clean.
-- [ ] Record `main` baseline SHA.
-- [ ] Confirm branch is `revival/v1.15-foundation`.
-- [ ] Detect installed Godot, Blender, Python, Git, Android tooling.
-- [ ] Record exact versions.
-- [ ] Do not auto-upgrade tools without reporting.
+- [x] Verify Git working tree is clean.
+- [x] Record `main` baseline SHA.
+- [x] Confirm branch is `revival/v1.15-foundation`.
+- [x] Detect installed Godot, Blender, Python, Git, Android tooling.
+- [x] Record exact versions.
+- [x] Do not auto-upgrade tools without reporting.
 
 ## Phase B — Repository inventory
 
@@ -34,10 +34,7 @@ Do not move files during the first inventory pass.
 
 ## Phase C — Legacy archive inventory
 
-The old local source is expected near:
-`C:\Users\olive\OneDrive\Desktop\Progetti\HeroSmash`
-
-If accessible, inventory it without modifying it.
+Current human override: inventory only `.work/legacy-source/` as the read-only legacy copy. The original external OneDrive location is not accessed or modified.
 
 Hash files to detect duplicates against the Git repository.
 
@@ -133,3 +130,11 @@ Expected committed outputs:
 - multiplayer;
 - monetization;
 - production store release.
+
+## Completion record — 2026-09-08
+
+Status: COMPLETE. Branch `revival/v1.15-foundation`. Validated implementation `022cc023865ffcba73a36e26101858e35df24aec`; evidence and next-phase plan committed at `3b8778b768757a110da30759562d54b3b88746be`. This documentation-only closeout updates PROJECT_STATE and archives the plan after all applicable foundation checks passed.
+
+393 legacy paths moved unchanged, 1,152 archive files preserved, 86 exact duplicate groups retained. Full local profile: 18 checks pass from a clean checkout; see `docs/qa/evidence/v1.15/foundation.json` and `REVIEW.md`. The pre-existing stale legacy readability check remains an explicit baseline exception. Android/iOS export and physical device checks are deferred, as documented in `docs/qa/FOUNDATION_VALIDATION.md`.
+
+Final tree follows ARCHITECTURE.md; execution was authorized by the current human task. Inventory/classification/proposal committed in e2f6720 before migration in 39ac756. No product decisions changed. Exact move list and debt: `docs/migration/V1_15_MIGRATION_REPORT.md`. Next phase is `docs/exec-plans/active/V1_16_CANONICAL_DATA.md`, not yet executed.
