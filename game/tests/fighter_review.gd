@@ -19,6 +19,8 @@ var replay_hash: String = ""
 var barrier_until_ms: int = 0
 var subtitle: Label
 var profile_animation: bool = false
+var replay_entity_id: String = ""
+var replay_scenario: String = ""
 
 
 func _initialize() -> void:
@@ -43,7 +45,13 @@ func setup() -> void:
 		for candidate: String in scenarios.ids():
 			if "toxin" in candidate.to_lower():
 				id = candidate
-		var run: Dictionary = CombatResolver.new(catalog).run(scenarios.build(id,5),true)
+		if OS.get_environment("HERO_FIGHTER_SCENARIO") != "":
+			id = OS.get_environment("HERO_FIGHTER_SCENARIO")
+		var input: Dictionary = scenarios.build(id,5)
+		assert(not input.is_empty())
+		replay_scenario = id
+		replay_entity_id = String(input["combatants"][0]["id"])
+		var run: Dictionary = CombatResolver.new(catalog).run(input,true)
 		assert(run["ok"])
 		replay_events = run["events"]
 		replay_hash = run["eventHash"]
@@ -93,6 +101,8 @@ func setup() -> void:
 		camera.look_at(Vector3(0,1.81,0))
 	camera.current = true
 	fighter = (load("res://scenes/characters/solkael_lionheart/hero_solkael_lionheart.tscn") as PackedScene).instantiate() as SolkaelFighter
+	if replay_entity_id != "":
+		fighter.entity_id = replay_entity_id
 	mesh_stage.add_child(fighter)
 	fighter.rotation_degrees.y = OS.get_environment("HERO_FIGHTER_YAW").to_float()
 	barrier = MeshInstance3D.new()
@@ -175,6 +185,10 @@ func step() -> void:
 		report["adapter_errors"] = fighter.adapter.errors
 		report["movie_mode"] = turntable
 		report["animated_profile"] = profile_animation
+		report["replay_entity_id"] = replay_entity_id
+		report["replay_scenario"] = replay_scenario
+		if not replay_events.is_empty():
+			assert(fighter.adapter.entity_id == replay_entity_id and fighter.adapter.cue_count > 0, "Replay review must exercise the actual resolver entity")
 		if captures != "":
 			var file: FileAccess = FileAccess.open(captures.get_basename()+".json",FileAccess.WRITE)
 			file.store_string(JSON.stringify(report,"  "))

@@ -123,7 +123,7 @@ def material(name, color, metallic=0, roughness=.6, emission=0):
 
 
 def skeleton():
-    family=json.loads((ROOT/'docs/art/rig_families.json').read_text())['families'][0]
+    family=json.loads((ROOT/'docs/art/rig_families.json').read_text(encoding='utf-8'))['families'][0]
     hierarchy=dict(family['base_hierarchy']); coords={
         'root':((0,0,0),(0,0,.12)), 'pelvis':((0,0,.96),(0,0,1.1)),
         'spine_01':((0,0,1.1),(0,0,1.24)), 'spine_02':((0,0,1.24),(0,0,1.39)),
@@ -322,7 +322,7 @@ def point_bone(bone,direction):
 
 
 def animate(rig,obj):
-    spec=json.loads((ROOT/'docs/art/animation_contract.json').read_text())
+    spec=json.loads((ROOT/'docs/art/animation_contract.json').read_text(encoding='utf-8'))
     lengths={'idle':60,'idle_breathing':90,'intro':60,'attack_light':24,'attack_heavy':42,'skill_cast':60,'hit_react':18,'dodge':24,'ko':60,'victory':75}
     manifest=[]
     for clip in spec['clips']:

@@ -34,7 +34,7 @@ def build(blender,out_root,rebuild=True):
     metrics=validate(stage)
     runtime=out_root/'game/assets/characters'/HERO/stage.name
     runtime.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(stage,runtime)
-    source_meta=json.loads((out_root/'art/characters'/HERO/'solkael_asset.json').read_text())
+    source_meta=json.loads((out_root/'art/characters'/HERO/'solkael_asset.json').read_text(encoding='utf-8'))
     meta={k:source_meta[k] for k in ('hero_id','art_lock','clips','expressions')};meta['metrics']=metrics
     (runtime.parent/'fighter_presentation.json').write_text(json.dumps(meta,indent=2)+'\n',encoding='utf-8',newline='\n')
     report=dict(status='pass',metrics=metrics,source_sha256=source_hash,export_does_not_mutate_source=True,source_rebuilt=rebuild,source=source.relative_to(out_root).as_posix(),runtime=runtime.relative_to(out_root).as_posix())

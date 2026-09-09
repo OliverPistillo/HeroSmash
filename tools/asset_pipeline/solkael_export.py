@@ -22,7 +22,7 @@ def validate_scene(source_manifest):
         recorded=source_manifest['bones'][bone.name]
         assert (bone.parent.name if bone.parent else None)==recorded['parent']
         assert all(abs(actual-expected)<1e-6 for row,other in zip(bone.matrix_local,recorded['rest_matrix']) for actual,expected in zip(row,other)),bone.name
-    family=json.loads((ROOT/'docs/art/rig_families.json').read_text())['families'][0]
+    family=json.loads((ROOT/'docs/art/rig_families.json').read_text(encoding='utf-8'))['families'][0]
     for name,parent in {**family['base_hierarchy'],**family['sockets']}.items():
         assert name in rig.data.bones,name
         b=rig.data.bones[name];assert (b.parent.name if b.parent else None)==parent,name
@@ -40,7 +40,7 @@ def validate_scene(source_manifest):
     for vertex in mesh.data.vertices:
         assert vertex.groups and abs(sum(w.weight for w in vertex.groups)-1)<1e-5
         assert len(vertex.groups)<=4
-    expected={c['name'] for c in json.loads((ROOT/'docs/art/animation_contract.json').read_text())['clips']}
+    expected={c['name'] for c in json.loads((ROOT/'docs/art/animation_contract.json').read_text(encoding='utf-8'))['clips']}
     assert {a.name for a in bpy.data.actions}==expected
     assert {k.name for k in mesh.data.shape_keys.key_blocks}=={'Basis',*('expr_'+n for n in ['focused','aggressive','casting','pain_light','pain_heavy','stunned','victory','defeat','ko'])}
     basis=mesh.data.shape_keys.key_blocks[0]
@@ -65,7 +65,7 @@ def main():
     p=argparse.ArgumentParser();p.add_argument('--source',type=Path,required=True);p.add_argument('--output',type=Path,required=True)
     a=p.parse_args(sys.argv[sys.argv.index('--')+1:])
     bpy.ops.wm.open_mainfile(filepath=str(a.source.resolve()))
-    source_manifest=json.loads((a.source.parent.parent/'solkael_asset.json').read_text())
+    source_manifest=json.loads((a.source.parent.parent/'solkael_asset.json').read_text(encoding='utf-8'))
     rig,mesh=validate_scene(source_manifest)
     bpy.ops.object.select_all(action='DESELECT');rig.select_set(True);mesh.select_set(True)
     bpy.context.view_layer.objects.active=rig

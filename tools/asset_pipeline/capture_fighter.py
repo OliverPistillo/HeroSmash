@@ -23,7 +23,7 @@ def capture(godot,out,project_root=ROOT,movies_only=False):
         (out/(name+'.log')).write_text(text,encoding='utf-8')
         assert proc.returncode==0 and 'FIGHTER_REVIEW_PASS' in text and 'SCRIPT ERROR:' not in text and '\nERROR:' not in text,text
         assert 'Forward Mobile' in text and 'Vulkan' in text
-        report=json.loads((out/(name+'.json')).read_text())
+        report=json.loads((out/(name+'.json')).read_text(encoding='utf-8'))
         assert report['resolution']==list(map(int,resolution.split('x'))) and not report['adapter_errors']
         results.append(dict(name=name,report=report))
         print('CAPTURE_PASS',name,flush=True)
@@ -34,6 +34,7 @@ def capture(godot,out,project_root=ROOT,movies_only=False):
     # Match the project MovieWriter viewport, avoiding rescaled/cropped UI.
     run('animation-catalog','1366x768',video=1)
     run('resolver-replay','1366x768',video=1,replay=1)
+    run('resolver-barrier','1366x768',video=1,replay=1,scenario='04_shield_healing')
     commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=project_root,text=True).strip()
     summary=dict(status='pass',tested_commit=commit,runner_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),captures=results,notes='Raw engine screenshots and movie output. Profile captures use animated poses; movie-mode timings are not performance conclusions.')
     (out/'capture-summary.json').write_text(json.dumps(summary,indent=2)+'\n',encoding='utf-8')

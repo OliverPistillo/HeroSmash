@@ -34,7 +34,7 @@ def main():
         assert command(['git','rev-parse','v1.18-hero-reference-lock^{commit}']).strip()=='d5ece76e09b175e7b75d12b2d0dd4f58b6d926b9'
         command(['git','merge-base','--is-ancestor','d5ece76','HEAD'])
         old=json.loads(command(['git','show','d5ece76:docs/references/visual/reference_manifest.json']))
-        now=json.loads((ROOT/'docs/references/visual/reference_manifest.json').read_text())
+        now=json.loads((ROOT/'docs/references/visual/reference_manifest.json').read_text(encoding='utf-8'))
         assert old['items']==now['items'],'Legacy rights/reference data changed'
         protected=['game/data','game/scripts/combat','game/scripts/core','game/scripts/cards','game/scripts/branches','game/scripts/economy','legacy/web-prototype','game/project.godot']
         assert not command(['git','diff','d5ece76','--',*protected]).strip()
@@ -57,10 +57,10 @@ def main():
     check('lfs_hydration_and_integrity',lfs)
     check('glb_skin_materials_morphs_clips',lambda:validate(glb))
     def metadata():
-        src=json.loads((asset/'solkael_asset.json').read_text());game=json.loads((runtime/'fighter_presentation.json').read_text())
+        src=json.loads((asset/'solkael_asset.json').read_text(encoding='utf-8'));game=json.loads((runtime/'fighter_presentation.json').read_text(encoding='utf-8'))
         assert game['metrics']==validate(glb)
         for key in ['hero_id','art_lock','clips','expressions']:assert src[key]==game[key]
-        contract=json.loads((ROOT/'docs/art/animation_contract.json').read_text())
+        contract=json.loads((ROOT/'docs/art/animation_contract.json').read_text(encoding='utf-8'))
         for clip in src['clips']:
             expected=next(c for c in contract['clips'] if c['name']==clip['name'])
             assert clip['loop']==expected['loop'] and clip['fps']==30 and not clip['root_motion']
