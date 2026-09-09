@@ -267,6 +267,8 @@ intentional unsaved change. Disconnect/Connect was verified by failed/successful
 MCP reads; the negative import was rejected by actual safe mode before dispatch.
 
 Only integration documentation and authentic smoke screenshots are published.
+Screenshots use docs/qa/evidence/blender-mcp/20260909; the generated duplicate report
+adds exactly two QA-evidence exclusions while the art reference inventory is unchanged.
 The temporary .blend and sanitized detailed results remain in the smoke directory.
 All 45 Solkael, 127 prior evidence, 3822 original-installation and 20 hsfix1 source/
 installed hashes pass; 32 dependency versions, original worktree, main and six

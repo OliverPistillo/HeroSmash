@@ -40,9 +40,9 @@ Actual MCP images, 1400 × 809. The before, restored and reopened PNGs are byte
 identical, SHA-256 `3863b85b5a8c8eb96ad2c3f980387899c69dbaf742a0de51301d1aec8777e7c9`.
 The changed PNG is `9e3861c6759248db245a85898031d1712bdf989fb642b1cb89e87cd13fe667a3`.
 
-![MCP before, also matching restore and reopen](evidence/blender-mcp-20260909/viewport-before.png)
+![MCP before, also matching restore and reopen](../qa/evidence/blender-mcp/20260909/viewport-before.png)
 
-![MCP temporary transform and material edit](evidence/blender-mcp-20260909/viewport-changed.png)
+![MCP temporary transform and material edit](../qa/evidence/blender-mcp/20260909/viewport-changed.png)
 
 The temporary scene remains only at
 `D:/Dev/HeroSmash/.work/blender-mcp-smoke/approval-ask-profile-20260909/HS_MCP_SMOKE_20260909.blend`.
