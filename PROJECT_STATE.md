@@ -230,3 +230,22 @@ sanitized audit/preservation evidence remain in the documented smoke directory.
 TOML, exact-change, layer-resolution, preservation and documentation checks pass;
 published-commit CI is reported in PR/task delivery. No game/export/preflight rerun.
 Report: docs/codex/BLENDER_MCP_APPROVAL_AUDIT.md. No automatic continuation of Solkael.
+
+## Blender MCP smoke resume after owner restart — 2026-09-09 15:39
+
+Attempted only the authorized smoke continuation on chore/blender-mcp-bootstrap-fix,
+starting at exact clean commit1ef2c6b3130a5b95f11e06f63b523adfc5066782. Actual new
+Desktop PID13016 confirms restart. New turn01a08664-f96e-7580-ab2a-29e82d1f33ef
+nevertheless records approval_policy=never, approvals_reviewer=user and Full Access.
+Fresh disk/layer resolution remains on-request/user with the unchanged per-tool
+prompt rule; the resident tool rule is not directly readable. Managed requirements
+return null from the separate resolver, with no direct resident response available.
+
+The effective on-request prerequisite failed, so zero Blender calls were made:
+no marker/prompt test and no C–I continuation. No setting, installation, scene or
+production system changed. All45 Solkael/127 evidence hashes, original worktree,
+main and six tags are preserved; art72170ba is excluded. Only current integration
+documentation is updated. Whitespace/link and published-commit CI results accompany
+PR/task delivery. LIVE OPERATIONS NOT VERIFIED. Effective task approval settings
+must be corrected/verified before another marker attempt; restart alone has not
+resolved them. No automatic permission repair or artistic macro phase follows.

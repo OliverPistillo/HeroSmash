@@ -1,5 +1,65 @@
 # Blender MCP approval routing audit — 2026-09-09
 
+## Current check after owner restart — 15:39 Europe/Rome
+
+**LIVE OPERATIONS NOT VERIFIED — SESSION APPROVAL PREREQUISITE NOT MET.**
+The owner restart is observed, but the new turn still runs with `never/user`.
+The marker probe was not sent because the required effective on-request policy
+was not established. No Blender call, configuration change or scene/GUI operation
+occurred in this resumed attempt. C–I were not resumed.
+
+| Evidence | Actual current result |
+| --- | --- |
+| Desktop restart | New Codex0.153.4 app-server PID13016, started15:39:08.896; previous PID30588 absent |
+| New task turn | 01a08664-f96e-7580-ab2a-29e82d1f33ef,13:39:20.160Z; current task rollout line584 |
+| Effective turn approval_policy | never |
+| Effective turn approvals_reviewer | user |
+| Effective permission profile | :danger-full-access; disabled profile representation; danger-full-access sandbox |
+| Resolved disk approval settings | on-request/user, independently reread for both worktrees |
+| execute_blender_code approval rule | prompt in unchanged resolved Blender stanza; resident rule not directly readable |
+| Session tool discovery | All six allowlisted Blender tools present; zero invoked in this attempt |
+| Managed requirements | Separate installed resolver returns requirements:null; no direct resident response available |
+| Human prompt / marker / smoke C–I | Not attempted because the earlier policy prerequisite failed |
+
+The exact task database row also reports approval_mode=never. Saved app mode
+remains full-access and its task permission snapshot remains never/user. The new
+process launch flags contain no approval/reviewer/profile or Blender override.
+These observations establish the effective mismatch after an actual restart,
+but not the precise origin or precedence of the app/task override. No managed
+restriction is proven and no managed setting was bypassed.
+
+The existing diagnostic used installed config/read(includeLayers), not Blender
+or synthetic marker execution. Layers remain user plus empty system; no project,
+profile or managed layer was returned. Current personal config SHA-256:
+`2cbc58e99c9485bffeb2a2fef911f870553cc1f0916c6542c489d4ab63702cdc`.
+Compared with the prior validated fix, only the node_repl native-pipe-directory
+value changed before this attempt. Approval settings and the complete Blender
+stanza are identical. No configuration was edited or restored here.
+
+Local evidence under
+`D:/Dev/HeroSmash/.work/blender-mcp-smoke/approval-resume-20260909-1539/`:
+resolved-config.json, current-session-evidence.json, config-preservation.json and
+preservation.json. The full sanitized resolver response also remains in
+approval-audit-20260909/config-read-resumed-1.json. The supplied
+`D:/Dev/HeroSmash.work/blender-mcp-smoke/HANDOFF.md` path was absent; the existing
+documented `D:/Dev/HeroSmash/.work/blender-mcp-smoke/HANDOFF.md` was read instead.
+
+Starting technical commit: `1ef2c6b3130a5b95f11e06f63b523adfc5066782` on
+chore/blender-mcp-bootstrap-fix. All45 Solkael/127 evidence hashes, original artistic
+worktree state, main and six tags remain unchanged. Art72170ba stays excluded.
+Only integration documentation is published to Draft PR3. Whitespace/link checks
+and exact new-commit CI are recorded in task/PR delivery. No new runtime image
+exists; previous viewport evidence is not reused as a new test.
+
+Continuation requires the actual task to resolve approvalPolicy=on-request and
+approvalsReviewer=user while preserving its existing sandbox and Blender settings.
+Another restart alone is not established as a remedy. No task-permission repair
+was attempted within this smoke-only request. Recheck effective settings before
+the first exact marker probe; require the real human Approve/Reject interaction
+before dispatch and all live probe gates before C–I. Solkael remains suspended.
+
+## Historical minimal configuration fix
+
 **APPROVAL CONFIG FIXED — RESTART REQUIRED.**
 **LIVE OPERATIONS NOT VERIFIED.** No Blender tools were called in this task.
 Blender, Solkael, the installed MCP server and all its protections were untouched.

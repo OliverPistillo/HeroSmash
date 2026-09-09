@@ -1,9 +1,10 @@
 # Blender MCP live reconnect acceptance — 2026-09-09
 
-Subsequent owner-authorized approval audit:
-[APPROVAL CONFIG FIXED — RESTART REQUIRED](BLENDER_MCP_APPROVAL_AUDIT.md).
-Only approval_policy changed from never to on-request; the current loaded task
-still has never/user. No additional Blender calls or smoke acceptance followed.
+Subsequent approval audit and actual owner restart:
+[current effective-task mismatch](BLENDER_MCP_APPROVAL_AUDIT.md).
+Disk approval_policy is on-request, but the new turn after restart still has
+never/user. The prerequisite failed before the marker probe; no additional
+Blender calls or smoke acceptance followed. LIVE OPERATIONS NOT VERIFIED.
 The report below preserves the actual earlier live results.
 
 **CONFIGURED / SERVER PREFLIGHT PASSED / SESSION TOOLS DISCOVERED /

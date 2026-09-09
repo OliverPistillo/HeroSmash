@@ -1,6 +1,16 @@
 # Blender MCP smoke test record
 
-## Approval audit follow-up
+## Current resumed attempt after owner restart
+
+**LIVE OPERATIONS NOT VERIFIED.** At15:39 Europe/Rome the restarted Desktop has a
+new process, but the new task turn still resolves approval_policy=never and
+approvals_reviewer=user. Disk config remains on-request/user with the Blender
+per-tool prompt rule. Six tools are discovered; none was invoked because the
+effective-policy prerequisite failed before the marker probe. No human prompt
+was tested and C–I were not resumed. See
+[the fresh runtime and layer evidence](BLENDER_MCP_APPROVAL_AUDIT.md).
+
+## Historical approval audit follow-up
 
 **APPROVAL CONFIG FIXED — RESTART REQUIRED / LIVE OPERATIONS NOT VERIFIED.**
 [Effective layers, session state and minimal fix](BLENDER_MCP_APPROVAL_AUDIT.md)

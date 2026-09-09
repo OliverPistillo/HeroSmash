@@ -5,8 +5,9 @@
 [The approval audit](BLENDER_MCP_APPROVAL_AUDIT.md) resolved disk config/layers and
 active-task evidence. After an exact backup, only approval_policy changed from
 never to on-request. Reviewer user, per-tool prompt and all Blender protections
-are preserved. **APPROVAL CONFIG FIXED — RESTART REQUIRED.** The loaded task still
-uses never/user; no new Blender probe was sent. Live acceptance remains incomplete.
+are preserved. The owner restart is now observed, but the new task turn still
+uses never/user with Full Access. No new Blender probe was sent because the
+required effective-policy prerequisite failed. LIVE OPERATIONS NOT VERIFIED.
 
 ## Current repair supersedes the original installation below
 
