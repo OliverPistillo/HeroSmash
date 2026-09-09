@@ -1,0 +1,169 @@
+{
+  "commit": "5fc4990f6c8883c0f964bc10851032ea1d96101f",
+  "checks": [
+    {
+      "name": "foundation",
+      "code": 0,
+      "seconds": 17.5,
+      "command": [
+        "D:/Dev/HeroSmash/.work/venvs/canonical-ci/Scripts/python.exe",
+        "tools/validation/foundation.py",
+        "--archive",
+        "D:/Dev/HeroSmash/.work/legacy-source",
+        "--godot",
+        "D:/Dev/HeroSmash/.work/tools/godot-4.7.2/Godot_v4.7.2-stable_win64_console.exe",
+        "--blender",
+        "C:/Program Files (x86)/Steam/steamapps/common/Blender/blender.exe",
+        "--pillow-python",
+        "C:/Users/olive/AppData/Local/Programs/Python/Python312/python.exe",
+        "--visual"
+      ]
+    },
+    {
+      "name": "canonical",
+      "code": 0,
+      "seconds": 11.202999999994063,
+      "command": [
+        "D:/Dev/HeroSmash/.work/venvs/canonical-ci/Scripts/python.exe",
+        "tools/validation/canonical.py",
+        "--godot",
+        "D:/Dev/HeroSmash/.work/tools/godot-4.7.2/Godot_v4.7.2-stable_win64_console.exe",
+        "--require-clean"
+      ]
+    },
+    {
+      "name": "combat",
+      "code": 0,
+      "seconds": null,
+      "command": [
+        "D:/Dev/HeroSmash/.work/venvs/canonical-ci/Scripts/python.exe",
+        "tools/validation/combat.py",
+        "--godot",
+        "D:/Dev/HeroSmash/.work/tools/godot-4.7.2/Godot_v4.7.2-stable_win64_console.exe",
+        "--require-clean",
+        "--compare",
+        "docs/qa/evidence/v1.17/lab-summary.json"
+      ],
+      "rerun_log": "combat-corrected.log"
+    },
+    {
+      "name": "roster",
+      "code": 0,
+      "seconds": 8.125,
+      "command": [
+        "D:/Dev/HeroSmash/.work/venvs/canonical-ci/Scripts/python.exe",
+        "tools/validation/roster.py",
+        "--archive",
+        "D:/Dev/HeroSmash/.work/legacy-source",
+        "--proof",
+        "docs/qa/evidence/v1.18",
+        "--require-clean"
+      ]
+    },
+    {
+      "name": "fighter",
+      "code": 0,
+      "seconds": 17.906000000002678,
+      "command": [
+        "D:/Dev/HeroSmash/.work/venvs/canonical-ci/Scripts/python.exe",
+        "tools/validation/fighter.py",
+        "--godot",
+        "D:/Dev/HeroSmash/.work/tools/godot-4.7.2/Godot_v4.7.2-stable_win64_console.exe",
+        "--blender",
+        "C:/Program Files (x86)/Steam/steamapps/common/Blender/blender.exe",
+        "--require-clean"
+      ]
+    },
+    {
+      "name": "polish",
+      "code": 0,
+      "seconds": 15.921999999991385,
+      "command": [
+        "D:/Dev/HeroSmash/.work/venvs/canonical-ci/Scripts/python.exe",
+        "tools/validation/polish.py",
+        "--godot",
+        "D:/Dev/HeroSmash/.work/tools/godot-4.7.2/Godot_v4.7.2-stable_win64_console.exe"
+      ]
+    },
+    {
+      "name": "rebuild-v002",
+      "code": 0,
+      "seconds": 8.188000000009197,
+      "command": [
+        "C:/Program Files (x86)/Steam/steamapps/common/Blender/blender.exe",
+        "--background",
+        "--factory-startup",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "tools/asset_pipeline/solkael_polish.py",
+        "--",
+        "--out-root",
+        "D:\\Dev\\HeroSmash\\.work\\clean-v120-validation\\.work\\rebuild-v002"
+      ]
+    },
+    {
+      "name": "export-rebuilt-v002",
+      "code": 0,
+      "seconds": 2.9219999999913853,
+      "command": [
+        "C:/Program Files (x86)/Steam/steamapps/common/Blender/blender.exe",
+        "--background",
+        "--factory-startup",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "tools/asset_pipeline/solkael_export.py",
+        "--",
+        "--source",
+        "D:\\Dev\\HeroSmash\\.work\\clean-v120-validation\\.work\\rebuild-v002\\art\\characters\\solkael_lionheart\\v002\\source\\chr_solkael_lionheart_v002.blend",
+        "--output",
+        "D:\\Dev\\HeroSmash\\.work\\clean-v120-validation\\.work\\rebuild-v002\\rebuilt.glb"
+      ]
+    },
+    {
+      "name": "export-saved-v002",
+      "code": 0,
+      "seconds": 2.922000000005937,
+      "command": [
+        "C:/Program Files (x86)/Steam/steamapps/common/Blender/blender.exe",
+        "--background",
+        "--factory-startup",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "tools/asset_pipeline/solkael_export.py",
+        "--",
+        "--source",
+        "art/characters/solkael_lionheart/v002/source/chr_solkael_lionheart_v002.blend",
+        "--output",
+        "D:\\Dev\\HeroSmash\\.work\\clean-v120-validation\\.work\\saved-v002.glb"
+      ]
+    }
+  ],
+  "v002_hashes": {
+    "game/assets/characters/solkael_lionheart/chr_solkael_lionheart_v002.glb": "558a6566b8fa8a473f7f0b5460b68f73a365558b451a81a7208dc1fe82dc4108",
+    ".work/rebuild-v002/rebuilt.glb": "558a6566b8fa8a473f7f0b5460b68f73a365558b451a81a7208dc1fe82dc4108",
+    ".work/saved-v002.glb": "558a6566b8fa8a473f7f0b5460b68f73a365558b451a81a7208dc1fe82dc4108"
+  },
+  "v002_reproducible": true,
+  "clean_after": true,
+  "status": "pass",
+  "corrected_attempts": [
+    {
+      "name": "combat",
+      "code": 1,
+      "seconds": 71.42200000000594,
+      "command": [
+        "D:/Dev/HeroSmash/.work/venvs/canonical-ci/Scripts/python.exe",
+        "tools/validation/combat.py",
+        "--godot",
+        "D:/Dev/HeroSmash/.work/tools/godot-4.7.2/Godot_v4.7.2-stable_win64_console.exe",
+        "--require-clean",
+        "--compare",
+        "docs/qa/evidence/v1.17/lab-summary.json"
+      ],
+      "reason": "Invocation named missing summary.json; corrected to existing lab-summary.json"
+    }
+  ]
+}

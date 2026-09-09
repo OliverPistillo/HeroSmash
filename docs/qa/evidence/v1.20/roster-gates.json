@@ -1,0 +1,243 @@
+{
+  "schema_version": 1,
+  "tested_commit": "5fc4990f6c8883c0f964bc10851032ea1d96101f",
+  "branch": "revival/v1.20-solkael-polish-device-slice",
+  "working_tree_changes": false,
+  "profile": "local-reference-audit",
+  "checks": [
+    {
+      "name": "baseline_and_runtime_preservation",
+      "status": "pass",
+      "details": {
+        "baseline": "337710e362b1df008b74cbb1e2ba6d1c58d2f2da",
+        "baseline_files_changed": 0,
+        "authorized_presentation_additions": 32
+      }
+    },
+    {
+      "name": "source_snapshot",
+      "status": "pass",
+      "details": {
+        "schema_version": 1,
+        "path": ".work/legacy-source/hero.json.txt",
+        "snapshot": "docs/references/visual/v1.18/hero_candidates.source.json",
+        "sha256": "7ba5084b6828bf95e3e3e373ed0dc4f101b13d80f61a675d15a1668934b8d7dc",
+        "bytes": 8832,
+        "identity_fields": "All eight source fields retained without rewriting; source array order defines primary/secondary proposal, not a combat rule.",
+        "gender_presentation": "unresolved for all 20; source defines neither",
+        "owner": "unknown; supplied project legacy",
+        "rights_status": "unknown-rights",
+        "external_archive_accessed": false,
+        "images_copied": 0
+      }
+    },
+    {
+      "name": "roster_identity_selection_coverage",
+      "status": "pass",
+      "details": {
+        "candidates": 20,
+        "launch": 16,
+        "reserve": 4,
+        "coverage": {
+          "Guardian": 3,
+          "Shield": 3,
+          "Rage": 2,
+          "Assault": 3,
+          "Dodge": 2,
+          "Precision": 4,
+          "Essence": 4,
+          "Healing": 2,
+          "Toxin": 2,
+          "Wound": 3,
+          "Power": 3,
+          "Ice": 1
+        }
+      }
+    },
+    {
+      "name": "oracle_matrix",
+      "status": "pass",
+      "details": {
+        "oracles": 16,
+        "cells": 320,
+        "runtime_ids_replaced": 0
+      }
+    },
+    {
+      "name": "reference_manifest_rights_hashes_and_scope",
+      "status": "pass",
+      "details": {
+        "groups": 534,
+        "origins": 832,
+        "archive_hashes_checked": 562,
+        "direction_selected": 6,
+        "production_approved": 0
+      }
+    },
+    {
+      "name": "rig_families",
+      "status": "pass",
+      "details": {
+        "families": 4,
+        "launch_covered": 16
+      }
+    },
+    {
+      "name": "animation_conventions_expressions",
+      "status": "pass",
+      "details": {
+        "animations": 10,
+        "expressions": 10,
+        "markers": 7,
+        "name_examples": 80
+      }
+    },
+    {
+      "name": "brand_card_language",
+      "status": "pass",
+      "details": {
+        "contrast_ratios": {
+          "text_primary/canvas": 16.215,
+          "text_primary/surface": 13.087,
+          "text_primary/surface_raised": 10.616,
+          "text_secondary/canvas": 11.673,
+          "text_secondary/surface": 9.422,
+          "text_secondary/surface_raised": 7.642
+        },
+        "rarities": 3,
+        "branch_tokens": 12,
+        "phone_resolutions": [
+          [
+            844,
+            390
+          ],
+          [
+            667,
+            375
+          ]
+        ]
+      }
+    },
+    {
+      "name": "generated_specs_reproducible",
+      "status": "pass",
+      "details": {
+        "rebuilt_documents": 30,
+        "identity_sheets": 16
+      }
+    },
+    {
+      "name": "negative_contract_tests",
+      "status": "pass",
+      "details": ".................\r\n----------------------------------------------------------------------\r\nRan 17 tests in 0.025s\r\n\r\nOK"
+    },
+    {
+      "name": "phone_layout_proof",
+      "status": "pass",
+      "details": {
+        "schema_version": 1,
+        "status": "pass",
+        "scope": "Temporary geometry/text planning diagram, no production art or runtime UI",
+        "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+        "font_name": "arial.ttf",
+        "checks": [
+          {
+            "resolution": [
+              844,
+              390
+            ],
+            "variant": 0,
+            "states": [
+              "ACQUISTABILE",
+              "SELEZIONATA",
+              "NON DISPONIBILE"
+            ],
+            "text_regions": 32,
+            "no_overlap": true,
+            "safe_area": true,
+            "minimum_interactive_height": 44
+          },
+          {
+            "resolution": [
+              844,
+              390
+            ],
+            "variant": 1,
+            "states": [
+              "POSSEDUTA",
+              "MAX",
+              "NORMALE"
+            ],
+            "text_regions": 32,
+            "no_overlap": true,
+            "safe_area": true,
+            "minimum_interactive_height": 44
+          },
+          {
+            "resolution": [
+              667,
+              375
+            ],
+            "variant": 0,
+            "states": [
+              "ACQUISTABILE",
+              "SELEZIONATA",
+              "NON DISPONIBILE"
+            ],
+            "text_regions": 32,
+            "no_overlap": true,
+            "safe_area": true,
+            "minimum_interactive_height": 44
+          },
+          {
+            "resolution": [
+              667,
+              375
+            ],
+            "variant": 1,
+            "states": [
+              "POSSEDUTA",
+              "MAX",
+              "NORMALE"
+            ],
+            "text_regions": 32,
+            "no_overlap": true,
+            "safe_area": true,
+            "minimum_interactive_height": 44
+          }
+        ],
+        "artifacts": [
+          {
+            "path": "card-proof-844x390-0.png",
+            "sha256": "556b0a8ade3c6fff26b6027fc63dce707074067f84c3dfd6fe48815bdbdd81ad"
+          },
+          {
+            "path": "card-proof-844x390-1.png",
+            "sha256": "371e8e06f554d92a6a4179236190a6eb93a3903264ffae91aac7bbec52e7c1f6"
+          },
+          {
+            "path": "card-proof-667x375-0.png",
+            "sha256": "688b675fba4d2917bc6a717b5735e1c375a1be143672b16922046149d387c996"
+          },
+          {
+            "path": "card-proof-667x375-1.png",
+            "sha256": "e6ba8f0da854d18c6cc734a36e39a47515c53dfbccf4838506add7f1af3919a0"
+          }
+        ]
+      }
+    },
+    {
+      "name": "clean_after",
+      "status": "pass",
+      "details": {
+        "working_tree_changes": false
+      }
+    }
+  ],
+  "limitations": [
+    "This profile audits the historical v1.18 specification; new Solkael model/rig/animation validation is covered separately by fighter.py.",
+    "Historical unknown-rights imagery has zero production approvals. The eight newly approved Solkael images are validated separately; historical packet gaps are not rewritten.",
+    "No Android/iOS package, device performance, remote CI or final UI validation claimed by this profile."
+  ],
+  "status": "pass"
+}

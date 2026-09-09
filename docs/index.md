@@ -2,6 +2,13 @@
 
 This directory is the project system of record.
 
+Current slice entry points:
+- `qa/V1_20_POLISH_DEVICE_REPORT.md` — technical results and separate owner/device gates.
+- `qa/evidence/v1.20/REVIEW.md` — actual renders and unresolved art differences.
+- `art/SOLKAEL_V002_PRODUCTION.md` — versioned source, UV/PBR and animation policies.
+- `qa/V1_20_ANDROID.md` — official toolchain, debug export and phone instructions.
+- `exec-plans/completed/V1_20_SOLKAEL_POLISH_DEVICE_SLICE.md` — executed plan and scope.
+
 ## Navigation
 
 - `architecture/` — accepted technical decisions and ADRs.

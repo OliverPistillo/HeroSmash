@@ -1,0 +1,206 @@
+{
+  "phase": "v1.17",
+  "status": "pass",
+  "profile": "full_12000_repeated",
+  "commit": "5fc4990f6c8883c0f964bc10851032ea1d96101f",
+  "baseline": "87c1d0e4ba519e082feaf70848c84862acedc0ff",
+  "cleanCheckout": true,
+  "checks": [
+    {
+      "name": "clean_before",
+      "status": "pass",
+      "command": [
+        "git",
+        "status",
+        "--porcelain"
+      ],
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "name": "baseline_tag",
+      "status": "pass",
+      "command": [
+        "git",
+        "rev-parse",
+        "v1.16-canonical-data^{commit}"
+      ],
+      "exit_code": 0,
+      "output": "87c1d0e4ba519e082feaf70848c84862acedc0ff\n"
+    },
+    {
+      "name": "baseline_ancestor",
+      "status": "pass",
+      "command": [
+        "git",
+        "merge-base",
+        "--is-ancestor",
+        "87c1d0e4ba519e082feaf70848c84862acedc0ff",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "name": "godot_version",
+      "status": "pass",
+      "command": [
+        "D:\\Dev\\HeroSmash\\.work\\tools\\godot-4.7.2\\Godot_v4.7.2-stable_win64_console.exe",
+        "--version"
+      ],
+      "exit_code": 0,
+      "output": "4.7.2.stable.official.ed1daf0bf\n"
+    },
+    {
+      "name": "generated_source_parity",
+      "status": "pass",
+      "command": [
+        "D:\\Dev\\HeroSmash\\.work\\venvs\\canonical-ci\\Scripts\\python.exe",
+        "tools/migration/combat_data.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "{\"status\": \"pass\", \"outputs\": 2, \"changed\": [], \"level_records\": 582}\n"
+    },
+    {
+      "name": "schema_source_levels_and_metrics",
+      "status": "pass",
+      "command": [
+        "D:\\Dev\\HeroSmash\\.work\\venvs\\canonical-ci\\Scripts\\python.exe",
+        "tools/validation/test_combat_data.py"
+      ],
+      "exit_code": 0,
+      "output": "test_aggregate_quantiles_and_hash_excludes_only_runtime (__main__.CombatDataTests.test_aggregate_quantiles_and_hash_excludes_only_runtime) ... ok\ntest_exact_generation_and_all_source_levels (__main__.CombatDataTests.test_exact_generation_and_all_source_levels) ... ok\ntest_malformed_versioned_schemas (__main__.CombatDataTests.test_malformed_versioned_schemas) ... ok\ntest_only_unit_normalization (__main__.CombatDataTests.test_only_unit_normalization) ... ok\ntest_scenario_manifest_scope_and_coverage (__main__.CombatDataTests.test_scenario_manifest_scope_and_coverage) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.896s\n\nOK\n"
+    },
+    {
+      "name": "legacy_divergence_and_582_level_oracle",
+      "status": "pass",
+      "command": [
+        "node",
+        "tools/validation/combat_legacy_oracle.mjs"
+      ],
+      "exit_code": 0,
+      "output": "{\"status\":\"pass\",\"assertions\":4167,\"levelRecords\":582,\"classification\":\"legacy divergence / approximation, not canonical parity\",\"observations\":{\"player_only_regen\":[510,500],\"player_only_heal_boost\":[515,510],\"player_only_half_reflection\":[500,490],\"player_only_opening_crit\":true,\"player_only_onhit\":true,\"player_only_skill_power\":true,\"first_shield_only\":{\"hpLoss\":5,\"unusedSecondShield\":3},\"armor_before_wound\":14.7,\"dot_bypasses_wound\":{\"hpLoss\":14,\"source\":null},\"last_stand_approximation\":{\"survivingHp\":1,\"shield\":326,\"duration\":3},\"overkill_reported_as_actual\":true,\"skill_status_even_when_dodged\":true}}\n"
+    },
+    {
+      "name": "godot_import",
+      "status": "pass",
+      "command": [
+        "D:\\Dev\\HeroSmash\\.work\\tools\\godot-4.7.2\\Godot_v4.7.2-stable_win64_console.exe",
+        "--headless",
+        "--path",
+        "game",
+        "--editor",
+        "--import",
+        "--quit"
+      ],
+      "exit_code": 0,
+      "output": "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org\n\n[   0% ] \u001b[90m\u001b[1mfirst_scan_filesystem\u001b[22m | Started Inizializzazione del progetto (5 steps)\u001b[39m\u001b[0m\n[   0% ] \u001b[90m\u001b[1mfirst_scan_filesystem\u001b[22m | Scansione della struttura dei file...\u001b[39m\u001b[0m\n[  16% ] \u001b[90m\u001b[1mfirst_scan_filesystem\u001b[22m | Caricamento dei nomi delle classi globali…\u001b[39m\u001b[0m\n[  33% ] \u001b[90m\u001b[1mfirst_scan_filesystem\u001b[22m | Verifica dei GDExtension...\u001b[39m\u001b[0m\n[  50% ] \u001b[90m\u001b[1mfirst_scan_filesystem\u001b[22m | Creazione degli script autoload...\u001b[39m\u001b[0m\n[  66% ] \u001b[90m\u001b[1mfirst_scan_filesystem\u001b[22m | Inizializzazione delle estensioni...\u001b[39m\u001b[0m\n[  83% ] \u001b[90m\u001b[1mfirst_scan_filesystem\u001b[22m | Avvio della scansione dei file...\u001b[39m\u001b[0m\n\u001b[92m[ DONE ]\u001b[39m \u001b[1mfirst_scan_filesystem\u001b[22m\n\u001b[0m\n[   0% ] \u001b[90m\u001b[1mloading_editor_layout\u001b[22m | Started Caricamento dell'editor (5 steps)\u001b[39m\u001b[0m\n[   0% ] \u001b[90m\u001b[1mloading_editor_layout\u001b[22m | Caricamento della disposizione dell'editor...\u001b[39m\u001b[0m\n[  16% ] \u001b[90m\u001b[1mloading_editor_layout\u001b[22m | Caricamento dei pannelli…\u001b[39m\u001b[0m\n\u001b[92m[ DONE ]\u001b[39m \u001b[1mloading_editor_layout\u001b[22m\n\u001b[0m\n"
+    },
+    {
+      "name": "combat_headless",
+      "status": "pass",
+      "command": [
+        "D:\\Dev\\HeroSmash\\.work\\tools\\godot-4.7.2\\Godot_v4.7.2-stable_win64_console.exe",
+        "--headless",
+        "--path",
+        "game",
+        "--script",
+        "res://tests/combat_test.gd"
+      ],
+      "exit_code": 0,
+      "output": "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org\n\n{\"assertions\":2173,\"failures\":[],\"suite\":\"combat\"}\n"
+    },
+    {
+      "name": "combat_replay_headless",
+      "status": "pass",
+      "command": [
+        "D:\\Dev\\HeroSmash\\.work\\tools\\godot-4.7.2\\Godot_v4.7.2-stable_win64_console.exe",
+        "--headless",
+        "--path",
+        "game",
+        "--script",
+        "res://tests/combat_replay_test.gd"
+      ],
+      "exit_code": 0,
+      "output": "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org\n\n{\"assertions\":289,\"failures\":[],\"suite\":\"combat_replay\"}\n"
+    },
+    {
+      "name": "explicit_seed_list_cli",
+      "status": "pass",
+      "command": [
+        "D:\\Dev\\HeroSmash\\.work\\tools\\godot-4.7.2\\Godot_v4.7.2-stable_win64_console.exe",
+        "--headless",
+        "--path",
+        "game",
+        "--script",
+        "res://tests/combat_cli.gd",
+        "--",
+        "batch-seeds",
+        "01_baseline",
+        "0,5,4294967295",
+        "D:\\Dev\\HeroSmash\\.work\\clean-v120-validation\\.work\\reports\\combat\\explicit-seeds.json",
+        "1000"
+      ],
+      "exit_code": 0,
+      "output": "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org\n\n{\"count\":3,\"ok\":true,\"path\":\"D:\\\\Dev\\\\HeroSmash\\\\.work\\\\clean-v120-validation\\\\.work\\\\reports\\\\combat\\\\explicit-seeds.json\",\"runtime_us\":1499,\"scenarioId\":\"01_baseline\"}\n"
+    },
+    {
+      "name": "duplicate_seed_rejected",
+      "status": "pass",
+      "command": [
+        "D:\\Dev\\HeroSmash\\.work\\tools\\godot-4.7.2\\Godot_v4.7.2-stable_win64_console.exe",
+        "--headless",
+        "--path",
+        "game",
+        "--script",
+        "res://tests/combat_cli.gd",
+        "--",
+        "batch-seeds",
+        "01_baseline",
+        "0,0",
+        "D:\\Dev\\HeroSmash\\.work\\clean-v120-validation\\.work\\reports\\combat\\duplicate-seeds.json"
+      ],
+      "exit_code": 1,
+      "output": "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org\n\n{\"errors\":[\"invalid_or_duplicate_seed\"],\"ok\":false}\n"
+    },
+    {
+      "name": "repeated_lab_and_replays",
+      "status": "pass",
+      "command": [
+        "D:\\Dev\\HeroSmash\\.work\\venvs\\canonical-ci\\Scripts\\python.exe",
+        "tools/balance_lab/run.py",
+        "--godot",
+        "D:\\Dev\\HeroSmash\\.work\\tools\\godot-4.7.2\\Godot_v4.7.2-stable_win64_console.exe",
+        "--output",
+        "D:\\Dev\\HeroSmash\\.work\\clean-v120-validation\\.work\\reports\\combat\\lab",
+        "--count",
+        "1000",
+        "--compare",
+        "docs\\qa\\evidence\\v1.17\\lab-summary.json"
+      ],
+      "exit_code": 0,
+      "output": "pass1 03_crit_dodge: 1000 fights\npass1 02_stats: 1000 fights\npass1 01_baseline: 1000 fights\npass1 05_toxin_dot: 1000 fights\npass1 07_ice_stun: 1000 fights\npass1 06_wound_amplification: 1000 fights\npass1 04_shield_healing: 1000 fights\npass1 09_rage_speed: 1000 fights\npass1 08_skill_essence: 1000 fights\npass1 11_cross_timed: 1000 fights\npass1 10_reflection_lethal: 1000 fights\npass1 12_mirrored_sides: 1000 fights\npass2 03_crit_dodge: 1000 fights\npass2 02_stats: 1000 fights\npass2 01_baseline: 1000 fights\npass2 05_toxin_dot: 1000 fights\npass2 06_wound_amplification: 1000 fights\npass2 07_ice_stun: 1000 fights\npass2 04_shield_healing: 1000 fights\npass2 09_rage_speed: 1000 fights\npass2 08_skill_essence: 1000 fights\npass2 11_cross_timed: 1000 fights\npass2 10_reflection_lethal: 1000 fights\npass2 12_mirrored_sides: 1000 fights\n{\"status\": \"pass\", \"uniqueFights\": 12000, \"repeatedFights\": 12000, \"replayHashFailures\": 0, \"fullCorpusPassSeconds\": [27.93944360000023, 27.680741700009094], \"totalWallSeconds\": 63.684983900006046}\n"
+    },
+    {
+      "name": "serialized_replay_schema",
+      "status": "pass"
+    },
+    {
+      "name": "clean_after",
+      "status": "pass",
+      "command": [
+        "git",
+        "status",
+        "--porcelain"
+      ],
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "limits": [
+    "Foundation and canonical full profiles remain separate required gates.",
+    "No physical-device, Android/iOS export, UI or final-art production validation claimed.",
+    "A local pass is not evidence of remote CI execution."
+  ]
+}

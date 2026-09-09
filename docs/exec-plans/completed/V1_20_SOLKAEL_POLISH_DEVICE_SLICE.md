@@ -1,6 +1,7 @@
 # v1.20 — Solkael Polish & Device Slice
 
-Status: IN PROGRESS. Owner authorized this phase on 2026-09-09.
+Status: TECHNICAL ITERATION COMPLETE. Owner authorized this phase on 2026-09-09.
+Owner final-art review remains pending; physical-device gate is BLOCKED (no phone).
 Baseline: f03a1b3833055b2538f1780bcc4a649830981195, completed v1.19.
 Branch: revival/v1.20-solkael-polish-device-slice. Draft PR #2 toward main.
 Bootstrap: fetched origin/tags, empty working tree, exact local/remote baseline;
@@ -63,11 +64,11 @@ iOS builds, store release, other heroes, final arena art or multiplayer.
 
 ## Separate result states
 
-- PIPELINE VALIDATED: pending local and clean-checkout technical gates.
+- PIPELINE VALIDATED: PASS, full prior profiles plus v002 reconstruction at5fc4990.
 - ART REVIEW STATUS: requires owner review; never inferred from validator passes.
-- ANDROID EXPORT VALIDATED: pending SDK/template/preset/APK work.
-- PHYSICAL DEVICE VALIDATED / BLOCKED: pending adb discovery.
-- TWO-FIGHTER BUDGET STATUS: pending measurement; final phone matrix not inferred.
+- ANDROID EXPORT VALIDATED: PASS, root and clean-checkout APK/pack boot at1bf8e04.
+- PHYSICAL DEVICE VALIDATED / BLOCKED: BLOCKED, repeated adb discovery is empty.
+- TWO-FIGHTER BUDGET STATUS: measured asset/desktop costs; proposed phone envelope only.
 
 Each stable validated block is committed/pushed and Draft PR #2 updated. Final
 report includes exact commits/SHA/tag, before/after metrics, art comparison classified
@@ -85,3 +86,16 @@ This QA APK inherits the official template's API36 target; it is not a claim of
 building Java against Platform35. apkanalyzer from the authorized latest command
 tools validates the manifest because aapt35 reports an API36 attribute type error.
 There is no store release requirement in this phase.
+
+## Executed closure
+
+Full foundation/archive/GPU, canonical, repeated12000-fight combat/baseline comparison,
+roster/archive, v001fighter/saved-source rebuild, v002UV/material/rig/face/animation,
+240two-fighter assertions and identical isolated/saved-source GLB exports all pass.
+Original and validation checkouts remain clean after checks. New APK includes all
+runtime-loaded dependencies and its exported pack boots the slice headlessly.
+Physical measurements remain blocked by absent hardware. Official Node24 Actions
+pass; runs34326978019/34326973733 validate1bf8e04 remotely. Final documentation CI
+and annotated tag are verified in task delivery. Art remains a stylized technical
+iteration with substantial sculpt/paint/motion debt in the report and actual renders.
+No art approval is inferred. v1.21 is only recommended; no branch/other hero started.

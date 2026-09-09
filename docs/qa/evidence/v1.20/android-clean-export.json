@@ -1,18 +1,18 @@
 {
   "status": "pass",
-  "apk": "D:\\Dev\\HeroSmash\\.work\\builds\\hero-smash-v120-debug.apk",
+  "apk": "D:\\Dev\\HeroSmash\\.work\\builds\\hero-smash-v120-clean-debug.apk",
   "bytes": 38558965,
-  "sha256": "14e7ceb399cf763188270bbec9f4c40a5ca1f65962f98cdf045918a61e60b669",
+  "sha256": "e2d6a6bb260486aa95eec8d5c48fe1d001b3afb1b23508abe6d1cd672566ac7d",
   "command": [
     "D:\\Dev\\HeroSmash\\.work\\tools\\godot-4.7.2\\Godot_v4.7.2-stable_win64_console.exe",
     "--headless",
     "--path",
-    "D:\\Dev\\HeroSmash\\.work\\android-qa-bh0e2o56\\game",
+    "D:\\Dev\\HeroSmash\\.work\\clean-v120-validation\\.work\\android-qa-hsz7nfl5\\game",
     "--export-debug",
     "Android QA Debug",
-    "D:\\Dev\\HeroSmash\\.work\\builds\\hero-smash-v120-debug.apk"
+    "D:\\Dev\\HeroSmash\\.work\\builds\\hero-smash-v120-clean-debug.apk"
   ],
-  "staging": "D:\\Dev\\HeroSmash\\.work\\android-qa-bh0e2o56",
+  "staging": "D:\\Dev\\HeroSmash\\.work\\clean-v120-validation\\.work\\android-qa-hsz7nfl5",
   "signature_verified": true,
   "packaged_dependencies_verified": true,
   "exported_pack_headless_boot": true,

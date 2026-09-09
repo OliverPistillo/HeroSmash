@@ -1,154 +1,126 @@
 # Hero Smash — Project State
 
 **State date:** 2026-09-09
-**Macro phase completed:** v1.19 Blender Character Pipeline / First Fighter
-**Phase status:** COMPLETE — technical pipeline with one Solkael model; final shipping art and physical-device acceptance pending
-**Branch:** `revival/v1.19-golden-fighter-pipeline`
-**Required baseline:** v1.18 / `d5ece76e09b175e7b75d12b2d0dd4f58b6d926b9`
-**Full five-profile validation:** `fd0163b00f2c468de144450acd84e5907529e0d3`
-**Final viewer / visual capture:** `e5b9b2ec688d19255ec338b3f41831b32db70f05`
-**Committed evidence:** `f76586452135aa67ee10127d76bc60ca6f61a0ec`
-**Post-evidence full fighter + roster + artifact integrity:** PASS at `f76586452135aa67ee10127d76bc60ca6f61a0ec`
+**Macro phase completed:** v1.20 Solkael Polish & Device Slice — technical iteration
+**Status:** COMPLETE TECHNICAL PIPELINE; owner final-art review pending; physical-device gate BLOCKED
+**Branch:** `revival/v1.20-solkael-polish-device-slice`
+**Baseline:** `f03a1b3833055b2538f1780bcc4a649830981195` / completed v1.19
+**Full clean-checkout validation:** `5fc4990f6c8883c0f964bc10851032ea1d96101f`
+**Final Android correction and clean export:** `1bf8e0495d0d33abc3f74735f45d9e8e4679bb9f`
+**Remote implementation CI:** PASS, runs34326978019 and34326973733
+**Closure tag:** `v1.20-solkael-polish-device-slice` resolves the final documentation commit, verified in task delivery
 **Main unchanged:** `66a5ba67f0691b7d50a11fa873f4ed24c80a14ef`
 
-This documentation closeout follows executed local gates and actual visual review.
-Its commit is named `docs: close v1.19 fighter pipeline and update project state`;
-the exact closing SHA is in the task delivery report. The GitHub branch is published
-with upstream; Draft PR #1 targets main without merge or auto-merge.
+This update follows executed local/fresh-checkout gates. The closing commit is named
+`docs: close v1.20 technical slice with explicit art and device gates`; its exact SHA
+is in the task delivery and annotated tag. Draft PR#2 targets main without merge or
+auto-merge. PR#1 is untouched. No v1.21 branch exists.
 
-## 1. Current production reality
+## Current production reality
 
-The production workspace is D:/Dev/HeroSmash. Technology remains Godot 4.7.2 stable,
-typed GDScript, Mobile renderer, real-time 3D, 2.5D arenas, Android/iOS landscape,
-Blender 5.2 LTS and validated GLB interchange. Existing deterministic combat/data
-and the foundation main scene are unchanged. A separate Solkael source/export/
-wrapper/QA pipeline is now implemented; no other hero or multiplayer was started.
+Workspace D:/Dev/HeroSmash. Godot4.7.2stable, typed GDScript, Mobile renderer,
+real-time3D characters,2.5D stage, Android/iOS landscape, Blender5.2LTS and GLB
+interchange remain locked. Existing deterministic combat/data and production
+bootstrap main scene are unchanged. No other hero, balance rule or multiplayer added.
 
-The first model is an original editable parametric fighter with the approved
-identity, integrated forearm tower gauntlets, sun-crown mane and palette. It is a
-working model/rig/material/face/animation pipeline deliverable, not a claim of
-finished sculpt, paint, realistic facial quality or owner acceptance of final art.
-The QA stage is not the final arena or combat screen.
+Solkael v002 is a first textured polish iteration: continuous torso/upper-arm rings,
+spine weighting, muzzle bridge, mouth cavity/teeth/tongue/chin, intact eyes/closing
+lid surfaces, layered opaque mane and original PBR atlas. It remains visibly simpler
+than the Art Lock: NOT final art, finished sculpt/paint or owner artistic acceptance.
 
-## 2. Art Lock and binary source authority
+Two instances of one shared v002GLB/wrapper replay all12unchanged CombatResolver
+scenarios in a separate neutral QA stage with controlled camera, depth/shadows,
+bounded solid effects and safe minimal HUD. Both sides share presentation logic.
+Toxin/reflection cues, x1/x2/x3, seek/cancel, KO/victory and contact checks pass.
+Visual step-in is.10m light/.24m heavy; it never changes simulation timestamps or
+damage/status/death. A one-second intro prelude holds the replay clock before t=0.
 
-The owner approved eight exact PNGs under
-`references/visual/characters/solkael_lionheart/production/`, verified against the
-byte-identical SOLKAEL_ART_LOCK_v1_MANIFEST.json before admission. All eight central
-manifest production_items carry generated-for-project source/rights,
-production-approved approval and art_lock v1. No old unknown-rights entry changed.
-Front covers neutral/silhouette functions per the owner's explicit eight-image
-packet approval. No source-unsupported dimension is newly asserted as approved.
+## Canonical sources and binaries
 
-Only the newly supplied nine-file packet moved from
-`references/visual/characters/production/Solkael_Art_Lock_v1/` to its canonical
-folder. Initially tracked files were clean while this packet was untracked; it was
-hashed and committed before modeling. No legacy/archive file moved or changed.
-All 736 historical central items and 534 v1.18 content groups remain intact;
-286 duplicate groups/298 extra origins remain historical reference-only data.
-QA images are explicitly excluded from production-reference selection.
+Only the eight unchanged Solkael Art Lock v1 production-approved PNGs guide art.
+Their source_type/rights_status remain generated-for-project, approval
+production-approved, art_lock v1. No unknown-rights image is promoted.736historical
+central entries/534v1.18content groups remain intact;286duplicate groups/298extra
+origins remain reference-only. Nine exact hashed authored QA image outputs have a
+separate generated-output manifest; they are not new design references.
 
-Editable source: `art/characters/solkael_lionheart/source/`.
-Runtime authority: `game/assets/characters/solkael_lionheart/`.
-Staging exports are ignored; Godot never depends on arbitrary .blend working files.
-Scoped Git LFS covers eight PNGs, source .blend, runtime GLB and three curated AVIs.
-Already installed LFS was initialized locally; published history was not rewritten.
-Fresh GitHub hydration and fsck pass. Binary policy and admission details are in
-`docs/art/BINARY_ASSET_GOVERNANCE.md` and `docs/art/SOLKAEL_ART_LOCK.md`.
+v001 source/GLB/recipe are retained byte-for-byte. No legacy/archive file moved,
+renamed or deleted in v1.20. New editable source:
+`art/characters/solkael_lionheart/v002/source/chr_solkael_lionheart_v002.blend`;
+four PNG maps and source manifest stay alongside. Runtime authority is the versioned
+v002GLB/wrapper under game/assets and game/scenes/characters/solkael_lionheart.
+Sources/GLB/texture/evidence PNGs use scoped Git LFS; recipes/manifests/import settings
+use text Git.53LFS paths hydrate in the clean clone; fsck passes. No history rewrite.
 
-## 3. Fighter and presentation contracts
+## Measured fighter and stage
 
-GLB: 4,784,156 bytes; SHA-256
-`3cd9e3024dbd85b8eaf3376e0e3e2b05f2aca6a4626794157e333a39b6400554`.
-24,912 triangles, 46,362 exported vertices, one skinned mesh, nine opaque scalar
-PBR materials/surfaces, 71 bones, zero textures. Nine independent relative morphs
-plus neutral implement ten expressions. Ten named clips use 30 fps, documented
-loops/markers and no root motion. Shared medium-biped semantics, five finger chains,
-Solkael extensions, sockets and rest matrices are recorded in solkael_asset.json.
-Skull height 1.95 m remains a proposal; crown/mane measured top is 2.099 m.
+GLB7,262,440bytes, SHA256
+`558a6566b8fa8a473f7f0b5460b68f73a365558b451a81a7208dc1fe82dc4108`.
+27,488triangles/25,414exported vertices, one mesh/material/surface,71bones,
+four2048²textures,9independent morphs+neutral,10clips at30fps, no root motion.
+Fresh recipe and saved-source export produce identical GLB bytes. v001 remains
+24,912triangles/9materials/0textures for comparison.
 
-The reproducible recipe and saved-source exporter produce identical runtime GLB;
-the committed editable source independently exports the same bytes without change.
-Blender container save/path metadata is not misrepresented as deterministic.
-Typed SolkaelFighter/FighterEventAdapter consume resolver IDs/timestamps and emit
-cosmetic cues only. Dedupe, contact offsets, KO/revival, late events, interruption,
-reflection, seek/cancellation and imported animation/morph/socket contracts pass.
-The viewer binds real alpha/beta IDs; it does not replace canonical hero records.
+UV overlap/degeneracy/OOB checks pass; area occupancy32.51%, unique islands with
+8px gutters. PBR maps are original mathematical detail, no reference pixels or
+baked-AO claim. Head mane2392triangles/tail tuft252; zero alpha cards/transparency.
+Atlas grouping/efficiency and shading quality remain art debt.85.33MiB is the raw
+RGBA8 full-mip estimate, not measured Android residency.
 
-## 4. Preserved roster, data and simulation
+Two fighters54,976base triangles,142bone instances,2surfaces sharing one material/
+texture set. One shadow key and≤12solid VFX.60s desktop RX7900XT/i5-13600K profile
+at844×390 is separate from physical mobile evidence. Proposed30ktriangles/1material/
+75bones/9morphs per fighter are engineering envelopes only. Phone budgets, arena
+headroom and minimum-device matrix remain unestablished.
 
-The v1.18 16-launch/4-reserve roster, all candidate identity records and 320-cell
-oracle mapping remain unchanged. Other hero art-entry gates remain closed.
-The canonical deck still has 150 cards, 582 levels, 12 branches, 8 active/4 banned,
-90 Normal/36 Epic/24 Legendary and 84 single/66 dual records. No balance, economy,
-rarity, card semantics or original oracle IDs were edited.
-Ruleset combat_v1.17.1 and canonical version v1.16.1 retain dataHash
+## Validation and toolchain
+
+PASS: full foundation/archive/GPU at both landscape resolutions; canonical11checks;
+combat15checks including12,000fights repeated and compared with v1.17; full roster/
+archive/historical phone proof; full v001fighter/rebuild/154assertions; v002binary/
+UV/material/rig/expression/animation and240two-fighter assertions; saved/isolated GLB
+reconstruction; LFS hydration/fsck; actual model/landscape renders and exported-pack
+headless boot. Gameplay dataHash remains
 `932aaad64f3c805dbb60439d36213e253d2a7eb3d25e0e66d42bfc7c2c5359bf`.
-All existing v1.17 runtime and legacy/web-prototype blobs are preserved; only the
-explicitly enumerated new presentation assets/scripts/tests are added to game/.
+Resolved failures and corrected comparison-command invocation are in the report.
 
-The full 12,000-fight corpus repeated identically: all scenario metric hashes,
-1,000 mirrors and 12 replay roundtrips match v1.17. Shield/healing timeouts, roughly
-99% skill/Essence timeouts, fast Toxin and every prior balance signal remain
-observations, not tuned or accepted production values. Thirteen limited effect
-profiles and the unreviewed/unresolved numbered bindings remain exactly as before.
+Reused Godot4.7.2.stable.official.ed1daf0bf, Blender5.2.1LTS, Java17.0.15,
+Python3.12, Pillow, Node20.19.6, Git/LFS/gh. Official Android installation was
+explicitly authorized: Platform-Tools37.0.1, Build-Tools35.0.1, Platform35r2,
+cmdline-tools22/latest, CMake3.10.2.4988404, NDK28.1.13356709/r28b, exact4.7.2
+templates. No AndroidStudio, replacement JDK, SDK36 or unrelated global tools.
 
-## 5. Executed gates and visual evidence
+Debug ARM64 APK38,558,965bytes, org.herosmash.qa/version120: signature, manifest,
+critical packaged dependencies and independent pack boot pass. Fresh checkout
+repeats export. Official precompiled template inherits minAPI24/targetAPI36;
+required SDK35 remains installed and Build-Tools35 signs it. This documented
+discrepancy is not Java compilation against Platform35. No AAB/store/release
+credentials. Debug key/APKs/staging stay ignored under.work.
 
-The clean GitHub clone passed all 66 checks: fighter 10, roster 12, canonical 11,
-combat 15 and full local foundation 18. These include 17 binary regressions,
-154 fighter assertions, existing 104 loader/8,150 effect assertions, full seeded
-combat/replay/live-JS checks, 393 web blobs and 1,152 archive files. Relevant full
-fighter/roster checks passed again after the evidence commit, along with SHA/length/
-Git-blob or LFS-OID verification of all 44 curated artifacts and a clean tree.
+**PHYSICAL DEVICE BLOCKED:** repeated adb discovery finds no authorized phone.
+No actual deployment, thermal, sustained phone frame/GPU/memory/load/crash evidence.
+Connection/deploy commands are in V1_20_ANDROID.md. iOS/Apple/store remain out of scope.
+Official Actions moved to pinned Node24v6 separately; CI succeeds without the prior
+Node20 action-runtime warning. Legacy Node workload remains pinned20.19.6.
 
-Final 24 captures include both actual landscape sizes, all ten expressions,
-front/side/back, contacts, KO/victory and three movies. All 1,623 movie JPEG frames
-decode; frame-sampled review confirms geometry/framing, reactions, KO and barrier.
-Toxin/Shield replay footage records 18/36 cosmetic cues and zero adapter errors.
-Godot's short outer AVI RIFF-length field is corrected without image/audio edits;
-the source/normalized hashes and correction are retained in movie-validation.json.
-The caption strip prevents the phone victory pose from obscuring labels.
+## Debt and next proposed macro phase
 
-Desktop RX 7900 XT/i5-13600K, Vulkan Mobile, animated idle, 1,740 samples after
-60 warm-up frames: CPU p50/p95 0.079/0.104 ms at 1366×768 and 0.076/0.100 ms at
-844×390; GPU 0.088/0.090 and 0.094/0.099 ms. Raw counters show five draw calls,
-50 objects and 51,456 primitives including QA stage/shadows/canvas. These are not
-physical-phone results, material submission counts or two-fighter arena budgets.
+Owner art review is required. Lion facial planes/lids, organic mane rhythm, elbow/
+hip continuity, armor wrap, paint grouping/roughness detail, planted boxing weight,
+secondary motion and KO aesthetics remain unresolved. Runtime captures make these
+limitations reviewable; technical checks never auto-approve shipping art.
 
-No final required local gate failed. Development asset, UTF-8 and viewer issues
-were fixed and documented. The two known legacy JS readability failures remain
-an explicitly checked negative baseline. GitHub portable Actions passed at f765864;
-final delivery records the latest remote result separately from local full gates.
-Artifacts/commands/limits: `docs/qa/evidence/v1.19/REVIEW.md` and macro report.
+Physical Android/device matrix/arena headroom are blocked by absent hardware.
+No quality tiers without measurements. APK currently packages all game resources,
+including retained v001; trim only with dependency/boot validation. Existing gameplay/
+economy debt remains:097/111/132/009 semantics, numbered/status bindings, market UI3/
+helper4, interest/sell/run-HP discrepancies, oracle-kit gaps and LCG review. No new
+rule silently resolves them.
 
-## 6. Existing toolchain and unavailable gates
+**Proposed v1.21:** owner-guided revision of this exact Solkael plus one authorized
+physical Android profile of≥120s; then adjust measured budgets and packaging. No
+additional hero, final arena, balance, multiplayer or automatic phase start.
 
-Godot 4.7.2.stable.official.ed1daf0bf and Steam Blender 5.2.1 LTS execute successfully.
-Existing Python 3.12/3.14, Pillow, Node 20.19.6, Git 2.55, LFS 3.7.1 and Java 17.0.15
-were reused. No engine, SDK, MCP, package or global dependency was installed.
-ANDROID_HOME points to absent C:/Users/olive/AppData/Local/Android/Sdk;
-adb/sdkmanager unavailable, Godot export templates empty. Physical Android/iOS
-performance, packages, signing, device smoke and Apple toolchain checks are
-unavailable and not passed. Final mobile budgets await representative arena/fighters.
-
-## 7. Debt and next proposed macro phase
-
-Visible art debt: continuous anatomy, mane/crown/glove fidelity, mouth/face polish,
-paint-ready UV atlas, material finishing, secondary motion and KO settling. Current
-planar UVs support tangents but not a shipping paint atlas. A second morphology,
-retarget/hurtbox/arena integration, final VFX/audio and physical-device measurement
-are unvalidated. Reference approval does not automatically approve the final model.
-
-Existing gameplay/economy debt remains: 097/111/132/009 semantics, most numbered
-bindings/status conversions, market UI3/helper4, interest/sell/run-HP discrepancies,
-combined oracle-kit gaps and LCG review. No new rule silently resolves these.
-
-**Proposed v1.20:** refine this same Solkael against the eight approved boards and
-review the concrete 3D result; prepare UV/material and animation/contact finishing;
-exercise two instances in a neutral 2.5D QA stage against unchanged resolver streams;
-then detect/report an authorized Android device/toolchain and measure sustained
-performance before locking budgets. No other hero, balance or multiplayer work.
-This next phase has not started and no new installation is authorized by this report.
-
-Full macro report: `docs/qa/V1_19_FIGHTER_PIPELINE_REPORT.md`.
+Report: `docs/qa/V1_20_POLISH_DEVICE_REPORT.md`.
+Art review: `docs/qa/evidence/v1.20/REVIEW.md`.
+Prior state/history: `docs/qa/V1_19_FIGHTER_PIPELINE_REPORT.md`.
