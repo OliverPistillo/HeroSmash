@@ -312,7 +312,7 @@ def main():
         if args.require_clean: assert not dirty, "gate mutated tracked files"
         return dict(working_tree_changes=dirty)
     check("clean_after", clean_after)
-    report["limitations"] += ["No final model/rig/animation created; actual character asset gates apply in v1.19 after reference entry.","Unknown-rights production imagery: zero approvals. All ten-view packets incomplete.","No Android/iOS package, device performance, remote CI or final UI validation claimed."]
+    report["limitations"] += ["This profile audits the historical v1.18 specification; new Solkael model/rig/animation validation is covered separately by fighter.py.","Historical unknown-rights imagery has zero production approvals. The eight newly approved Solkael images are validated separately; historical packet gaps are not rewritten.","No Android/iOS package, device performance, remote CI or final UI validation claimed by this profile."]
     if not args.archive: report["limitations"].append("Archive byte/scope checks unavailable in this portable profile; frozen census still validated.")
     report["status"]="fail" if any(c['status']=='fail' for c in report['checks']) else "pass"
     args.report.parent.mkdir(parents=True,exist_ok=True)

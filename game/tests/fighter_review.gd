@@ -137,23 +137,25 @@ func setup() -> void:
 
 func step() -> void:
 	frame_count += 1
+	var reviewed_clip: String = clip
 	var elapsed: float = float(Time.get_ticks_usec()-previous_us)/1000.0
 	previous_us = Time.get_ticks_usec()
 	if not replay_events.is_empty():
 		fighter.present(replay_events if frame_count==1 else [],frame_count*1000/30)
+		reviewed_clip = fighter.adapter.current_clip
 		if frame_count*1000/30 > barrier_until_ms:
 			barrier.visible = false
 	elif turntable:
 		var names: Array = fighter.contract["clips"].map(func(item: Dictionary) -> String: return String(item["name"]))
 		var index: int = mini(frame_count / 90, names.size()-1)
 		fighter.show_clip(String(names[index]), float(frame_count % 90)/30.0)
+		reviewed_clip = String(names[index])
 		fighter.rotation.y = sin(float(frame_count)/90.0)*0.35
 	else:
 		fighter.show_clip(clip,pose_time+float(frame_count)/60.0 if profile_animation else pose_time)
 	if expression != "":
 		fighter.set_expression(expression)
-	var displayed_clip: String = fighter.adapter.current_clip if not replay_events.is_empty() else String(fighter.animation_player.current_animation).get_slice("/",String(fighter.animation_player.current_animation).get_slice_count("/")-1)
-	subtitle.text = "GUARDIAN + SHIELD   •   " + ("RESOLVER REPLAY   •   " if not replay_events.is_empty() else "ART LOCK v1   •   ") + displayed_clip.to_upper()
+	subtitle.text = "GUARDIAN + SHIELD   •   " + ("RESOLVER REPLAY   •   " if not replay_events.is_empty() else "ART LOCK v1   •   ") + reviewed_clip.to_upper()
 	if frame_count > 60:
 		cpu_ms.append(RenderingServer.viewport_get_measured_render_time_cpu(root.get_viewport_rid()))
 		gpu_ms.append(RenderingServer.viewport_get_measured_render_time_gpu(root.get_viewport_rid()))
