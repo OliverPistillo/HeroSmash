@@ -202,3 +202,31 @@ results are reported with publication in Draft PR3 and the task delivery.
 Report: docs/codex/BLENDER_MCP_LIVE_RECONNECT.md. Remaining work is intended approval
 verification, fresh cloud opt-out verification and the pending approved live suite.
 No automatic next macro phase: Solkael v003 remains suspended.
+
+## Blender MCP approval audit/fix — 2026-09-09
+
+Integration configuration phase completed on chore/blender-mcp-bootstrap-fix from
+exact clean baseline c4efd683cb500d09c5b4fe9d12887dd76bfdab1e. No art/product decision
+or production system changed. Installed0.153.4 config/read(includeLayers) resolved
+the user and empty system layers for both worktrees; configRequirements/read
+returned null. Active-task records independently show never/user with Full Access.
+The resident desktop's managed-policy response was not directly available.
+
+After an exact local backup, only approval_policy in the effective user config
+changed never→on-request. Reviewer user and execute_blender_code prompt were already
+correct. Every other byte/value, including sandbox, other MCPs and Blender's server,
+allowlist, telemetry/safe mode, addresses and timeouts, is preserved. Strict fresh
+config resolution now returns on-request/user/prompt. The active task still has
+never/user; no runtime override, restart or Blender call was attempted.
+
+**APPROVAL CONFIG FIXED — RESTART REQUIRED / LIVE OPERATIONS NOT VERIFIED.**
+Marker-only probe passes static safe-mode validation; human prompt and live A–E
+probe are not verified. C–I remain pending. Owner restart must be followed by an
+actual-session override check before the first marker probe; saved Full Access
+state is not assumed to disappear automatically. No blind managed-policy workaround.
+
+Only integration documentation is published in Draft PR3; personal backup and
+sanitized audit/preservation evidence remain in the documented smoke directory.
+TOML, exact-change, layer-resolution, preservation and documentation checks pass;
+published-commit CI is reported in PR/task delivery. No game/export/preflight rerun.
+Report: docs/codex/BLENDER_MCP_APPROVAL_AUDIT.md. No automatic continuation of Solkael.

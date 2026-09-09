@@ -1,5 +1,11 @@
 # Blender MCP live reconnect acceptance — 2026-09-09
 
+Subsequent owner-authorized approval audit:
+[APPROVAL CONFIG FIXED — RESTART REQUIRED](BLENDER_MCP_APPROVAL_AUDIT.md).
+Only approval_policy changed from never to on-request; the current loaded task
+still has never/user. No additional Blender calls or smoke acceptance followed.
+The report below preserves the actual earlier live results.
+
 **CONFIGURED / SERVER PREFLIGHT PASSED / SESSION TOOLS DISCOVERED /
 LIVE OPERATIONS NOT VERIFIED.** Acceptance stopped at the first code-approval
 probe. No artistic work resumed. Do not describe this integration as operational.

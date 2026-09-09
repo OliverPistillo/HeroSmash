@@ -1,5 +1,13 @@
 # Blender MCP smoke test record
 
+## Approval audit follow-up
+
+**APPROVAL CONFIG FIXED — RESTART REQUIRED / LIVE OPERATIONS NOT VERIFIED.**
+[Effective layers, session state and minimal fix](BLENDER_MCP_APPROVAL_AUDIT.md)
+are recorded separately. No Blender calls were made during that audit. C–I are
+not resumed until the marker-only probe receives actual human approval after
+restart and returns successfully. Earlier partial results below remain historical.
+
 ## Current live acceptance after reconnect
 
 **CONFIGURED / SERVER PREFLIGHT PASSED / SESSION TOOLS DISCOVERED /

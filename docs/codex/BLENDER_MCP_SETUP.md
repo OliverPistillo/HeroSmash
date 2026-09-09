@@ -1,5 +1,13 @@
 # Blender MCP setup
 
+## Current approval configuration
+
+[The approval audit](BLENDER_MCP_APPROVAL_AUDIT.md) resolved disk config/layers and
+active-task evidence. After an exact backup, only approval_policy changed from
+never to on-request. Reviewer user, per-tool prompt and all Blender protections
+are preserved. **APPROVAL CONFIG FIXED — RESTART REQUIRED.** The loaded task still
+uses never/user; no new Blender probe was sent. Live acceptance remains incomplete.
+
 ## Current repair supersedes the original installation below
 
 The owner authorized the minimal local hsfix1 repair on 2026-09-09. Current identity
