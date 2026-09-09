@@ -17,8 +17,13 @@ This creates `.work/builds/hero-smash-v120-debug.apk`, ARM64, package
 sets the QA main scene/icon and Android texture import, leaving `game/project.godot`
 and its production bootstrap unchanged. Editor configuration is isolated, SDK/JDK
 paths are detected, and an ignored debug-only keystore is generated if absent.
-The tracked export preset selects the slice and necessary data. APK ZIP structure,
-apksigner verification and actual apkanalyzer XML are required to pass.
+The tracked export preset exports all game resources so runtime-loaded scripts and
+scenes cannot disappear from a scene-only dependency scan. This includes the retained
+v001 baseline; it is not instantiated by the slice. Packaging optimization is future
+debt. APK ZIP structure, explicit resolver/wrapper/model dependencies, apksigner
+verification and actual apkanalyzer XML are required to pass. The exported PCK must
+also boot the QA scene headlessly; this detects missing dependencies without claiming
+physical Android runtime validation.
 
 The exact official template targets/compiles API36 with minAPI24. Non-Gradle export
 cannot override these; the preset deliberately inherits the official values. The

@@ -59,7 +59,15 @@ def main():
     assert activity is not None and activity.attrib.get(ns+'screenOrientation') in ('0','landscape','6','sensorLandscape')
     with zipfile.ZipFile(output) as apk:
         assert 'AndroidManifest.xml' in apk.namelist() and 'lib/arm64-v8a/libgodot_android.so' in apk.namelist()
-    result=dict(status='pass',apk=str(output),bytes=output.stat().st_size,sha256=hashlib.file_digest(output.open('rb'),'sha256').hexdigest(),command=[str(x) for x in command],staging=str(staging),signature_verified=True,package='org.herosmash.qa',physical_device='not asserted',reproducibility='Repeatable debug build from tracked preset/source; debug signature/container metadata may differ',main_scene='res://scenes/qa/two_fighter_slice.tscn')
+        names=apk.namelist()
+        for required in ['scripts/combat/combat_resolver.gdc','scripts/combat/combat_catalog.gdc','scripts/presentation/solkael_fighter.gdc','scripts/presentation/fighter_event_adapter.gdc','scenes/characters/solkael_lionheart/hero_solkael_lionheart_v002.tscn.remap']:
+            assert 'assets/'+required in names,'Missing packaged dependency: '+required
+        assert any('chr_solkael_lionheart_v002' in name and name.endswith('.scn') for name in names),'Missing exported fighter mesh'
+    pack=output.with_suffix('.pck')
+    run([godot,'--headless','--path',staging/'game','--export-pack','Android QA Debug',pack],report/'android-pack.log',env)
+    boot=run([godot,'--headless','--main-pack',pack,'--quit-after','180'],report/'android-pack-boot.log',env)
+    assert 'SLICE_READY' in boot,'Exported pack did not boot the QA scene'
+    result=dict(status='pass',apk=str(output),bytes=output.stat().st_size,sha256=hashlib.file_digest(output.open('rb'),'sha256').hexdigest(),command=[str(x) for x in command],staging=str(staging),signature_verified=True,packaged_dependencies_verified=True,exported_pack_headless_boot=True,package='org.herosmash.qa',physical_device='not asserted',reproducibility='Repeatable debug build from tracked preset/source; debug signature/container metadata may differ',main_scene='res://scenes/qa/two_fighter_slice.tscn')
     (report/'android-export.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8');print(json.dumps(result,indent=2))
 
 
