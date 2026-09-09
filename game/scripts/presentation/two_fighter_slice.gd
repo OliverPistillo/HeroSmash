@@ -2,7 +2,8 @@ class_name TwoFighterSlice
 extends Node3D
 ## One resolver stream, two identical visual consumers. QA stage only.
 
-const FIGHTER: PackedScene = preload("res://scenes/characters/solkael_lionheart/hero_solkael_lionheart_v002.tscn")
+const DEFAULT_FIGHTER_PATH: String = "res://scenes/characters/solkael_lionheart/hero_solkael_lionheart_v002.tscn"
+@export var fighter_scene: PackedScene
 var fighters: Array[SolkaelFighter] = []
 var camera: Camera3D
 var vfx_root: Node3D
@@ -26,12 +27,14 @@ var intro_remaining: float = 1.0
 
 func _ready() -> void:
 	get_tree().root.content_scale_size = get_tree().root.size
+	if fighter_scene == null:
+		fighter_scene = load(DEFAULT_FIGHTER_PATH) as PackedScene
 	catalog = CombatCatalog.new()
 	assert(catalog.load_data())
 	scenarios = CombatScenarios.new(catalog)
 	build_stage()
 	for index: int in range(2):
-		var fighter: SolkaelFighter = FIGHTER.instantiate() as SolkaelFighter
+		var fighter: SolkaelFighter = fighter_scene.instantiate() as SolkaelFighter
 		fighter.entity_id = "alpha" if index == 0 else "beta"
 		fighter.position = Vector3(-.65 if index == 0 else .65, 0, 0)
 		fighter.rotation.y = PI/2 if index == 0 else -PI/2

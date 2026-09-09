@@ -111,6 +111,16 @@ def generated_asset_images() -> set[str]:
         if item['path'].endswith('.svg'):raw=raw.replace(b'\r\n',b'\n')
         assert digest(raw)==item['sha256'],item['path']
         assert item['usage']=='authored QA asset output; not a design reference'
+    v003=ROOT/'docs/art/solkael_v003_generated_images.json'
+    if v003.exists():
+        generated=json.loads(v003.read_text(encoding='utf-8'))['items']
+        scoped={'art/characters/solkael_lionheart/v003/textures/'+c+'.png' for c in channels}
+        scoped|={'game/assets/characters/solkael_lionheart/chr_solkael_lionheart_v003_'+c+'.png' for c in channels}
+        assert {item['path'] for item in generated}==scoped and len(generated)==len(scoped)
+        for item in generated:
+            assert digest((ROOT/item['path']).read_bytes())==item['sha256'],item['path']
+            assert item['usage']=='authored QA asset output; not a design reference'
+        expected|=scoped
     return expected
 
 

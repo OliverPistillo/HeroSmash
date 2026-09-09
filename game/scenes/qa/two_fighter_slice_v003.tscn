@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/presentation/two_fighter_slice.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/characters/solkael_lionheart/hero_solkael_lionheart_v003.tscn" id="2"]
+
+[node name="TwoFighterSliceV003" type="Node3D"]
+script = ExtResource("1")
+fighter_scene = ExtResource("2")

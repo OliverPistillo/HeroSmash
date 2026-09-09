@@ -1,0 +1,340 @@
+{
+  "status": "pass",
+  "art_status": "OWNER REVIEW REQUIRED",
+  "checks": [
+    {
+      "name": "v002_gameplay_and_art_lock_preserved",
+      "status": "pass",
+      "details": {
+        "baseline": "de770dff30dcc533d547074c975fdaa0962abda9",
+        "protected_paths": [
+          "game/data",
+          "game/scripts/combat",
+          "game/scripts/core",
+          "game/scripts/cards",
+          "game/scripts/branches",
+          "game/scripts/economy",
+          "legacy",
+          "game/project.godot",
+          "references/visual/characters/solkael_lionheart/production",
+          "art/characters/solkael_lionheart/v002",
+          "tools/asset_pipeline/solkael_polish.py",
+          "tools/asset_pipeline/solkael_build.py",
+          "game/assets/characters/solkael_lionheart/chr_solkael_lionheart_v002.glb",
+          "game/assets/characters/solkael_lionheart/fighter_presentation.json",
+          "game/scripts/presentation/solkael_fighter.gd",
+          "game/scripts/presentation/fighter_event_adapter.gd"
+        ],
+        "v002_original_images_hashed": 30
+      }
+    },
+    {
+      "name": "rig_animation_and_naming_contracts",
+      "status": "pass",
+      "details": {
+        "rest_and_bind_matrices": "identical",
+        "bones": 71,
+        "clip_durations_and_markers": "identical",
+        "morph_names": "9 + neutral unchanged"
+      }
+    },
+    {
+      "name": "negative_uv_controls",
+      "status": "pass",
+      "details": "overlap, degenerate and out-of-bounds fixtures rejected"
+    },
+    {
+      "name": "independent_glb_uv_material_expression_gate",
+      "status": "pass",
+      "details": {
+        "status": "pass",
+        "sha256": "d4abdf5aa8cdcd632c57173ed5b5bd879da78273c48081973f2d9ead52aaa368",
+        "bytes": 10030332,
+        "triangles": 34584,
+        "vertices_exported": 38470,
+        "materials": 1,
+        "meshes": 1,
+        "surfaces": 1,
+        "bones": 71,
+        "textures": 4,
+        "texture_bytes": 5491271,
+        "morph_targets": 9,
+        "expressions": 10,
+        "clips": [
+          "attack_heavy",
+          "attack_light",
+          "dodge",
+          "hit_react",
+          "idle",
+          "idle_breathing",
+          "intro",
+          "ko",
+          "skill_cast",
+          "victory"
+        ],
+        "bounds_m": [
+          [
+            -1.290650725364685,
+            1.290650725364685
+          ],
+          [
+            3.0691012398165185e-06,
+            2.135059356689453
+          ],
+          [
+            -0.7601019740104675,
+            0.313567191362381
+          ]
+        ],
+        "axis": "Godot Y-up, model +Z front",
+        "root_motion": false,
+        "production_uv": {
+          "triangles": 34584,
+          "overlaps": 0,
+          "degenerate": 0,
+          "coverage_percent": 20.31340487286607,
+          "method": "128-cell broadphase + exact convex triangle clipping; shared edges excluded at 1e-10 UV area"
+        },
+        "texture_details": [
+          {
+            "name": "emissive",
+            "width": 2048,
+            "height": 2048,
+            "bytes": 60312,
+            "sha256": "67e64f68b87411062485f3c75e80b03af72052e1098acc1eaccdc25073390e6a"
+          },
+          {
+            "name": "normal",
+            "width": 2048,
+            "height": 2048,
+            "bytes": 1996160,
+            "sha256": "9b09ec67065e57d353a6e12c47029aac1decad04f36fff74d7301d1f81c7f0a7"
+          },
+          {
+            "name": "base_color",
+            "width": 2048,
+            "height": 2048,
+            "bytes": 1847783,
+            "sha256": "685e6ccdfbcee2bdb441cfc7c6a2fd8dd001f446d6721d87fe39061912545bff"
+          },
+          {
+            "name": "orm",
+            "width": 2048,
+            "height": 2048,
+            "bytes": 1587016,
+            "sha256": "1f2990f8c895bffd8e562e4c9e738d24207a5428ee9c2964375ad391685731ae"
+          }
+        ],
+        "rgba8_mip_estimate_bytes": 89478485
+      }
+    },
+    {
+      "name": "saved_source_export",
+      "status": "pass",
+      "details": {
+        "source_unchanged": true,
+        "glb_sha256": "d4abdf5aa8cdcd632c57173ed5b5bd879da78273c48081973f2d9ead52aaa368"
+      }
+    },
+    {
+      "name": "isolated_reconstruction",
+      "status": "pass",
+      "details": {
+        "glb_sha256": "d4abdf5aa8cdcd632c57173ed5b5bd879da78273c48081973f2d9ead52aaa368",
+        "exact_rebuild": true
+      }
+    },
+    {
+      "name": "godot_import",
+      "status": "pass",
+      "details": "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org\n\n[   0% ] \u001b[90m\u001b[1mfirst_scan_filesystem\u001b[22m | Started Inizializzazione del progetto (5 steps)\u001b[39m\u001b[0m\n[   0% ] \u001b[90m\u001b[1mfirst_scan_filesystem\u001b[22m | Scansione della struttura dei file...\u001b[39m\u001b[0m\n[  16% ] \u001b[90m\u001b[1mfirst_scan_filesystem\u001b[22m | Caricamento dei nomi delle classi globali\u2026\u001b[39m\u001b[0m\n[  33% ] \u001b[90m\u001b[1mfirst_scan_filesystem\u001b[22m | Verifica dei GDExtension...\u001b[39m\u001b[0m\n[  50% ] \u001b[90m\u001b[1mfirst_scan_filesystem\u001b[22m | Creazione degli script autoload...\u001b[39m\u001b[0m\n[  66% ] \u001b[90m\u001b[1mfirst_scan_filesystem\u001b[22m | Inizializzazione delle estensioni...\u001b[39m\u001b[0m\n[  83% ] \u001b[90m\u001b[1mfirst_scan_filesystem\u001b[22m | Avvio della scansione dei file...\u001b[39m\u001b[0m\n\u001b[92m[ DONE ]\u001b[39m \u001b[1mfirst_scan_filesystem\u001b[22m\n\u001b[0m\n[   0% ] \u001b[90m\u001b[1mupdate_scripts_classes\u001b[22m | Started Registrazione delle classi globali\u2026 (37 steps)\u001b[39m\u001b[0m\n[   0% ] \u001b[90m\u001b[1mupdate_scripts_classes\u001b[22m | BranchDefinition\u001b[39m\u001b[0m\n[   2% ] \u001b[90m\u001b[1mupdate_scripts_classes\u001b[22m | CardDefinition\u001b[39m\u001b[0m\n[   5% ] \u001b[90m\u001b[1mupdate_scripts_classes\u001b[22m | EffectActorState\u001b[39m\u001b[0m\n[   7% ] \u001b[90m\u001b[1mupdate_scripts_classes\u001b[22m | EffectCapabilities\u001b[39m\u001b[0m\n[  10% ] \u001b[90m\u001b[1mupdate_scripts_classes\u001b[22m | EffectDefinition\u001b[39m\u001b[0m\n[  13% ] \u001b[90m\u001b[1mupdate_scripts_classes\u001b[22m | EffectEvent\u001b[39m\u001b[0m\n[  15% ] \u001b[90m\u001b[1mupdate_scripts_classes\u001b[22m | EffectRunner\u001b[39m\u001b[0m\n[  18% ] \u001b[90m\u001b[1mupdate_scripts_classes\u001b[22m | CombatantState\u001b[39m\u001b[0m\n[  21% ] \u001b[90m\u001b[1mupdate_scripts_classes\u001b[22m | CombatCatalog\u001b[39m\u001b[0m\n[  23% ] \u001b[90m\u001b[1mupdate_scripts_classes\u001b[22m | CombatEvent\u001b[39m\u001b[0m\n[  26% ] \u001b[90m\u001b[1mupdate_scripts_classes\u001b[22m | CombatInput\u001b[39m\u001b[0m\n[  28% ] \u001b[90m\u001b[1mupdate_scripts_classes\u001b[22m | CombatJson\u001b[39m\u001b[0m\n[  31% ] \u001b[90m\u001b[1mupdate_scripts_classes\u001b[22m | CombatReplay\u001b[39m\u001b[0m\n[  34% ] \u001b[90m\u001b[1mupdate_scripts_classes\u001b[22m | CombatResolver\u001b[39m\u001b[0m\n[  36% ] \u001b[90m\u001b[1mupdate_scripts_classes\u001b[22m | CombatScenarios\u001b[39m\u001b[0m\n[  39% ] \u001b[90m\u001b[1mupdate_scripts_classes\u001b[22m | DamageEvent\u001b[39m\u001b[0m\n[  42% ] \u001b[90m\u001b[1mupdate_scripts_classes\u001b[22m | StatusInstance\u001b[39m\u001b[0m\n[  44% ] \u001b[90m\u001b[1mupdate_scripts_classes\u001b[22m | CanonicalCatalog\u001b[39m\u001b[0m\n[  47% ] \u001b[90m\u001b[1mupdate_scripts_classes\u001b[22m | CanonicalDefinition\u001b[39m\u001b[0m\n[  50% ] \u001b[90m\u001b[1mupdate_scripts_classes\u001b[22m | HeroDefinition\u001b[39m\u001b[0m\n[  52% ] \u001b[90m\u001b[1mupdate_scripts_classes\u001b[22m | CanonicalSchemaValidator\u001b[39m\u001b[0m\n[  55% ] \u001b[90m\u001b[1mupdate_scripts_classes\u001b[22m | FoundationRng\u001b[39m\u001b[0m\n[  57% ] \u001b[90m\u001b[1mupdate_scripts_classes\u001b[22m | EconomyDefinition\u001b[39m\u001b[0m\n[  60% ] \u001b[90m\u001b[1mupdate_scripts_classes\u001b[22m | \u001b[39m\u001b[0m\n[  63% ] \u001b[90m\u001b[1mupdate_scripts_classes\u001b[22m | FighterEventAdapter\u001b[39m\u001b[0m\n[  65% ] \u001b[90m\u001b[1mupdate_scripts_classes\u001b[22m | SolkaelFighter\u001b[39m\u001b[0m\n[  68% ] \u001b[90m\u001b[1mupdate_scripts_classes\u001b[22m | TwoFighterSlice\u001b[39m\u001b[0m\n[  71% ] \u001b[90m\u001b[1mupdate_scripts_classes\u001b[22m | \u001b[39m\u001b[0m\n[  73% ] \u001b[90m\u001b[1mupdate_scripts_classes\u001b[22m | \u001b[39m\u001b[0m\n[  76% ] \u001b[90m\u001b[1mupdate_scripts_classes\u001b[22m | \u001b[39m\u001b[0m\n[  78% ] \u001b[90m\u001b[1mupdate_scripts_classes\u001b[22m | \u001b[39m\u001b[0m\n[  81% ] \u001b[90m\u001b[1mupdate_scripts_classes\u001b[22m | \u001b[39m\u001b[0m\n[  84% ] \u001b[90m\u001b[1mupdate_scripts_classes\u001b[22m | \u001b[39m\u001b[0m\n[  86% ] \u001b[90m\u001b[1mupdate_scripts_classes\u001b[22m | \u001b[39m\u001b[0m\n[  89% ] \u001b[90m\u001b[1mupdate_scripts_classes\u001b[22m | \u001b[39m\u001b[0m\n[  92% ] \u001b[90m\u001b[1mupdate_scripts_classes\u001b[22m | \u001b[39m\u001b[0m\n[  94% ] \u001b[90m\u001b[1mupdate_scripts_classes\u001b[22m | \u001b[39m\u001b[0m\n\u001b[92m[ DONE ]\u001b[39m \u001b[1mupdate_scripts_classes\u001b[22m\n\u001b[0m\n[   0% ] \u001b[90m\u001b[1m_update_scan_actions\u001b[22m | Started Scansione delle azioni... (13 steps)\u001b[39m\u001b[0m\n[   0% ] \u001b[90m\u001b[1m_update_scan_actions\u001b[22m | chr_solkael_lionheart_v001.glb\u001b[39m\u001b[0m\n[   7% ] \u001b[90m\u001b[1m_update_scan_actions\u001b[22m | chr_solkael_lionheart_v002.glb\u001b[39m\u001b[0m\n[  14% ] \u001b[90m\u001b[1m_update_scan_actions\u001b[22m | chr_solkael_lionheart_v002_base_color.png\u001b[39m\u001b[0m\n[  21% ] \u001b[90m\u001b[1m_update_scan_actions\u001b[22m | chr_solkael_lionheart_v002_emissive.png\u001b[39m\u001b[0m\n[  28% ] \u001b[90m\u001b[1m_update_scan_actions\u001b[22m | chr_solkael_lionheart_v002_normal.png\u001b[39m\u001b[0m\n[  35% ] \u001b[90m\u001b[1m_update_scan_actions\u001b[22m | chr_solkael_lionheart_v002_orm.png\u001b[39m\u001b[0m\n[  42% ] \u001b[90m\u001b[1m_update_scan_actions\u001b[22m | chr_solkael_lionheart_v003.glb\u001b[39m\u001b[0m\n[  50% ] \u001b[90m\u001b[1m_update_scan_actions\u001b[22m | chr_solkael_lionheart_v003_base_color.png\u001b[39m\u001b[0m\n[  57% ] \u001b[90m\u001b[1m_update_scan_actions\u001b[22m | chr_solkael_lionheart_v003_emissive.png\u001b[39m\u001b[0m\n[  64% ] \u001b[90m\u001b[1m_update_scan_actions\u001b[22m | chr_solkael_lionheart_v003_normal.png\u001b[39m\u001b[0m\n[  71% ] \u001b[90m\u001b[1m_update_scan_actions\u001b[22m | chr_solkael_lionheart_v003_orm.png\u001b[39m\u001b[0m\n[  78% ] \u001b[90m\u001b[1m_update_scan_actions\u001b[22m | qa_icon.svg\u001b[39m\u001b[0m\n[  85% ] \u001b[90m\u001b[1m_update_scan_actions\u001b[22m | foundation_sample.glb\u001b[39m\u001b[0m\n\u001b[92m[ DONE ]\u001b[39m \u001b[1m_update_scan_actions\u001b[22m\n\u001b[0m\n[   0% ] \u001b[90m\u001b[1mreimport\u001b[22m | Started Reimportando i contenuti (13 steps)\u001b[39m\u001b[0m\n[   0% ] \u001b[90m\u001b[1mreimport\u001b[22m | Preparazione dei file da reimportare...\u001b[39m\u001b[0m\n[   7% ] \u001b[90m\u001b[1mreimport\u001b[22m | Preparazione dei file da reimportare...\u001b[39m\u001b[0m\n[  14% ] \u001b[90m\u001b[1mreimport\u001b[22m | Preparazione dei file da reimportare...\u001b[39m\u001b[0m\n[  21% ] \u001b[90m\u001b[1mreimport\u001b[22m | Preparazione dei file da reimportare...\u001b[39m\u001b[0m\n[  28% ] \u001b[90m\u001b[1mreimport\u001b[22m | Preparazione dei file da reimportare...\u001b[39m\u001b[0m\n[  35% ] \u001b[90m\u001b[1mreimport\u001b[22m | Preparazione dei file da reimportare...\u001b[39m\u001b[0m\n[  42% ] \u001b[90m\u001b[1mreimport\u001b[22m | Preparazione dei file da reimportare...\u001b[39m\u001b[0m\n[  50% ] \u001b[90m\u001b[1mreimport\u001b[22m | Preparazione dei file da reimportare...\u001b[39m\u001b[0m\n[  57% ] \u001b[90m\u001b[1mreimport\u001b[22m | Preparazione dei file da reimportare...\u001b[39m\u001b[0m\n[  64% ] \u001b[90m\u001b[1mreimport\u001b[22m | Preparazione dei file da reimportare...\u001b[39m\u001b[0m\n[  71% ] \u001b[90m\u001b[1mreimport\u001b[22m | Preparazione dei file da reimportare...\u001b[39m\u001b[0m\n[  78% ] \u001b[90m\u001b[1mreimport\u001b[22m | Preparazione dei file da reimportare...\u001b[39m\u001b[0m\n[  85% ] \u001b[90m\u001b[1mreimport\u001b[22m | Preparazione dei file da reimportare...\u001b[39m\u001b[0m\n[   0% ] \u001b[90m\u001b[1mreimport\u001b[22m | Esecuzione delle operazioni di pre-reimportazione...\u001b[39m\u001b[0m\n[   0% ] \u001b[90m\u001b[1mpreload_reimporting_scene\u001b[22m | Started Preparando le scene da ricaricare (1 steps)\u001b[39m\u001b[0m\n[   0% ] \u001b[90m\u001b[1mpreload_reimporting_scene\u001b[22m | Analisi della scena [vuoto]\u001b[39m\u001b[0m\n[  50% ] \u001b[90m\u001b[1mpreload_reimporting_scene\u001b[22m | Preparazione completata.\u001b[39m\u001b[0m\n\u001b[92m[ DONE ]\u001b[39m \u001b[1mpreload_reimporting_scene\u001b[22m\n\u001b[0m\n[   0% ] \u001b[90m\u001b[1mreimport\u001b[22m | chr_solkael_lionheart_v002_base_color.png\u001b[39m\u001b[0m\n[   7% ] \u001b[90m\u001b[1mreimport\u001b[22m | chr_solkael_lionheart_v002_emissive.png\u001b[39m\u001b[0m\n[  14% ] \u001b[90m\u001b[1mreimport\u001b[22m | chr_solkael_lionheart_v002_normal.png\u001b[39m\u001b[0m\n[  21% ] \u001b[90m\u001b[1mreimport\u001b[22m | chr_solkael_lionheart_v002_orm.png\u001b[39m\u001b[0m\n[  28% ] \u001b[90m\u001b[1mreimport\u001b[22m | chr_solkael_lionheart_v003_base_color.png\u001b[39m\u001b[0m\n[  35% ] \u001b[90m\u001b[1mreimport\u001b[22m | chr_solkael_lionheart_v003_emissive.png\u001b[39m\u001b[0m\n[  42% ] \u001b[90m\u001b[1mreimport\u001b[22m | chr_solkael_lionheart_v003_normal.png\u001b[39m\u001b[0m\n[  50% ] \u001b[90m\u001b[1mreimport\u001b[22m | chr_solkael_lionheart_v003_orm.png\u001b[39m\u001b[0m\n[  57% ] \u001b[90m\u001b[1mreimport\u001b[22m | qa_icon.svg\u001b[39m\u001b[0m\n[  64% ] \u001b[90m\u001b[1mreimport\u001b[22m | chr_solkael_lionheart_v001.glb\u001b[39m\u001b[0m\n[   0% ] \u001b[90m\u001b[1mimport\u001b[22m | Started Importazione della scena (104 steps)\u001b[39m\u001b[0m\n[   0% ] \u001b[90m\u001b[1mimport\u001b[22m | Importazione della scena...\u001b[39m\u001b[0m\n[   1% ] \u001b[90m\u001b[1mimport\u001b[22m | Eseguendo lo script personalizzato...\u001b[39m\u001b[0m\n[  99% ] \u001b[90m\u001b[1mimport\u001b[22m | Salvataggio...\u001b[39m\u001b[0m\n\u001b[92m[ DONE ]\u001b[39m \u001b[1mimport\u001b[22m\n\u001b[0m\n[  71% ] \u001b[90m\u001b[1mreimport\u001b[22m | chr_solkael_lionheart_v002.glb\u001b[39m\u001b[0m\n[   0% ] \u001b[90m\u001b[1mimport\u001b[22m | Started Importazione della scena (104 steps)\u001b[39m\u001b[0m\n[   0% ] \u001b[90m\u001b[1mimport\u001b[22m | Importazione della scena...\u001b[39m\u001b[0m\n[   1% ] \u001b[90m\u001b[1mimport\u001b[22m | Eseguendo lo script personalizzato...\u001b[39m\u001b[0m\n[  99% ] \u001b[90m\u001b[1mimport\u001b[22m | Salvataggio...\u001b[39m\u001b[0m\n\u001b[92m[ DONE ]\u001b[39m \u001b[1mimport\u001b[22m\n\u001b[0m\n[  78% ] \u001b[90m\u001b[1mreimport\u001b[22m | chr_solkael_lionheart_v003.glb\u001b[39m\u001b[0m\n[   0% ] \u001b[90m\u001b[1mimport\u001b[22m | Started Importazione della scena (104 steps)\u001b[39m\u001b[0m\n[   0% ] \u001b[90m\u001b[1mimport\u001b[22m | Importazione della scena...\u001b[39m\u001b[0m\n[   1% ] \u001b[90m\u001b[1mimport\u001b[22m | Eseguendo lo script personalizzato...\u001b[39m\u001b[0m\n[  99% ] \u001b[90m\u001b[1mimport\u001b[22m | Salvataggio...\u001b[39m\u001b[0m\n\u001b[92m[ DONE ]\u001b[39m \u001b[1mimport\u001b[22m\n\u001b[0m\n[  85% ] \u001b[90m\u001b[1mreimport\u001b[22m | foundation_sample.glb\u001b[39m\u001b[0m\n[   0% ] \u001b[90m\u001b[1mimport\u001b[22m | Started Importazione della scena (104 steps)\u001b[39m\u001b[0m\n[   0% ] \u001b[90m\u001b[1mimport\u001b[22m | Importazione della scena...\u001b[39m\u001b[0m\n[   1% ] \u001b[90m\u001b[1mimport\u001b[22m | Eseguendo lo script personalizzato...\u001b[39m\u001b[0m\n[  99% ] \u001b[90m\u001b[1mimport\u001b[22m | Salvataggio...\u001b[39m\u001b[0m\n\u001b[92m[ DONE ]\u001b[39m \u001b[1mimport\u001b[22m\n\u001b[0m\n[  92% ] \u001b[90m\u001b[1mreimport\u001b[22m | Finalizzazione dell'importazione delle risorse...\u001b[39m\u001b[0m\n\u001b[92m[ DONE ]\u001b[39m \u001b[1mreimport\u001b[22m\n\u001b[0m\n[   0% ] \u001b[90m\u001b[1mreimport\u001b[22m | Started Reimportando i contenuti (13 steps)\u001b[39m\u001b[0m\n[   0% ] \u001b[90m\u001b[1mreimport\u001b[22m | Esecuzione delle operazioni di post-reimportazione...\u001b[39m\u001b[0m\n\u001b[92m[ DONE ]\u001b[39m \u001b[1mreimport\u001b[22m\n\u001b[0m\n[   0% ] \u001b[90m\u001b[1mloading_editor_layout\u001b[22m | Started Caricamento dell'editor (5 steps)\u001b[39m\u001b[0m\n[   0% ] \u001b[90m\u001b[1mloading_editor_layout\u001b[22m | Caricamento della disposizione dell'editor...\u001b[39m\u001b[0m\n[  16% ] \u001b[90m\u001b[1mloading_editor_layout\u001b[22m | Caricamento dei pannelli\u2026\u001b[39m\u001b[0m\n\u001b[92m[ DONE ]\u001b[39m \u001b[1mloading_editor_layout\u001b[22m\n\u001b[0m\n"
+    },
+    {
+      "name": "v002_real_streams_contacts_seek_cancel",
+      "status": "pass",
+      "details": "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org\n\nSLICE_READY {\"adapter\":\"\",\"load_ms\":355,\"renderer\":\"mobile\"}\nTWO_FIGHTER_TEST_PASS {\"assertions\":240,\"clips\":{\"attack_heavy\":true,\"attack_light\":true,\"dodge\":true,\"hit_react\":true,\"idle\":true,\"intro\":true,\"ko\":true,\"skill_cast\":true,\"victory\":true},\"contacts\":[{\"clip\":\"attack_light\",\"entity\":\"alpha\",\"target_axis_gap_m\":0.00724709033966064,\"visual_step_in_m\":0.1},{\"clip\":\"attack_heavy\",\"entity\":\"alpha\",\"target_axis_gap_m\":0.00158846378326416,\"visual_step_in_m\":0.24},{\"clip\":\"attack_light\",\"entity\":\"beta\",\"target_axis_gap_m\":0.00724709033966064,\"visual_step_in_m\":0.1},{\"clip\":\"attack_heavy\",\"entity\":\"beta\",\"target_axis_gap_m\":0.00158846378326416,\"visual_step_in_m\":0.24},{\"clip\":\"idle\",\"entity\":\"alpha\",\"floor_y_m\":0.00000271759677161754,\"left_fist\":\"(-0.371076, 1.723493, -0.275961)\",\"right_fist\":\"(-0.371076, 1.723493, 0.275961)\"},{\"clip\":\"intro\",\"entity\":\"alpha\",\"floor_y_m\":0.00000271759677161754,\"left_fist\":\"(-0.376771, 1.723346, -0.275961)\",\"right_fist\":\"(-0.376771, 1.723346, 0.275961)\"},{\"clip\":\"attack_light\",\"entity\":\"alpha\",\"floor_y_m\":0.00000271759677161754,\"left_fist\":\"(0.116896, 1.647109, -0.280623)\",\"right_fist\":\"(-0.394849, 1.722194, 0.274072)\"},{\"clip\":\"attack_heavy\",\"entity\":\"alpha\",\"floor_y_m\":0.00000271759677161754,\"left_fist\":\"(-0.290004, 1.717216, -0.270725)\",\"right_fist\":\"(0.158412, 1.519592, 0.280465)\"},{\"clip\":\"skill_cast\",\"entity\":\"alpha\",\"floor_y_m\":0.00000271759677161754,\"left_fist\":\"(-0.279952, 1.306267, 0.029704)\",\"right_fist\":\"(-0.279952, 1.306267, -0.029704)\"},{\"clip\":\"hit_react\",\"entity\":\"alpha\",\"floor_y_m\":0.00000271759677161754,\"left_fist\":\"(-0.440522, 1.709115, -0.273031)\",\"right_fist\":\"(-0.356891, 1.730818, 0.273031)\"},{\"clip\":\"dodge\",\"entity\":\"alpha\",\"floor_y_m\":0.00000271759677161754,\"left_fist\":\"(-0.393018, 1.607545, -0.293209)\",\"right_fist\":\"(-0.349134, 1.801598, 0.227004)\"},{\"clip\":\"ko\",\"entity\":\"alpha\",\"floor_y_m\":0.000000119209289550781,\"left_fist\":\"(-0.67437, 1.168578, -0.855324)\",\"right_fist\":\"(-0.67437, 1.832686, -0.063871)\"},{\"clip\":\"victory\",\"entity\":\"alpha\",\"floor_y_m\":0.00000271759677161754,\"left_fist\":\"(-0.371076, 1.723493, -0.275961)\",\"right_fist\":\"(-0.618374, 2.323873, 0.487967)\"},{\"clip\":\"idle_breathing\",\"entity\":\"alpha\",\"floor_y_m\":0.00000271759677161754,\"left_fist\":\"(-0.371076, 1.723493, -0.275961)\",\"right_fist\":\"(-0.371076, 1.723493, 0.275961)\"},{\"clip\":\"idle\",\"entity\":\"beta\",\"floor_y_m\":0.00000271759677161754,\"left_fist\":\"(0.131076, 1.723493, 0.275961)\",\"right_fist\":\"(0.131076, 1.723493, -0.275961)\"},{\"clip\":\"intro\",\"entity\":\"beta\",\"floor_y_m\":0.00000271759677161754,\"left_fist\":\"(0.136771, 1.723346, 0.275961)\",\"right_fist\":\"(0.136771, 1.723346, -0.275961)\"},{\"clip\":\"attack_light\",\"entity\":\"beta\",\"floor_y_m\":0.00000271759677161754,\"left_fist\":\"(-0.356896, 1.647109, 0.280623)\",\"right_fist\":\"(0.154849, 1.722194, -0.274072)\"},{\"clip\":\"attack_heavy\",\"entity\":\"beta\",\"floor_y_m\":0.00000271759677161754,\"left_fist\":\"(0.050004, 1.717216, 0.270725)\",\"right_fist\":\"(-0.398412, 1.519592, -0.280465)\"},{\"clip\":\"skill_cast\",\"entity\":\"beta\",\"floor_y_m\":0.00000271759677161754,\"left_fist\":\"(0.039952, 1.306267, -0.029704)\",\"right_fist\":\"(0.039952, 1.306267, 0.029704)\"},{\"clip\":\"hit_react\",\"entity\":\"beta\",\"floor_y_m\":0.00000271759677161754,\"left_fist\":\"(0.200522, 1.709115, 0.273031)\",\"right_fist\":\"(0.116891, 1.730818, -0.273031)\"},{\"clip\":\"dodge\",\"entity\":\"beta\",\"floor_y_m\":0.00000271759677161754,\"left_fist\":\"(0.153018, 1.607545, 0.293209)\",\"right_fist\":\"(0.109134, 1.801598, -0.227004)\"},{\"clip\":\"ko\",\"entity\":\"beta\",\"floor_y_m\":0.000000119209289550781,\"left_fist\":\"(0.43437, 1.168578, 0.855324)\",\"right_fist\":\"(0.43437, 1.832686, 0.063871)\"},{\"clip\":\"victory\",\"entity\":\"beta\",\"floor_y_m\":0.00000271759677161754,\"left_fist\":\"(0.131076, 1.723493, 0.275961)\",\"right_fist\":\"(0.378374, 2.323873, -0.487967)\"},{\"clip\":\"idle_breathing\",\"entity\":\"beta\",\"floor_y_m\":0.00000271759677161754,\"left_fist\":\"(0.131076, 1.723493, 0.275961)\",\"right_fist\":\"(0.131076, 1.723493, -0.275961)\"}],\"cues\":{\"barrier\":true,\"hit\":true,\"impact\":true,\"periodic\":true,\"reflection\":true,\"vfx_spawn\":true},\"failures\":[]}\n"
+    },
+    {
+      "name": "v003_real_streams_contacts_seek_cancel",
+      "status": "pass",
+      "details": "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org\n\nSLICE_READY {\"adapter\":\"\",\"load_ms\":367,\"renderer\":\"mobile\"}\nTWO_FIGHTER_TEST_PASS {\"assertions\":240,\"clips\":{\"attack_heavy\":true,\"attack_light\":true,\"dodge\":true,\"hit_react\":true,\"idle\":true,\"intro\":true,\"ko\":true,\"skill_cast\":true,\"victory\":true},\"contacts\":[{\"clip\":\"attack_light\",\"entity\":\"alpha\",\"target_axis_gap_m\":0.00726020336151123,\"visual_step_in_m\":0.1},{\"clip\":\"attack_heavy\",\"entity\":\"alpha\",\"target_axis_gap_m\":0.0103542804718018,\"visual_step_in_m\":0.24},{\"clip\":\"attack_light\",\"entity\":\"beta\",\"target_axis_gap_m\":0.00726020336151123,\"visual_step_in_m\":0.1},{\"clip\":\"attack_heavy\",\"entity\":\"beta\",\"target_axis_gap_m\":0.0103542804718018,\"visual_step_in_m\":0.24},{\"clip\":\"idle\",\"entity\":\"alpha\",\"floor_y_m\":-0.0000000610043571214192,\"left_fist\":\"(-0.371076, 1.72349, -0.275961)\",\"right_fist\":\"(-0.371076, 1.72349, 0.275961)\"},{\"clip\":\"intro\",\"entity\":\"alpha\",\"floor_y_m\":-0.0000000610043571214192,\"left_fist\":\"(-0.376771, 1.723342, -0.275961)\",\"right_fist\":\"(-0.376771, 1.723342, 0.275961)\"},{\"clip\":\"attack_light\",\"entity\":\"alpha\",\"floor_y_m\":-0.0000000610043571214192,\"left_fist\":\"(0.113807, 1.641173, -0.294099)\",\"right_fist\":\"(-0.390937, 1.726045, 0.265577)\"},{\"clip\":\"attack_heavy\",\"entity\":\"alpha\",\"floor_y_m\":-0.0000000610043571214192,\"left_fist\":\"(-0.275591, 1.710921, -0.258429)\",\"right_fist\":\"(0.149646, 1.50836, 0.309096)\"},{\"clip\":\"skill_cast\",\"entity\":\"alpha\",\"floor_y_m\":-0.0000000610043571214192,\"left_fist\":\"(-0.180432, 1.411375, -0.042421)\",\"right_fist\":\"(-0.180432, 1.411375, 0.042421)\"},{\"clip\":\"hit_react\",\"entity\":\"alpha\",\"floor_y_m\":-0.0000000610043571214192,\"left_fist\":\"(-0.440522, 1.709112, -0.273031)\",\"right_fist\":\"(-0.356891, 1.730815, 0.273031)\"},{\"clip\":\"dodge\",\"entity\":\"alpha\",\"floor_y_m\":-0.0000000149011611938477,\"left_fist\":\"(-0.50111, 1.673517, -0.300871)\",\"right_fist\":\"(-0.463275, 1.868277, 0.219553)\"},{\"clip\":\"ko\",\"entity\":\"alpha\",\"floor_y_m\":-0.000000238418579101563,\"left_fist\":\"(-0.631163, 0.091826, -0.281665)\",\"right_fist\":\"(-0.697442, 1.56436, 0.401367)\"},{\"clip\":\"victory\",\"entity\":\"alpha\",\"floor_y_m\":-0.0000000610043571214192,\"left_fist\":\"(-0.39473, 1.741925, -0.275961)\",\"right_fist\":\"(-0.68283, 2.323829, 0.487967)\"},{\"clip\":\"idle_breathing\",\"entity\":\"alpha\",\"floor_y_m\":-0.0000000610043571214192,\"left_fist\":\"(-0.371076, 1.72349, -0.275961)\",\"right_fist\":\"(-0.371076, 1.72349, 0.275961)\"},{\"clip\":\"idle\",\"entity\":\"beta\",\"floor_y_m\":-0.0000000610043571214192,\"left_fist\":\"(0.131076, 1.72349, 0.275961)\",\"right_fist\":\"(0.131076, 1.72349, -0.275961)\"},{\"clip\":\"intro\",\"entity\":\"beta\",\"floor_y_m\":-0.0000000610043571214192,\"left_fist\":\"(0.136771, 1.723342, 0.275961)\",\"right_fist\":\"(0.136771, 1.723342, -0.275961)\"},{\"clip\":\"attack_light\",\"entity\":\"beta\",\"floor_y_m\":-0.0000000610043571214192,\"left_fist\":\"(-0.353807, 1.641173, 0.294099)\",\"right_fist\":\"(0.150937, 1.726045, -0.265577)\"},{\"clip\":\"attack_heavy\",\"entity\":\"beta\",\"floor_y_m\":-0.0000000610043571214192,\"left_fist\":\"(0.035591, 1.710921, 0.258429)\",\"right_fist\":\"(-0.389646, 1.50836, -0.309097)\"},{\"clip\":\"skill_cast\",\"entity\":\"beta\",\"floor_y_m\":-0.0000000610043571214192,\"left_fist\":\"(-0.059568, 1.411375, 0.042421)\",\"right_fist\":\"(-0.059568, 1.411375, -0.042421)\"},{\"clip\":\"hit_react\",\"entity\":\"beta\",\"floor_y_m\":-0.0000000610043571214192,\"left_fist\":\"(0.200522, 1.709112, 0.273031)\",\"right_fist\":\"(0.116891, 1.730815, -0.273031)\"},{\"clip\":\"dodge\",\"entity\":\"beta\",\"floor_y_m\":-0.0000000149011611938477,\"left_fist\":\"(0.26111, 1.673517, 0.300871)\",\"right_fist\":\"(0.223275, 1.868277, -0.219553)\"},{\"clip\":\"ko\",\"entity\":\"beta\",\"floor_y_m\":-0.000000238418579101563,\"left_fist\":\"(0.391163, 0.091826, 0.281665)\",\"right_fist\":\"(0.457442, 1.56436, -0.401367)\"},{\"clip\":\"victory\",\"entity\":\"beta\",\"floor_y_m\":-0.0000000610043571214192,\"left_fist\":\"(0.15473, 1.741925, 0.275961)\",\"right_fist\":\"(0.44283, 2.323829, -0.487967)\"},{\"clip\":\"idle_breathing\",\"entity\":\"beta\",\"floor_y_m\":-0.0000000610043571214192,\"left_fist\":\"(0.131076, 1.72349, 0.275961)\",\"right_fist\":\"(0.131076, 1.72349, -0.275961)\"}],\"cues\":{\"barrier\":true,\"hit\":true,\"impact\":true,\"periodic\":true,\"reflection\":true,\"vfx_spawn\":true},\"failures\":[]}\n"
+    }
+  ],
+  "tested_commit": "ae4add78c7025dfa24e56c6b36d1caa8f4eb7702",
+  "working_tree_changes": false,
+  "metrics": {
+    "v002": {
+      "status": "pass",
+      "sha256": "558a6566b8fa8a473f7f0b5460b68f73a365558b451a81a7208dc1fe82dc4108",
+      "bytes": 7262440,
+      "triangles": 27488,
+      "vertices_exported": 25414,
+      "materials": 1,
+      "meshes": 1,
+      "surfaces": 1,
+      "bones": 71,
+      "textures": 4,
+      "texture_bytes": 4514424,
+      "morph_targets": 9,
+      "expressions": 10,
+      "clips": [
+        "attack_heavy",
+        "attack_light",
+        "dodge",
+        "hit_react",
+        "idle",
+        "idle_breathing",
+        "intro",
+        "ko",
+        "skill_cast",
+        "victory"
+      ],
+      "bounds_m": [
+        [
+          -1.290650725364685,
+          1.290650725364685
+        ],
+        [
+          2.7482608402351616e-06,
+          2.0989999771118164
+        ],
+        [
+          -0.7601019740104675,
+          0.313567191362381
+        ]
+      ],
+      "axis": "Godot Y-up, model +Z front",
+      "root_motion": false,
+      "production_uv": {
+        "triangles": 27488,
+        "overlaps": 0,
+        "degenerate": 0,
+        "coverage_percent": 32.50755820336039,
+        "method": "128-cell broadphase + exact convex triangle clipping; shared edges excluded at 1e-10 UV area"
+      },
+      "texture_details": [
+        {
+          "name": "emissive",
+          "width": 2048,
+          "height": 2048,
+          "bytes": 63129,
+          "sha256": "f832327efa1d8f04ddb344c35c49dae547f6519298c735fbec49668356bb34bd"
+        },
+        {
+          "name": "normal",
+          "width": 2048,
+          "height": 2048,
+          "bytes": 1245990,
+          "sha256": "027438da6c33af1ad90075eb108539e1689a503d71ce147c4425b6badb8e44c9"
+        },
+        {
+          "name": "base_color",
+          "width": 2048,
+          "height": 2048,
+          "bytes": 1683340,
+          "sha256": "e5859d4fc4eb7f0b15a4a26f12f8609e9f667c856c6d088e9235ffb65a04253c"
+        },
+        {
+          "name": "orm",
+          "width": 2048,
+          "height": 2048,
+          "bytes": 1521965,
+          "sha256": "678ea271311442f025df51b04e6afa3c53bac5fa2acc6a1360f1522e5b4a994d"
+        }
+      ],
+      "rgba8_mip_estimate_bytes": 89478485
+    },
+    "v003": {
+      "status": "pass",
+      "sha256": "d4abdf5aa8cdcd632c57173ed5b5bd879da78273c48081973f2d9ead52aaa368",
+      "bytes": 10030332,
+      "triangles": 34584,
+      "vertices_exported": 38470,
+      "materials": 1,
+      "meshes": 1,
+      "surfaces": 1,
+      "bones": 71,
+      "textures": 4,
+      "texture_bytes": 5491271,
+      "morph_targets": 9,
+      "expressions": 10,
+      "clips": [
+        "attack_heavy",
+        "attack_light",
+        "dodge",
+        "hit_react",
+        "idle",
+        "idle_breathing",
+        "intro",
+        "ko",
+        "skill_cast",
+        "victory"
+      ],
+      "bounds_m": [
+        [
+          -1.290650725364685,
+          1.290650725364685
+        ],
+        [
+          3.0691012398165185e-06,
+          2.135059356689453
+        ],
+        [
+          -0.7601019740104675,
+          0.313567191362381
+        ]
+      ],
+      "axis": "Godot Y-up, model +Z front",
+      "root_motion": false,
+      "production_uv": {
+        "triangles": 34584,
+        "overlaps": 0,
+        "degenerate": 0,
+        "coverage_percent": 20.31340487286607,
+        "method": "128-cell broadphase + exact convex triangle clipping; shared edges excluded at 1e-10 UV area"
+      },
+      "texture_details": [
+        {
+          "name": "emissive",
+          "width": 2048,
+          "height": 2048,
+          "bytes": 60312,
+          "sha256": "67e64f68b87411062485f3c75e80b03af72052e1098acc1eaccdc25073390e6a"
+        },
+        {
+          "name": "normal",
+          "width": 2048,
+          "height": 2048,
+          "bytes": 1996160,
+          "sha256": "9b09ec67065e57d353a6e12c47029aac1decad04f36fff74d7301d1f81c7f0a7"
+        },
+        {
+          "name": "base_color",
+          "width": 2048,
+          "height": 2048,
+          "bytes": 1847783,
+          "sha256": "685e6ccdfbcee2bdb441cfc7c6a2fd8dd001f446d6721d87fe39061912545bff"
+        },
+        {
+          "name": "orm",
+          "width": 2048,
+          "height": 2048,
+          "bytes": 1587016,
+          "sha256": "1f2990f8c895bffd8e562e4c9e738d24207a5428ee9c2964375ad391685731ae"
+        }
+      ],
+      "rgba8_mip_estimate_bytes": 89478485
+    },
+    "delta": {
+      "triangles": 7096,
+      "vertices_exported": 13056,
+      "materials": 0,
+      "surfaces": 0,
+      "bones": 0,
+      "textures": 0,
+      "morph_targets": 0,
+      "bytes": 2767892,
+      "texture_bytes": 976847
+    }
+  }
+}

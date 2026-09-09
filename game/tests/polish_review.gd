@@ -108,7 +108,11 @@ func setup() -> void:
 		camera.position = Vector3(.8,1.45,3.5)
 		camera.look_at(Vector3(0,1.3,0))
 	camera.current = true
-	fighter = (load("res://scenes/characters/solkael_lionheart/hero_solkael_lionheart_v002.tscn") as PackedScene).instantiate() as SolkaelFighter
+	var asset_version: String = OS.get_environment("HERO_FIGHTER_ASSET_VERSION")
+	if asset_version == "":
+		asset_version = "v002"
+	assert(asset_version in ["v002", "v003"])
+	fighter = (load("res://scenes/characters/solkael_lionheart/hero_solkael_lionheart_"+asset_version+".tscn") as PackedScene).instantiate() as SolkaelFighter
 	if replay_entity_id != "":
 		fighter.entity_id = replay_entity_id
 	mesh_stage.add_child(fighter)

@@ -281,3 +281,39 @@ persistent listener is live; Connect resynchronizes the indicator, and the real
 reconnect test passed. Personal configuration comparison is recorded in the audit.
 Reports: docs/codex/BLENDER_MCP_SMOKE_TEST.md and BLENDER_MCP_APPROVAL_AUDIT.md.
 No next macro phase is started. Solkael v003 remains suspended.
+
+## Blender MCP integrated; Solkael v003 baseline recovered — 2026-09-09
+
+Owner authorized PR3 integration and a new, head-only Pass 1. PR3's exact green
+head51c4e148e3c736f7c11a5e8a7be1324d27fcac10 was made Ready and merged only into
+revival/v1.20-solkael-polish-device-slice. Updated base:
+904ca9fcd52fdb4ab7e7460e0bf20c38022b3ba8. Main and the historical v1.20 tag are
+unchanged; the technical branch is retained.
+
+Created/published art/solkael-v003-owner-polish from the updated remote base in an
+isolated worktree. Original local branch555d26c, commit72170ba, dirty plan and
+untracked review evidence are preserved. After inspecting all32 old-commit paths,
+31 were recovered in asset commitd24c314 and pipeline/QA commit
+ae4add78c7025dfa24e56c6b36d1caa8f4eb7702. Optional Android packaging changes were
+excluded. No MCP path conflicts. Recovered v003's historical non-head edits are
+baseline only; new authorization covers face/muzzle, eyes/lids, necessary ears,
+mane/sun crown and directly dependent expressions. No gameplay/product decision.
+
+Clean ae4add7 passes all9 v003 gates, exact saved/isolated GLB reconstruction,
+Godot import and240 runtime assertions per v002/v003. LFS fsck passes. Recovered
+v003 remains34,584triangles,38,470exported vertices,71bones,9morphs plus neutral,
+one material/four2048-square maps. Original v002, gameplay and8 Art Lock images
+are preserved. These baseline checks do not validate unperformed Pass 1 edits.
+
+INTERACTIVE PASS 1 NOT STARTED: the actual new turn is on-request/auto_review,
+effort xhigh, whereas the owner requires human reviewer and Ultra. Zero MCP calls,
+no GUI art edits or configuration changes. The owner was asked to restore the
+required task settings. Managed-policy enforcement is not inferred from disk config.
+No Pass 1 renders or ZIP have been produced. Existing face/mane resemblance,
+triangle cost and UV occupancy remain review debt; OWNER REVIEW REQUIRED.
+
+Next authorized action: verify the effective human-review turn, then only the
+scoped head pass with MCP inspection/screenshots, approved code, versioned export,
+validation and the12-image review pack. Stop for owner review before Pass2.
+Plan: docs/exec-plans/active/SOLKAEL_V003_TARGETED_POLISH.md.
+Report: docs/qa/SOLKAEL_V003_PASS1_INTEGRATION.md.
