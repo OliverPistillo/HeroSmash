@@ -1,6 +1,59 @@
 # Blender MCP approval routing audit — 2026-09-09
 
-## Current check after owner restart — 15:39 Europe/Rome
+## Current acceptance after owner selected Ask for approval
+
+**BLENDER MCP OPERATIONAL.** The actual turn now records
+`approval_policy=on-request`, `approvals_reviewer=user`, profile `:workspace` and
+workspace-write restrictions. The owner manually selected this task profile;
+the assistant did not change permission or server configuration. A restart was
+not needed for this profile change to affect the new turn.
+
+| Check | Actual result |
+| --- | --- |
+| Effective turn | `01a08675-2ff6-7c51-9aad-3b418e99a243`, first context at 13:57:02.156Z |
+| approval_policy / approvals_reviewer | `on-request` / `user` in the actual task rollout |
+| execute_blender_code rule | Configured `prompt`; human prompting verified through actual MCP calls and explicit owner confirmation |
+| Server default approval mode | Unset; no fallback value is inferred |
+| Discovery | All six allowlisted tools available; five used, 21 MCP calls total |
+| Human prompt | Owner confirmed the prompt and manual Approve for both marker attempts |
+| Marker | Second exact `print("HS_MCP_APPROVAL_PROBE")` returned the marker successfully |
+| Safe mode | Accepted the marker; later rejected `import os` at line 1 before dispatch |
+| Smoke C–I | All passed; [operations and evidence](BLENDER_MCP_SMOKE_TEST.md) |
+
+The first exact marker call was manually approved but failed with `Could not
+connect to Blender`; it did not execute in Blender. No listener was present.
+The existing user GUI PID 21800 was preserved. A separate GUI PID 8104 was started
+with the existing dedicated profile and `--disable-autoexec`, without a file or
+script argument. Its listener was verified at `127.0.0.1:9876`. The identical
+marker retry received another prompt and manual approval, confirmed by the owner,
+and returned `HS_MCP_APPROVAL_PROBE` before any scene mutation.
+
+The earlier failure to apply on-request after restart is historical. Selecting
+Ask for approval changed the effective task profile and resolved that prerequisite.
+The successful tool interaction establishes the observed human routing; this
+does not pretend that a separate config resolver is the resident Desktop server.
+No new direct resident managed-policy response was available. Earlier separate
+`configRequirements/read` returned null; no managed restriction was bypassed.
+
+The final personal config hash differs from the start: three read-only rules
+were added with `approval_mode=approve` for get_object_info, get_scene_info and
+get_viewport_screenshot. The diff alone does not establish their origin. The
+assistant issued no config write or restoration. Execute remains `prompt`, the
+default remains unset, and on-request/user, the configured sandbox, command,
+allowlist, environment, telemetry, safe mode, host/port and timeouts are unchanged.
+Start SHA-256: `2cbc58e99c9485bffeb2a2fef911f870553cc1f0916c6542c489d4ab63702cdc`.
+Final SHA-256: `1e6aaaada415826a29f4a23a7b46b3b7597cd30344c74f6c05f039438db878c3`.
+No claim that the entire Blender stanza is byte-identical is made.
+
+Sanitized local evidence: `approval-ask-profile-20260909/session-config.json`,
+`live-results.json`, `image-manifest.json` and `preservation-final.json` under the
+documented smoke directory. Personal settings and backups remain outside Git.
+The final configuration comparison is in `config-final-diff.json` alongside it.
+
+This completes only MCP acceptance. Solkael was not opened or edited, no
+installation or protection was changed, and no artistic continuation is authorized.
+
+## Historical check after owner restart — 15:39 Europe/Rome
 
 **LIVE OPERATIONS NOT VERIFIED — SESSION APPROVAL PREREQUISITE NOT MET.**
 The owner restart is observed, but the new turn still runs with `never/user`.

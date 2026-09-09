@@ -249,3 +249,33 @@ documentation is updated. Whitespace/link and published-commit CI results accomp
 PR/task delivery. LIVE OPERATIONS NOT VERIFIED. Effective task approval settings
 must be corrected/verified before another marker attempt; restart alone has not
 resolved them. No automatic permission repair or artistic macro phase follows.
+
+## Blender MCP live acceptance completed — 2026-09-09
+
+**BLENDER MCP OPERATIONAL.** Integration acceptance completed on
+`chore/blender-mcp-bootstrap-fix`, starting at exact clean commit
+`c41114b0c068c4627331ef4b95982c87244e08c9`; the resulting documentation commit and
+its CI are recorded in Draft PR #3. No product decision or artistic phase changed.
+
+The owner selected Ask for approval. The actual task records on-request/user;
+the owner explicitly confirmed human prompts and manual Approve for both exact
+marker attempts. The first failed to connect; starting the existing dedicated GUI
+allowed the identical retry to return HS_MCP_APPROVAL_PROBE. All C–I then passed
+through session MCP, with only the specified GUI listener controls for H.
+Temporary edits were restored numerically and visually. Save/reopen discarded an
+intentional unsaved change. Disconnect/Connect was verified by failed/successful
+MCP reads; the negative import was rejected by actual safe mode before dispatch.
+
+Only integration documentation and authentic smoke screenshots are published.
+The temporary .blend and sanitized detailed results remain in the smoke directory.
+All 45 Solkael, 127 prior evidence, 3822 original-installation and 20 hsfix1 source/
+installed hashes pass; 32 dependency versions, original worktree, main and six
+tags are preserved. Art commit 72170ba remains excluded. Whitespace/link checks,
+artifact hashes and exact published-commit CI accompany delivery. No game runtime,
+production Blender export or historical preflight test was rerun for this docs phase.
+
+Known debt: the add-on sidebar can show Not connected after reopening while its
+persistent listener is live; Connect resynchronizes the indicator, and the real
+reconnect test passed. Personal configuration comparison is recorded in the audit.
+Reports: docs/codex/BLENDER_MCP_SMOKE_TEST.md and BLENDER_MCP_APPROVAL_AUDIT.md.
+No next macro phase is started. Solkael v003 remains suspended.

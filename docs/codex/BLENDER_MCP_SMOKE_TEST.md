@@ -1,6 +1,72 @@
 # Blender MCP smoke test record
 
-## Current resumed attempt after owner restart
+## Current live acceptance after Ask for approval — 2026-09-09
+
+**BLENDER MCP OPERATIONAL.** Effective `on-request/user`, actual human approval
+and successful marker execution were established before C–I. The owner confirmed
+the real prompt and manual Approve for both the initial connection failure and
+the successful identical retry. See [approval evidence](BLENDER_MCP_APPROVAL_AUDIT.md).
+
+The dedicated GUI uses the existing profile, Blender 5.2.1 LTS, add-on 1.6 and
+protocol 5. MCP reports telemetry consent false. All five cloud integrations were
+read as false without changing them. The original user GUI was preserved.
+The first connection failure was resolved by starting the absent dedicated GUI;
+no reinstall, server change or protection change was performed.
+
+| Gate | Result | Actual evidence |
+| --- | --- | --- |
+| C | PASS | MCP created `HS_MCP_SMOKE_20260909_PROBE_CUBE` in the disposable scene; four objects total |
+| D | PASS | get_object_info verified MESH, 8 vertices, 12 edges, 6 polygons, material, transform and bounding box |
+| E | PASS | Actual MCP viewport PNG returned and displayed; blue temporary cube visible |
+| F | PASS | Transform/material changed, inspected numerically and visually, then restored with assertions and a second independent get_object_info |
+| G | PASS | Saved the smoke .blend through MCP, introduced an unsaved Z=0.75 change, reopened with use_scripts=False, then MCP verified restored Z=0 and viewport |
+| H | PASS | GUI listener Disconnect caused expected MCP WinError 10053; Connect restored real MCP scene/object calls on the same smoke scene |
+| I | PASS | Approved `import os` rejected by actual safe mode at line 1; the following should-not-run print was not executed |
+
+All scene work, code, object reads and viewport captures used the actual session
+MCP tools. H used the dedicated GUI listener controls as required by the original
+test definition; it did not stop the listener inside an in-flight execute call.
+No separate SDK client, raw socket or CLI scene script replaced a live gate.
+
+| Property | Before / restored / reopened | Temporary edit |
+| --- | --- | --- |
+| Location | (3, 0, 0) | (3, 0, 1.5) |
+| Euler rotation | (0, 0, 0) | (0, 0, 0.5) |
+| Scale | (1, 1, 1) | (0.75, 1.25, 1.5) |
+| Dimensions | (2, 2, 2) | (1.5, 2.5, 3) |
+| Material RGBA | (0.05, 0.25, 0.8, 1) | (0.95, 0.15, 0.03, 1) |
+
+Actual MCP images, 1400 × 809. The before, restored and reopened PNGs are byte
+identical, SHA-256 `3863b85b5a8c8eb96ad2c3f980387899c69dbaf742a0de51301d1aec8777e7c9`.
+The changed PNG is `9e3861c6759248db245a85898031d1712bdf989fb642b1cb89e87cd13fe667a3`.
+
+![MCP before, also matching restore and reopen](evidence/blender-mcp-20260909/viewport-before.png)
+
+![MCP temporary transform and material edit](evidence/blender-mcp-20260909/viewport-changed.png)
+
+The temporary scene remains only at
+`D:/Dev/HeroSmash/.work/blender-mcp-smoke/approval-ask-profile-20260909/HS_MCP_SMOKE_20260909.blend`.
+Its SHA-256 is `272387d3e57712f1e3a07c98a735a7c95543f881ab9a20de077bc60cc90a0044`.
+No production asset is loaded. The listener is left connected on the same port.
+
+One upstream UI quirk was observed after reopening: the scene sidebar displayed
+Not connected while the persistent runtime listener still served MCP. Connect
+synchronized that indicator with the existing server; then the explicit
+Disconnect/Connect test passed. No upstream code or saved preferences were edited.
+
+The 21 actual calls comprise eight execute requests, one status, three scene
+reads, five object reads and four screenshots. The initial connection failure,
+expected disconnected read and expected safe-mode rejection are recorded
+separately from the 18 successful calls. Local full results and four original PNGs
+remain under `approval-ask-profile-20260909/`; only documentation and relevant
+smoke evidence are published. Historical preflight tests were not rerun.
+
+Final preservation passed: 45/45 Solkael files, 127/127 prior evidence files,
+3822/3822 original installation files, 20/20 hsfix1 source/installed files and
+32/32 runtime versions. Original artistic worktree, main and six tags are
+unchanged. Solkael v003 remains suspended; no automatic next art phase follows.
+
+## Historical resumed attempt after owner restart
 
 **LIVE OPERATIONS NOT VERIFIED.** At15:39 Europe/Rome the restarted Desktop has a
 new process, but the new task turn still resolves approval_policy=never and

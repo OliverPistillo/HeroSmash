@@ -2,21 +2,25 @@
 
 ## Current approval configuration
 
-[The approval audit](BLENDER_MCP_APPROVAL_AUDIT.md) resolved disk config/layers and
-active-task evidence. After an exact backup, only approval_policy changed from
-never to on-request. Reviewer user, per-tool prompt and all Blender protections
-are preserved. The owner restart is now observed, but the new task turn still
-uses never/user with Full Access. No new Blender probe was sent because the
-required effective-policy prerequisite failed. LIVE OPERATIONS NOT VERIFIED.
+**BLENDER MCP OPERATIONAL.** The owner manually changed the task profile from
+Full Access to Ask for approval. The actual turn now uses on-request/user, and
+the owner confirmed real prompts and manual approval for the exact marker calls.
+After starting the existing dedicated GUI, the marker returned successfully and
+[all smoke C–I passed](BLENDER_MCP_SMOKE_TEST.md). The earlier personal config fix
+and failed restart attempt remain documented in [the audit](BLENDER_MCP_APPROVAL_AUDIT.md).
+No further configuration, installation or protection change was made by the assistant.
+The audit records three added read-only approval rules observed during the task;
+the execute rule remains prompt.
 
 ## Current repair supersedes the original installation below
 
 The owner authorized the minimal local hsfix1 repair on 2026-09-09. Current identity
 is upstream5f8ddaf6 plus the identified patch, in a separate installation.
-**SERVER PREFLIGHT PASSED / SESSION TOOLS DISCOVERED / LIVE NOT VERIFIED.**
+**SERVER PREFLIGHT PASSED / SESSION TOOLS DISCOVERED / LIVE OPERATIONS VERIFIED.**
 The reconnected session now reaches the dedicated GUI and returns a real viewport
-image. Acceptance stopped at the first code-approval probe; see the
-[current live report](BLENDER_MCP_LIVE_RECONNECT.md). No configuration was changed.
+image. The current suite also verifies approved code, reversible edits,
+save/reopen, listener reconnect and safe-mode rejection; see the
+[completed smoke report](BLENDER_MCP_SMOKE_TEST.md).
 Use [the repair report and reproduction procedure](BLENDER_MCP_BOOTSTRAP_FIX.md).
 The example TOML now selects the repaired launcher. Original source/venv/add-on
 remain intact for rollback; the following sections document the earlier setup and

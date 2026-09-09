@@ -1,11 +1,13 @@
 # Blender MCP live reconnect acceptance — 2026-09-09
 
-Subsequent approval audit and actual owner restart:
-[current effective-task mismatch](BLENDER_MCP_APPROVAL_AUDIT.md).
-Disk approval_policy is on-request, but the new turn after restart still has
-never/user. The prerequisite failed before the marker probe; no additional
-Blender calls or smoke acceptance followed. LIVE OPERATIONS NOT VERIFIED.
-The report below preserves the actual earlier live results.
+Current acceptance: **BLENDER MCP OPERATIONAL** after the owner selected Ask for
+approval. Effective on-request/user, actual manual approval, the exact marker and
+all C–I gates passed. See [the completed suite](BLENDER_MCP_SMOKE_TEST.md) and
+[approval evidence](BLENDER_MCP_APPROVAL_AUDIT.md). The first marker attempt failed
+for lack of a listener; starting the existing dedicated GUI allowed its approved
+retry to succeed. The report below preserves the earlier partial live results.
+
+## Historical first reconnect attempt
 
 **CONFIGURED / SERVER PREFLIGHT PASSED / SESSION TOOLS DISCOVERED /
 LIVE OPERATIONS NOT VERIFIED.** Acceptance stopped at the first code-approval

@@ -1,5 +1,13 @@
 # Blender MCP bootstrap repair — hsfix1
 
+Current acceptance: **BLENDER MCP OPERATIONAL** after the owner selected Ask for
+approval. The actual turn uses on-request/user; manual approval, marker execution
+and all C–I gates passed. See [the completed suite](BLENDER_MCP_SMOKE_TEST.md) and
+[approval evidence](BLENDER_MCP_APPROVAL_AUDIT.md). The installed bootstrap repair
+remains unchanged. Solkael remains suspended.
+
+## Historical bootstrap and first reconnect checkpoint
+
 Updated 2026-09-09 after the owner-controlled session reconnect.
 **CONFIGURED / SERVER PREFLIGHT PASSED / SESSION TOOLS DISCOVERED /
 LIVE OPERATIONS NOT VERIFIED.** Solkael art remains suspended.
