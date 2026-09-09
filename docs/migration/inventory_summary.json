@@ -1,0 +1,29 @@
+{
+  "baseline": "4ef9eeb503c3c1c69efa36b7b1a3ae5d23cc4816",
+  "main": "66a5ba67f0691b7d50a11fa873f4ed24c80a14ef",
+  "archive_root": ".work/legacy-source",
+  "external_original": "not accessed or modified",
+  "repo_files": 427,
+  "repo_bytes": 94252542,
+  "archive_files": 1152,
+  "archive_bytes": 549296468,
+  "archive_original_material": 299,
+  "archive_git_metadata": 448,
+  "repo_relocations": 393,
+  "duplicate_groups": 86,
+  "duplicate_members": 193,
+  "cross_source_duplicate_groups": 68,
+  "classification_repo": {
+    "reference": 123,
+    "generated-asset": 234,
+    "current-js-behavior-prototype": 67,
+    "canonical-data": 3
+  },
+  "classification_archive": {
+    "reference": 390,
+    "obsolete": 448,
+    "generated-asset": 244,
+    "current-js-behavior-prototype": 67,
+    "canonical-data": 3
+  }
+}

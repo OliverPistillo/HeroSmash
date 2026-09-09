@@ -1,0 +1,1878 @@
+{
+  "schema_version": 1,
+  "scope": "Concept coverage and migration requirements. No runtime hero replacement, stat edits or save/replay aliasing.",
+  "rating_rules": {
+    "exact conceptual replacement": "Explicitly reviewed matching fantasy plus matching unordered branch pair; never numeric or implementation parity.",
+    "strong match": "Direct role/mechanic-family counterpart with a documented conceptual difference.",
+    "partial match": "At least one shared branch or explicit complementary coverage; preserves only part of the oracle need.",
+    "no match": "No shared branch and no explicit reviewed counterpart; not suitable as direct concept mapping."
+  },
+  "oracles": [
+    {
+      "oracle_id": "fireheart",
+      "oracle_name": "Fireheart",
+      "oracle_branches": [
+        "Rage",
+        "Power"
+      ],
+      "primary_candidate": "vulkaryn_emberlord",
+      "complementary_candidates": [],
+      "preservation_requirement": "Rage/Power flame-pressure fantasy; burn timing, resource use and all existing stats stay in the oracle fixture.",
+      "merge_split": "Single conceptual replacement; no data transfer.",
+      "runtime_action": "retain original oracle ID, stats, skills and replay fixtures until a separately versioned gameplay migration passes parity",
+      "cells": [
+        {
+          "candidate_id": "solkael_lionheart",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "fenrox_bloodhowl",
+          "rating": "partial match",
+          "reason": "Shared affinity Rage only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "kitsara_moonveil",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "aethryon_stormwing",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "brumgar_earthhide",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "sylvex_venomkiss",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "rajuro_strikefang",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "morvayne_blackquill",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "karchar_reefbreaker",
+          "rating": "partial match",
+          "reason": "Shared affinity Power only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "elunor_lifethorn",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "gruttar_tuskgold",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "nyxara_nightstep",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "oromir_frostclock",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "rhazgor_crystalhorn",
+          "rating": "partial match",
+          "reason": "Shared affinity Power only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "zelkara_jadeclaw",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "vulkaryn_emberlord",
+          "rating": "exact conceptual replacement",
+          "reason": "Rage/Power flame-pressure fantasy; burn timing, resource use and all existing stats stay in the oracle fixture."
+        },
+        {
+          "candidate_id": "kongaru_ironpalm",
+          "rating": "partial match",
+          "reason": "Shared affinity Power only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "lupika_swiftkick",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "tortugan_runewarden",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "skarvex_stinglash",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        }
+      ]
+    },
+    {
+      "oracle_id": "frostfang",
+      "oracle_name": "Frostfang",
+      "oracle_branches": [
+        "Ice",
+        "Precision"
+      ],
+      "primary_candidate": "oromir_frostclock",
+      "complementary_candidates": [
+        "aethryon_stormwing"
+      ],
+      "preservation_requirement": "Ice control and precision pressure remain required. Oromir supplies control, Aethryon supplies aimed caster presentation; neither source has Ice/Precision together.",
+      "merge_split": "Split coverage; combined Ice/Precision hero kit remains unresolved for future gameplay spec. Keep original oracle active.",
+      "runtime_action": "retain original oracle ID, stats, skills and replay fixtures until a separately versioned gameplay migration passes parity",
+      "cells": [
+        {
+          "candidate_id": "solkael_lionheart",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "fenrox_bloodhowl",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "kitsara_moonveil",
+          "rating": "partial match",
+          "reason": "Shared affinity Precision only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "aethryon_stormwing",
+          "rating": "partial match",
+          "reason": "Complementary reviewed role: Split coverage; combined Ice/Precision hero kit remains unresolved for future gameplay spec. Keep original oracle active."
+        },
+        {
+          "candidate_id": "brumgar_earthhide",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "sylvex_venomkiss",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "rajuro_strikefang",
+          "rating": "partial match",
+          "reason": "Shared affinity Precision only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "morvayne_blackquill",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "karchar_reefbreaker",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "elunor_lifethorn",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "gruttar_tuskgold",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "nyxara_nightstep",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "oromir_frostclock",
+          "rating": "strong match",
+          "reason": "Ice control and precision pressure remain required. Oromir supplies control, Aethryon supplies aimed caster presentation; neither source has Ice/Precision together."
+        },
+        {
+          "candidate_id": "rhazgor_crystalhorn",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "zelkara_jadeclaw",
+          "rating": "partial match",
+          "reason": "Shared affinity Precision only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "vulkaryn_emberlord",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "kongaru_ironpalm",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "lupika_swiftkick",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "tortugan_runewarden",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "skarvex_stinglash",
+          "rating": "partial match",
+          "reason": "Shared affinity Precision only; no direct skill equivalence."
+        }
+      ]
+    },
+    {
+      "oracle_id": "bloodthorn",
+      "oracle_name": "Bloodthorn",
+      "oracle_branches": [
+        "Wound",
+        "Assault"
+      ],
+      "primary_candidate": "sylvex_venomkiss",
+      "complementary_candidates": [
+        "fenrox_bloodhowl",
+        "karchar_reefbreaker"
+      ],
+      "preservation_requirement": "Wound attrition plus Assault melee pressure remain required; existing Wound proc semantics are unchanged.",
+      "merge_split": "Split across Sylvex attrition, Fenrox pressure, Karchar execution. No candidate receives invented Assault/Wound affinity.",
+      "runtime_action": "retain original oracle ID, stats, skills and replay fixtures until a separately versioned gameplay migration passes parity",
+      "cells": [
+        {
+          "candidate_id": "solkael_lionheart",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "fenrox_bloodhowl",
+          "rating": "partial match",
+          "reason": "Complementary reviewed role: Split across Sylvex attrition, Fenrox pressure, Karchar execution. No candidate receives invented Assault/Wound affinity."
+        },
+        {
+          "candidate_id": "kitsara_moonveil",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "aethryon_stormwing",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "brumgar_earthhide",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "sylvex_venomkiss",
+          "rating": "partial match",
+          "reason": "Wound attrition plus Assault melee pressure remain required; existing Wound proc semantics are unchanged."
+        },
+        {
+          "candidate_id": "rajuro_strikefang",
+          "rating": "partial match",
+          "reason": "Shared affinity Assault only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "morvayne_blackquill",
+          "rating": "partial match",
+          "reason": "Shared affinity Wound only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "karchar_reefbreaker",
+          "rating": "partial match",
+          "reason": "Complementary reviewed role: Split across Sylvex attrition, Fenrox pressure, Karchar execution. No candidate receives invented Assault/Wound affinity."
+        },
+        {
+          "candidate_id": "elunor_lifethorn",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "gruttar_tuskgold",
+          "rating": "partial match",
+          "reason": "Shared affinity Assault only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "nyxara_nightstep",
+          "rating": "partial match",
+          "reason": "Shared affinity Wound only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "oromir_frostclock",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "rhazgor_crystalhorn",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "zelkara_jadeclaw",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "vulkaryn_emberlord",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "kongaru_ironpalm",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "lupika_swiftkick",
+          "rating": "partial match",
+          "reason": "Shared affinity Assault only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "tortugan_runewarden",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "skarvex_stinglash",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        }
+      ]
+    },
+    {
+      "oracle_id": "stormblade",
+      "oracle_name": "Stormblade",
+      "oracle_branches": [
+        "Rage",
+        "Assault"
+      ],
+      "primary_candidate": "fenrox_bloodhowl",
+      "complementary_candidates": [],
+      "preservation_requirement": "Rage/Assault aggressive striker and burning chains. Exact means concept only, not skill implementation equivalence.",
+      "merge_split": "Single conceptual replacement.",
+      "runtime_action": "retain original oracle ID, stats, skills and replay fixtures until a separately versioned gameplay migration passes parity",
+      "cells": [
+        {
+          "candidate_id": "solkael_lionheart",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "fenrox_bloodhowl",
+          "rating": "exact conceptual replacement",
+          "reason": "Rage/Assault aggressive striker and burning chains. Exact means concept only, not skill implementation equivalence."
+        },
+        {
+          "candidate_id": "kitsara_moonveil",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "aethryon_stormwing",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "brumgar_earthhide",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "sylvex_venomkiss",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "rajuro_strikefang",
+          "rating": "partial match",
+          "reason": "Shared affinity Assault only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "morvayne_blackquill",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "karchar_reefbreaker",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "elunor_lifethorn",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "gruttar_tuskgold",
+          "rating": "partial match",
+          "reason": "Shared affinity Assault only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "nyxara_nightstep",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "oromir_frostclock",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "rhazgor_crystalhorn",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "zelkara_jadeclaw",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "vulkaryn_emberlord",
+          "rating": "partial match",
+          "reason": "Shared affinity Rage only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "kongaru_ironpalm",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "lupika_swiftkick",
+          "rating": "partial match",
+          "reason": "Shared affinity Assault only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "tortugan_runewarden",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "skarvex_stinglash",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        }
+      ]
+    },
+    {
+      "oracle_id": "duskwhisper",
+      "oracle_name": "Duskwhisper",
+      "oracle_branches": [
+        "Essence",
+        "Shield"
+      ],
+      "primary_candidate": "tortugan_runewarden",
+      "complementary_candidates": [],
+      "preservation_requirement": "Essence/Shield defensive caster, including source oracle magic attack behavior.",
+      "merge_split": "Single conceptual counterpart; ward visual does not add shield mechanics.",
+      "runtime_action": "retain original oracle ID, stats, skills and replay fixtures until a separately versioned gameplay migration passes parity",
+      "cells": [
+        {
+          "candidate_id": "solkael_lionheart",
+          "rating": "partial match",
+          "reason": "Shared affinity Shield only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "fenrox_bloodhowl",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "kitsara_moonveil",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "aethryon_stormwing",
+          "rating": "partial match",
+          "reason": "Shared affinity Essence only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "brumgar_earthhide",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "sylvex_venomkiss",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "rajuro_strikefang",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "morvayne_blackquill",
+          "rating": "partial match",
+          "reason": "Shared affinity Essence only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "karchar_reefbreaker",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "elunor_lifethorn",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "gruttar_tuskgold",
+          "rating": "partial match",
+          "reason": "Shared affinity Shield only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "nyxara_nightstep",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "oromir_frostclock",
+          "rating": "partial match",
+          "reason": "Shared affinity Essence only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "rhazgor_crystalhorn",
+          "rating": "partial match",
+          "reason": "Shared affinity Shield only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "zelkara_jadeclaw",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "vulkaryn_emberlord",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "kongaru_ironpalm",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "lupika_swiftkick",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "tortugan_runewarden",
+          "rating": "strong match",
+          "reason": "Essence/Shield defensive caster, including source oracle magic attack behavior."
+        },
+        {
+          "candidate_id": "skarvex_stinglash",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        }
+      ]
+    },
+    {
+      "oracle_id": "windrider",
+      "oracle_name": "Windrider",
+      "oracle_branches": [
+        "Dodge",
+        "Precision"
+      ],
+      "primary_candidate": "kitsara_moonveil",
+      "complementary_candidates": [
+        "lupika_swiftkick"
+      ],
+      "preservation_requirement": "Dodge/Precision evasion and accurate strikes retained through Kitsara; Lupika offers alternate movement identity only.",
+      "merge_split": "Kitsara also covers Shadowflame at concept level. Keep both original oracle IDs and stat/crit profiles distinct in tests.",
+      "runtime_action": "retain original oracle ID, stats, skills and replay fixtures until a separately versioned gameplay migration passes parity",
+      "cells": [
+        {
+          "candidate_id": "solkael_lionheart",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "fenrox_bloodhowl",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "kitsara_moonveil",
+          "rating": "exact conceptual replacement",
+          "reason": "Dodge/Precision evasion and accurate strikes retained through Kitsara; Lupika offers alternate movement identity only."
+        },
+        {
+          "candidate_id": "aethryon_stormwing",
+          "rating": "partial match",
+          "reason": "Shared affinity Precision only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "brumgar_earthhide",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "sylvex_venomkiss",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "rajuro_strikefang",
+          "rating": "partial match",
+          "reason": "Shared affinity Precision only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "morvayne_blackquill",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "karchar_reefbreaker",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "elunor_lifethorn",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "gruttar_tuskgold",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "nyxara_nightstep",
+          "rating": "partial match",
+          "reason": "Shared affinity Dodge only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "oromir_frostclock",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "rhazgor_crystalhorn",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "zelkara_jadeclaw",
+          "rating": "partial match",
+          "reason": "Shared affinity Dodge, Precision only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "vulkaryn_emberlord",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "kongaru_ironpalm",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "lupika_swiftkick",
+          "rating": "partial match",
+          "reason": "Complementary reviewed role: Kitsara also covers Shadowflame at concept level. Keep both original oracle IDs and stat/crit profiles distinct in tests."
+        },
+        {
+          "candidate_id": "tortugan_runewarden",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "skarvex_stinglash",
+          "rating": "partial match",
+          "reason": "Shared affinity Precision only; no direct skill equivalence."
+        }
+      ]
+    },
+    {
+      "oracle_id": "darkbane",
+      "oracle_name": "Darkbane",
+      "oracle_branches": [
+        "Power",
+        "Wound"
+      ],
+      "primary_candidate": "karchar_reefbreaker",
+      "complementary_candidates": [],
+      "preservation_requirement": "Power/Wound breaker; magic oracle damage type is not automatically converted to physical because of anchor art.",
+      "merge_split": "Single conceptual counterpart; future presentation adapter must preserve resolver type.",
+      "runtime_action": "retain original oracle ID, stats, skills and replay fixtures until a separately versioned gameplay migration passes parity",
+      "cells": [
+        {
+          "candidate_id": "solkael_lionheart",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "fenrox_bloodhowl",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "kitsara_moonveil",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "aethryon_stormwing",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "brumgar_earthhide",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "sylvex_venomkiss",
+          "rating": "partial match",
+          "reason": "Shared affinity Wound only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "rajuro_strikefang",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "morvayne_blackquill",
+          "rating": "partial match",
+          "reason": "Shared affinity Wound only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "karchar_reefbreaker",
+          "rating": "strong match",
+          "reason": "Power/Wound breaker; magic oracle damage type is not automatically converted to physical because of anchor art."
+        },
+        {
+          "candidate_id": "elunor_lifethorn",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "gruttar_tuskgold",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "nyxara_nightstep",
+          "rating": "partial match",
+          "reason": "Shared affinity Wound only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "oromir_frostclock",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "rhazgor_crystalhorn",
+          "rating": "partial match",
+          "reason": "Shared affinity Power only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "zelkara_jadeclaw",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "vulkaryn_emberlord",
+          "rating": "partial match",
+          "reason": "Shared affinity Power only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "kongaru_ironpalm",
+          "rating": "partial match",
+          "reason": "Shared affinity Power only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "lupika_swiftkick",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "tortugan_runewarden",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "skarvex_stinglash",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        }
+      ]
+    },
+    {
+      "oracle_id": "nightshade",
+      "oracle_name": "Nightshade",
+      "oracle_branches": [
+        "Toxin",
+        "Dodge"
+      ],
+      "primary_candidate": "sylvex_venomkiss",
+      "complementary_candidates": [
+        "skarvex_stinglash",
+        "kitsara_moonveil"
+      ],
+      "preservation_requirement": "Toxin application and evasive assassin needs preserved. Sylvex/Skarvex supply toxin identity; Kitsara supplies evasion language.",
+      "merge_split": "Split coverage; Toxin/Dodge combined affinity remains absent. Do not erase the oracle fixture.",
+      "runtime_action": "retain original oracle ID, stats, skills and replay fixtures until a separately versioned gameplay migration passes parity",
+      "cells": [
+        {
+          "candidate_id": "solkael_lionheart",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "fenrox_bloodhowl",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "kitsara_moonveil",
+          "rating": "partial match",
+          "reason": "Complementary reviewed role: Split coverage; Toxin/Dodge combined affinity remains absent. Do not erase the oracle fixture."
+        },
+        {
+          "candidate_id": "aethryon_stormwing",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "brumgar_earthhide",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "sylvex_venomkiss",
+          "rating": "strong match",
+          "reason": "Toxin application and evasive assassin needs preserved. Sylvex/Skarvex supply toxin identity; Kitsara supplies evasion language."
+        },
+        {
+          "candidate_id": "rajuro_strikefang",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "morvayne_blackquill",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "karchar_reefbreaker",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "elunor_lifethorn",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "gruttar_tuskgold",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "nyxara_nightstep",
+          "rating": "partial match",
+          "reason": "Shared affinity Dodge only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "oromir_frostclock",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "rhazgor_crystalhorn",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "zelkara_jadeclaw",
+          "rating": "partial match",
+          "reason": "Shared affinity Dodge only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "vulkaryn_emberlord",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "kongaru_ironpalm",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "lupika_swiftkick",
+          "rating": "partial match",
+          "reason": "Shared affinity Dodge only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "tortugan_runewarden",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "skarvex_stinglash",
+          "rating": "partial match",
+          "reason": "Complementary reviewed role: Split coverage; Toxin/Dodge combined affinity remains absent. Do not erase the oracle fixture."
+        }
+      ]
+    },
+    {
+      "oracle_id": "emberforge",
+      "oracle_name": "Emberforge",
+      "oracle_branches": [
+        "Shield",
+        "Power"
+      ],
+      "primary_candidate": "rhazgor_crystalhorn",
+      "complementary_candidates": [],
+      "preservation_requirement": "Shield/Power defensive pressure; shield art is not evidence of new on-block damage.",
+      "merge_split": "Single conceptual counterpart, no new mechanics.",
+      "runtime_action": "retain original oracle ID, stats, skills and replay fixtures until a separately versioned gameplay migration passes parity",
+      "cells": [
+        {
+          "candidate_id": "solkael_lionheart",
+          "rating": "partial match",
+          "reason": "Shared affinity Shield only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "fenrox_bloodhowl",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "kitsara_moonveil",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "aethryon_stormwing",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "brumgar_earthhide",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "sylvex_venomkiss",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "rajuro_strikefang",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "morvayne_blackquill",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "karchar_reefbreaker",
+          "rating": "partial match",
+          "reason": "Shared affinity Power only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "elunor_lifethorn",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "gruttar_tuskgold",
+          "rating": "partial match",
+          "reason": "Shared affinity Shield only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "nyxara_nightstep",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "oromir_frostclock",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "rhazgor_crystalhorn",
+          "rating": "strong match",
+          "reason": "Shield/Power defensive pressure; shield art is not evidence of new on-block damage."
+        },
+        {
+          "candidate_id": "zelkara_jadeclaw",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "vulkaryn_emberlord",
+          "rating": "partial match",
+          "reason": "Shared affinity Power only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "kongaru_ironpalm",
+          "rating": "partial match",
+          "reason": "Shared affinity Power only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "lupika_swiftkick",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "tortugan_runewarden",
+          "rating": "partial match",
+          "reason": "Shared affinity Shield only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "skarvex_stinglash",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        }
+      ]
+    },
+    {
+      "oracle_id": "ironfist",
+      "oracle_name": "Ironfist",
+      "oracle_branches": [
+        "Guardian",
+        "Healing"
+      ],
+      "primary_candidate": "brumgar_earthhide",
+      "complementary_candidates": [
+        "elunor_lifethorn"
+      ],
+      "preservation_requirement": "Guardian/Healing sustain brawler through Brumgar; Elunor adds a distinct healer presentation.",
+      "merge_split": "Brumgar is primary; Elunor is complementary coverage, not an ID alias.",
+      "runtime_action": "retain original oracle ID, stats, skills and replay fixtures until a separately versioned gameplay migration passes parity",
+      "cells": [
+        {
+          "candidate_id": "solkael_lionheart",
+          "rating": "partial match",
+          "reason": "Shared affinity Guardian only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "fenrox_bloodhowl",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "kitsara_moonveil",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "aethryon_stormwing",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "brumgar_earthhide",
+          "rating": "exact conceptual replacement",
+          "reason": "Guardian/Healing sustain brawler through Brumgar; Elunor adds a distinct healer presentation."
+        },
+        {
+          "candidate_id": "sylvex_venomkiss",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "rajuro_strikefang",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "morvayne_blackquill",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "karchar_reefbreaker",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "elunor_lifethorn",
+          "rating": "partial match",
+          "reason": "Complementary reviewed role: Brumgar is primary; Elunor is complementary coverage, not an ID alias."
+        },
+        {
+          "candidate_id": "gruttar_tuskgold",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "nyxara_nightstep",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "oromir_frostclock",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "rhazgor_crystalhorn",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "zelkara_jadeclaw",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "vulkaryn_emberlord",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "kongaru_ironpalm",
+          "rating": "partial match",
+          "reason": "Shared affinity Guardian only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "lupika_swiftkick",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "tortugan_runewarden",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "skarvex_stinglash",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        }
+      ]
+    },
+    {
+      "oracle_id": "darion",
+      "oracle_name": "Darion Starseer",
+      "oracle_branches": [
+        "Essence",
+        "Precision"
+      ],
+      "primary_candidate": "aethryon_stormwing",
+      "complementary_candidates": [],
+      "preservation_requirement": "Essence/Precision aimed magic caster; focus and crit remain resolver values.",
+      "merge_split": "Single conceptual counterpart; lightning is presentation, not a new branch.",
+      "runtime_action": "retain original oracle ID, stats, skills and replay fixtures until a separately versioned gameplay migration passes parity",
+      "cells": [
+        {
+          "candidate_id": "solkael_lionheart",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "fenrox_bloodhowl",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "kitsara_moonveil",
+          "rating": "partial match",
+          "reason": "Shared affinity Precision only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "aethryon_stormwing",
+          "rating": "strong match",
+          "reason": "Essence/Precision aimed magic caster; focus and crit remain resolver values."
+        },
+        {
+          "candidate_id": "brumgar_earthhide",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "sylvex_venomkiss",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "rajuro_strikefang",
+          "rating": "partial match",
+          "reason": "Shared affinity Precision only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "morvayne_blackquill",
+          "rating": "partial match",
+          "reason": "Shared affinity Essence only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "karchar_reefbreaker",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "elunor_lifethorn",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "gruttar_tuskgold",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "nyxara_nightstep",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "oromir_frostclock",
+          "rating": "partial match",
+          "reason": "Shared affinity Essence only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "rhazgor_crystalhorn",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "zelkara_jadeclaw",
+          "rating": "partial match",
+          "reason": "Shared affinity Precision only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "vulkaryn_emberlord",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "kongaru_ironpalm",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "lupika_swiftkick",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "tortugan_runewarden",
+          "rating": "partial match",
+          "reason": "Shared affinity Essence only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "skarvex_stinglash",
+          "rating": "partial match",
+          "reason": "Shared affinity Precision only; no direct skill equivalence."
+        }
+      ]
+    },
+    {
+      "oracle_id": "shadowflame",
+      "oracle_name": "Shadowflame",
+      "oracle_branches": [
+        "Precision",
+        "Dodge"
+      ],
+      "primary_candidate": "kitsara_moonveil",
+      "complementary_candidates": [
+        "zelkara_jadeclaw",
+        "rajuro_strikefang"
+      ],
+      "preservation_requirement": "Precision/Dodge high-crit duelist; original crit and critD fixtures remain independent of Windrider.",
+      "merge_split": "Kitsara shared concept; reserve Zelkara provides future counter variant and Rajuro precision burst. No oracle ID merge.",
+      "runtime_action": "retain original oracle ID, stats, skills and replay fixtures until a separately versioned gameplay migration passes parity",
+      "cells": [
+        {
+          "candidate_id": "solkael_lionheart",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "fenrox_bloodhowl",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "kitsara_moonveil",
+          "rating": "strong match",
+          "reason": "Precision/Dodge high-crit duelist; original crit and critD fixtures remain independent of Windrider."
+        },
+        {
+          "candidate_id": "aethryon_stormwing",
+          "rating": "partial match",
+          "reason": "Shared affinity Precision only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "brumgar_earthhide",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "sylvex_venomkiss",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "rajuro_strikefang",
+          "rating": "partial match",
+          "reason": "Complementary reviewed role: Kitsara shared concept; reserve Zelkara provides future counter variant and Rajuro precision burst. No oracle ID merge."
+        },
+        {
+          "candidate_id": "morvayne_blackquill",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "karchar_reefbreaker",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "elunor_lifethorn",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "gruttar_tuskgold",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "nyxara_nightstep",
+          "rating": "partial match",
+          "reason": "Shared affinity Dodge only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "oromir_frostclock",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "rhazgor_crystalhorn",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "zelkara_jadeclaw",
+          "rating": "partial match",
+          "reason": "Complementary reviewed role: Kitsara shared concept; reserve Zelkara provides future counter variant and Rajuro precision burst. No oracle ID merge."
+        },
+        {
+          "candidate_id": "vulkaryn_emberlord",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "kongaru_ironpalm",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "lupika_swiftkick",
+          "rating": "partial match",
+          "reason": "Shared affinity Dodge only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "tortugan_runewarden",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "skarvex_stinglash",
+          "rating": "partial match",
+          "reason": "Shared affinity Precision only; no direct skill equivalence."
+        }
+      ]
+    },
+    {
+      "oracle_id": "steelbane",
+      "oracle_name": "Steelbane",
+      "oracle_branches": [
+        "Assault",
+        "Guardian"
+      ],
+      "primary_candidate": "fenrox_bloodhowl",
+      "complementary_candidates": [
+        "solkael_lionheart",
+        "gruttar_tuskgold"
+      ],
+      "preservation_requirement": "Assault/Guardian frontline pressure must survive; no sourced launch candidate owns this exact pair.",
+      "merge_split": "Split Fenrox pressure/Solkael guard; reserve Gruttar is an alternate disruptive concept, not Guardian replacement.",
+      "runtime_action": "retain original oracle ID, stats, skills and replay fixtures until a separately versioned gameplay migration passes parity",
+      "cells": [
+        {
+          "candidate_id": "solkael_lionheart",
+          "rating": "partial match",
+          "reason": "Complementary reviewed role: Split Fenrox pressure/Solkael guard; reserve Gruttar is an alternate disruptive concept, not Guardian replacement."
+        },
+        {
+          "candidate_id": "fenrox_bloodhowl",
+          "rating": "partial match",
+          "reason": "Assault/Guardian frontline pressure must survive; no sourced launch candidate owns this exact pair."
+        },
+        {
+          "candidate_id": "kitsara_moonveil",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "aethryon_stormwing",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "brumgar_earthhide",
+          "rating": "partial match",
+          "reason": "Shared affinity Guardian only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "sylvex_venomkiss",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "rajuro_strikefang",
+          "rating": "partial match",
+          "reason": "Shared affinity Assault only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "morvayne_blackquill",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "karchar_reefbreaker",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "elunor_lifethorn",
+          "rating": "partial match",
+          "reason": "Shared affinity Guardian only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "gruttar_tuskgold",
+          "rating": "partial match",
+          "reason": "Complementary reviewed role: Split Fenrox pressure/Solkael guard; reserve Gruttar is an alternate disruptive concept, not Guardian replacement."
+        },
+        {
+          "candidate_id": "nyxara_nightstep",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "oromir_frostclock",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "rhazgor_crystalhorn",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "zelkara_jadeclaw",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "vulkaryn_emberlord",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "kongaru_ironpalm",
+          "rating": "partial match",
+          "reason": "Shared affinity Guardian only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "lupika_swiftkick",
+          "rating": "partial match",
+          "reason": "Shared affinity Assault only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "tortugan_runewarden",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "skarvex_stinglash",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        }
+      ]
+    },
+    {
+      "oracle_id": "voidwalker",
+      "oracle_name": "Voidwalker",
+      "oracle_branches": [
+        "Power",
+        "Essence"
+      ],
+      "primary_candidate": "morvayne_blackquill",
+      "complementary_candidates": [
+        "vulkaryn_emberlord",
+        "tortugan_runewarden"
+      ],
+      "preservation_requirement": "Power/Essence burst-magic requirement preserved in old oracle; Morvayne magic, Vulkaryn heavy burst and Tortugan wards are partial concepts.",
+      "merge_split": "Split coverage; Power/Essence combined candidate kit unresolved. No stats are transplanted.",
+      "runtime_action": "retain original oracle ID, stats, skills and replay fixtures until a separately versioned gameplay migration passes parity",
+      "cells": [
+        {
+          "candidate_id": "solkael_lionheart",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "fenrox_bloodhowl",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "kitsara_moonveil",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "aethryon_stormwing",
+          "rating": "partial match",
+          "reason": "Shared affinity Essence only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "brumgar_earthhide",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "sylvex_venomkiss",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "rajuro_strikefang",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "morvayne_blackquill",
+          "rating": "partial match",
+          "reason": "Power/Essence burst-magic requirement preserved in old oracle; Morvayne magic, Vulkaryn heavy burst and Tortugan wards are partial concepts."
+        },
+        {
+          "candidate_id": "karchar_reefbreaker",
+          "rating": "partial match",
+          "reason": "Shared affinity Power only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "elunor_lifethorn",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "gruttar_tuskgold",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "nyxara_nightstep",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "oromir_frostclock",
+          "rating": "partial match",
+          "reason": "Shared affinity Essence only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "rhazgor_crystalhorn",
+          "rating": "partial match",
+          "reason": "Shared affinity Power only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "zelkara_jadeclaw",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "vulkaryn_emberlord",
+          "rating": "partial match",
+          "reason": "Complementary reviewed role: Split coverage; Power/Essence combined candidate kit unresolved. No stats are transplanted."
+        },
+        {
+          "candidate_id": "kongaru_ironpalm",
+          "rating": "partial match",
+          "reason": "Shared affinity Power only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "lupika_swiftkick",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "tortugan_runewarden",
+          "rating": "partial match",
+          "reason": "Complementary reviewed role: Split coverage; Power/Essence combined candidate kit unresolved. No stats are transplanted."
+        },
+        {
+          "candidate_id": "skarvex_stinglash",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        }
+      ]
+    },
+    {
+      "oracle_id": "blackthorn",
+      "oracle_name": "Blackthorn",
+      "oracle_branches": [
+        "Toxin",
+        "Wound"
+      ],
+      "primary_candidate": "sylvex_venomkiss",
+      "complementary_candidates": [
+        "skarvex_stinglash"
+      ],
+      "preservation_requirement": "Toxin/Wound attrition through Sylvex. Skarvex adds precise toxin execution but is not Wound-affiliated.",
+      "merge_split": "Sylvex also conceptually covers Nightshade; toxin/evasion and toxin/wound fixtures stay distinct.",
+      "runtime_action": "retain original oracle ID, stats, skills and replay fixtures until a separately versioned gameplay migration passes parity",
+      "cells": [
+        {
+          "candidate_id": "solkael_lionheart",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "fenrox_bloodhowl",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "kitsara_moonveil",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "aethryon_stormwing",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "brumgar_earthhide",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "sylvex_venomkiss",
+          "rating": "exact conceptual replacement",
+          "reason": "Toxin/Wound attrition through Sylvex. Skarvex adds precise toxin execution but is not Wound-affiliated."
+        },
+        {
+          "candidate_id": "rajuro_strikefang",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "morvayne_blackquill",
+          "rating": "partial match",
+          "reason": "Shared affinity Wound only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "karchar_reefbreaker",
+          "rating": "partial match",
+          "reason": "Shared affinity Wound only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "elunor_lifethorn",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "gruttar_tuskgold",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "nyxara_nightstep",
+          "rating": "partial match",
+          "reason": "Shared affinity Wound only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "oromir_frostclock",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "rhazgor_crystalhorn",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "zelkara_jadeclaw",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "vulkaryn_emberlord",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "kongaru_ironpalm",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "lupika_swiftkick",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "tortugan_runewarden",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "skarvex_stinglash",
+          "rating": "partial match",
+          "reason": "Complementary reviewed role: Sylvex also conceptually covers Nightshade; toxin/evasion and toxin/wound fixtures stay distinct."
+        }
+      ]
+    },
+    {
+      "oracle_id": "skydancer",
+      "oracle_name": "Skydancer",
+      "oracle_branches": [
+        "Dodge",
+        "Healing"
+      ],
+      "primary_candidate": "lupika_swiftkick",
+      "complementary_candidates": [
+        "elunor_lifethorn",
+        "kitsara_moonveil"
+      ],
+      "preservation_requirement": "Dodge/Healing evasive sustain needs remain in the oracle. Lupika/Kitsara cover evasion; Elunor healing.",
+      "merge_split": "Split coverage; no launch candidate is assigned unsourced Dodge/Healing. Combined kit is a future spec decision.",
+      "runtime_action": "retain original oracle ID, stats, skills and replay fixtures until a separately versioned gameplay migration passes parity",
+      "cells": [
+        {
+          "candidate_id": "solkael_lionheart",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "fenrox_bloodhowl",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "kitsara_moonveil",
+          "rating": "partial match",
+          "reason": "Complementary reviewed role: Split coverage; no launch candidate is assigned unsourced Dodge/Healing. Combined kit is a future spec decision."
+        },
+        {
+          "candidate_id": "aethryon_stormwing",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "brumgar_earthhide",
+          "rating": "partial match",
+          "reason": "Shared affinity Healing only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "sylvex_venomkiss",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "rajuro_strikefang",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "morvayne_blackquill",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "karchar_reefbreaker",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "elunor_lifethorn",
+          "rating": "partial match",
+          "reason": "Complementary reviewed role: Split coverage; no launch candidate is assigned unsourced Dodge/Healing. Combined kit is a future spec decision."
+        },
+        {
+          "candidate_id": "gruttar_tuskgold",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "nyxara_nightstep",
+          "rating": "partial match",
+          "reason": "Shared affinity Dodge only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "oromir_frostclock",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "rhazgor_crystalhorn",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "zelkara_jadeclaw",
+          "rating": "partial match",
+          "reason": "Shared affinity Dodge only; no direct skill equivalence."
+        },
+        {
+          "candidate_id": "vulkaryn_emberlord",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "kongaru_ironpalm",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "lupika_swiftkick",
+          "rating": "partial match",
+          "reason": "Dodge/Healing evasive sustain needs remain in the oracle. Lupika/Kitsara cover evasion; Elunor healing."
+        },
+        {
+          "candidate_id": "tortugan_runewarden",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        },
+        {
+          "candidate_id": "skarvex_stinglash",
+          "rating": "no match",
+          "reason": "No shared affinity or reviewed direct role correspondence."
+        }
+      ]
+    }
+  ]
+}

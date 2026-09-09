@@ -1,0 +1,201 @@
+{
+  "schema_version": 1,
+  "status": "v1 production direction; implementation remains future work",
+  "adjectives": [
+    "premium arcade",
+    "fantasy-tech",
+    "confident fighters",
+    "tactile",
+    "readable on a landscape phone"
+  ],
+  "forbidden": [
+    "generic web-dashboard card grids for every screen",
+    "Dota/Valve silhouettes, branded UI or production art copied into the game",
+    "uncontrolled neon and persistent full-screen glow",
+    "mixed generated art styles without an authored shape/material guide",
+    "microscopic text",
+    "ornament that competes with combat state"
+  ],
+  "color_tokens": {
+    "canvas": "#0D1420",
+    "surface": "#1C2838",
+    "surface_raised": "#28374B",
+    "text_primary": "#F4F0E6",
+    "text_secondary": "#C2CFDF",
+    "border": "#73839B",
+    "accent_gold": "#E6BA61",
+    "focus": "#91DDEF",
+    "danger": "#F39494",
+    "normal": "#C6D1DD",
+    "epic": "#C4A1F5",
+    "legendary": "#F2C86D"
+  },
+  "token_philosophy": "Neutral dark surfaces carry content; gold marks brand and primary action, branch colors identify affinity and rarity accents frame acquisition value. Never rely on color alone.",
+  "typography": {
+    "display": {
+      "size_logical_px": 24,
+      "weight": 700,
+      "usage": "short title or combat banner; slightly condensed with open counters"
+    },
+    "heading": {
+      "size_logical_px": 18,
+      "weight": 700,
+      "usage": "panel/card title; at most two lines"
+    },
+    "body": {
+      "size_logical_px": 14,
+      "weight": 400,
+      "usage": "effect summary and decisions"
+    },
+    "label": {
+      "size_logical_px": 12,
+      "weight": 700,
+      "usage": "secondary rarity/level labels, never sole critical instruction"
+    },
+    "numeric": {
+      "size_logical_px": 20,
+      "weight": 700,
+      "usage": "tabular timer, gold and vital values"
+    },
+    "font_status": "Family/license unresolved. System Arial used only for temporary measurement proof, not selected as shipping brand font."
+  },
+  "panels": {
+    "shape": "broad planes with one 8 logical-pixel clipped corner",
+    "slant_degrees": 10,
+    "bevel": "one restrained top edge, not layered embossed noise",
+    "border_logical_px": 2,
+    "selection_border_logical_px": 3,
+    "corner_rule": "same cut direction within a screen; title text and tap rectangle remain axis-aligned",
+    "shadow": "one short soft shadow below raised controls; never text glow"
+  },
+  "glow": {
+    "allowed": "brief selected/action/impact accent",
+    "forbidden": "persistent bloom around every card, icon and numeral",
+    "contrast": "critical text sits on opaque surface, not over a glow or illustration"
+  },
+  "branches": {
+    "Assault": {
+      "color": "#F28B42",
+      "shape": "crossed blades",
+      "label": "Assault"
+    },
+    "Guardian": {
+      "color": "#D4B46B",
+      "shape": "bastion",
+      "label": "Guardian"
+    },
+    "Essence": {
+      "color": "#B497F8",
+      "shape": "three orbit points",
+      "label": "Essence"
+    },
+    "Rage": {
+      "color": "#F66D50",
+      "shape": "split flame",
+      "label": "Rage"
+    },
+    "Ice": {
+      "color": "#8CDDF2",
+      "shape": "six-point crystal",
+      "label": "Ice"
+    },
+    "Toxin": {
+      "color": "#B5DC57",
+      "shape": "droplet with dot",
+      "label": "Toxin"
+    },
+    "Shield": {
+      "color": "#6BCBD6",
+      "shape": "shield outline",
+      "label": "Shield"
+    },
+    "Healing": {
+      "color": "#82D5A0",
+      "shape": "four-leaf cross",
+      "label": "Healing"
+    },
+    "Power": {
+      "color": "#FFD66B",
+      "shape": "radial burst",
+      "label": "Power"
+    },
+    "Precision": {
+      "color": "#F3D7A1",
+      "shape": "target notch",
+      "label": "Precision"
+    },
+    "Wound": {
+      "color": "#F08BA5",
+      "shape": "paired cut",
+      "label": "Wound"
+    },
+    "Dodge": {
+      "color": "#B4DCEB",
+      "shape": "offset chevrons",
+      "label": "Dodge"
+    }
+  },
+  "rarities": {
+    "Normal": {
+      "token": "normal",
+      "shape": "single border and one notch",
+      "label": "Normal"
+    },
+    "Epic": {
+      "token": "epic",
+      "shape": "double upper notch and violet accent",
+      "label": "Epic"
+    },
+    "Legendary": {
+      "token": "legendary",
+      "shape": "small central crest and gold accent",
+      "label": "Legendary"
+    }
+  },
+  "buttons": {
+    "primary": "solid warm gold, dark label, one bevel; one principal action per view",
+    "secondary": "opaque dark surface, clear border and light label",
+    "disabled": "reduced accent, explicit unavailable label/reason; readable text remains high contrast",
+    "pressed": "2 logical-pixel inset with no target movement",
+    "focus_selected": "bright outline plus check/state text; selected is independent of enabled"
+  },
+  "hud": {
+    "priority": [
+      "fighters and authoritative combat result",
+      "health and central timer",
+      "brief skill/status cues",
+      "optional detailed statistics"
+    ],
+    "layout": "central timer above arena; health panels anchor left/right; side tables and long logs move to inspection",
+    "safe_area": "place interactive HUD inside actual platform insets; background may bleed outward",
+    "animation": "avoid covering fighter faces, hands and impact space with banners"
+  },
+  "spacing": {
+    "unit_logical_px": 4,
+    "small_gap": 8,
+    "group_gap": 12,
+    "panel_padding": 16,
+    "section_gap": 24
+  },
+  "touch": {
+    "minimum_target_logical_px": 44,
+    "target_is_layout_not_device_pixel": "Use logical size and actual display scaling; physical-device verification required later.",
+    "small_icons": "Noninteractive branch/rarity icons may be smaller; tap entire card or explicit 44+ inspection target.",
+    "gesture": "No hover-only information; tap opens full effect/branch names, action confirmation remains clear."
+  },
+  "motion": {
+    "press_ms": 90,
+    "transition_ms": 180,
+    "banner_ms": 350,
+    "rule": "Short purposeful anticipation and settle. Results follow resolver time; motion duration is presentation only.",
+    "reduced_motion": "Remove shakes, flashes and travel; preserve clear state changes and readable outcome.",
+    "effects": "No strobing; prefer one impact flash, restrained particles, explicit stop lifetime."
+  },
+  "contrast_policy": "Project gate: primary/secondary text >=4.5:1 against their assigned opaque surface. Accent-only graphics may be lower but cannot carry sole semantic meaning.",
+  "unresolved": [
+    "Shipping font license/family",
+    "Final original branch glyph drawings",
+    "Measured device scale, physical safe areas and accessibility options",
+    "Final arena/fighter material budgets after profiling"
+  ]
+}

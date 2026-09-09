@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "path": ".work/legacy-source/hero.json.txt",
+  "snapshot": "docs/references/visual/v1.18/hero_candidates.source.json",
+  "sha256": "7ba5084b6828bf95e3e3e373ed0dc4f101b13d80f61a675d15a1668934b8d7dc",
+  "bytes": 8832,
+  "identity_fields": "All eight source fields retained without rewriting; source array order defines primary/secondary proposal, not a combat rule.",
+  "gender_presentation": "unresolved for all 20; source defines neither",
+  "owner": "unknown; supplied project legacy",
+  "rights_status": "unknown-rights",
+  "external_archive_accessed": false,
+  "images_copied": 0
+}

@@ -1,0 +1,206 @@
+{
+  "hero_id": "solkael_lionheart",
+  "art_lock": "v1",
+  "clips": [
+    {
+      "name": "idle",
+      "frames": 60,
+      "fps": 30,
+      "duration_seconds": 2.0,
+      "loop": true,
+      "root_motion": false,
+      "markers": []
+    },
+    {
+      "name": "intro",
+      "frames": 60,
+      "fps": 30,
+      "duration_seconds": 2.0,
+      "loop": false,
+      "root_motion": false,
+      "markers": []
+    },
+    {
+      "name": "attack_light",
+      "frames": 24,
+      "fps": 30,
+      "duration_seconds": 0.8,
+      "loop": false,
+      "root_motion": false,
+      "markers": [
+        {
+          "name": "windup_start",
+          "phase": 0
+        },
+        {
+          "name": "hit",
+          "phase": 0.38
+        },
+        {
+          "name": "recover_start",
+          "phase": 0.68
+        },
+        {
+          "name": "recover_end",
+          "phase": 1
+        }
+      ]
+    },
+    {
+      "name": "attack_heavy",
+      "frames": 42,
+      "fps": 30,
+      "duration_seconds": 1.4,
+      "loop": false,
+      "root_motion": false,
+      "markers": [
+        {
+          "name": "windup_start",
+          "phase": 0
+        },
+        {
+          "name": "hit",
+          "phase": 0.5
+        },
+        {
+          "name": "recover_start",
+          "phase": 0.68
+        },
+        {
+          "name": "recover_end",
+          "phase": 1
+        }
+      ]
+    },
+    {
+      "name": "skill_cast",
+      "frames": 60,
+      "fps": 30,
+      "duration_seconds": 2.0,
+      "loop": false,
+      "root_motion": false,
+      "markers": [
+        {
+          "name": "windup_start",
+          "phase": 0
+        },
+        {
+          "name": "cast",
+          "phase": 0.5
+        },
+        {
+          "name": "recover_start",
+          "phase": 0.68
+        },
+        {
+          "name": "recover_end",
+          "phase": 1
+        },
+        {
+          "name": "vfx_spawn",
+          "phase": 0.5
+        }
+      ]
+    },
+    {
+      "name": "hit_react",
+      "frames": 18,
+      "fps": 30,
+      "duration_seconds": 0.6,
+      "loop": false,
+      "root_motion": false,
+      "markers": []
+    },
+    {
+      "name": "dodge",
+      "frames": 24,
+      "fps": 30,
+      "duration_seconds": 0.8,
+      "loop": false,
+      "root_motion": false,
+      "markers": []
+    },
+    {
+      "name": "ko",
+      "frames": 60,
+      "fps": 30,
+      "duration_seconds": 2.0,
+      "loop": false,
+      "root_motion": false,
+      "markers": []
+    },
+    {
+      "name": "victory",
+      "frames": 75,
+      "fps": 30,
+      "duration_seconds": 2.5,
+      "loop": false,
+      "root_motion": false,
+      "markers": []
+    },
+    {
+      "name": "idle_breathing",
+      "frames": 90,
+      "fps": 30,
+      "duration_seconds": 3.0,
+      "loop": true,
+      "root_motion": false,
+      "markers": []
+    }
+  ],
+  "expressions": [
+    "neutral",
+    "focused",
+    "aggressive",
+    "casting",
+    "pain_light",
+    "pain_heavy",
+    "stunned",
+    "victory",
+    "defeat",
+    "ko"
+  ],
+  "metrics": {
+    "status": "pass",
+    "sha256": "3cd9e3024dbd85b8eaf3376e0e3e2b05f2aca6a4626794157e333a39b6400554",
+    "bytes": 4784156,
+    "triangles": 24912,
+    "vertices_exported": 46362,
+    "materials": 9,
+    "meshes": 1,
+    "surfaces": 9,
+    "bones": 71,
+    "textures": 0,
+    "texture_bytes": 0,
+    "morph_targets": 9,
+    "expressions": 10,
+    "clips": [
+      "attack_heavy",
+      "attack_light",
+      "dodge",
+      "hit_react",
+      "idle",
+      "idle_breathing",
+      "intro",
+      "ko",
+      "skill_cast",
+      "victory"
+    ],
+    "bounds_m": [
+      [
+        -1.2764999866485596,
+        1.2764999866485596
+      ],
+      [
+        2.7482608402351616e-06,
+        2.0989999771118164
+      ],
+      [
+        -0.7601019740104675,
+        0.313567191362381
+      ]
+    ],
+    "axis": "Godot Y-up, model +Z front",
+    "root_motion": false
+  }
+}

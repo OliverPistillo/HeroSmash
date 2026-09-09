@@ -1,0 +1,54 @@
+name: Foundation
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  portable-gates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          lfs: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20.19.6'
+      - name: Acquire pinned official Godot in runner workspace
+        shell: bash
+        run: |
+          python tools/validation/fetch_ci_godot.py
+      - name: Run portable gates
+        run: python tools/validation/foundation.py --godot .work/tools/Godot_v4.7.2-stable_linux.x86_64
+      - name: Install pinned canonical-data dependencies in runner
+        run: python -m pip install -r tools/requirements-canonical.txt
+      - name: Run canonical data and deterministic effect gates
+        run: python tools/validation/canonical.py --godot .work/tools/Godot_v4.7.2-stable_linux.x86_64 --require-clean
+      - name: Run deterministic combat, replay and repeated 12000-fight lab
+        run: python tools/validation/combat.py --godot .work/tools/Godot_v4.7.2-stable_linux.x86_64 --require-clean
+      - name: Run roster and reference specification gates
+        run: python tools/validation/roster.py --require-clean --proof docs/qa/evidence/v1.18
+      - name: Run hydrated fighter and event presentation gates
+        run: python tools/validation/fighter.py --godot .work/tools/Godot_v4.7.2-stable_linux.x86_64 --require-clean
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: foundation-report
+          path: |
+            .work/reports/foundation.json
+            .work/reports/canonical.json
+            .work/reports/combat/
+            .work/reports/roster.json
+            .work/reports/fighter/
+
+  # Physical Android / GPU / Blender rebuild gates remain explicit local checks.
+  # This CI profile does not claim external-archive preservation or device QA.

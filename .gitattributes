@@ -1,0 +1,47 @@
+# Godot rewrites text resources as LF. Keep fresh imports clean on Windows.
+game/**/*.gd text eol=lf
+game/**/*.gd.uid text eol=lf
+game/**/*.tscn text eol=lf
+game/**/*.tres text eol=lf
+game/**/*.import text eol=lf
+game/project.godot text eol=lf
+game/export_presets.cfg text eol=lf
+game/**/*.glb -text
+art/**/*.glb -text
+art/**/*.blend -text
+
+# Reproducible new data/tooling; legacy attributes are deliberately untouched.
+game/data/*.json text eol=lf
+game/data/canonical/*.json text eol=lf
+game/data/schemas/*.json text eol=lf
+tools/migration/source_lock.json text eol=lf
+docs/migration/V1_16_DATA_COMPARISON.md text eol=lf
+docs/migration/V1_16_PILOT_PARITY.md text eol=lf
+game/data/combat/*.json text eol=lf
+game/data/generated/v1_17/*.json text eol=lf
+docs/qa/evidence/v1.17/*.json text eol=lf
+docs/qa/evidence/v1.17/*.jsonl.gz -text
+
+# v1.18 metadata is portable; the captured source retains its exact original bytes.
+docs/references/visual/v1.18/** text eol=lf
+docs/references/visual/v1.18/hero_candidates.source.json -text
+docs/product-specs/roster/** text eol=lf
+docs/art/** text eol=lf
+docs/qa/evidence/v1.18/** text eol=lf
+docs/qa/evidence/v1.18/*.png -text
+tools/art/*.py text eol=lf
+tools/validation/roster.py text eol=lf
+tools/validation/test_roster.py text eol=lf
+
+# New production binaries only. Historical blobs are never rewritten into LFS.
+references/visual/characters/solkael_lionheart/production/*.png filter=lfs diff=lfs merge=lfs -text
+references/visual/characters/solkael_lionheart/production/SOLKAEL_ART_LOCK_v1_MANIFEST.json -text
+art/characters/solkael_lionheart/source/*.blend filter=lfs diff=lfs merge=lfs -text
+game/assets/characters/solkael_lionheart/*.glb filter=lfs diff=lfs merge=lfs -text
+game/assets/characters/solkael_lionheart/*.json text eol=lf
+art/characters/**/*.json text eol=lf
+tools/asset_pipeline/*.py text eol=lf
+tools/validation/fighter*.py text eol=lf
+docs/qa/evidence/v1.19/*.json text eol=lf
+docs/qa/evidence/v1.19/*.png -text
+docs/qa/evidence/v1.19/*.avi filter=lfs diff=lfs merge=lfs -text

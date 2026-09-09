@@ -1,0 +1,3231 @@
+{
+  "schema_version": 1,
+  "baseline": "4ef9eeb503c3c1c69efa36b7b1a3ae5d23cc4816",
+  "timestep": 0.016666666666666666,
+  "excludes": "visual-only Math.random floaters; browser-dependent sort order is not a portable RNG contract",
+  "economics": [
+    {
+      "base": 300,
+      "interest": 20,
+      "win": 50,
+      "winStreak": 0,
+      "loss": 0,
+      "loseStreak": 0,
+      "total": 370,
+      "won": true
+    },
+    {
+      "base": 300,
+      "interest": 100,
+      "win": 50,
+      "winStreak": 100,
+      "loss": 0,
+      "loseStreak": 0,
+      "total": 550,
+      "won": true
+    },
+    {
+      "base": 300,
+      "interest": 10,
+      "win": 0,
+      "winStreak": 0,
+      "loss": 180,
+      "loseStreak": 60,
+      "total": 550,
+      "won": false
+    }
+  ],
+  "runs": [
+    {
+      "seed": 1,
+      "active": [
+        "guardian",
+        "power",
+        "precision",
+        "healing",
+        "wound",
+        "dodge",
+        "essence",
+        "toxin"
+      ],
+      "initialDraft": {
+        "choices": [
+          "nightshade",
+          "fireheart",
+          "blackthorn"
+        ],
+        "rerollsLeft": 2
+      },
+      "hero": "steelbane",
+      "rounds": [
+        {
+          "round": 1,
+          "shop": [
+            "legacy_137",
+            "legacy_040",
+            "legacy_141",
+            "legacy_088"
+          ],
+          "levels": {
+            "legacy_055": 1
+          },
+          "frames": 2263,
+          "result": "win",
+          "hpLost": 0,
+          "playerHp": 2.671250000000569,
+          "enemyHp": 0,
+          "recap": {
+            "physical": 1001.0400000000004,
+            "magic": 0,
+            "dot": 0,
+            "crits": 2,
+            "heals": 0,
+            "taken": 1041.3287499999994,
+            "shielded": 18,
+            "dodges": 9,
+            "skills": 6
+          },
+          "income": {
+            "base": 300,
+            "interest": 10,
+            "win": 50,
+            "winStreak": 20,
+            "loss": 0,
+            "loseStreak": 0,
+            "total": 380,
+            "won": true
+          },
+          "life": 100,
+          "gold": 560,
+          "results": [
+            {
+              "winner": "you",
+              "loser": "bot_3",
+              "hpLost": 4,
+              "text": "Tu batti Toxin Bot (-4)"
+            },
+            {
+              "winner": "bot_2",
+              "loser": "bot_7",
+              "hpLost": 4,
+              "text": "Frost Bot batte Void Bot (-4)"
+            },
+            {
+              "winner": "bot_6",
+              "loser": "bot_1",
+              "hpLost": 4,
+              "text": "Wound Bot batte Ash Bot (-4)"
+            },
+            {
+              "winner": "bot_4",
+              "loser": "bot_5",
+              "hpLost": 4,
+              "text": "Shield Bot batte Rage Bot (-4)"
+            }
+          ],
+          "standings": [
+            {
+              "id": "you",
+              "life": 100,
+              "gold": 560,
+              "wins": 1,
+              "losses": 0
+            },
+            {
+              "id": "bot_2",
+              "life": 100,
+              "gold": 400,
+              "wins": 1,
+              "losses": 0
+            },
+            {
+              "id": "bot_4",
+              "life": 100,
+              "gold": 400,
+              "wins": 1,
+              "losses": 0
+            },
+            {
+              "id": "bot_6",
+              "life": 100,
+              "gold": 400,
+              "wins": 1,
+              "losses": 0
+            },
+            {
+              "id": "bot_1",
+              "life": 96,
+              "gold": 405,
+              "wins": 0,
+              "losses": 1
+            },
+            {
+              "id": "bot_3",
+              "life": 96,
+              "gold": 405,
+              "wins": 0,
+              "losses": 1
+            },
+            {
+              "id": "bot_5",
+              "life": 96,
+              "gold": 405,
+              "wins": 0,
+              "losses": 1
+            },
+            {
+              "id": "bot_7",
+              "life": 96,
+              "gold": 405,
+              "wins": 0,
+              "losses": 1
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "shop": [
+            "legacy_087",
+            "legacy_057",
+            "legacy_042",
+            "legacy_104"
+          ],
+          "levels": {
+            "legacy_055": 1,
+            "legacy_130": 1
+          },
+          "frames": 1459,
+          "result": "loss",
+          "hpLost": 5,
+          "playerHp": 0,
+          "enemyHp": 484.86166666665724,
+          "recap": {
+            "physical": 634.1175,
+            "magic": 0,
+            "dot": 5.0208333333333295,
+            "crits": 4,
+            "heals": 0,
+            "taken": 1062.9416666666718,
+            "shielded": 18,
+            "dodges": 2,
+            "skills": 4
+          },
+          "income": {
+            "base": 300,
+            "interest": 40,
+            "win": 0,
+            "winStreak": 0,
+            "loss": 75,
+            "loseStreak": 15,
+            "total": 430,
+            "won": false
+          },
+          "life": 95,
+          "gold": 870,
+          "results": [
+            {
+              "winner": "bot_2",
+              "loser": "you",
+              "hpLost": 5,
+              "text": "Frost Bot batte te (-5)"
+            },
+            {
+              "winner": "bot_1",
+              "loser": "bot_3",
+              "hpLost": 4,
+              "text": "Ash Bot batte Toxin Bot (-4)"
+            },
+            {
+              "winner": "bot_7",
+              "loser": "bot_6",
+              "hpLost": 4,
+              "text": "Void Bot batte Wound Bot (-4)"
+            },
+            {
+              "winner": "bot_4",
+              "loser": "bot_5",
+              "hpLost": 4,
+              "text": "Shield Bot batte Rage Bot (-4)"
+            }
+          ],
+          "standings": [
+            {
+              "id": "bot_2",
+              "life": 100,
+              "gold": 430,
+              "wins": 2,
+              "losses": 0
+            },
+            {
+              "id": "bot_4",
+              "life": 100,
+              "gold": 430,
+              "wins": 2,
+              "losses": 0
+            },
+            {
+              "id": "bot_1",
+              "life": 96,
+              "gold": 415,
+              "wins": 1,
+              "losses": 1
+            },
+            {
+              "id": "bot_6",
+              "life": 96,
+              "gold": 415,
+              "wins": 1,
+              "losses": 1
+            },
+            {
+              "id": "bot_7",
+              "life": 96,
+              "gold": 415,
+              "wins": 1,
+              "losses": 1
+            },
+            {
+              "id": "you",
+              "life": 95,
+              "gold": 870,
+              "wins": 1,
+              "losses": 1
+            },
+            {
+              "id": "bot_3",
+              "life": 92,
+              "gold": 435,
+              "wins": 0,
+              "losses": 2
+            },
+            {
+              "id": "bot_5",
+              "life": 92,
+              "gold": 435,
+              "wins": 0,
+              "losses": 2
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "shop": [
+            "legacy_130",
+            "legacy_136",
+            "legacy_144",
+            "legacy_141"
+          ],
+          "levels": {
+            "legacy_055": 1,
+            "legacy_130": 1,
+            "legacy_109": 1
+          },
+          "frames": 1729,
+          "result": "loss",
+          "hpLost": 5,
+          "playerHp": 0,
+          "enemyHp": 259.1604399999999,
+          "recap": {
+            "physical": 789.83956,
+            "magic": 0,
+            "dot": 0,
+            "crits": 2,
+            "heals": 0,
+            "taken": 1096.15725,
+            "shielded": 18,
+            "dodges": 1,
+            "skills": 4
+          },
+          "income": {
+            "base": 300,
+            "interest": 70,
+            "win": 0,
+            "winStreak": 0,
+            "loss": 75,
+            "loseStreak": 30,
+            "total": 475,
+            "won": false
+          },
+          "life": 90,
+          "gold": 1225,
+          "results": [
+            {
+              "winner": "bot_3",
+              "loser": "you",
+              "hpLost": 5,
+              "text": "Toxin Bot batte te (-5)"
+            },
+            {
+              "winner": "bot_7",
+              "loser": "bot_2",
+              "hpLost": 4,
+              "text": "Void Bot batte Frost Bot (-4)"
+            },
+            {
+              "winner": "bot_5",
+              "loser": "bot_1",
+              "hpLost": 4,
+              "text": "Rage Bot batte Ash Bot (-4)"
+            },
+            {
+              "winner": "bot_4",
+              "loser": "bot_6",
+              "hpLost": 6,
+              "text": "Shield Bot batte Wound Bot (-6)"
+            }
+          ],
+          "standings": [
+            {
+              "id": "bot_4",
+              "life": 100,
+              "gold": 480,
+              "wins": 3,
+              "losses": 0
+            },
+            {
+              "id": "bot_2",
+              "life": 96,
+              "gold": 445,
+              "wins": 2,
+              "losses": 1
+            },
+            {
+              "id": "bot_7",
+              "life": 96,
+              "gold": 445,
+              "wins": 2,
+              "losses": 1
+            },
+            {
+              "id": "bot_1",
+              "life": 92,
+              "gold": 430,
+              "wins": 1,
+              "losses": 2
+            },
+            {
+              "id": "bot_3",
+              "life": 92,
+              "gold": 445,
+              "wins": 1,
+              "losses": 2
+            },
+            {
+              "id": "bot_5",
+              "life": 92,
+              "gold": 445,
+              "wins": 1,
+              "losses": 2
+            },
+            {
+              "id": "you",
+              "life": 90,
+              "gold": 1225,
+              "wins": 1,
+              "losses": 2
+            },
+            {
+              "id": "bot_6",
+              "life": 90,
+              "gold": 475,
+              "wins": 1,
+              "losses": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "active": [
+        "assault",
+        "toxin",
+        "healing",
+        "rage",
+        "precision",
+        "essence",
+        "power",
+        "wound"
+      ],
+      "initialDraft": {
+        "choices": [
+          "emberforge",
+          "fireheart",
+          "steelbane"
+        ],
+        "rerollsLeft": 2
+      },
+      "hero": "frostfang",
+      "rounds": [
+        {
+          "round": 1,
+          "shop": [
+            "legacy_019",
+            "legacy_003",
+            "legacy_011",
+            "legacy_130"
+          ],
+          "levels": {
+            "legacy_149": 1
+          },
+          "frames": 2701,
+          "result": "loss",
+          "hpLost": 5,
+          "playerHp": 142.1250000000001,
+          "enemyHp": 316.9055999999964,
+          "recap": {
+            "physical": 612.536,
+            "magic": 261.64214999999996,
+            "dot": 3.916249999999991,
+            "crits": 6,
+            "heals": 0,
+            "taken": 832.8749999999999,
+            "shielded": 0,
+            "dodges": 6,
+            "skills": 7
+          },
+          "income": {
+            "base": 300,
+            "interest": 10,
+            "win": 0,
+            "winStreak": 0,
+            "loss": 75,
+            "loseStreak": 15,
+            "total": 400,
+            "won": false
+          },
+          "life": 95,
+          "gold": 580,
+          "results": [
+            {
+              "winner": "bot_2",
+              "loser": "you",
+              "hpLost": 5,
+              "text": "Frost Bot batte te (-5)"
+            },
+            {
+              "winner": "bot_6",
+              "loser": "bot_3",
+              "hpLost": 4,
+              "text": "Wound Bot batte Toxin Bot (-4)"
+            },
+            {
+              "winner": "bot_4",
+              "loser": "bot_1",
+              "hpLost": 4,
+              "text": "Shield Bot batte Ash Bot (-4)"
+            },
+            {
+              "winner": "bot_5",
+              "loser": "bot_7",
+              "hpLost": 4,
+              "text": "Rage Bot batte Void Bot (-4)"
+            }
+          ],
+          "standings": [
+            {
+              "id": "bot_2",
+              "life": 100,
+              "gold": 400,
+              "wins": 1,
+              "losses": 0
+            },
+            {
+              "id": "bot_4",
+              "life": 100,
+              "gold": 400,
+              "wins": 1,
+              "losses": 0
+            },
+            {
+              "id": "bot_5",
+              "life": 100,
+              "gold": 400,
+              "wins": 1,
+              "losses": 0
+            },
+            {
+              "id": "bot_6",
+              "life": 100,
+              "gold": 400,
+              "wins": 1,
+              "losses": 0
+            },
+            {
+              "id": "bot_1",
+              "life": 96,
+              "gold": 405,
+              "wins": 0,
+              "losses": 1
+            },
+            {
+              "id": "bot_3",
+              "life": 96,
+              "gold": 405,
+              "wins": 0,
+              "losses": 1
+            },
+            {
+              "id": "bot_7",
+              "life": 96,
+              "gold": 405,
+              "wins": 0,
+              "losses": 1
+            },
+            {
+              "id": "you",
+              "life": 95,
+              "gold": 580,
+              "wins": 0,
+              "losses": 1
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "shop": [
+            "legacy_089",
+            "legacy_078",
+            "legacy_115",
+            "legacy_008"
+          ],
+          "levels": {
+            "legacy_149": 1,
+            "legacy_105": 1
+          },
+          "frames": 2448,
+          "result": "loss",
+          "hpLost": 5,
+          "playerHp": 0,
+          "enemyHp": 388.73394999998675,
+          "recap": {
+            "physical": 587.462,
+            "magic": 243.13905,
+            "dot": 15.66500000000013,
+            "crits": 7,
+            "heals": 0,
+            "taken": 1002.5972500000008,
+            "shielded": 0,
+            "dodges": 3,
+            "skills": 7
+          },
+          "income": {
+            "base": 300,
+            "interest": 40,
+            "win": 0,
+            "winStreak": 0,
+            "loss": 75,
+            "loseStreak": 30,
+            "total": 445,
+            "won": false
+          },
+          "life": 90,
+          "gold": 905,
+          "results": [
+            {
+              "winner": "bot_2",
+              "loser": "you",
+              "hpLost": 5,
+              "text": "Frost Bot batte te (-5)"
+            },
+            {
+              "winner": "bot_7",
+              "loser": "bot_1",
+              "hpLost": 4,
+              "text": "Void Bot batte Ash Bot (-4)"
+            },
+            {
+              "winner": "bot_5",
+              "loser": "bot_3",
+              "hpLost": 4,
+              "text": "Rage Bot batte Toxin Bot (-4)"
+            },
+            {
+              "winner": "bot_4",
+              "loser": "bot_6",
+              "hpLost": 4,
+              "text": "Shield Bot batte Wound Bot (-4)"
+            }
+          ],
+          "standings": [
+            {
+              "id": "bot_2",
+              "life": 100,
+              "gold": 430,
+              "wins": 2,
+              "losses": 0
+            },
+            {
+              "id": "bot_4",
+              "life": 100,
+              "gold": 430,
+              "wins": 2,
+              "losses": 0
+            },
+            {
+              "id": "bot_5",
+              "life": 100,
+              "gold": 430,
+              "wins": 2,
+              "losses": 0
+            },
+            {
+              "id": "bot_6",
+              "life": 96,
+              "gold": 415,
+              "wins": 1,
+              "losses": 1
+            },
+            {
+              "id": "bot_7",
+              "life": 96,
+              "gold": 415,
+              "wins": 1,
+              "losses": 1
+            },
+            {
+              "id": "bot_1",
+              "life": 92,
+              "gold": 435,
+              "wins": 0,
+              "losses": 2
+            },
+            {
+              "id": "bot_3",
+              "life": 92,
+              "gold": 435,
+              "wins": 0,
+              "losses": 2
+            },
+            {
+              "id": "you",
+              "life": 90,
+              "gold": 905,
+              "wins": 0,
+              "losses": 2
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "shop": [
+            "legacy_130",
+            "legacy_062",
+            "legacy_099",
+            "legacy_146"
+          ],
+          "levels": {
+            "legacy_149": 1,
+            "legacy_105": 1,
+            "legacy_040": 1
+          },
+          "frames": 1252,
+          "result": "loss",
+          "hpLost": 5,
+          "playerHp": 0,
+          "enemyHp": 646.2549999999869,
+          "recap": {
+            "physical": 319.13,
+            "magic": 103.94999999999999,
+            "dot": 15.66500000000013,
+            "crits": 1,
+            "heals": 0,
+            "taken": 1011.6887625000069,
+            "shielded": 0,
+            "dodges": 3,
+            "skills": 3
+          },
+          "income": {
+            "base": 300,
+            "interest": 70,
+            "win": 0,
+            "winStreak": 0,
+            "loss": 75,
+            "loseStreak": 45,
+            "total": 490,
+            "won": false
+          },
+          "life": 85,
+          "gold": 1275,
+          "results": [
+            {
+              "winner": "bot_5",
+              "loser": "you",
+              "hpLost": 5,
+              "text": "Rage Bot batte te (-5)"
+            },
+            {
+              "winner": "bot_3",
+              "loser": "bot_1",
+              "hpLost": 4,
+              "text": "Toxin Bot batte Ash Bot (-4)"
+            },
+            {
+              "winner": "bot_4",
+              "loser": "bot_7",
+              "hpLost": 6,
+              "text": "Shield Bot batte Void Bot (-6)"
+            },
+            {
+              "winner": "bot_2",
+              "loser": "bot_6",
+              "hpLost": 6,
+              "text": "Frost Bot batte Wound Bot (-6)"
+            }
+          ],
+          "standings": [
+            {
+              "id": "bot_2",
+              "life": 100,
+              "gold": 480,
+              "wins": 3,
+              "losses": 0
+            },
+            {
+              "id": "bot_4",
+              "life": 100,
+              "gold": 480,
+              "wins": 3,
+              "losses": 0
+            },
+            {
+              "id": "bot_5",
+              "life": 100,
+              "gold": 480,
+              "wins": 3,
+              "losses": 0
+            },
+            {
+              "id": "bot_3",
+              "life": 92,
+              "gold": 445,
+              "wins": 1,
+              "losses": 2
+            },
+            {
+              "id": "bot_6",
+              "life": 90,
+              "gold": 475,
+              "wins": 1,
+              "losses": 2
+            },
+            {
+              "id": "bot_7",
+              "life": 90,
+              "gold": 460,
+              "wins": 1,
+              "losses": 2
+            },
+            {
+              "id": "bot_1",
+              "life": 88,
+              "gold": 480,
+              "wins": 0,
+              "losses": 3
+            },
+            {
+              "id": "you",
+              "life": 85,
+              "gold": 1275,
+              "wins": 0,
+              "losses": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "seed": 42,
+      "active": [
+        "wound",
+        "healing",
+        "dodge",
+        "guardian",
+        "assault",
+        "essence",
+        "ice",
+        "power"
+      ],
+      "initialDraft": {
+        "choices": [
+          "steelbane",
+          "duskwhisper",
+          "ironfist"
+        ],
+        "rerollsLeft": 2
+      },
+      "hero": "frostfang",
+      "rounds": [
+        {
+          "round": 1,
+          "shop": [
+            "legacy_099",
+            "legacy_028",
+            "legacy_012",
+            "legacy_002"
+          ],
+          "levels": {
+            "legacy_086": 1
+          },
+          "frames": 1763,
+          "result": "loss",
+          "hpLost": 5,
+          "playerHp": 0,
+          "enemyHp": 317.7537000000002,
+          "recap": {
+            "physical": 503.584,
+            "magic": 208.6623,
+            "dot": 0,
+            "crits": 8,
+            "heals": 0,
+            "taken": 976.0112499999997,
+            "shielded": 0,
+            "dodges": 2,
+            "skills": 5
+          },
+          "income": {
+            "base": 300,
+            "interest": 10,
+            "win": 0,
+            "winStreak": 0,
+            "loss": 75,
+            "loseStreak": 15,
+            "total": 400,
+            "won": false
+          },
+          "life": 95,
+          "gold": 580,
+          "results": [
+            {
+              "winner": "bot_5",
+              "loser": "you",
+              "hpLost": 5,
+              "text": "Rage Bot batte te (-5)"
+            },
+            {
+              "winner": "bot_7",
+              "loser": "bot_3",
+              "hpLost": 4,
+              "text": "Void Bot batte Toxin Bot (-4)"
+            },
+            {
+              "winner": "bot_1",
+              "loser": "bot_4",
+              "hpLost": 4,
+              "text": "Ash Bot batte Shield Bot (-4)"
+            },
+            {
+              "winner": "bot_2",
+              "loser": "bot_6",
+              "hpLost": 4,
+              "text": "Frost Bot batte Wound Bot (-4)"
+            }
+          ],
+          "standings": [
+            {
+              "id": "bot_1",
+              "life": 100,
+              "gold": 400,
+              "wins": 1,
+              "losses": 0
+            },
+            {
+              "id": "bot_2",
+              "life": 100,
+              "gold": 400,
+              "wins": 1,
+              "losses": 0
+            },
+            {
+              "id": "bot_5",
+              "life": 100,
+              "gold": 400,
+              "wins": 1,
+              "losses": 0
+            },
+            {
+              "id": "bot_7",
+              "life": 100,
+              "gold": 400,
+              "wins": 1,
+              "losses": 0
+            },
+            {
+              "id": "bot_3",
+              "life": 96,
+              "gold": 405,
+              "wins": 0,
+              "losses": 1
+            },
+            {
+              "id": "bot_4",
+              "life": 96,
+              "gold": 405,
+              "wins": 0,
+              "losses": 1
+            },
+            {
+              "id": "bot_6",
+              "life": 96,
+              "gold": 405,
+              "wins": 0,
+              "losses": 1
+            },
+            {
+              "id": "you",
+              "life": 95,
+              "gold": 580,
+              "wins": 0,
+              "losses": 1
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "shop": [
+            "legacy_089",
+            "legacy_076",
+            "legacy_018",
+            "legacy_136"
+          ],
+          "levels": {
+            "legacy_086": 1,
+            "legacy_005": 1
+          },
+          "frames": 2637,
+          "result": "loss",
+          "hpLost": 5,
+          "playerHp": 0,
+          "enemyHp": 332.4802499999986,
+          "recap": {
+            "physical": 615.2268750000004,
+            "magic": 264.292875,
+            "dot": 0,
+            "crits": 4,
+            "heals": 0,
+            "taken": 975.3131249999994,
+            "shielded": 0,
+            "dodges": 8,
+            "skills": 7
+          },
+          "income": {
+            "base": 300,
+            "interest": 40,
+            "win": 0,
+            "winStreak": 0,
+            "loss": 75,
+            "loseStreak": 30,
+            "total": 445,
+            "won": false
+          },
+          "life": 90,
+          "gold": 905,
+          "results": [
+            {
+              "winner": "bot_2",
+              "loser": "you",
+              "hpLost": 5,
+              "text": "Frost Bot batte te (-5)"
+            },
+            {
+              "winner": "bot_4",
+              "loser": "bot_3",
+              "hpLost": 4,
+              "text": "Shield Bot batte Toxin Bot (-4)"
+            },
+            {
+              "winner": "bot_5",
+              "loser": "bot_1",
+              "hpLost": 4,
+              "text": "Rage Bot batte Ash Bot (-4)"
+            },
+            {
+              "winner": "bot_7",
+              "loser": "bot_6",
+              "hpLost": 4,
+              "text": "Void Bot batte Wound Bot (-4)"
+            }
+          ],
+          "standings": [
+            {
+              "id": "bot_2",
+              "life": 100,
+              "gold": 430,
+              "wins": 2,
+              "losses": 0
+            },
+            {
+              "id": "bot_5",
+              "life": 100,
+              "gold": 430,
+              "wins": 2,
+              "losses": 0
+            },
+            {
+              "id": "bot_7",
+              "life": 100,
+              "gold": 430,
+              "wins": 2,
+              "losses": 0
+            },
+            {
+              "id": "bot_1",
+              "life": 96,
+              "gold": 415,
+              "wins": 1,
+              "losses": 1
+            },
+            {
+              "id": "bot_4",
+              "life": 96,
+              "gold": 415,
+              "wins": 1,
+              "losses": 1
+            },
+            {
+              "id": "bot_3",
+              "life": 92,
+              "gold": 435,
+              "wins": 0,
+              "losses": 2
+            },
+            {
+              "id": "bot_6",
+              "life": 92,
+              "gold": 435,
+              "wins": 0,
+              "losses": 2
+            },
+            {
+              "id": "you",
+              "life": 90,
+              "gold": 905,
+              "wins": 0,
+              "losses": 2
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "shop": [
+            "legacy_001",
+            "legacy_145",
+            "legacy_092",
+            "legacy_088"
+          ],
+          "levels": {
+            "legacy_086": 1,
+            "legacy_005": 2
+          },
+          "frames": 1617,
+          "result": "loss",
+          "hpLost": 5,
+          "playerHp": 0,
+          "enemyHp": 483.6486918000005,
+          "recap": {
+            "physical": 541.33664,
+            "magic": 162.01466820000002,
+            "dot": 0,
+            "crits": 4,
+            "heals": 0,
+            "taken": 1014.8499999999997,
+            "shielded": 0,
+            "dodges": 2,
+            "skills": 4
+          },
+          "income": {
+            "base": 300,
+            "interest": 70,
+            "win": 0,
+            "winStreak": 0,
+            "loss": 75,
+            "loseStreak": 45,
+            "total": 490,
+            "won": false
+          },
+          "life": 85,
+          "gold": 1275,
+          "results": [
+            {
+              "winner": "bot_4",
+              "loser": "you",
+              "hpLost": 5,
+              "text": "Shield Bot batte te (-5)"
+            },
+            {
+              "winner": "bot_5",
+              "loser": "bot_6",
+              "hpLost": 6,
+              "text": "Rage Bot batte Wound Bot (-6)"
+            },
+            {
+              "winner": "bot_1",
+              "loser": "bot_3",
+              "hpLost": 4,
+              "text": "Ash Bot batte Toxin Bot (-4)"
+            },
+            {
+              "winner": "bot_7",
+              "loser": "bot_2",
+              "hpLost": 6,
+              "text": "Void Bot batte Frost Bot (-6)"
+            }
+          ],
+          "standings": [
+            {
+              "id": "bot_5",
+              "life": 100,
+              "gold": 480,
+              "wins": 3,
+              "losses": 0
+            },
+            {
+              "id": "bot_7",
+              "life": 100,
+              "gold": 480,
+              "wins": 3,
+              "losses": 0
+            },
+            {
+              "id": "bot_1",
+              "life": 96,
+              "gold": 425,
+              "wins": 2,
+              "losses": 1
+            },
+            {
+              "id": "bot_4",
+              "life": 96,
+              "gold": 445,
+              "wins": 2,
+              "losses": 1
+            },
+            {
+              "id": "bot_2",
+              "life": 94,
+              "gold": 475,
+              "wins": 2,
+              "losses": 1
+            },
+            {
+              "id": "bot_3",
+              "life": 88,
+              "gold": 480,
+              "wins": 0,
+              "losses": 3
+            },
+            {
+              "id": "bot_6",
+              "life": 86,
+              "gold": 510,
+              "wins": 0,
+              "losses": 3
+            },
+            {
+              "id": "you",
+              "life": 85,
+              "gold": 1275,
+              "wins": 0,
+              "losses": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "seed": 150,
+      "active": [
+        "healing",
+        "wound",
+        "shield",
+        "toxin",
+        "precision",
+        "assault",
+        "dodge",
+        "essence"
+      ],
+      "initialDraft": {
+        "choices": [
+          "stormblade",
+          "duskwhisper",
+          "blackthorn"
+        ],
+        "rerollsLeft": 2
+      },
+      "hero": "darkbane",
+      "rounds": [
+        {
+          "round": 1,
+          "shop": [
+            "legacy_002",
+            "legacy_118",
+            "legacy_087",
+            "legacy_143"
+          ],
+          "levels": {
+            "legacy_141": 1
+          },
+          "frames": 2107,
+          "result": "loss",
+          "hpLost": 5,
+          "playerHp": 0,
+          "enemyHp": 111.21604999999992,
+          "recap": {
+            "physical": 814.531,
+            "magic": 184.25295,
+            "dot": 0,
+            "crits": 6,
+            "heals": 0,
+            "taken": 987.5,
+            "shielded": 0,
+            "dodges": 2,
+            "skills": 6
+          },
+          "income": {
+            "base": 300,
+            "interest": 10,
+            "win": 0,
+            "winStreak": 0,
+            "loss": 75,
+            "loseStreak": 15,
+            "total": 400,
+            "won": false
+          },
+          "life": 95,
+          "gold": 580,
+          "results": [
+            {
+              "winner": "bot_4",
+              "loser": "you",
+              "hpLost": 5,
+              "text": "Shield Bot batte te (-5)"
+            },
+            {
+              "winner": "bot_7",
+              "loser": "bot_3",
+              "hpLost": 4,
+              "text": "Void Bot batte Toxin Bot (-4)"
+            },
+            {
+              "winner": "bot_5",
+              "loser": "bot_2",
+              "hpLost": 4,
+              "text": "Rage Bot batte Frost Bot (-4)"
+            },
+            {
+              "winner": "bot_6",
+              "loser": "bot_1",
+              "hpLost": 4,
+              "text": "Wound Bot batte Ash Bot (-4)"
+            }
+          ],
+          "standings": [
+            {
+              "id": "bot_4",
+              "life": 100,
+              "gold": 400,
+              "wins": 1,
+              "losses": 0
+            },
+            {
+              "id": "bot_5",
+              "life": 100,
+              "gold": 400,
+              "wins": 1,
+              "losses": 0
+            },
+            {
+              "id": "bot_6",
+              "life": 100,
+              "gold": 400,
+              "wins": 1,
+              "losses": 0
+            },
+            {
+              "id": "bot_7",
+              "life": 100,
+              "gold": 400,
+              "wins": 1,
+              "losses": 0
+            },
+            {
+              "id": "bot_1",
+              "life": 96,
+              "gold": 405,
+              "wins": 0,
+              "losses": 1
+            },
+            {
+              "id": "bot_2",
+              "life": 96,
+              "gold": 405,
+              "wins": 0,
+              "losses": 1
+            },
+            {
+              "id": "bot_3",
+              "life": 96,
+              "gold": 405,
+              "wins": 0,
+              "losses": 1
+            },
+            {
+              "id": "you",
+              "life": 95,
+              "gold": 580,
+              "wins": 0,
+              "losses": 1
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "shop": [
+            "legacy_148",
+            "legacy_007",
+            "legacy_011",
+            "legacy_029"
+          ],
+          "levels": {
+            "legacy_141": 1,
+            "legacy_118": 1
+          },
+          "frames": 1381,
+          "result": "loss",
+          "hpLost": 5,
+          "playerHp": 0,
+          "enemyHp": 336.05739999999975,
+          "recap": {
+            "physical": 570.072,
+            "magic": 123.8706,
+            "dot": 0,
+            "crits": 1,
+            "heals": 0,
+            "taken": 1007.6674499999998,
+            "shielded": 0,
+            "dodges": 2,
+            "skills": 4
+          },
+          "income": {
+            "base": 300,
+            "interest": 40,
+            "win": 0,
+            "winStreak": 0,
+            "loss": 75,
+            "loseStreak": 30,
+            "total": 445,
+            "won": false
+          },
+          "life": 90,
+          "gold": 905,
+          "results": [
+            {
+              "winner": "bot_6",
+              "loser": "you",
+              "hpLost": 5,
+              "text": "Wound Bot batte te (-5)"
+            },
+            {
+              "winner": "bot_5",
+              "loser": "bot_7",
+              "hpLost": 4,
+              "text": "Rage Bot batte Void Bot (-4)"
+            },
+            {
+              "winner": "bot_2",
+              "loser": "bot_1",
+              "hpLost": 4,
+              "text": "Frost Bot batte Ash Bot (-4)"
+            },
+            {
+              "winner": "bot_4",
+              "loser": "bot_3",
+              "hpLost": 4,
+              "text": "Shield Bot batte Toxin Bot (-4)"
+            }
+          ],
+          "standings": [
+            {
+              "id": "bot_4",
+              "life": 100,
+              "gold": 430,
+              "wins": 2,
+              "losses": 0
+            },
+            {
+              "id": "bot_5",
+              "life": 100,
+              "gold": 430,
+              "wins": 2,
+              "losses": 0
+            },
+            {
+              "id": "bot_6",
+              "life": 100,
+              "gold": 430,
+              "wins": 2,
+              "losses": 0
+            },
+            {
+              "id": "bot_2",
+              "life": 96,
+              "gold": 415,
+              "wins": 1,
+              "losses": 1
+            },
+            {
+              "id": "bot_7",
+              "life": 96,
+              "gold": 415,
+              "wins": 1,
+              "losses": 1
+            },
+            {
+              "id": "bot_1",
+              "life": 92,
+              "gold": 435,
+              "wins": 0,
+              "losses": 2
+            },
+            {
+              "id": "bot_3",
+              "life": 92,
+              "gold": 435,
+              "wins": 0,
+              "losses": 2
+            },
+            {
+              "id": "you",
+              "life": 90,
+              "gold": 905,
+              "wins": 0,
+              "losses": 2
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "shop": [
+            "legacy_126",
+            "legacy_003",
+            "legacy_143",
+            "legacy_145"
+          ],
+          "levels": {
+            "legacy_141": 1,
+            "legacy_118": 1,
+            "legacy_003": 1
+          },
+          "frames": 2623,
+          "result": "loss",
+          "hpLost": 5,
+          "playerHp": 0,
+          "enemyHp": 226.97889999999998,
+          "recap": {
+            "physical": 717.624,
+            "magic": 220.39710000000002,
+            "dot": 0,
+            "crits": 7,
+            "heals": 0,
+            "taken": 999.7921125000006,
+            "shielded": 0,
+            "dodges": 6,
+            "skills": 7
+          },
+          "income": {
+            "base": 300,
+            "interest": 70,
+            "win": 0,
+            "winStreak": 0,
+            "loss": 75,
+            "loseStreak": 45,
+            "total": 490,
+            "won": false
+          },
+          "life": 85,
+          "gold": 1275,
+          "results": [
+            {
+              "winner": "bot_7",
+              "loser": "you",
+              "hpLost": 5,
+              "text": "Void Bot batte te (-5)"
+            },
+            {
+              "winner": "bot_2",
+              "loser": "bot_3",
+              "hpLost": 4,
+              "text": "Frost Bot batte Toxin Bot (-4)"
+            },
+            {
+              "winner": "bot_6",
+              "loser": "bot_4",
+              "hpLost": 6,
+              "text": "Wound Bot batte Shield Bot (-6)"
+            },
+            {
+              "winner": "bot_1",
+              "loser": "bot_5",
+              "hpLost": 4,
+              "text": "Ash Bot batte Rage Bot (-4)"
+            }
+          ],
+          "standings": [
+            {
+              "id": "bot_6",
+              "life": 100,
+              "gold": 480,
+              "wins": 3,
+              "losses": 0
+            },
+            {
+              "id": "bot_2",
+              "life": 96,
+              "gold": 445,
+              "wins": 2,
+              "losses": 1
+            },
+            {
+              "id": "bot_5",
+              "life": 96,
+              "gold": 445,
+              "wins": 2,
+              "losses": 1
+            },
+            {
+              "id": "bot_7",
+              "life": 96,
+              "gold": 425,
+              "wins": 2,
+              "losses": 1
+            },
+            {
+              "id": "bot_4",
+              "life": 94,
+              "gold": 475,
+              "wins": 2,
+              "losses": 1
+            },
+            {
+              "id": "bot_1",
+              "life": 92,
+              "gold": 445,
+              "wins": 1,
+              "losses": 2
+            },
+            {
+              "id": "bot_3",
+              "life": 88,
+              "gold": 480,
+              "wins": 0,
+              "losses": 3
+            },
+            {
+              "id": "you",
+              "life": 85,
+              "gold": 1275,
+              "wins": 0,
+              "losses": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "seed": 115,
+      "active": [
+        "essence",
+        "ice",
+        "shield",
+        "wound",
+        "dodge",
+        "toxin",
+        "assault",
+        "rage"
+      ],
+      "initialDraft": {
+        "choices": [
+          "bloodthorn",
+          "skydancer",
+          "fireheart"
+        ],
+        "rerollsLeft": 2
+      },
+      "hero": "blackthorn",
+      "rounds": [
+        {
+          "round": 1,
+          "shop": [
+            "legacy_130",
+            "legacy_005",
+            "legacy_085",
+            "legacy_066"
+          ],
+          "levels": {
+            "legacy_066": 1
+          },
+          "frames": 1757,
+          "result": "win",
+          "hpLost": 0,
+          "playerHp": 184.94812500000037,
+          "enemyHp": 0,
+          "recap": {
+            "physical": 615,
+            "magic": 219.45000000000002,
+            "dot": 185.73333333333048,
+            "crits": 9,
+            "heals": 0,
+            "taken": 925.051875,
+            "shielded": 0,
+            "dodges": 3,
+            "skills": 5
+          },
+          "income": {
+            "base": 300,
+            "interest": 10,
+            "win": 50,
+            "winStreak": 20,
+            "loss": 0,
+            "loseStreak": 0,
+            "total": 380,
+            "won": true
+          },
+          "life": 100,
+          "gold": 560,
+          "results": [
+            {
+              "winner": "you",
+              "loser": "bot_7",
+              "hpLost": 4,
+              "text": "Tu batti Void Bot (-4)"
+            },
+            {
+              "winner": "bot_5",
+              "loser": "bot_3",
+              "hpLost": 4,
+              "text": "Rage Bot batte Toxin Bot (-4)"
+            },
+            {
+              "winner": "bot_1",
+              "loser": "bot_6",
+              "hpLost": 4,
+              "text": "Ash Bot batte Wound Bot (-4)"
+            },
+            {
+              "winner": "bot_2",
+              "loser": "bot_4",
+              "hpLost": 4,
+              "text": "Frost Bot batte Shield Bot (-4)"
+            }
+          ],
+          "standings": [
+            {
+              "id": "you",
+              "life": 100,
+              "gold": 560,
+              "wins": 1,
+              "losses": 0
+            },
+            {
+              "id": "bot_1",
+              "life": 100,
+              "gold": 400,
+              "wins": 1,
+              "losses": 0
+            },
+            {
+              "id": "bot_2",
+              "life": 100,
+              "gold": 400,
+              "wins": 1,
+              "losses": 0
+            },
+            {
+              "id": "bot_5",
+              "life": 100,
+              "gold": 400,
+              "wins": 1,
+              "losses": 0
+            },
+            {
+              "id": "bot_3",
+              "life": 96,
+              "gold": 405,
+              "wins": 0,
+              "losses": 1
+            },
+            {
+              "id": "bot_4",
+              "life": 96,
+              "gold": 405,
+              "wins": 0,
+              "losses": 1
+            },
+            {
+              "id": "bot_6",
+              "life": 96,
+              "gold": 405,
+              "wins": 0,
+              "losses": 1
+            },
+            {
+              "id": "bot_7",
+              "life": 96,
+              "gold": 405,
+              "wins": 0,
+              "losses": 1
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "shop": [
+            "legacy_076",
+            "legacy_135",
+            "legacy_011",
+            "legacy_132"
+          ],
+          "levels": {
+            "legacy_066": 1,
+            "legacy_072": 1
+          },
+          "frames": 1682,
+          "result": "win",
+          "hpLost": 0,
+          "playerHp": 411.7874999999998,
+          "enemyHp": 0,
+          "recap": {
+            "physical": 629.7250000000004,
+            "magic": 199.5,
+            "dot": 169.16666666666475,
+            "crits": 4,
+            "heals": 0,
+            "taken": 698.2125000000002,
+            "shielded": 0,
+            "dodges": 3,
+            "skills": 5
+          },
+          "income": {
+            "base": 300,
+            "interest": 40,
+            "win": 50,
+            "winStreak": 40,
+            "loss": 0,
+            "loseStreak": 0,
+            "total": 430,
+            "won": true
+          },
+          "life": 100,
+          "gold": 870,
+          "results": [
+            {
+              "winner": "you",
+              "loser": "bot_1",
+              "hpLost": 6,
+              "text": "Tu batti Ash Bot (-6)"
+            },
+            {
+              "winner": "bot_2",
+              "loser": "bot_4",
+              "hpLost": 4,
+              "text": "Frost Bot batte Shield Bot (-4)"
+            },
+            {
+              "winner": "bot_6",
+              "loser": "bot_3",
+              "hpLost": 4,
+              "text": "Wound Bot batte Toxin Bot (-4)"
+            },
+            {
+              "winner": "bot_7",
+              "loser": "bot_5",
+              "hpLost": 4,
+              "text": "Void Bot batte Rage Bot (-4)"
+            }
+          ],
+          "standings": [
+            {
+              "id": "you",
+              "life": 100,
+              "gold": 870,
+              "wins": 2,
+              "losses": 0
+            },
+            {
+              "id": "bot_2",
+              "life": 100,
+              "gold": 430,
+              "wins": 2,
+              "losses": 0
+            },
+            {
+              "id": "bot_5",
+              "life": 96,
+              "gold": 415,
+              "wins": 1,
+              "losses": 1
+            },
+            {
+              "id": "bot_6",
+              "life": 96,
+              "gold": 415,
+              "wins": 1,
+              "losses": 1
+            },
+            {
+              "id": "bot_7",
+              "life": 96,
+              "gold": 415,
+              "wins": 1,
+              "losses": 1
+            },
+            {
+              "id": "bot_1",
+              "life": 94,
+              "gold": 445,
+              "wins": 1,
+              "losses": 1
+            },
+            {
+              "id": "bot_3",
+              "life": 92,
+              "gold": 435,
+              "wins": 0,
+              "losses": 2
+            },
+            {
+              "id": "bot_4",
+              "life": 92,
+              "gold": 435,
+              "wins": 0,
+              "losses": 2
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "shop": [
+            "legacy_137",
+            "legacy_005",
+            "legacy_033",
+            "legacy_076"
+          ],
+          "levels": {
+            "legacy_066": 1,
+            "legacy_072": 1,
+            "legacy_087": 1
+          },
+          "frames": 1457,
+          "result": "win",
+          "hpLost": 0,
+          "playerHp": 295.5000000000003,
+          "enemyHp": 0,
+          "recap": {
+            "physical": 624.4535500000003,
+            "magic": 159.6,
+            "dot": 158.66666666666535,
+            "crits": 2,
+            "heals": 0,
+            "taken": 814.4999999999998,
+            "shielded": 0,
+            "dodges": 4,
+            "skills": 4
+          },
+          "income": {
+            "base": 300,
+            "interest": 70,
+            "win": 50,
+            "winStreak": 60,
+            "loss": 0,
+            "loseStreak": 0,
+            "total": 480,
+            "won": true
+          },
+          "life": 100,
+          "gold": 1230,
+          "results": [
+            {
+              "winner": "you",
+              "loser": "bot_5",
+              "hpLost": 6,
+              "text": "Tu batti Rage Bot (-6)"
+            },
+            {
+              "winner": "bot_1",
+              "loser": "bot_3",
+              "hpLost": 4,
+              "text": "Ash Bot batte Toxin Bot (-4)"
+            },
+            {
+              "winner": "bot_2",
+              "loser": "bot_4",
+              "hpLost": 6,
+              "text": "Frost Bot batte Shield Bot (-6)"
+            },
+            {
+              "winner": "bot_6",
+              "loser": "bot_7",
+              "hpLost": 4,
+              "text": "Wound Bot batte Void Bot (-4)"
+            }
+          ],
+          "standings": [
+            {
+              "id": "you",
+              "life": 100,
+              "gold": 1230,
+              "wins": 3,
+              "losses": 0
+            },
+            {
+              "id": "bot_2",
+              "life": 100,
+              "gold": 480,
+              "wins": 3,
+              "losses": 0
+            },
+            {
+              "id": "bot_6",
+              "life": 96,
+              "gold": 445,
+              "wins": 2,
+              "losses": 1
+            },
+            {
+              "id": "bot_1",
+              "life": 94,
+              "gold": 455,
+              "wins": 2,
+              "losses": 1
+            },
+            {
+              "id": "bot_7",
+              "life": 92,
+              "gold": 430,
+              "wins": 1,
+              "losses": 2
+            },
+            {
+              "id": "bot_5",
+              "life": 90,
+              "gold": 475,
+              "wins": 1,
+              "losses": 2
+            },
+            {
+              "id": "bot_3",
+              "life": 88,
+              "gold": 480,
+              "wins": 0,
+              "losses": 3
+            },
+            {
+              "id": "bot_4",
+              "life": 86,
+              "gold": 510,
+              "wins": 0,
+              "losses": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "seed": 116,
+      "active": [
+        "dodge",
+        "wound",
+        "essence",
+        "toxin",
+        "rage",
+        "guardian",
+        "assault",
+        "power"
+      ],
+      "initialDraft": {
+        "choices": [
+          "stormblade",
+          "duskwhisper",
+          "windrider"
+        ],
+        "rerollsLeft": 2
+      },
+      "hero": "darkbane",
+      "rounds": [
+        {
+          "round": 1,
+          "shop": [
+            "legacy_050",
+            "legacy_135",
+            "legacy_114",
+            "legacy_086"
+          ],
+          "levels": {
+            "legacy_035": 1
+          },
+          "frames": 2031,
+          "result": "loss",
+          "hpLost": 5,
+          "playerHp": 0,
+          "enemyHp": 92.46067000000045,
+          "recap": {
+            "physical": 798.7716799999998,
+            "magic": 152.76765,
+            "dot": 0,
+            "crits": 4,
+            "heals": 0,
+            "taken": 984.6837500000005,
+            "shielded": 0,
+            "dodges": 6,
+            "skills": 5
+          },
+          "income": {
+            "base": 300,
+            "interest": 10,
+            "win": 0,
+            "winStreak": 0,
+            "loss": 75,
+            "loseStreak": 15,
+            "total": 400,
+            "won": false
+          },
+          "life": 95,
+          "gold": 580,
+          "results": [
+            {
+              "winner": "bot_7",
+              "loser": "you",
+              "hpLost": 5,
+              "text": "Void Bot batte te (-5)"
+            },
+            {
+              "winner": "bot_6",
+              "loser": "bot_1",
+              "hpLost": 4,
+              "text": "Wound Bot batte Ash Bot (-4)"
+            },
+            {
+              "winner": "bot_4",
+              "loser": "bot_5",
+              "hpLost": 4,
+              "text": "Shield Bot batte Rage Bot (-4)"
+            },
+            {
+              "winner": "bot_3",
+              "loser": "bot_2",
+              "hpLost": 4,
+              "text": "Toxin Bot batte Frost Bot (-4)"
+            }
+          ],
+          "standings": [
+            {
+              "id": "bot_3",
+              "life": 100,
+              "gold": 400,
+              "wins": 1,
+              "losses": 0
+            },
+            {
+              "id": "bot_4",
+              "life": 100,
+              "gold": 400,
+              "wins": 1,
+              "losses": 0
+            },
+            {
+              "id": "bot_6",
+              "life": 100,
+              "gold": 400,
+              "wins": 1,
+              "losses": 0
+            },
+            {
+              "id": "bot_7",
+              "life": 100,
+              "gold": 400,
+              "wins": 1,
+              "losses": 0
+            },
+            {
+              "id": "bot_1",
+              "life": 96,
+              "gold": 405,
+              "wins": 0,
+              "losses": 1
+            },
+            {
+              "id": "bot_2",
+              "life": 96,
+              "gold": 405,
+              "wins": 0,
+              "losses": 1
+            },
+            {
+              "id": "bot_5",
+              "life": 96,
+              "gold": 405,
+              "wins": 0,
+              "losses": 1
+            },
+            {
+              "id": "you",
+              "life": 95,
+              "gold": 580,
+              "wins": 0,
+              "losses": 1
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "shop": [
+            "legacy_002",
+            "legacy_022",
+            "legacy_057",
+            "legacy_099"
+          ],
+          "levels": {
+            "legacy_035": 1,
+            "legacy_135": 1
+          },
+          "frames": 2113,
+          "result": "loss",
+          "hpLost": 5,
+          "playerHp": 0,
+          "enemyHp": 173.42683500000027,
+          "recap": {
+            "physical": 636.3540399999997,
+            "magic": 199.21912500000002,
+            "dot": 0,
+            "crits": 6,
+            "heals": 0,
+            "taken": 978.9216250000004,
+            "shielded": 0,
+            "dodges": 8,
+            "skills": 6
+          },
+          "income": {
+            "base": 300,
+            "interest": 40,
+            "win": 0,
+            "winStreak": 0,
+            "loss": 75,
+            "loseStreak": 30,
+            "total": 445,
+            "won": false
+          },
+          "life": 90,
+          "gold": 905,
+          "results": [
+            {
+              "winner": "bot_3",
+              "loser": "you",
+              "hpLost": 5,
+              "text": "Toxin Bot batte te (-5)"
+            },
+            {
+              "winner": "bot_2",
+              "loser": "bot_4",
+              "hpLost": 4,
+              "text": "Frost Bot batte Shield Bot (-4)"
+            },
+            {
+              "winner": "bot_5",
+              "loser": "bot_1",
+              "hpLost": 4,
+              "text": "Rage Bot batte Ash Bot (-4)"
+            },
+            {
+              "winner": "bot_6",
+              "loser": "bot_7",
+              "hpLost": 4,
+              "text": "Wound Bot batte Void Bot (-4)"
+            }
+          ],
+          "standings": [
+            {
+              "id": "bot_3",
+              "life": 100,
+              "gold": 430,
+              "wins": 2,
+              "losses": 0
+            },
+            {
+              "id": "bot_6",
+              "life": 100,
+              "gold": 430,
+              "wins": 2,
+              "losses": 0
+            },
+            {
+              "id": "bot_2",
+              "life": 96,
+              "gold": 415,
+              "wins": 1,
+              "losses": 1
+            },
+            {
+              "id": "bot_4",
+              "life": 96,
+              "gold": 415,
+              "wins": 1,
+              "losses": 1
+            },
+            {
+              "id": "bot_5",
+              "life": 96,
+              "gold": 415,
+              "wins": 1,
+              "losses": 1
+            },
+            {
+              "id": "bot_7",
+              "life": 96,
+              "gold": 415,
+              "wins": 1,
+              "losses": 1
+            },
+            {
+              "id": "bot_1",
+              "life": 92,
+              "gold": 435,
+              "wins": 0,
+              "losses": 2
+            },
+            {
+              "id": "you",
+              "life": 90,
+              "gold": 905,
+              "wins": 0,
+              "losses": 2
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "shop": [
+            "legacy_022",
+            "legacy_005",
+            "legacy_001",
+            "legacy_072"
+          ],
+          "levels": {
+            "legacy_035": 1,
+            "legacy_135": 1,
+            "legacy_144": 1
+          },
+          "frames": 1376,
+          "result": "loss",
+          "hpLost": 5,
+          "playerHp": 0,
+          "enemyHp": 491.31734000000034,
+          "recap": {
+            "physical": 429.39736000000005,
+            "magic": 153.2853,
+            "dot": 0,
+            "crits": 7,
+            "heals": 0,
+            "taken": 997.1375000000054,
+            "shielded": 33,
+            "dodges": 1,
+            "skills": 4
+          },
+          "income": {
+            "base": 300,
+            "interest": 70,
+            "win": 0,
+            "winStreak": 0,
+            "loss": 75,
+            "loseStreak": 45,
+            "total": 490,
+            "won": false
+          },
+          "life": 85,
+          "gold": 1275,
+          "results": [
+            {
+              "winner": "bot_4",
+              "loser": "you",
+              "hpLost": 5,
+              "text": "Shield Bot batte te (-5)"
+            },
+            {
+              "winner": "bot_2",
+              "loser": "bot_3",
+              "hpLost": 4,
+              "text": "Frost Bot batte Toxin Bot (-4)"
+            },
+            {
+              "winner": "bot_7",
+              "loser": "bot_1",
+              "hpLost": 4,
+              "text": "Void Bot batte Ash Bot (-4)"
+            },
+            {
+              "winner": "bot_6",
+              "loser": "bot_5",
+              "hpLost": 6,
+              "text": "Wound Bot batte Rage Bot (-6)"
+            }
+          ],
+          "standings": [
+            {
+              "id": "bot_6",
+              "life": 100,
+              "gold": 480,
+              "wins": 3,
+              "losses": 0
+            },
+            {
+              "id": "bot_2",
+              "life": 96,
+              "gold": 445,
+              "wins": 2,
+              "losses": 1
+            },
+            {
+              "id": "bot_3",
+              "life": 96,
+              "gold": 445,
+              "wins": 2,
+              "losses": 1
+            },
+            {
+              "id": "bot_4",
+              "life": 96,
+              "gold": 425,
+              "wins": 2,
+              "losses": 1
+            },
+            {
+              "id": "bot_7",
+              "life": 96,
+              "gold": 425,
+              "wins": 2,
+              "losses": 1
+            },
+            {
+              "id": "bot_5",
+              "life": 90,
+              "gold": 460,
+              "wins": 1,
+              "losses": 2
+            },
+            {
+              "id": "bot_1",
+              "life": 88,
+              "gold": 480,
+              "wins": 0,
+              "losses": 3
+            },
+            {
+              "id": "you",
+              "life": 85,
+              "gold": 1275,
+              "wins": 0,
+              "losses": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "seed": 2026,
+      "active": [
+        "dodge",
+        "power",
+        "guardian",
+        "rage",
+        "essence",
+        "healing",
+        "precision",
+        "toxin"
+      ],
+      "initialDraft": {
+        "choices": [
+          "fireheart",
+          "darion",
+          "emberforge"
+        ],
+        "rerollsLeft": 2
+      },
+      "hero": "duskwhisper",
+      "rounds": [
+        {
+          "round": 1,
+          "shop": [
+            "legacy_040",
+            "legacy_062",
+            "legacy_075",
+            "legacy_099"
+          ],
+          "levels": {
+            "legacy_136": 1
+          },
+          "frames": 2056,
+          "result": "loss",
+          "hpLost": 5,
+          "playerHp": 0,
+          "enemyHp": 158,
+          "recap": {
+            "physical": 602,
+            "magic": 315,
+            "dot": 0,
+            "crits": 2,
+            "heals": 0,
+            "taken": 1133.0875,
+            "shielded": 0,
+            "dodges": 3,
+            "skills": 6
+          },
+          "income": {
+            "base": 300,
+            "interest": 10,
+            "win": 0,
+            "winStreak": 0,
+            "loss": 75,
+            "loseStreak": 15,
+            "total": 400,
+            "won": false
+          },
+          "life": 95,
+          "gold": 580,
+          "results": [
+            {
+              "winner": "bot_3",
+              "loser": "you",
+              "hpLost": 5,
+              "text": "Toxin Bot batte te (-5)"
+            },
+            {
+              "winner": "bot_7",
+              "loser": "bot_1",
+              "hpLost": 4,
+              "text": "Void Bot batte Ash Bot (-4)"
+            },
+            {
+              "winner": "bot_2",
+              "loser": "bot_6",
+              "hpLost": 4,
+              "text": "Frost Bot batte Wound Bot (-4)"
+            },
+            {
+              "winner": "bot_5",
+              "loser": "bot_4",
+              "hpLost": 4,
+              "text": "Rage Bot batte Shield Bot (-4)"
+            }
+          ],
+          "standings": [
+            {
+              "id": "bot_2",
+              "life": 100,
+              "gold": 400,
+              "wins": 1,
+              "losses": 0
+            },
+            {
+              "id": "bot_3",
+              "life": 100,
+              "gold": 400,
+              "wins": 1,
+              "losses": 0
+            },
+            {
+              "id": "bot_5",
+              "life": 100,
+              "gold": 400,
+              "wins": 1,
+              "losses": 0
+            },
+            {
+              "id": "bot_7",
+              "life": 100,
+              "gold": 400,
+              "wins": 1,
+              "losses": 0
+            },
+            {
+              "id": "bot_1",
+              "life": 96,
+              "gold": 405,
+              "wins": 0,
+              "losses": 1
+            },
+            {
+              "id": "bot_4",
+              "life": 96,
+              "gold": 405,
+              "wins": 0,
+              "losses": 1
+            },
+            {
+              "id": "bot_6",
+              "life": 96,
+              "gold": 405,
+              "wins": 0,
+              "losses": 1
+            },
+            {
+              "id": "you",
+              "life": 95,
+              "gold": 580,
+              "wins": 0,
+              "losses": 1
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "shop": [
+            "legacy_008",
+            "legacy_013",
+            "legacy_029",
+            "legacy_020"
+          ],
+          "levels": {
+            "legacy_136": 1,
+            "legacy_109": 1
+          },
+          "frames": 2701,
+          "result": "loss",
+          "hpLost": 5,
+          "playerHp": 33.239825000055276,
+          "enemyHp": 604.9800000000016,
+          "recap": {
+            "physical": 376.35000000000014,
+            "magic": 380.6700000000001,
+            "dot": 0,
+            "crits": 5,
+            "heals": 0,
+            "taken": 1138.9679249999995,
+            "shielded": 0,
+            "dodges": 11,
+            "skills": 7
+          },
+          "income": {
+            "base": 300,
+            "interest": 40,
+            "win": 0,
+            "winStreak": 0,
+            "loss": 75,
+            "loseStreak": 30,
+            "total": 445,
+            "won": false
+          },
+          "life": 90,
+          "gold": 905,
+          "results": [
+            {
+              "winner": "bot_7",
+              "loser": "you",
+              "hpLost": 5,
+              "text": "Void Bot batte te (-5)"
+            },
+            {
+              "winner": "bot_5",
+              "loser": "bot_4",
+              "hpLost": 4,
+              "text": "Rage Bot batte Shield Bot (-4)"
+            },
+            {
+              "winner": "bot_3",
+              "loser": "bot_1",
+              "hpLost": 4,
+              "text": "Toxin Bot batte Ash Bot (-4)"
+            },
+            {
+              "winner": "bot_6",
+              "loser": "bot_2",
+              "hpLost": 4,
+              "text": "Wound Bot batte Frost Bot (-4)"
+            }
+          ],
+          "standings": [
+            {
+              "id": "bot_3",
+              "life": 100,
+              "gold": 430,
+              "wins": 2,
+              "losses": 0
+            },
+            {
+              "id": "bot_5",
+              "life": 100,
+              "gold": 430,
+              "wins": 2,
+              "losses": 0
+            },
+            {
+              "id": "bot_7",
+              "life": 100,
+              "gold": 430,
+              "wins": 2,
+              "losses": 0
+            },
+            {
+              "id": "bot_2",
+              "life": 96,
+              "gold": 415,
+              "wins": 1,
+              "losses": 1
+            },
+            {
+              "id": "bot_6",
+              "life": 96,
+              "gold": 415,
+              "wins": 1,
+              "losses": 1
+            },
+            {
+              "id": "bot_1",
+              "life": 92,
+              "gold": 435,
+              "wins": 0,
+              "losses": 2
+            },
+            {
+              "id": "bot_4",
+              "life": 92,
+              "gold": 435,
+              "wins": 0,
+              "losses": 2
+            },
+            {
+              "id": "you",
+              "life": 90,
+              "gold": 905,
+              "wins": 0,
+              "losses": 2
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "shop": [
+            "legacy_104",
+            "legacy_054",
+            "legacy_032",
+            "legacy_088"
+          ],
+          "levels": {
+            "legacy_136": 1,
+            "legacy_109": 1,
+            "legacy_029": 1
+          },
+          "frames": 2147,
+          "result": "loss",
+          "hpLost": 5,
+          "playerHp": 0,
+          "enemyHp": 238.7151749999992,
+          "recap": {
+            "physical": 596.2400999999998,
+            "magic": 320.04472499999997,
+            "dot": 0,
+            "crits": 8,
+            "heals": 0,
+            "taken": 1172.5935000000006,
+            "shielded": 0,
+            "dodges": 5,
+            "skills": 6
+          },
+          "income": {
+            "base": 300,
+            "interest": 70,
+            "win": 0,
+            "winStreak": 0,
+            "loss": 75,
+            "loseStreak": 45,
+            "total": 490,
+            "won": false
+          },
+          "life": 85,
+          "gold": 1275,
+          "results": [
+            {
+              "winner": "bot_4",
+              "loser": "you",
+              "hpLost": 5,
+              "text": "Shield Bot batte te (-5)"
+            },
+            {
+              "winner": "bot_3",
+              "loser": "bot_6",
+              "hpLost": 6,
+              "text": "Toxin Bot batte Wound Bot (-6)"
+            },
+            {
+              "winner": "bot_7",
+              "loser": "bot_5",
+              "hpLost": 6,
+              "text": "Void Bot batte Rage Bot (-6)"
+            },
+            {
+              "winner": "bot_2",
+              "loser": "bot_1",
+              "hpLost": 4,
+              "text": "Frost Bot batte Ash Bot (-4)"
+            }
+          ],
+          "standings": [
+            {
+              "id": "bot_3",
+              "life": 100,
+              "gold": 480,
+              "wins": 3,
+              "losses": 0
+            },
+            {
+              "id": "bot_7",
+              "life": 100,
+              "gold": 480,
+              "wins": 3,
+              "losses": 0
+            },
+            {
+              "id": "bot_2",
+              "life": 96,
+              "gold": 425,
+              "wins": 2,
+              "losses": 1
+            },
+            {
+              "id": "bot_5",
+              "life": 94,
+              "gold": 475,
+              "wins": 2,
+              "losses": 1
+            },
+            {
+              "id": "bot_4",
+              "life": 92,
+              "gold": 445,
+              "wins": 1,
+              "losses": 2
+            },
+            {
+              "id": "bot_6",
+              "life": 90,
+              "gold": 460,
+              "wins": 1,
+              "losses": 2
+            },
+            {
+              "id": "bot_1",
+              "life": 88,
+              "gold": 480,
+              "wins": 0,
+              "losses": 3
+            },
+            {
+              "id": "you",
+              "life": 85,
+              "gold": 1275,
+              "wins": 0,
+              "losses": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "seed": 4294967295,
+      "active": [
+        "wound",
+        "shield",
+        "essence",
+        "dodge",
+        "rage",
+        "guardian",
+        "healing",
+        "precision"
+      ],
+      "initialDraft": {
+        "choices": [
+          "duskwhisper",
+          "darkbane",
+          "shadowflame"
+        ],
+        "rerollsLeft": 2
+      },
+      "hero": "nightshade",
+      "rounds": [
+        {
+          "round": 1,
+          "shop": [
+            "legacy_135",
+            "legacy_043",
+            "legacy_088",
+            "legacy_139"
+          ],
+          "levels": {
+            "legacy_043": 1
+          },
+          "frames": 1700,
+          "result": "win",
+          "hpLost": 0,
+          "playerHp": 388.5,
+          "enemyHp": 0,
+          "recap": {
+            "physical": 580.7215499999999,
+            "magic": 202.9335,
+            "dot": 176.39999999999768,
+            "crits": 8,
+            "heals": 0,
+            "taken": 631.5,
+            "shielded": 0,
+            "dodges": 5,
+            "skills": 5
+          },
+          "income": {
+            "base": 300,
+            "interest": 10,
+            "win": 50,
+            "winStreak": 20,
+            "loss": 0,
+            "loseStreak": 0,
+            "total": 380,
+            "won": true
+          },
+          "life": 100,
+          "gold": 560,
+          "results": [
+            {
+              "winner": "you",
+              "loser": "bot_5",
+              "hpLost": 4,
+              "text": "Tu batti Rage Bot (-4)"
+            },
+            {
+              "winner": "bot_7",
+              "loser": "bot_4",
+              "hpLost": 4,
+              "text": "Void Bot batte Shield Bot (-4)"
+            },
+            {
+              "winner": "bot_1",
+              "loser": "bot_2",
+              "hpLost": 4,
+              "text": "Ash Bot batte Frost Bot (-4)"
+            },
+            {
+              "winner": "bot_3",
+              "loser": "bot_6",
+              "hpLost": 4,
+              "text": "Toxin Bot batte Wound Bot (-4)"
+            }
+          ],
+          "standings": [
+            {
+              "id": "you",
+              "life": 100,
+              "gold": 560,
+              "wins": 1,
+              "losses": 0
+            },
+            {
+              "id": "bot_1",
+              "life": 100,
+              "gold": 400,
+              "wins": 1,
+              "losses": 0
+            },
+            {
+              "id": "bot_3",
+              "life": 100,
+              "gold": 400,
+              "wins": 1,
+              "losses": 0
+            },
+            {
+              "id": "bot_7",
+              "life": 100,
+              "gold": 400,
+              "wins": 1,
+              "losses": 0
+            },
+            {
+              "id": "bot_2",
+              "life": 96,
+              "gold": 405,
+              "wins": 0,
+              "losses": 1
+            },
+            {
+              "id": "bot_4",
+              "life": 96,
+              "gold": 405,
+              "wins": 0,
+              "losses": 1
+            },
+            {
+              "id": "bot_5",
+              "life": 96,
+              "gold": 405,
+              "wins": 0,
+              "losses": 1
+            },
+            {
+              "id": "bot_6",
+              "life": 96,
+              "gold": 405,
+              "wins": 0,
+              "losses": 1
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "shop": [
+            "legacy_062",
+            "legacy_093",
+            "legacy_077",
+            "legacy_055"
+          ],
+          "levels": {
+            "legacy_043": 1,
+            "legacy_012": 1
+          },
+          "frames": 1681,
+          "result": "win",
+          "hpLost": 0,
+          "playerHp": 314.53499999999997,
+          "enemyHp": 0,
+          "recap": {
+            "physical": 577.59,
+            "magic": 229.07619645749998,
+            "dot": 174.53333333333111,
+            "crits": 7,
+            "heals": 0,
+            "taken": 705.465,
+            "shielded": 0,
+            "dodges": 1,
+            "skills": 5
+          },
+          "income": {
+            "base": 300,
+            "interest": 40,
+            "win": 50,
+            "winStreak": 40,
+            "loss": 0,
+            "loseStreak": 0,
+            "total": 430,
+            "won": true
+          },
+          "life": 100,
+          "gold": 870,
+          "results": [
+            {
+              "winner": "you",
+              "loser": "bot_5",
+              "hpLost": 6,
+              "text": "Tu batti Rage Bot (-6)"
+            },
+            {
+              "winner": "bot_3",
+              "loser": "bot_2",
+              "hpLost": 4,
+              "text": "Toxin Bot batte Frost Bot (-4)"
+            },
+            {
+              "winner": "bot_1",
+              "loser": "bot_4",
+              "hpLost": 4,
+              "text": "Ash Bot batte Shield Bot (-4)"
+            },
+            {
+              "winner": "bot_6",
+              "loser": "bot_7",
+              "hpLost": 4,
+              "text": "Wound Bot batte Void Bot (-4)"
+            }
+          ],
+          "standings": [
+            {
+              "id": "you",
+              "life": 100,
+              "gold": 870,
+              "wins": 2,
+              "losses": 0
+            },
+            {
+              "id": "bot_1",
+              "life": 100,
+              "gold": 430,
+              "wins": 2,
+              "losses": 0
+            },
+            {
+              "id": "bot_3",
+              "life": 100,
+              "gold": 430,
+              "wins": 2,
+              "losses": 0
+            },
+            {
+              "id": "bot_6",
+              "life": 96,
+              "gold": 415,
+              "wins": 1,
+              "losses": 1
+            },
+            {
+              "id": "bot_7",
+              "life": 96,
+              "gold": 415,
+              "wins": 1,
+              "losses": 1
+            },
+            {
+              "id": "bot_2",
+              "life": 92,
+              "gold": 435,
+              "wins": 0,
+              "losses": 2
+            },
+            {
+              "id": "bot_4",
+              "life": 92,
+              "gold": 435,
+              "wins": 0,
+              "losses": 2
+            },
+            {
+              "id": "bot_5",
+              "life": 90,
+              "gold": 465,
+              "wins": 0,
+              "losses": 2
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "shop": [
+            "legacy_012",
+            "legacy_040",
+            "legacy_086",
+            "legacy_117"
+          ],
+          "levels": {
+            "legacy_043": 1,
+            "legacy_012": 1,
+            "legacy_092": 1
+          },
+          "frames": 2701,
+          "result": "win",
+          "hpLost": 0,
+          "playerHp": 109.87825000004025,
+          "enemyHp": 70.41109533665941,
+          "recap": {
+            "physical": 658.83096,
+            "magic": 251.45561133,
+            "dot": 232.30233333332578,
+            "crits": 11,
+            "heals": 0,
+            "taken": 962.329500000001,
+            "shielded": 0,
+            "dodges": 1,
+            "skills": 7
+          },
+          "income": {
+            "base": 300,
+            "interest": 70,
+            "win": 50,
+            "winStreak": 60,
+            "loss": 0,
+            "loseStreak": 0,
+            "total": 480,
+            "won": true
+          },
+          "life": 100,
+          "gold": 1230,
+          "results": [
+            {
+              "winner": "you",
+              "loser": "bot_1",
+              "hpLost": 6,
+              "text": "Tu batti Ash Bot (-6)"
+            },
+            {
+              "winner": "bot_4",
+              "loser": "bot_2",
+              "hpLost": 4,
+              "text": "Shield Bot batte Frost Bot (-4)"
+            },
+            {
+              "winner": "bot_3",
+              "loser": "bot_7",
+              "hpLost": 6,
+              "text": "Toxin Bot batte Void Bot (-6)"
+            },
+            {
+              "winner": "bot_6",
+              "loser": "bot_5",
+              "hpLost": 4,
+              "text": "Wound Bot batte Rage Bot (-4)"
+            }
+          ],
+          "standings": [
+            {
+              "id": "you",
+              "life": 100,
+              "gold": 1230,
+              "wins": 3,
+              "losses": 0
+            },
+            {
+              "id": "bot_3",
+              "life": 100,
+              "gold": 480,
+              "wins": 3,
+              "losses": 0
+            },
+            {
+              "id": "bot_6",
+              "life": 96,
+              "gold": 445,
+              "wins": 2,
+              "losses": 1
+            },
+            {
+              "id": "bot_1",
+              "life": 94,
+              "gold": 475,
+              "wins": 2,
+              "losses": 1
+            },
+            {
+              "id": "bot_4",
+              "life": 92,
+              "gold": 445,
+              "wins": 1,
+              "losses": 2
+            },
+            {
+              "id": "bot_7",
+              "life": 90,
+              "gold": 475,
+              "wins": 1,
+              "losses": 2
+            },
+            {
+              "id": "bot_2",
+              "life": 88,
+              "gold": 480,
+              "wins": 0,
+              "losses": 3
+            },
+            {
+              "id": "bot_5",
+              "life": 86,
+              "gold": 510,
+              "wins": 0,
+              "losses": 3
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

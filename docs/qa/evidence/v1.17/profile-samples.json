@@ -1,0 +1,137 @@
+{
+  "scope": "one seed per scenario; opt-in instrumentation overhead included; hashes compared to ordinary execution",
+  "records": [
+    {
+      "event_count": 191,
+      "ok": true,
+      "profile": {
+        "event_serialization_hash_us": 2437,
+        "serialized_event_bytes": 44205
+      },
+      "runtime_us": 6597,
+      "scenarioId": "01_baseline",
+      "seed": 0
+    },
+    {
+      "event_count": 190,
+      "ok": true,
+      "profile": {
+        "event_serialization_hash_us": 2334,
+        "serialized_event_bytes": 42446
+      },
+      "runtime_us": 6326,
+      "scenarioId": "02_stats",
+      "seed": 0
+    },
+    {
+      "event_count": 190,
+      "ok": true,
+      "profile": {
+        "event_serialization_hash_us": 2191,
+        "serialized_event_bytes": 40198
+      },
+      "runtime_us": 5462,
+      "scenarioId": "03_crit_dodge",
+      "seed": 0
+    },
+    {
+      "event_count": 521,
+      "ok": true,
+      "profile": {
+        "event_serialization_hash_us": 6130,
+        "serialized_event_bytes": 115338
+      },
+      "runtime_us": 14602,
+      "scenarioId": "04_shield_healing",
+      "seed": 0
+    },
+    {
+      "event_count": 78,
+      "ok": true,
+      "profile": {
+        "event_serialization_hash_us": 2064,
+        "serialized_event_bytes": 21916
+      },
+      "runtime_us": 4751,
+      "scenarioId": "05_toxin_dot",
+      "seed": 0
+    },
+    {
+      "event_count": 210,
+      "ok": true,
+      "profile": {
+        "event_serialization_hash_us": 2682,
+        "serialized_event_bytes": 49336
+      },
+      "runtime_us": 7122,
+      "scenarioId": "06_wound_amplification",
+      "seed": 0
+    },
+    {
+      "event_count": 170,
+      "ok": true,
+      "profile": {
+        "event_serialization_hash_us": 2364,
+        "serialized_event_bytes": 40097
+      },
+      "runtime_us": 6580,
+      "scenarioId": "07_ice_stun",
+      "seed": 0
+    },
+    {
+      "event_count": 348,
+      "ok": true,
+      "profile": {
+        "event_serialization_hash_us": 3776,
+        "serialized_event_bytes": 69373
+      },
+      "runtime_us": 9396,
+      "scenarioId": "08_skill_essence",
+      "seed": 0
+    },
+    {
+      "event_count": 143,
+      "ok": true,
+      "profile": {
+        "event_serialization_hash_us": 1778,
+        "serialized_event_bytes": 32256
+      },
+      "runtime_us": 4733,
+      "scenarioId": "09_rage_speed",
+      "seed": 0
+    },
+    {
+      "event_count": 197,
+      "ok": true,
+      "profile": {
+        "event_serialization_hash_us": 2540,
+        "serialized_event_bytes": 46824
+      },
+      "runtime_us": 6451,
+      "scenarioId": "10_reflection_lethal",
+      "seed": 0
+    },
+    {
+      "event_count": 101,
+      "ok": true,
+      "profile": {
+        "event_serialization_hash_us": 1310,
+        "serialized_event_bytes": 24660
+      },
+      "runtime_us": 3197,
+      "scenarioId": "11_cross_timed",
+      "seed": 0
+    },
+    {
+      "event_count": 101,
+      "ok": true,
+      "profile": {
+        "event_serialization_hash_us": 1334,
+        "serialized_event_bytes": 24660
+      },
+      "runtime_us": 3240,
+      "scenarioId": "12_mirrored_sides",
+      "seed": 0
+    }
+  ]
+}

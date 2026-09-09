@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "records": [
+    {
+      "cardId": "legacy_049",
+      "originalTextSha256": "af07e68822e3db4bb2c2ed4d5562f5f9600474ddc8456ad8b7d1278655c621ac",
+      "lethalRules": []
+    },
+    {
+      "cardId": "legacy_090",
+      "originalTextSha256": "0c329c61377e88efd2075d54fa48f206d5909f9fd8944b31f844ad8f2c6f18cf",
+      "lethalRules": []
+    },
+    {
+      "cardId": "legacy_120",
+      "originalTextSha256": "258f374ad1b26397c46a26e4ee62c3a6b370310da72fb2afb30dc4cc764679ac",
+      "lethalRules": [
+        {
+          "handler": "rebirth",
+          "charges": 1,
+          "restore_hp_bp": 4000,
+          "cleanse_debuffs": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1879 @@
+{
+  "phase": "v1.17",
+  "status": "pass",
+  "rulesetVersion": "combat_v1.17.1",
+  "canonicalDataVersion": "v1.16.1",
+  "dataHash": "932aaad64f3c805dbb60439d36213e253d2a7eb3d25e0e66d42bfc7c2c5359bf",
+  "commit": "fd0163b00f2c468de144450acd84e5907529e0d3",
+  "godot": "4.7.2.stable.official.ed1daf0bf",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.0",
+  "workers": 4,
+  "firstSeed": 0,
+  "seedsPerScenario": 1000,
+  "horizon_ms": 45000,
+  "uniqueFights": 12000,
+  "repeatedFights": 12000,
+  "replayRoundTrips": 12,
+  "mirrorComparisons": 1000,
+  "replayHashFailures": 0,
+  "failures": [],
+  "fullCorpusPassSeconds": [
+    25.96619069999724,
+    25.800218500000483
+  ],
+  "totalWallSeconds": 59.431814899995516,
+  "cleanCheckoutComparison": "D:\\Dev\\HeroSmash\\docs\\qa\\evidence\\v1.17\\lab-summary.json",
+  "scenarios": [
+    {
+      "scenarioId": "01_baseline",
+      "fights": 1000,
+      "outcomes": {
+        "win": 1000
+      },
+      "wins": {
+        "beta": 999,
+        "alpha": 1
+      },
+      "winRates": {
+        "beta": 0.999,
+        "alpha": 0.001
+      },
+      "drawRate": 0.0,
+      "timeoutRate": 0.0,
+      "duration_ms": {
+        "mean": 30033.784,
+        "median": 29808.0,
+        "p90": 32693,
+        "p99": 34616,
+        "minimum": 25962,
+        "maximum": 35000
+      },
+      "event_count": {
+        "mean": 176.377,
+        "median": 175.0,
+        "p90": 191,
+        "p99": 202,
+        "minimum": 146,
+        "maximum": 211
+      },
+      "runtime_us": {
+        "mean": 7280.853,
+        "median": 6230.0,
+        "p90": 10992,
+        "p99": 12092,
+        "minimum": 4964,
+        "maximum": 12424
+      },
+      "deterministicMetricsHash": "00fcc32c219f290fbf57b4e883cbbefb51c2d7dd63a3cf9e20ae9d31e82f2d24",
+      "actors": {
+        "alpha": {
+          "totals": {
+            "basic_attacks": 29198,
+            "crit_attempts": 33868,
+            "crit_count": 2401,
+            "damage_taken_milli": 929984800,
+            "death_prevention_count": 0,
+            "dodge_attempts": 36978,
+            "dodge_count": 2631,
+            "dot_damage_milli": 159684000,
+            "healing_milli": 0,
+            "ko_count": 999,
+            "magic_damage_milli": 159684000,
+            "physical_damage_milli": 639282750,
+            "rebirth_count": 0,
+            "shield_absorbed_milli": 0,
+            "shield_generated_milli": 0,
+            "skill_casts": 4670,
+            "status_applications": 4196
+          },
+          "meanPerFight": {
+            "basic_attacks": 29.198,
+            "crit_attempts": 33.868,
+            "crit_count": 2.401,
+            "damage_taken_milli": 929984.8,
+            "death_prevention_count": 0.0,
+            "dodge_attempts": 36.978,
+            "dodge_count": 2.631,
+            "dot_damage_milli": 159684.0,
+            "healing_milli": 0.0,
+            "ko_count": 0.999,
+            "magic_damage_milli": 159684.0,
+            "physical_damage_milli": 639282.75,
+            "rebirth_count": 0.0,
+            "shield_absorbed_milli": 0.0,
+            "shield_generated_milli": 0.0,
+            "skill_casts": 4.67,
+            "status_applications": 4.196
+          },
+          "statusUptimeMeanMs": {},
+          "lethalSources": {
+            "beta:basic": 781,
+            "beta:skill": 218
+          },
+          "remainingHpMilli": {
+            "mean": 15.2,
+            "median": 0.0,
+            "p90": 0,
+            "p99": 0,
+            "minimum": 0,
+            "maximum": 15200
+          },
+          "critRate": 0.07089287823314043,
+          "dodgeRate": 0.0711504137595327
+        },
+        "beta": {
+          "totals": {
+            "basic_attacks": 32197,
+            "crit_attempts": 36978,
+            "crit_count": 2742,
+            "damage_taken_milli": 798966750,
+            "death_prevention_count": 0,
+            "dodge_attempts": 33868,
+            "dodge_count": 3748,
+            "dot_damage_milli": 0,
+            "healing_milli": 0,
+            "ko_count": 1,
+            "magic_damage_milli": 0,
+            "physical_damage_milli": 929984800,
+            "rebirth_count": 0,
+            "shield_absorbed_milli": 0,
+            "shield_generated_milli": 0,
+            "skill_casts": 4781,
+            "status_applications": 0
+          },
+          "meanPerFight": {
+            "basic_attacks": 32.197,
+            "crit_attempts": 36.978,
+            "crit_count": 2.742,
+            "damage_taken_milli": 798966.75,
+            "death_prevention_count": 0.0,
+            "dodge_attempts": 33.868,
+            "dodge_count": 3.748,
+            "dot_damage_milli": 0.0,
+            "healing_milli": 0.0,
+            "ko_count": 0.001,
+            "magic_damage_milli": 0.0,
+            "physical_damage_milli": 929984.8,
+            "rebirth_count": 0.0,
+            "shield_absorbed_milli": 0.0,
+            "shield_generated_milli": 0.0,
+            "skill_casts": 4.781,
+            "status_applications": 0.0
+          },
+          "statusUptimeMeanMs": {
+            "burn": 11732.723
+          },
+          "lethalSources": {
+            "alpha:basic": 1
+          },
+          "remainingHpMilli": {
+            "mean": 221033.25,
+            "median": 221475.0,
+            "p90": 324100,
+            "p99": 400400,
+            "minimum": 0,
+            "maximum": 514400
+          },
+          "critRate": 0.0741521986045757,
+          "dodgeRate": 0.11066493445139955
+        }
+      }
+    },
+    {
+      "scenarioId": "02_stats",
+      "fights": 1000,
+      "outcomes": {
+        "win": 1000
+      },
+      "wins": {
+        "beta": 819,
+        "alpha": 181
+      },
+      "winRates": {
+        "beta": 0.819,
+        "alpha": 0.181
+      },
+      "drawRate": 0.0,
+      "timeoutRate": 0.0,
+      "duration_ms": {
+        "mean": 24945.536,
+        "median": 25000.0,
+        "p90": 26924,
+        "p99": 28847,
+        "minimum": 22116,
+        "maximum": 29808
+      },
+      "event_count": {
+        "mean": 174.666,
+        "median": 174.0,
+        "p90": 188,
+        "p99": 195,
+        "minimum": 145,
+        "maximum": 205
+      },
+      "runtime_us": {
+        "mean": 7241.875,
+        "median": 6004.0,
+        "p90": 10616,
+        "p99": 11254,
+        "minimum": 4739,
+        "maximum": 12019
+      },
+      "deterministicMetricsHash": "188262bcc7758b07b007d01866fc206a0208acc57da9dabf45e90dd86d00375d",
+      "actors": {
+        "alpha": {
+          "totals": {
+            "basic_attacks": 24545,
+            "crit_attempts": 28501,
+            "crit_count": 2021,
+            "damage_taken_milli": 921529250,
+            "death_prevention_count": 0,
+            "dodge_attempts": 30781,
+            "dodge_count": 2215,
+            "dot_damage_milli": 132886385,
+            "healing_milli": 0,
+            "ko_count": 819,
+            "magic_damage_milli": 132886385,
+            "physical_damage_milli": 797483730,
+            "rebirth_count": 0,
+            "shield_absorbed_milli": 0,
+            "shield_generated_milli": 0,
+            "skill_casts": 3956,
+            "status_applications": 3555
+          },
+          "meanPerFight": {
+            "basic_attacks": 24.545,
+            "crit_attempts": 28.501,
+            "crit_count": 2.021,
+            "damage_taken_milli": 921529.25,
+            "death_prevention_count": 0.0,
+            "dodge_attempts": 30.781,
+            "dodge_count": 2.215,
+            "dot_damage_milli": 132886.385,
+            "healing_milli": 0.0,
+            "ko_count": 0.819,
+            "magic_damage_milli": 132886.385,
+            "physical_damage_milli": 797483.73,
+            "rebirth_count": 0.0,
+            "shield_absorbed_milli": 0.0,
+            "shield_generated_milli": 0.0,
+            "skill_casts": 3.956,
+            "status_applications": 3.555
+          },
+          "statusUptimeMeanMs": {},
+          "lethalSources": {
+            "beta:basic": 747,
+            "beta:skill": 72
+          },
+          "remainingHpMilli": {
+            "mean": 8470.75,
+            "median": 0.0,
+            "p90": 35175,
+            "p99": 118450,
+            "minimum": 0,
+            "maximum": 172600
+          },
+          "critRate": 0.07090979263885477,
+          "dodgeRate": 0.07195997530944413
+        },
+        "beta": {
+          "totals": {
+            "basic_attacks": 26785,
+            "crit_attempts": 30781,
+            "crit_count": 2287,
+            "damage_taken_milli": 930370115,
+            "death_prevention_count": 0,
+            "dodge_attempts": 28501,
+            "dodge_count": 3158,
+            "dot_damage_milli": 0,
+            "healing_milli": 0,
+            "ko_count": 181,
+            "magic_damage_milli": 0,
+            "physical_damage_milli": 921529250,
+            "rebirth_count": 0,
+            "shield_absorbed_milli": 0,
+            "shield_generated_milli": 0,
+            "skill_casts": 3996,
+            "status_applications": 0
+          },
+          "meanPerFight": {
+            "basic_attacks": 26.785,
+            "crit_attempts": 30.781,
+            "crit_count": 2.287,
+            "damage_taken_milli": 930370.115,
+            "death_prevention_count": 0.0,
+            "dodge_attempts": 28.501,
+            "dodge_count": 3.158,
+            "dot_damage_milli": 0.0,
+            "healing_milli": 0.0,
+            "ko_count": 0.181,
+            "magic_damage_milli": 0.0,
+            "physical_damage_milli": 921529.25,
+            "rebirth_count": 0.0,
+            "shield_absorbed_milli": 0.0,
+            "shield_generated_milli": 0.0,
+            "skill_casts": 3.996,
+            "status_applications": 0.0
+          },
+          "statusUptimeMeanMs": {
+            "burn": 9682.429
+          },
+          "lethalSources": {
+            "alpha:basic": 130,
+            "alpha:dot": 49,
+            "alpha:skill": 2
+          },
+          "remainingHpMilli": {
+            "mean": 89629.885,
+            "median": 79002.5,
+            "p90": 199550,
+            "p99": 292320,
+            "minimum": 0,
+            "maximum": 388860
+          },
+          "critRate": 0.07429908060166986,
+          "dodgeRate": 0.11080312971474685
+        }
+      }
+    },
+    {
+      "scenarioId": "03_crit_dodge",
+      "fights": 1000,
+      "outcomes": {
+        "win": 984,
+        "timeout": 16
+      },
+      "wins": {
+        "alpha": 984
+      },
+      "winRates": {
+        "alpha": 0.984
+      },
+      "drawRate": 0.0,
+      "timeoutRate": 0.016,
+      "duration_ms": {
+        "mean": 36362.805,
+        "median": 36171.0,
+        "p90": 40426,
+        "p99": 45000,
+        "minimum": 27660,
+        "maximum": 45000
+      },
+      "event_count": {
+        "mean": 192.28,
+        "median": 191.0,
+        "p90": 212,
+        "p99": 231,
+        "minimum": 153,
+        "maximum": 240
+      },
+      "runtime_us": {
+        "mean": 6819.31,
+        "median": 5689.5,
+        "p90": 10136,
+        "p99": 11429,
+        "minimum": 4322,
+        "maximum": 11899
+      },
+      "deterministicMetricsHash": "f8ca45e6f628588860780d9ed9c2d90622e98d36b7eb3539b16f8ddace915552",
+      "actors": {
+        "alpha": {
+          "totals": {
+            "basic_attacks": 35098,
+            "crit_attempts": 41113,
+            "crit_count": 8689,
+            "damage_taken_milli": 684564800,
+            "death_prevention_count": 0,
+            "dodge_attempts": 40402,
+            "dodge_count": 3647,
+            "dot_damage_milli": 0,
+            "healing_milli": 85649000,
+            "ko_count": 0,
+            "magic_damage_milli": 0,
+            "physical_damage_milli": 969066700,
+            "rebirth_count": 0,
+            "shield_absorbed_milli": 0,
+            "shield_generated_milli": 0,
+            "skill_casts": 6015,
+            "status_applications": 0
+          },
+          "meanPerFight": {
+            "basic_attacks": 35.098,
+            "crit_attempts": 41.113,
+            "crit_count": 8.689,
+            "damage_taken_milli": 684564.8,
+            "death_prevention_count": 0.0,
+            "dodge_attempts": 40.402,
+            "dodge_count": 3.647,
+            "dot_damage_milli": 0.0,
+            "healing_milli": 85649.0,
+            "ko_count": 0.0,
+            "magic_damage_milli": 0.0,
+            "physical_damage_milli": 969066.7,
+            "rebirth_count": 0.0,
+            "shield_absorbed_milli": 0.0,
+            "shield_generated_milli": 0.0,
+            "skill_casts": 6.015,
+            "status_applications": 0.0
+          },
+          "statusUptimeMeanMs": {},
+          "lethalSources": {},
+          "remainingHpMilli": {
+            "mean": 376084.2,
+            "median": 377025.0,
+            "p90": 488800,
+            "p99": 559150,
+            "minimum": 72600,
+            "maximum": 644800
+          },
+          "critRate": 0.21134434363826526,
+          "dodgeRate": 0.09026780852433047
+        },
+        "beta": {
+          "totals": {
+            "basic_attacks": 34672,
+            "crit_attempts": 40402,
+            "crit_count": 4045,
+            "damage_taken_milli": 969066700,
+            "death_prevention_count": 0,
+            "dodge_attempts": 41113,
+            "dodge_count": 6626,
+            "dot_damage_milli": 0,
+            "healing_milli": 39810000,
+            "ko_count": 984,
+            "magic_damage_milli": 0,
+            "physical_damage_milli": 684564800,
+            "rebirth_count": 0,
+            "shield_absorbed_milli": 0,
+            "shield_generated_milli": 0,
+            "skill_casts": 5730,
+            "status_applications": 0
+          },
+          "meanPerFight": {
+            "basic_attacks": 34.672,
+            "crit_attempts": 40.402,
+            "crit_count": 4.045,
+            "damage_taken_milli": 969066.7,
+            "death_prevention_count": 0.0,
+            "dodge_attempts": 41.113,
+            "dodge_count": 6.626,
+            "dot_damage_milli": 0.0,
+            "healing_milli": 39810.0,
+            "ko_count": 0.984,
+            "magic_damage_milli": 0.0,
+            "physical_damage_milli": 684564.8,
+            "rebirth_count": 0.0,
+            "shield_absorbed_milli": 0.0,
+            "shield_generated_milli": 0.0,
+            "skill_casts": 5.73,
+            "status_applications": 0.0
+          },
+          "statusUptimeMeanMs": {},
+          "lethalSources": {
+            "alpha:basic": 846,
+            "alpha:skill": 138
+          },
+          "remainingHpMilli": {
+            "mean": 743.3,
+            "median": 0.0,
+            "p90": 0,
+            "p99": 26500,
+            "minimum": 0,
+            "maximum": 95950
+          },
+          "critRate": 0.10011880599970298,
+          "dodgeRate": 0.16116556806849416
+        }
+      }
+    },
+    {
+      "scenarioId": "04_shield_healing",
+      "fights": 1000,
+      "outcomes": {
+        "timeout": 1000
+      },
+      "wins": {},
+      "winRates": {},
+      "drawRate": 0.0,
+      "timeoutRate": 1.0,
+      "duration_ms": {
+        "mean": 45000,
+        "median": 45000.0,
+        "p90": 45000,
+        "p99": 45000,
+        "minimum": 45000,
+        "maximum": 45000
+      },
+      "event_count": {
+        "mean": 526.47,
+        "median": 526.0,
+        "p90": 550,
+        "p99": 568,
+        "minimum": 468,
+        "maximum": 584
+      },
+      "runtime_us": {
+        "mean": 18876.71,
+        "median": 15836.5,
+        "p90": 26580,
+        "p99": 27647,
+        "minimum": 13609,
+        "maximum": 28749
+      },
+      "deterministicMetricsHash": "902bcc2537a2a8aac59d72260f53e557bf592ff88c62cd96309ae986b3c5060f",
+      "actors": {
+        "alpha": {
+          "totals": {
+            "basic_attacks": 51000,
+            "crit_attempts": 58000,
+            "crit_count": 5559,
+            "damage_taken_milli": 464513800,
+            "death_prevention_count": 0,
+            "dodge_attempts": 55000,
+            "dodge_count": 8302,
+            "dot_damage_milli": 0,
+            "healing_milli": 96529307,
+            "ko_count": 0,
+            "magic_damage_milli": 0,
+            "physical_damage_milli": 782225900,
+            "rebirth_count": 0,
+            "shield_absorbed_milli": 54242000,
+            "shield_generated_milli": 55660000,
+            "skill_casts": 7000,
+            "status_applications": 15415
+          },
+          "meanPerFight": {
+            "basic_attacks": 51.0,
+            "crit_attempts": 58.0,
+            "crit_count": 5.559,
+            "damage_taken_milli": 464513.8,
+            "death_prevention_count": 0.0,
+            "dodge_attempts": 55.0,
+            "dodge_count": 8.302,
+            "dot_damage_milli": 0.0,
+            "healing_milli": 96529.307,
+            "ko_count": 0.0,
+            "magic_damage_milli": 0.0,
+            "physical_damage_milli": 782225.9,
+            "rebirth_count": 0.0,
+            "shield_absorbed_milli": 54242.0,
+            "shield_generated_milli": 55660.0,
+            "skill_casts": 7.0,
+            "status_applications": 15.415
+          },
+          "statusUptimeMeanMs": {
+            "shield": 7168.02
+          },
+          "lethalSources": {},
+          "remainingHpMilli": {
+            "mean": 902015.507,
+            "median": 902688.5,
+            "p90": 939863,
+            "p99": 976449,
+            "minimum": 807051,
+            "maximum": 1005121
+          },
+          "critRate": 0.0958448275862069,
+          "dodgeRate": 0.15094545454545455
+        },
+        "beta": {
+          "totals": {
+            "basic_attacks": 48000,
+            "crit_attempts": 55000,
+            "crit_count": 3695,
+            "damage_taken_milli": 782225900,
+            "death_prevention_count": 0,
+            "dodge_attempts": 58000,
+            "dodge_count": 7571,
+            "dot_damage_milli": 0,
+            "healing_milli": 158449797,
+            "ko_count": 0,
+            "magic_damage_milli": 0,
+            "physical_damage_milli": 464513800,
+            "rebirth_count": 0,
+            "shield_absorbed_milli": 54800000,
+            "shield_generated_milli": 56244000,
+            "skill_casts": 7000,
+            "status_applications": 15561
+          },
+          "meanPerFight": {
+            "basic_attacks": 48.0,
+            "crit_attempts": 55.0,
+            "crit_count": 3.695,
+            "damage_taken_milli": 782225.9,
+            "death_prevention_count": 0.0,
+            "dodge_attempts": 58.0,
+            "dodge_count": 7.571,
+            "dot_damage_milli": 0.0,
+            "healing_milli": 158449.797,
+            "ko_count": 0.0,
+            "magic_damage_milli": 0.0,
+            "physical_damage_milli": 464513.8,
+            "rebirth_count": 0.0,
+            "shield_absorbed_milli": 54800.0,
+            "shield_generated_milli": 56244.0,
+            "skill_casts": 7.0,
+            "status_applications": 15.561
+          },
+          "statusUptimeMeanMs": {
+            "shield": 7269.74
+          },
+          "lethalSources": {},
+          "remainingHpMilli": {
+            "mean": 541223.897,
+            "median": 542543.0,
+            "p90": 597671,
+            "p99": 642313,
+            "minimum": 408048,
+            "maximum": 693543
+          },
+          "critRate": 0.06718181818181818,
+          "dodgeRate": 0.1305344827586207
+        }
+      }
+    },
+    {
+      "scenarioId": "05_toxin_dot",
+      "fights": 1000,
+      "outcomes": {
+        "win": 905,
+        "draw": 95
+      },
+      "wins": {
+        "beta": 898,
+        "alpha": 7
+      },
+      "winRates": {
+        "beta": 0.898,
+        "alpha": 0.007
+      },
+      "drawRate": 0.095,
+      "timeoutRate": 0.0,
+      "duration_ms": {
+        "mean": 6135.5,
+        "median": 6000.0,
+        "p90": 6250,
+        "p99": 7000,
+        "minimum": 6000,
+        "maximum": 7000
+      },
+      "event_count": {
+        "mean": 80.51,
+        "median": 78.0,
+        "p90": 85,
+        "p99": 92,
+        "minimum": 78,
+        "maximum": 92
+      },
+      "runtime_us": {
+        "mean": 2679.946,
+        "median": 2606.0,
+        "p90": 2883,
+        "p99": 3170,
+        "minimum": 2517,
+        "maximum": 5038
+      },
+      "deterministicMetricsHash": "729e18b20a6fdbca88685d55c86fe3b2b6910c2046e448b5df7360718b67fc2b",
+      "actors": {
+        "alpha": {
+          "totals": {
+            "basic_attacks": 6266,
+            "crit_attempts": 7266,
+            "crit_count": 1205,
+            "damage_taken_milli": 1019805300,
+            "death_prevention_count": 0,
+            "dodge_attempts": 7260,
+            "dodge_count": 802,
+            "dot_damage_milli": 872807500,
+            "healing_milli": 0,
+            "ko_count": 993,
+            "magic_damage_milli": 913048750,
+            "physical_damage_milli": 132231375,
+            "rebirth_count": 0,
+            "shield_absorbed_milli": 0,
+            "shield_generated_milli": 0,
+            "skill_casts": 1000,
+            "status_applications": 6266
+          },
+          "meanPerFight": {
+            "basic_attacks": 6.266,
+            "crit_attempts": 7.266,
+            "crit_count": 1.205,
+            "damage_taken_milli": 1019805.3,
+            "death_prevention_count": 0.0,
+            "dodge_attempts": 7.26,
+            "dodge_count": 0.802,
+            "dot_damage_milli": 872807.5,
+            "healing_milli": 0.0,
+            "ko_count": 0.993,
+            "magic_damage_milli": 913048.75,
+            "physical_damage_milli": 132231.375,
+            "rebirth_count": 0.0,
+            "shield_absorbed_milli": 0.0,
+            "shield_generated_milli": 0.0,
+            "skill_casts": 1.0,
+            "status_applications": 6.266
+          },
+          "statusUptimeMeanMs": {
+            "toxin": 5135.5
+          },
+          "lethalSources": {
+            "beta:dot": 827,
+            "beta:basic": 166
+          },
+          "remainingHpMilli": {
+            "mean": 194.7,
+            "median": 0.0,
+            "p90": 0,
+            "p99": 0,
+            "minimum": 0,
+            "maximum": 69100
+          },
+          "critRate": 0.16584090283512248,
+          "dodgeRate": 0.11046831955922864
+        },
+        "beta": {
+          "totals": {
+            "basic_attacks": 7260,
+            "crit_attempts": 8260,
+            "crit_count": 1216,
+            "damage_taken_milli": 1045280125,
+            "death_prevention_count": 0,
+            "dodge_attempts": 6266,
+            "dodge_count": 944,
+            "dot_damage_milli": 840699050,
+            "healing_milli": 0,
+            "ko_count": 102,
+            "magic_damage_milli": 883731200,
+            "physical_damage_milli": 136074100,
+            "rebirth_count": 0,
+            "shield_absorbed_milli": 0,
+            "shield_generated_milli": 0,
+            "skill_casts": 1000,
+            "status_applications": 6266
+          },
+          "meanPerFight": {
+            "basic_attacks": 7.26,
+            "crit_attempts": 8.26,
+            "crit_count": 1.216,
+            "damage_taken_milli": 1045280.125,
+            "death_prevention_count": 0.0,
+            "dodge_attempts": 6.266,
+            "dodge_count": 0.944,
+            "dot_damage_milli": 840699.05,
+            "healing_milli": 0.0,
+            "ko_count": 0.102,
+            "magic_damage_milli": 883731.2,
+            "physical_damage_milli": 136074.1,
+            "rebirth_count": 0.0,
+            "shield_absorbed_milli": 0.0,
+            "shield_generated_milli": 0.0,
+            "skill_casts": 1.0,
+            "status_applications": 6.266
+          },
+          "statusUptimeMeanMs": {
+            "toxin": 5135.5
+          },
+          "lethalSources": {
+            "alpha:dot": 96,
+            "alpha:basic": 6
+          },
+          "remainingHpMilli": {
+            "mean": 64719.875,
+            "median": 67062.5,
+            "p90": 102250,
+            "p99": 139250,
+            "minimum": 0,
+            "maximum": 183250
+          },
+          "critRate": 0.14721549636803874,
+          "dodgeRate": 0.15065432492818384
+        }
+      }
+    },
+    {
+      "scenarioId": "06_wound_amplification",
+      "fights": 1000,
+      "outcomes": {
+        "win": 997,
+        "draw": 3
+      },
+      "wins": {
+        "beta": 757,
+        "alpha": 240
+      },
+      "winRates": {
+        "beta": 0.757,
+        "alpha": 0.24
+      },
+      "drawRate": 0.003,
+      "timeoutRate": 0.0,
+      "duration_ms": {
+        "mean": 27944.731,
+        "median": 28091.0,
+        "p90": 30091,
+        "p99": 31250,
+        "minimum": 19091,
+        "maximum": 33929
+      },
+      "event_count": {
+        "mean": 193.791,
+        "median": 194.0,
+        "p90": 209,
+        "p99": 219,
+        "minimum": 157,
+        "maximum": 226
+      },
+      "runtime_us": {
+        "mean": 8029.366,
+        "median": 6782.0,
+        "p90": 11973,
+        "p99": 12919,
+        "minimum": 5192,
+        "maximum": 14147
+      },
+      "deterministicMetricsHash": "742e52a137fd6960e8aa017487b46fbd4a30c91564b924041bed7295cedddc82",
+      "actors": {
+        "alpha": {
+          "totals": {
+            "basic_attacks": 28678,
+            "crit_attempts": 33197,
+            "crit_count": 4783,
+            "damage_taken_milli": 993911850,
+            "death_prevention_count": 0,
+            "dodge_attempts": 32006,
+            "dodge_count": 3567,
+            "dot_damage_milli": 181966800,
+            "healing_milli": 0,
+            "ko_count": 760,
+            "magic_damage_milli": 181966800,
+            "physical_damage_milli": 773103600,
+            "rebirth_count": 0,
+            "shield_absorbed_milli": 0,
+            "shield_generated_milli": 0,
+            "skill_casts": 4519,
+            "status_applications": 4962
+          },
+          "meanPerFight": {
+            "basic_attacks": 28.678,
+            "crit_attempts": 33.197,
+            "crit_count": 4.783,
+            "damage_taken_milli": 993911.85,
+            "death_prevention_count": 0.0,
+            "dodge_attempts": 32.006,
+            "dodge_count": 3.567,
+            "dot_damage_milli": 181966.8,
+            "healing_milli": 0.0,
+            "ko_count": 0.76,
+            "magic_damage_milli": 181966.8,
+            "physical_damage_milli": 773103.6,
+            "rebirth_count": 0.0,
+            "shield_absorbed_milli": 0.0,
+            "shield_generated_milli": 0.0,
+            "skill_casts": 4.519,
+            "status_applications": 4.962
+          },
+          "statusUptimeMeanMs": {
+            "toxin": 12430.457
+          },
+          "lethalSources": {
+            "beta:dot": 126,
+            "beta:basic": 397,
+            "beta:skill": 237
+          },
+          "remainingHpMilli": {
+            "mean": 26088.15,
+            "median": 0.0,
+            "p90": 104500,
+            "p99": 280400,
+            "minimum": 0,
+            "maximum": 440300
+          },
+          "critRate": 0.14407928427267525,
+          "dodgeRate": 0.1114478535274636
+        },
+        "beta": {
+          "totals": {
+            "basic_attacks": 32006,
+            "crit_attempts": 36646,
+            "crit_count": 5329,
+            "damage_taken_milli": 955070400,
+            "death_prevention_count": 0,
+            "dodge_attempts": 33197,
+            "dodge_count": 4989,
+            "dot_damage_milli": 171022450,
+            "healing_milli": 0,
+            "ko_count": 243,
+            "magic_damage_milli": 365560100,
+            "physical_damage_milli": 628351750,
+            "rebirth_count": 0,
+            "shield_absorbed_milli": 0,
+            "shield_generated_milli": 0,
+            "skill_casts": 4640,
+            "status_applications": 4403
+          },
+          "meanPerFight": {
+            "basic_attacks": 32.006,
+            "crit_attempts": 36.646,
+            "crit_count": 5.329,
+            "damage_taken_milli": 955070.4,
+            "death_prevention_count": 0.0,
+            "dodge_attempts": 33.197,
+            "dodge_count": 4.989,
+            "dot_damage_milli": 171022.45,
+            "healing_milli": 0.0,
+            "ko_count": 0.243,
+            "magic_damage_milli": 365560.1,
+            "physical_damage_milli": 628351.75,
+            "rebirth_count": 0.0,
+            "shield_absorbed_milli": 0.0,
+            "shield_generated_milli": 0.0,
+            "skill_casts": 4.64,
+            "status_applications": 4.403
+          },
+          "statusUptimeMeanMs": {
+            "toxin": 3161.66,
+            "wound": 10530.783
+          },
+          "lethalSources": {
+            "alpha:skill": 23,
+            "alpha:basic": 153,
+            "alpha:dot": 67
+          },
+          "remainingHpMilli": {
+            "mean": 154929.6,
+            "median": 138600.0,
+            "p90": 357200,
+            "p99": 458800,
+            "minimum": 0,
+            "maximum": 520400
+          },
+          "critRate": 0.1454183266932271,
+          "dodgeRate": 0.1502846642768925
+        }
+      }
+    },
+    {
+      "scenarioId": "07_ice_stun",
+      "fights": 1000,
+      "outcomes": {
+        "win": 1000
+      },
+      "wins": {
+        "beta": 1000
+      },
+      "winRates": {
+        "beta": 1.0
+      },
+      "drawRate": 0.0,
+      "timeoutRate": 0.0,
+      "duration_ms": {
+        "mean": 29342.298,
+        "median": 29223.0,
+        "p90": 31571,
+        "p99": 35144,
+        "minimum": 24115,
+        "maximum": 38011
+      },
+      "event_count": {
+        "mean": 181.311,
+        "median": 183.0,
+        "p90": 194,
+        "p99": 206,
+        "minimum": 151,
+        "maximum": 216
+      },
+      "runtime_us": {
+        "mean": 8262.053,
+        "median": 6710.5,
+        "p90": 11881,
+        "p99": 12752,
+        "minimum": 5360,
+        "maximum": 13695
+      },
+      "deterministicMetricsHash": "222423eb64c9be9fb13e5e7e33b6d303e1f69e45e19ad5bcce1ba9e0ad0fc923",
+      "actors": {
+        "alpha": {
+          "totals": {
+            "basic_attacks": 28032,
+            "crit_attempts": 32786,
+            "crit_count": 3207,
+            "damage_taken_milli": 975000000,
+            "death_prevention_count": 0,
+            "dodge_attempts": 35111,
+            "dodge_count": 3171,
+            "dot_damage_milli": 0,
+            "healing_milli": 0,
+            "ko_count": 1000,
+            "magic_damage_milli": 173769750,
+            "physical_damage_milli": 447971000,
+            "rebirth_count": 0,
+            "shield_absorbed_milli": 0,
+            "shield_generated_milli": 0,
+            "skill_casts": 4754,
+            "status_applications": 5754
+          },
+          "meanPerFight": {
+            "basic_attacks": 28.032,
+            "crit_attempts": 32.786,
+            "crit_count": 3.207,
+            "damage_taken_milli": 975000.0,
+            "death_prevention_count": 0.0,
+            "dodge_attempts": 35.111,
+            "dodge_count": 3.171,
+            "dot_damage_milli": 0.0,
+            "healing_milli": 0.0,
+            "ko_count": 1.0,
+            "magic_damage_milli": 173769.75,
+            "physical_damage_milli": 447971.0,
+            "rebirth_count": 0.0,
+            "shield_absorbed_milli": 0.0,
+            "shield_generated_milli": 0.0,
+            "skill_casts": 4.754,
+            "status_applications": 5.754
+          },
+          "statusUptimeMeanMs": {
+            "burn": 11425.046
+          },
+          "lethalSources": {
+            "beta:basic": 699,
+            "beta:skill": 165,
+            "beta:dot": 136
+          },
+          "remainingHpMilli": {
+            "mean": 0,
+            "median": 0.0,
+            "p90": 0,
+            "p99": 0,
+            "minimum": 0,
+            "maximum": 0
+          },
+          "critRate": 0.09781614103580796,
+          "dodgeRate": 0.09031357694169918
+        },
+        "beta": {
+          "totals": {
+            "basic_attacks": 30509,
+            "crit_attempts": 35111,
+            "crit_count": 5435,
+            "damage_taken_milli": 621740750,
+            "death_prevention_count": 0,
+            "dodge_attempts": 28032,
+            "dodge_count": 3734,
+            "dot_damage_milli": 157498000,
+            "healing_milli": 0,
+            "ko_count": 0,
+            "magic_damage_milli": 157498000,
+            "physical_damage_milli": 817502000,
+            "rebirth_count": 0,
+            "shield_absorbed_milli": 0,
+            "shield_generated_milli": 0,
+            "skill_casts": 4602,
+            "status_applications": 4004
+          },
+          "meanPerFight": {
+            "basic_attacks": 30.509,
+            "crit_attempts": 35.111,
+            "crit_count": 5.435,
+            "damage_taken_milli": 621740.75,
+            "death_prevention_count": 0.0,
+            "dodge_attempts": 28.032,
+            "dodge_count": 3.734,
+            "dot_damage_milli": 157498.0,
+            "healing_milli": 0.0,
+            "ko_count": 0.0,
+            "magic_damage_milli": 157498.0,
+            "physical_damage_milli": 817502.0,
+            "rebirth_count": 0.0,
+            "shield_absorbed_milli": 0.0,
+            "shield_generated_milli": 0.0,
+            "skill_casts": 4.602,
+            "status_applications": 4.004
+          },
+          "statusUptimeMeanMs": {
+            "ice": 13074.339,
+            "stun": 2000.0
+          },
+          "lethalSources": {},
+          "remainingHpMilli": {
+            "mean": 443259.25,
+            "median": 440750.0,
+            "p90": 521425,
+            "p99": 573400,
+            "minimum": 243450,
+            "maximum": 611400
+          },
+          "critRate": 0.1547947936544103,
+          "dodgeRate": 0.1332049086757991
+        }
+      }
+    },
+    {
+      "scenarioId": "08_skill_essence",
+      "fights": 1000,
+      "outcomes": {
+        "timeout": 990,
+        "win": 10
+      },
+      "wins": {
+        "beta": 10
+      },
+      "winRates": {
+        "beta": 0.01
+      },
+      "drawRate": 0.0,
+      "timeoutRate": 0.99,
+      "duration_ms": {
+        "mean": 44987.503,
+        "median": 45000.0,
+        "p90": 45000,
+        "p99": 45000,
+        "minimum": 41965,
+        "maximum": 45000
+      },
+      "event_count": {
+        "mean": 349.328,
+        "median": 350.0,
+        "p90": 362,
+        "p99": 370,
+        "minimum": 320,
+        "maximum": 376
+      },
+      "runtime_us": {
+        "mean": 12665.306,
+        "median": 10102.0,
+        "p90": 17024,
+        "p99": 17310,
+        "minimum": 8824,
+        "maximum": 17448
+      },
+      "deterministicMetricsHash": "82125b1718edaf36e56671583f85738d878b3c8b7c79e45c3ca38ebd8be3646a",
+      "actors": {
+        "alpha": {
+          "totals": {
+            "basic_attacks": 39990,
+            "crit_attempts": 46990,
+            "crit_count": 5755,
+            "damage_taken_milli": 1185982000,
+            "death_prevention_count": 0,
+            "dodge_attempts": 50990,
+            "dodge_count": 3591,
+            "dot_damage_milli": 0,
+            "healing_milli": 349170000,
+            "ko_count": 10,
+            "magic_damage_milli": 393172500,
+            "physical_damage_milli": 813316000,
+            "rebirth_count": 0,
+            "shield_absorbed_milli": 0,
+            "shield_generated_milli": 0,
+            "skill_casts": 7000,
+            "status_applications": 0
+          },
+          "meanPerFight": {
+            "basic_attacks": 39.99,
+            "crit_attempts": 46.99,
+            "crit_count": 5.755,
+            "damage_taken_milli": 1185982.0,
+            "death_prevention_count": 0.0,
+            "dodge_attempts": 50.99,
+            "dodge_count": 3.591,
+            "dot_damage_milli": 0.0,
+            "healing_milli": 349170.0,
+            "ko_count": 0.01,
+            "magic_damage_milli": 393172.5,
+            "physical_damage_milli": 813316.0,
+            "rebirth_count": 0.0,
+            "shield_absorbed_milli": 0.0,
+            "shield_generated_milli": 0.0,
+            "skill_casts": 7.0,
+            "status_applications": 0.0
+          },
+          "statusUptimeMeanMs": {},
+          "lethalSources": {
+            "beta:basic": 10
+          },
+          "remainingHpMilli": {
+            "mean": 93188,
+            "median": 92500.0,
+            "p90": 144500,
+            "p99": 198500,
+            "minimum": 0,
+            "maximum": 244500
+          },
+          "critRate": 0.12247286656735476,
+          "dodgeRate": 0.07042557364189057
+        },
+        "beta": {
+          "totals": {
+            "basic_attacks": 50990,
+            "crit_attempts": 57990,
+            "crit_count": 4362,
+            "damage_taken_milli": 1206488500,
+            "death_prevention_count": 0,
+            "dodge_attempts": 39990,
+            "dodge_count": 6061,
+            "dot_damage_milli": 0,
+            "healing_milli": 350000000,
+            "ko_count": 0,
+            "magic_damage_milli": 381885000,
+            "physical_damage_milli": 804097000,
+            "rebirth_count": 0,
+            "shield_absorbed_milli": 0,
+            "shield_generated_milli": 0,
+            "skill_casts": 7000,
+            "status_applications": 0
+          },
+          "meanPerFight": {
+            "basic_attacks": 50.99,
+            "crit_attempts": 57.99,
+            "crit_count": 4.362,
+            "damage_taken_milli": 1206488.5,
+            "death_prevention_count": 0.0,
+            "dodge_attempts": 39.99,
+            "dodge_count": 6.061,
+            "dot_damage_milli": 0.0,
+            "healing_milli": 350000.0,
+            "ko_count": 0.0,
+            "magic_damage_milli": 381885.0,
+            "physical_damage_milli": 804097.0,
+            "rebirth_count": 0.0,
+            "shield_absorbed_milli": 0.0,
+            "shield_generated_milli": 0.0,
+            "skill_casts": 7.0,
+            "status_applications": 0.0
+          },
+          "statusUptimeMeanMs": {},
+          "lethalSources": {},
+          "remainingHpMilli": {
+            "mean": 253511.5,
+            "median": 252500.0,
+            "p90": 338500,
+            "p99": 410500,
+            "minimum": 51750,
+            "maximum": 470500
+          },
+          "critRate": 0.0752198654940507,
+          "dodgeRate": 0.15156289072268067
+        }
+      }
+    },
+    {
+      "scenarioId": "09_rage_speed",
+      "fights": 1000,
+      "outcomes": {
+        "win": 1000
+      },
+      "wins": {
+        "alpha": 1000
+      },
+      "winRates": {
+        "alpha": 1.0
+      },
+      "drawRate": 0.0,
+      "timeoutRate": 0.0,
+      "duration_ms": {
+        "mean": 20408.131,
+        "median": 20176.0,
+        "p90": 21930,
+        "p99": 23685,
+        "minimum": 16667,
+        "maximum": 25439
+      },
+      "event_count": {
+        "mean": 148.81,
+        "median": 148.0,
+        "p90": 162,
+        "p99": 171,
+        "minimum": 124,
+        "maximum": 180
+      },
+      "runtime_us": {
+        "mean": 5657.019,
+        "median": 4904.0,
+        "p90": 8682,
+        "p99": 9569,
+        "minimum": 4072,
+        "maximum": 10021
+      },
+      "deterministicMetricsHash": "137f54be24244df73fce524898587eae75781b0cc57d551479388994d3823205",
+      "actors": {
+        "alpha": {
+          "totals": {
+            "basic_attacks": 24138,
+            "crit_attempts": 27397,
+            "crit_count": 4402,
+            "damage_taken_milli": 517510250,
+            "death_prevention_count": 0,
+            "dodge_attempts": 18402,
+            "dodge_count": 2415,
+            "dot_damage_milli": 116121200,
+            "healing_milli": 0,
+            "ko_count": 0,
+            "magic_damage_milli": 116121200,
+            "physical_damage_milli": 813878800,
+            "rebirth_count": 0,
+            "shield_absorbed_milli": 0,
+            "shield_generated_milli": 0,
+            "skill_casts": 3259,
+            "status_applications": 2935
+          },
+          "meanPerFight": {
+            "basic_attacks": 24.138,
+            "crit_attempts": 27.397,
+            "crit_count": 4.402,
+            "damage_taken_milli": 517510.25,
+            "death_prevention_count": 0.0,
+            "dodge_attempts": 18.402,
+            "dodge_count": 2.415,
+            "dot_damage_milli": 116121.2,
+            "healing_milli": 0.0,
+            "ko_count": 0.0,
+            "magic_damage_milli": 116121.2,
+            "physical_damage_milli": 813878.8,
+            "rebirth_count": 0.0,
+            "shield_absorbed_milli": 0.0,
+            "shield_generated_milli": 0.0,
+            "skill_casts": 3.259,
+            "status_applications": 2.935
+          },
+          "statusUptimeMeanMs": {},
+          "lethalSources": {},
+          "remainingHpMilli": {
+            "mean": 547489.75,
+            "median": 556500.0,
+            "p90": 620250,
+            "p99": 665500,
+            "minimum": 345750,
+            "maximum": 717500
+          },
+          "critRate": 0.16067452640800087,
+          "dodgeRate": 0.13123573524616888
+        },
+        "beta": {
+          "totals": {
+            "basic_attacks": 18402,
+            "crit_attempts": 21661,
+            "crit_count": 2656,
+            "damage_taken_milli": 930000000,
+            "death_prevention_count": 0,
+            "dodge_attempts": 27397,
+            "dodge_count": 1951,
+            "dot_damage_milli": 0,
+            "healing_milli": 0,
+            "ko_count": 1000,
+            "magic_damage_milli": 182831250,
+            "physical_damage_milli": 334679000,
+            "rebirth_count": 0,
+            "shield_absorbed_milli": 0,
+            "shield_generated_milli": 0,
+            "skill_casts": 3259,
+            "status_applications": 0
+          },
+          "meanPerFight": {
+            "basic_attacks": 18.402,
+            "crit_attempts": 21.661,
+            "crit_count": 2.656,
+            "damage_taken_milli": 930000.0,
+            "death_prevention_count": 0.0,
+            "dodge_attempts": 27.397,
+            "dodge_count": 1.951,
+            "dot_damage_milli": 0.0,
+            "healing_milli": 0.0,
+            "ko_count": 1.0,
+            "magic_damage_milli": 182831.25,
+            "physical_damage_milli": 334679.0,
+            "rebirth_count": 0.0,
+            "shield_absorbed_milli": 0.0,
+            "shield_generated_milli": 0.0,
+            "skill_casts": 3.259,
+            "status_applications": 0.0
+          },
+          "statusUptimeMeanMs": {
+            "burn": 8441.13
+          },
+          "lethalSources": {
+            "alpha:basic": 798,
+            "alpha:skill": 100,
+            "alpha:dot": 102
+          },
+          "remainingHpMilli": {
+            "mean": 0,
+            "median": 0.0,
+            "p90": 0,
+            "p99": 0,
+            "minimum": 0,
+            "maximum": 0
+          },
+          "critRate": 0.12261668436360279,
+          "dodgeRate": 0.07121217651567689
+        }
+      }
+    },
+    {
+      "scenarioId": "10_reflection_lethal",
+      "fights": 1000,
+      "outcomes": {
+        "win": 1000
+      },
+      "wins": {
+        "beta": 1000
+      },
+      "winRates": {
+        "beta": 1.0
+      },
+      "drawRate": 0.0,
+      "timeoutRate": 0.0,
+      "duration_ms": {
+        "mean": 17949.25,
+        "median": 18000.0,
+        "p90": 19000,
+        "p99": 20000,
+        "minimum": 16000,
+        "maximum": 21000
+      },
+      "event_count": {
+        "mean": 187.646,
+        "median": 187.0,
+        "p90": 199,
+        "p99": 211,
+        "minimum": 165,
+        "maximum": 219
+      },
+      "runtime_us": {
+        "mean": 7101.124,
+        "median": 6230.0,
+        "p90": 10820,
+        "p99": 11807,
+        "minimum": 5271,
+        "maximum": 12614
+      },
+      "deterministicMetricsHash": "476018f9ead3d8da9402ee21e606a0e84e511141aba14a2e452f09395cf1d2ef",
+      "actors": {
+        "alpha": {
+          "totals": {
+            "basic_attacks": 17131,
+            "crit_attempts": 20123,
+            "crit_count": 1975,
+            "damage_taken_milli": 1303000000,
+            "death_prevention_count": 1000,
+            "dodge_attempts": 18430,
+            "dodge_count": 2933,
+            "dot_damage_milli": 0,
+            "healing_milli": 0,
+            "ko_count": 1000,
+            "magic_damage_milli": 37536000,
+            "physical_damage_milli": 333084100,
+            "rebirth_count": 1000,
+            "shield_absorbed_milli": 0,
+            "shield_generated_milli": 0,
+            "skill_casts": 2992,
+            "status_applications": 0
+          },
+          "meanPerFight": {
+            "basic_attacks": 17.131,
+            "crit_attempts": 20.123,
+            "crit_count": 1.975,
+            "damage_taken_milli": 1303000.0,
+            "death_prevention_count": 1.0,
+            "dodge_attempts": 18.43,
+            "dodge_count": 2.933,
+            "dot_damage_milli": 0.0,
+            "healing_milli": 0.0,
+            "ko_count": 1.0,
+            "magic_damage_milli": 37536.0,
+            "physical_damage_milli": 333084.1,
+            "rebirth_count": 1.0,
+            "shield_absorbed_milli": 0.0,
+            "shield_generated_milli": 0.0,
+            "skill_casts": 2.992,
+            "status_applications": 0.0
+          },
+          "statusUptimeMeanMs": {
+            "toxin": 7971.25
+          },
+          "lethalSources": {
+            "beta:secondary": 546,
+            "beta:dot": 153,
+            "beta:basic": 301
+          },
+          "remainingHpMilli": {
+            "mean": 0,
+            "median": 0.0,
+            "p90": 0,
+            "p99": 0,
+            "minimum": 0,
+            "maximum": 0
+          },
+          "critRate": 0.09814639964220047,
+          "dodgeRate": 0.15914270211611503
+        },
+        "beta": {
+          "totals": {
+            "basic_attacks": 18430,
+            "crit_attempts": 21430,
+            "crit_count": 3660,
+            "damage_taken_milli": 370620100,
+            "death_prevention_count": 0,
+            "dodge_attempts": 20123,
+            "dodge_count": 2254,
+            "dot_damage_milli": 99541125,
+            "healing_milli": 0,
+            "ko_count": 0,
+            "magic_damage_milli": 915009500,
+            "physical_damage_milli": 387990500,
+            "rebirth_count": 0,
+            "shield_absorbed_milli": 0,
+            "shield_generated_milli": 0,
+            "skill_casts": 3000,
+            "status_applications": 3000
+          },
+          "meanPerFight": {
+            "basic_attacks": 18.43,
+            "crit_attempts": 21.43,
+            "crit_count": 3.66,
+            "damage_taken_milli": 370620.1,
+            "death_prevention_count": 0.0,
+            "dodge_attempts": 20.123,
+            "dodge_count": 2.254,
+            "dot_damage_milli": 99541.125,
+            "healing_milli": 0.0,
+            "ko_count": 0.0,
+            "magic_damage_milli": 915009.5,
+            "physical_damage_milli": 387990.5,
+            "rebirth_count": 0.0,
+            "shield_absorbed_milli": 0.0,
+            "shield_generated_milli": 0.0,
+            "skill_casts": 3.0,
+            "status_applications": 3.0
+          },
+          "statusUptimeMeanMs": {},
+          "lethalSources": {},
+          "remainingHpMilli": {
+            "mean": 649379.9,
+            "median": 653250.0,
+            "p90": 711450,
+            "p99": 761100,
+            "minimum": 461450,
+            "maximum": 784700
+          },
+          "critRate": 0.17078861409239385,
+          "dodgeRate": 0.11201113154102271
+        }
+      }
+    },
+    {
+      "scenarioId": "11_cross_timed",
+      "fights": 1000,
+      "outcomes": {
+        "win": 1000
+      },
+      "wins": {
+        "beta": 1000
+      },
+      "winRates": {
+        "beta": 1.0
+      },
+      "drawRate": 0.0,
+      "timeoutRate": 0.0,
+      "duration_ms": {
+        "mean": 5999,
+        "median": 6000.0,
+        "p90": 6000,
+        "p99": 6000,
+        "minimum": 5000,
+        "maximum": 6000
+      },
+      "event_count": {
+        "mean": 106.412,
+        "median": 105.0,
+        "p90": 114,
+        "p99": 120,
+        "minimum": 95,
+        "maximum": 126
+      },
+      "runtime_us": {
+        "mean": 3469.324,
+        "median": 3265.0,
+        "p90": 3668,
+        "p99": 6317,
+        "minimum": 2929,
+        "maximum": 6536
+      },
+      "deterministicMetricsHash": "e3cf74d9d126f0177e75fb8d9d4d1899f8c97f2298c7b714969c2a134927f0d9",
+      "actors": {
+        "alpha": {
+          "totals": {
+            "basic_attacks": 6000,
+            "crit_attempts": 7000,
+            "crit_count": 1069,
+            "damage_taken_milli": 1041497277,
+            "death_prevention_count": 0,
+            "dodge_attempts": 6000,
+            "dodge_count": 648,
+            "dot_damage_milli": 84378000,
+            "healing_milli": 21497277,
+            "ko_count": 1000,
+            "magic_damage_milli": 84378000,
+            "physical_damage_milli": 169288000,
+            "rebirth_count": 0,
+            "shield_absorbed_milli": 0,
+            "shield_generated_milli": 0,
+            "skill_casts": 1000,
+            "status_applications": 2458
+          },
+          "meanPerFight": {
+            "basic_attacks": 6.0,
+            "crit_attempts": 7.0,
+            "crit_count": 1.069,
+            "damage_taken_milli": 1041497.277,
+            "death_prevention_count": 0.0,
+            "dodge_attempts": 6.0,
+            "dodge_count": 0.648,
+            "dot_damage_milli": 84378.0,
+            "healing_milli": 21497.277,
+            "ko_count": 1.0,
+            "magic_damage_milli": 84378.0,
+            "physical_damage_milli": 169288.0,
+            "rebirth_count": 0.0,
+            "shield_absorbed_milli": 0.0,
+            "shield_generated_milli": 0.0,
+            "skill_casts": 1.0,
+            "status_applications": 2.458
+          },
+          "statusUptimeMeanMs": {
+            "toxin": 4999.0
+          },
+          "lethalSources": {
+            "beta:dot": 999,
+            "beta:basic": 1
+          },
+          "remainingHpMilli": {
+            "mean": 0,
+            "median": 0.0,
+            "p90": 0,
+            "p99": 0,
+            "minimum": 0,
+            "maximum": 0
+          },
+          "critRate": 0.15271428571428572,
+          "dodgeRate": 0.108
+        },
+        "beta": {
+          "totals": {
+            "basic_attacks": 6000,
+            "crit_attempts": 7000,
+            "crit_count": 1170,
+            "damage_taken_milli": 253666000,
+            "death_prevention_count": 0,
+            "dodge_attempts": 7000,
+            "dodge_count": 772,
+            "dot_damage_milli": 648859091,
+            "healing_milli": 0,
+            "ko_count": 0,
+            "magic_damage_milli": 908970091,
+            "physical_damage_milli": 132527186,
+            "rebirth_count": 0,
+            "shield_absorbed_milli": 0,
+            "shield_generated_milli": 0,
+            "skill_casts": 1000,
+            "status_applications": 6000
+          },
+          "meanPerFight": {
+            "basic_attacks": 6.0,
+            "crit_attempts": 7.0,
+            "crit_count": 1.17,
+            "damage_taken_milli": 253666.0,
+            "death_prevention_count": 0.0,
+            "dodge_attempts": 7.0,
+            "dodge_count": 0.772,
+            "dot_damage_milli": 648859.091,
+            "healing_milli": 0.0,
+            "ko_count": 0.0,
+            "magic_damage_milli": 908970.091,
+            "physical_damage_milli": 132527.186,
+            "rebirth_count": 0.0,
+            "shield_absorbed_milli": 0.0,
+            "shield_generated_milli": 0.0,
+            "skill_casts": 1.0,
+            "status_applications": 6.0
+          },
+          "statusUptimeMeanMs": {
+            "wound": 5146.887,
+            "toxin": 1536.412
+          },
+          "lethalSources": {},
+          "remainingHpMilli": {
+            "mean": 766334,
+            "median": 806600.0,
+            "p90": 877200,
+            "p99": 906400,
+            "minimum": 463000,
+            "maximum": 970800
+          },
+          "critRate": 0.16714285714285715,
+          "dodgeRate": 0.11028571428571429
+        }
+      }
+    },
+    {
+      "scenarioId": "12_mirrored_sides",
+      "fights": 1000,
+      "outcomes": {
+        "win": 1000
+      },
+      "wins": {
+        "beta": 1000
+      },
+      "winRates": {
+        "beta": 1.0
+      },
+      "drawRate": 0.0,
+      "timeoutRate": 0.0,
+      "duration_ms": {
+        "mean": 5999,
+        "median": 6000.0,
+        "p90": 6000,
+        "p99": 6000,
+        "minimum": 5000,
+        "maximum": 6000
+      },
+      "event_count": {
+        "mean": 106.412,
+        "median": 105.0,
+        "p90": 114,
+        "p99": 120,
+        "minimum": 95,
+        "maximum": 126
+      },
+      "runtime_us": {
+        "mean": 3280.273,
+        "median": 3264.0,
+        "p90": 3546,
+        "p99": 3956,
+        "minimum": 2937,
+        "maximum": 4469
+      },
+      "deterministicMetricsHash": "e3cf74d9d126f0177e75fb8d9d4d1899f8c97f2298c7b714969c2a134927f0d9",
+      "actors": {
+        "alpha": {
+          "totals": {
+            "basic_attacks": 6000,
+            "crit_attempts": 7000,
+            "crit_count": 1069,
+            "damage_taken_milli": 1041497277,
+            "death_prevention_count": 0,
+            "dodge_attempts": 6000,
+            "dodge_count": 648,
+            "dot_damage_milli": 84378000,
+            "healing_milli": 21497277,
+            "ko_count": 1000,
+            "magic_damage_milli": 84378000,
+            "physical_damage_milli": 169288000,
+            "rebirth_count": 0,
+            "shield_absorbed_milli": 0,
+            "shield_generated_milli": 0,
+            "skill_casts": 1000,
+            "status_applications": 2458
+          },
+          "meanPerFight": {
+            "basic_attacks": 6.0,
+            "crit_attempts": 7.0,
+            "crit_count": 1.069,
+            "damage_taken_milli": 1041497.277,
+            "death_prevention_count": 0.0,
+            "dodge_attempts": 6.0,
+            "dodge_count": 0.648,
+            "dot_damage_milli": 84378.0,
+            "healing_milli": 21497.277,
+            "ko_count": 1.0,
+            "magic_damage_milli": 84378.0,
+            "physical_damage_milli": 169288.0,
+            "rebirth_count": 0.0,
+            "shield_absorbed_milli": 0.0,
+            "shield_generated_milli": 0.0,
+            "skill_casts": 1.0,
+            "status_applications": 2.458
+          },
+          "statusUptimeMeanMs": {
+            "toxin": 4999.0
+          },
+          "lethalSources": {
+            "beta:dot": 999,
+            "beta:basic": 1
+          },
+          "remainingHpMilli": {
+            "mean": 0,
+            "median": 0.0,
+            "p90": 0,
+            "p99": 0,
+            "minimum": 0,
+            "maximum": 0
+          },
+          "critRate": 0.15271428571428572,
+          "dodgeRate": 0.108
+        },
+        "beta": {
+          "totals": {
+            "basic_attacks": 6000,
+            "crit_attempts": 7000,
+            "crit_count": 1170,
+            "damage_taken_milli": 253666000,
+            "death_prevention_count": 0,
+            "dodge_attempts": 7000,
+            "dodge_count": 772,
+            "dot_damage_milli": 648859091,
+            "healing_milli": 0,
+            "ko_count": 0,
+            "magic_damage_milli": 908970091,
+            "physical_damage_milli": 132527186,
+            "rebirth_count": 0,
+            "shield_absorbed_milli": 0,
+            "shield_generated_milli": 0,
+            "skill_casts": 1000,
+            "status_applications": 6000
+          },
+          "meanPerFight": {
+            "basic_attacks": 6.0,
+            "crit_attempts": 7.0,
+            "crit_count": 1.17,
+            "damage_taken_milli": 253666.0,
+            "death_prevention_count": 0.0,
+            "dodge_attempts": 7.0,
+            "dodge_count": 0.772,
+            "dot_damage_milli": 648859.091,
+            "healing_milli": 0.0,
+            "ko_count": 0.0,
+            "magic_damage_milli": 908970.091,
+            "physical_damage_milli": 132527.186,
+            "rebirth_count": 0.0,
+            "shield_absorbed_milli": 0.0,
+            "shield_generated_milli": 0.0,
+            "skill_casts": 1.0,
+            "status_applications": 6.0
+          },
+          "statusUptimeMeanMs": {
+            "wound": 5146.887,
+            "toxin": 1536.412
+          },
+          "lethalSources": {},
+          "remainingHpMilli": {
+            "mean": 766334,
+            "median": 806600.0,
+            "p90": 877200,
+            "p99": 906400,
+            "minimum": 463000,
+            "maximum": 970800
+          },
+          "critRate": 0.16714285714285715,
+          "dodgeRate": 0.11028571428571429
+        }
+      }
+    }
+  ],
+  "limits": [
+    "Mechanics fixtures, no balance tuning or production meta claim.",
+    "Desktop headless runtime is not mobile performance.",
+    "Explicit source-only multi-level bindings remain unresolved."
+  ]
+}
