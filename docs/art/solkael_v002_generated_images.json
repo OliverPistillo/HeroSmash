@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "source_recipe": "tools/asset_pipeline/solkael_polish.py",
+  "approval": "not final-art approved; owner review required",
+  "items": [
+    {
+      "path": "art/characters/solkael_lionheart/v002/textures/base_color.png",
+      "sha256": "e5859d4fc4eb7f0b15a4a26f12f8609e9f667c856c6d088e9235ffb65a04253c",
+      "usage": "authored QA asset output; not a design reference"
+    },
+    {
+      "path": "art/characters/solkael_lionheart/v002/textures/emissive.png",
+      "sha256": "f832327efa1d8f04ddb344c35c49dae547f6519298c735fbec49668356bb34bd",
+      "usage": "authored QA asset output; not a design reference"
+    },
+    {
+      "path": "art/characters/solkael_lionheart/v002/textures/normal.png",
+      "sha256": "027438da6c33af1ad90075eb108539e1689a503d71ce147c4425b6badb8e44c9",
+      "usage": "authored QA asset output; not a design reference"
+    },
+    {
+      "path": "art/characters/solkael_lionheart/v002/textures/orm.png",
+      "sha256": "678ea271311442f025df51b04e6afa3c53bac5fa2acc6a1360f1522e5b4a994d",
+      "usage": "authored QA asset output; not a design reference"
+    },
+    {
+      "path": "game/assets/characters/solkael_lionheart/chr_solkael_lionheart_v002_base_color.png",
+      "sha256": "e5859d4fc4eb7f0b15a4a26f12f8609e9f667c856c6d088e9235ffb65a04253c",
+      "usage": "authored QA asset output; not a design reference"
+    },
+    {
+      "path": "game/assets/characters/solkael_lionheart/chr_solkael_lionheart_v002_emissive.png",
+      "sha256": "f832327efa1d8f04ddb344c35c49dae547f6519298c735fbec49668356bb34bd",
+      "usage": "authored QA asset output; not a design reference"
+    },
+    {
+      "path": "game/assets/characters/solkael_lionheart/chr_solkael_lionheart_v002_normal.png",
+      "sha256": "027438da6c33af1ad90075eb108539e1689a503d71ce147c4425b6badb8e44c9",
+      "usage": "authored QA asset output; not a design reference"
+    },
+    {
+      "path": "game/assets/characters/solkael_lionheart/chr_solkael_lionheart_v002_orm.png",
+      "sha256": "678ea271311442f025df51b04e6afa3c53bac5fa2acc6a1360f1522e5b4a994d",
+      "usage": "authored QA asset output; not a design reference"
+    },
+    {
+      "path": "game/assets/qa_icon.svg",
+      "sha256": "8d8693d0af75ef2180387d9a0cab45071eec43878670ab34589a10b0d182e79e",
+      "usage": "authored QA asset output; not a design reference"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "patch_id": "hsfix1-telemetry-disabled",
+  "upstream_url": "https://github.com/ahujasid/blender-mcp",
+  "upstream_commit": "5f8ddaf6e987c4aa0c3467fcc548838b28f64477",
+  "patch_file": "patches/hsfix1-telemetry-disabled.patch",
+  "patch_sha256": "c58383fdcd9c109cb819f0d91b9c0809fd5dcf74f98ae06b871f55e342700ad8",
+  "package_version": "1.9.1",
+  "addon_version": "1.6",
+  "addon_protocol": 5,
+  "python": "3.12.0",
+  "files": [
+    {
+      "path": "src/blender_mcp/__init__.py",
+      "upstream_sha256": "d7a05b2568e36162a8322386139f526364cfb251f8982a0ca0c498254479bca3",
+      "patched_and_installed_sha256": "d7a05b2568e36162a8322386139f526364cfb251f8982a0ca0c498254479bca3",
+      "modified": false
+    },
+    {
+      "path": "src/blender_mcp/addon_manager.py",
+      "upstream_sha256": "12bdbd6a472a333fa6eda65680bf2007b54ab4fb381251e668dac1068455b5a7",
+      "patched_and_installed_sha256": "12bdbd6a472a333fa6eda65680bf2007b54ab4fb381251e668dac1068455b5a7",
+      "modified": false
+    },
+    {
+      "path": "src/blender_mcp/bundled/__init__.py",
+      "upstream_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "patched_and_installed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "modified": false
+    },
+    {
+      "path": "src/blender_mcp/bundled/addon.py",
+      "upstream_sha256": "f43469c8518c7021e0060e32cfe52e3beb126b0f62fbae7293106642a3ebda89",
+      "patched_and_installed_sha256": "f43469c8518c7021e0060e32cfe52e3beb126b0f62fbae7293106642a3ebda89",
+      "modified": false
+    },
+    {
+      "path": "src/blender_mcp/consent_prompt.py",
+      "upstream_sha256": "9f6ef0b97ea25596aa18d26d433f2cf7a8e128799ec5e2e6205c652d545533f3",
+      "patched_and_installed_sha256": "56d115737a594d5859116b3353b7093d318bebb9587305b8ad1ad95e3f4b952c",
+      "modified": true
+    },
+    {
+      "path": "src/blender_mcp/safe_mode.py",
+      "upstream_sha256": "d3bc1f43f4707476e595efed111d514b3f81bf4358993b8accb18962c5c4bf35",
+      "patched_and_installed_sha256": "d3bc1f43f4707476e595efed111d514b3f81bf4358993b8accb18962c5c4bf35",
+      "modified": false
+    },
+    {
+      "path": "src/blender_mcp/server.py",
+      "upstream_sha256": "cb42d7a4e69b7711c018a5d3c1ee2d6c90d2fb0a5a5d27e8571469f3f2a902dc",
+      "patched_and_installed_sha256": "cb42d7a4e69b7711c018a5d3c1ee2d6c90d2fb0a5a5d27e8571469f3f2a902dc",
+      "modified": false
+    },
+    {
+      "path": "src/blender_mcp/telemetry.py",
+      "upstream_sha256": "09c5bc161f85f11c1026741cfe3f0a9899926af5d3fc2f27bec1b57d987849d7",
+      "patched_and_installed_sha256": "3f54a6d638eb663ba47f0207d2221096247849a6882a6526ec208ec1be70288f",
+      "modified": true
+    },
+    {
+      "path": "src/blender_mcp/telemetry_decorator.py",
+      "upstream_sha256": "fea2b67a3524c7c519642148df1edc751a675a236304e5e608d5ad391c3cf902",
+      "patched_and_installed_sha256": "fea2b67a3524c7c519642148df1edc751a675a236304e5e608d5ad391c3cf902",
+      "modified": false
+    },
+    {
+      "path": "src/blender_mcp/trajectory.py",
+      "upstream_sha256": "607d0a1b070c59333e8fffbd9af800b7bf31c5f3bfa28efe7cdc0506ca75fac7",
+      "patched_and_installed_sha256": "d0934ede88b789eb5344bef6d372a716dd82dabc80ac93007d26a0adac72468d",
+      "modified": true
+    }
+  ],
+  "runtime_constraints_verified": 32,
+  "fresh_patch_application": "PASS",
+  "identity_note": "Modified community upstream: exact commit plus identified local patch; not an unmodified upstream installation."
+}

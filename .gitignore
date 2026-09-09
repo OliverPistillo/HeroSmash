@@ -106,6 +106,23 @@ sw.js.map
 *.glb
 *.gltf
 
+# Production source/export admission; procedural sample is intentionally versioned.
+!art/blender/**/*.blend
+!art/exports/**/*.glb
+!game/assets_runtime/
+!game/assets_runtime/**/
+!game/assets_runtime/**/*.glb
+!art/characters/**/source/*.blend
+!game/assets/characters/**/*.glb
+# Staging exports are reproducible copies, not a second tracked GLB authority.
+art/characters/**/exports/
+*.blend1
+*.blend2
+.work/
+game/.godot/
+game/export_credentials.cfg
+art/characters/solkael_lionheart/v002/source/*.blend1
+
 # Video/audio raw working files
 *.prproj
 *.aep

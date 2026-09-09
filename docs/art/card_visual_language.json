@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "scope": "Layout/state grammar for all 150 existing cards. No new card definitions, illustrations, costs, effects, levels or rarity classes.",
+  "rarities": [
+    "Normal",
+    "Epic",
+    "Legendary"
+  ],
+  "branches": {
+    "single": "one icon/name group below title",
+    "dual": "two equal-sized icon/name groups on the same row, source order retained",
+    "overflow": "compact label in market, full canonical branch names in inspection; no merged third branch symbol"
+  },
+  "hierarchy": [
+    {
+      "field": "rarity",
+      "location": "upper-left, short label plus shape notch",
+      "minimum_font": 12
+    },
+    {
+      "field": "cost",
+      "location": "upper-right badge, clear numeral; 44 logical-pixel visual box",
+      "minimum_font": 20
+    },
+    {
+      "field": "title",
+      "location": "below rarity/cost row, max two lines, opaque backing",
+      "minimum_font": 14
+    },
+    {
+      "field": "branch_icons",
+      "location": "under title, equal treatment for two branches",
+      "minimum_font": 12
+    },
+    {
+      "field": "illustration",
+      "location": "middle, cropped inside safe art window; no text embedded in art",
+      "minimum_font": null
+    },
+    {
+      "field": "effect_summary",
+      "location": "below art, two readable lines; tap card for exact effect",
+      "minimum_font": 14
+    },
+    {
+      "field": "level_state",
+      "location": "bottom rail; state left, level right, never over illustration",
+      "minimum_font": 12
+    }
+  ],
+  "states": {
+    "selected": {
+      "visual": "focus border and explicit selection check/text",
+      "action": "selection alone does not purchase"
+    },
+    "purchasable": {
+      "visual": "visible cost and enabled state",
+      "action": "explicit buy/confirm affordance in inspection"
+    },
+    "unavailable": {
+      "visual": "muted rarity accent, lock/reason label; retain readable content",
+      "action": "inspection stays available, purchase disabled"
+    },
+    "owned": {
+      "visual": "owned badge and current level",
+      "action": "upgrade availability comes from canonical model, not artwork"
+    },
+    "maxed": {
+      "visual": "MAX badge and final level, no implied upgrade arrow",
+      "action": "purchase/upgrade disabled when actual rules require"
+    },
+    "normal": {
+      "visual": "single neutral frame",
+      "action": "neutral presentation"
+    }
+  },
+  "state_precedence": "Maxed/unavailable governs purchase availability; selected is an independent overlay; owned and level persist. Rarity/branch identity never disappear under disabled styling.",
+  "level_policy": "Display authoritative current/max level. The known Normal/Epic/Legendary level counts come from data; the proof uses explicitly synthetic display fixtures only.",
+  "phone_proof": {
+    "resolutions": [
+      [
+        844,
+        390
+      ],
+      [
+        667,
+        375
+      ]
+    ],
+    "safe_insets": {
+      "left": 44,
+      "right": 44,
+      "top": 8,
+      "bottom": 8
+    },
+    "columns": 3,
+    "card_top": 72,
+    "card_height": 231,
+    "gap": 12,
+    "title_lines": 2,
+    "cost_badge": 44,
+    "tap_target": "whole card plus bottom 44-high action button",
+    "status": "temporary planning artifact; actual platform safe areas, runtime UI and physical-device legibility remain v1.19+ validation"
+  },
+  "text_overflow": "Never shrink critical text below body minimum. Prefer two-line title, concise authored summary and full text in inspection. A future fourth/fifth card layout must be revalidated, not scaled down from this proof.",
+  "forbidden": [
+    "Rare/Mythic labels from legacy frame sheet",
+    "hardcoded prices from reference images",
+    "level stars that contradict canonical data",
+    "color-only rarity/state",
+    "production use of unknown-rights illustrations"
+  ]
+}

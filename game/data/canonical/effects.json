@@ -1,0 +1,3057 @@
+{
+  "schemaVersion": 1,
+  "logicalVersion": "v1.16.1",
+  "dataset": "effects",
+  "generator": "tools/migration/canonical_data.py",
+  "sources": [
+    {
+      "path": "game/data/effect_contracts.json",
+      "sha256": "bc3e142e5085d9cb37bd7e6e71e075bf73d1bba77f377b3d3b2ff69a1d4ffdc3",
+      "normalization": "utf8_lf"
+    },
+    {
+      "path": "legacy/web-prototype/data/legacy_deck_source.json",
+      "sha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98",
+      "normalization": "utf8_lf"
+    }
+  ],
+  "records": [
+    {
+      "id": "legacy_001",
+      "cardId": "legacy_001",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "a49c9a16230a36fd76d6573920dba2636481ec43d5c6c389f941472c22469f96",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/0/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_002",
+      "cardId": "legacy_002",
+      "profile": "base_text_v1",
+      "lifecycle": "implemented",
+      "parity": "legacy approximation",
+      "reason": "Add 5 base-damage units once at combat start.",
+      "originalTextSha256": "53802bf8b7326075e65f2002b20939367c9decd830e72a7a622116a9bcc4672b",
+      "rules": [
+        {
+          "trigger": "combat_start",
+          "chance_bp": 10000,
+          "interval_ms": 0,
+          "loss_threshold_milli": 0,
+          "condition": {
+            "kind": "always",
+            "value": ""
+          },
+          "actions": [
+            {
+              "type": "modify_stat",
+              "target": "self",
+              "amount": 5000,
+              "unit": "milli",
+              "field": "base_damage_milli",
+              "formula": "flat",
+              "factor_bp": 0,
+              "minimum": 0,
+              "cap": 0,
+              "damage_kind": "none",
+              "handler": ""
+            }
+          ]
+        }
+      ],
+      "provenance": {
+        "source": "game/data/effect_contracts.json",
+        "pointer": "/pilots/0",
+        "sourceSha256": "bc3e142e5085d9cb37bd7e6e71e075bf73d1bba77f377b3d3b2ff69a1d4ffdc3"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "base_text_contract"
+    },
+    {
+      "id": "legacy_003",
+      "cardId": "legacy_003",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "8a35da6069de22b44e9ffb81e4dc2d0102725fc9223985d1fa72fd6508a8cfdf",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/2/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_004",
+      "cardId": "legacy_004",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "aabcb45c1322669d9bb9f01ba6c24e65ed93760845469c11c55e32fa94c6905a",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/3/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_005",
+      "cardId": "legacy_005",
+      "profile": "base_text_v1",
+      "lifecycle": "implemented",
+      "parity": "legacy approximation",
+      "reason": "On each basic_attack, 6000 bp chance to gain 1500 milli-energy.",
+      "originalTextSha256": "2e0d6b721088c50cbb3d585bea18543b853e851ba913312093e45e6c4385f663",
+      "rules": [
+        {
+          "trigger": "basic_attack",
+          "chance_bp": 6000,
+          "interval_ms": 0,
+          "loss_threshold_milli": 0,
+          "condition": {
+            "kind": "always",
+            "value": ""
+          },
+          "actions": [
+            {
+              "type": "gain_energy",
+              "target": "self",
+              "amount": 1500,
+              "unit": "milli",
+              "field": "",
+              "formula": "flat",
+              "factor_bp": 0,
+              "minimum": 0,
+              "cap": 0,
+              "damage_kind": "none",
+              "handler": ""
+            }
+          ]
+        }
+      ],
+      "provenance": {
+        "source": "game/data/effect_contracts.json",
+        "pointer": "/pilots/1",
+        "sourceSha256": "bc3e142e5085d9cb37bd7e6e71e075bf73d1bba77f377b3d3b2ff69a1d4ffdc3"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "base_text_contract"
+    },
+    {
+      "id": "legacy_006",
+      "cardId": "legacy_006",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "c8edb387bf88e8b22e27c38fd36a2b7860793ef3722be7c68914a4d80daa408b",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/5/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_007",
+      "cardId": "legacy_007",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "2ba5194e2d3ef6314e1da1b4738f6f8b4ff7bc72f8a59262c30173a0f1447586",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/6/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_008",
+      "cardId": "legacy_008",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "f3c9f007fd0572212f6d3ee7428690cb2f79708aabc95d01742ad84934dbab9c",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/7/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_009",
+      "cardId": "legacy_009",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "4297207171d744b32da72cb36b05ed8ac6b22255d9f77c04d65870f5cef55281",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/8/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_010",
+      "cardId": "legacy_010",
+      "profile": "base_text_v1",
+      "lifecycle": "implemented",
+      "parity": "legacy approximation",
+      "reason": "Each basic_attack adds 400 bp basic damage bonus, capped at 2000 bp per binding.",
+      "originalTextSha256": "4baaebd2cf7b6f05f6f58c322c53fda82f51455f47007df3b8c75c8a14ce7794",
+      "rules": [
+        {
+          "trigger": "basic_attack",
+          "chance_bp": 10000,
+          "interval_ms": 0,
+          "loss_threshold_milli": 0,
+          "condition": {
+            "kind": "always",
+            "value": ""
+          },
+          "actions": [
+            {
+              "type": "modify_stat",
+              "target": "self",
+              "amount": 400,
+              "unit": "basis_points",
+              "field": "basic_damage_bonus_bp",
+              "formula": "flat",
+              "factor_bp": 0,
+              "minimum": 0,
+              "cap": 2000,
+              "damage_kind": "none",
+              "handler": ""
+            }
+          ]
+        }
+      ],
+      "provenance": {
+        "source": "game/data/effect_contracts.json",
+        "pointer": "/pilots/2",
+        "sourceSha256": "bc3e142e5085d9cb37bd7e6e71e075bf73d1bba77f377b3d3b2ff69a1d4ffdc3"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "base_text_contract"
+    },
+    {
+      "id": "legacy_011",
+      "cardId": "legacy_011",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "b76ae42eeaee6e7abc92fe97f50d10bf253caa998ae1eeaffa3e869215e762cc",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/10/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_012",
+      "cardId": "legacy_012",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "5d56bdcc238cd006490ffe96551c868fe70ba14fcc80742062a21bf76ef78a73",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/11/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_013",
+      "cardId": "legacy_013",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "16b55bad621fe2c11b4dbb5f4036dc65575b51ff2c74df5849509dbddd3558da",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/12/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_014",
+      "cardId": "legacy_014",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "b9a8884b97f4efd0f3d857afff2062551f7215e16b911734869b678af0c1eb4a",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/13/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_015",
+      "cardId": "legacy_015",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "c75faa90e0fc2fc419b2f447b4377e28b135c5c1da179b649269040e54e6700c",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/14/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_016",
+      "cardId": "legacy_016",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "5e962e10bb9e9b0b593a5f4164a3a4542a4668a1df7efccc39ede4270f9b424e",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/15/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_017",
+      "cardId": "legacy_017",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "583183f53fc75495b27d354eb3c5713cbb093b5591bbb2a898176d04463d0759",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/16/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_018",
+      "cardId": "legacy_018",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "1ae16a6ca910ad58b255451a6a80ebc5e090f46624b4cca781ab877a2a464a8a",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/17/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_019",
+      "cardId": "legacy_019",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "f2d0a74362c10ab9970518b7afddb3675c0e2efa1a3dbed82044aa0067f79a71",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/18/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_020",
+      "cardId": "legacy_020",
+      "profile": "base_text_v1",
+      "lifecycle": "implemented",
+      "parity": "legacy approximation",
+      "reason": "Each cumulative 400000 actual milli-HP lost grants 6000 milli-energy; retain remainder.",
+      "originalTextSha256": "48bd2916f45059278372940280990bf548c093da0fd9baf476aedefafe8e0d9b",
+      "rules": [
+        {
+          "trigger": "damage_taken",
+          "chance_bp": 10000,
+          "interval_ms": 0,
+          "loss_threshold_milli": 400000,
+          "condition": {
+            "kind": "always",
+            "value": ""
+          },
+          "actions": [
+            {
+              "type": "gain_energy",
+              "target": "self",
+              "amount": 6000,
+              "unit": "milli",
+              "field": "",
+              "formula": "flat",
+              "factor_bp": 0,
+              "minimum": 0,
+              "cap": 0,
+              "damage_kind": "none",
+              "handler": ""
+            }
+          ]
+        }
+      ],
+      "provenance": {
+        "source": "game/data/effect_contracts.json",
+        "pointer": "/pilots/3",
+        "sourceSha256": "bc3e142e5085d9cb37bd7e6e71e075bf73d1bba77f377b3d3b2ff69a1d4ffdc3"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "base_text_contract"
+    },
+    {
+      "id": "legacy_021",
+      "cardId": "legacy_021",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "1642800092577f9aed83942b6cb3cb720e959de241fdc4dae9f094c8591c0ea3",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/20/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_022",
+      "cardId": "legacy_022",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "e9d3284430eb26f9d3a8ca98728c5038a062bee2e3401503b4870a8a57cf59c6",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/21/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_023",
+      "cardId": "legacy_023",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "a026a1f6c505cf394838e04bb4aa6c69fd8ff1219bba3a570bc04eef6b419720",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/22/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_024",
+      "cardId": "legacy_024",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "46248c78a4308e6489a3b1725e442547a070dc52c74776b9cffcc2d1132bc911",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/23/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_025",
+      "cardId": "legacy_025",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "fc41b7c4640f37f5f10023d10de56858bfc0840769f78b82e24af058ba134ce8",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/24/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_026",
+      "cardId": "legacy_026",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "fa6075c65d71637df88c9a7eec7735e9b5be20399d318d117fe3ca3486157cf6",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/25/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_027",
+      "cardId": "legacy_027",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "ec36bf91604273ba52c5901af92cfb7ac4edf93b47022af0f31f372ba1253634",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/26/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_028",
+      "cardId": "legacy_028",
+      "profile": "base_text_v1",
+      "lifecycle": "implemented",
+      "parity": "legacy approximation",
+      "reason": "Every 1000 ms heal 100 bp of missing HP with minimum 1000 milli-HP and max-HP cap.",
+      "originalTextSha256": "53f440c93c097cea6123735f77312f26a19e4500b39b167dd766804d0e5fda9b",
+      "rules": [
+        {
+          "trigger": "interval",
+          "chance_bp": 10000,
+          "interval_ms": 1000,
+          "loss_threshold_milli": 0,
+          "condition": {
+            "kind": "always",
+            "value": ""
+          },
+          "actions": [
+            {
+              "type": "heal",
+              "target": "self",
+              "amount": 0,
+              "unit": "milli",
+              "field": "",
+              "formula": "missing_hp_percent",
+              "factor_bp": 100,
+              "minimum": 1000,
+              "cap": 0,
+              "damage_kind": "none",
+              "handler": ""
+            }
+          ]
+        }
+      ],
+      "provenance": {
+        "source": "game/data/effect_contracts.json",
+        "pointer": "/pilots/4",
+        "sourceSha256": "bc3e142e5085d9cb37bd7e6e71e075bf73d1bba77f377b3d3b2ff69a1d4ffdc3"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "base_text_contract"
+    },
+    {
+      "id": "legacy_029",
+      "cardId": "legacy_029",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "a09d962cbd023b3ba0c972094fc82319f4ba007ff8301d5de8fd06e1180bfb96",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/28/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_030",
+      "cardId": "legacy_030",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "9b0b32bd7c74c0bcb52422f41625b60a47d3112dc5c12caadfa9ea0823d5a0c5",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/29/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_031",
+      "cardId": "legacy_031",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "47336b8c9701d639ceea9a528a32eaae75a9b2ecaca58297cd6ef86b692b4be1",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/30/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_032",
+      "cardId": "legacy_032",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "604baaefb51c29872dd0765397748b1c35aff7c19cdbf38b955a17372abf89f3",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/31/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_033",
+      "cardId": "legacy_033",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "05aa2783666f4ad9d4d4d0b779b02bebdfcfbf85f4370fec0f1260f0ddf5266f",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/32/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_034",
+      "cardId": "legacy_034",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "ec24861d44f5cf7807e172b046db7f68a77e27b9869dbcb2df4dbdec547635f6",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/33/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_035",
+      "cardId": "legacy_035",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "3b18e3a205029cfc4d66c3155792e73c54f86485d6e4350ebc4574d63fe042c5",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/34/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_036",
+      "cardId": "legacy_036",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "7f75d1c264335174539915a8aea2a69e93785dcb6aead777ad9ee30374dcf9e3",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/35/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_037",
+      "cardId": "legacy_037",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "98e31cd13c3ac42e056c8a0e8f3a1807b36b262a4611c1117e6f531c62cb41eb",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/36/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_038",
+      "cardId": "legacy_038",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "94ee925cdf6928e808a2425c63c76e8b5649aafde7fe03bb4359119bd82fe833",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/37/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_039",
+      "cardId": "legacy_039",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "9683361ac20f07bb646e7fa07b33e1416f9bec5880cc0bf19d239fde95d578a6",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/38/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_040",
+      "cardId": "legacy_040",
+      "profile": "base_text_v1",
+      "lifecycle": "implemented",
+      "parity": "legacy approximation",
+      "reason": "On critical basic_hit or skill_hit heal 10000 milli-HP.",
+      "originalTextSha256": "933408821ec724676ceabbe5de80441caba2272b91cff35acf703dfd6c56dae5",
+      "rules": [
+        {
+          "trigger": "basic_hit",
+          "chance_bp": 10000,
+          "interval_ms": 0,
+          "loss_threshold_milli": 0,
+          "condition": {
+            "kind": "critical",
+            "value": ""
+          },
+          "actions": [
+            {
+              "type": "heal",
+              "target": "self",
+              "amount": 10000,
+              "unit": "milli",
+              "field": "",
+              "formula": "flat",
+              "factor_bp": 0,
+              "minimum": 0,
+              "cap": 0,
+              "damage_kind": "none",
+              "handler": ""
+            }
+          ]
+        },
+        {
+          "trigger": "skill_hit",
+          "chance_bp": 10000,
+          "interval_ms": 0,
+          "loss_threshold_milli": 0,
+          "condition": {
+            "kind": "critical",
+            "value": ""
+          },
+          "actions": [
+            {
+              "type": "heal",
+              "target": "self",
+              "amount": 10000,
+              "unit": "milli",
+              "field": "",
+              "formula": "flat",
+              "factor_bp": 0,
+              "minimum": 0,
+              "cap": 0,
+              "damage_kind": "none",
+              "handler": ""
+            }
+          ]
+        }
+      ],
+      "provenance": {
+        "source": "game/data/effect_contracts.json",
+        "pointer": "/pilots/5",
+        "sourceSha256": "bc3e142e5085d9cb37bd7e6e71e075bf73d1bba77f377b3d3b2ff69a1d4ffdc3"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "base_text_contract"
+    },
+    {
+      "id": "legacy_041",
+      "cardId": "legacy_041",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "bffc160d880f2a8628d14b632917bbed1f332125e8894d0a48701a741b39f0b8",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/40/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_042",
+      "cardId": "legacy_042",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "08afdb775067ca9d269d82ebc47c7995e0d6b3d9fc062eef4d5fe53abe259022",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/41/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_043",
+      "cardId": "legacy_043",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "3b18e3a205029cfc4d66c3155792e73c54f86485d6e4350ebc4574d63fe042c5",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/42/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_044",
+      "cardId": "legacy_044",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "471e8e5490ade047e3179be9bcb738d627fb92b1f6939ad718b2d5c2e0675485",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/43/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_045",
+      "cardId": "legacy_045",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "47a299596cc1d83df6d2b2fe11693cbe27e22798c5e39af1c6e771e74bcd46be",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/44/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_046",
+      "cardId": "legacy_046",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "5152e9c296c13544f1851fc86eb491f2de17e63a53e72d2df86c802dedc8f011",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/45/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_047",
+      "cardId": "legacy_047",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "9d8f77db32e1bac1192bfa719ce7bdf8a03c7e3b194fff7ef09fb663b2735da6",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/46/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_048",
+      "cardId": "legacy_048",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "887bb86929193ec771eee6fb7b5e211f0bbb2affbc2fc2b2e9ad3d8782b57e95",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/47/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_049",
+      "cardId": "legacy_049",
+      "profile": "base_text_v1",
+      "lifecycle": "implemented",
+      "parity": "requires special handler",
+      "reason": "Eligible dodge: 5000 bp chance to emit full incoming magic damage intent, reflectable=false. No mitigation resolved here.",
+      "originalTextSha256": "af07e68822e3db4bb2c2ed4d5562f5f9600474ddc8456ad8b7d1278655c621ac",
+      "rules": [
+        {
+          "trigger": "dodge",
+          "chance_bp": 5000,
+          "interval_ms": 0,
+          "loss_threshold_milli": 0,
+          "condition": {
+            "kind": "reflectable",
+            "value": ""
+          },
+          "actions": [
+            {
+              "type": "special_handler",
+              "target": "opponent",
+              "amount": 0,
+              "unit": "milli",
+              "field": "",
+              "formula": "flat",
+              "factor_bp": 0,
+              "minimum": 0,
+              "cap": 0,
+              "damage_kind": "magic",
+              "handler": "reflect_incoming_once"
+            }
+          ]
+        }
+      ],
+      "provenance": {
+        "source": "game/data/effect_contracts.json",
+        "pointer": "/pilots/6",
+        "sourceSha256": "bc3e142e5085d9cb37bd7e6e71e075bf73d1bba77f377b3d3b2ff69a1d4ffdc3"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "base_text_contract"
+    },
+    {
+      "id": "legacy_050",
+      "cardId": "legacy_050",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "5449d0678a2e946f5b025bcb742c60122b399139c02d4eb4d8caf35a5f27c5a1",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/49/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_051",
+      "cardId": "legacy_051",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "2c1cd8afbdcfdbbc1611b24fc4ce2e1a7f05697344f30b74cd40a57b952234b1",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/50/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_052",
+      "cardId": "legacy_052",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "88089a083bf209fa6c2e37e5f97576d175201c7aa0c74f61b1accd52a956df89",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/51/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_053",
+      "cardId": "legacy_053",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "d128e94bddc1bac9b8c3942ba92703ad6f7d511373b0672fb25b516a57a8ba9d",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/52/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_054",
+      "cardId": "legacy_054",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "7b079f041f61634f8a0e380029595b15d60a621e0b25a0a8e2eeafdfc934c939",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/53/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_055",
+      "cardId": "legacy_055",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "ccc0af391de14572777b1320dabc5a921034123740215a81b9d787b923239495",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/54/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_056",
+      "cardId": "legacy_056",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "8289a67535a8e67b5ecd6ec427fec7a747c7f3ceb80a5ad0b973631545b79d42",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/55/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_057",
+      "cardId": "legacy_057",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "0354dad8a2d6401981eaa72cce6b3b0bdba520fe9fa966c95f3919e68044b51c",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/56/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_058",
+      "cardId": "legacy_058",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "75834312190b77eb1d81293776cc39474ae0c509ef8d701482a74f7c6c8a9467",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/57/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_059",
+      "cardId": "legacy_059",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "727d809004d105ea90bae242ca058180d222717c84adfc5add7864cbfffba5d0",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/58/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_060",
+      "cardId": "legacy_060",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "9e0876ee6f412b8480cc4e561aea89011f7a033d0e8c5401257fe00759c15638",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/59/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_061",
+      "cardId": "legacy_061",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "c741484b4cd1a4f5e4b6fe5aef07427bebf37c1d6b99aedd786d73e9d9bbc859",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/60/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_062",
+      "cardId": "legacy_062",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "295a23551227ea9945826bcce487fda92d4578189d295d1a866dba3e297db5d2",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/61/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_063",
+      "cardId": "legacy_063",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "e85c62ea2f529efe538d2ae60550d9ca9a8eff1a3bb74f510631bd89ad9204ec",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/62/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_064",
+      "cardId": "legacy_064",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "d8ae0c0f3de2bb44f0d7534ddc0c1c33a0284bf36a2accf287e486b4cb917302",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/63/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_065",
+      "cardId": "legacy_065",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "30c82fd72839f7fc45e685c9d329de97677419178e5a7f7941c5105952284463",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/64/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_066",
+      "cardId": "legacy_066",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "6d7e98fbf149aff2c6f55a0379daaf5a1b49c66bbbd925a6eb18a5a119066a77",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/65/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_067",
+      "cardId": "legacy_067",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "6094097a6aa878dc4a9bc3f6a050d6f0218a76ef32734823277ef0d55ae60a23",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/66/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_068",
+      "cardId": "legacy_068",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "5ada86dc9140e4f9cf4b8e78e6bb163fc33d1016a9316e1e6c538ad53bc6d29c",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/67/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_069",
+      "cardId": "legacy_069",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "d23498ac2738fa18cbeb0888d8c22862af4d924f164b1b5f0b32949cba4f9029",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/68/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_070",
+      "cardId": "legacy_070",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "47c6ec66efb2ce1948d09331287fd193c20fc57229b9f1c4730a9c22f39fab84",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/69/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_071",
+      "cardId": "legacy_071",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "2651692cb4d6cf4e821ba624ef12e21fb85e0978d6645b218cc6d4e46cfff3e9",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/70/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_072",
+      "cardId": "legacy_072",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "2b1f60d53d318ea4c0cbc2574f28d38ba235690920530a91af219b00933f03b3",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/71/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_073",
+      "cardId": "legacy_073",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "2013aa991a6ce4b841dd1974619b10252ad3c967eccb761ad2e05e8b5a3a2bbb",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/72/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_074",
+      "cardId": "legacy_074",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "4ad0f7cd1c02634e69b53c2385600d750178efa3ad8f0e6c64888490bd8beb2f",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/73/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_075",
+      "cardId": "legacy_075",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "89b95a786da7794e0931b1a915c897cb86866522a18433a2cc205a90dd112992",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/74/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_076",
+      "cardId": "legacy_076",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "30dbd506efdac2432a124e0a922594942c3e96b8c2ef3951d0ea10c9cfb2ab57",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/75/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_077",
+      "cardId": "legacy_077",
+      "profile": "base_text_v1",
+      "lifecycle": "implemented",
+      "parity": "legacy approximation",
+      "reason": "On positive regen heal fact, 3000 bp chance to add 4 shield stacks. Stack absorption remains unresolved.",
+      "originalTextSha256": "45bf59d5601ed295078f49cf4a53bf6e306298eab5edabf3c4bbc54b2cbbee97",
+      "rules": [
+        {
+          "trigger": "heal",
+          "chance_bp": 3000,
+          "interval_ms": 0,
+          "loss_threshold_milli": 0,
+          "condition": {
+            "kind": "regen",
+            "value": ""
+          },
+          "actions": [
+            {
+              "type": "add_shield",
+              "target": "self",
+              "amount": 4,
+              "unit": "stacks",
+              "field": "shield",
+              "formula": "flat",
+              "factor_bp": 0,
+              "minimum": 0,
+              "cap": 0,
+              "damage_kind": "none",
+              "handler": ""
+            }
+          ]
+        }
+      ],
+      "provenance": {
+        "source": "game/data/effect_contracts.json",
+        "pointer": "/pilots/7",
+        "sourceSha256": "bc3e142e5085d9cb37bd7e6e71e075bf73d1bba77f377b3d3b2ff69a1d4ffdc3"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "base_text_contract"
+    },
+    {
+      "id": "legacy_078",
+      "cardId": "legacy_078",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "22fba9bd0d78a5312aceee57883e916cc30ec63a64365fe910561f9f2d42b6be",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/77/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_079",
+      "cardId": "legacy_079",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "d5d57e459b83ac2f9aafc6f371c0c0b3f6b037c819c34141bf8396f6e9381972",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/78/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_080",
+      "cardId": "legacy_080",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "a68fe69653042c73be28b5a74bcc201fcd9854468b6de02df21c768638f1b9ef",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/79/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_081",
+      "cardId": "legacy_081",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "fd47d08c8bc5d556c5cf9d7d1c504da349a06b510f5f559746c93c0406b4ff8d",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/80/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_082",
+      "cardId": "legacy_082",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "8f67dfbf15d27d22aa89aadc81c52e37ff0c0820145caa30d16205c6cdbf8a02",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/81/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_083",
+      "cardId": "legacy_083",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "26f0a047a19f0b8ccabc81f0a188c29db2f997e39c3768f452b8b3767ca20ecf",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/82/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_084",
+      "cardId": "legacy_084",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "4344fc8c39edaf7fe02ba6eaad0e8fc0e15fc78f5fa10a4c1c69735a9c976c43",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/83/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_085",
+      "cardId": "legacy_085",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "96b2e2aa969c3f85c7b1a9ddc6ffd62081832feaafe833b20aa7c84d680ffc18",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/84/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_086",
+      "cardId": "legacy_086",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "89325de251ea886ef5b9434d2c9171616bc6fcee8f121cd6983a00694e84ca26",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/85/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_087",
+      "cardId": "legacy_087",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "3e2f372de690e69f1919d1c05a879924434cf8dfd99150c3946342df7ded0447",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/86/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_088",
+      "cardId": "legacy_088",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "15a7cf7fc2d0d5dffbbf6856e91a64301c59ba39596348f65b96709f8a29e4f4",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/87/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_089",
+      "cardId": "legacy_089",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "1877753df4d2e18787b3a714431b32afaf737d599dd3afec4028cec1bf72e325",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/88/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_090",
+      "cardId": "legacy_090",
+      "profile": "base_text_v1",
+      "lifecycle": "implemented",
+      "parity": "legacy approximation",
+      "reason": "Every 500 ms emit 20000 milli magic-damage intent; preserve Wound ledger unchanged.",
+      "originalTextSha256": "0c329c61377e88efd2075d54fa48f206d5909f9fd8944b31f844ad8f2c6f18cf",
+      "rules": [
+        {
+          "trigger": "interval",
+          "chance_bp": 10000,
+          "interval_ms": 500,
+          "loss_threshold_milli": 0,
+          "condition": {
+            "kind": "always",
+            "value": ""
+          },
+          "actions": [
+            {
+              "type": "deal_damage",
+              "target": "opponent",
+              "amount": 20000,
+              "unit": "milli",
+              "field": "",
+              "formula": "flat",
+              "factor_bp": 0,
+              "minimum": 0,
+              "cap": 0,
+              "damage_kind": "magic",
+              "handler": ""
+            }
+          ]
+        }
+      ],
+      "provenance": {
+        "source": "game/data/effect_contracts.json",
+        "pointer": "/pilots/8",
+        "sourceSha256": "bc3e142e5085d9cb37bd7e6e71e075bf73d1bba77f377b3d3b2ff69a1d4ffdc3"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "base_text_contract"
+    },
+    {
+      "id": "legacy_091",
+      "cardId": "legacy_091",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "34bdfac80103cd58ae7c5fe2d0308a353418021a572cc49bc555f4c8dd1a1906",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/90/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_092",
+      "cardId": "legacy_092",
+      "profile": "base_text_v1",
+      "lifecycle": "implemented",
+      "parity": "legacy approximation",
+      "reason": "On skill_cast heal 50000 milli-HP; no automatic recursive regen event.",
+      "originalTextSha256": "ed7da5905f6b4c7340700ac7956b286547aa474588e47e07487804428da4b63d",
+      "rules": [
+        {
+          "trigger": "skill_cast",
+          "chance_bp": 10000,
+          "interval_ms": 0,
+          "loss_threshold_milli": 0,
+          "condition": {
+            "kind": "always",
+            "value": ""
+          },
+          "actions": [
+            {
+              "type": "heal",
+              "target": "self",
+              "amount": 50000,
+              "unit": "milli",
+              "field": "",
+              "formula": "flat",
+              "factor_bp": 0,
+              "minimum": 0,
+              "cap": 0,
+              "damage_kind": "none",
+              "handler": ""
+            }
+          ]
+        }
+      ],
+      "provenance": {
+        "source": "game/data/effect_contracts.json",
+        "pointer": "/pilots/9",
+        "sourceSha256": "bc3e142e5085d9cb37bd7e6e71e075bf73d1bba77f377b3d3b2ff69a1d4ffdc3"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "base_text_contract"
+    },
+    {
+      "id": "legacy_093",
+      "cardId": "legacy_093",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "973b3607d6c53c11d07d7cfd00abf34f336e96287b0ebcc9f91b83df11c69494",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/92/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_094",
+      "cardId": "legacy_094",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "ce46951103662d90a1ba847bcfc3f5d23fdd611aded5950e3a4332763182a9b5",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/93/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_095",
+      "cardId": "legacy_095",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "5dd98475b25def8ad972f7b005a4c9c8c4a2cb5b5618af51c730d310e5c78dde",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/94/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_096",
+      "cardId": "legacy_096",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "3d6538d49f7b84fcc7f1a084c3e17276aa32bc3b81b2ad0f29ee3ecc522b0c52",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/95/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_097",
+      "cardId": "legacy_097",
+      "profile": "base_text_v1",
+      "lifecycle": "unresolved",
+      "parity": "unresolved",
+      "reason": "Unresolved: buffering of damage/heals, threshold crossing, survival during delay and doubled Regen scope require specification.",
+      "originalTextSha256": "b6fe1e01b6b370eb41733591fb95032ca8fefeda082eaefee2625b9d978c02e5",
+      "rules": [],
+      "provenance": {
+        "source": "game/data/effect_contracts.json",
+        "pointer": "/pilots/10",
+        "sourceSha256": "bc3e142e5085d9cb37bd7e6e71e075bf73d1bba77f377b3d3b2ff69a1d4ffdc3"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_098",
+      "cardId": "legacy_098",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "68925f7412e29301d3f57de97e14c49a47669bb2bc072bd4210fcde553953da7",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/97/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_099",
+      "cardId": "legacy_099",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "d0e2a06ac94d9c422af0730872cfc511c99849192510aed18055052a304ff6d5",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/98/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_100",
+      "cardId": "legacy_100",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "933444c90d794a790ee12b9628158a0f0675ce6c2f7ac5dfbe7eb1851dafe72a",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/99/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_101",
+      "cardId": "legacy_101",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "dc5411982712b8ed153766a1ca9cda747bbc14c9ac764dfd1605a9bdcf3a747b",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/100/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_102",
+      "cardId": "legacy_102",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "5028264b8e52b03b0d97ccee21c948ea05158c0239616500ddfebb768f89b48f",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/101/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_103",
+      "cardId": "legacy_103",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "dfd977d8cc8497c2b0f142f9c70ac11894f3da0e67487f2296e9cccc737af9d5",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/102/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_104",
+      "cardId": "legacy_104",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "5d5fe796957b3a452e21c3ab7d5a0e1ec2fa2e9a097450db971be208c19f303c",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/103/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_105",
+      "cardId": "legacy_105",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "44065c9be514020f59dd12e054d0aa5417df1248217b904ccc48e077220bf3f6",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/104/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_106",
+      "cardId": "legacy_106",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "29901efcb8011e0e6fe614c9bf21d731a9cba6259af51a2ad5853b578ba79315",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/105/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_107",
+      "cardId": "legacy_107",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "b6fa4303b5073da54f5fae86370afa3ecfb0e1bd0c41f461258d2007f631a283",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/106/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_108",
+      "cardId": "legacy_108",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "d1ce65a5927e83415f83cb39fca334603c3b49aede1ce043d93b6ebae1b41cfc",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/107/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_109",
+      "cardId": "legacy_109",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "d352b127529ccc605e383c57a88899ef6bb55a364f248511eec946b02525f1b0",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/108/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_110",
+      "cardId": "legacy_110",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "d36d5151862ab5f9ada433f643421d575c10e39bc1ba748ada1ed2714db91df2",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/109/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_111",
+      "cardId": "legacy_111",
+      "profile": "base_text_v1",
+      "lifecycle": "unresolved",
+      "parity": "unresolved",
+      "reason": "Unresolved: shield weakening rate and survival HP are absent from source; no arbitrary decay or max-HP scaling accepted.",
+      "originalTextSha256": "403d6df7f4ef57f0a79c534000901f42667f9de25abee983032c777c11fdefe5",
+      "rules": [],
+      "provenance": {
+        "source": "game/data/effect_contracts.json",
+        "pointer": "/pilots/11",
+        "sourceSha256": "bc3e142e5085d9cb37bd7e6e71e075bf73d1bba77f377b3d3b2ff69a1d4ffdc3"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_112",
+      "cardId": "legacy_112",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "92d2ded4cceb2511a83c4aee5e02b18010191698d07d665aad87af15d7254993",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/111/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_113",
+      "cardId": "legacy_113",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "5066d0b890d6a7b1b160268c4ba02b8044c576f9f612bc92d400c5120391e0c4",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/112/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_114",
+      "cardId": "legacy_114",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "0017512d61b3ab18369db275df1af017c5bae421a0d822840232355f0d115935",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/113/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_115",
+      "cardId": "legacy_115",
+      "profile": "base_text_v1",
+      "lifecycle": "implemented",
+      "parity": "legacy approximation",
+      "reason": "Every 1000 ms add 4 Toxin stacks to opponent. Toxin tick damage, duration and decay are unresolved.",
+      "originalTextSha256": "e0f59699e37eb9864447cd973cf8b15d0e6d64ff05eec19d9309e1f122e398d4",
+      "rules": [
+        {
+          "trigger": "interval",
+          "chance_bp": 10000,
+          "interval_ms": 1000,
+          "loss_threshold_milli": 0,
+          "condition": {
+            "kind": "always",
+            "value": ""
+          },
+          "actions": [
+            {
+              "type": "apply_status",
+              "target": "opponent",
+              "amount": 4,
+              "unit": "stacks",
+              "field": "toxin",
+              "formula": "flat",
+              "factor_bp": 0,
+              "minimum": 0,
+              "cap": 0,
+              "damage_kind": "none",
+              "handler": ""
+            }
+          ]
+        }
+      ],
+      "provenance": {
+        "source": "game/data/effect_contracts.json",
+        "pointer": "/pilots/12",
+        "sourceSha256": "bc3e142e5085d9cb37bd7e6e71e075bf73d1bba77f377b3d3b2ff69a1d4ffdc3"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "base_text_contract"
+    },
+    {
+      "id": "legacy_116",
+      "cardId": "legacy_116",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "1f5ab1cfc23d73eb8dcbbfd6df9b97d7c98cd231437350cf8ebd71c43a3ca292",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/115/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_117",
+      "cardId": "legacy_117",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "3054232ba4d6067f19d40f92aca02bdea2b4aa3635ae1d2aa7b6f8a8d93f1e1c",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/116/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_118",
+      "cardId": "legacy_118",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "c9efd892312b69693f3207052be2f67cf205d04ddd961bb508a2d1cc83477b8f",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/117/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_119",
+      "cardId": "legacy_119",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "c0c73f841bece6c3b5dc169a2d6b4032fcdf55ca3b3d6228c285bdcc55fb2000",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/118/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_120",
+      "cardId": "legacy_120",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "258f374ad1b26397c46a26e4ee62c3a6b370310da72fb2afb30dc4cc764679ac",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/119/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_121",
+      "cardId": "legacy_121",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "1cf5add92f80c73de52a658bd9dd248da9312db785f2a43249d7ad8694ea8ab9",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/120/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_122",
+      "cardId": "legacy_122",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "af828bcc2c340f0af61687f55881b224acb2f4f9056377969bae8bc091334d27",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/121/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_123",
+      "cardId": "legacy_123",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "ff535e574d3f511c39b9095dc05531f982e935e9cf874176676c03582504e0d6",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/122/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_124",
+      "cardId": "legacy_124",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "c5c4da81877b8d5e0e98dd5594835e01be5faf7b0b2cf1ccf1b2c7355a35ce66",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/123/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_125",
+      "cardId": "legacy_125",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "2ceedb27723240592aad3f2e2f643af3aaa04c882071f3ead6143da60444a9f5",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/124/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_126",
+      "cardId": "legacy_126",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "b39fb7b112984f7e183bfcf4f41e258bb04d7ff9a8a5c1696d984c4208e58fbb",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/125/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_127",
+      "cardId": "legacy_127",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "0850185fc81ced8b0ddafbe428f4c79311c9cfc3fa8979f58b582f262424557c",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/126/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_128",
+      "cardId": "legacy_128",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "320eb452b0809f5fa9937bee2185eab42654f5a426188495823c19a7dc25432e",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/127/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_129",
+      "cardId": "legacy_129",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "36184772d2a7ee939eb29e14365ffcaa1dc9eda86a54edba6e888628f19212ba",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/128/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_130",
+      "cardId": "legacy_130",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "1cf1f8b48b96d4403b2b3ceef856e60d11a01dc624b8fff035da5aae60c50c70",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/129/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_131",
+      "cardId": "legacy_131",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "53a501b533e57ecd4c9608f4931c12ea63e8d754b0fc2f1206118205082c89e2",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/130/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_132",
+      "cardId": "legacy_132",
+      "profile": "base_text_v1",
+      "lifecycle": "unresolved",
+      "parity": "unresolved",
+      "reason": "Unresolved: meaning of +5 Assault and whether one-second instances stack or refresh; selected without implementing an invented policy.",
+      "originalTextSha256": "e49b69ed7e96f57f396f2ba96fc6d77daa21ce7d7942f546de182253a5384f34",
+      "rules": [],
+      "provenance": {
+        "source": "game/data/effect_contracts.json",
+        "pointer": "/pilots/13",
+        "sourceSha256": "bc3e142e5085d9cb37bd7e6e71e075bf73d1bba77f377b3d3b2ff69a1d4ffdc3"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_133",
+      "cardId": "legacy_133",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "2f32213aa9b30fc04556d2d3c392bab6bcdf802ff706f79d8459150b096389f0",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/132/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_134",
+      "cardId": "legacy_134",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "8f96afa072da2135dead85c44cba1fdc286576ff445d10efcbea0afbecfa2c81",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/133/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_135",
+      "cardId": "legacy_135",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "d98eba369e395ab0e6519a58840496b174df6a9d4f425204be23d7d132343e13",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/134/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_136",
+      "cardId": "legacy_136",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "b444bf94ee088aab4556ec8958c4742da5eacd05f34a781ed13f682972118421",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/135/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_137",
+      "cardId": "legacy_137",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "e1e08f71e69d550849b08da384d5929924595f2d654637a14b0540d93b130f62",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/136/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_138",
+      "cardId": "legacy_138",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "63a39ad549d0d637846c5567328ba7932ae9b3d2e03d62a1310c965a260bd204",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/137/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_139",
+      "cardId": "legacy_139",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "487cfb4bd5510398664deb2916af679e662424e9ca99438f9fbb20c0909fe9af",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/138/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_140",
+      "cardId": "legacy_140",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "82166027f8e563c052eb86a798cc4c893e75508d335daeb5484271446e152521",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/139/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_141",
+      "cardId": "legacy_141",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "6a405af7e0a50596186499a864bd7b204c79bf204943f25ef27e0e39ef4ee31b",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/140/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_142",
+      "cardId": "legacy_142",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "982c17304d4b073d29b3345b1f9978e9c206cb11f60d79d625d8682a7a9282b5",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/141/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_143",
+      "cardId": "legacy_143",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "aa07a59fb5ac1dab38c8d22f63503e50820e0231ad8b6dda2af5f17e1c9e2dd7",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/142/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_144",
+      "cardId": "legacy_144",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "f86a19beff19696427db93c7403379dbb56ee9f400eede7a6c2e0e23cb3424a4",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/143/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_145",
+      "cardId": "legacy_145",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "109bd788a0141b516cac870917dbfad4fe440fc90d3d36c97cecf82dea129e73",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/144/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_146",
+      "cardId": "legacy_146",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "a80fca2bfd53b3c7d64cec49da5dccd74c535a3be5137063445986b3424b1ceb",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/145/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_147",
+      "cardId": "legacy_147",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "08aec04ae3f812a2e5b4e3ed2f72795e47a45af09da268a1e1c377ff00708b28",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/146/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_148",
+      "cardId": "legacy_148",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "af68a29f8523d48b07d654a5e77bb626bc0c3d360b4977ece40c19305c5897a5",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/147/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    },
+    {
+      "id": "legacy_149",
+      "cardId": "legacy_149",
+      "profile": "base_text_v1",
+      "lifecycle": "implemented",
+      "parity": "legacy approximation",
+      "reason": "On Wound application by owner, 3000 bp chance to add 4 Toxin stacks to opponent. Global status physics remains unresolved.",
+      "originalTextSha256": "03da88587eb7c2e2359a3e7460fb2f44f7941bdfadcbb56a63f613f52040805e",
+      "rules": [
+        {
+          "trigger": "status_applied",
+          "chance_bp": 3000,
+          "interval_ms": 0,
+          "loss_threshold_milli": 0,
+          "condition": {
+            "kind": "status",
+            "value": "wound"
+          },
+          "actions": [
+            {
+              "type": "apply_status",
+              "target": "opponent",
+              "amount": 4,
+              "unit": "stacks",
+              "field": "toxin",
+              "formula": "flat",
+              "factor_bp": 0,
+              "minimum": 0,
+              "cap": 0,
+              "damage_kind": "none",
+              "handler": ""
+            }
+          ]
+        }
+      ],
+      "provenance": {
+        "source": "game/data/effect_contracts.json",
+        "pointer": "/pilots/14",
+        "sourceSha256": "bc3e142e5085d9cb37bd7e6e71e075bf73d1bba77f377b3d3b2ff69a1d4ffdc3"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "base_text_contract"
+    },
+    {
+      "id": "legacy_150",
+      "cardId": "legacy_150",
+      "profile": "base_text_v1",
+      "lifecycle": "unreviewed",
+      "parity": "unresolved",
+      "reason": "Exact semantics not reviewed; JS branch/keyword effects are not canonical.",
+      "originalTextSha256": "0d0fd23abcca437f74da2e69ff7b4a381b1acb51c77a05396ad72868aae8a7a8",
+      "rules": [],
+      "provenance": {
+        "source": "legacy/web-prototype/data/legacy_deck_source.json",
+        "pointer": "/149/effect",
+        "sourceSha256": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98"
+      },
+      "specification": "docs/architecture/ADR-0003-canonical-data-and-effect-contracts.md",
+      "tests": "game/tests/effect_test.gd",
+      "executionCoverage": "rejection_only"
+    }
+  ]
+}

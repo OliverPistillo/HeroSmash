@@ -1,0 +1,6 @@
+# Isolated wheel-build dependencies actually resolved for hsfix1 on 2026-09-09.
+# Keep separate from unchanged runtime dependency constraints.
+# pip 23.2.1 propagates PIP_CONSTRAINT into its isolated build subprocess.
+packaging==26.3
+setuptools==84.0.0
+wheel==0.48.0

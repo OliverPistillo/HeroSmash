@@ -1,0 +1,3677 @@
+{
+  "schema_version": 1,
+  "groups": 534,
+  "origins": 832,
+  "duplicate_groups": 286,
+  "duplicate_extra_origins": 298,
+  "duplicates": [
+    {
+      "id": "ref_00ffe151a38af94b",
+      "sha256": "00ffe151a38af94b256e201de551a0c537c6f38f29f8710d6f45d1bce3e13e9f",
+      "paths": [
+        "legacy/web-prototype/assets/arenas/arena01_beast_crucible/arena01_bg_sky.png",
+        ".work/legacy-source/HeroSmash/assets/arenas/arena01_beast_crucible/arena01_bg_sky.png"
+      ],
+      "historical_ids": [
+        "ref_00ffe151a38af94b"
+      ]
+    },
+    {
+      "id": "ref_013e5300a0eaed1d",
+      "sha256": "013e5300a0eaed1d13ea1f0ea4a90ebaa308f2322a04a1e0ea560948f9ce77c0",
+      "paths": [
+        "legacy/web-prototype/assets/cards/dodge_epic.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/dodge_epic.svg"
+      ],
+      "historical_ids": [
+        "ref_67bb7ab925ce43f1",
+        "ref_013e5300a0eaed1d"
+      ]
+    },
+    {
+      "id": "ref_01d01fb1ca0d1779",
+      "sha256": "01d01fb1ca0d1779c00fec23d1eadf20261a264d4d9d5d5789169b83c30fadc6",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_074.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_074.svg"
+      ],
+      "historical_ids": [
+        "ref_637f7b788ceb5a0e",
+        "ref_01d01fb1ca0d1779"
+      ]
+    },
+    {
+      "id": "ref_02369e4b32693776",
+      "sha256": "02369e4b32693776c13cb482832d867c06f63af90ccf958718e1546c4e8b3abf",
+      "paths": [
+        "legacy/web-prototype/assets/branches/assault.png",
+        ".work/legacy-source/HeroSmash/assets/branches/assault.png"
+      ],
+      "historical_ids": [
+        "ref_02369e4b32693776"
+      ]
+    },
+    {
+      "id": "ref_0272611840674b23",
+      "sha256": "0272611840674b2387666c7619e12c38441a0b75e607177d1e239725aee19b3f",
+      "paths": [
+        "legacy/web-prototype/assets/branches/healing.png",
+        ".work/legacy-source/HeroSmash/assets/branches/healing.png"
+      ],
+      "historical_ids": [
+        "ref_0272611840674b23"
+      ]
+    },
+    {
+      "id": "ref_03d1ad85adf6cfe0",
+      "sha256": "03d1ad85adf6cfe014d0505d6f47497702512d38903ff39adf8dedda67234e78",
+      "paths": [
+        "legacy/web-prototype/assets/heroes/darion.svg",
+        ".work/legacy-source/HeroSmash/assets/heroes/darion.svg"
+      ],
+      "historical_ids": [
+        "ref_ea091157d475b080",
+        "ref_03d1ad85adf6cfe0"
+      ]
+    },
+    {
+      "id": "ref_056e42d4f502db1c",
+      "sha256": "056e42d4f502db1c85d54d024e86a9605204f05f32aad72503f8d8689d98ec00",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_067.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_067.svg"
+      ],
+      "historical_ids": [
+        "ref_f45c57f3e39559cb",
+        "ref_056e42d4f502db1c"
+      ]
+    },
+    {
+      "id": "ref_057571b68ec8796e",
+      "sha256": "057571b68ec8796e055db88af1a45a5c04caf025bc3618167863a09d02ca59b0",
+      "paths": [
+        ".work/legacy-source/ChatGPT Image 27 apr 2026, 16_58_02.png",
+        ".work/legacy-source/Nuova cartella/ChatGPT Image 27 apr 2026, 16_58_02.png"
+      ],
+      "historical_ids": [
+        "ref_057571b68ec8796e"
+      ]
+    },
+    {
+      "id": "ref_05b33ce989a75ce2",
+      "sha256": "05b33ce989a75ce2ec7d9e6723a719d806186473dd1202045f827f785e58a2f8",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_066.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_066.svg"
+      ],
+      "historical_ids": [
+        "ref_263aaa9dafde4c1f",
+        "ref_05b33ce989a75ce2"
+      ]
+    },
+    {
+      "id": "ref_0648345500d8c58c",
+      "sha256": "0648345500d8c58c78881ac45c697484e5b4fd71575406b4cedd07734881bec4",
+      "paths": [
+        "legacy/web-prototype/assets/heroes/skydancer.svg",
+        ".work/legacy-source/HeroSmash/assets/heroes/skydancer.svg"
+      ],
+      "historical_ids": [
+        "ref_d5a76518e667a4a9",
+        "ref_0648345500d8c58c"
+      ]
+    },
+    {
+      "id": "ref_069119b4f6b41153",
+      "sha256": "069119b4f6b4115339be683d907943dff7a61f00521a58405532a4bbf7c0eb8a",
+      "paths": [
+        ".work/legacy-source/ChatGPT Image 27 apr 2026, 17_38_15.png",
+        ".work/legacy-source/Nuova cartella/ChatGPT Image 27 apr 2026, 17_38_15.png"
+      ],
+      "historical_ids": [
+        "ref_069119b4f6b41153"
+      ]
+    },
+    {
+      "id": "ref_06caa59b121986a9",
+      "sha256": "06caa59b121986a9062351d7281a1854228b3e52887ac632489e94c0b5a55ec8",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_093.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_093.svg"
+      ],
+      "historical_ids": [
+        "ref_6c8d92dd2d4f627e",
+        "ref_06caa59b121986a9"
+      ]
+    },
+    {
+      "id": "ref_07627874fda2f0d4",
+      "sha256": "07627874fda2f0d4bcabb9c2daf7c1a695e6365559585cecd56d6996a2b20b0c",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_009.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_009.svg"
+      ],
+      "historical_ids": [
+        "ref_bfd60f58f4828c43",
+        "ref_07627874fda2f0d4"
+      ]
+    },
+    {
+      "id": "ref_07961c15f868cab2",
+      "sha256": "07961c15f868cab20a428711099a6e9b2f921f5790580f44c0bc3038141b0c97",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_132.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_132.svg"
+      ],
+      "historical_ids": [
+        "ref_65df79140f721adc",
+        "ref_07961c15f868cab2"
+      ]
+    },
+    {
+      "id": "ref_07d1715076165e6a",
+      "sha256": "07d1715076165e6aaeb3d48b6063de3c5ad32f167e7ff925ce9d29d8721e308f",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_095.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_095.svg"
+      ],
+      "historical_ids": [
+        "ref_20cf4b2665e254af",
+        "ref_07d1715076165e6a"
+      ]
+    },
+    {
+      "id": "ref_093500bfc260b63c",
+      "sha256": "093500bfc260b63cc96362754db59e6fd07bd2c0da6757971fadd1d332834a48",
+      "paths": [
+        "legacy/web-prototype/assets/final/style/style_guide.png",
+        ".work/legacy-source/HeroSmash/assets/final/style/style_guide.png",
+        ".work/legacy-source/Nuova cartella/style_guide.png"
+      ],
+      "historical_ids": [
+        "ref_093500bfc260b63c"
+      ]
+    },
+    {
+      "id": "ref_0992c72a0c8790c1",
+      "sha256": "0992c72a0c8790c1fb32d904e966c99cf29e71800c097f40c793d480d7f0bfb3",
+      "paths": [
+        "legacy/web-prototype/assets/cards/ice_legendary.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/ice_legendary.svg"
+      ],
+      "historical_ids": [
+        "ref_4ea317e94e5cb605",
+        "ref_0992c72a0c8790c1"
+      ]
+    },
+    {
+      "id": "ref_0abf8d17bf43b1f2",
+      "sha256": "0abf8d17bf43b1f2758497dee21fbc55676a9bd9f2a6793c676c5744b3b775cd",
+      "paths": [
+        ".work/legacy-source/ChatGPT Image 27 apr 2026, 17_25_29.png",
+        ".work/legacy-source/Nuova cartella/ChatGPT Image 27 apr 2026, 17_25_29.png"
+      ],
+      "historical_ids": [
+        "ref_0abf8d17bf43b1f2"
+      ]
+    },
+    {
+      "id": "ref_0b52e5668fc50ace",
+      "sha256": "0b52e5668fc50ace822f98ec9dfd3e1896c588db25d077beb411bdd69d818ccb",
+      "paths": [
+        "legacy/web-prototype/assets/ui/market/btn_reroll.png",
+        ".work/legacy-source/HeroSmash/assets/ui/market/btn_reroll.png"
+      ],
+      "historical_ids": [
+        "ref_0b52e5668fc50ace"
+      ]
+    },
+    {
+      "id": "ref_0b6decc070a3da90",
+      "sha256": "0b6decc070a3da902126ce13012f11af32b83079e726bd523f1b91bb905a138a",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_055.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_055.svg"
+      ],
+      "historical_ids": [
+        "ref_31d98035e3de1c1a",
+        "ref_0b6decc070a3da90"
+      ]
+    },
+    {
+      "id": "ref_0be6d8e51aec09bc",
+      "sha256": "0be6d8e51aec09bc63b8c27d36d72871f3e5526b715e5eb9f01eab37b7556d79",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_099.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_099.svg"
+      ],
+      "historical_ids": [
+        "ref_20a28ae69943d943",
+        "ref_0be6d8e51aec09bc"
+      ]
+    },
+    {
+      "id": "ref_0d27028746e95973",
+      "sha256": "0d27028746e95973701d143f62a185eed7aa7bf3f9313931b328742db6b6cb9e",
+      "paths": [
+        "legacy/web-prototype/assets/heroes/nightshade.svg",
+        ".work/legacy-source/HeroSmash/assets/heroes/nightshade.svg"
+      ],
+      "historical_ids": [
+        "ref_3cd5166e12492ddd",
+        "ref_0d27028746e95973"
+      ]
+    },
+    {
+      "id": "ref_0e4bb21941fc5838",
+      "sha256": "0e4bb21941fc583875232675f62fc1636f18522856f60011e7496cf2b2843e63",
+      "paths": [
+        "legacy/web-prototype/assets/ui/market/btn_market.png",
+        ".work/legacy-source/HeroSmash/assets/ui/market/btn_market.png"
+      ],
+      "historical_ids": [
+        "ref_0e4bb21941fc5838"
+      ]
+    },
+    {
+      "id": "ref_0f947ec4c044d414",
+      "sha256": "0f947ec4c044d41456cc74df0bcbece17707f286084e9df96b1ec275f2dd0623",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_047.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_047.svg"
+      ],
+      "historical_ids": [
+        "ref_2d2ae3ad0f4fde2d",
+        "ref_0f947ec4c044d414"
+      ]
+    },
+    {
+      "id": "ref_0fc33aef8e0ed0d0",
+      "sha256": "0fc33aef8e0ed0d0ab4e2cc14ccd272ed34246d525558c5c7c75b7fa6b8f6072",
+      "paths": [
+        "legacy/web-prototype/assets/ui/market/btn_unlock.png",
+        ".work/legacy-source/HeroSmash/assets/ui/market/btn_unlock.png"
+      ],
+      "historical_ids": [
+        "ref_0fc33aef8e0ed0d0"
+      ]
+    },
+    {
+      "id": "ref_111480bcb46ccd98",
+      "sha256": "111480bcb46ccd9828b72181adb7dea45ace4f4b7fb771211371748d054dd26a",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_148.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_148.svg"
+      ],
+      "historical_ids": [
+        "ref_e551c9876e019cc3",
+        "ref_111480bcb46ccd98"
+      ]
+    },
+    {
+      "id": "ref_1369aa2372b76741",
+      "sha256": "1369aa2372b767416e0477c364a0c4be5a1fd906f97114a70331ffa499ab7ad5",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_045.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_045.svg"
+      ],
+      "historical_ids": [
+        "ref_a90276e4ba931e96",
+        "ref_1369aa2372b76741"
+      ]
+    },
+    {
+      "id": "ref_13b0959a9bb33c5f",
+      "sha256": "13b0959a9bb33c5f88fd3f3a7cbffc3e64db6731810d73d6af7ef58d4beb18b5",
+      "paths": [
+        "legacy/web-prototype/assets/cards/guardian_legendary.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/guardian_legendary.svg"
+      ],
+      "historical_ids": [
+        "ref_5c2afaeb282279cf",
+        "ref_13b0959a9bb33c5f"
+      ]
+    },
+    {
+      "id": "ref_13d048864325919b",
+      "sha256": "13d048864325919ba176bec5cd73479a9a2ba7319c9b82e99f15798adb6b3e5e",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_004.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_004.svg"
+      ],
+      "historical_ids": [
+        "ref_84e3546c23c1483f",
+        "ref_13d048864325919b"
+      ]
+    },
+    {
+      "id": "ref_14efe3599632454d",
+      "sha256": "14efe3599632454d25d0893d55d4a2e7ce76d21617b41d09cda78e2c180b1c8a",
+      "paths": [
+        "legacy/web-prototype/assets/heroes/ironfist.svg",
+        ".work/legacy-source/HeroSmash/assets/heroes/ironfist.svg"
+      ],
+      "historical_ids": [
+        "ref_7a7c5d06edbcbf81",
+        "ref_14efe3599632454d"
+      ]
+    },
+    {
+      "id": "ref_150e4c230b951b8a",
+      "sha256": "150e4c230b951b8a5e83f40403dd053165fcfd788182e37006fed89d8c9b9f1a",
+      "paths": [
+        "legacy/web-prototype/assets/cards/rage_normal.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/rage_normal.svg"
+      ],
+      "historical_ids": [
+        "ref_1ff3e380f9306133",
+        "ref_150e4c230b951b8a"
+      ]
+    },
+    {
+      "id": "ref_16d7ce10173cfc43",
+      "sha256": "16d7ce10173cfc43c94e4e16339b5b21e2a0da8a8339edd2b68bfea61f04556c",
+      "paths": [
+        "legacy/web-prototype/assets/heroes/fireheart.svg",
+        ".work/legacy-source/HeroSmash/assets/heroes/fireheart.svg"
+      ],
+      "historical_ids": [
+        "ref_88ce08d33620fa85",
+        "ref_16d7ce10173cfc43"
+      ]
+    },
+    {
+      "id": "ref_16f0d9523dd5cca1",
+      "sha256": "16f0d9523dd5cca18e44e86de0a52ff9dd3c49a092dee460b90330606a8d4f41",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_103.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_103.svg"
+      ],
+      "historical_ids": [
+        "ref_4b78ec31db629f6c",
+        "ref_16f0d9523dd5cca1"
+      ]
+    },
+    {
+      "id": "ref_19404e1623ac53df",
+      "sha256": "19404e1623ac53dfc4fd59e8d6ae51e30cdb6e0d3fb0b7f7d0ad01f076b7aae6",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_122.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_122.svg"
+      ],
+      "historical_ids": [
+        "ref_03edbab5f002cf07",
+        "ref_19404e1623ac53df"
+      ]
+    },
+    {
+      "id": "ref_1b5a226277094384",
+      "sha256": "1b5a2262770943841b1d6c0f101dd723591ed450041042688dbc98390b24672a",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_036.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_036.svg"
+      ],
+      "historical_ids": [
+        "ref_78591206fcf5d659",
+        "ref_1b5a226277094384"
+      ]
+    },
+    {
+      "id": "ref_1b812d02bb8f889c",
+      "sha256": "1b812d02bb8f889cfd73b49b27c941144fab12e29cdc78c3e51faf1d8c484012",
+      "paths": [
+        "legacy/web-prototype/assets/heroes/windrider.svg",
+        ".work/legacy-source/HeroSmash/assets/heroes/windrider.svg"
+      ],
+      "historical_ids": [
+        "ref_f9d0e0ec68cc873e",
+        "ref_1b812d02bb8f889c"
+      ]
+    },
+    {
+      "id": "ref_1d79e51d3bfc170a",
+      "sha256": "1d79e51d3bfc170a58f661706248f89c9c3e6bd32a0bc9c95a3cffe3ae3018af",
+      "paths": [
+        "legacy/web-prototype/assets/final/backgrounds/home_keyart.png",
+        ".work/legacy-source/HeroSmash/assets/final/backgrounds/home_keyart.png",
+        ".work/legacy-source/Nuova cartella/home_keyart.png"
+      ],
+      "historical_ids": [
+        "ref_1d79e51d3bfc170a"
+      ]
+    },
+    {
+      "id": "ref_1ee05d34cea0eb68",
+      "sha256": "1ee05d34cea0eb684e04d28ec2633da83ab4ac86b3b7772fbec3c39992e4155d",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_019.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_019.svg"
+      ],
+      "historical_ids": [
+        "ref_d9d0639d8bb1497a",
+        "ref_1ee05d34cea0eb68"
+      ]
+    },
+    {
+      "id": "ref_1f6cdf4861805920",
+      "sha256": "1f6cdf4861805920f857352ac9e780949d8473637eb7f4316d861ee525a6b151",
+      "paths": [
+        "legacy/web-prototype/assets/cards/assault_legendary.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/assault_legendary.svg"
+      ],
+      "historical_ids": [
+        "ref_5e82b74b379d232e",
+        "ref_1f6cdf4861805920"
+      ]
+    },
+    {
+      "id": "ref_1fe1ae8637556991",
+      "sha256": "1fe1ae86375569916e6282f9550419bcd4a7e3eff75a1fae4d67036970d462ed",
+      "paths": [
+        "legacy/web-prototype/assets/cards/precision_epic.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/precision_epic.svg"
+      ],
+      "historical_ids": [
+        "ref_3fbd571bab79fda9",
+        "ref_1fe1ae8637556991"
+      ]
+    },
+    {
+      "id": "ref_209fc39f28525386",
+      "sha256": "209fc39f2852538645a8f17f4ed1662d8aca92dce8900028b25591405143798b",
+      "paths": [
+        "legacy/web-prototype/assets/heroes/voidwalker.svg",
+        ".work/legacy-source/HeroSmash/assets/heroes/voidwalker.svg"
+      ],
+      "historical_ids": [
+        "ref_a0ececd8e44bab6d",
+        "ref_209fc39f28525386"
+      ]
+    },
+    {
+      "id": "ref_218525466b09c945",
+      "sha256": "218525466b09c945961e442a11705c02c62a1c106dabed61225633b1731739eb",
+      "paths": [
+        "legacy/web-prototype/assets/cards/power_legendary.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/power_legendary.svg"
+      ],
+      "historical_ids": [
+        "ref_b87ada9454f1b9b2",
+        "ref_218525466b09c945"
+      ]
+    },
+    {
+      "id": "ref_218b4591abfd7ec6",
+      "sha256": "218b4591abfd7ec6148ce69bb3313396674f41751dd4285593f1fb75ca890d38",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_011.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_011.svg"
+      ],
+      "historical_ids": [
+        "ref_aa9c0008bd62c099",
+        "ref_218b4591abfd7ec6"
+      ]
+    },
+    {
+      "id": "ref_223d595f7bc8d600",
+      "sha256": "223d595f7bc8d600f6c484eaf33688ac5bb455838f6577cc0d90f3bc1bdf8fbb",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_131.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_131.svg"
+      ],
+      "historical_ids": [
+        "ref_c5ee1ed082f07c94",
+        "ref_223d595f7bc8d600"
+      ]
+    },
+    {
+      "id": "ref_22707d92e4f1101b",
+      "sha256": "22707d92e4f1101ba10941bb1dda19bf2424c7bf3ac8e979eedf48537d396d7c",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_114.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_114.svg"
+      ],
+      "historical_ids": [
+        "ref_8dd834ce89d5214c",
+        "ref_22707d92e4f1101b"
+      ]
+    },
+    {
+      "id": "ref_227f22961f6b64ba",
+      "sha256": "227f22961f6b64ba8d26be6f14fa8ac4a19d773b45134fc5279214dec9a1a29c",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_075.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_075.svg"
+      ],
+      "historical_ids": [
+        "ref_4d3404894b0c7003",
+        "ref_227f22961f6b64ba"
+      ]
+    },
+    {
+      "id": "ref_238430a8c7a63d04",
+      "sha256": "238430a8c7a63d04f7e2958275097de8cc4c015cadc2c829f80dc1d773f9d288",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_104.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_104.svg"
+      ],
+      "historical_ids": [
+        "ref_48e270b77dfc7872",
+        "ref_238430a8c7a63d04"
+      ]
+    },
+    {
+      "id": "ref_23c1047b4a87c58f",
+      "sha256": "23c1047b4a87c58fd76ea20b3ad0a574dc09b853bb6ae2f10b25d959bcf3c5e4",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_100.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_100.svg"
+      ],
+      "historical_ids": [
+        "ref_1fde32cd612d7e35",
+        "ref_23c1047b4a87c58f"
+      ]
+    },
+    {
+      "id": "ref_23f4624cdacea071",
+      "sha256": "23f4624cdacea071b13926334073f432c1163a7986c4c0110b0b8500c5ee8322",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_080.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_080.svg"
+      ],
+      "historical_ids": [
+        "ref_faaf28f6ade226ef",
+        "ref_23f4624cdacea071"
+      ]
+    },
+    {
+      "id": "ref_242a1c88d663fb60",
+      "sha256": "242a1c88d663fb60c7c7f503e53ee011b92eacf9eae43edb32a31f0745184171",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_084.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_084.svg"
+      ],
+      "historical_ids": [
+        "ref_d7e6a29a5234e678",
+        "ref_242a1c88d663fb60"
+      ]
+    },
+    {
+      "id": "ref_24c30224ad2540bc",
+      "sha256": "24c30224ad2540bc5c6d63bc82927fef5824d1bdb6ad7c7ba4c2a038e1694bde",
+      "paths": [
+        "legacy/web-prototype/assets/sprites/emberforge.png",
+        ".work/legacy-source/HeroSmash/assets/sprites/emberforge.png"
+      ],
+      "historical_ids": [
+        "ref_24c30224ad2540bc"
+      ]
+    },
+    {
+      "id": "ref_24e61fad31387582",
+      "sha256": "24e61fad313875822207677baa74257ee6ec2113bd4e18a2a1770dc62ee5d003",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_098.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_098.svg"
+      ],
+      "historical_ids": [
+        "ref_2e1ed5b906318fcc",
+        "ref_24e61fad31387582"
+      ]
+    },
+    {
+      "id": "ref_2613f3b6b3bb3123",
+      "sha256": "2613f3b6b3bb3123d16ffee7ab5876f81d5ca8eba43f116b7f07f8bc405ded66",
+      "paths": [
+        "legacy/web-prototype/assets/final/backgrounds/combat_bg.png",
+        ".work/legacy-source/HeroSmash/assets/final/backgrounds/combat_bg.png",
+        ".work/legacy-source/Nuova cartella/combat_bg.png"
+      ],
+      "historical_ids": [
+        "ref_2613f3b6b3bb3123"
+      ]
+    },
+    {
+      "id": "ref_263055cfe972b576",
+      "sha256": "263055cfe972b5760fe31134e83a805416d5b3a1c383a98a6edb5422f0f53762",
+      "paths": [
+        "legacy/web-prototype/assets/cards/assault_epic.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/assault_epic.svg"
+      ],
+      "historical_ids": [
+        "ref_a6c68b599c2e9629",
+        "ref_263055cfe972b576"
+      ]
+    },
+    {
+      "id": "ref_263089d2d7b8fad7",
+      "sha256": "263089d2d7b8fad7e4a29cc76fed07dd6ec45c3f34b15228bdc599cb3a247687",
+      "paths": [
+        "legacy/web-prototype/assets/cards/guardian_normal.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/guardian_normal.svg"
+      ],
+      "historical_ids": [
+        "ref_120937e8c8045068",
+        "ref_263089d2d7b8fad7"
+      ]
+    },
+    {
+      "id": "ref_2731cf62c752eb59",
+      "sha256": "2731cf62c752eb594ef7cd60fb62f0db61bc958dff11817c3da4fa650509fbb0",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_038.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_038.svg"
+      ],
+      "historical_ids": [
+        "ref_6e68f0623af103b2",
+        "ref_2731cf62c752eb59"
+      ]
+    },
+    {
+      "id": "ref_28f00e19a53cd776",
+      "sha256": "28f00e19a53cd77669d3140c15818df7e6aec4e027a51574d65d3d7030c89f25",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_150.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_150.svg"
+      ],
+      "historical_ids": [
+        "ref_5675cfb4f2609bba",
+        "ref_28f00e19a53cd776"
+      ]
+    },
+    {
+      "id": "ref_29459b90c6753753",
+      "sha256": "29459b90c675375323b15a261c60047e9466665fab162cd00a0d2b2a04edbcd8",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_026.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_026.svg"
+      ],
+      "historical_ids": [
+        "ref_dc96d3f2f4204a9c",
+        "ref_29459b90c6753753"
+      ]
+    },
+    {
+      "id": "ref_2963e308e9c99ad0",
+      "sha256": "2963e308e9c99ad0e53e99abf409a1c79f10b0112b945625ab9afc0da3c629b4",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_005.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_005.svg"
+      ],
+      "historical_ids": [
+        "ref_ba3b785ebd88f299",
+        "ref_2963e308e9c99ad0"
+      ]
+    },
+    {
+      "id": "ref_2a3b2b10e739f0c9",
+      "sha256": "2a3b2b10e739f0c932a547b34676384c99d39b25621b7b7b54ba746b5532e04c",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_115.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_115.svg"
+      ],
+      "historical_ids": [
+        "ref_9b1a2249c0e928ca",
+        "ref_2a3b2b10e739f0c9"
+      ]
+    },
+    {
+      "id": "ref_2c4ea73619ab3bc4",
+      "sha256": "2c4ea73619ab3bc41bcaef037c70e314d5ceeb2fb88e432e439e42572d038432",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_096.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_096.svg"
+      ],
+      "historical_ids": [
+        "ref_d0ebf4cb64afd25d",
+        "ref_2c4ea73619ab3bc4"
+      ]
+    },
+    {
+      "id": "ref_2cdbf2c223215ab6",
+      "sha256": "2cdbf2c223215ab6ab1562651ef17ca3c83acdec19bf8c6f212ce63eebf4050b",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_081.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_081.svg"
+      ],
+      "historical_ids": [
+        "ref_3f806927b75bb052",
+        "ref_2cdbf2c223215ab6"
+      ]
+    },
+    {
+      "id": "ref_2d789361336d94fa",
+      "sha256": "2d789361336d94fa864a2e7451b4ff4fea31894eca29a13326d66b4a6d364f78",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_053.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_053.svg"
+      ],
+      "historical_ids": [
+        "ref_972fae9d96ac8ea6",
+        "ref_2d789361336d94fa"
+      ]
+    },
+    {
+      "id": "ref_2ddba750c82686f9",
+      "sha256": "2ddba750c82686f97aff16eb1f56c36b5e8ca9f1c0bb61c6e5503f17b1f6f21c",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_020.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_020.svg"
+      ],
+      "historical_ids": [
+        "ref_2a563913d24eb2da",
+        "ref_2ddba750c82686f9"
+      ]
+    },
+    {
+      "id": "ref_2f584fd2166504ed",
+      "sha256": "2f584fd2166504ed03e23f5553ec875bb77fe79bdbfd8520dbbe8409dbf80c16",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_106.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_106.svg"
+      ],
+      "historical_ids": [
+        "ref_ca3d264d41484a1c",
+        "ref_2f584fd2166504ed"
+      ]
+    },
+    {
+      "id": "ref_31c44a9e571e1e13",
+      "sha256": "31c44a9e571e1e1302c37d43ea815893d5b86d40adbb10899b2d0a4a8c2c96fb",
+      "paths": [
+        "legacy/web-prototype/assets/sprites/darion.png",
+        ".work/legacy-source/HeroSmash/assets/sprites/darion.png"
+      ],
+      "historical_ids": [
+        "ref_31c44a9e571e1e13"
+      ]
+    },
+    {
+      "id": "ref_32311d962263add9",
+      "sha256": "32311d962263add94e1e947f97e877606b3d51397f566e96b588d7d992aa6971",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_134.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_134.svg"
+      ],
+      "historical_ids": [
+        "ref_0b844d8183d2eb1c",
+        "ref_32311d962263add9"
+      ]
+    },
+    {
+      "id": "ref_34ac046eb05d22fb",
+      "sha256": "34ac046eb05d22fb9b3ba3fc569e7e54329e83e3af6943d7f5c47998163e8d17",
+      "paths": [
+        "legacy/web-prototype/assets/branches/toxin.png",
+        ".work/legacy-source/HeroSmash/assets/branches/toxin.png"
+      ],
+      "historical_ids": [
+        "ref_34ac046eb05d22fb"
+      ]
+    },
+    {
+      "id": "ref_352514ddea33b407",
+      "sha256": "352514ddea33b4077fe1da535baf99d70a2c5356ae16f407bcda6190d5dc7d23",
+      "paths": [
+        "legacy/web-prototype/assets/cards/power_normal.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/power_normal.svg"
+      ],
+      "historical_ids": [
+        "ref_59ccb5c6b27572d4",
+        "ref_352514ddea33b407"
+      ]
+    },
+    {
+      "id": "ref_36b0954b1b068e30",
+      "sha256": "36b0954b1b068e3037e08f6f441c18300ad91241e88e1c60b613c7f412ac4e5a",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_054.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_054.svg"
+      ],
+      "historical_ids": [
+        "ref_f26fd6cce06dd1d6",
+        "ref_36b0954b1b068e30"
+      ]
+    },
+    {
+      "id": "ref_36b62cf13601b14f",
+      "sha256": "36b62cf13601b14fc75975c512fb8147164d4a92a1008891ae66d32da0a28337",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_062.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_062.svg"
+      ],
+      "historical_ids": [
+        "ref_592e8e32c406118d",
+        "ref_36b62cf13601b14f"
+      ]
+    },
+    {
+      "id": "ref_3711b6422d8752d5",
+      "sha256": "3711b6422d8752d55a074faf50dbd011897ec6b9245bd97ba97473f742f6acad",
+      "paths": [
+        "legacy/web-prototype/assets/ui/market/hero_panel.png",
+        ".work/legacy-source/HeroSmash/assets/ui/market/hero_panel.png"
+      ],
+      "historical_ids": [
+        "ref_3711b6422d8752d5"
+      ]
+    },
+    {
+      "id": "ref_383b6eec88f8a42f",
+      "sha256": "383b6eec88f8a42f079b43db610358a2631b6c89a5845ac44e08906f320750e0",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_089.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_089.svg"
+      ],
+      "historical_ids": [
+        "ref_952df768fc9c66ac",
+        "ref_383b6eec88f8a42f"
+      ]
+    },
+    {
+      "id": "ref_3858b4445e7ed973",
+      "sha256": "3858b4445e7ed97388177ce0240be4976180c73b6dab3b751a45f0be0c9c20fd",
+      "paths": [
+        "legacy/web-prototype/assets/final/ui/ui_sheet.png",
+        ".work/legacy-source/HeroSmash/assets/final/ui/ui_sheet.png",
+        ".work/legacy-source/Nuova cartella/ui_sheet.png"
+      ],
+      "historical_ids": [
+        "ref_3858b4445e7ed973"
+      ]
+    },
+    {
+      "id": "ref_38f3b7d02a124dae",
+      "sha256": "38f3b7d02a124daee40e87022e80b07e74b8422dbc822858001bdc2c79277c21",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_008.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_008.svg"
+      ],
+      "historical_ids": [
+        "ref_92595229ea019f97",
+        "ref_38f3b7d02a124dae"
+      ]
+    },
+    {
+      "id": "ref_3963bc021a8927be",
+      "sha256": "3963bc021a8927befb19714f15f1c0ac76151ff5126fe89ea2c9a8b3d52884bd",
+      "paths": [
+        ".work/legacy-source/ChatGPT Image 27 apr 2026, 17_48_37.png",
+        ".work/legacy-source/Nuova cartella/ChatGPT Image 27 apr 2026, 17_48_37.png"
+      ],
+      "historical_ids": [
+        "ref_3963bc021a8927be"
+      ]
+    },
+    {
+      "id": "ref_39af6fb3c03a5d30",
+      "sha256": "39af6fb3c03a5d303c54f323c401dfd9242dc9a5de6b022fb577a413e9764513",
+      "paths": [
+        ".work/legacy-source/ChatGPT Image 27 apr 2026, 17_59_28.png",
+        ".work/legacy-source/Nuova cartella/ChatGPT Image 27 apr 2026, 17_59_28.png"
+      ],
+      "historical_ids": [
+        "ref_39af6fb3c03a5d30"
+      ]
+    },
+    {
+      "id": "ref_3be4f8f5cd96bec5",
+      "sha256": "3be4f8f5cd96bec50204d5dc40975244ab349e4e69372aae517fed6fc89c019d",
+      "paths": [
+        "legacy/web-prototype/assets/branches/ice.png",
+        ".work/legacy-source/HeroSmash/assets/branches/ice.png"
+      ],
+      "historical_ids": [
+        "ref_3be4f8f5cd96bec5"
+      ]
+    },
+    {
+      "id": "ref_3d8e86d3a6c75f06",
+      "sha256": "3d8e86d3a6c75f064887dd29eedec9a6854de08a36981f8730c7bf60a9c27afd",
+      "paths": [
+        "legacy/web-prototype/assets/ui/market/card_frame_epic.png",
+        ".work/legacy-source/HeroSmash/assets/ui/market/card_frame_epic.png"
+      ],
+      "historical_ids": [
+        "ref_3d8e86d3a6c75f06"
+      ]
+    },
+    {
+      "id": "ref_3db4e68786899e81",
+      "sha256": "3db4e68786899e81f884275a5676e416960ff7e73402ba4a082209c0281c1ce7",
+      "paths": [
+        "legacy/web-prototype/assets/ui/market/right_damage_panel.png",
+        ".work/legacy-source/HeroSmash/assets/ui/market/right_damage_panel.png"
+      ],
+      "historical_ids": [
+        "ref_3db4e68786899e81"
+      ]
+    },
+    {
+      "id": "ref_3e062b8453039917",
+      "sha256": "3e062b8453039917cfdfd655fb26fdabb0f27420f8802555f751221c7ab5d9dd",
+      "paths": [
+        "legacy/web-prototype/assets/sprites/darkbane.png",
+        ".work/legacy-source/HeroSmash/assets/sprites/darkbane.png"
+      ],
+      "historical_ids": [
+        "ref_3e062b8453039917"
+      ]
+    },
+    {
+      "id": "ref_3ed8542c0745644e",
+      "sha256": "3ed8542c0745644e3099185a592a2c74ec401b8be5fcf45b01e4ed2a27ce900c",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_031.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_031.svg"
+      ],
+      "historical_ids": [
+        "ref_8a660953243019e5",
+        "ref_3ed8542c0745644e"
+      ]
+    },
+    {
+      "id": "ref_3f774dc85f14df2c",
+      "sha256": "3f774dc85f14df2c8db6a8e4b7fc52e4784cbd4bdcfd4c714c072e454f6b6378",
+      "paths": [
+        "legacy/web-prototype/assets/ui/market/card_frame_common_double.png",
+        ".work/legacy-source/carte/comune_two_branch.png",
+        ".work/legacy-source/HeroSmash/assets/ui/market/card_frame_common_double.png"
+      ],
+      "historical_ids": [
+        "ref_3f774dc85f14df2c"
+      ]
+    },
+    {
+      "id": "ref_40b0b1d3deee4c7e",
+      "sha256": "40b0b1d3deee4c7eaddba5db036688f1bd14e3541b26f1e071709501fe0ec59f",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_044.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_044.svg"
+      ],
+      "historical_ids": [
+        "ref_852f012522f04605",
+        "ref_40b0b1d3deee4c7e"
+      ]
+    },
+    {
+      "id": "ref_40f01ded7b0d3e61",
+      "sha256": "40f01ded7b0d3e61f2918bb0a8906cae180a03068487352091ecba6d74493d26",
+      "paths": [
+        "legacy/web-prototype/assets/final/ui/branch_sheet.png",
+        ".work/legacy-source/HeroSmash/assets/final/ui/branch_sheet.png",
+        ".work/legacy-source/Nuova cartella/branch_sheet.png"
+      ],
+      "historical_ids": [
+        "ref_40f01ded7b0d3e61"
+      ]
+    },
+    {
+      "id": "ref_41859a6f8d0f7dc9",
+      "sha256": "41859a6f8d0f7dc961df162b37b7f1d41462340ce1eff0d41d03400b58d306f0",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_058.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_058.svg"
+      ],
+      "historical_ids": [
+        "ref_8b5a1d66e03a5dd6",
+        "ref_41859a6f8d0f7dc9"
+      ]
+    },
+    {
+      "id": "ref_43762375fe1ac7cf",
+      "sha256": "43762375fe1ac7cfedd48f73a697b4585247f1142336ffa84391ae526147cdcd",
+      "paths": [
+        "legacy/web-prototype/assets/ui/market/btn_ready.png",
+        ".work/legacy-source/HeroSmash/assets/ui/market/btn_ready.png"
+      ],
+      "historical_ids": [
+        "ref_43762375fe1ac7cf"
+      ]
+    },
+    {
+      "id": "ref_446f69ecfd2eeb6d",
+      "sha256": "446f69ecfd2eeb6d9880b552a791c60a5be948defb620f2dd2ed010cb023a79b",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_070.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_070.svg"
+      ],
+      "historical_ids": [
+        "ref_d43ae0a04756411c",
+        "ref_446f69ecfd2eeb6d"
+      ]
+    },
+    {
+      "id": "ref_44c882bb6084dd14",
+      "sha256": "44c882bb6084dd141c4dd84329753f31d261673ae3207808435e0606c61ae0ed",
+      "paths": [
+        "legacy/web-prototype/assets/heroes/shadowflame.svg",
+        ".work/legacy-source/HeroSmash/assets/heroes/shadowflame.svg"
+      ],
+      "historical_ids": [
+        "ref_4bb244f1cf26db1e",
+        "ref_44c882bb6084dd14"
+      ]
+    },
+    {
+      "id": "ref_44f9b8a9026f37a3",
+      "sha256": "44f9b8a9026f37a358acc2e51c1973ba0f68e056da992ee6747cff111422c1e0",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_051.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_051.svg"
+      ],
+      "historical_ids": [
+        "ref_11d3e2e168c0daba",
+        "ref_44f9b8a9026f37a3"
+      ]
+    },
+    {
+      "id": "ref_46de8e151824a1b8",
+      "sha256": "46de8e151824a1b8d200dfb6a18c15580a84a2540d243ca8eccbcf8b2b7168d2",
+      "paths": [
+        "legacy/web-prototype/assets/cards/frames/normale_2.png",
+        ".work/legacy-source/HeroSmash/assets/cards/frames/normale_2.png"
+      ],
+      "historical_ids": [
+        "ref_46de8e151824a1b8"
+      ]
+    },
+    {
+      "id": "ref_48f3065c4bfd334e",
+      "sha256": "48f3065c4bfd334edd72adf8ffc68c868b5bb2cc5c5a82a2344dc69b330bb0b8",
+      "paths": [
+        "legacy/web-prototype/assets/ui/market/top_round_badge.png",
+        ".work/legacy-source/HeroSmash/assets/ui/market/top_round_badge.png"
+      ],
+      "historical_ids": [
+        "ref_48f3065c4bfd334e"
+      ]
+    },
+    {
+      "id": "ref_4ae585dc9ab7cd50",
+      "sha256": "4ae585dc9ab7cd50bc4b73be8c4c21c17dc9fa0fea80abfef423e8c8d542f013",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_060.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_060.svg"
+      ],
+      "historical_ids": [
+        "ref_91a576809caa3fdf",
+        "ref_4ae585dc9ab7cd50"
+      ]
+    },
+    {
+      "id": "ref_4bc2a6a0755ea1c5",
+      "sha256": "4bc2a6a0755ea1c544878c96c88449e8671ab1d199e94ae6883ac473d28d5bc6",
+      "paths": [
+        "legacy/web-prototype/assets/sprites/ironfist.png",
+        ".work/legacy-source/HeroSmash/assets/sprites/ironfist.png"
+      ],
+      "historical_ids": [
+        "ref_4bc2a6a0755ea1c5"
+      ]
+    },
+    {
+      "id": "ref_4c4f14e96a85f4e7",
+      "sha256": "4c4f14e96a85f4e742086b0549f5b4e2493f3b9d780f3c40031ee0d2155f7b3e",
+      "paths": [
+        "legacy/web-prototype/assets/branches/power.png",
+        ".work/legacy-source/HeroSmash/assets/branches/power.png"
+      ],
+      "historical_ids": [
+        "ref_4c4f14e96a85f4e7"
+      ]
+    },
+    {
+      "id": "ref_4d2ba7f335b35731",
+      "sha256": "4d2ba7f335b357315cb41034e2ff69b09041b65dcc11bf32a3f7588e08fc0ac5",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_017.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_017.svg"
+      ],
+      "historical_ids": [
+        "ref_0919c07efb497745",
+        "ref_4d2ba7f335b35731"
+      ]
+    },
+    {
+      "id": "ref_4de395cdece2cbbf",
+      "sha256": "4de395cdece2cbbf7f723e325f46b26bf244d53a59ae4f7b9b2dd26bea449f1c",
+      "paths": [
+        "legacy/web-prototype/assets/ui/market/right_traits_panel.png",
+        ".work/legacy-source/HeroSmash/assets/ui/market/right_traits_panel.png"
+      ],
+      "historical_ids": [
+        "ref_4de395cdece2cbbf"
+      ]
+    },
+    {
+      "id": "ref_4e11e060344d26ff",
+      "sha256": "4e11e060344d26ff4b66e521ed477f65d21b67958ce52c427195174b2a9d90bf",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_059.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_059.svg"
+      ],
+      "historical_ids": [
+        "ref_d610f17b66cf5d56",
+        "ref_4e11e060344d26ff"
+      ]
+    },
+    {
+      "id": "ref_4f838a3d4d82b8a0",
+      "sha256": "4f838a3d4d82b8a0b67f1d50584636978661e836bdba0d51854e086a03037d45",
+      "paths": [
+        "legacy/web-prototype/assets/cards/toxin_normal.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/toxin_normal.svg"
+      ],
+      "historical_ids": [
+        "ref_8bac76d7bfdb6f59",
+        "ref_4f838a3d4d82b8a0"
+      ]
+    },
+    {
+      "id": "ref_50654c1eb0719bfb",
+      "sha256": "50654c1eb0719bfbf08d418676f7c37c8cd57788b560ffb347527ed9c9007d77",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_079.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_079.svg"
+      ],
+      "historical_ids": [
+        "ref_0c84e367c2526640",
+        "ref_50654c1eb0719bfb"
+      ]
+    },
+    {
+      "id": "ref_51afcccfa3ed652d",
+      "sha256": "51afcccfa3ed652dac366a37ed62402e8021e2b62f5d5541dfad7c11283b611c",
+      "paths": [
+        ".work/legacy-source/ChatGPT Image 27 apr 2026, 17_41_27.png",
+        ".work/legacy-source/Nuova cartella/ChatGPT Image 27 apr 2026, 17_41_27.png"
+      ],
+      "historical_ids": [
+        "ref_51afcccfa3ed652d"
+      ]
+    },
+    {
+      "id": "ref_529f6bce6aba3884",
+      "sha256": "529f6bce6aba388466e5f24a31a61c5250da6a0c23bff2346d7a46ae842c9e0b",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_118.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_118.svg"
+      ],
+      "historical_ids": [
+        "ref_f69993f8919c1c6d",
+        "ref_529f6bce6aba3884"
+      ]
+    },
+    {
+      "id": "ref_542e1072a554a164",
+      "sha256": "542e1072a554a164edb502a356768c7ec01d7fa843ab1d7705a5e0e8c774533c",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_040.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_040.svg"
+      ],
+      "historical_ids": [
+        "ref_73ed785d12aef249",
+        "ref_542e1072a554a164"
+      ]
+    },
+    {
+      "id": "ref_54f7a30369085dab",
+      "sha256": "54f7a30369085dabe4f723a8c29307d042c30f7f08b142cdd858adc600ff5889",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_110.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_110.svg"
+      ],
+      "historical_ids": [
+        "ref_2c91c1430629b924",
+        "ref_54f7a30369085dab"
+      ]
+    },
+    {
+      "id": "ref_55fc9e66d4897cb7",
+      "sha256": "55fc9e66d4897cb70f73b4530e95573f79aac25c95f8576445896d726ba81271",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_127.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_127.svg"
+      ],
+      "historical_ids": [
+        "ref_4ec949c2e8b03e4f",
+        "ref_55fc9e66d4897cb7"
+      ]
+    },
+    {
+      "id": "ref_566d7bd59b125c7c",
+      "sha256": "566d7bd59b125c7ca318577f73add64e7c55c92555ea80afeb56cb04909f5811",
+      "paths": [
+        ".work/legacy-source/ChatGPT Image 27 apr 2026, 17_16_24.png",
+        ".work/legacy-source/Nuova cartella/ChatGPT Image 27 apr 2026, 17_16_24.png"
+      ],
+      "historical_ids": [
+        "ref_566d7bd59b125c7c"
+      ]
+    },
+    {
+      "id": "ref_58e7926a0d1ef4c9",
+      "sha256": "58e7926a0d1ef4c9a064b29ab08c9107eaba77455c0e69ea02144534fd0e67c0",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_128.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_128.svg"
+      ],
+      "historical_ids": [
+        "ref_be631d016621707a",
+        "ref_58e7926a0d1ef4c9"
+      ]
+    },
+    {
+      "id": "ref_58f997286a52e894",
+      "sha256": "58f997286a52e894d726bb03a56ca5cf85dc83df67c457a5879ad9c8fdbbb98b",
+      "paths": [
+        ".work/legacy-source/ChatGPT Image 27 apr 2026, 09_41_18.png",
+        ".work/legacy-source/Nuova cartella/ChatGPT Image 27 apr 2026, 09_41_18.png"
+      ],
+      "historical_ids": [
+        "ref_58f997286a52e894"
+      ]
+    },
+    {
+      "id": "ref_5c4a5bf0b5160884",
+      "sha256": "5c4a5bf0b516088402ee222a2b9579dd9b1c5c40baefeaf5bcabb9328944f259",
+      "paths": [
+        "legacy/web-prototype/assets/cards/dodge_normal.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/dodge_normal.svg"
+      ],
+      "historical_ids": [
+        "ref_f3ea5675985fd222",
+        "ref_5c4a5bf0b5160884"
+      ]
+    },
+    {
+      "id": "ref_5d39d074f7d99ba6",
+      "sha256": "5d39d074f7d99ba6a97d56e42bb403507d06a810b0aa6d7bc7823f71958ff5ed",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_052.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_052.svg"
+      ],
+      "historical_ids": [
+        "ref_bd48a38952c23b02",
+        "ref_5d39d074f7d99ba6"
+      ]
+    },
+    {
+      "id": "ref_5d8b9a06ee104201",
+      "sha256": "5d8b9a06ee104201c36011c550d31e28b7698398db977da3bae2e1ff9cca362f",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_105.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_105.svg"
+      ],
+      "historical_ids": [
+        "ref_f2539faf9d389d81",
+        "ref_5d8b9a06ee104201"
+      ]
+    },
+    {
+      "id": "ref_5e5c224e8d651dc9",
+      "sha256": "5e5c224e8d651dc9063e04f8f1da4c569faa1b519ea6ed2b3349a2038bd334bb",
+      "paths": [
+        "legacy/web-prototype/assets/cards/healing_normal.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/healing_normal.svg"
+      ],
+      "historical_ids": [
+        "ref_4371a99480835f8b",
+        "ref_5e5c224e8d651dc9"
+      ]
+    },
+    {
+      "id": "ref_5e5f13f26007e0a9",
+      "sha256": "5e5f13f26007e0a965dbb549d7e1419cd4e45dcad24520d419c84da4c63328e0",
+      "paths": [
+        "legacy/web-prototype/assets/cards/essence_normal.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/essence_normal.svg"
+      ],
+      "historical_ids": [
+        "ref_3f681cb14ad7b38d",
+        "ref_5e5f13f26007e0a9"
+      ]
+    },
+    {
+      "id": "ref_5f67e2a83e911086",
+      "sha256": "5f67e2a83e911086d8c6d7d682dd177ff210a3067a9b2beef77f593e1235624c",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_137.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_137.svg"
+      ],
+      "historical_ids": [
+        "ref_f47e32bb53ef3e04",
+        "ref_5f67e2a83e911086"
+      ]
+    },
+    {
+      "id": "ref_61575c1dfb2b4f50",
+      "sha256": "61575c1dfb2b4f5043c328d8f726135c579ca2b68c7492866dd4ba88e8ccdf6f",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_012.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_012.svg"
+      ],
+      "historical_ids": [
+        "ref_7a001da02851053a",
+        "ref_61575c1dfb2b4f50"
+      ]
+    },
+    {
+      "id": "ref_61edee14ad2952d7",
+      "sha256": "61edee14ad2952d75eba0b0bc87373b1736b1359dbb58e53a7e773384f84415c",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_085.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_085.svg"
+      ],
+      "historical_ids": [
+        "ref_f87c919cfbd4abb1",
+        "ref_61edee14ad2952d7"
+      ]
+    },
+    {
+      "id": "ref_62ab27831147e535",
+      "sha256": "62ab27831147e535177953c0e854530d4e3f845251adf5aa540ab6db6a42be64",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_032.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_032.svg"
+      ],
+      "historical_ids": [
+        "ref_8205585bc7a4dd72",
+        "ref_62ab27831147e535"
+      ]
+    },
+    {
+      "id": "ref_62fd10e4241a36a7",
+      "sha256": "62fd10e4241a36a7373836a26ef78ff5b111f472c2dd1bd568946fce2da3d2a1",
+      "paths": [
+        ".work/legacy-source/vecchio/immaggg/119.png",
+        ".work/legacy-source/vecchio/immaggg/83.png"
+      ],
+      "historical_ids": [
+        "ref_62fd10e4241a36a7"
+      ]
+    },
+    {
+      "id": "ref_630dc2c09f71f337",
+      "sha256": "630dc2c09f71f337bf698205b574aa56a0aa1983053eafce833872169102226b",
+      "paths": [
+        "legacy/web-prototype/assets/cards/precision_normal.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/precision_normal.svg"
+      ],
+      "historical_ids": [
+        "ref_8cd3766965de8629",
+        "ref_630dc2c09f71f337"
+      ]
+    },
+    {
+      "id": "ref_63158e6e287c775d",
+      "sha256": "63158e6e287c775d9ab0047d2f0d8e50f8ca70fc8fb0a00368ff1bde09622f92",
+      "paths": [
+        "legacy/web-prototype/assets/cards/shield_epic.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/shield_epic.svg"
+      ],
+      "historical_ids": [
+        "ref_5b81f21f561f5d9d",
+        "ref_63158e6e287c775d"
+      ]
+    },
+    {
+      "id": "ref_63f3a58c177d0f24",
+      "sha256": "63f3a58c177d0f2462e44e25f59cd30af4f8ad13ad82065db1f17de934fda51f",
+      "paths": [
+        "legacy/web-prototype/assets/heroes/duskwhisper.svg",
+        ".work/legacy-source/HeroSmash/assets/heroes/duskwhisper.svg"
+      ],
+      "historical_ids": [
+        "ref_9c91a4129c83803b",
+        "ref_63f3a58c177d0f24"
+      ]
+    },
+    {
+      "id": "ref_64f614804a353f75",
+      "sha256": "64f614804a353f7565dca4087eabd45f05cdff9272d7cb0197e2e49e85ecfa8d",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_092.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_092.svg"
+      ],
+      "historical_ids": [
+        "ref_68e9474e22c95e95",
+        "ref_64f614804a353f75"
+      ]
+    },
+    {
+      "id": "ref_656e85fc60a6dfa4",
+      "sha256": "656e85fc60a6dfa44393cd7b34cf05f97ec76e8b53ca8539f174e141a9171cad",
+      "paths": [
+        "legacy/web-prototype/previews/arena01_composite_static.png",
+        ".work/legacy-source/HeroSmash/previews/arena01_composite_static.png"
+      ],
+      "historical_ids": [
+        "ref_656e85fc60a6dfa4"
+      ]
+    },
+    {
+      "id": "ref_659c2d49497d3c00",
+      "sha256": "659c2d49497d3c00c93700b9c82a2739645bf4318d942300e7968620d04b7799",
+      "paths": [
+        "legacy/web-prototype/assets/cards/shield_normal.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/shield_normal.svg"
+      ],
+      "historical_ids": [
+        "ref_dff27228d649347f",
+        "ref_659c2d49497d3c00"
+      ]
+    },
+    {
+      "id": "ref_666e9d2a28b7c7d2",
+      "sha256": "666e9d2a28b7c7d29f21dbcf18c942e1f1b004088b84654b9b25feb9bd8da335",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_018.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_018.svg"
+      ],
+      "historical_ids": [
+        "ref_05b22e40e25522f2",
+        "ref_666e9d2a28b7c7d2"
+      ]
+    },
+    {
+      "id": "ref_67f026abf63e4f4c",
+      "sha256": "67f026abf63e4f4c21ec1cfd33e88f716acfa9267eab4d4039121d2b80c22446",
+      "paths": [
+        "legacy/web-prototype/assets/final/backgrounds/arena_bg.png",
+        ".work/legacy-source/HeroSmash/assets/final/backgrounds/arena_bg.png",
+        ".work/legacy-source/Nuova cartella/arena_bg.png"
+      ],
+      "historical_ids": [
+        "ref_67f026abf63e4f4c"
+      ]
+    },
+    {
+      "id": "ref_69df3a2bc9fc3882",
+      "sha256": "69df3a2bc9fc388243aa058b4855797cf3afb801771c30d44760a325b246fbbb",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_037.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_037.svg"
+      ],
+      "historical_ids": [
+        "ref_eb11333e611e04db",
+        "ref_69df3a2bc9fc3882"
+      ]
+    },
+    {
+      "id": "ref_6b3c2e4c233dd4b6",
+      "sha256": "6b3c2e4c233dd4b692f8a11e7c6a4193cfed57ea29278241b88d5f035322ff88",
+      "paths": [
+        "legacy/web-prototype/assets/sprites/nightshade.png",
+        ".work/legacy-source/HeroSmash/assets/sprites/nightshade.png"
+      ],
+      "historical_ids": [
+        "ref_6b3c2e4c233dd4b6"
+      ]
+    },
+    {
+      "id": "ref_6b52f4cc86f10ef0",
+      "sha256": "6b52f4cc86f10ef01b8a82f12e0689ed4f2ccda9e5daa4cb823b29a115a63b6a",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_112.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_112.svg"
+      ],
+      "historical_ids": [
+        "ref_f791e096970c64d9",
+        "ref_6b52f4cc86f10ef0"
+      ]
+    },
+    {
+      "id": "ref_6bb0b132f2e7ee1e",
+      "sha256": "6bb0b132f2e7ee1e071f206d2cc11363636793e38a8500bc09ac75201c3f703c",
+      "paths": [
+        "legacy/web-prototype/assets/branches/rage.png",
+        ".work/legacy-source/HeroSmash/assets/branches/rage.png"
+      ],
+      "historical_ids": [
+        "ref_6bb0b132f2e7ee1e"
+      ]
+    },
+    {
+      "id": "ref_6cbbf659131b66bb",
+      "sha256": "6cbbf659131b66bba4cafb284824a2b33feec4b30df05f65e68a7f8c54af50a5",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_145.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_145.svg"
+      ],
+      "historical_ids": [
+        "ref_e3dfbc711eca729e",
+        "ref_6cbbf659131b66bb"
+      ]
+    },
+    {
+      "id": "ref_6cde923a20eadba3",
+      "sha256": "6cde923a20eadba33c18462e316177b115f2e4123aa6c6e129e9e4450b616eda",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_107.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_107.svg"
+      ],
+      "historical_ids": [
+        "ref_0f0f5a7860303187",
+        "ref_6cde923a20eadba3"
+      ]
+    },
+    {
+      "id": "ref_6d4157b1f9ab1c9d",
+      "sha256": "6d4157b1f9ab1c9db8e87ac64c1f964a8a1da2962f3c6d6313ee16bd751ad419",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_111.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_111.svg"
+      ],
+      "historical_ids": [
+        "ref_4fcd4c9eb5a386a4",
+        "ref_6d4157b1f9ab1c9d"
+      ]
+    },
+    {
+      "id": "ref_710f5424c44c83db",
+      "sha256": "710f5424c44c83db5a0035c800ef6f64beaab04b7bb17257abc7dfcc2a34a907",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_035.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_035.svg"
+      ],
+      "historical_ids": [
+        "ref_783e1952bff46533",
+        "ref_710f5424c44c83db"
+      ]
+    },
+    {
+      "id": "ref_7218dbfe589d6676",
+      "sha256": "7218dbfe589d667649575163c5441091ae007038e6633d789ec216ee67ff81db",
+      "paths": [
+        ".work/legacy-source/arena01_fg_combat_floor.png.png",
+        ".work/legacy-source/Nuova cartella/arena01_fg_combat_floor.png.png"
+      ],
+      "historical_ids": [
+        "ref_7218dbfe589d6676"
+      ]
+    },
+    {
+      "id": "ref_722f77d847d3c57a",
+      "sha256": "722f77d847d3c57a252cf2283f09fd9b10ba21b2eef0129bb32af3eb6f6aeb23",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_033.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_033.svg"
+      ],
+      "historical_ids": [
+        "ref_d117ccbf57b8b97b",
+        "ref_722f77d847d3c57a"
+      ]
+    },
+    {
+      "id": "ref_749b0bbf4aace114",
+      "sha256": "749b0bbf4aace114d9fd7c1789727e64042130546be62a918e1c32b152b6aee0",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_025.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_025.svg"
+      ],
+      "historical_ids": [
+        "ref_b3c6a19cd8329ba2",
+        "ref_749b0bbf4aace114"
+      ]
+    },
+    {
+      "id": "ref_74ea2844d74f9e97",
+      "sha256": "74ea2844d74f9e977a4ea347dfe3e72168376f4a9b21374a41ae6e9c0ca1de28",
+      "paths": [
+        ".work/legacy-source/sheet sprite/3141981b-97dd-474a-84ba-6e7b94e00b37.png",
+        ".work/legacy-source/sheet sprite/ChatGPT Image 27 apr 2026, 09_59_48.png"
+      ],
+      "historical_ids": [
+        "ref_74ea2844d74f9e97"
+      ]
+    },
+    {
+      "id": "ref_75f12ab934925ca0",
+      "sha256": "75f12ab934925ca0f0277659b0420a0c3113cd7946f799699c7354b4fbe87a2d",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_057.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_057.svg"
+      ],
+      "historical_ids": [
+        "ref_75fac6bdf456fa27",
+        "ref_75f12ab934925ca0"
+      ]
+    },
+    {
+      "id": "ref_765aed62461f1a49",
+      "sha256": "765aed62461f1a49ab6e6f09ee7c08a4e47bdf9d10c9ca6b850bb23838f31b97",
+      "paths": [
+        "legacy/web-prototype/assets/ui/market/btn_cards.png",
+        ".work/legacy-source/HeroSmash/assets/ui/market/btn_cards.png"
+      ],
+      "historical_ids": [
+        "ref_765aed62461f1a49"
+      ]
+    },
+    {
+      "id": "ref_76f9858ad3b4b3e6",
+      "sha256": "76f9858ad3b4b3e68da748ee48dca11d3625f6eab77a15b77197f52067ba2a8b",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_082.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_082.svg"
+      ],
+      "historical_ids": [
+        "ref_68135229c162514d",
+        "ref_76f9858ad3b4b3e6"
+      ]
+    },
+    {
+      "id": "ref_78779af067d0e958",
+      "sha256": "78779af067d0e958365ca5dead90f3c9add5141320f8b870a24c3d198dc47f64",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_097.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_097.svg"
+      ],
+      "historical_ids": [
+        "ref_9d885774f29d0294",
+        "ref_78779af067d0e958"
+      ]
+    },
+    {
+      "id": "ref_787c90e1ca5b5942",
+      "sha256": "787c90e1ca5b59422b8f7ef277068036998cad7aa389c5809dfd20878c6ed6d5",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_146.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_146.svg"
+      ],
+      "historical_ids": [
+        "ref_ccb7cf069a06098b",
+        "ref_787c90e1ca5b5942"
+      ]
+    },
+    {
+      "id": "ref_789d97cdbae24f7f",
+      "sha256": "789d97cdbae24f7fa51e24afa47eb091fc92a95ab813a529f2be56c7bd7f4cd0",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_109.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_109.svg"
+      ],
+      "historical_ids": [
+        "ref_7bd8170c59dc6042",
+        "ref_789d97cdbae24f7f"
+      ]
+    },
+    {
+      "id": "ref_7a2513fff0176a36",
+      "sha256": "7a2513fff0176a3615043694559d0bfb04dae2a2f88fc0c10c34f968fbbb1f79",
+      "paths": [
+        "legacy/web-prototype/assets/cards/healing_legendary.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/healing_legendary.svg"
+      ],
+      "historical_ids": [
+        "ref_3e7f9b8e250c43a5",
+        "ref_7a2513fff0176a36"
+      ]
+    },
+    {
+      "id": "ref_7b9bb85c1e8019d9",
+      "sha256": "7b9bb85c1e8019d936d78d471fbf8184ae11fcd62c4ebef64586685d61a537d2",
+      "paths": [
+        "legacy/web-prototype/assets/cards/guardian_epic.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/guardian_epic.svg"
+      ],
+      "historical_ids": [
+        "ref_093af7809c4bbc21",
+        "ref_7b9bb85c1e8019d9"
+      ]
+    },
+    {
+      "id": "ref_7ba8b9ee45933d0d",
+      "sha256": "7ba8b9ee45933d0d4fcf6f4fdf4c98e87d436d0bd91ecfe4551501a4e20c8b98",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_088.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_088.svg"
+      ],
+      "historical_ids": [
+        "ref_0a1ff2e52451231b",
+        "ref_7ba8b9ee45933d0d"
+      ]
+    },
+    {
+      "id": "ref_7c8133cb5fbda3ab",
+      "sha256": "7c8133cb5fbda3ab58e5c27f674dc5e8811b8d4d358db5f98dc121677c3771fe",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_138.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_138.svg"
+      ],
+      "historical_ids": [
+        "ref_8b075b35b1221a9b",
+        "ref_7c8133cb5fbda3ab"
+      ]
+    },
+    {
+      "id": "ref_8235d2a576973981",
+      "sha256": "8235d2a5769739818c15dda09a1ca0ca223bbc051f9cad39080273e115f8b07f",
+      "paths": [
+        "legacy/web-prototype/assets/sprites/voidwalker.png",
+        ".work/legacy-source/HeroSmash/assets/sprites/voidwalker.png"
+      ],
+      "historical_ids": [
+        "ref_8235d2a576973981"
+      ]
+    },
+    {
+      "id": "ref_848721861ebcf711",
+      "sha256": "848721861ebcf7111fed086d97ad0d9b23e6cd6d306623386f33803bbb8cbb5c",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_129.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_129.svg"
+      ],
+      "historical_ids": [
+        "ref_03b60c2a957c9cdb",
+        "ref_848721861ebcf711"
+      ]
+    },
+    {
+      "id": "ref_85b001779b17aac2",
+      "sha256": "85b001779b17aac2822c04fb5917384bdd489feabef97cf9df09abdf23150ceb",
+      "paths": [
+        "legacy/web-prototype/assets/cards/essence_epic.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/essence_epic.svg"
+      ],
+      "historical_ids": [
+        "ref_afc413487b232b51",
+        "ref_85b001779b17aac2"
+      ]
+    },
+    {
+      "id": "ref_85b3cba0ca1a6e1c",
+      "sha256": "85b3cba0ca1a6e1c4a261407a285353278db971e972808087948826d25ca877a",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_143.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_143.svg"
+      ],
+      "historical_ids": [
+        "ref_bda753d46b86fc64",
+        "ref_85b3cba0ca1a6e1c"
+      ]
+    },
+    {
+      "id": "ref_87277c7c97e9e349",
+      "sha256": "87277c7c97e9e34982076a0da50c2454e6545ab06cf34c910e557168168eaf47",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_024.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_024.svg"
+      ],
+      "historical_ids": [
+        "ref_2e21cb804170aaf1",
+        "ref_87277c7c97e9e349"
+      ]
+    },
+    {
+      "id": "ref_8795bfea414932bc",
+      "sha256": "8795bfea414932bc6c276dc9b65cf5c89399fc2eea9463c68c04e0d8e725e1f4",
+      "paths": [
+        "legacy/web-prototype/assets/sprites/frostfang.png",
+        ".work/legacy-source/HeroSmash/assets/sprites/frostfang.png"
+      ],
+      "historical_ids": [
+        "ref_8795bfea414932bc"
+      ]
+    },
+    {
+      "id": "ref_87c9b65adc4b0879",
+      "sha256": "87c9b65adc4b0879504a29d5cb489c26cb6a385142651067076b6825664cc8bc",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_072.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_072.svg"
+      ],
+      "historical_ids": [
+        "ref_a5cfd9f41dc38f64",
+        "ref_87c9b65adc4b0879"
+      ]
+    },
+    {
+      "id": "ref_87ff0ae7142f2228",
+      "sha256": "87ff0ae7142f22280bd02d2b21bc44e6471dfc2ee7c4fc6e23085174629f929b",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_041.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_041.svg"
+      ],
+      "historical_ids": [
+        "ref_37797a67810345af",
+        "ref_87ff0ae7142f2228"
+      ]
+    },
+    {
+      "id": "ref_8884fa6ee1961cf8",
+      "sha256": "8884fa6ee1961cf82279f19dae2d0185d6f0f9f92860cff65e2ce96b9c2e6b45",
+      "paths": [
+        ".work/legacy-source/ChatGPT Image 27 apr 2026, 17_40_02.png",
+        ".work/legacy-source/Nuova cartella/ChatGPT Image 27 apr 2026, 17_40_02.png"
+      ],
+      "historical_ids": [
+        "ref_8884fa6ee1961cf8"
+      ]
+    },
+    {
+      "id": "ref_889fcaf788738777",
+      "sha256": "889fcaf788738777178e6f1dc3d8709cfde386263df7fc49e045a7ab37481be2",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_091.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_091.svg"
+      ],
+      "historical_ids": [
+        "ref_ab6ec5f378e38c9e",
+        "ref_889fcaf788738777"
+      ]
+    },
+    {
+      "id": "ref_8b8469fb7ac46616",
+      "sha256": "8b8469fb7ac466164ccf91de6eee8a71945045f6b3532b6e8e1ec8e7f44774ca",
+      "paths": [
+        "legacy/web-prototype/assets/cards/frames/normale_1.png",
+        ".work/legacy-source/HeroSmash/assets/cards/frames/normale_1.png"
+      ],
+      "historical_ids": [
+        "ref_8b8469fb7ac46616"
+      ]
+    },
+    {
+      "id": "ref_8b8d0717777b9db5",
+      "sha256": "8b8d0717777b9db5f99f3546a3dc6415c89b96f709fccde67de42f589e0c15dc",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_064.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_064.svg"
+      ],
+      "historical_ids": [
+        "ref_81fc414036f7ae32",
+        "ref_8b8d0717777b9db5"
+      ]
+    },
+    {
+      "id": "ref_8ce175b4d742ec00",
+      "sha256": "8ce175b4d742ec00d02d8450599a74b513a5f7f7db51d56858df763a055adcac",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_083.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_083.svg"
+      ],
+      "historical_ids": [
+        "ref_054d8a330084a74f",
+        "ref_8ce175b4d742ec00"
+      ]
+    },
+    {
+      "id": "ref_8d513d9e9405a855",
+      "sha256": "8d513d9e9405a85547d244ef0938de0d5ad59803b8b63bca401d52b5e8166cd5",
+      "paths": [
+        "legacy/web-prototype/assets/cards/frames/epica.png",
+        ".work/legacy-source/HeroSmash/assets/cards/frames/epica.png"
+      ],
+      "historical_ids": [
+        "ref_8d513d9e9405a855"
+      ]
+    },
+    {
+      "id": "ref_8db6f664ec1c7f5a",
+      "sha256": "8db6f664ec1c7f5aff02fc11cc7b5397fc7c814bda258b80ed1777ea70fabfdf",
+      "paths": [
+        "legacy/web-prototype/assets/cards/shield_legendary.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/shield_legendary.svg"
+      ],
+      "historical_ids": [
+        "ref_3eab0a2314a0b7d3",
+        "ref_8db6f664ec1c7f5a"
+      ]
+    },
+    {
+      "id": "ref_8dea23ae118309da",
+      "sha256": "8dea23ae118309daa79b978ed14cd9548b7315bf94f6cdae18aab3c93cd498c5",
+      "paths": [
+        "legacy/web-prototype/assets/cards/dodge_legendary.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/dodge_legendary.svg"
+      ],
+      "historical_ids": [
+        "ref_3a478eeb7cf6f0c7",
+        "ref_8dea23ae118309da"
+      ]
+    },
+    {
+      "id": "ref_8e545a9fddc6288d",
+      "sha256": "8e545a9fddc6288d5f68be960fc8e2ce6446730358434b1c8c99ce562428593f",
+      "paths": [
+        "legacy/web-prototype/assets/ui/market/gold_panel.png",
+        ".work/legacy-source/HeroSmash/assets/ui/market/gold_panel.png"
+      ],
+      "historical_ids": [
+        "ref_8e545a9fddc6288d"
+      ]
+    },
+    {
+      "id": "ref_8f2ffbb4a9358510",
+      "sha256": "8f2ffbb4a93585101caeeca1c5d0d96d18829dd92e217131736000084d6158a0",
+      "paths": [
+        "legacy/web-prototype/assets/heroes/darkbane.svg",
+        ".work/legacy-source/HeroSmash/assets/heroes/darkbane.svg"
+      ],
+      "historical_ids": [
+        "ref_8d062a6873f9557b",
+        "ref_8f2ffbb4a9358510"
+      ]
+    },
+    {
+      "id": "ref_9090142f961e0312",
+      "sha256": "9090142f961e0312661fc400e4bc4b3657a3df03e6595e1bd0f7ecae027d5a29",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_027.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_027.svg"
+      ],
+      "historical_ids": [
+        "ref_2d9aac9c3a0aa92f",
+        "ref_9090142f961e0312"
+      ]
+    },
+    {
+      "id": "ref_9093771e7d5be3a3",
+      "sha256": "9093771e7d5be3a36d4b0adeb495106006a5db5c2e892b456dac1632f0301724",
+      "paths": [
+        "legacy/web-prototype/assets/sprites/skydancer.png",
+        ".work/legacy-source/HeroSmash/assets/sprites/skydancer.png"
+      ],
+      "historical_ids": [
+        "ref_9093771e7d5be3a3"
+      ]
+    },
+    {
+      "id": "ref_9193f6f5622b5318",
+      "sha256": "9193f6f5622b5318df376ee281bf56df06a6beec4b0583ec4a15cae5370ff77f",
+      "paths": [
+        "legacy/web-prototype/assets/branches/precision.png",
+        ".work/legacy-source/HeroSmash/assets/branches/precision.png"
+      ],
+      "historical_ids": [
+        "ref_9193f6f5622b5318"
+      ]
+    },
+    {
+      "id": "ref_91e67a9b6058f801",
+      "sha256": "91e67a9b6058f8014bbaa34ee479802342e9152a2868b376c0a1b9b2273d2003",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_061.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_061.svg"
+      ],
+      "historical_ids": [
+        "ref_aedcb3dab501c2de",
+        "ref_91e67a9b6058f801"
+      ]
+    },
+    {
+      "id": "ref_936c76da2319d193",
+      "sha256": "936c76da2319d19308206b558d2ee6fa7a744e4e0f1a25ddaf03de30c5177d68",
+      "paths": [
+        "legacy/web-prototype/assets/cards/frames/leggendaria.png",
+        ".work/legacy-source/HeroSmash/assets/cards/frames/leggendaria.png"
+      ],
+      "historical_ids": [
+        "ref_936c76da2319d193"
+      ]
+    },
+    {
+      "id": "ref_9398249cded46bd9",
+      "sha256": "9398249cded46bd95fbfe17a8919f31d61753059d53109871a7268fb7e0e8546",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_147.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_147.svg"
+      ],
+      "historical_ids": [
+        "ref_a9b7bc28e0ee79bd",
+        "ref_9398249cded46bd9"
+      ]
+    },
+    {
+      "id": "ref_969828f2ff635445",
+      "sha256": "969828f2ff63544514c486c3d221fe6a1e76d90c5bf6ec200af422edde0ac988",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_076.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_076.svg"
+      ],
+      "historical_ids": [
+        "ref_8929e99c1a4c9f23",
+        "ref_969828f2ff635445"
+      ]
+    },
+    {
+      "id": "ref_96a26447117567fe",
+      "sha256": "96a26447117567fe268d28d71f5159f975b86cbf885a470ccaa6d16dd6fe4607",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_030.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_030.svg"
+      ],
+      "historical_ids": [
+        "ref_ff50599cb7dfbe19",
+        "ref_96a26447117567fe"
+      ]
+    },
+    {
+      "id": "ref_96ff265bf071edf2",
+      "sha256": "96ff265bf071edf254e6ec7eb01263841e2f99af579594518cd4f8045a1ae42c",
+      "paths": [
+        "legacy/web-prototype/assets/heroes/stormblade.svg",
+        ".work/legacy-source/HeroSmash/assets/heroes/stormblade.svg"
+      ],
+      "historical_ids": [
+        "ref_f1ddeb0079089d4e",
+        "ref_96ff265bf071edf2"
+      ]
+    },
+    {
+      "id": "ref_97119fd1ecbed7d9",
+      "sha256": "97119fd1ecbed7d9c5d8436ddf18c6e61fcd3da6def1753dcf987add13718da0",
+      "paths": [
+        ".work/legacy-source/ChatGPT Image 27 apr 2026, 17_51_39.png",
+        ".work/legacy-source/Nuova cartella/ChatGPT Image 27 apr 2026, 17_51_39.png"
+      ],
+      "historical_ids": [
+        "ref_97119fd1ecbed7d9"
+      ]
+    },
+    {
+      "id": "ref_9719483ecdf1d55d",
+      "sha256": "9719483ecdf1d55d139d86a739a8521d7ebcfa4ba152e2523268a679e2397098",
+      "paths": [
+        "legacy/web-prototype/assets/branches/guardian.png",
+        ".work/legacy-source/HeroSmash/assets/branches/guardian.png"
+      ],
+      "historical_ids": [
+        "ref_9719483ecdf1d55d"
+      ]
+    },
+    {
+      "id": "ref_979f9a4908a83168",
+      "sha256": "979f9a4908a8316891e77dca27f03782c4c27dd724a4f9b601c4656ad3ab8709",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_101.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_101.svg"
+      ],
+      "historical_ids": [
+        "ref_de30e84655f13883",
+        "ref_979f9a4908a83168"
+      ]
+    },
+    {
+      "id": "ref_97d62eb75938bb00",
+      "sha256": "97d62eb75938bb00b8d191f66be7d715fdb9c2637b4e7583830a281cb55940a2",
+      "paths": [
+        "legacy/web-prototype/assets/branches/dodge.png",
+        ".work/legacy-source/HeroSmash/assets/branches/dodge.png"
+      ],
+      "historical_ids": [
+        "ref_97d62eb75938bb00"
+      ]
+    },
+    {
+      "id": "ref_98cd5ac1f8d81969",
+      "sha256": "98cd5ac1f8d819693e295a0ba97bf796fe31f71b21f69afab3d2ae748a48e271",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_016.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_016.svg"
+      ],
+      "historical_ids": [
+        "ref_0aaaedc30af178c1",
+        "ref_98cd5ac1f8d81969"
+      ]
+    },
+    {
+      "id": "ref_99952d34d6a54cb1",
+      "sha256": "99952d34d6a54cb1bf35394339e144921b816773b201dbd1254fd3db16720ff1",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_140.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_140.svg"
+      ],
+      "historical_ids": [
+        "ref_1c5d938aed80e493",
+        "ref_99952d34d6a54cb1"
+      ]
+    },
+    {
+      "id": "ref_9a0776a0abd9d647",
+      "sha256": "9a0776a0abd9d6471c19ed0b6b6e676a19f5e1f9e6635b4da044da3d686a16bd",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_065.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_065.svg"
+      ],
+      "historical_ids": [
+        "ref_56e66a7f8c12a081",
+        "ref_9a0776a0abd9d647"
+      ]
+    },
+    {
+      "id": "ref_9a0b6808a1d2dd19",
+      "sha256": "9a0b6808a1d2dd19f4fdcba9c7db8e8dc888dfcc66158419cbe40588679c34a1",
+      "paths": [
+        "legacy/web-prototype/assets/cards/ice_normal.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/ice_normal.svg"
+      ],
+      "historical_ids": [
+        "ref_9b93e2aca57e086d",
+        "ref_9a0b6808a1d2dd19"
+      ]
+    },
+    {
+      "id": "ref_9b6e90330194b2b5",
+      "sha256": "9b6e90330194b2b5dd0f906638f98507ad02f5b1358705c70236d958040e8887",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_102.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_102.svg"
+      ],
+      "historical_ids": [
+        "ref_ce50c4c764fd5c93",
+        "ref_9b6e90330194b2b5"
+      ]
+    },
+    {
+      "id": "ref_9b9884153492201d",
+      "sha256": "9b9884153492201dddab9a2cc9d5fd4e8326a0848a5cf06403079149145209d5",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_087.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_087.svg"
+      ],
+      "historical_ids": [
+        "ref_53cf3ff8fd118df4",
+        "ref_9b9884153492201d"
+      ]
+    },
+    {
+      "id": "ref_9bb877aae20c405e",
+      "sha256": "9bb877aae20c405e5c1db984987193149a3be38654ddfed62c887423350d6e40",
+      "paths": [
+        "legacy/web-prototype/assets/ui/market/card_frame_common_single.png",
+        ".work/legacy-source/carte/comune_single_branch.png",
+        ".work/legacy-source/HeroSmash/assets/ui/market/card_frame_common_single.png"
+      ],
+      "historical_ids": [
+        "ref_9bb877aae20c405e"
+      ]
+    },
+    {
+      "id": "ref_9c7d6b4c61c48da9",
+      "sha256": "9c7d6b4c61c48da99535843702c6b8bf0d053bf327c2d8698e7d02ac4c8a69ea",
+      "paths": [
+        "legacy/web-prototype/assets/branches/shield.png",
+        ".work/legacy-source/HeroSmash/assets/branches/shield.png"
+      ],
+      "historical_ids": [
+        "ref_9c7d6b4c61c48da9"
+      ]
+    },
+    {
+      "id": "ref_9c7f9a9a60d75446",
+      "sha256": "9c7f9a9a60d75446082d62d0bfb986d8fefcf0cfaa48e9c8d391f976ec8b4173",
+      "paths": [
+        "legacy/web-prototype/assets/sprites/duskwhisper.png",
+        ".work/legacy-source/HeroSmash/assets/sprites/duskwhisper.png"
+      ],
+      "historical_ids": [
+        "ref_9c7f9a9a60d75446"
+      ]
+    },
+    {
+      "id": "ref_9c94102430d9b542",
+      "sha256": "9c94102430d9b542f6faf1bd681f7b57271f84c3793c3a258cf1611866430bf0",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_149.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_149.svg"
+      ],
+      "historical_ids": [
+        "ref_d7dfc6ac1398d2e0",
+        "ref_9c94102430d9b542"
+      ]
+    },
+    {
+      "id": "ref_9dbad3b147e7f9a1",
+      "sha256": "9dbad3b147e7f9a17f7a3325a0a16fa01334da7f24488581608b886952e7a323",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_014.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_014.svg"
+      ],
+      "historical_ids": [
+        "ref_18515d8acaf22ed1",
+        "ref_9dbad3b147e7f9a1"
+      ]
+    },
+    {
+      "id": "ref_9e0203d81043f5f8",
+      "sha256": "9e0203d81043f5f8d7b3fca41935b81f4f678ccc81733a5a3873495151f03014",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_001.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_001.svg"
+      ],
+      "historical_ids": [
+        "ref_cea609dfc62ef579",
+        "ref_9e0203d81043f5f8"
+      ]
+    },
+    {
+      "id": "ref_9e446ccd91fd1581",
+      "sha256": "9e446ccd91fd1581a7a4eb6917ff7522b49d78f2afcd22a6f5c8a15fdf554bd0",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_007.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_007.svg"
+      ],
+      "historical_ids": [
+        "ref_326b013d5cbfdbbc",
+        "ref_9e446ccd91fd1581"
+      ]
+    },
+    {
+      "id": "ref_9f11bdb1524be233",
+      "sha256": "9f11bdb1524be233a38503b9e909fe7769652ce81e9c5a40a45f1488f41711d9",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_049.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_049.svg"
+      ],
+      "historical_ids": [
+        "ref_098d474768ade722",
+        "ref_9f11bdb1524be233"
+      ]
+    },
+    {
+      "id": "ref_a02b4fce3f581201",
+      "sha256": "a02b4fce3f581201ade11c09285450c2589d0fcc56f77fb52ce218e7a46d714e",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_142.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_142.svg"
+      ],
+      "historical_ids": [
+        "ref_fbb2635e423f00d1",
+        "ref_a02b4fce3f581201"
+      ]
+    },
+    {
+      "id": "ref_a127032ab6720316",
+      "sha256": "a127032ab6720316e739f51879e5c449d8a317afd6c74646764eec498c8189bd",
+      "paths": [
+        "legacy/web-prototype/assets/ui/market/btn_lock.png",
+        ".work/legacy-source/HeroSmash/assets/ui/market/btn_lock.png"
+      ],
+      "historical_ids": [
+        "ref_a127032ab6720316"
+      ]
+    },
+    {
+      "id": "ref_a12d24c57563cc0b",
+      "sha256": "a12d24c57563cc0ba04bce93ecb79f296504aa5de9234d2ba3a14e6a459c82a2",
+      "paths": [
+        "legacy/web-prototype/assets/sprites/shadowflame.png",
+        ".work/legacy-source/HeroSmash/assets/sprites/shadowflame.png"
+      ],
+      "historical_ids": [
+        "ref_a12d24c57563cc0b"
+      ]
+    },
+    {
+      "id": "ref_a1dc119489236320",
+      "sha256": "a1dc1194892363206826ceacac7adaa334b48b2c0eac0dfe00396c842a003b92",
+      "paths": [
+        "legacy/web-prototype/assets/ui/market/btn_undo.png",
+        ".work/legacy-source/HeroSmash/assets/ui/market/btn_undo.png"
+      ],
+      "historical_ids": [
+        "ref_a1dc119489236320"
+      ]
+    },
+    {
+      "id": "ref_a2510ef21151b6cf",
+      "sha256": "a2510ef21151b6cf92bfe519a647d57e5d4b5e4f3aad0e86b29351c174986386",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_077.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_077.svg"
+      ],
+      "historical_ids": [
+        "ref_ee4310da94a631ac",
+        "ref_a2510ef21151b6cf"
+      ]
+    },
+    {
+      "id": "ref_a3fd545911975fb2",
+      "sha256": "a3fd545911975fb207fb22cc3a6fea23a723777f20d4e4727712f80ea36a5b3a",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_117.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_117.svg"
+      ],
+      "historical_ids": [
+        "ref_9846f1731d6af821",
+        "ref_a3fd545911975fb2"
+      ]
+    },
+    {
+      "id": "ref_a530d2de5bf98376",
+      "sha256": "a530d2de5bf9837673a6e33bb305456a5274467f3006427b550bfbad82a4e71c",
+      "paths": [
+        "legacy/web-prototype/assets/sprites/bloodthorn.png",
+        ".work/legacy-source/HeroSmash/assets/sprites/bloodthorn.png"
+      ],
+      "historical_ids": [
+        "ref_a530d2de5bf98376"
+      ]
+    },
+    {
+      "id": "ref_a53517bf3609e25d",
+      "sha256": "a53517bf3609e25deb144c09e04914598579fb93eb6f2829bc96733b023fe216",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_010.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_010.svg"
+      ],
+      "historical_ids": [
+        "ref_fb9af10134edd283",
+        "ref_a53517bf3609e25d"
+      ]
+    },
+    {
+      "id": "ref_a6f9bbc4124b395b",
+      "sha256": "a6f9bbc4124b395b314d2b6ea9a9df1cfed29c09d65d11539007daca6f030ec4",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_050.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_050.svg"
+      ],
+      "historical_ids": [
+        "ref_0310c4c892c6c4be",
+        "ref_a6f9bbc4124b395b"
+      ]
+    },
+    {
+      "id": "ref_a7e16a5e23e2f4fc",
+      "sha256": "a7e16a5e23e2f4fc2aec2f1a30605c1cc708dfa6cf71dc617d0a98956ad1cd96",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_116.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_116.svg"
+      ],
+      "historical_ids": [
+        "ref_ef14a53c213732bd",
+        "ref_a7e16a5e23e2f4fc"
+      ]
+    },
+    {
+      "id": "ref_a7f425674ae87fbd",
+      "sha256": "a7f425674ae87fbd84a09e812992ddd18e5bc50d7c7f21e976165f9113648958",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_069.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_069.svg"
+      ],
+      "historical_ids": [
+        "ref_e3ad2071eceb9738",
+        "ref_a7f425674ae87fbd"
+      ]
+    },
+    {
+      "id": "ref_a976fc1adfd17d3b",
+      "sha256": "a976fc1adfd17d3b1c4178abf4244ee0ff679195da99778f0f9aabd7970bff6a",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_028.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_028.svg"
+      ],
+      "historical_ids": [
+        "ref_37cfbb9ff5d0cd2d",
+        "ref_a976fc1adfd17d3b"
+      ]
+    },
+    {
+      "id": "ref_ac13c432168406b0",
+      "sha256": "ac13c432168406b0b243b09f092a382ef71a5f55ff093fa2b9d4bd2396d367d0",
+      "paths": [
+        "legacy/web-prototype/assets/arenas/arena01_beast_crucible/arena01_bg_mountains.png",
+        ".work/legacy-source/HeroSmash/assets/arenas/arena01_beast_crucible/arena01_bg_mountains.png"
+      ],
+      "historical_ids": [
+        "ref_ac13c432168406b0"
+      ]
+    },
+    {
+      "id": "ref_ac26688ee46e23b5",
+      "sha256": "ac26688ee46e23b5c1516ebb0c6f3d23135f10449306dd0de12359d92178ac60",
+      "paths": [
+        "legacy/web-prototype/assets/heroes/emberforge.svg",
+        ".work/legacy-source/HeroSmash/assets/heroes/emberforge.svg"
+      ],
+      "historical_ids": [
+        "ref_a63643983a3baf85",
+        "ref_ac26688ee46e23b5"
+      ]
+    },
+    {
+      "id": "ref_ae3813d300308ffc",
+      "sha256": "ae3813d300308ffc1bddb35cd3017e5d2465c77d437d384e75f59eb243aa083b",
+      "paths": [
+        "legacy/web-prototype/assets/final/backgrounds/market_bg.png",
+        ".work/legacy-source/HeroSmash/assets/final/backgrounds/market_bg.png",
+        ".work/legacy-source/Nuova cartella/market_bg.png"
+      ],
+      "historical_ids": [
+        "ref_ae3813d300308ffc"
+      ]
+    },
+    {
+      "id": "ref_ae4c860a17dcbe0b",
+      "sha256": "ae4c860a17dcbe0b978a1521c345c18340754da0efd11802cb1601eea66777f6",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_021.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_021.svg"
+      ],
+      "historical_ids": [
+        "ref_535b54d0b59a5d31",
+        "ref_ae4c860a17dcbe0b"
+      ]
+    },
+    {
+      "id": "ref_ae9422a824b1e815",
+      "sha256": "ae9422a824b1e815f7343b1be6b8a7fdd0f922faa3a52dd9e9144c64deda34d4",
+      "paths": [
+        "legacy/web-prototype/assets/arenas/arena01_beast_crucible/arena01_mg_crystal_core.png",
+        ".work/legacy-source/HeroSmash/assets/arenas/arena01_beast_crucible/arena01_mg_crystal_core.png"
+      ],
+      "historical_ids": [
+        "ref_ae9422a824b1e815"
+      ]
+    },
+    {
+      "id": "ref_aec3ad2e832a729f",
+      "sha256": "aec3ad2e832a729f25faf9b8f38646b63eccfaab2c22fed8b9e9badbc3f5fd03",
+      "paths": [
+        "legacy/web-prototype/assets/cards/toxin_legendary.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/toxin_legendary.svg"
+      ],
+      "historical_ids": [
+        "ref_7e8017f3d554a237",
+        "ref_aec3ad2e832a729f"
+      ]
+    },
+    {
+      "id": "ref_b0572020851d2785",
+      "sha256": "b0572020851d2785580c81e4a896c231a32fcbc7e116f7b7c461e37fba7295d6",
+      "paths": [
+        "legacy/web-prototype/assets/final/ui/art_bible.png",
+        ".work/legacy-source/HeroSmash/assets/final/ui/art_bible.png",
+        ".work/legacy-source/Nuova cartella/art_bible.png"
+      ],
+      "historical_ids": [
+        "ref_b0572020851d2785"
+      ]
+    },
+    {
+      "id": "ref_b0f9eb8b54f427f9",
+      "sha256": "b0f9eb8b54f427f9bc06fcdd4d44823dece1ce73566d68314c28a123e8edfbb8",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_073.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_073.svg"
+      ],
+      "historical_ids": [
+        "ref_434919cead34c8d8",
+        "ref_b0f9eb8b54f427f9"
+      ]
+    },
+    {
+      "id": "ref_b176ea560ed2d7ad",
+      "sha256": "b176ea560ed2d7adec776a0208d75b8a235f202555e601a463cb3256ca39d980",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_029.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_029.svg"
+      ],
+      "historical_ids": [
+        "ref_c8503fffb60ec781",
+        "ref_b176ea560ed2d7ad"
+      ]
+    },
+    {
+      "id": "ref_b1b5b4ff368b93bd",
+      "sha256": "b1b5b4ff368b93bd395d329b299c5890d6d846fbfe073f71e5703aa70d63079c",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_094.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_094.svg"
+      ],
+      "historical_ids": [
+        "ref_ca14143fa2ecd5ff",
+        "ref_b1b5b4ff368b93bd"
+      ]
+    },
+    {
+      "id": "ref_b29fe2f72cf82ae9",
+      "sha256": "b29fe2f72cf82ae986711f00b8cea71abeb206ac8ba48e6924c48ce2def23711",
+      "paths": [
+        "legacy/web-prototype/assets/sprites/stormblade.png",
+        ".work/legacy-source/HeroSmash/assets/sprites/stormblade.png"
+      ],
+      "historical_ids": [
+        "ref_b29fe2f72cf82ae9"
+      ]
+    },
+    {
+      "id": "ref_b313f24d1472b481",
+      "sha256": "b313f24d1472b4818b46cda1334b10a13a391948bb0ab279db34f5b91963c891",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_124.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_124.svg"
+      ],
+      "historical_ids": [
+        "ref_47065bfcf3628fff",
+        "ref_b313f24d1472b481"
+      ]
+    },
+    {
+      "id": "ref_b3fd895dad71d385",
+      "sha256": "b3fd895dad71d385686c73e721798ab1df8b06ff710a6ff673d69ddc05f04daa",
+      "paths": [
+        "legacy/web-prototype/assets/ui/market/card_frame_legendary.png",
+        ".work/legacy-source/HeroSmash/assets/ui/market/card_frame_legendary.png"
+      ],
+      "historical_ids": [
+        "ref_b3fd895dad71d385"
+      ]
+    },
+    {
+      "id": "ref_b6a409de6cb43704",
+      "sha256": "b6a409de6cb437042ae49ebc0fb743e46519e495bf619f563d597a706b784844",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_078.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_078.svg"
+      ],
+      "historical_ids": [
+        "ref_a63ea6e39d001fdd",
+        "ref_b6a409de6cb43704"
+      ]
+    },
+    {
+      "id": "ref_b7398775cde2a6c2",
+      "sha256": "b7398775cde2a6c2accfe4412e52895e22322ee2da5313211faa1ff5f5e8f723",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_039.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_039.svg"
+      ],
+      "historical_ids": [
+        "ref_c3752e69f76db504",
+        "ref_b7398775cde2a6c2"
+      ]
+    },
+    {
+      "id": "ref_b969ca7690b70579",
+      "sha256": "b969ca7690b70579998566f690a24539c87e46f0b99083b14437b67c2f1f700e",
+      "paths": [
+        "legacy/web-prototype/assets/final/backgrounds/hero_select_bg.png",
+        ".work/legacy-source/HeroSmash/assets/final/backgrounds/hero_select_bg.png",
+        ".work/legacy-source/Nuova cartella/hero_select_bg.png"
+      ],
+      "historical_ids": [
+        "ref_b969ca7690b70579"
+      ]
+    },
+    {
+      "id": "ref_b9ca838b07d74d5d",
+      "sha256": "b9ca838b07d74d5d5a31e14d8e91688283ed604f45b7b37df85f2231801eab79",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_002.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_002.svg"
+      ],
+      "historical_ids": [
+        "ref_1fdd140cf4d2890a",
+        "ref_b9ca838b07d74d5d"
+      ]
+    },
+    {
+      "id": "ref_ba8e7fb8437f2755",
+      "sha256": "ba8e7fb8437f2755486739ce0ece4e31f5dbed64304eb04a13379bfc97a49df1",
+      "paths": [
+        ".work/legacy-source/ChatGPT Image 27 apr 2026, 10_39_49.png",
+        ".work/legacy-source/Nuova cartella/ChatGPT Image 27 apr 2026, 10_39_49.png"
+      ],
+      "historical_ids": [
+        "ref_ba8e7fb8437f2755"
+      ]
+    },
+    {
+      "id": "ref_bb3c23bad310d3b4",
+      "sha256": "bb3c23bad310d3b496ca0c550dd4480de5bea0ec8b9337b2e62610a5b0d0b5bb",
+      "paths": [
+        "legacy/web-prototype/assets/ui/market/left_standings_panel.png",
+        ".work/legacy-source/HeroSmash/assets/ui/market/left_standings_panel.png"
+      ],
+      "historical_ids": [
+        "ref_bb3c23bad310d3b4"
+      ]
+    },
+    {
+      "id": "ref_bd24ec69ec123dd0",
+      "sha256": "bd24ec69ec123dd08a33a237c07badd32c314a2e145c5a69a09cc641ea0c2787",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_126.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_126.svg"
+      ],
+      "historical_ids": [
+        "ref_f5e4d3aa2aa9f807",
+        "ref_bd24ec69ec123dd0"
+      ]
+    },
+    {
+      "id": "ref_be8eaf60f4a83fca",
+      "sha256": "be8eaf60f4a83fca8b8e0216847e55a0efc2f80220536bd2dddffc52ea11b2ba",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_048.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_048.svg"
+      ],
+      "historical_ids": [
+        "ref_f20d6c9a09806835",
+        "ref_be8eaf60f4a83fca"
+      ]
+    },
+    {
+      "id": "ref_bec6e3530ed20a2e",
+      "sha256": "bec6e3530ed20a2ef9d16708c94fb9528c0620d735f45da377aa8d853a39add7",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_006.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_006.svg"
+      ],
+      "historical_ids": [
+        "ref_c525ff113f9e53fc",
+        "ref_bec6e3530ed20a2e"
+      ]
+    },
+    {
+      "id": "ref_bf5a3e8623ecfe73",
+      "sha256": "bf5a3e8623ecfe733943bd4a6a0d362b3a43673a69a4fbe24ddefed308544ec0",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_123.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_123.svg"
+      ],
+      "historical_ids": [
+        "ref_b90348f734f3bf6e",
+        "ref_bf5a3e8623ecfe73"
+      ]
+    },
+    {
+      "id": "ref_bfbec199b18889d0",
+      "sha256": "bfbec199b18889d08aa2e89e9ea8d0617cc4d5e74f898104ffb4c0d44d1d9fc5",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_043.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_043.svg"
+      ],
+      "historical_ids": [
+        "ref_c4a82337309fcb1b",
+        "ref_bfbec199b18889d0"
+      ]
+    },
+    {
+      "id": "ref_c0ab98a37d0349a2",
+      "sha256": "c0ab98a37d0349a253ebf970ed3ca98a7d2ac1954125a8e74fdb003f407ac9e5",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_042.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_042.svg"
+      ],
+      "historical_ids": [
+        "ref_c383add8423dccbc",
+        "ref_c0ab98a37d0349a2"
+      ]
+    },
+    {
+      "id": "ref_c0d3dbfe202186d9",
+      "sha256": "c0d3dbfe202186d9101a2747b6328106f7ca794196751e86c0fd118fe35fe913",
+      "paths": [
+        "legacy/web-prototype/assets/cards/wound_legendary.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/wound_legendary.svg"
+      ],
+      "historical_ids": [
+        "ref_3c5a419bc87aeace",
+        "ref_c0d3dbfe202186d9"
+      ]
+    },
+    {
+      "id": "ref_c105f88ff35e5363",
+      "sha256": "c105f88ff35e53637a5ed9368fb15d27f6f501e4af08849912fd321c9cf3eab4",
+      "paths": [
+        "legacy/web-prototype/assets/sprites/fireheart.png",
+        ".work/legacy-source/HeroSmash/assets/sprites/fireheart.png"
+      ],
+      "historical_ids": [
+        "ref_c105f88ff35e5363"
+      ]
+    },
+    {
+      "id": "ref_c12669cf42a03d05",
+      "sha256": "c12669cf42a03d0562d254a585afcbb0bc73fccb1af229ddf162d25ad530c252",
+      "paths": [
+        ".work/legacy-source/sheet sprite/ChatGPT Image 27 apr 2026, 10_03_49.png",
+        ".work/legacy-source/sheet sprite/f3c3e6a6-f9e9-4218-9df1-b8b7a47f52f9.png"
+      ],
+      "historical_ids": [
+        "ref_c12669cf42a03d05"
+      ]
+    },
+    {
+      "id": "ref_c343123ed26a74f0",
+      "sha256": "c343123ed26a74f0fe39b9573b25bdd7604329f7288a08083a767119c40daa10",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_108.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_108.svg"
+      ],
+      "historical_ids": [
+        "ref_e853e943de2e0801",
+        "ref_c343123ed26a74f0"
+      ]
+    },
+    {
+      "id": "ref_c38099c7573a6093",
+      "sha256": "c38099c7573a6093ed0f121a3e289348d5a6695244531fdeff3c6106cdf25136",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_071.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_071.svg"
+      ],
+      "historical_ids": [
+        "ref_856338ef707cf309",
+        "ref_c38099c7573a6093"
+      ]
+    },
+    {
+      "id": "ref_c4c2cf2adc718ece",
+      "sha256": "c4c2cf2adc718ece9d89fdf9446a54bb8960ccd182392a2421b42e874ba0baa6",
+      "paths": [
+        "legacy/web-prototype/assets/cards/power_epic.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/power_epic.svg"
+      ],
+      "historical_ids": [
+        "ref_173304121eb1357c",
+        "ref_c4c2cf2adc718ece"
+      ]
+    },
+    {
+      "id": "ref_c643dfe441219d6c",
+      "sha256": "c643dfe441219d6caec1ab32cc46e2e26b810f0128f81c386385d5f46c991167",
+      "paths": [
+        "legacy/web-prototype/assets/sprites/windrider.png",
+        ".work/legacy-source/HeroSmash/assets/sprites/windrider.png"
+      ],
+      "historical_ids": [
+        "ref_c643dfe441219d6c"
+      ]
+    },
+    {
+      "id": "ref_c6b3e1452d9c2c4f",
+      "sha256": "c6b3e1452d9c2c4fa366a93eb9c01786752b3a47b71c0dadfede01176f15fbce",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_121.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_121.svg"
+      ],
+      "historical_ids": [
+        "ref_3172aedfdcc5548a",
+        "ref_c6b3e1452d9c2c4f"
+      ]
+    },
+    {
+      "id": "ref_c940285c5f91747c",
+      "sha256": "c940285c5f91747c7e3d011caaabf2ec5344fa5150cbf7ebfa78644ece2a0efe",
+      "paths": [
+        "legacy/web-prototype/assets/heroes/bloodthorn.svg",
+        ".work/legacy-source/HeroSmash/assets/heroes/bloodthorn.svg"
+      ],
+      "historical_ids": [
+        "ref_77da313a12f275f1",
+        "ref_c940285c5f91747c"
+      ]
+    },
+    {
+      "id": "ref_c995526fa43cf62c",
+      "sha256": "c995526fa43cf62c263c2c2f45f825a90661f540633740742dae8b10bdfd51d0",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_013.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_013.svg"
+      ],
+      "historical_ids": [
+        "ref_b73de33b73c61e5a",
+        "ref_c995526fa43cf62c"
+      ]
+    },
+    {
+      "id": "ref_cd0fec41f6ef1169",
+      "sha256": "cd0fec41f6ef11695f3f98f4ff4be715e14b9a138f26be88a672eab12aa0b985",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_135.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_135.svg"
+      ],
+      "historical_ids": [
+        "ref_1fab7a11629ed9c6",
+        "ref_cd0fec41f6ef1169"
+      ]
+    },
+    {
+      "id": "ref_ceaaaeda1d71ac23",
+      "sha256": "ceaaaeda1d71ac23332b70943943dec5197ae4493021ab3abb52d90d849b9977",
+      "paths": [
+        ".work/legacy-source/ChatGPT Image 27 apr 2026, 17_44_07.png",
+        ".work/legacy-source/Nuova cartella/ChatGPT Image 27 apr 2026, 17_44_07.png"
+      ],
+      "historical_ids": [
+        "ref_ceaaaeda1d71ac23"
+      ]
+    },
+    {
+      "id": "ref_d00fa3890a7fee04",
+      "sha256": "d00fa3890a7fee04ba0c18c1bb391646c018c94938793d0bde9038409d8eee3a",
+      "paths": [
+        "legacy/web-prototype/assets/cards/assault_normal.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/assault_normal.svg"
+      ],
+      "historical_ids": [
+        "ref_172bd0ac2626653e",
+        "ref_d00fa3890a7fee04"
+      ]
+    },
+    {
+      "id": "ref_d08cc4b27401e538",
+      "sha256": "d08cc4b27401e5383d8d382e3ca7a587c018fedd2ba10d3b291fd722e9c36821",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_144.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_144.svg"
+      ],
+      "historical_ids": [
+        "ref_fcba2b03b666125a",
+        "ref_d08cc4b27401e538"
+      ]
+    },
+    {
+      "id": "ref_d152c462a4a5fa9c",
+      "sha256": "d152c462a4a5fa9c3e26ef0f1d8256c3f99c28a587a09852f4e2ca9a8fa28c07",
+      "paths": [
+        "legacy/web-prototype/assets/cards/ice_epic.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/ice_epic.svg"
+      ],
+      "historical_ids": [
+        "ref_849bd9cdc537767a",
+        "ref_d152c462a4a5fa9c"
+      ]
+    },
+    {
+      "id": "ref_d24fe500218d840f",
+      "sha256": "d24fe500218d840fbd1d0523a1b6fa47cb0fadce594d7ead5d332df43acac82d",
+      "paths": [
+        "legacy/web-prototype/assets/heroes/blackthorn.svg",
+        ".work/legacy-source/HeroSmash/assets/heroes/blackthorn.svg"
+      ],
+      "historical_ids": [
+        "ref_346a9b75e40c644f",
+        "ref_d24fe500218d840f"
+      ]
+    },
+    {
+      "id": "ref_d4d3d451dd49a9fa",
+      "sha256": "d4d3d451dd49a9faddcb9422eac683260a8d6d8c2ad57116f4339f5490bad85f",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_068.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_068.svg"
+      ],
+      "historical_ids": [
+        "ref_2a368d0d5047ef58",
+        "ref_d4d3d451dd49a9fa"
+      ]
+    },
+    {
+      "id": "ref_d5880e18a72d55d0",
+      "sha256": "d5880e18a72d55d089555b6fb0bc4dba4ae9dc8b06d2ee48f79cd004f164ab40",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_086.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_086.svg"
+      ],
+      "historical_ids": [
+        "ref_f0d67e05273466f5",
+        "ref_d5880e18a72d55d0"
+      ]
+    },
+    {
+      "id": "ref_d6024183c36c5a57",
+      "sha256": "d6024183c36c5a5758f19b267e7f324e3d6043f8a1e9e435a6459d41b771239e",
+      "paths": [
+        "legacy/web-prototype/assets/heroes/steelbane.svg",
+        ".work/legacy-source/HeroSmash/assets/heroes/steelbane.svg"
+      ],
+      "historical_ids": [
+        "ref_bfae546764f96679",
+        "ref_d6024183c36c5a57"
+      ]
+    },
+    {
+      "id": "ref_d6bb64a27856de0b",
+      "sha256": "d6bb64a27856de0b1bbe2e6a475367be61ef5a3b6d1e2b12a6940ae11d7f30f5",
+      "paths": [
+        "legacy/web-prototype/assets/cards/essence_legendary.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/essence_legendary.svg"
+      ],
+      "historical_ids": [
+        "ref_11517215d499f9ec",
+        "ref_d6bb64a27856de0b"
+      ]
+    },
+    {
+      "id": "ref_d6e17e8591f86f9a",
+      "sha256": "d6e17e8591f86f9a18b3e2a65bf929dd20a44f20e5e4f8252a34817725c5b604",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_125.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_125.svg"
+      ],
+      "historical_ids": [
+        "ref_7ed72b695b2f1d95",
+        "ref_d6e17e8591f86f9a"
+      ]
+    },
+    {
+      "id": "ref_d6edd28ecbf34591",
+      "sha256": "d6edd28ecbf345910d5e89cc750773d7449fd7b16f22dadf18de377263fc5ffb",
+      "paths": [
+        "legacy/web-prototype/assets/cards/toxin_epic.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/toxin_epic.svg"
+      ],
+      "historical_ids": [
+        "ref_4604bf753214f5c0",
+        "ref_d6edd28ecbf34591"
+      ]
+    },
+    {
+      "id": "ref_d73f701cedc882d2",
+      "sha256": "d73f701cedc882d2ef4782d3de7b4398f1fc6f8dff97c73f40b20d1e8e75b9dc",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_120.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_120.svg"
+      ],
+      "historical_ids": [
+        "ref_d9cf526f4726696d",
+        "ref_d73f701cedc882d2"
+      ]
+    },
+    {
+      "id": "ref_d7f039f38d31e9cf",
+      "sha256": "d7f039f38d31e9cfba14bed71fdcf52b9a39863c9c3622e8273c2def6895d812",
+      "paths": [
+        "legacy/web-prototype/assets/ui/market/right_banned_panel.png",
+        ".work/legacy-source/HeroSmash/assets/ui/market/right_banned_panel.png"
+      ],
+      "historical_ids": [
+        "ref_d7f039f38d31e9cf"
+      ]
+    },
+    {
+      "id": "ref_d94c4ebf872fa1f7",
+      "sha256": "d94c4ebf872fa1f7d54ead722f2208aaf1f717b2bf1105dfb6f4cd04d8ad2e18",
+      "paths": [
+        "legacy/web-prototype/assets/branches/essence.png",
+        ".work/legacy-source/HeroSmash/assets/branches/essence.png"
+      ],
+      "historical_ids": [
+        "ref_d94c4ebf872fa1f7"
+      ]
+    },
+    {
+      "id": "ref_dbb58395b1acd1d4",
+      "sha256": "dbb58395b1acd1d411feaf7ee3833adc1028a9ace59f103d4366a503e76e363e",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_130.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_130.svg"
+      ],
+      "historical_ids": [
+        "ref_9dc529fb4ede291f",
+        "ref_dbb58395b1acd1d4"
+      ]
+    },
+    {
+      "id": "ref_dc497386674a61ee",
+      "sha256": "dc497386674a61ee4f00d409f9e05c01b4c775d526cf70b9dbeab99cd6c72be0",
+      "paths": [
+        "legacy/web-prototype/assets/sprites/blackthorn.png",
+        ".work/legacy-source/HeroSmash/assets/sprites/blackthorn.png"
+      ],
+      "historical_ids": [
+        "ref_dc497386674a61ee"
+      ]
+    },
+    {
+      "id": "ref_dcb5bfe644b0ca00",
+      "sha256": "dcb5bfe644b0ca00f18304f3c8794a9dacb9afce1ad95d49cb425102a6859f27",
+      "paths": [
+        "legacy/web-prototype/assets/ui/market/btn_random.png",
+        ".work/legacy-source/HeroSmash/assets/ui/market/btn_random.png"
+      ],
+      "historical_ids": [
+        "ref_dcb5bfe644b0ca00"
+      ]
+    },
+    {
+      "id": "ref_ddea706a3668b8a3",
+      "sha256": "ddea706a3668b8a3a642c4c509fd97bbeca430af921f49d35ae26d5989c587e1",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_022.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_022.svg"
+      ],
+      "historical_ids": [
+        "ref_88c2fd4a6937e11a",
+        "ref_ddea706a3668b8a3"
+      ]
+    },
+    {
+      "id": "ref_dfb117fe18e3555f",
+      "sha256": "dfb117fe18e3555f8bcb430e00e3b346ede2cf753068600e4c510400ec2bb0e8",
+      "paths": [
+        "legacy/web-prototype/assets/cards/healing_epic.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/healing_epic.svg"
+      ],
+      "historical_ids": [
+        "ref_a7e76fea90a2b779",
+        "ref_dfb117fe18e3555f"
+      ]
+    },
+    {
+      "id": "ref_dfb93d879cb70d25",
+      "sha256": "dfb93d879cb70d253fbc1d6d789992aaafd0c1043d94626f9953cb189f183f76",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_034.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_034.svg"
+      ],
+      "historical_ids": [
+        "ref_774165619dfeb35c",
+        "ref_dfb93d879cb70d25"
+      ]
+    },
+    {
+      "id": "ref_e209acca7f1cf2dc",
+      "sha256": "e209acca7f1cf2dceedd7104e4d7cc12fb55d2c95a916a29520a9dc17ee37fc7",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_015.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_015.svg"
+      ],
+      "historical_ids": [
+        "ref_44cbc24887e5ec36",
+        "ref_e209acca7f1cf2dc"
+      ]
+    },
+    {
+      "id": "ref_e4d5cd80c02abcf4",
+      "sha256": "e4d5cd80c02abcf49924f7b53ddfe5e4b23e7c3233f196a383cc7f803ff98ba4",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_090.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_090.svg"
+      ],
+      "historical_ids": [
+        "ref_3fdd03ea57e8ce52",
+        "ref_e4d5cd80c02abcf4"
+      ]
+    },
+    {
+      "id": "ref_e7831fab82a7f605",
+      "sha256": "e7831fab82a7f605a0cfcaa341d0a3a722a74e86873b7da44a22eb59b2032dc2",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_056.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_056.svg"
+      ],
+      "historical_ids": [
+        "ref_946e41591e5645a4",
+        "ref_e7831fab82a7f605"
+      ]
+    },
+    {
+      "id": "ref_e809e081419bb440",
+      "sha256": "e809e081419bb4403e3e7914dad00f3fb01666be04051e1f9c5464a372acce6b",
+      "paths": [
+        "legacy/web-prototype/assets/heroes/frostfang.svg",
+        ".work/legacy-source/HeroSmash/assets/heroes/frostfang.svg"
+      ],
+      "historical_ids": [
+        "ref_56f8aae7f32b531f",
+        "ref_e809e081419bb440"
+      ]
+    },
+    {
+      "id": "ref_e8cde7f64041663d",
+      "sha256": "e8cde7f64041663d2a01f3454f87d82fb4df64c3d24d53b244388a8432ba0300",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_119.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_119.svg"
+      ],
+      "historical_ids": [
+        "ref_42734325700f51f5",
+        "ref_e8cde7f64041663d"
+      ]
+    },
+    {
+      "id": "ref_ea36a1defe26fad3",
+      "sha256": "ea36a1defe26fad34e38759c34a5d22c5b9f4a47b8a80e1ea43239c38688058e",
+      "paths": [
+        "legacy/web-prototype/assets/cards/rage_legendary.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/rage_legendary.svg"
+      ],
+      "historical_ids": [
+        "ref_4c3130bdfff05a40",
+        "ref_ea36a1defe26fad3"
+      ]
+    },
+    {
+      "id": "ref_ea5afa927986deed",
+      "sha256": "ea5afa927986deed2919a26ea236a54839bb8312a989e611a479dbd0f4a94016",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_136.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_136.svg"
+      ],
+      "historical_ids": [
+        "ref_18c3220238776ce9",
+        "ref_ea5afa927986deed"
+      ]
+    },
+    {
+      "id": "ref_ea6d8ffd138e44ef",
+      "sha256": "ea6d8ffd138e44ef2e2d25f4d66ce03c96047ce0c6442673b1db0451dd7a9dd3",
+      "paths": [
+        "legacy/web-prototype/assets/cards/precision_legendary.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/precision_legendary.svg"
+      ],
+      "historical_ids": [
+        "ref_57c2f452d4934a6d",
+        "ref_ea6d8ffd138e44ef"
+      ]
+    },
+    {
+      "id": "ref_eda7e934915c5cb1",
+      "sha256": "eda7e934915c5cb1f7fe2880a32178c37e243c1a5bf4dc2c4daf5fd2e1c8d288",
+      "paths": [
+        "legacy/web-prototype/assets/cards/wound_normal.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/wound_normal.svg"
+      ],
+      "historical_ids": [
+        "ref_1eb58de525eb756e",
+        "ref_eda7e934915c5cb1"
+      ]
+    },
+    {
+      "id": "ref_eeb260c02d51c1fe",
+      "sha256": "eeb260c02d51c1fe1bcac65e8af2b4c6849e544727300599cf663852bcb8be7a",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_133.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_133.svg"
+      ],
+      "historical_ids": [
+        "ref_d4a3615a8ed47732",
+        "ref_eeb260c02d51c1fe"
+      ]
+    },
+    {
+      "id": "ref_eedd9031fdfb2657",
+      "sha256": "eedd9031fdfb265781a76f0fb26a4da5b5ead57cb9edbac850c8d18de40a922d",
+      "paths": [
+        "legacy/web-prototype/assets/arenas/arena01_beast_crucible/arena01_mg_back_architecture.png",
+        ".work/legacy-source/HeroSmash/assets/arenas/arena01_beast_crucible/arena01_mg_back_architecture.png"
+      ],
+      "historical_ids": [
+        "ref_eedd9031fdfb2657"
+      ]
+    },
+    {
+      "id": "ref_ef74d72dddbc15a4",
+      "sha256": "ef74d72dddbc15a4cf9ca094a3dd627a327736a3d38fb9468df34be85052033e",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_046.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_046.svg"
+      ],
+      "historical_ids": [
+        "ref_6311fc0cc7d48089",
+        "ref_ef74d72dddbc15a4"
+      ]
+    },
+    {
+      "id": "ref_f2ab2013f59f888d",
+      "sha256": "f2ab2013f59f888dcdb65940f00971d0100cbbb483d120e27261422a117e4001",
+      "paths": [
+        "legacy/web-prototype/assets/cards/rage_epic.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/rage_epic.svg"
+      ],
+      "historical_ids": [
+        "ref_bc5ad32c96b9b992",
+        "ref_f2ab2013f59f888d"
+      ]
+    },
+    {
+      "id": "ref_f2cb148b1f25ed72",
+      "sha256": "f2cb148b1f25ed72ed4fe5ebdacb500e11d44da767603c02845c9976a00e4766",
+      "paths": [
+        "legacy/web-prototype/assets/arenas/arena01_beast_crucible/arena01_fg_combat_floor.png",
+        ".work/legacy-source/HeroSmash/assets/arenas/arena01_beast_crucible/arena01_fg_combat_floor.png"
+      ],
+      "historical_ids": [
+        "ref_f2cb148b1f25ed72"
+      ]
+    },
+    {
+      "id": "ref_f38c3f75fac316bc",
+      "sha256": "f38c3f75fac316bc8d4b9aa20e8fc8e6583b83440f0c0d7354c4db8e46c25715",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_023.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_023.svg"
+      ],
+      "historical_ids": [
+        "ref_2b52c649e9b9127c",
+        "ref_f38c3f75fac316bc"
+      ]
+    },
+    {
+      "id": "ref_f3ea4fb35bed54fc",
+      "sha256": "f3ea4fb35bed54fcc1ce0cf110ec0ff73617f7a504cf7c4c3fd63f742cca4e84",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_003.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_003.svg"
+      ],
+      "historical_ids": [
+        "ref_9a5ad57ebc82afda",
+        "ref_f3ea4fb35bed54fc"
+      ]
+    },
+    {
+      "id": "ref_f4c0398ae52557cd",
+      "sha256": "f4c0398ae52557cd47effb6fb86ac38422bf62ae92266da7dcdbce01f04dfe75",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_113.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_113.svg"
+      ],
+      "historical_ids": [
+        "ref_a44f8d89a4314335",
+        "ref_f4c0398ae52557cd"
+      ]
+    },
+    {
+      "id": "ref_f729532195a090f4",
+      "sha256": "f729532195a090f4eec8e956191923127fd174b159c0a07d5b0e2ad56930e79b",
+      "paths": [
+        "legacy/web-prototype/assets/ui/market/recap_pill.png",
+        ".work/legacy-source/HeroSmash/assets/ui/market/recap_pill.png"
+      ],
+      "historical_ids": [
+        "ref_f729532195a090f4"
+      ]
+    },
+    {
+      "id": "ref_f72ef0313e0c2d12",
+      "sha256": "f72ef0313e0c2d121a86f18fccb36d4d3f91b873fc100b60cd2eb90b950373e6",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_063.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_063.svg"
+      ],
+      "historical_ids": [
+        "ref_fa67b284844e291a",
+        "ref_f72ef0313e0c2d12"
+      ]
+    },
+    {
+      "id": "ref_f8d31e91e30cca70",
+      "sha256": "f8d31e91e30cca702ca47df77ea852579ffd565dce1c910593eb706919723121",
+      "paths": [
+        "legacy/web-prototype/assets/final/ui/fighter_ui_sheet.png",
+        ".work/legacy-source/HeroSmash/assets/final/ui/fighter_ui_sheet.png",
+        ".work/legacy-source/Nuova cartella/fighter_ui_sheet.png"
+      ],
+      "historical_ids": [
+        "ref_f8d31e91e30cca70"
+      ]
+    },
+    {
+      "id": "ref_f988ecf3c5dd2e0d",
+      "sha256": "f988ecf3c5dd2e0dfa31fcd9604b326b089decd88725544770bfe53ed8493280",
+      "paths": [
+        "legacy/web-prototype/assets/sprites/steelbane.png",
+        ".work/legacy-source/HeroSmash/assets/sprites/steelbane.png"
+      ],
+      "historical_ids": [
+        "ref_f988ecf3c5dd2e0d"
+      ]
+    },
+    {
+      "id": "ref_fc5486f561951486",
+      "sha256": "fc5486f561951486fcca643215b217c7a6e09777e9074d506eeef9e482fd4e56",
+      "paths": [
+        "legacy/web-prototype/assets/cards/wound_epic.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/wound_epic.svg"
+      ],
+      "historical_ids": [
+        "ref_ca68aa43c1d0aaca",
+        "ref_fc5486f561951486"
+      ]
+    },
+    {
+      "id": "ref_fd2d26c8ac0ff2b1",
+      "sha256": "fd2d26c8ac0ff2b18dbc84e7e46cd1c265b68130451db2e460d33e1be2e4f9df",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_139.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_139.svg"
+      ],
+      "historical_ids": [
+        "ref_3e782d0bc5a3ef4e",
+        "ref_fd2d26c8ac0ff2b1"
+      ]
+    },
+    {
+      "id": "ref_ff2957a1bb12b236",
+      "sha256": "ff2957a1bb12b23645c8b25fbf6c017165bfd8975b3c1c43625368f4f2ec915e",
+      "paths": [
+        "legacy/web-prototype/assets/cards/legacy_141.svg",
+        ".work/legacy-source/HeroSmash/assets/cards/legacy_141.svg"
+      ],
+      "historical_ids": [
+        "ref_aba2f204ef7fb705",
+        "ref_ff2957a1bb12b236"
+      ]
+    },
+    {
+      "id": "ref_ffe4a06fe4339614",
+      "sha256": "ffe4a06fe433961464111e205c4d6ffd49f3aa1623f71c3024fb9f2f5e4c9b9d",
+      "paths": [
+        "legacy/web-prototype/assets/branches/wound.png",
+        ".work/legacy-source/HeroSmash/assets/branches/wound.png"
+      ],
+      "historical_ids": [
+        "ref_ffe4a06fe4339614"
+      ]
+    }
+  ],
+  "excluded_evidence": [
+    {
+      "path": "docs/qa/evidence/blender-mcp/20260909/viewport-before.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/blender-mcp/20260909/viewport-changed.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.15/godot-mobile-1366x768.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.15/godot-mobile-844x390.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.15/web-after.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.15/web-before.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.15/web-draft.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.15/web-market-loop.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.15/web-phone-viewport.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.16/godot-mobile-1366x768.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.16/godot-mobile-844x390.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.17/godot-mobile-1366x768.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.17/godot-mobile-844x390.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.18/card-proof-667x375-0.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.18/card-proof-667x375-1.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.18/card-proof-844x390-0.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.18/card-proof-844x390-1.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.18/godot-mobile-1366x768.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.18/godot-mobile-844x390.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/animation-catalog.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/back.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/barrier-event-frame-92.jpg",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/bulwark-contact.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/dodge.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/expression-aggressive.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/expression-casting.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/expression-defeat.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/expression-focused.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/expression-ko.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/expression-neutral.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/expression-pain_heavy.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/expression-pain_light.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/expression-stunned.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/expression-victory.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/foundation-1366x768.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/foundation-844x390.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/front.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/heavy-contact.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/ko.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/light-contact.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/profile-1366x768.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/profile-844x390.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/resolver-barrier.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/resolver-replay.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/side.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/victory.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.20/3quarter.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.20/back.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.20/desktop-profile.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.20/dodge.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.20/expression-aggressive.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.20/expression-casting.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.20/expression-defeat.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.20/expression-focused.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.20/expression-grid.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.20/expression-ko.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.20/expression-neutral.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.20/expression-pain_heavy.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.20/expression-pain_light.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.20/expression-stunned.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.20/expression-victory.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.20/face.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.20/front.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.20/gauntlet.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.20/guard.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.20/heavy.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.20/hit.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.20/ko.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.20/light.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.20/material.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.20/side.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.20/skill.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.20/two-fighter-1080x486.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.20/two-fighter-1366x768.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.20/two-fighter-844x390.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.20/victory.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    }
+  ],
+  "copied_images": 0,
+  "deleted_images": 0
+}

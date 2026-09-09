@@ -1,0 +1,23 @@
+{
+  "status": "pass",
+  "apk": "D:\\Dev\\HeroSmash\\.work\\builds\\hero-smash-v120-clean-debug.apk",
+  "bytes": 38558965,
+  "sha256": "e2d6a6bb260486aa95eec8d5c48fe1d001b3afb1b23508abe6d1cd672566ac7d",
+  "command": [
+    "D:\\Dev\\HeroSmash\\.work\\tools\\godot-4.7.2\\Godot_v4.7.2-stable_win64_console.exe",
+    "--headless",
+    "--path",
+    "D:\\Dev\\HeroSmash\\.work\\clean-v120-validation\\.work\\android-qa-hsz7nfl5\\game",
+    "--export-debug",
+    "Android QA Debug",
+    "D:\\Dev\\HeroSmash\\.work\\builds\\hero-smash-v120-clean-debug.apk"
+  ],
+  "staging": "D:\\Dev\\HeroSmash\\.work\\clean-v120-validation\\.work\\android-qa-hsz7nfl5",
+  "signature_verified": true,
+  "packaged_dependencies_verified": true,
+  "exported_pack_headless_boot": true,
+  "package": "org.herosmash.qa",
+  "physical_device": "not asserted",
+  "reproducibility": "Repeatable debug build from tracked preset/source; debug signature/container metadata may differ",
+  "main_scene": "res://scenes/qa/two_fighter_slice.tscn"
+}

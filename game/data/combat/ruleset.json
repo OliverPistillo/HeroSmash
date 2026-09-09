@@ -1,0 +1,20 @@
+{
+  "rulesetVersion": "combat_v1.17.1",
+  "canonicalDataVersion": "v1.16.1",
+  "clockUnit": "millisecond",
+  "maxTimeMs": 45000,
+  "maxEvents": 20000,
+  "maxReactionDepth": 16,
+  "energyCapMilli": 100000,
+  "criticalCapBp": 9000,
+  "minimumAttackDamageMilli": 1000,
+  "minimumBasicIntervalMs": 250,
+  "minimumIceRateBp": 3500,
+  "stunnedEnergyRateBp": 3000,
+  "dotIntervalMs": 1000,
+  "legacyStatusMaxStacks": 20,
+  "legacyWoundFallbackBp": 500,
+  "legacyIceFallbackBp": 1000,
+  "specification": "docs/product-specs/COMBAT_RULES.md",
+  "sourceBasis": "legacy/web-prototype/src/game/CombatSystem.js; explicit scheduling/limits in ADR0004"
+}

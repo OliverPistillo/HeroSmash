@@ -1,0 +1,16 @@
+{
+  "blender": "5.2.1 LTS",
+  "source": "art/blender/shared/foundation_sample.blend",
+  "export": "art/exports/props/foundation_sample.glb",
+  "units": "meters",
+  "height": 1,
+  "floor_origin": true,
+  "materials": 1,
+  "bones": 1,
+  "expected_animations": [
+    "idle"
+  ],
+  "textures": 0,
+  "rights": "original procedural project fixture",
+  "final_character": false
+}

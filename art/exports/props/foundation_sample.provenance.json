@@ -1,0 +1,31 @@
+{
+  "status": "pass",
+  "sha256": "7a58433128676fe8ab5a7542f64be851e5dbc76b547749b3bd101fac82ab1de2",
+  "bytes": 4764,
+  "gltf": "2.0",
+  "meshes": 1,
+  "skins": 1,
+  "joints": 1,
+  "materials": 1,
+  "textures": 0,
+  "animations": [
+    "idle"
+  ],
+  "bounds_meters": [
+    [
+      -0.5,
+      0.5
+    ],
+    [
+      0.0,
+      1.0
+    ],
+    [
+      -0.5,
+      0.5
+    ]
+  ],
+  "triangles": 12,
+  "generated_by": "art/pipeline/create_foundation_sample.py",
+  "runtime_copy": "game/assets_runtime/props/foundation_sample.glb"
+}

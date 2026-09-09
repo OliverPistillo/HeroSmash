@@ -1,0 +1,193 @@
+{
+  "phase": "v1.16",
+  "status": "pass",
+  "commit": "ec34ebb1a7bebc781c8f9806c045031d28597dcc",
+  "branch": "revival/v1.17-combat-balance-lab",
+  "baseline": "80c098b256f5855d4c5dfb9869135fd2bad6c709",
+  "python": "3.12.0",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "jsonschema": "4.25.1",
+    "attrs": "26.1.0",
+    "referencing": "0.37.0",
+    "rpds-py": "2026.6.3",
+    "jsonschema-specifications": "2025.9.1",
+    "typing-extensions": "4.16.0"
+  },
+  "clean_checkout": true,
+  "checks": [
+    {
+      "command": [
+        "git",
+        "merge-base",
+        "--is-ancestor",
+        "80c098b256f5855d4c5dfb9869135fd2bad6c709",
+        "HEAD"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "output": "",
+      "name": "baseline_ancestor"
+    },
+    {
+      "command": [
+        "git",
+        "rev-parse",
+        "v1.15-foundation^{commit}"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "output": "80c098b256f5855d4c5dfb9869135fd2bad6c709\n",
+      "name": "baseline_tag"
+    },
+    {
+      "command": [
+        "git",
+        "branch",
+        "--show-current"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "output": "revival/v1.17-combat-balance-lab\n",
+      "name": "checkout_branch"
+    },
+    {
+      "command": [
+        "git",
+        "status",
+        "--porcelain"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "output": "",
+      "name": "clean_before"
+    },
+    {
+      "command": [
+        "D:\\Dev\\HeroSmash\\.work\\tools\\godot-4.7.2\\Godot_v4.7.2-stable_win64_console.exe",
+        "--version"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "output": "4.7.2.stable.official.ed1daf0bf\n",
+      "name": "godot_version"
+    },
+    {
+      "command": [
+        "D:\\Dev\\HeroSmash\\.work\\venvs\\canonical-ci\\Scripts\\python.exe",
+        "tools/migration/canonical_data.py",
+        "--check"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "output": "{\"status\": \"pass\", \"mode\": \"check\", \"outputs\": 7, \"changed\": [], \"cards\": 150, \"pilot_contracts\": 12}\n",
+      "name": "reproducible_generation_and_diff"
+    },
+    {
+      "command": [
+        "D:\\Dev\\HeroSmash\\.work\\venvs\\canonical-ci\\Scripts\\python.exe",
+        "tools/validation/test_canonical_data.py"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "output": "test_generation_repeatability_and_committed_bytes (__main__.CanonicalDataTests.test_generation_repeatability_and_committed_bytes) ... ok\ntest_only_documented_normalizations (__main__.CanonicalDataTests.test_only_documented_normalizations) ... ok\ntest_schema_and_full_source_parity (__main__.CanonicalDataTests.test_schema_and_full_source_parity) ... ok\ntest_shared_malformed_corpus (__main__.CanonicalDataTests.test_shared_malformed_corpus) ... ok\ntest_source_guard_and_no_partial_output (__main__.CanonicalDataTests.test_source_guard_and_no_partial_output) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 3.419s\n\nOK\n",
+      "name": "schema_source_parity_and_malformed_data"
+    },
+    {
+      "command": [
+        "D:\\Dev\\HeroSmash\\.work\\tools\\godot-4.7.2\\Godot_v4.7.2-stable_win64_console.exe",
+        "--headless",
+        "--path",
+        "game",
+        "--editor",
+        "--import",
+        "--quit"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "output": "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org\n\n[   0% ] \u001b[90m\u001b[1mfirst_scan_filesystem\u001b[22m | Started Inizializzazione del progetto (5 steps)\u001b[39m\u001b[0m\n[   0% ] \u001b[90m\u001b[1mfirst_scan_filesystem\u001b[22m | Scansione della struttura dei file...\u001b[39m\u001b[0m\n[  16% ] \u001b[90m\u001b[1mfirst_scan_filesystem\u001b[22m | Caricamento dei nomi delle classi globali…\u001b[39m\u001b[0m\n[  33% ] \u001b[90m\u001b[1mfirst_scan_filesystem\u001b[22m | Verifica dei GDExtension...\u001b[39m\u001b[0m\n[  50% ] \u001b[90m\u001b[1mfirst_scan_filesystem\u001b[22m | Creazione degli script autoload...\u001b[39m\u001b[0m\n[  66% ] \u001b[90m\u001b[1mfirst_scan_filesystem\u001b[22m | Inizializzazione delle estensioni...\u001b[39m\u001b[0m\n[  83% ] \u001b[90m\u001b[1mfirst_scan_filesystem\u001b[22m | Avvio della scansione dei file...\u001b[39m\u001b[0m\n\u001b[92m[ DONE ]\u001b[39m \u001b[1mfirst_scan_filesystem\u001b[22m\n\u001b[0m\n[   0% ] \u001b[90m\u001b[1mloading_editor_layout\u001b[22m | Started Caricamento dell'editor (5 steps)\u001b[39m\u001b[0m\n[   0% ] \u001b[90m\u001b[1mloading_editor_layout\u001b[22m | Caricamento della disposizione dell'editor...\u001b[39m\u001b[0m\n[  16% ] \u001b[90m\u001b[1mloading_editor_layout\u001b[22m | Caricamento dei pannelli…\u001b[39m\u001b[0m\n\u001b[92m[ DONE ]\u001b[39m \u001b[1mloading_editor_layout\u001b[22m\n\u001b[0m\n",
+      "name": "godot_import"
+    },
+    {
+      "command": [
+        "D:\\Dev\\HeroSmash\\.work\\tools\\godot-4.7.2\\Godot_v4.7.2-stable_win64_console.exe",
+        "--headless",
+        "--path",
+        "game",
+        "--script",
+        "res://tests/canonical_data_test.gd"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "output": "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org\n\n{\"assertions\":104,\"failures\":[],\"status\":\"pass\",\"suite\":\"canonical_data\"}\n",
+      "name": "canonical_data_headless",
+      "test_summaries": [
+        {
+          "assertions": 104,
+          "failures": [],
+          "status": "pass",
+          "suite": "canonical_data"
+        }
+      ]
+    },
+    {
+      "command": [
+        "D:\\Dev\\HeroSmash\\.work\\tools\\godot-4.7.2\\Godot_v4.7.2-stable_win64_console.exe",
+        "--headless",
+        "--path",
+        "game",
+        "--script",
+        "res://tests/effect_test.gd"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "output": "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org\n\n{\"assertions\":8150,\"events_per_replay\":400,\"failures\":[],\"implemented_contracts\":12,\"pilot_cards\":[2,5,10,20,28,40,49,77,90,92,97,111,115,132,149],\"replay_seeds\":8,\"status\":\"pass\",\"suite\":\"effects\"}\n",
+      "name": "effect_headless",
+      "test_summaries": [
+        {
+          "assertions": 8150,
+          "events_per_replay": 400,
+          "failures": [],
+          "implemented_contracts": 12,
+          "pilot_cards": [
+            2,
+            5,
+            10,
+            20,
+            28,
+            40,
+            49,
+            77,
+            90,
+            92,
+            97,
+            111,
+            115,
+            132,
+            149
+          ],
+          "replay_seeds": 8,
+          "status": "pass",
+          "suite": "effects"
+        }
+      ]
+    },
+    {
+      "command": [
+        "git",
+        "status",
+        "--porcelain"
+      ],
+      "status": "pass",
+      "exit_code": 0,
+      "output": "",
+      "name": "clean_after"
+    }
+  ],
+  "limits": [
+    "Only base_text_v1; numbered levels and global combat/status/death rules remain unresolved.",
+    "Foundation full profile is a separate required local gate.",
+    "No Android/iOS package/device or final-art gate is claimed.",
+    "Local execution is not evidence of a remote GitHub Actions run."
+  ]
+}

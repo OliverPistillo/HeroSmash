@@ -1,0 +1,16 @@
+{
+  "baseline": "80c098b256f5855d4c5dfb9869135fd2bad6c709",
+  "normalization": "utf8_lf",
+  "files": {
+    "legacy/web-prototype/data/legacy_deck_source.json": "147a4c37569e9f1b5b3fad344ea2d80167ba119adc9338e69b619a3688d26c98",
+    "legacy/web-prototype/data/branches.json": "d90b20d6e4a37d06c3e2d43cb7d49f4e50031fba03da1e9a33f3eca9b1cb2593",
+    "legacy/web-prototype/data/heroes.json": "6774ec57564c05bf833147eeb92643e6a71af87f38c985c23dca939d45049b9d",
+    "legacy/web-prototype/data/economy.json": "32087569897f9aa012d2bbf282d1b57ad902326f9c5cb5ea38b4507bc112d49a",
+    "legacy/web-prototype/data/cards.json": "8396c7f2489eed34a221098c244f42a6c535b1bc2b3c498c1db743e94bc80b38",
+    "legacy/web-prototype/src/game/CombatSystem.js": "be054e693091ba31450654858e3e2f49272f2798a7d93fb7f8cd01906cbdfc61",
+    "legacy/web-prototype/src/game/BranchSystem.js": "fb82535b54ce4495226d2b8e9db76978db0bddba2229de0f90d5d55661a2caa6",
+    "legacy/web-prototype/src/game/EconomySystem.js": "4068da98c63c2c35b25f718cbb89e9d5c7c1c9996b3874d222427491dc203e5f",
+    "legacy/web-prototype/src/game/CardSystem.js": "12ca0df530ff4f4f6e187ee668c75855481e37c216e52eab9c7a859984aebbd9",
+    "legacy/web-prototype/src/game/BotSystem.js": "3cc69d573b5c96c034acb15fd128a4e62b6c65ee6179b43d5f4f8ba05c4c1d19"
+  }
+}

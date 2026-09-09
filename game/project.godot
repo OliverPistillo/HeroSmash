@@ -1,0 +1,22 @@
+; Production shell. Exact tool pin: Godot 4.7.2 stable.
+config_version=5
+
+[application]
+config/name="Hero Smash"
+run/main_scene="res://scenes/app/bootstrap.tscn"
+config/features=PackedStringArray("4.7", "Mobile")
+
+[display]
+window/size/viewport_width=1366
+window/size/viewport_height=768
+window/size/window_width_override=1366
+window/size/window_height_override=768
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+window/handheld/orientation=0
+
+[rendering]
+renderer/rendering_method="mobile"
+renderer/rendering_method.mobile="mobile"
+textures/default_filters/use_nearest_mipmap_filter=false
+environment/defaults/default_clear_color=Color(0.025, 0.04, 0.065, 1)

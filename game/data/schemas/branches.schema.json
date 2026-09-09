@@ -1,0 +1,184 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://herosmash.invalid/schemas/v1/branches.schema.json",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "logicalVersion": {
+      "const": "v1.16.1"
+    },
+    "dataset": {
+      "const": "branches"
+    },
+    "generator": {
+      "const": "tools/migration/canonical_data.py"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "normalization": {
+            "const": "utf8_lf"
+          }
+        },
+        "required": [
+          "path",
+          "sha256",
+          "normalization"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "maxItems": 3
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "enum": [
+              "assault",
+              "guardian",
+              "essence",
+              "rage",
+              "ice",
+              "toxin",
+              "shield",
+              "healing",
+              "power",
+              "precision",
+              "wound",
+              "dodge"
+            ]
+          },
+          "name": {
+            "enum": [
+              "Assault",
+              "Guardian",
+              "Essence",
+              "Rage",
+              "Ice",
+              "Toxin",
+              "Shield",
+              "Healing",
+              "Power",
+              "Precision",
+              "Wound",
+              "Dodge"
+            ]
+          },
+          "legacy": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "enum": [
+                  "assault",
+                  "guardian",
+                  "essence",
+                  "rage",
+                  "ice",
+                  "toxin",
+                  "shield",
+                  "healing",
+                  "power",
+                  "precision",
+                  "wound",
+                  "dodge"
+                ]
+              },
+              "name": {
+                "enum": [
+                  "Assault",
+                  "Guardian",
+                  "Essence",
+                  "Rage",
+                  "Ice",
+                  "Toxin",
+                  "Shield",
+                  "Healing",
+                  "Power",
+                  "Precision",
+                  "Wound",
+                  "Dodge"
+                ]
+              },
+              "icon": {
+                "type": "string",
+                "minLength": 1
+              },
+              "color": {
+                "type": "string",
+                "minLength": 1
+              },
+              "desc": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "id",
+              "name",
+              "icon",
+              "color",
+              "desc"
+            ],
+            "additionalProperties": false
+          },
+          "provenance": {
+            "type": "object",
+            "properties": {
+              "source": {
+                "type": "string",
+                "minLength": 1
+              },
+              "pointer": {
+                "type": "string",
+                "pattern": "^/"
+              },
+              "sourceSha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              }
+            },
+            "required": [
+              "source",
+              "pointer",
+              "sourceSha256"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "legacy",
+          "provenance"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 12,
+      "maxItems": 12
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "logicalVersion",
+    "dataset",
+    "generator",
+    "sources",
+    "records"
+  ],
+  "additionalProperties": false
+}

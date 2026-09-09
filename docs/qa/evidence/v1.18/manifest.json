@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "tested_commit": "50fdb5820a4b5241885378dcb5215d68bf31920b",
+  "profile_checks": 56,
+  "new_negative_tests": 17,
+  "phone_proof_clean_checkout_identical": true,
+  "deterministic_comparison": {
+    "baseline": "docs/qa/evidence/v1.17/lab-summary.json",
+    "data_hash_equal": true,
+    "scenario_hashes_equal": 12,
+    "unique_fights": 12000,
+    "repeated_fights": 12000,
+    "failures": 0
+  },
+  "artifacts": [
+    {
+      "path": "canonical-gates.json",
+      "bytes": 7324,
+      "sha256": "86416af260547ae252bf56e9ea284573a3b9cde71d8d5cc5ed2cf99698586513"
+    },
+    {
+      "path": "card-proof-667x375-0.png",
+      "bytes": 30296,
+      "sha256": "688b675fba4d2917bc6a717b5735e1c375a1be143672b16922046149d387c996"
+    },
+    {
+      "path": "card-proof-667x375-1.png",
+      "bytes": 30115,
+      "sha256": "e6ba8f0da854d18c6cc734a36e39a47515c53dfbccf4838506add7f1af3919a0"
+    },
+    {
+      "path": "card-proof-844x390-0.png",
+      "bytes": 30967,
+      "sha256": "556b0a8ade3c6fff26b6027fc63dce707074067f84c3dfd6fe48815bdbdd81ad"
+    },
+    {
+      "path": "card-proof-844x390-1.png",
+      "bytes": 30810,
+      "sha256": "371e8e06f554d92a6a4179236190a6eb93a3903264ffae91aac7bbec52e7c1f6"
+    },
+    {
+      "path": "card-proof.json",
+      "bytes": 2020,
+      "sha256": "11dbed3af7a02b3b74633603ba2ba13ab5aba5fd24409219de1133ad68099ccd"
+    },
+    {
+      "path": "combat-gates.json",
+      "bytes": 9946,
+      "sha256": "19ca5cd1a8081594cb9b8b5da123e79d3c601a62bfa9137213da315b491d8cea"
+    },
+    {
+      "path": "environment.json",
+      "bytes": 1156,
+      "sha256": "64e826f42f2326cdd062716442a1a60dfbda7c69282e0360eea165bed5ef79c1"
+    },
+    {
+      "path": "foundation-gates.json",
+      "bytes": 12667,
+      "sha256": "b679bb322d19c4ac32aea5a670ae0794cfc5e7dc43c61006e6bf5cab5227c17a"
+    },
+    {
+      "path": "godot-mobile-1366x768.png",
+      "bytes": 24996,
+      "sha256": "2ea57dedfb76c120d386ff71d4d644285e4ac71c0213e9c33adcb75cf91892ed"
+    },
+    {
+      "path": "godot-mobile-844x390.png",
+      "bytes": 13644,
+      "sha256": "9e038a91524286e40d28f32ec9bffbebc2a159433a079e78e2e801c51bd3bfa0"
+    },
+    {
+      "path": "lab-summary.json",
+      "bytes": 56420,
+      "sha256": "e26494c408bc45dd64eb4ff3f1c144617266b24a31d73dd1800235301af51f7d"
+    },
+    {
+      "path": "roster-gates.json",
+      "bytes": 6646,
+      "sha256": "df15c7bb59d3696acbf26850fe72931e0a56ed9cad54389f171a141d410d6903"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "adapter": "AMD Radeon RX 7900 XT",
+  "adapter_errors": [],
+  "animated_profile": false,
+  "clip": "idle",
+  "cosmetic_cues": 0,
+  "draw_calls": 4.0,
+  "frame_ms_p50": 6.061,
+  "limitations": "Single desktop fighter plus QA stage; not physical phone or two-fighter arena budgets",
+  "movie_mode": false,
+  "render_cpu_ms_p50": 0.0949999988079071,
+  "render_cpu_ms_p95": 0.119999997317791,
+  "render_gpu_ms_p50": 0.10700000077486,
+  "render_gpu_ms_p95": 0.108000002801418,
+  "rendered_objects": 49.0,
+  "rendered_primitives": 55072.0,
+  "rendering_method": "mobile",
+  "replay_entity_id": "",
+  "replay_event_hash": "",
+  "replay_scenario": "",
+  "resolution": [
+    844,
+    390
+  ],
+  "samples": 30,
+  "status": "pass",
+  "texture_memory_bytes": 131907648.0,
+  "video_memory_bytes": 185392672.0
+}

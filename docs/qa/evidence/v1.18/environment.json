@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "checked_date": "2026-09-08",
+  "godot": {
+    "version": "4.7.2.stable.official.ed1daf0bf",
+    "path": ".work/tools/godot-4.7.2/Godot_v4.7.2-stable_win64_console.exe",
+    "headless_and_mobile_pass": true
+  },
+  "blender": {
+    "version": "5.2.1 LTS",
+    "path": "C:/Program Files (x86)/Steam/steamapps/common/Blender/blender.exe",
+    "existing_sample_glb_validated": true,
+    "final_character_export": false
+  },
+  "python": {
+    "default": "3.14.7",
+    "canonical_venv": "3.12.0",
+    "pillow_renderer": "existing Python312/Pillow; no install"
+  },
+  "node": "20.19.6",
+  "git": "2.55.0.windows.3",
+  "java": "17.0.15",
+  "android": {
+    "ANDROID_HOME": "C:/Users/olive/AppData/Local/Android/Sdk",
+    "directory_exists": false,
+    "adb_on_path": false,
+    "sdkmanager_on_path": false,
+    "export_templates_root_exists": true,
+    "export_templates_files": 0,
+    "package_or_device_test": false
+  },
+  "ios": {
+    "toolchain_or_signing_available": false,
+    "device_test": false
+  },
+  "installations": [],
+  "external_original_archive_accessed": false,
+  "ci_yaml_parsed": true,
+  "remote_ci_executed": false
+}

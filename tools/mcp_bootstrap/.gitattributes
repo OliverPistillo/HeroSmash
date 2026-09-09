@@ -1,0 +1,4 @@
+# Patch bytes are part of the installation identity, including on Windows.
+# Unified diff blank context lines intentionally contain one space.
+# Source whitespace is checked in the upstream checkout before patch generation.
+patches/*.patch text eol=lf whitespace=-blank-at-eol

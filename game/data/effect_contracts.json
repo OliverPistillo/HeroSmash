@@ -1,0 +1,493 @@
+{
+  "schemaVersion": 1,
+  "profile": "base_text_v1",
+  "pilots": [
+    {
+      "legacyId": 2,
+      "originalTextSha256": "53802bf8b7326075e65f2002b20939367c9decd830e72a7a622116a9bcc4672b",
+      "why": "Stat modifier: establishes flat units and combat-start behavior.",
+      "proposal": "Add 5 base-damage units once at combat start.",
+      "jsNotes": "JS adds 2 attack plus 0.006 multiHit; no literal +5 contract.",
+      "parity": "legacy approximation",
+      "lifecycle": "implemented",
+      "rules": [
+        {
+          "trigger": "combat_start",
+          "chance_bp": 10000,
+          "interval_ms": 0,
+          "loss_threshold_milli": 0,
+          "condition": {
+            "kind": "always",
+            "value": ""
+          },
+          "actions": [
+            {
+              "type": "modify_stat",
+              "target": "self",
+              "amount": 5000,
+              "unit": "milli",
+              "field": "base_damage_milli",
+              "formula": "flat",
+              "factor_bp": 0,
+              "minimum": 0,
+              "cap": 0,
+              "damage_kind": "none",
+              "handler": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "legacyId": 5,
+      "originalTextSha256": "2e0d6b721088c50cbb3d585bea18543b853e851ba913312093e45e6c4385f663",
+      "why": "Dual branch and probabilistic energy proc.",
+      "proposal": "On each basic_attack, 6000 bp chance to gain 1500 milli-energy.",
+      "jsNotes": "JS grants passive attack/multiHit and manaRegen/skillPower; no attack-to-MP proc.",
+      "parity": "legacy approximation",
+      "lifecycle": "implemented",
+      "rules": [
+        {
+          "trigger": "basic_attack",
+          "chance_bp": 6000,
+          "interval_ms": 0,
+          "loss_threshold_milli": 0,
+          "condition": {
+            "kind": "always",
+            "value": ""
+          },
+          "actions": [
+            {
+              "type": "gain_energy",
+              "target": "self",
+              "amount": 1500,
+              "unit": "milli",
+              "field": "",
+              "formula": "flat",
+              "factor_bp": 0,
+              "minimum": 0,
+              "cap": 0,
+              "damage_kind": "none",
+              "handler": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "legacyId": 10,
+      "originalTextSha256": "4baaebd2cf7b6f05f6f58c322c53fda82f51455f47007df3b8c75c8a14ce7794",
+      "why": "Stacking percentage with explicit cap.",
+      "proposal": "Each basic_attack adds 400 bp basic damage bonus, capped at 2000 bp per binding.",
+      "jsNotes": "JS adds attack and multiHit; does not track +4% attack stacks.",
+      "parity": "legacy approximation",
+      "lifecycle": "implemented",
+      "rules": [
+        {
+          "trigger": "basic_attack",
+          "chance_bp": 10000,
+          "interval_ms": 0,
+          "loss_threshold_milli": 0,
+          "condition": {
+            "kind": "always",
+            "value": ""
+          },
+          "actions": [
+            {
+              "type": "modify_stat",
+              "target": "self",
+              "amount": 400,
+              "unit": "basis_points",
+              "field": "basic_damage_bonus_bp",
+              "formula": "flat",
+              "factor_bp": 0,
+              "minimum": 0,
+              "cap": 2000,
+              "damage_kind": "none",
+              "handler": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "legacyId": 20,
+      "originalTextSha256": "48bd2916f45059278372940280990bf548c093da0fd9baf476aedefafe8e0d9b",
+      "why": "Accumulated HP-loss threshold and cross-branch energy.",
+      "proposal": "Each cumulative 400000 actual milli-HP lost grants 6000 milli-energy; retain remainder.",
+      "jsNotes": "JS has passive attack/focus/execute/manaRegen/skillPower/hpRegen/healBoost/HP; no damage accumulator.",
+      "parity": "legacy approximation",
+      "lifecycle": "implemented",
+      "rules": [
+        {
+          "trigger": "damage_taken",
+          "chance_bp": 10000,
+          "interval_ms": 0,
+          "loss_threshold_milli": 400000,
+          "condition": {
+            "kind": "always",
+            "value": ""
+          },
+          "actions": [
+            {
+              "type": "gain_energy",
+              "target": "self",
+              "amount": 6000,
+              "unit": "milli",
+              "field": "",
+              "formula": "flat",
+              "factor_bp": 0,
+              "minimum": 0,
+              "cap": 0,
+              "damage_kind": "none",
+              "handler": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "legacyId": 28,
+      "originalTextSha256": "53f440c93c097cea6123735f77312f26a19e4500b39b167dd766804d0e5fda9b",
+      "why": "Timed regeneration based on missing HP, minimum and cap.",
+      "proposal": "Every 1000 ms heal 100 bp of missing HP with minimum 1000 milli-HP and max-HP cap.",
+      "jsNotes": "JS flat hpRegen only for player, healBoost multiplier, plus branch/keyword bonuses.",
+      "parity": "legacy approximation",
+      "lifecycle": "implemented",
+      "rules": [
+        {
+          "trigger": "interval",
+          "chance_bp": 10000,
+          "interval_ms": 1000,
+          "loss_threshold_milli": 0,
+          "condition": {
+            "kind": "always",
+            "value": ""
+          },
+          "actions": [
+            {
+              "type": "heal",
+              "target": "self",
+              "amount": 0,
+              "unit": "milli",
+              "field": "",
+              "formula": "missing_hp_percent",
+              "factor_bp": 100,
+              "minimum": 1000,
+              "cap": 0,
+              "damage_kind": "none",
+              "handler": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "legacyId": 40,
+      "originalTextSha256": "933408821ec724676ceabbe5de80441caba2272b91cff35acf703dfd6c56dae5",
+      "why": "Critical-hit condition and healing.",
+      "proposal": "On critical basic_hit or skill_hit heal 10000 milli-HP.",
+      "jsNotes": "JS adds passive hpRegen/healBoost/crit/critD/HP; no critical-heal hook.",
+      "parity": "legacy approximation",
+      "lifecycle": "implemented",
+      "rules": [
+        {
+          "trigger": "basic_hit",
+          "chance_bp": 10000,
+          "interval_ms": 0,
+          "loss_threshold_milli": 0,
+          "condition": {
+            "kind": "critical",
+            "value": ""
+          },
+          "actions": [
+            {
+              "type": "heal",
+              "target": "self",
+              "amount": 10000,
+              "unit": "milli",
+              "field": "",
+              "formula": "flat",
+              "factor_bp": 0,
+              "minimum": 0,
+              "cap": 0,
+              "damage_kind": "none",
+              "handler": ""
+            }
+          ]
+        },
+        {
+          "trigger": "skill_hit",
+          "chance_bp": 10000,
+          "interval_ms": 0,
+          "loss_threshold_milli": 0,
+          "condition": {
+            "kind": "critical",
+            "value": ""
+          },
+          "actions": [
+            {
+              "type": "heal",
+              "target": "self",
+              "amount": 10000,
+              "unit": "milli",
+              "field": "",
+              "formula": "flat",
+              "factor_bp": 0,
+              "minimum": 0,
+              "cap": 0,
+              "damage_kind": "none",
+              "handler": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "legacyId": 49,
+      "originalTextSha256": "af07e68822e3db4bb2c2ed4d5562f5f9600474ddc8456ad8b7d1278655c621ac",
+      "why": "Dodge and explicit specialized non-reflectable damage handler.",
+      "proposal": "Eligible dodge: 5000 bp chance to emit full incoming magic damage intent, reflectable=false. No mitigation resolved here.",
+      "jsNotes": "JS only player, always reflects max(1, incoming*0.5) magic after physical dodge; no independent 50% proc. Magic cannot dodge; recursion suppression is incidental.",
+      "parity": "requires special handler",
+      "lifecycle": "implemented",
+      "rules": [
+        {
+          "trigger": "dodge",
+          "chance_bp": 5000,
+          "interval_ms": 0,
+          "loss_threshold_milli": 0,
+          "condition": {
+            "kind": "reflectable",
+            "value": ""
+          },
+          "actions": [
+            {
+              "type": "special_handler",
+              "target": "opponent",
+              "amount": 0,
+              "unit": "milli",
+              "field": "",
+              "formula": "flat",
+              "factor_bp": 0,
+              "minimum": 0,
+              "cap": 0,
+              "damage_kind": "magic",
+              "handler": "reflect_incoming_once"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "legacyId": 77,
+      "originalTextSha256": "45bf59d5601ed295078f49cf4a53bf6e306298eab5edabf3c4bbc54b2cbbee97",
+      "why": "Healing-to-shield, probabilistic cross-branch status stacks.",
+      "proposal": "On positive regen heal fact, 3000 bp chance to add 4 shield stacks. Stack absorption remains unresolved.",
+      "jsNotes": "JS starts with scalar Shield and regenerates scalar Shield every 7 s for player; no regen-to-stack event.",
+      "parity": "legacy approximation",
+      "lifecycle": "implemented",
+      "rules": [
+        {
+          "trigger": "heal",
+          "chance_bp": 3000,
+          "interval_ms": 0,
+          "loss_threshold_milli": 0,
+          "condition": {
+            "kind": "regen",
+            "value": ""
+          },
+          "actions": [
+            {
+              "type": "add_shield",
+              "target": "self",
+              "amount": 4,
+              "unit": "stacks",
+              "field": "shield",
+              "formula": "flat",
+              "factor_bp": 0,
+              "minimum": 0,
+              "cap": 0,
+              "damage_kind": "none",
+              "handler": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "legacyId": 90,
+      "originalTextSha256": "0c329c61377e88efd2075d54fa48f206d5909f9fd8944b31f844ad8f2c6f18cf",
+      "why": "Periodic damage and non-consumption of another status.",
+      "proposal": "Every 500 ms emit 20000 milli magic-damage intent; preserve Wound ledger unchanged.",
+      "jsNotes": "JS grants on-hit Wound chance/amplification and attack/focus; no periodic 20-damage effect.",
+      "parity": "legacy approximation",
+      "lifecycle": "implemented",
+      "rules": [
+        {
+          "trigger": "interval",
+          "chance_bp": 10000,
+          "interval_ms": 500,
+          "loss_threshold_milli": 0,
+          "condition": {
+            "kind": "always",
+            "value": ""
+          },
+          "actions": [
+            {
+              "type": "deal_damage",
+              "target": "opponent",
+              "amount": 20000,
+              "unit": "milli",
+              "field": "",
+              "formula": "flat",
+              "factor_bp": 0,
+              "minimum": 0,
+              "cap": 0,
+              "damage_kind": "magic",
+              "handler": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "legacyId": 92,
+      "originalTextSha256": "ed7da5905f6b4c7340700ac7956b286547aa474588e47e07487804428da4b63d",
+      "why": "Skill-cast healing with dual branches.",
+      "proposal": "On skill_cast heal 50000 milli-HP; no automatic recursive regen event.",
+      "jsNotes": "JS manaRegen/skillPower/hpRegen/healBoost/HP; no cast-specific healing.",
+      "parity": "legacy approximation",
+      "lifecycle": "implemented",
+      "rules": [
+        {
+          "trigger": "skill_cast",
+          "chance_bp": 10000,
+          "interval_ms": 0,
+          "loss_threshold_milli": 0,
+          "condition": {
+            "kind": "always",
+            "value": ""
+          },
+          "actions": [
+            {
+              "type": "heal",
+              "target": "self",
+              "amount": 50000,
+              "unit": "milli",
+              "field": "",
+              "formula": "flat",
+              "factor_bp": 0,
+              "minimum": 0,
+              "cap": 0,
+              "damage_kind": "none",
+              "handler": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "legacyId": 97,
+      "originalTextSha256": "b6fe1e01b6b370eb41733591fb95032ca8fefeda082eaefee2625b9d978c02e5",
+      "why": "HP threshold plus delayed damage/healing exposes death-order ambiguity.",
+      "proposal": "Unresolved: buffering of damage/heals, threshold crossing, survival during delay and doubled Regen scope require specification.",
+      "jsNotes": "JS passive regeneration/healBoost, attack/execute/startShield/HP; no two-second buffer.",
+      "parity": "unresolved",
+      "lifecycle": "unresolved",
+      "rules": []
+    },
+    {
+      "legacyId": 111,
+      "originalTextSha256": "403d6df7f4ef57f0a79c534000901f42667f9de25abee983032c777c11fdefe5",
+      "why": "Death prevention plus a timed shield decay requires explicit lifecycle.",
+      "proposal": "Unresolved: shield weakening rate and survival HP are absent from source; no arbitrary decay or max-HP scaling accepted.",
+      "jsNotes": "JS deathShield=1, startShield=54, shieldRegen=20.25, execute=0.0486. Death grants 1 HP and scalar round(maxHP*0.35) Shield for 3 s; both units receive charges, ongoing passives remain player-only.",
+      "parity": "unresolved",
+      "lifecycle": "unresolved",
+      "rules": []
+    },
+    {
+      "legacyId": 115,
+      "originalTextSha256": "e0f59699e37eb9864447cd973cf8b15d0e6d64ff05eec19d9309e1f122e398d4",
+      "why": "Timed Toxin stacks covers status-DoT application separately from tick physics.",
+      "proposal": "Every 1000 ms add 4 Toxin stacks to opponent. Toxin tick damage, duration and decay are unresolved.",
+      "jsNotes": "JS player on-basic-hit chance 0.059 to apply one Toxin stack with tick 1.25/duration 4 s; cap20 and duration refresh in addStatus.",
+      "parity": "legacy approximation",
+      "lifecycle": "implemented",
+      "rules": [
+        {
+          "trigger": "interval",
+          "chance_bp": 10000,
+          "interval_ms": 1000,
+          "loss_threshold_milli": 0,
+          "condition": {
+            "kind": "always",
+            "value": ""
+          },
+          "actions": [
+            {
+              "type": "apply_status",
+              "target": "opponent",
+              "amount": 4,
+              "unit": "stacks",
+              "field": "toxin",
+              "formula": "flat",
+              "factor_bp": 0,
+              "minimum": 0,
+              "cap": 0,
+              "damage_kind": "none",
+              "handler": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "legacyId": 132,
+      "originalTextSha256": "e49b69ed7e96f57f396f2ba96fc6d77daa21ce7d7942f546de182253a5384f34",
+      "why": "Dodge plus temporary stat change exposes overlapping-duration ambiguity.",
+      "proposal": "Unresolved: meaning of +5 Assault and whether one-second instances stack or refresh; selected without implementing an invented policy.",
+      "jsNotes": "JS permanent attack/multiHit/dodge bonuses; no one-second buff lifecycle.",
+      "parity": "unresolved",
+      "lifecycle": "unresolved",
+      "rules": []
+    },
+    {
+      "legacyId": 149,
+      "originalTextSha256": "03da88587eb7c2e2359a3e7460fb2f44f7941bdfadcbb56a63f613f52040805e",
+      "why": "Status-applied trigger, chance and cross-branch stack application.",
+      "proposal": "On Wound application by owner, 3000 bp chance to add 4 Toxin stacks to opponent. Global status physics remains unresolved.",
+      "jsNotes": "JS independent on-basic-hit Toxin/Wound rolls and passive tick/amplification; no Wound-to-Toxin conditional chain.",
+      "parity": "legacy approximation",
+      "lifecycle": "implemented",
+      "rules": [
+        {
+          "trigger": "status_applied",
+          "chance_bp": 3000,
+          "interval_ms": 0,
+          "loss_threshold_milli": 0,
+          "condition": {
+            "kind": "status",
+            "value": "wound"
+          },
+          "actions": [
+            {
+              "type": "apply_status",
+              "target": "opponent",
+              "amount": 4,
+              "unit": "stacks",
+              "field": "toxin",
+              "formula": "flat",
+              "factor_bp": 0,
+              "minimum": 0,
+              "cap": 0,
+              "damage_kind": "none",
+              "handler": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

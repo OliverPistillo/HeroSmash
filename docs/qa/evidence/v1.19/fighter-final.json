@@ -1,0 +1,122 @@
+{
+  "tested_commit": "83e670a323cef662608bbb91e0c9e29e02097df9",
+  "branch": "revival/v1.19-golden-fighter-pipeline",
+  "checks": [
+    {
+      "name": "baseline_and_protected_data",
+      "status": "pass",
+      "details": {
+        "baseline": "d5ece76",
+        "legacy_items_unchanged": 736,
+        "gameplay_changes": 0
+      }
+    },
+    {
+      "name": "approved_packet_hashes_rights",
+      "status": "pass",
+      "details": {
+        "images": 8
+      }
+    },
+    {
+      "name": "lfs_hydration_and_integrity",
+      "status": "pass",
+      "details": {
+        "hydrated_binaries": 10,
+        "bytes": 22377452
+      }
+    },
+    {
+      "name": "glb_skin_materials_morphs_clips",
+      "status": "pass",
+      "details": {
+        "status": "pass",
+        "sha256": "3cd9e3024dbd85b8eaf3376e0e3e2b05f2aca6a4626794157e333a39b6400554",
+        "bytes": 4784156,
+        "triangles": 24912,
+        "vertices_exported": 46362,
+        "materials": 9,
+        "meshes": 1,
+        "surfaces": 9,
+        "bones": 71,
+        "textures": 0,
+        "texture_bytes": 0,
+        "morph_targets": 9,
+        "expressions": 10,
+        "clips": [
+          "attack_heavy",
+          "attack_light",
+          "dodge",
+          "hit_react",
+          "idle",
+          "idle_breathing",
+          "intro",
+          "ko",
+          "skill_cast",
+          "victory"
+        ],
+        "bounds_m": [
+          [
+            -1.2764999866485596,
+            1.2764999866485596
+          ],
+          [
+            2.7482608402351616e-06,
+            2.0989999771118164
+          ],
+          [
+            -0.7601019740104675,
+            0.313567191362381
+          ]
+        ],
+        "axis": "Godot Y-up, model +Z front",
+        "root_motion": false
+      }
+    },
+    {
+      "name": "source_runtime_contract_consistency",
+      "status": "pass",
+      "details": {
+        "clips": 10,
+        "expressions": 10,
+        "bones": 71
+      }
+    },
+    {
+      "name": "negative_binary_regressions",
+      "status": "pass",
+      "details": ".................\n----------------------------------------------------------------------\nRan 17 tests in 4.005s\n\nOK\n"
+    },
+    {
+      "name": "clean_reconstruction_and_saved_source_export",
+      "status": "pass",
+      "details": {
+        "glb_sha256": "3cd9e3024dbd85b8eaf3376e0e3e2b05f2aca6a4626794157e333a39b6400554",
+        "rebuilt_source_semantics": "same exported GLB and source manifest; .blend file bytes contain save/path metadata and are not deterministic",
+        "committed_source_export_identical": true
+      }
+    },
+    {
+      "name": "godot_import",
+      "status": "pass",
+      "details": "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org\n\n[   0% ] \u001b[90m\u001b[1mfirst_scan_filesystem\u001b[22m | Started Inizializzazione del progetto (5 steps)\u001b[39m\u001b[0m\n[   0% ] \u001b[90m\u001b[1mfirst_scan_filesystem\u001b[22m | Scansione della struttura dei file...\u001b[39m\u001b[0m\n[  16% ] \u001b[90m\u001b[1mfirst_scan_filesystem\u001b[22m | Caricamento dei nomi delle classi globali\u2026\u001b[39m\u001b[0m\n[  33% ] \u001b[90m\u001b[1mfirst_scan_filesystem\u001b[22m | Verifica dei GDExtension...\u001b[39m\u001b[0m\n[  50% ] \u001b[90m\u001b[1mfirst_scan_filesystem\u001b[22m | Creazione degli script autoload...\u001b[39m\u001b[0m\n[  66% ] \u001b[90m\u001b[1mfirst_scan_filesystem\u001b[22m | Inizializzazione delle estensioni...\u001b[39m\u001b[0m\n[  83% ] \u001b[90m\u001b[1mfirst_scan_filesystem\u001b[22m | Avvio della scansione dei file...\u001b[39m\u001b[0m\n\u001b[92m[ DONE ]\u001b[39m \u001b[1mfirst_scan_filesystem\u001b[22m\n\u001b[0m\n[   0% ] \u001b[90m\u001b[1mloading_editor_layout\u001b[22m | Started Caricamento dell'editor (5 steps)\u001b[39m\u001b[0m\n[   0% ] \u001b[90m\u001b[1mloading_editor_layout\u001b[22m | Caricamento della disposizione dell'editor...\u001b[39m\u001b[0m\n[  16% ] \u001b[90m\u001b[1mloading_editor_layout\u001b[22m | Caricamento dei pannelli\u2026\u001b[39m\u001b[0m\n\u001b[92m[ DONE ]\u001b[39m \u001b[1mloading_editor_layout\u001b[22m\n\u001b[0m\n"
+    },
+    {
+      "name": "godot_wrapper_event_replay_tests",
+      "status": "pass",
+      "details": "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org\n\nFIGHTER_TEST_PASS {\"assertions\":154,\"failures\":[]}\n"
+    },
+    {
+      "name": "clean_after",
+      "status": "pass",
+      "details": {
+        "clean": true
+      }
+    }
+  ],
+  "limitations": [
+    "Desktop/headless asset checks do not establish physical Android/iOS performance or signing.",
+    "Visual review, movie and prior full profiles are separately required for phase closure."
+  ],
+  "status": "pass"
+}
