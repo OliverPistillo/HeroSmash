@@ -1,185 +1,154 @@
 # Hero Smash — Project State
 
-**State date:** 2026-09-08
-**Macro phase completed:** v1.18 Final Hero Roster + Reference Lock
-**Phase status:** COMPLETE — specification/reference audit; no final asset production
-**Branch:** `revival/v1.18-hero-reference-lock`
-**Required baseline:** v1.17 / `337710e362b1df008b74cbb1e2ba6d1c58d2f2da`
-**Validated implementation:** `50fdb5820a4b5241885378dcb5215d68bf31920b`
-**Committed evidence / next-phase proposal:** `8ba23800db233878d16432a8509df328061e8f6f`
-**Post-evidence clean-checkout integrity:** PASS at `8ba23800db233878d16432a8509df328061e8f6f`
+**State date:** 2026-09-09
+**Macro phase completed:** v1.19 Blender Character Pipeline / First Fighter
+**Phase status:** COMPLETE — technical pipeline with one Solkael model; final shipping art and physical-device acceptance pending
+**Branch:** `revival/v1.19-golden-fighter-pipeline`
+**Required baseline:** v1.18 / `d5ece76e09b175e7b75d12b2d0dd4f58b6d926b9`
+**Full five-profile validation:** `fd0163b00f2c468de144450acd84e5907529e0d3`
+**Final viewer / visual capture:** `e5b9b2ec688d19255ec338b3f41831b32db70f05`
+**Committed evidence:** `f76586452135aa67ee10127d76bc60ca6f61a0ec`
+**Post-evidence full fighter + roster + artifact integrity:** PASS at `f76586452135aa67ee10127d76bc60ca6f61a0ec`
 **Main unchanged:** `66a5ba67f0691b7d50a11fa873f4ed24c80a14ef`
 
-This documentation-only closeout follows all required executed gates. Its commit
-is named `docs: close v1.18 roster phase and update project state`; the exact closing
-SHA is in the task report. No push, main merge or v1.19 execution occurred.
+This documentation closeout follows executed local gates and actual visual review.
+Its commit is named `docs: close v1.19 fighter pipeline and update project state`;
+the exact closing SHA is in the task delivery report. The GitHub branch is published
+with upstream; Draft PR #1 targets main without merge or auto-merge.
 
-## 1. Production reality and decisions
+## 1. Current production reality
 
-`D:\Dev\HeroSmash` remains the production workspace. Direction is unchanged: Godot
-4.7.2 stable, typed GDScript, Mobile renderer, real-time 3D characters, 2.5D arenas,
-Android/iOS landscape, Blender 5.2 LTS and validated glTF/GLB interchange. Runtime
-remains the v1.17 headless combat laboratory plus the foundation sample. No final
-character, rig, animation, arena, production UI, multiplayer, SDK or global
-dependency was produced/installed in v1.18.
+The production workspace is D:/Dev/HeroSmash. Technology remains Godot 4.7.2 stable,
+typed GDScript, Mobile renderer, real-time 3D, 2.5D arenas, Android/iOS landscape,
+Blender 5.2 LTS and validated GLB interchange. Existing deterministic combat/data
+and the foundation main scene are unchanged. A separate Solkael source/export/
+wrapper/QA pipeline is now implemented; no other hero or multiplayer was started.
 
-The current owner task authorized deciding 16 launch + 4 reserve, superseding the
-earlier plan's separate roster-selection approval step. It did not establish art
-rights or source-unsupported attributes. Identity selection and shared conventions
-are specified; visual interpretations remain explicit proposals and rights/views
-remain unresolved. This separation is part of the completed specification.
+The first model is an original editable parametric fighter with the approved
+identity, integrated forearm tower gauntlets, sun-crown mane and palette. It is a
+working model/rig/material/face/animation pipeline deliverable, not a claim of
+finished sculpt, paint, realistic facial quality or owner acceptance of final art.
+The QA stage is not the final arena or combat screen.
 
-## 2. Roster and coverage
+## 2. Art Lock and binary source authority
 
-Launch: Solkael Lionheart, Fenrox Bloodhowl, Kitsara Moonveil, Aethryon Stormwing,
-Brumgar Earthhide, Sylvex Venomkiss, Rajuro Strikefang, Morvayne Blackquill,
-Karchar Reefbreaker, Elunor Lifethorn, Oromir Frostclock, Rhazgor Crystalhorn,
-Vulkaryn Emberlord, Lupika Swiftkick, Tortugan Runewarden, Skarvex Stinglash.
+The owner approved eight exact PNGs under
+`references/visual/characters/solkael_lionheart/production/`, verified against the
+byte-identical SOLKAEL_ART_LOCK_v1_MANIFEST.json before admission. All eight central
+manifest production_items carry generated-for-project source/rights,
+production-approved approval and art_lock v1. No old unknown-rights entry changed.
+Front covers neutral/silhouette functions per the owner's explicit eight-image
+packet approval. No source-unsupported dimension is newly asserted as approved.
 
-Reserve: Gruttar Tuskgold, Nyxara Nightstep, Zelkara Jadeclaw, Kongaru Ironpalm.
-All 20 original IDs/records remain retained. The single authored specification is
-`docs/product-specs/roster/hero_roster.json`; 16 sheets and selection/scoring/coverage
-matrices are generated. The exact source snapshot/provenance is under
-`docs/references/visual/v1.18/`.
+Only the newly supplied nine-file packet moved from
+`references/visual/characters/production/Solkael_Art_Lock_v1/` to its canonical
+folder. Initially tracked files were clean while this packet was untracked; it was
+hashed and committed before modeling. No legacy/archive file moved or changed.
+All 736 historical central items and 534 v1.18 content groups remain intact;
+286 duplicate groups/298 extra origins remain historical reference-only data.
+QA images are explicitly excluded from production-reference selection.
 
-Coverage: Assault 3, Guardian 3, Essence 4, Rage 2, Ice 1, Toxin 2, Shield 3,
-Healing 2, Power 3, Precision 4, Wound 3, Dodge 2. Ice is the documented exception:
-only Oromir has sourced Frost/Ice. Guardian/Healing is the only duplicate unordered
-launch pair, retained for Brumgar sustain brawling versus Elunor ritual healing.
-Fifteen scoring criteria support systemic coverage, differentiation and production
-cost decisions; scores do not measure balance or rights clearance.
+Editable source: `art/characters/solkael_lionheart/source/`.
+Runtime authority: `game/assets/characters/solkael_lionheart/`.
+Staging exports are ignored; Godot never depends on arbitrary .blend working files.
+Scoped Git LFS covers eight PNGs, source .blend, runtime GLB and three curated AVIs.
+Already installed LFS was initialized locally; published history was not rewritten.
+Fresh GitHub hydration and fsck pass. Binary policy and admission details are in
+`docs/art/BINARY_ASSET_GOVERNANCE.md` and `docs/art/SOLKAEL_ART_LOCK.md`.
 
-Names/species/titles/personality/roles/weapons are sourced. Arcane→Essence,
-Venom→Toxin and Frost→Ice are the only aliases. Gender/presentation is unresolved
-for all 20. Body, scale, material, motion and rig details are proposals. Art badges,
-anatomy transformations, rarity labels and unlock levels do not override text rules.
-The 320-cell oracle matrix records conceptual matches, merge/split requirements
-and six missing combined affinity pairs. No original oracle ID, stat, skill or
-replay identity was merged/replaced; combined-kit numeric parity is not claimed.
+## 3. Fighter and presentation contracts
 
-## 3. References and production contracts
+GLB: 4,784,156 bytes; SHA-256
+`3cd9e3024dbd85b8eaf3376e0e3e2b05f2aca6a4626794157e333a39b6400554`.
+24,912 triangles, 46,362 exported vertices, one skinned mesh, nine opaque scalar
+PBR materials/surfaces, 71 bones, zero textures. Nine independent relative morphs
+plus neutral implement ten expressions. Ten named clips use 30 fps, documented
+loops/markers and no root motion. Shared medium-biped semantics, five finger chains,
+Solkael extensions, sockets and rest matrices are recorded in solkael_asset.json.
+Skull height 1.95 m remains a proposal; crown/mane measured top is 2.099 m.
 
-The current v1.18 catalog covers 534 canonical content groups and 832 origins:
-270 tracked design image paths and 562 archive image paths. There are 286 duplicate
-content groups and 298 extra origins. 202 historical SVG checkout groups consolidate
-under Git/archive bytes; old IDs and working hashes remain visible so LF/CRLF
-equivalence is explicit. The v1.15 manifest remains the frozen historical census.
-QA screenshots are explicitly excluded from design-reference selection.
+The reproducible recipe and saved-source exporter produce identical runtime GLB;
+the committed editable source independently exports the same bytes without change.
+Blender container save/path metadata is not misrepresented as deterministic.
+Typed SolkaelFighter/FighterEventAdapter consume resolver IDs/timestamps and emit
+cosmetic cues only. Dedupe, contact offsets, KO/revival, late events, interruption,
+reflection, seek/cancellation and imported animation/morph/socket contracts pass.
+The viewer binds real alpha/beta IDs; it does not replace canonical hero records.
 
-38 significant boards were visually reviewed. Six images are selected only for
-internal direction, including the named complete roster and Solkael gauntlet sheet.
-All 534 groups are unknown-rights; zero are production-approved. Tool-name filenames
-do not prove ownership/license. Dota/Valve and similar proprietary references cannot
-become usable production art from stylistic usefulness. Images remain indexed at
-existing legacy paths; none were deleted or copied into production assets.
+## 4. Preserved roster, data and simulation
 
-The 16 launch packets have 49 partial view slots and 111 missing slots; zero of
-160 slots is certified production-ready. Front/side/back, isolated silhouette,
-consistent combat stance, expression sheets and nearly all weapon-detail views
-are missing. Each identity sheet records reference IDs and gaps. **All final
-character production entry gates remain closed** until rights/original design
-and a consistent ten-view packet are approved. Classification/specification gates
-are complete; no missing production art was generated.
-
-Four proposed rig families cover 7 medium bipeds, 4 heavy bipeds, 4 agile bipeds and
-Sylvex's serpentine form. Hierarchy, fingers, rest/retarget requirements, sockets,
-tail/stinger/wing/hood/ear/feather extensions are documented; no rigs were built.
-Shared conventions lock meters, contact origin, skull-height measurement,
-Blender -Y/front/+Z/up to Godot +Z/front/+Y/up, T-pose bipeds, HeroSkeleton, versioned
-GLB/wrapper/material/texture names, 30 fps and no root motion. Ten animations,
-seven cosmetic markers and ten expressions have validated contracts. Resolver
-event IDs/time alone govern damage; callbacks cannot calculate/apply it.
-
-Brand/Card Language v1 defines dark opaque surfaces, restrained gold, broad clipped
-planes, bounded glow/motion, readable typography, labels plus rarity/branch shapes
-and touch targets. Normal/Epic/Legendary, single/dual affinity, levels and all card
-states have fixed hierarchy. Four synthetic phone diagrams demonstrate bounded
-text/no overlap at 667×375 and 844×390, 14-px body text and 44-px action targets.
-They are conceptual layout evidence, not final UI or physical-device approval.
-
-## 4. Preserved simulation and canonical data
-
-All of `game/` and `legacy/web-prototype/` compare unchanged to v1.17. Resolver
-ruleset stays `combat_v1.17.1`, canonical version `v1.16.1`, dataHash
+The v1.18 16-launch/4-reserve roster, all candidate identity records and 320-cell
+oracle mapping remain unchanged. Other hero art-entry gates remain closed.
+The canonical deck still has 150 cards, 582 levels, 12 branches, 8 active/4 banned,
+90 Normal/36 Epic/24 Legendary and 84 single/66 dual records. No balance, economy,
+rarity, card semantics or original oracle IDs were edited.
+Ruleset combat_v1.17.1 and canonical version v1.16.1 retain dataHash
 `932aaad64f3c805dbb60439d36213e253d2a7eb3d25e0e66d42bfc7c2c5359bf`.
-Damage/status/lethal/replay rules remain authoritative in the v1.17 specs/ADR 0004.
-No stats, effects, costs, rarity, economy or thresholds were tuned.
+All existing v1.17 runtime and legacy/web-prototype blobs are preserved; only the
+explicitly enumerated new presentation assets/scripts/tests are added to game/.
 
-Data remains 12 branches, 150 cards, 582 exact levels, 16 oracle heroes, 14 economy
-fields and the 150-ID effect registry. The 8-active/4-banned rule, 90 Normal/36 Epic/
-24 Legendary and 84 single/66 dual distributions are unchanged. Deck authority is
-`legacy/web-prototype/data/legacy_deck_source.json`, with the previously selected
-branches/heroes/economy sources. Candidate metadata is not a runtime replacement.
+The full 12,000-fight corpus repeated identically: all scenario metric hashes,
+1,000 mirrors and 12 replay roundtrips match v1.17. Shield/healing timeouts, roughly
+99% skill/Essence timeouts, fast Toxin and every prior balance signal remain
+observations, not tuned or accepted production values. Thirteen limited effect
+profiles and the unreviewed/unresolved numbered bindings remain exactly as before.
 
-Thirteen effect IDs execute in limited profiles: 002, 005, 010, 020, 028, 040, 049,
-077, 090, 092, 115, 120, 149. Numbered execution remains restricted to 049/090/120
-level 1; other literal fixtures use level 0. 134 unreviewed + 3 unresolved IDs
-reject unsupported bindings. No full card-semantic rewrite is claimed. Shield
-1HP/stack and Toxin 14DPS/stack remain experiment inputs, not approved card values.
+## 5. Executed gates and visual evidence
 
-The repeated lab retains 9,896 wins, 2,006 timeouts, 98 draws; mean duration
-24.592 s, median 26 s, p90/p99 45 s and 2,424,013 events. Shield/healing 100% timeout,
-skill/Essence about 99%, Toxin roughly 6.1 s and all other v1.17 anomalies remain
-observed fixture signals, not roster scoring or balance decisions.
+The clean GitHub clone passed all 66 checks: fighter 10, roster 12, canonical 11,
+combat 15 and full local foundation 18. These include 17 binary regressions,
+154 fighter assertions, existing 104 loader/8,150 effect assertions, full seeded
+combat/replay/live-JS checks, 393 web blobs and 1,152 archive files. Relevant full
+fighter/roster checks passed again after the evidence commit, along with SHA/length/
+Git-blob or LFS-OID verification of all 44 curated artifacts and a clean tree.
 
-## 5. Executed gates and retention
+Final 24 captures include both actual landscape sizes, all ten expressions,
+front/side/back, contacts, KO/victory and three movies. All 1,623 movie JPEG frames
+decode; frame-sampled review confirms geometry/framing, reactions, KO and barrier.
+Toxin/Shield replay footage records 18/36 cosmetic cues and zero adapter errors.
+Godot's short outer AVI RIFF-length field is corrected without image/audio edits;
+the source/normalized hashes and correction are retained in movie-validation.json.
+The caption strip prevents the phone victory pose from obscuring labels.
 
-Final full profiles at `50fdb58` from the clean same-branch clone passed:
+Desktop RX 7900 XT/i5-13600K, Vulkan Mobile, animated idle, 1,740 samples after
+60 warm-up frames: CPU p50/p95 0.079/0.104 ms at 1366×768 and 0.076/0.100 ms at
+844×390; GPU 0.088/0.090 and 0.094/0.099 ms. Raw counters show five draw calls,
+50 objects and 51,456 primitives including QA stage/shadows/canvas. These are not
+physical-phone results, material submission counts or two-fighter arena budgets.
 
-- 12/12 v1.18 checks, including 17 adversarial tests, 20 sources, 16+4 selection,
-  12 branches, 320 cells, reference scope/hashes/rights, rigs/names/expressions,
-  contrast, generated documents and phone proof.
-- 11/11 canonical checks, including 104 loader and 8,150 effect assertions,
-  source/schema generation, Python/shared malformed cases and clean checks.
-- 15/15 combat checks, including 2,173 combat and 289 replay/catalog assertions,
-  4,167 live-JS assertions, all 582 levels, two 12,000-fight passes, 1,000 mirrors
-  and 12 replay roundtrips. Zero deterministic metric/event/result regressions.
-- 18/18 full local foundation checks: 393 web blobs and all 1,152 archive files
-  preserved; JS launch/assets/oracle, Blender/sample GLB, Godot import/boot/RNG
-  and two actual Vulkan Mobile sample screenshots. Both resolutions inspected.
-- Same-font clean-checkout phone re-render reproduced all five artifacts exactly.
-  CI YAML parsed. At evidence commit `8ba2380`, all 12 roster checks and all 13
-  curated artifact lengths/SHA/Git-blob comparisons passed again with a clean tree.
+No final required local gate failed. Development asset, UTF-8 and viewer issues
+were fixed and documented. The two known legacy JS readability failures remain
+an explicitly checked negative baseline. GitHub portable Actions passed at f765864;
+final delivery records the latest remote result separately from local full gates.
+Artifacts/commands/limits: `docs/qa/evidence/v1.19/REVIEW.md` and macro report.
 
-No final required test failed. Development font-bearing/body-size/MAX and readable
-rig-summary issues were corrected. The two historical JS readability failures
-remain the explicitly verified accepted negative baseline.
+## 6. Existing toolchain and unavailable gates
 
-No legacy/archive/art file moved, renamed, deleted or edited. The external OneDrive
-source was not accessed. Only the v1.18 plan moves active→completed at closeout.
-Commands, artifacts and limits: `docs/qa/evidence/v1.18/REVIEW.md` and four gate JSONs.
+Godot 4.7.2.stable.official.ed1daf0bf and Steam Blender 5.2.1 LTS execute successfully.
+Existing Python 3.12/3.14, Pillow, Node 20.19.6, Git 2.55, LFS 3.7.1 and Java 17.0.15
+were reused. No engine, SDK, MCP, package or global dependency was installed.
+ANDROID_HOME points to absent C:/Users/olive/AppData/Local/Android/Sdk;
+adb/sdkmanager unavailable, Godot export templates empty. Physical Android/iOS
+performance, packages, signing, device smoke and Apple toolchain checks are
+unavailable and not passed. Final mobile budgets await representative arena/fighters.
 
-## 6. Toolchain and unavailable checks
+## 7. Debt and next proposed macro phase
 
-Godot 4.7.2.stable.official.ed1daf0bf and Steam Blender 5.2.1 LTS passed actual
-version/execution checks. Python 3.14.7, the existing Python 3.12.0 canonical venv,
-Python312/Pillow, Node 20.19.6, Git 2.55.0.windows.3 and Java 17.0.15 were reused.
-No engine, SDK, MCP, package or global dependency was installed.
+Visible art debt: continuous anatomy, mane/crown/glove fidelity, mouth/face polish,
+paint-ready UV atlas, material finishing, secondary motion and KO settling. Current
+planar UVs support tangents but not a shipping paint atlas. A second morphology,
+retarget/hurtbox/arena integration, final VFX/audio and physical-device measurement
+are unvalidated. Reference approval does not automatically approve the final model.
 
-ANDROID_HOME points to absent `C:/Users/olive/AppData/Local/Android/Sdk`; adb and
-sdkmanager are not on PATH. The export-template root exists but is empty.
-Android/iOS package/device tests, Apple signing/toolchain, physical mobile
-performance, remote GitHub Actions/Linux and final character GLB/rig/animation/VFX
-validation were not run or claimed. These are unavailable/future asset gates,
-not inferred passes. Final budgets await representative fighters and an arena.
+Existing gameplay/economy debt remains: 097/111/132/009 semantics, most numbered
+bindings/status conversions, market UI3/helper4, interest/sell/run-HP discrepancies,
+combined oracle-kit gaps and LCG review. No new rule silently resolves these.
 
-## 7. Debt and next macro phase
+**Proposed v1.20:** refine this same Solkael against the eight approved boards and
+review the concrete 3D result; prepare UV/material and animation/contact finishing;
+exercise two instances in a neutral 2.5D QA stage against unchanged resolver streams;
+then detect/report an authorized Android device/toolchain and measure sustained
+performance before locking budgets. No other hero, balance or multiplayer work.
+This next phase has not started and no new installation is authorized by this report.
 
-Visual debt: rights/provenance and ten-view packets; gender/presentation/voice;
-consistent morphology/evolution policy; dimensions, handedness/socket offsets,
-face mapping; licensed shipping font/original glyphs; six combined oracle kit gaps;
-actual retarget/contact/performance measurements.
-
-Existing gameplay debt remains: 097 timing/lethal buffering, 111 Shield weakening/
-surviving HP, 132 Assault overlap, 009 lethal-window units/lifesteal, most numbered
-bindings/status conversions; market UI3/helper4 slots, interest, latent sell API,
-player/bot run-HP formulas, documented JS divergences and LCG statistical review.
-
-**Next proposed phase: v1.19 — Blender Character Pipeline / First Production Fighter.**
-`docs/exec-plans/active/V1_19_BLENDER_CHARACTER_PIPELINE.md` is proposed, not started.
-Solkael base form is the first candidate after rights/reference preflight; then
-a repeatable Blender fixture/exporter, one original fighter, minimum rig/face/clips,
-typed Godot event wrapper, import/animation checks and measured landscape evidence.
-No other final heroes, evolution forms, arenas, balance changes or automatic SDK work.
-
-Full macro report: `docs/qa/V1_18_ROSTER_REFERENCE_REPORT.md`.
+Full macro report: `docs/qa/V1_19_FIGHTER_PIPELINE_REPORT.md`.

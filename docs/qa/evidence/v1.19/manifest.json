@@ -175,6 +175,16 @@
       "sha256": "f1196d53ce54e078f3f6d135f39e4d428ba306ab6c8c6bfd17c48343a938875b"
     },
     {
+      "path": "post-evidence-fighter.json",
+      "bytes": 4726,
+      "sha256": "7d497601387c5361b732b4fd324ee0db29dca2ceac133b74ed810fc53b4b165d"
+    },
+    {
+      "path": "post-evidence-roster.json",
+      "bytes": 6842,
+      "sha256": "d8b44f91c7cf5d0e4fd1f51668a28b9f6d15b7d482415aa8a8ff29ed24efb05b"
+    },
+    {
       "path": "profile-1366x768.png",
       "bytes": 121458,
       "sha256": "13d2c43d51a7b01272561f83bc286fd8eb66719134af46522c2597b94e9e4acf"

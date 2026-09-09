@@ -64,7 +64,7 @@ Roster and visual-production entry points:
 - `qa/ROSTER_REFERENCE_VALIDATION.md` — reproducible spec/rights/phone-proof checks and prior gates.
 - `qa/V1_18_ROSTER_REFERENCE_REPORT.md` — macro report, decisions, evidence and retained debt.
 - `qa/evidence/v1.18/REVIEW.md` — executed clean-checkout results and limitations.
-- `exec-plans/active/V1_19_BLENDER_CHARACTER_PIPELINE.md` — first Solkael production pipeline, under final evidence validation.
+- `exec-plans/completed/V1_19_BLENDER_CHARACTER_PIPELINE.md` — completed first Solkael technical pipeline; art/device debt recorded.
 - `art/SOLKAEL_ART_LOCK.md` — eight approved production sources and locked design.
 - `art/BINARY_ASSET_GOVERNANCE.md` — scoped Git LFS and source/export ownership.
 - `qa/FIGHTER_VALIDATION.md` — Blender/GLB/Godot/event and visual checks.

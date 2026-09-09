@@ -1,6 +1,7 @@
 # v1.19 — Blender Character Pipeline / First Production Fighter
 
-Status: IN PROGRESS — owner authorized execution and Solkael Art Lock on 2026-09-09.
+Status: COMPLETE — technical first-fighter pipeline, 2026-09-09. Final shipping-art
+polish/acceptance and unavailable physical-device tests remain explicit debt.
 Branch: `revival/v1.19-golden-fighter-pipeline`; baseline `d5ece76`.
 Preserve the completed v1.18 contracts and the v1.17 combat baseline.
 The eight exact approved production references are admitted by
@@ -23,7 +24,8 @@ machine-readable convention paths (the architecture tree is conceptual).
 First fighter: **Solkael Lionheart**, base form, medium_biped, tower gauntlets.
 Rationale: the clearest named identity/weapon reference, readable defensive shape,
 shared biped topology and no special flight/serpentine locomotion. This choice is a
-production-pipeline proposal; it does not clear the legacy concept's rights.
+production-pipeline decision under the owner's new Art Lock; it does not clear the
+historical legacy concept's rights.
 
 ## Ordered work
 
@@ -65,3 +67,18 @@ Out of scope: the other 15 final launch fighters, all reserve production, evolut
 forms, final arenas, 150 card illustrations, combat balancing, economy changes,
 multiplayer and automatic SDK/signing installation. Android/iOS export and device
 coverage remain separate explicit work if tools are unavailable.
+
+## Executed closure
+
+All ordered technical deliverables are implemented for one original Solkael model:
+approved source admission, scoped LFS governance, independent convention fixture,
+editable source/validated reproducible export, rig/face/ten clips, typed Godot event
+wrapper and measured landscape evidence. Full clean-checkout profiles passed
+66/66 at fd0163b; final viewer capture at e5b9b2e. Evidence commit f765864 passed
+full fighter 10/10, roster 12/12 and 44 artifact/LFS integrity checks again.
+
+Report: `docs/qa/V1_19_FIGHTER_PIPELINE_REPORT.md`; evidence:
+`docs/qa/evidence/v1.19/REVIEW.md`. Final art fidelity and device performance are
+not inferred from pipeline validation. Only the newly approved packet was moved;
+legacy assets and all combat data/rules remain unchanged. Next proposed v1.20
+refines this same fighter and measures two-instance/device presentation; not started.

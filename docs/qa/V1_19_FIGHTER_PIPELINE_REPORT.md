@@ -37,8 +37,10 @@ Implementation commits, in order:
 - `83e670a`: actual resolver identity binding and explicit UTF-8 metadata reads.
 - `e5b9b2e`: reserve a caption strip outside the fighter pose envelope.
 
-Evidence and documentation closeout commits follow these; their exact SHAs are
-in PROJECT_STATE and the task delivery report. No new v1.19 release tag is invented.
+`f765864` records the reviewed evidence and macro report. The documentation
+closeout follows; its exact SHA is in the task delivery report. Post-evidence
+fighter 10/10, roster 12/12, 44 artifact checks and GitHub Actions passed at f765864.
+No new v1.19 release tag is invented.
 
 ## Source admission and resulting structure
 

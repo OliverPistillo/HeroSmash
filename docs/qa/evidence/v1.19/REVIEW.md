@@ -94,6 +94,12 @@ templates empty, Apple toolchain/device absent. No dependencies were installed.
 Remote portable CI passed at 83e670a (runs 34293500949 and 34293497891); it is not
 equivalent to the full local archive/Blender/GPU/device gates.
 
+The post-evidence full fighter and roster reports at f765864 are retained as
+post-evidence-fighter.json and post-evidence-roster.json. All 44 initial artifact
+hashes/Git blobs or LFS OIDs passed in that clean checkout. These two added gate
+reports bring the closeout artifact manifest to 46 entries. GitHub Actions also
+passed at f765864: runs 34294138008 and 34294134309.
+
 manifest.json hashes all curated binary/JSON artifacts, excluding itself and this
 Markdown. Post-evidence validation is recorded separately in PROJECT_STATE and
 the task report so a hash manifest never attempts to hash itself.
