@@ -1,0 +1,506 @@
+{
+  "timestamp_utc": "2026-09-09T15:12:16.6371346Z",
+  "base_commit": "904ca9fcd52fdb4ab7e7460e0bf20c38022b3ba8",
+  "source_commit": "72170ba0295aa992ca1ac7a7954cdb41da5222d3",
+  "recovery_commits": [
+    "d24c3141d5c7b9fd3caabcb62f57709989e1608a",
+    "ae4add78c7025dfa24e56c6b36d1caa8f4eb7702"
+  ],
+  "recovered_files": [
+    ".gitattributes",
+    "art/characters/solkael_lionheart/v003/solkael_asset.json",
+    "art/characters/solkael_lionheart/v003/source/chr_solkael_lionheart_v003.blend",
+    "art/characters/solkael_lionheart/v003/textures/base_color.png",
+    "art/characters/solkael_lionheart/v003/textures/emissive.png",
+    "art/characters/solkael_lionheart/v003/textures/normal.png",
+    "art/characters/solkael_lionheart/v003/textures/orm.png",
+    "docs/art/solkael_v003_generated_images.json",
+    "docs/exec-plans/active/SOLKAEL_V003_TARGETED_POLISH.md",
+    "game/assets/characters/solkael_lionheart/chr_solkael_lionheart_v003.glb",
+    "game/assets/characters/solkael_lionheart/chr_solkael_lionheart_v003.glb.import",
+    "game/assets/characters/solkael_lionheart/chr_solkael_lionheart_v003_base_color.png",
+    "game/assets/characters/solkael_lionheart/chr_solkael_lionheart_v003_base_color.png.import",
+    "game/assets/characters/solkael_lionheart/chr_solkael_lionheart_v003_emissive.png",
+    "game/assets/characters/solkael_lionheart/chr_solkael_lionheart_v003_emissive.png.import",
+    "game/assets/characters/solkael_lionheart/chr_solkael_lionheart_v003_normal.png",
+    "game/assets/characters/solkael_lionheart/chr_solkael_lionheart_v003_normal.png.import",
+    "game/assets/characters/solkael_lionheart/chr_solkael_lionheart_v003_orm.png",
+    "game/assets/characters/solkael_lionheart/chr_solkael_lionheart_v003_orm.png.import",
+    "game/scenes/characters/solkael_lionheart/hero_solkael_lionheart_v003.tscn",
+    "game/scenes/qa/two_fighter_slice_v003.tscn",
+    "game/scripts/presentation/two_fighter_slice.gd",
+    "game/tests/polish_review.gd",
+    "game/tests/two_fighter_test.gd",
+    "tools/art/reference_lock.py",
+    "tools/asset_pipeline/capture_polish.py",
+    "tools/asset_pipeline/package_v003_review.py",
+    "tools/asset_pipeline/solkael_v003.py",
+    "tools/validation/polish.py",
+    "tools/validation/roster.py",
+    "tools/validation/solkael_v003.py"
+  ],
+  "excluded_files": [
+    "tools/android/export_debug.py"
+  ],
+  "protected_files": [
+    {
+      "path": "art/characters/solkael_lionheart/v002/solkael_asset.json",
+      "sha256": "cf4ae870860cb8c477a81e473f88907ece53cf82fd4561eff4acfacc37b14999"
+    },
+    {
+      "path": "art/characters/solkael_lionheart/v002/source/chr_solkael_lionheart_v002.blend",
+      "sha256": "9d4165f9cc7dc562db5bda05e4f0420bdccd53908004a828d93ea9acb036ff0b"
+    },
+    {
+      "path": "art/characters/solkael_lionheart/v002/textures/base_color.png",
+      "sha256": "e5859d4fc4eb7f0b15a4a26f12f8609e9f667c856c6d088e9235ffb65a04253c"
+    },
+    {
+      "path": "art/characters/solkael_lionheart/v002/textures/emissive.png",
+      "sha256": "f832327efa1d8f04ddb344c35c49dae547f6519298c735fbec49668356bb34bd"
+    },
+    {
+      "path": "art/characters/solkael_lionheart/v002/textures/normal.png",
+      "sha256": "027438da6c33af1ad90075eb108539e1689a503d71ce147c4425b6badb8e44c9"
+    },
+    {
+      "path": "art/characters/solkael_lionheart/v002/textures/orm.png",
+      "sha256": "678ea271311442f025df51b04e6afa3c53bac5fa2acc6a1360f1522e5b4a994d"
+    },
+    {
+      "path": "game/assets/characters/solkael_lionheart/chr_solkael_lionheart_v002.glb",
+      "sha256": "558a6566b8fa8a473f7f0b5460b68f73a365558b451a81a7208dc1fe82dc4108"
+    },
+    {
+      "path": "game/data/canonical/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "game/data/canonical/branches.json",
+      "sha256": "b5e9ffbb18e8577b159de253010cd7824324713917a62c0a56382897ac53d089"
+    },
+    {
+      "path": "game/data/canonical/cards.json",
+      "sha256": "8b849f3146c2c8a09fa85421bd7a03b86ff660234f40097565ec74ea1375bb7f"
+    },
+    {
+      "path": "game/data/canonical/economy.json",
+      "sha256": "274c94e5b3ea5ae81ce25b4b883194141a1ccaa47eb49a1801ceec82afbfadba"
+    },
+    {
+      "path": "game/data/canonical/effects.json",
+      "sha256": "cac529cb1a9b359986ab9b38b602f0c37644b634ccfa9eed4286aa83d0602813"
+    },
+    {
+      "path": "game/data/canonical/heroes.json",
+      "sha256": "29f65479ded777a851d61e9912fd3590e6d4cd7eec23e3898c7cc0543aef84d1"
+    },
+    {
+      "path": "game/data/combat/ruleset.json",
+      "sha256": "f6a51cd8cfe54336750b22078062894eeab700e1cd7a63797f0ae5b674e90c7a"
+    },
+    {
+      "path": "game/data/combat/scenarios.json",
+      "sha256": "f198a6c68ad7b88fc522150d4df011c589c66cd47a4c11c41e1f6ba46bab72bb"
+    },
+    {
+      "path": "game/data/combat/single_level_contracts.json",
+      "sha256": "f4a34cc86e9f58babc0289e2de98d90616005014944d0cb7ce074822d7dc2193"
+    },
+    {
+      "path": "game/data/effect_contracts.json",
+      "sha256": "bc3e142e5085d9cb37bd7e6e71e075bf73d1bba77f377b3d3b2ff69a1d4ffdc3"
+    },
+    {
+      "path": "game/data/generated/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "game/data/generated/v1_17/card_levels.json",
+      "sha256": "2923d16341c5e50f2736a18c24ba7702f65691fc52c84abc94dc0ab528cda150"
+    },
+    {
+      "path": "game/data/generated/v1_17/combat_catalog.json",
+      "sha256": "02047be993aa8bc723afdd97dcc560d249a0662faebea306519d6d2408f98ca3"
+    },
+    {
+      "path": "game/data/schemas/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "game/data/schemas/branches.schema.json",
+      "sha256": "5234ac724042a64d34b7bbdce4e5378a3683930c3b2e7b5cc63a7ebc9d619cf8"
+    },
+    {
+      "path": "game/data/schemas/cards.schema.json",
+      "sha256": "efc79ad0fc8bc90c256e8abb3a35805c630f7afcfac67b302363627fadcc1f61"
+    },
+    {
+      "path": "game/data/schemas/combat.schema.json",
+      "sha256": "936ff698aac08b45de6f494bde1e2a10d35f440673332125bf33750d1be0211f"
+    },
+    {
+      "path": "game/data/schemas/economy.schema.json",
+      "sha256": "711a85f74e139f02c77d4163b7d77dc2299dbe59bff70b26208064a43790d597"
+    },
+    {
+      "path": "game/data/schemas/effect_contracts.schema.json",
+      "sha256": "22b54c4adab79db15a8fa2bc1d973e14e639187c3ffb3f00e0790f10a88c5d07"
+    },
+    {
+      "path": "game/data/schemas/effects.schema.json",
+      "sha256": "0a9d7d07fe6f2af9f0e4f1baffc0d272b0ce04b74d887c4316dfd7fb0fc6aafa"
+    },
+    {
+      "path": "game/data/schemas/heroes.schema.json",
+      "sha256": "8e24840d4fe4fcaf10a76a5de341fa9b6c272925d3e319d4df630b8a96ff3753"
+    },
+    {
+      "path": "game/project.godot",
+      "sha256": "0a07f35d241295850de22ec96461b8ce5213364dd1e3ff52e8d9e99d639438ae"
+    },
+    {
+      "path": "game/scripts/branches/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "game/scripts/branches/branch_definition.gd",
+      "sha256": "88c6ff5990cff91810634659c4df132dd7258d0122ec40d1a77307064ad76aab"
+    },
+    {
+      "path": "game/scripts/branches/branch_definition.gd.uid",
+      "sha256": "bb6e7431f3c7cc21de6eaa0359705c5361260771c1e66647c4d21321627de1f2"
+    },
+    {
+      "path": "game/scripts/cards/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "game/scripts/cards/card_definition.gd",
+      "sha256": "ce842ae07aefd757d0db1287f33c54a4ff320065bebc455de9a2be4c8cbd0458"
+    },
+    {
+      "path": "game/scripts/cards/card_definition.gd.uid",
+      "sha256": "3a3f78c509857f0e8a1a22d2c823473f667fbe72b16316e8e7c73f5474146f9f"
+    },
+    {
+      "path": "game/scripts/cards/effect_actor_state.gd",
+      "sha256": "95395c280cd0c133f555a2ed598bd7f9e78d3fec0f422999728f5e1a870c1a3a"
+    },
+    {
+      "path": "game/scripts/cards/effect_actor_state.gd.uid",
+      "sha256": "7e366febfd2069f1e64dc2706879c2c85e5b9512e9afd44b48b95d8b41ca0173"
+    },
+    {
+      "path": "game/scripts/cards/effect_capabilities.gd",
+      "sha256": "6612637a18fb38c526dbf02d9e8da3b28d401c6ebe892fe8763ce0ae8bf3b20e"
+    },
+    {
+      "path": "game/scripts/cards/effect_capabilities.gd.uid",
+      "sha256": "6d3bc4a12f21f13f4abd893ef1df9497dc05f0f9380a79279817e58c1b911fa2"
+    },
+    {
+      "path": "game/scripts/cards/effect_definition.gd",
+      "sha256": "b562d1f5067b9b9099b9f43e388be9c46ec399eb495b33e874795e48e3286659"
+    },
+    {
+      "path": "game/scripts/cards/effect_definition.gd.uid",
+      "sha256": "255991bbde29f36beeeb40da6c48d051310b44541f0fdd964b1a768334a64b91"
+    },
+    {
+      "path": "game/scripts/cards/effect_event.gd",
+      "sha256": "d1635e84edae1ac672946e8251de56e61fdadd673d84dff161861f7e8d828dee"
+    },
+    {
+      "path": "game/scripts/cards/effect_event.gd.uid",
+      "sha256": "4288d7ca32ad8ca24c27f5867ae16ea8aa79ad4024ccdddf6fa9df28a2741727"
+    },
+    {
+      "path": "game/scripts/cards/effect_runner.gd",
+      "sha256": "84c2cbd1638e4315d6019f2942f0482b2192a7f1c5236643b19ae1bc44431a04"
+    },
+    {
+      "path": "game/scripts/cards/effect_runner.gd.uid",
+      "sha256": "3dec306f398bc68c8e92013cb5b48f835ab013e5566f03ba7534e7fa4a8f8bd3"
+    },
+    {
+      "path": "game/scripts/combat/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "game/scripts/combat/combat_catalog.gd",
+      "sha256": "5068d029f9fbc97b0745fb125fc5444d921ffba2f0a06dcb957a03a780e7a80d"
+    },
+    {
+      "path": "game/scripts/combat/combat_catalog.gd.uid",
+      "sha256": "d1664645d5b901b2c397e133e82a9d7f947c3f22f2c4cec837d812b4015f6939"
+    },
+    {
+      "path": "game/scripts/combat/combat_event.gd",
+      "sha256": "16b33739d956fbe36553be23bd0f264f4bd9a0ef3df271e1a06b513e82287cc5"
+    },
+    {
+      "path": "game/scripts/combat/combat_event.gd.uid",
+      "sha256": "749d4f4c8f0b6984220f0b5721fd658e1c08035b67b0b2d4eca0adf5d53a9d06"
+    },
+    {
+      "path": "game/scripts/combat/combat_input.gd",
+      "sha256": "a973b7cec2735762c575c738d3eb06c23af99d2577f1484ccf7ee9cf99bd09df"
+    },
+    {
+      "path": "game/scripts/combat/combat_input.gd.uid",
+      "sha256": "6f0f27c99494b9d564739c2fa52ffedcf81792e585c781cdebc4441049107d78"
+    },
+    {
+      "path": "game/scripts/combat/combat_json.gd",
+      "sha256": "8b88b345d0a159e10406cc5e158658a574c1955449fcf2398383952209c33556"
+    },
+    {
+      "path": "game/scripts/combat/combat_json.gd.uid",
+      "sha256": "d17cbb0ca6ce2f22719503e071d0c0cd2f2c79f87aa7ac5f7cb3b374b0981fb7"
+    },
+    {
+      "path": "game/scripts/combat/combat_replay.gd",
+      "sha256": "d890faa840464abc51935a2b459c26e1b71eb5aee920901cbbc652367ba2d97a"
+    },
+    {
+      "path": "game/scripts/combat/combat_replay.gd.uid",
+      "sha256": "5d1f68746f8d289094fe00f56846cf3146c88f8c8dc910d48f1082a39d4d49f8"
+    },
+    {
+      "path": "game/scripts/combat/combat_resolver.gd",
+      "sha256": "58a94f373c8f3abda5f244367d730e50955a2379692f35655c17d6628188d370"
+    },
+    {
+      "path": "game/scripts/combat/combat_resolver.gd.uid",
+      "sha256": "203aee05546b4e8d0a0b2a40159c3cb8e3a2a10676f06ae6e47743a54571ad6a"
+    },
+    {
+      "path": "game/scripts/combat/combat_scenarios.gd",
+      "sha256": "26c12892fc8c96a34fcc5abf4f242ad5375ce87c115fa3602b319e96c4294a78"
+    },
+    {
+      "path": "game/scripts/combat/combat_scenarios.gd.uid",
+      "sha256": "25873a9ae6326bd4234a8b2f0b9b37f788ea0366015b8a44e29473ffa14906e7"
+    },
+    {
+      "path": "game/scripts/combat/combatant_state.gd",
+      "sha256": "97a8822c9b1899441bb2e8d5e2f0449ca343735583936c0d5e9cfdad73d23696"
+    },
+    {
+      "path": "game/scripts/combat/combatant_state.gd.uid",
+      "sha256": "64a8b5ddd55d3953469dcf53744744ac76d98c937add7bbfb4e68bd522260752"
+    },
+    {
+      "path": "game/scripts/combat/damage_event.gd",
+      "sha256": "1b75a1fe70dc662e279a03e078692876b1f05bdb57567a7d81d9b1d09e22aaaa"
+    },
+    {
+      "path": "game/scripts/combat/damage_event.gd.uid",
+      "sha256": "db750021b2a02eb55bea28fc955a2c8a09cfe74e50f5e489af3299c3428d05b4"
+    },
+    {
+      "path": "game/scripts/combat/status_instance.gd",
+      "sha256": "b1ff35f83c81af25c8657b89d2b030ca79b1527037e24d2185906617780cff87"
+    },
+    {
+      "path": "game/scripts/combat/status_instance.gd.uid",
+      "sha256": "bd0011d85dfda5808865764497890553db45784e505131ca651afa1169d001f9"
+    },
+    {
+      "path": "game/scripts/core/data/canonical_catalog.gd",
+      "sha256": "e7c5cfb03012e639d5bd734ee7e104b735b54f060894e375368f2b625656c500"
+    },
+    {
+      "path": "game/scripts/core/data/canonical_catalog.gd.uid",
+      "sha256": "2ebf92e8a299d0471c3855e9e8236186a66ef3dbf8bdad2a0e5c9932059c83cd"
+    },
+    {
+      "path": "game/scripts/core/data/definition.gd",
+      "sha256": "5798a0ffbaa3e4c7f689ff54bdd8ccb0529a7e107ac1c545cfa478ce3816cb9b"
+    },
+    {
+      "path": "game/scripts/core/data/definition.gd.uid",
+      "sha256": "efe514269b96a7c367afc9a538e968b937e1ca8424cce84e7a083fd190c70e65"
+    },
+    {
+      "path": "game/scripts/core/data/hero_definition.gd",
+      "sha256": "09dcc25fe0ab5403431743cdcaf440942c990e82b69d615732bedff090677c13"
+    },
+    {
+      "path": "game/scripts/core/data/hero_definition.gd.uid",
+      "sha256": "6013f7d9e82b677efaa01ec338576192831d0d982b438839110209f1a13659b6"
+    },
+    {
+      "path": "game/scripts/core/data/schema_validator.gd",
+      "sha256": "b81aeefb6a782d3a1a79ffdad8d6776302f83b65962ce2081734fa94764d9959"
+    },
+    {
+      "path": "game/scripts/core/data/schema_validator.gd.uid",
+      "sha256": "c8583ca060aff51ef4250dbb2100bd65857e03e6bfe61363096f8be1a40f90d9"
+    },
+    {
+      "path": "game/scripts/core/foundation_rng.gd",
+      "sha256": "2776023689985656a0f4e1c33f8a3788992612585a9c94e38d1cc894628e44db"
+    },
+    {
+      "path": "game/scripts/core/foundation_rng.gd.uid",
+      "sha256": "29eab8f71fe8b4998e71d7a46a4d27a3cece2b6ec8d5ec2a32822e9869056d3f"
+    },
+    {
+      "path": "game/scripts/economy/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "game/scripts/economy/economy_definition.gd",
+      "sha256": "9504068f15f73d88ba946e80ba190044cea3706392e463c156845dedf5d216f6"
+    },
+    {
+      "path": "game/scripts/economy/economy_definition.gd.uid",
+      "sha256": "f41bfad04d3474687032a6744023f431b9133599154ba1074e0383bbb1635ecc"
+    },
+    {
+      "path": "references/visual/characters/solkael_lionheart/production/SOLKAEL_3quarter_v1.png",
+      "sha256": "ff3517ab731f21ad69f60dbeb0dcdd50815bbf352ddcf228b0ccc5782fbf0032"
+    },
+    {
+      "path": "references/visual/characters/solkael_lionheart/production/SOLKAEL_ART_LOCK_v1_MANIFEST.json",
+      "sha256": "35011af3e80bca0ec90febd6a912ec7ceee93526598707786c5f504ba8eea2a3"
+    },
+    {
+      "path": "references/visual/characters/solkael_lionheart/production/SOLKAEL_back_v1.png",
+      "sha256": "9dccc50beeb46cb37954a33f9aee0385eb30092362fcd57a11914ddb9ed9f46d"
+    },
+    {
+      "path": "references/visual/characters/solkael_lionheart/production/SOLKAEL_combat_v1.png",
+      "sha256": "3aee5e0b37f5d227caa97f8bd52b955418b721d20f3e567cacabf9ea942a9069"
+    },
+    {
+      "path": "references/visual/characters/solkael_lionheart/production/SOLKAEL_expressions_v1.png",
+      "sha256": "22f55c27288ed59615870ba2d5c2232a7fd993c24fbcabe2060d90ec40c746e8"
+    },
+    {
+      "path": "references/visual/characters/solkael_lionheart/production/SOLKAEL_front_v1.png",
+      "sha256": "fc16f198b43a92633c111a54107affa52c4a160ff9d133c9df561baf2d098878"
+    },
+    {
+      "path": "references/visual/characters/solkael_lionheart/production/SOLKAEL_gauntlets_v1.png",
+      "sha256": "ef7bf42617b3d0328b10ef3f60b1dea4235d3dd9a6b63d92d040fe41bb3c0630"
+    },
+    {
+      "path": "references/visual/characters/solkael_lionheart/production/SOLKAEL_materials_v1.png",
+      "sha256": "30b009215e521e226ab80d66c345a48f5616a48d4321dbe63ee38a5d8d0a11f7"
+    },
+    {
+      "path": "references/visual/characters/solkael_lionheart/production/SOLKAEL_side_v1.png",
+      "sha256": "6557dc5321bcc87f86435fec01526896efcf2e9be083debd15b6c30c31d41c6e"
+    }
+  ],
+  "recovered_assets": [
+    {
+      "path": "art/characters/solkael_lionheart/v003/solkael_asset.json",
+      "sha256": "5bb4c98db8b8aeec90d2ba902b90ea48786b381cafb61dff129149b14dce2f26",
+      "matches_original": true
+    },
+    {
+      "path": "art/characters/solkael_lionheart/v003/source/chr_solkael_lionheart_v003.blend",
+      "sha256": "b665dac352ad7a20f6c9f8da86e1edb4c9bf61d682dec2b1ff1a91546d21f732",
+      "matches_original": true
+    },
+    {
+      "path": "art/characters/solkael_lionheart/v003/textures/base_color.png",
+      "sha256": "685e6ccdfbcee2bdb441cfc7c6a2fd8dd001f446d6721d87fe39061912545bff",
+      "matches_original": true
+    },
+    {
+      "path": "art/characters/solkael_lionheart/v003/textures/emissive.png",
+      "sha256": "67e64f68b87411062485f3c75e80b03af72052e1098acc1eaccdc25073390e6a",
+      "matches_original": true
+    },
+    {
+      "path": "art/characters/solkael_lionheart/v003/textures/normal.png",
+      "sha256": "9b09ec67065e57d353a6e12c47029aac1decad04f36fff74d7301d1f81c7f0a7",
+      "matches_original": true
+    },
+    {
+      "path": "art/characters/solkael_lionheart/v003/textures/orm.png",
+      "sha256": "1f2990f8c895bffd8e562e4c9e738d24207a5428ee9c2964375ad391685731ae",
+      "matches_original": true
+    },
+    {
+      "path": "game/assets/characters/solkael_lionheart/chr_solkael_lionheart_v003.glb",
+      "sha256": "d4abdf5aa8cdcd632c57173ed5b5bd879da78273c48081973f2d9ead52aaa368",
+      "matches_original": true
+    },
+    {
+      "path": "game/assets/characters/solkael_lionheart/chr_solkael_lionheart_v003.glb.import",
+      "sha256": "5ec393cd5a3c399dfeb958eb41384ab832eadcb97c4aac371554b0d8911b8b41",
+      "matches_original": true
+    },
+    {
+      "path": "game/assets/characters/solkael_lionheart/chr_solkael_lionheart_v003_base_color.png",
+      "sha256": "685e6ccdfbcee2bdb441cfc7c6a2fd8dd001f446d6721d87fe39061912545bff",
+      "matches_original": true
+    },
+    {
+      "path": "game/assets/characters/solkael_lionheart/chr_solkael_lionheart_v003_base_color.png.import",
+      "sha256": "85fd0120e213771b9af60ce0735b03f42eb501dd6afbbb0e850ccdf5f3c1b0cc",
+      "matches_original": true
+    },
+    {
+      "path": "game/assets/characters/solkael_lionheart/chr_solkael_lionheart_v003_emissive.png",
+      "sha256": "67e64f68b87411062485f3c75e80b03af72052e1098acc1eaccdc25073390e6a",
+      "matches_original": true
+    },
+    {
+      "path": "game/assets/characters/solkael_lionheart/chr_solkael_lionheart_v003_emissive.png.import",
+      "sha256": "633130475399c1ba7ca8c7ef2fce68bda585d950afe7a16b13590daa59ce070c",
+      "matches_original": true
+    },
+    {
+      "path": "game/assets/characters/solkael_lionheart/chr_solkael_lionheart_v003_normal.png",
+      "sha256": "9b09ec67065e57d353a6e12c47029aac1decad04f36fff74d7301d1f81c7f0a7",
+      "matches_original": true
+    },
+    {
+      "path": "game/assets/characters/solkael_lionheart/chr_solkael_lionheart_v003_normal.png.import",
+      "sha256": "7d11211d4d1ae9a1938de13109353773b446c72074ac4c55c09679d10d2932ba",
+      "matches_original": true
+    },
+    {
+      "path": "game/assets/characters/solkael_lionheart/chr_solkael_lionheart_v003_orm.png",
+      "sha256": "1f2990f8c895bffd8e562e4c9e738d24207a5428ee9c2964375ad391685731ae",
+      "matches_original": true
+    },
+    {
+      "path": "game/assets/characters/solkael_lionheart/chr_solkael_lionheart_v003_orm.png.import",
+      "sha256": "2e2151dd273012226298b737d79a5d10dc1f69938ec46414457f3224ff67622e",
+      "matches_original": true
+    }
+  ],
+  "main_commit": "66a5ba67f0691b7d50a11fa873f4ed24c80a14ef",
+  "tag_object": "ebed04d029dda56054f405f1482fe6b4a6a8bfc6",
+  "tag_commit": "de770dff30dcc533d547074c975fdaa0962abda9",
+  "original_head": "555d26c9fe9373379d316c4d655f7dbd8ff100cd",
+  "original_status": [
+    " M docs/exec-plans/active/SOLKAEL_V003_TARGETED_POLISH.md",
+    "?? docs/qa/evidence/v1.20/owner-review/",
+    "?? docs/qa/evidence/v1.20/v003/"
+  ],
+  "current_turn": {
+    "approvals_reviewer": "auto_review",
+    "model": "gpt-6-astra",
+    "approval_policy": "on-request",
+    "mcp_calls": 0,
+    "turn_id": "01a086af-9512-7313-9a06-f6e42766ed2c",
+    "effort": "xhigh"
+  },
+  "final_preservation": {
+    "checked_utc": "2026-09-09T15:19:35.2384378Z",
+    "original_solkael_files": 45,
+    "original_evidence_files": 127,
+    "protected_worktree_files": 88,
+    "all_hashes_match": true,
+    "original_head_and_status_unchanged": true
+  }
+}
