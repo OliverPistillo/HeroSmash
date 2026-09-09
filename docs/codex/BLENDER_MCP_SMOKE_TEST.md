@@ -1,6 +1,20 @@
 # Blender MCP smoke test record
 
-## Current bootstrap repair
+## Current live acceptance after reconnect
+
+**CONFIGURED / SERVER PREFLIGHT PASSED / SESSION TOOLS DISCOVERED /
+LIVE OPERATIONS NOT VERIFIED.** The actual reconnected session discovered six
+tools, invoked four, and obtained/displayed an authentic MCP viewport image.
+A/B passed after relaunching the absent dedicated GUI; E/I are partial. The first
+read-only code probe was rejected by safe mode without an observed human approval
+prompt. No scene mutations were attempted, as explicitly required by the owner.
+C/D/F/G/H were not run; no unique object or smoke .blend exists.
+
+See [the current A–I results and exact evidence](BLENDER_MCP_LIVE_RECONNECT.md).
+No full live acceptance or artistic resumption is claimed. The sections below
+retain the historical setup/repair checkpoint, not the current discovery result.
+
+## Historical bootstrap repair
 
 hsfix1 passed the 15-test unit preflight and real STDIO initialize/list/shutdown.
 See [the repair evidence](BLENDER_MCP_BOOTSTRAP_FIX.md). These newly authorized

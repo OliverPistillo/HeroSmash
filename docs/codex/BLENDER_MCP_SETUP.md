@@ -4,7 +4,10 @@
 
 The owner authorized the minimal local hsfix1 repair on 2026-09-09. Current identity
 is upstream5f8ddaf6 plus the identified patch, in a separate installation.
-**SERVER PREFLIGHT PASSED / SESSION RECONNECT REQUIRED / LIVE NOT VERIFIED.**
+**SERVER PREFLIGHT PASSED / SESSION TOOLS DISCOVERED / LIVE NOT VERIFIED.**
+The reconnected session now reaches the dedicated GUI and returns a real viewport
+image. Acceptance stopped at the first code-approval probe; see the
+[current live report](BLENDER_MCP_LIVE_RECONNECT.md). No configuration was changed.
 Use [the repair report and reproduction procedure](BLENDER_MCP_BOOTSTRAP_FIX.md).
 The example TOML now selects the repaired launcher. Original source/venv/add-on
 remain intact for rollback; the following sections document the earlier setup and

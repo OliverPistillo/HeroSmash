@@ -139,8 +139,9 @@ chore/blender-mcp-bootstrap-fix, based directly on remote v1.20
 de770dff30dcc533d547074c975fdaa0962abda9. Only the inspected documentation commit
 555d26c was imported (as 7e0ab92); art commit72170ba is not an ancestor of this branch.
 
-**CONFIGURATION WRITTEN / SERVER PREFLIGHT PASSED / SESSION TOOLS NOT DISCOVERED /
-LIVE OPERATIONS NOT VERIFIED. SESSION RECONNECT REQUIRED.** No automatic restart.
+**Current after reconnect: CONFIGURED / SERVER PREFLIGHT PASSED /
+SESSION TOOLS DISCOVERED / LIVE OPERATIONS NOT VERIFIED.** See the current
+acceptance note below; the remaining bootstrap details describe the earlier repair.
 
 Mandatory community upstream5f8ddaf6e987c4aa0c3467fcc548838b28f64477 plus explicit
 local patch hsfix1-telemetry-disabled, SHA-256
@@ -173,3 +174,31 @@ docs/codex/BLENDER_MCP_BOOTSTRAP_FIX.md. Patch/tests: tools/mcp_bootstrap/.
 Local continuation: D:/Dev/HeroSmash/.work/blender-mcp-smoke/HANDOFF.md.
 After an owner-controlled reconnect, resume only the actual session MCP smoke
 tests on the disposable scene. Art remains suspended after those checks as well.
+
+## Blender MCP live reconnect acceptance — 2026-09-09
+
+Integration-only acceptance attempt completed on chore/blender-mcp-bootstrap-fix
+from exact clean/tested commit e42aa96900040fd2aabbe837db9777190dcd9800; no artistic
+macro phase or product decision changed. Six actual session tools were discovered;
+four were invoked. After relaunching only the absent dedicated GUI with its existing
+profile, real MCP status/scene/viewport reads succeeded. New unsaved Scene contains
+only Cube/Camera/Light; original GUI PID196 is preserved.
+
+The first read-only execute_blender_code was rejected on a preference read by
+actual safe mode before Blender dispatch. No expected human approval prompt was
+observed. Per owner instruction, no scene mutation or second code probe followed.
+A/B PASS, E/I PARTIAL, C/D/F/G/H NOT RUN; LIVE OPERATIONS NOT VERIFIED.
+Managed hsfix1 command, actual safe-mode/telemetry opt-out environment, add-on
+consent=False and loopback listener were observed separately. Current cloud flags
+and successful code approval remain unverified. No permission/configuration fix,
+dependency change, new asset, scene save or production migration was made.
+
+45 Solkael files and127 pre-existing evidence hashes, original branch/HEAD/diff,
+main and tags remain unchanged. Art72170ba remains excluded from the technical
+branch. Only integration documentation is updated; actual tool JSON and MCP PNG
+stay in the documented smoke directory. Whitespace/link checks and new-commit CI
+results are reported with publication in Draft PR3 and the task delivery.
+
+Report: docs/codex/BLENDER_MCP_LIVE_RECONNECT.md. Remaining work is intended approval
+verification, fresh cloud opt-out verification and the pending approved live suite.
+No automatic next macro phase: Solkael v003 remains suspended.

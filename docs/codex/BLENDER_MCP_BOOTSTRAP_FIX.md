@@ -1,14 +1,17 @@
 # Blender MCP bootstrap repair — hsfix1
 
-Recorded 2026-09-09. **SERVER PREFLIGHT PASSED / SESSION RECONNECT REQUIRED /
-LIVE OPERATIONS NOT YET VERIFIED.** Solkael art remains suspended.
+Updated 2026-09-09 after the owner-controlled session reconnect.
+**CONFIGURED / SERVER PREFLIGHT PASSED / SESSION TOOLS DISCOVERED /
+LIVE OPERATIONS NOT VERIFIED.** Solkael art remains suspended.
+Current acceptance and approval anomaly: [live reconnect report](BLENDER_MCP_LIVE_RECONNECT.md).
+The detailed bootstrap/preflight record below describes the earlier repair.
 
 | Capability | Result |
 | --- | --- |
 | CONFIGURATION WRITTEN | Yes; only mcp_servers.blender.command changed after tests |
 | SERVER PREFLIGHT PASSED | Yes; 15 unit tests and real STDIO initialization passed |
-| SESSION TOOLS DISCOVERED | No; zero Blender tools in the actual Codex session |
-| LIVE OPERATIONS VERIFIED | No; the original session gates A–I remain pending |
+| SESSION TOOLS DISCOVERED | Yes; exactly six in the reconnected session; four actually invoked |
+| LIVE OPERATIONS VERIFIED | No; A/B pass, E/I partial, C/D/F/G/H not run; stopped at code-approval anomaly |
 
 ## Identity and scope
 
