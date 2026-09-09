@@ -124,3 +124,160 @@ additional hero, final arena, balance, multiplayer or automatic phase start.
 Report: `docs/qa/V1_20_POLISH_DEVICE_REPORT.md`.
 Art review: `docs/qa/evidence/v1.20/REVIEW.md`.
 Prior state/history: `docs/qa/V1_19_FIGHTER_PIPELINE_REPORT.md`.
+
+## Blender MCP bootstrap repair — 2026-09-09
+
+Owner-authorized integration repair; no artistic macro phase completed. Solkael
+art remains suspended. Original D:/Dev/HeroSmash stays on
+revival/v1.20-solkael-polish-device-slice at
+555d26c9fe9373379d316c4d655f7dbd8ff100cd, preserving its pre-existing v003 commit,
+tracked art-plan diff and untracked evidence. All 45 Solkael and 127 evidence files
+match their before/after hashes. Main, tags and production pipeline are unchanged.
+
+The separate technical worktree D:/Dev/HeroSmash-mcp-bootstrap-fix uses
+chore/blender-mcp-bootstrap-fix, based directly on remote v1.20
+de770dff30dcc533d547074c975fdaa0962abda9. Only the inspected documentation commit
+555d26c was imported (as 7e0ab92); art commit72170ba is not an ancestor of this branch.
+
+**Current after reconnect: CONFIGURED / SERVER PREFLIGHT PASSED /
+SESSION TOOLS DISCOVERED / LIVE OPERATIONS NOT VERIFIED.** See the current
+acceptance note below; the remaining bootstrap details describe the earlier repair.
+
+Mandatory community upstream5f8ddaf6e987c4aa0c3467fcc548838b28f64477 plus explicit
+local patch hsfix1-telemetry-disabled, SHA-256
+c58383fdcd9c109cb819f0d91b9c0809fd5dcf74f98ae06b871f55e342700ad8.
+This is modified upstream, not a pristine upstream installation. The separate
+5f8ddaf6-hsfix1 venv uses the same 32 runtime dependency versions; original source,
+venv, add-on and dedicated preferences remain intact for rollback. Server1.9.1,
+add-on1.6/protocol5, MCP SDK1.30.0, Python3.12.0, Blender5.2.1LTS unchanged.
+
+The missing config import is bypassed only through an explicit disabled telemetry
+path. Missing optional config also fails closed with a warning. Real add-on consent
+reads remain distinct; opt-in prompts and trajectory capture are suppressed while
+disabled. No endpoints, credentials, safe-mode or execution-contract changes.
+
+PASS: 15 unit tests, six real decorated tool functions with simulated transport,
+instrumented zero telemetry attempts, safe-mode regression, source/patch hashes,
+fresh patch application, dependency consistency and preservation checks. Real
+STDIO initialize/initialized/tools-list returned 28 upstream tools and closed
+gracefully with exit0; Codex retains the separate six-tool allowlist. The diagnostic
+performed the normal read-only add-on handshake, with no tools/call or scene edits.
+
+Only the Codex server command changed after backup; prompt approval, safety env,
+STDIO/timeouts and other MCPs are preserved. Existing add-on consent=False/cloud
+opt-outs and loopback127.0.0.1:9876 are preserved. This is not OS filesystem or
+general network confinement. Human approval UI and real session tool availability
+still require verification. All original live A–I gates remain pending.
+
+Report, reproducible commands and residual upstream debt:
+docs/codex/BLENDER_MCP_BOOTSTRAP_FIX.md. Patch/tests: tools/mcp_bootstrap/.
+Local continuation: D:/Dev/HeroSmash/.work/blender-mcp-smoke/HANDOFF.md.
+After an owner-controlled reconnect, resume only the actual session MCP smoke
+tests on the disposable scene. Art remains suspended after those checks as well.
+
+## Blender MCP live reconnect acceptance — 2026-09-09
+
+Integration-only acceptance attempt completed on chore/blender-mcp-bootstrap-fix
+from exact clean/tested commit e42aa96900040fd2aabbe837db9777190dcd9800; no artistic
+macro phase or product decision changed. Six actual session tools were discovered;
+four were invoked. After relaunching only the absent dedicated GUI with its existing
+profile, real MCP status/scene/viewport reads succeeded. New unsaved Scene contains
+only Cube/Camera/Light; original GUI PID196 is preserved.
+
+The first read-only execute_blender_code was rejected on a preference read by
+actual safe mode before Blender dispatch. No expected human approval prompt was
+observed. Per owner instruction, no scene mutation or second code probe followed.
+A/B PASS, E/I PARTIAL, C/D/F/G/H NOT RUN; LIVE OPERATIONS NOT VERIFIED.
+Managed hsfix1 command, actual safe-mode/telemetry opt-out environment, add-on
+consent=False and loopback listener were observed separately. Current cloud flags
+and successful code approval remain unverified. No permission/configuration fix,
+dependency change, new asset, scene save or production migration was made.
+
+45 Solkael files and127 pre-existing evidence hashes, original branch/HEAD/diff,
+main and tags remain unchanged. Art72170ba remains excluded from the technical
+branch. Only integration documentation is updated; actual tool JSON and MCP PNG
+stay in the documented smoke directory. Whitespace/link checks and new-commit CI
+results are reported with publication in Draft PR3 and the task delivery.
+
+Report: docs/codex/BLENDER_MCP_LIVE_RECONNECT.md. Remaining work is intended approval
+verification, fresh cloud opt-out verification and the pending approved live suite.
+No automatic next macro phase: Solkael v003 remains suspended.
+
+## Blender MCP approval audit/fix — 2026-09-09
+
+Integration configuration phase completed on chore/blender-mcp-bootstrap-fix from
+exact clean baseline c4efd683cb500d09c5b4fe9d12887dd76bfdab1e. No art/product decision
+or production system changed. Installed0.153.4 config/read(includeLayers) resolved
+the user and empty system layers for both worktrees; configRequirements/read
+returned null. Active-task records independently show never/user with Full Access.
+The resident desktop's managed-policy response was not directly available.
+
+After an exact local backup, only approval_policy in the effective user config
+changed never→on-request. Reviewer user and execute_blender_code prompt were already
+correct. Every other byte/value, including sandbox, other MCPs and Blender's server,
+allowlist, telemetry/safe mode, addresses and timeouts, is preserved. Strict fresh
+config resolution now returns on-request/user/prompt. The active task still has
+never/user; no runtime override, restart or Blender call was attempted.
+
+**APPROVAL CONFIG FIXED — RESTART REQUIRED / LIVE OPERATIONS NOT VERIFIED.**
+Marker-only probe passes static safe-mode validation; human prompt and live A–E
+probe are not verified. C–I remain pending. Owner restart must be followed by an
+actual-session override check before the first marker probe; saved Full Access
+state is not assumed to disappear automatically. No blind managed-policy workaround.
+
+Only integration documentation is published in Draft PR3; personal backup and
+sanitized audit/preservation evidence remain in the documented smoke directory.
+TOML, exact-change, layer-resolution, preservation and documentation checks pass;
+published-commit CI is reported in PR/task delivery. No game/export/preflight rerun.
+Report: docs/codex/BLENDER_MCP_APPROVAL_AUDIT.md. No automatic continuation of Solkael.
+
+## Blender MCP smoke resume after owner restart — 2026-09-09 15:39
+
+Attempted only the authorized smoke continuation on chore/blender-mcp-bootstrap-fix,
+starting at exact clean commit1ef2c6b3130a5b95f11e06f63b523adfc5066782. Actual new
+Desktop PID13016 confirms restart. New turn01a08664-f96e-7580-ab2a-29e82d1f33ef
+nevertheless records approval_policy=never, approvals_reviewer=user and Full Access.
+Fresh disk/layer resolution remains on-request/user with the unchanged per-tool
+prompt rule; the resident tool rule is not directly readable. Managed requirements
+return null from the separate resolver, with no direct resident response available.
+
+The effective on-request prerequisite failed, so zero Blender calls were made:
+no marker/prompt test and no C–I continuation. No setting, installation, scene or
+production system changed. All45 Solkael/127 evidence hashes, original worktree,
+main and six tags are preserved; art72170ba is excluded. Only current integration
+documentation is updated. Whitespace/link and published-commit CI results accompany
+PR/task delivery. LIVE OPERATIONS NOT VERIFIED. Effective task approval settings
+must be corrected/verified before another marker attempt; restart alone has not
+resolved them. No automatic permission repair or artistic macro phase follows.
+
+## Blender MCP live acceptance completed — 2026-09-09
+
+**BLENDER MCP OPERATIONAL.** Integration acceptance completed on
+`chore/blender-mcp-bootstrap-fix`, starting at exact clean commit
+`c41114b0c068c4627331ef4b95982c87244e08c9`; the resulting documentation commit and
+its CI are recorded in Draft PR #3. No product decision or artistic phase changed.
+
+The owner selected Ask for approval. The actual task records on-request/user;
+the owner explicitly confirmed human prompts and manual Approve for both exact
+marker attempts. The first failed to connect; starting the existing dedicated GUI
+allowed the identical retry to return HS_MCP_APPROVAL_PROBE. All C–I then passed
+through session MCP, with only the specified GUI listener controls for H.
+Temporary edits were restored numerically and visually. Save/reopen discarded an
+intentional unsaved change. Disconnect/Connect was verified by failed/successful
+MCP reads; the negative import was rejected by actual safe mode before dispatch.
+
+Only integration documentation and authentic smoke screenshots are published.
+Screenshots use docs/qa/evidence/blender-mcp/20260909; the generated duplicate report
+adds exactly two QA-evidence exclusions while the art reference inventory is unchanged.
+The temporary .blend and sanitized detailed results remain in the smoke directory.
+All 45 Solkael, 127 prior evidence, 3822 original-installation and 20 hsfix1 source/
+installed hashes pass; 32 dependency versions, original worktree, main and six
+tags are preserved. Art commit 72170ba remains excluded. Whitespace/link checks,
+artifact hashes and exact published-commit CI accompany delivery. No game runtime,
+production Blender export or historical preflight test was rerun for this docs phase.
+
+Known debt: the add-on sidebar can show Not connected after reopening while its
+persistent listener is live; Connect resynchronizes the indicator, and the real
+reconnect test passed. Personal configuration comparison is recorded in the audit.
+Reports: docs/codex/BLENDER_MCP_SMOKE_TEST.md and BLENDER_MCP_APPROVAL_AUDIT.md.
+No next macro phase is started. Solkael v003 remains suspended.

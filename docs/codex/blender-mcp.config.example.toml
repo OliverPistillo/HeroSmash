@@ -1,0 +1,26 @@
+# Hero Smash: pinned Blender MCP, configured 2026-09-09. Art work remains suspended.
+[mcp_servers.blender]
+command = "D:/Dev/Tools/blender-mcp/5f8ddaf6-hsfix1/venv/Scripts/blender-mcp.exe"
+cwd = "D:/Dev/HeroSmash/.work/blender-mcp-smoke"
+enabled = true
+startup_timeout_sec = 30
+tool_timeout_sec = 120
+enabled_tools = [
+  "get_addon_status",
+  "get_scene_info",
+  "get_object_info",
+  "get_viewport_screenshot",
+  "execute_blender_code",
+  "disable_telemetry",
+]
+
+[mcp_servers.blender.env]
+DISABLE_TELEMETRY = "true"
+BLENDER_MCP_SAFE_MODE = "1"
+BLENDER_HOST = "127.0.0.1"
+BLENDER_PORT = "9876"
+BLENDERMCP_ADDONS_DIR = "D:/Dev/Tools/blender-mcp/5f8ddaf6/blender-user-scripts/addons"
+PYTHONUTF8 = "1"
+
+[mcp_servers.blender.tools.execute_blender_code]
+approval_mode = "prompt"

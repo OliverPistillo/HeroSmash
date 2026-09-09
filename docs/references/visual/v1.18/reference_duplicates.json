@@ -3368,6 +3368,14 @@
   ],
   "excluded_evidence": [
     {
+      "path": "docs/qa/evidence/blender-mcp/20260909/viewport-before.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/blender-mcp/20260909/viewport-changed.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
       "path": "docs/qa/evidence/v1.15/godot-mobile-1366x768.png",
       "reason": "QA evidence / temporary planning artifact; not a design reference"
     },
