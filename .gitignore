@@ -121,6 +121,7 @@ art/characters/**/exports/
 .work/
 game/.godot/
 game/export_credentials.cfg
+art/characters/solkael_lionheart/v002/source/*.blend1
 
 # Video/audio raw working files
 *.prproj

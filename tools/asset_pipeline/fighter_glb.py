@@ -58,10 +58,14 @@ class GLB:
         return result
 
 
-def validate(path, fixture=False):
+def validate(path, fixture=False, textured=False):
     glb=GLB(path);d=glb.doc
     assert not d.get('cameras') and not d.get('lights')
-    assert not d.get('images') and not d.get('textures'),'First fighter scalar-PBR policy; no hidden image source'
+    if not textured:
+        assert not d.get('images') and not d.get('textures'),'First fighter scalar-PBR policy; no hidden image source'
+    else:
+        assert d.get('images') and d.get('textures')
+        assert all('bufferView' in image and 'uri' not in image for image in d['images']),'Embedded validated texture bytes only'
     assert len(d['skins'])==1 and len(d['meshes'])==1
     names=[n.get('name','') for n in d['nodes']]
     assert len(names)==len(set(names)), 'Duplicate node/bone names'
@@ -118,7 +122,7 @@ def validate(path, fixture=False):
             assert len(p['targets'])==9
             for target in p['targets']:
                 assert all(sum(x*x for x in v)<.05**2 for v in glb.values(target['POSITION'])),'Excessive morph displacement'
-    return dict(status='pass',sha256=hashlib.sha256(glb.raw).hexdigest(),bytes=len(glb.raw),triangles=triangles,vertices_exported=len(positions),materials=len(d['materials']),meshes=len(d['meshes']),surfaces=len(d['meshes'][0]['primitives']),bones=len(joints),textures=0,texture_bytes=0,morph_targets=0 if fixture else 9,expressions=0 if fixture else 10,clips=[c['name'] for c in d.get('animations',[])],bounds_m=bounds,axis='Godot Y-up, model +Z front',root_motion=False)
+    return dict(status='pass',sha256=hashlib.sha256(glb.raw).hexdigest(),bytes=len(glb.raw),triangles=triangles,vertices_exported=len(positions),materials=len(d['materials']),meshes=len(d['meshes']),surfaces=len(d['meshes'][0]['primitives']),bones=len(joints),textures=len(d.get('images',[])),texture_bytes=sum(d['bufferViews'][i['bufferView']]['byteLength'] for i in d.get('images',[])),morph_targets=0 if fixture else 9,expressions=0 if fixture else 10,clips=[c['name'] for c in d.get('animations',[])],bounds_m=bounds,axis='Godot Y-up, model +Z front',root_motion=False)
 
 
 if __name__=='__main__':
