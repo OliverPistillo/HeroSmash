@@ -1,0 +1,157 @@
+{
+  "glb_sha256": "558a6566b8fa8a473f7f0b5460b68f73a365558b451a81a7208dc1fe82dc4108",
+  "source_blend_sha256": "9d4165f9cc7dc562db5bda05e4f0420bdccd53908004a828d93ea9acb036ff0b",
+  "art_recipe_sha256": "4f053e0d9a4c2dc255ebc3703b21fbf496075210ad7c517afdf7c416acf62186",
+  "images": [
+    {
+      "file": "3quarter.png",
+      "bytes": 58554,
+      "sha256": "4538a1ab4494f7ab78eca0c0f4f2b12e3dd3390c6d702d5b7259e6b18e7afc95"
+    },
+    {
+      "file": "back.png",
+      "bytes": 54018,
+      "sha256": "48ac23e8a79accc98cddfa32ed4aa54619a653c646bb25c5b0a16191afe4ce6c"
+    },
+    {
+      "file": "desktop-profile.png",
+      "bytes": 95887,
+      "sha256": "f29517bf7e846e8bfc3e1fee619ed17c9686fa9a9bbb94e33bf8918ba1cdac67"
+    },
+    {
+      "file": "dodge.png",
+      "bytes": 59987,
+      "sha256": "8d0b2508274c2c5ca311679417d587934f9a763c298e24fe990612abc2200824"
+    },
+    {
+      "file": "expression-aggressive.png",
+      "bytes": 140603,
+      "sha256": "8db12cb69bc6ac01ea131e49fc5349f4cba86111af746754739f15af030500d7"
+    },
+    {
+      "file": "expression-casting.png",
+      "bytes": 140156,
+      "sha256": "5965eeff3f5b505e00d0916234e229b453e59f47fdb0586e7ba49222d4d2e504"
+    },
+    {
+      "file": "expression-defeat.png",
+      "bytes": 139898,
+      "sha256": "54e46be18181278ff8a48f700c28e9251d07699be1367f264f054ce797c5c195"
+    },
+    {
+      "file": "expression-focused.png",
+      "bytes": 139609,
+      "sha256": "7fb8fdd90a5a87dcfc49370b4804aa9ada587520527668b7a17e4b21ccaf78f3"
+    },
+    {
+      "file": "expression-grid.png",
+      "bytes": 185817,
+      "sha256": "a5220318ec3f6911b7d9a28ac4676734b0af468ad753d191a74b83e8c2358be4"
+    },
+    {
+      "file": "expression-ko.png",
+      "bytes": 139040,
+      "sha256": "1158037855abb7b1cfcd3bad6b85a19c6d54fd1dca0542fa04e6c74fe1f9f1df"
+    },
+    {
+      "file": "expression-neutral.png",
+      "bytes": 140588,
+      "sha256": "78f5d8c7fcbd7d00bd9ebe0a4995e6fd40592288bca8f53917ac7fbb932f733c"
+    },
+    {
+      "file": "expression-pain_heavy.png",
+      "bytes": 138865,
+      "sha256": "ecf518b09086ab958bcc3eb26c04b9ca8eee79c1322f56bc3a840b72facde82d"
+    },
+    {
+      "file": "expression-pain_light.png",
+      "bytes": 138828,
+      "sha256": "18af3aab157c6b5f9165127b941fbcd46e2e368aa7d39144e008843c50abbcb2"
+    },
+    {
+      "file": "expression-stunned.png",
+      "bytes": 141016,
+      "sha256": "6e31509df997451c19a50fabbd2e0a7e57af5d2c0f1512358ff69bfe270023ba"
+    },
+    {
+      "file": "expression-victory.png",
+      "bytes": 140487,
+      "sha256": "397c25002933037f51c5bab884670ed3efd6b6d733baae88b795296ed71cf25f"
+    },
+    {
+      "file": "face.png",
+      "bytes": 140588,
+      "sha256": "78f5d8c7fcbd7d00bd9ebe0a4995e6fd40592288bca8f53917ac7fbb932f733c"
+    },
+    {
+      "file": "front.png",
+      "bytes": 57616,
+      "sha256": "8939a7b063a082cbb0659f7dca0a630c6ddbbff2ebcc9c814859f9b31a581300"
+    },
+    {
+      "file": "gauntlet.png",
+      "bytes": 156572,
+      "sha256": "2de925cf39199c0a5af757ebcefee3e9392d0a3930fee26baf8b110c930cf309"
+    },
+    {
+      "file": "guard.png",
+      "bytes": 58554,
+      "sha256": "4538a1ab4494f7ab78eca0c0f4f2b12e3dd3390c6d702d5b7259e6b18e7afc95"
+    },
+    {
+      "file": "heavy.png",
+      "bytes": 59454,
+      "sha256": "c3d865e95cd3e8b28ace234774f2879337971f017180c14630259ac4bdef0184"
+    },
+    {
+      "file": "hit.png",
+      "bytes": 60297,
+      "sha256": "026022cd4a87542b5720a33c1a6eccc9909129888ec322b7186d186ea823b911"
+    },
+    {
+      "file": "ko.png",
+      "bytes": 56126,
+      "sha256": "f62681f333578906ef0adae5697a956bc1d68d8b12ac1d8b3e1ea1d5016a6813"
+    },
+    {
+      "file": "light.png",
+      "bytes": 57389,
+      "sha256": "2808ea67cee804e3bedfc8cc882bd8572ff7279df053c4e3ddcc3a312d6e22e0"
+    },
+    {
+      "file": "material.png",
+      "bytes": 130020,
+      "sha256": "da5c65c8c5c05bc3d9be62da100776ad9a4121f0b40fb5e8f044ee7839481d37"
+    },
+    {
+      "file": "side.png",
+      "bytes": 46594,
+      "sha256": "fbb387995ebcd613feabf0f2478261bc50b5fa2d4c06fefe7517110bc96374fc"
+    },
+    {
+      "file": "skill.png",
+      "bytes": 57608,
+      "sha256": "4c4c257d744c80ed5f6857fa0cada962c930d0dc796748adac56b059d35767a3"
+    },
+    {
+      "file": "two-fighter-1080x486.png",
+      "bytes": 134170,
+      "sha256": "27bcb33419cf10ca4b69ccc183a4dc0cca24df277aa5c3d005e320b47c24dc6e"
+    },
+    {
+      "file": "two-fighter-1366x768.png",
+      "bytes": 266353,
+      "sha256": "68f8d5b2f04c1323f2d765993244d2aa1060537faebdb90097899f306e7b5d90"
+    },
+    {
+      "file": "two-fighter-844x390.png",
+      "bytes": 94792,
+      "sha256": "d1dcdc282d21094925fe8136da627c0d840cfd4b914fc423150392add5b4ff46"
+    },
+    {
+      "file": "victory.png",
+      "bytes": 61735,
+      "sha256": "49007fb55bd9c3631844a4933f8681490882472f4d93442a5c4476c46b904b90"
+    }
+  ]
+}

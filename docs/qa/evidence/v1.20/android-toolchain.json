@@ -1,0 +1,78 @@
+{
+  "sdk": "C:\\Users\\olive\\AppData\\Local\\Android\\Sdk",
+  "java_home": "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.15.6-hotspot\\",
+  "templates": "C:\\Users\\olive\\AppData\\Roaming\\Godot\\export_templates\\4.7.2.stable",
+  "packages": {
+    "platform-tools": {
+      "Pkg.UserSrc": "false",
+      "Pkg.Revision": "37.0.1"
+    },
+    "build-tools;35.0.1": {
+      "Pkg.UserSrc": "false",
+      "Pkg.Revision": "35.0.1"
+    },
+    "platforms;android-35": {
+      "Pkg.Desc": "Android SDK Platform 15",
+      "Pkg.UserSrc": "false",
+      "Platform.Version": "15",
+      "Platform.CodeName": "",
+      "Pkg.Revision": "2",
+      "AndroidVersion.ApiLevel": "35",
+      "AndroidVersion.ExtensionLevel": "13",
+      "AndroidVersion.IsBaseSdk": "true",
+      "Layoutlib.Api": "15",
+      "Layoutlib.Revision": "1",
+      "Platform.MinToolsRev": "22"
+    },
+    "cmdline-tools;latest": {
+      "Pkg.Revision": "22.0",
+      "Pkg.Path": "cmdline-tools;22.0",
+      "Pkg.Desc": "Android SDK Command-line Tools"
+    },
+    "cmake;3.10.2.4988404": {
+      "Pkg.Revision": "3.10.2",
+      "Pkg.Path": "cmake;3.10.2.4988404",
+      "Pkg.Desc": "CMake 3.10.2.4988404"
+    },
+    "ndk;28.1.13356709": {
+      "Pkg.Desc": "Android NDK",
+      "Pkg.Revision": "28.1.13356709",
+      "Pkg.BaseRevision": "28.1.13356709",
+      "Pkg.ReleaseName": "r28b"
+    }
+  },
+  "template_files": {
+    "android_debug.apk": {
+      "bytes": 127260725,
+      "sha256": "59e0073f0fa59f552684a861d8f4266b0b34b488a140d6657eac7dd70d1a0a0d"
+    },
+    "android_release.apk": {
+      "bytes": 104803333,
+      "sha256": "6d1bb2cfa126a1b1c87e064a35b3cbd181bef0ec784dec1efd1d64dffa8be6cb"
+    },
+    "android_source.zip": {
+      "bytes": 214418211,
+      "sha256": "a15416b528efb0a19a7d187e4d9f4e5336d0689144b111329fb4bd12c4447ad3"
+    },
+    "version.txt": {
+      "bytes": 13,
+      "sha256": "38885c88f75abbc797a1db7559719800279a00cfb9fa8b2e2868a7f6f84bad2e"
+    }
+  },
+  "adb_devices": "List of devices attached\n\n",
+  "adb_stderr": "* daemon not running; starting now at tcp:5037\n* daemon started successfully\n",
+  "status": "installed",
+  "official_archives": [
+    {
+      "name": "commandlinetools-win-15859902_latest.zip",
+      "url": "https://dl.google.com/android/repository/commandlinetools-win-15859902_latest.zip",
+      "sha256": "90ae805d20434428bffcb699c290860f19bb5f66a67e6b330067e3de801fb04a"
+    },
+    {
+      "name": "Godot_v4.7.2-stable_export_templates.tpz",
+      "url": "https://github.com/godotengine/godot-builds/releases/download/4.7.2-stable/Godot_v4.7.2-stable_export_templates.tpz",
+      "sha256": "f298490b8d44d934be425a5a65a51bf15f422428b229a06a6e11d9ffea248011"
+    }
+  ],
+  "license_scope": "Owner-authorized official packages only; accepted interactively through sdkmanager install stdin"
+}

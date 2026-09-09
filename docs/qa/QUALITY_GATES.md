@@ -63,6 +63,17 @@ For a character/arena:
 
 ## Visual gate
 
+v1.20 additionally requires `tools/validation/polish.py`: unchanged v1.19 source/
+gameplay, independent textured GLB/UV/material validation and malformed-UV controls,
+two identical fighter instances, real twelve-scenario streams at x1/x2/x3, silent
+seek/cancel, CPU-evaluated skinned floor contact and measured contact-plane offsets.
+Saved-source export and isolated v002 reconstruction must agree. Prior full profiles
+remain required. Android debug export validates official installed components,
+template version, APK signature/manifest and QA entry point. Physical device gates
+may be BLOCKED only when no authorized phone is connected; desktop is never a substitute.
+Final-art approval is a separate owner decision. See V1_20_ANDROID.md and
+evidence/v1.20/REVIEW.md for limitations and actual renders.
+
 For UI/combat presentation:
 - reference resolution screenshot;
 - safe-area check;

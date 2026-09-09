@@ -1,0 +1,11 @@
+{
+  "discovery": {
+    "code": 0,
+    "stdout": "List of devices attached\n\n",
+    "stderr": ""
+  },
+  "physical_count": 0,
+  "status": "BLOCKED",
+  "reason": "No authorized physical Android device connected",
+  "measurements": null
+}

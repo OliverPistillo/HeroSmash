@@ -51,3 +51,4 @@ art/characters/solkael_lionheart/v002/source/*.blend filter=lfs diff=lfs merge=l
 art/characters/solkael_lionheart/v002/textures/*.png filter=lfs diff=lfs merge=lfs -text
 game/assets/characters/solkael_lionheart/chr_solkael_lionheart_v002_*.png filter=lfs diff=lfs merge=lfs -text
 docs/qa/evidence/v1.20/*.png filter=lfs diff=lfs merge=lfs -text
+docs/qa/evidence/v1.20/*.json text eol=lf

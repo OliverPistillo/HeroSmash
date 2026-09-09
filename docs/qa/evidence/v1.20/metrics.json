@@ -1,0 +1,163 @@
+{
+  "asset": {
+    "status": "pass",
+    "sha256": "558a6566b8fa8a473f7f0b5460b68f73a365558b451a81a7208dc1fe82dc4108",
+    "bytes": 7262440,
+    "triangles": 27488,
+    "vertices_exported": 25414,
+    "materials": 1,
+    "meshes": 1,
+    "surfaces": 1,
+    "bones": 71,
+    "textures": 4,
+    "texture_bytes": 4514424,
+    "morph_targets": 9,
+    "expressions": 10,
+    "clips": [
+      "attack_heavy",
+      "attack_light",
+      "dodge",
+      "hit_react",
+      "idle",
+      "idle_breathing",
+      "intro",
+      "ko",
+      "skill_cast",
+      "victory"
+    ],
+    "bounds_m": [
+      [
+        -1.290650725364685,
+        1.290650725364685
+      ],
+      [
+        2.7482608402351616e-06,
+        2.0989999771118164
+      ],
+      [
+        -0.7601019740104675,
+        0.313567191362381
+      ]
+    ],
+    "axis": "Godot Y-up, model +Z front",
+    "root_motion": false,
+    "production_uv": {
+      "triangles": 27488,
+      "overlaps": 0,
+      "degenerate": 0,
+      "coverage_percent": 32.50755820336039,
+      "method": "128-cell broadphase + exact convex triangle clipping; shared edges excluded at 1e-10 UV area"
+    },
+    "texture_details": [
+      {
+        "name": "emissive",
+        "width": 2048,
+        "height": 2048,
+        "bytes": 63129,
+        "sha256": "f832327efa1d8f04ddb344c35c49dae547f6519298c735fbec49668356bb34bd"
+      },
+      {
+        "name": "normal",
+        "width": 2048,
+        "height": 2048,
+        "bytes": 1245990,
+        "sha256": "027438da6c33af1ad90075eb108539e1689a503d71ce147c4425b6badb8e44c9"
+      },
+      {
+        "name": "base_color",
+        "width": 2048,
+        "height": 2048,
+        "bytes": 1683340,
+        "sha256": "e5859d4fc4eb7f0b15a4a26f12f8609e9f667c856c6d088e9235ffb65a04253c"
+      },
+      {
+        "name": "orm",
+        "width": 2048,
+        "height": 2048,
+        "bytes": 1521965,
+        "sha256": "678ea271311442f025df51b04e6afa3c53bac5fa2acc6a1360f1522e5b4a994d"
+      }
+    ],
+    "rgba8_mip_estimate_bytes": 89478485
+  },
+  "desktop": {
+    "source": "RX7900XT / i5-13600K, Vulkan Mobile, 844x390; not physical Android",
+    "duration_s": 59.0075288787988,
+    "warmup_excluded_s": 5,
+    "samples": 55,
+    "metrics": {
+      "fps": {
+        "min": 165.0,
+        "p50": 165.0,
+        "p95": 165.0,
+        "max": 165.0
+      },
+      "process_ms": {
+        "min": 6.618,
+        "p50": 7.714,
+        "p95": 9.083,
+        "max": 9.963
+      },
+      "render_cpu_ms": {
+        "min": 0.0649999976158142,
+        "p50": 0.100000001490116,
+        "p95": 0.120999999344349,
+        "max": 0.136000007390976
+      },
+      "render_gpu_ms": {
+        "min": 0.0820000022649765,
+        "p50": 0.0869999974966049,
+        "p95": 0.0930000022053719,
+        "max": 0.0939999967813492
+      },
+      "memory_bytes": {
+        "min": 52469770.0,
+        "p50": 53034114.0,
+        "p95": 54021434.0,
+        "max": 54037294.0
+      },
+      "draw_calls": {
+        "min": 16.0,
+        "p50": 16.0,
+        "p95": 20.0,
+        "max": 20.0
+      },
+      "primitives": {
+        "min": 110472.0,
+        "p50": 110480.0,
+        "p95": 111528.0,
+        "max": 111530.0
+      },
+      "texture_bytes": {
+        "min": 131776576.0,
+        "p50": 131776576.0,
+        "p95": 131776576.0,
+        "max": 131776576.0
+      }
+    }
+  },
+  "two_fighter_measured": {
+    "base_triangles": 54976,
+    "material_surfaces": 2,
+    "shared_material_resources": 1,
+    "bone_instances": 142,
+    "morph_channels_per_fighter": 9,
+    "shared_texture_images": 4,
+    "transparent_surfaces": 0,
+    "shadow_casting_directional_lights": 1,
+    "vfx_live_cap": 12
+  },
+  "proposed": {
+    "character_triangles": 30000,
+    "materials_per_fighter": 1,
+    "texture_sets": "one shared4x2048\u00b2 atlas for this mirrored QA pair",
+    "bones_per_fighter": 75,
+    "morphs_per_fighter": 9,
+    "vfx_live_cap": 12,
+    "shadow_lights": 1,
+    "arena_headroom": "UNDETERMINED until physical sustained frame/memory/thermal measurements",
+    "status": "PROPOSED engineering envelope, not approved mobile budget"
+  },
+  "physical_device": "BLOCKED: no authorized phone",
+  "art_status": "REQUIRES OWNER REVIEW; NOT FINAL ART APPROVED"
+}
