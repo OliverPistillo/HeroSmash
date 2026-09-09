@@ -20,6 +20,9 @@ before publication to runtime. Godot never depends on a `.blend` file.
 
 Keep backup `.blend1/.blend2`, caches, scratch renders, intermediate exports and
 local raw video out of Git. Curated small screenshots/JSON remain ordinary Git.
+The three curated v1.19 review AVIs are an explicit evidence exception, tracked
+through Git LFS. Their original MJPEG frames are retained; the observed Godot outer
+RIFF-length field is corrected by the documented validator without frame edits.
 Do not rewrite LFS history or remove a referenced binary to reduce repository size.
 Before each asset commit run the binary manifest/hash checks; after push verify
 `git lfs fsck` and a fresh clone/hydration. Record export metrics and content hashes.

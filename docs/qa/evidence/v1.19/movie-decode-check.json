@@ -1,0 +1,33 @@
+{
+  "status": "pass",
+  "decoder": "Existing Python312/Pillow 12.1.0; every frame fully decoded, no image edits",
+  "movies": [
+    {
+      "file": "animation-catalog.avi",
+      "decoded_frames": 901,
+      "resolution": [
+        1366,
+        768
+      ],
+      "sha256": "8723c029ca7b8739b6403d57ade0132bfbf6d4d7384070240ba2d345612d3d89"
+    },
+    {
+      "file": "resolver-barrier.avi",
+      "decoded_frames": 361,
+      "resolution": [
+        1366,
+        768
+      ],
+      "sha256": "614653aa963947f3f58c76099b4f4849e9d48674b26e8ce08ab6ba2b07869f02"
+    },
+    {
+      "file": "resolver-replay.avi",
+      "decoded_frames": 361,
+      "resolution": [
+        1366,
+        768
+      ],
+      "sha256": "835d913750603b087f17baeefc10872ee576b92fa901036e8c165d1f8a31334d"
+    }
+  ]
+}

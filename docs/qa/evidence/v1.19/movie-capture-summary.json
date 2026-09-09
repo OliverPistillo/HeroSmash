@@ -1,0 +1,104 @@
+{
+  "status": "pass",
+  "tested_commit": "e5b9b2ec688d19255ec338b3f41831b32db70f05",
+  "runner_sha256": "7f072c3ba0e4b7ee71220aaf3786df7fe0f71845b565beea9c93b2a3546a5af5",
+  "captures": [
+    {
+      "name": "animation-catalog",
+      "report": {
+        "adapter": "AMD Radeon RX 7900 XT",
+        "adapter_errors": [],
+        "animated_profile": false,
+        "clip": "idle",
+        "cosmetic_cues": 0,
+        "draw_calls": 5.0,
+        "frame_ms_p50": 7.94,
+        "limitations": "Single desktop fighter plus QA stage; not physical phone or two-fighter arena budgets",
+        "movie_mode": true,
+        "render_cpu_ms_p50": 0.116999998688698,
+        "render_cpu_ms_p95": 0.156000003218651,
+        "render_gpu_ms_p50": 0.0890000015497208,
+        "render_gpu_ms_p95": 0.0900000035762787,
+        "rendered_objects": 60.0,
+        "rendered_primitives": 51476.0,
+        "rendering_method": "mobile",
+        "replay_entity_id": "",
+        "replay_event_hash": "",
+        "replay_scenario": "",
+        "resolution": [
+          1366,
+          768
+        ],
+        "samples": 840,
+        "status": "pass",
+        "texture_memory_bytes": 50413632.0,
+        "video_memory_bytes": 77276240.0
+      }
+    },
+    {
+      "name": "resolver-replay",
+      "report": {
+        "adapter": "AMD Radeon RX 7900 XT",
+        "adapter_errors": [],
+        "animated_profile": false,
+        "clip": "idle",
+        "cosmetic_cues": 18,
+        "draw_calls": 5.0,
+        "frame_ms_p50": 7.91,
+        "limitations": "Single desktop fighter plus QA stage; not physical phone or two-fighter arena budgets",
+        "movie_mode": true,
+        "render_cpu_ms_p50": 0.123000003397465,
+        "render_cpu_ms_p95": 0.165999993681908,
+        "render_gpu_ms_p50": 0.0869999974966049,
+        "render_gpu_ms_p95": 0.090999998152256,
+        "rendered_objects": 53.0,
+        "rendered_primitives": 51462.0,
+        "rendering_method": "mobile",
+        "replay_entity_id": "alpha",
+        "replay_event_hash": "d6319dd53b4f867dcdc7795a3f6166a6e7db1c06de14a604a598a47fdaf6580c",
+        "replay_scenario": "05_toxin_dot",
+        "resolution": [
+          1366,
+          768
+        ],
+        "samples": 300,
+        "status": "pass",
+        "texture_memory_bytes": 50413632.0,
+        "video_memory_bytes": 78586960.0
+      }
+    },
+    {
+      "name": "resolver-barrier",
+      "report": {
+        "adapter": "AMD Radeon RX 7900 XT",
+        "adapter_errors": [],
+        "animated_profile": false,
+        "clip": "idle",
+        "cosmetic_cues": 36,
+        "draw_calls": 5.0,
+        "frame_ms_p50": 8.61,
+        "limitations": "Single desktop fighter plus QA stage; not physical phone or two-fighter arena budgets",
+        "movie_mode": true,
+        "render_cpu_ms_p50": 0.11599999666214,
+        "render_cpu_ms_p95": 0.164000004529953,
+        "render_gpu_ms_p50": 0.0890000015497208,
+        "render_gpu_ms_p95": 0.0920000001788139,
+        "rendered_objects": 63.0,
+        "rendered_primitives": 51482.0,
+        "rendering_method": "mobile",
+        "replay_entity_id": "alpha",
+        "replay_event_hash": "14b19449e5f3f84f1b2590c0bafb5237a3053f20a7f208eea6da8d52a32913b9",
+        "replay_scenario": "04_shield_healing",
+        "resolution": [
+          1366,
+          768
+        ],
+        "samples": 300,
+        "status": "pass",
+        "texture_memory_bytes": 50413632.0,
+        "video_memory_bytes": 78586960.0
+      }
+    }
+  ],
+  "notes": "Raw engine screenshots and movie output. Profile captures use animated poses; movie-mode timings are not performance conclusions."
+}

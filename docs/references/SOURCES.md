@@ -107,6 +107,15 @@ Do not treat search-engine summaries or random tutorial code as authoritative pr
 
 ## v1.18 verified sources (2026-09-08)
 
+Current production addition (2026-09-09): owner-supplied
+`references/visual/characters/solkael_lionheart/production/SOLKAEL_ART_LOCK_v1_MANIFEST.json`
+and its eight SHA-256-verified PNGs. Owner explicitly declares generated-for-project,
+production-approved, Art Lock v1. The exact IDs/bytes/usage are in the central
+`visual/reference_manifest.json` production_items and `docs/art/SOLKAEL_ART_LOCK.md`.
+These are the sole direct visual sources for the new original Solkael geometry.
+Historical reference permissions below remain unchanged; no old pixel source is
+silently promoted. No further online or generated visual sources were introduced.
+
 - `.work/legacy-source/hero.json.txt`: exact 20-candidate text source, supplied in
   project legacy material; author/owner and image-use rights unresolved. The byte
   snapshot and SHA are recorded in `visual/v1.18/source_provenance.json`.

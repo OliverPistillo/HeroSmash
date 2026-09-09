@@ -1,0 +1,113 @@
+{
+  "status": "pass",
+  "movies": [
+    {
+      "file": "animation-catalog.avi",
+      "sha256": "8723c029ca7b8739b6403d57ade0132bfbf6d4d7384070240ba2d345612d3d89",
+      "raw_sha256": "af2608701a7d2a1e0717b14d9fbb1bb9f3bfa1c5c5c4796db94ef71e6d59e8b6",
+      "riff_size_correction": 70,
+      "bytes": 48806800,
+      "frames": 901,
+      "fps": 30.00030000300003,
+      "duration_seconds": 30.033033,
+      "resolution": [
+        1366,
+        768
+      ],
+      "extracted_frames": [
+        15,
+        45,
+        75,
+        105,
+        135,
+        165,
+        195,
+        225,
+        255,
+        285,
+        315,
+        345,
+        375,
+        405,
+        435,
+        465,
+        495,
+        525,
+        555,
+        585,
+        615,
+        645,
+        675,
+        705,
+        735,
+        765,
+        795,
+        825,
+        855,
+        885
+      ],
+      "extraction": "Original MJPEG bytes, no re-encoding; one frame per second for review",
+      "notes": "MovieWriter and window both use 1366x768; one initial engine frame precedes 900/360 scripted frames. Only outer RIFF length corrected, no frame/audio changes."
+    },
+    {
+      "file": "resolver-barrier.avi",
+      "sha256": "614653aa963947f3f58c76099b4f4849e9d48674b26e8ce08ab6ba2b07869f02",
+      "raw_sha256": "9be1774099575a47bd1ebe7f65624b9007ad5dd5001909c1fce6c40570888491",
+      "riff_size_correction": 70,
+      "bytes": 20112834,
+      "frames": 361,
+      "fps": 30.00030000300003,
+      "duration_seconds": 12.033213,
+      "resolution": [
+        1366,
+        768
+      ],
+      "extracted_frames": [
+        15,
+        45,
+        75,
+        105,
+        135,
+        165,
+        195,
+        225,
+        255,
+        285,
+        315,
+        345
+      ],
+      "extraction": "Original MJPEG bytes, no re-encoding; one frame per second for review",
+      "notes": "MovieWriter and window both use 1366x768; one initial engine frame precedes 900/360 scripted frames. Only outer RIFF length corrected, no frame/audio changes."
+    },
+    {
+      "file": "resolver-replay.avi",
+      "sha256": "835d913750603b087f17baeefc10872ee576b92fa901036e8c165d1f8a31334d",
+      "raw_sha256": "75b56eed2f2749fbc6c0bcce14abc2c6eed8065f90489d06b6f48c496a83d126",
+      "riff_size_correction": 70,
+      "bytes": 19581784,
+      "frames": 361,
+      "fps": 30.00030000300003,
+      "duration_seconds": 12.033213,
+      "resolution": [
+        1366,
+        768
+      ],
+      "extracted_frames": [
+        15,
+        45,
+        75,
+        105,
+        135,
+        165,
+        195,
+        225,
+        255,
+        285,
+        315,
+        345
+      ],
+      "extraction": "Original MJPEG bytes, no re-encoding; one frame per second for review",
+      "notes": "MovieWriter and window both use 1366x768; one initial engine frame precedes 900/360 scripted frames. Only outer RIFF length corrected, no frame/audio changes."
+    }
+  ]
+}

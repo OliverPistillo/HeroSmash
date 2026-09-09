@@ -229,3 +229,17 @@ Three layers:
 ## CI principle
 
 Anything Codex can change repeatedly should eventually have a machine-checkable gate.
+
+## Implemented v1.19 character boundary
+
+`art/characters/solkael_lionheart/source/` owns the editable Blender source;
+`tools/asset_pipeline/` validates saved source and independently validates its GLB
+before copying it to `game/assets/characters/solkael_lionheart/`. Staging exports
+are ignored. New source/reference/runtime binaries use scoped Git LFS.
+
+`game/scenes/characters/solkael_lionheart/hero_solkael_lionheart.tscn` wraps the
+imported GLB. Typed `SolkaelFighter` and `FighterEventAdapter` consume immutable
+resolver IDs/timestamps, maintain presentation playback/seek state and emit only
+cosmetic cues. No damage, balance or catalog mutation API crosses this boundary.
+The QA viewer is an explicit test script; the foundation main scene is unchanged.
+This is one measured pipeline fighter, not a complete arena or physical-phone budget.

@@ -1,5 +1,14 @@
 # Character Production Bible v1
 
+Current v1.19 admission: the owner approved the eight-image Solkael Art Lock v1 on
+2026-09-09. See [the admission record](SOLKAEL_ART_LOCK.md). Those eight images
+cover the required view functions, with front also serving neutral/silhouette
+review, per the explicit owner instruction. Only this new packet is production
+approved. Historical v1.18 statements below retain their audit-date meaning;
+other hero entry gates and old unknown-rights images remain uncleared.
+The first editable Solkael pipeline model, rig, face and clips are implemented;
+final sculpt/texture fidelity and shipping-art approval remain separate debt.
+
 This is a specification lock, not a collection of finished models. The current
 owner task authorizes the 16 launch/4 reserve selection. Source-unsupported shape,
 motion, dimension and rig details remain explicit proposals in the identity sheets;

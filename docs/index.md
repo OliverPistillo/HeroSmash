@@ -22,7 +22,7 @@ Foundation entry points:
 - `migration/data_source_map.md` — canonical choices and unresolved source conflicts.
 - `migration/js_to_godot_system_map.md` — preserved behavior and future parity work.
 - `qa/FOUNDATION_VALIDATION.md` — local/CI commands, evidence strategy and applicability.
-- `references/visual/reference_manifest.json` — frozen v1.15 reference-origin census.
+- `references/visual/reference_manifest.json` — frozen v1.15 items plus separately admitted production_items.
 
 Canonical-data entry points:
 - `product-specs/CANONICAL_DATA.md` — portable schema fields and data ownership.
@@ -64,4 +64,8 @@ Roster and visual-production entry points:
 - `qa/ROSTER_REFERENCE_VALIDATION.md` — reproducible spec/rights/phone-proof checks and prior gates.
 - `qa/V1_18_ROSTER_REFERENCE_REPORT.md` — macro report, decisions, evidence and retained debt.
 - `qa/evidence/v1.18/REVIEW.md` — executed clean-checkout results and limitations.
-- `exec-plans/active/V1_19_BLENDER_CHARACTER_PIPELINE.md` — proposed next phase, not started.
+- `exec-plans/active/V1_19_BLENDER_CHARACTER_PIPELINE.md` — first Solkael production pipeline, under final evidence validation.
+- `art/SOLKAEL_ART_LOCK.md` — eight approved production sources and locked design.
+- `art/BINARY_ASSET_GOVERNANCE.md` — scoped Git LFS and source/export ownership.
+- `qa/FIGHTER_VALIDATION.md` — Blender/GLB/Godot/event and visual checks.
+- `qa/V1_19_FIGHTER_PIPELINE_REPORT.md` — measured fighter, preserved rules and follow-up art/device debt.

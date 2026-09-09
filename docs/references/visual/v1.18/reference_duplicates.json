@@ -3434,6 +3434,114 @@
     {
       "path": "docs/qa/evidence/v1.18/godot-mobile-844x390.png",
       "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/animation-catalog.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/back.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/barrier-event-frame-92.jpg",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/bulwark-contact.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/dodge.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/expression-aggressive.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/expression-casting.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/expression-defeat.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/expression-focused.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/expression-ko.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/expression-neutral.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/expression-pain_heavy.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/expression-pain_light.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/expression-stunned.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/expression-victory.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/foundation-1366x768.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/foundation-844x390.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/front.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/heavy-contact.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/ko.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/light-contact.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/profile-1366x768.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/profile-844x390.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/resolver-barrier.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/resolver-replay.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/side.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
+    },
+    {
+      "path": "docs/qa/evidence/v1.19/victory.png",
+      "reason": "QA evidence / temporary planning artifact; not a design reference"
     }
   ],
   "copied_images": 0,

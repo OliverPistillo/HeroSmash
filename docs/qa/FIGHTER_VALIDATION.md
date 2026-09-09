@@ -41,6 +41,17 @@ clocked AnimationPlayer. `HERO_FIGHTER_EXPRESSION` selects any shared expression
 `--write-movie <output.avi> --fixed-fps 30` records all ten clips for 900 frames.
 Add `HERO_FIGHTER_REPLAY=1` for a recorded unchanged Toxin scenario rather than the
 clip catalog; no simulation parameters or damage timing are altered.
+The viewer binds the actual resolver entity ID and requires nonzero cosmetic cues.
+`HERO_FIGHTER_SCENARIO=04_shield_healing` selects the unchanged barrier fixture.
+
+`tools/asset_pipeline/capture_fighter.py --godot <existing-executable> --output <directory>`
+captures the complete evidence set. `--movies-only` repeats only the three movies.
+Movies use 1366×768 for both project viewport and window, avoiding a MovieWriter
+crop found when the window alone was changed to 844×390. One initial engine frame
+precedes the 900/360 scripted frames. Run `inspect_fighter_movie.py <directory>`:
+it checks all chunk boundaries/frame counts and fixes only the observed 70-byte
+outer RIFF-length discrepancy, preserving JPEG/audio bytes. Validated movies and
+original SHA-256 values are recorded separately; no ffmpeg installation is required.
 
 Capture/import visual evidence at 1366×768 and 844×390, including front/side/back,
 barrier contact, attack, KO and expressions. Review raw screenshots and actual
