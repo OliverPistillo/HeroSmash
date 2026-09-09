@@ -96,6 +96,10 @@ func advance(to_ms: int, suppress_cues: bool = false) -> Array[Dictionary]:
 				if target_matches and not dead and int(event["payload"].get("actual_milli", 0)) > 0:
 					_start("hit_react", at_ms)
 					cue = "impact"
+					if "dot" in event["payload"].get("tags", []):
+						cue = "periodic"
+					elif "reflected" in event["payload"].get("tags", []):
+						cue = "reflection"
 			"Dodged":
 				if target_matches and not dead:
 					_start("dodge", at_ms)

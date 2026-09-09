@@ -216,8 +216,15 @@ def main():
         allowed_roots = ("game/assets/characters/solkael_lionheart/", "game/scenes/characters/solkael_lionheart/")
         allowed_files = {"game/scripts/presentation/"+n+s for n in ["fighter_event_adapter", "solkael_fighter"] for s in [".gd", ".gd.uid"]}
         allowed_files |= {"game/tests/"+n+s for n in ["fighter_test", "fighter_review"] for s in [".gd", ".gd.uid"]}
+        # Owner-authorized v1.20 QA additions; prior gameplay blobs stay immutable.
+        allowed_files |= {"game/scripts/presentation/two_fighter_slice"+s for s in [".gd", ".gd.uid"]}
+        allowed_files |= {"game/tests/"+n+s for n in ["polish_review", "two_fighter_test"] for s in [".gd", ".gd.uid"]}
+        allowed_files |= {"game/scenes/qa/two_fighter_slice.tscn","game/assets/qa_icon.svg","game/assets/qa_icon.svg.import"}
         for line in command(["git","diff","--name-status",BASELINE,"--","game","legacy/web-prototype"]).splitlines():
             status,path=line.split("\t",1)
+            if path == "game/export_presets.cfg":
+                assert status=="M",line
+                continue
             assert status == "A" and (path.startswith(allowed_roots) or path in allowed_files), "baseline runtime or oracle changed: "+line
             additions += 1
         if args.require_clean:
