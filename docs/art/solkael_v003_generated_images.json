@@ -1,0 +1,46 @@
+{
+  "asset_version": "v003",
+  "art_status": "OWNER REVIEW REQUIRED",
+  "items": [
+    {
+      "path": "art/characters/solkael_lionheart/v003/textures/base_color.png",
+      "sha256": "685e6ccdfbcee2bdb441cfc7c6a2fd8dd001f446d6721d87fe39061912545bff",
+      "usage": "authored QA asset output; not a design reference"
+    },
+    {
+      "path": "art/characters/solkael_lionheart/v003/textures/normal.png",
+      "sha256": "9b09ec67065e57d353a6e12c47029aac1decad04f36fff74d7301d1f81c7f0a7",
+      "usage": "authored QA asset output; not a design reference"
+    },
+    {
+      "path": "art/characters/solkael_lionheart/v003/textures/orm.png",
+      "sha256": "1f2990f8c895bffd8e562e4c9e738d24207a5428ee9c2964375ad391685731ae",
+      "usage": "authored QA asset output; not a design reference"
+    },
+    {
+      "path": "art/characters/solkael_lionheart/v003/textures/emissive.png",
+      "sha256": "67e64f68b87411062485f3c75e80b03af72052e1098acc1eaccdc25073390e6a",
+      "usage": "authored QA asset output; not a design reference"
+    },
+    {
+      "path": "game/assets/characters/solkael_lionheart/chr_solkael_lionheart_v003_base_color.png",
+      "sha256": "685e6ccdfbcee2bdb441cfc7c6a2fd8dd001f446d6721d87fe39061912545bff",
+      "usage": "authored QA asset output; not a design reference"
+    },
+    {
+      "path": "game/assets/characters/solkael_lionheart/chr_solkael_lionheart_v003_normal.png",
+      "sha256": "9b09ec67065e57d353a6e12c47029aac1decad04f36fff74d7301d1f81c7f0a7",
+      "usage": "authored QA asset output; not a design reference"
+    },
+    {
+      "path": "game/assets/characters/solkael_lionheart/chr_solkael_lionheart_v003_orm.png",
+      "sha256": "1f2990f8c895bffd8e562e4c9e738d24207a5428ee9c2964375ad391685731ae",
+      "usage": "authored QA asset output; not a design reference"
+    },
+    {
+      "path": "game/assets/characters/solkael_lionheart/chr_solkael_lionheart_v003_emissive.png",
+      "sha256": "67e64f68b87411062485f3c75e80b03af72052e1098acc1eaccdc25073390e6a",
+      "usage": "authored QA asset output; not a design reference"
+    }
+  ]
+}
