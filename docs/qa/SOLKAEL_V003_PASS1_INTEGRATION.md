@@ -23,6 +23,8 @@ The annotated historical v1.20 tag still peels to
 Created/published `art/solkael-v003-owner-polish` with its own origin upstream
 from that updated base. Isolated worktree:
 `D:/Dev/HeroSmash/.work/worktrees/solkael-v003-owner-polish`.
+Published as [Draft PR #4](https://github.com/OliverPistillo/HeroSmash/pull/4),
+`Solkael v003 — Owner-guided art polish`, against the same v1.20 base.
 The original checkout has two local commits and uncommitted work; it was not
 pulled across divergent history. Fetch plus the new clean checkout provides
 updated remote v1.20 without altering the original local branch.
@@ -104,6 +106,10 @@ New actual turn `01a086af-9512-7313-9a06-f6e42766ed2c` records
 effort `xhigh`. This differs from the prior smoke's validated human reviewer and
 the new request for Ultra. No evidence establishes that a managed requirement
 prevents changing reviewer; no managed-policy bypass was attempted.
+The final selective TOML read still shows configured `on-request / user`,
+`execute_blender_code.approval_mode=prompt` and unset server default. These disk
+values do not override the observed `auto_review` in the active turn. A new
+resident tool approval was not attempted, so no new human routing is claimed.
 
 Zero Blender MCP calls in this turn. Dedicated GUI unused for artistic edits.
 Automatic sandbox reviews for Git/CLI validation do not count as human MCP approval.
