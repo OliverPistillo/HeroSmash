@@ -214,6 +214,9 @@ func on_cue(cue: Dictionary, fighter: SolkaelFighter) -> void:
 	if cue["kind"]=="hit":
 		effect.global_position = fighter.socket_transform("socket_weapon_r" if fighter.adapter.current_clip=="attack_heavy" else "socket_weapon_l").origin
 	effect.rotation.z = PI/2
+	if barrier:
+		# Keep the defensive plane readable from the constrained side camera.
+		effect.rotation.y = PI/4
 	if barrier:effect.global_position += fighter.basis.z*.35
 	effects.append({"node":effect,"entity":fighter.entity_id,"until":int(cue["at_ms"])+(450 if barrier else 160)})
 	if OS.get_environment("HERO_SLICE_HOLD_BARRIER")=="1" and barrier:

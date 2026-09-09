@@ -28,7 +28,8 @@ def main():
     names=['neutral','focused','aggressive','casting','pain_light','pain_heavy','stunned','victory','defeat','ko']
     for expression in names:run('expression-'+expression,portrait=1,expression=expression)
     for res in ('1366x768','844x390','1080x486'):
-        run('two-fighter-'+res,res,slice_scene=True,scenario='04_shield_healing')
+        run('two-fighter-'+res,res,slice_scene=True,scenario='04_shield_healing',hold_barrier=1,profile_seconds=4)
+    run('desktop-profile',slice_scene=True,profile_seconds=60)
     # Contact sheet contains only unchanged engine captures plus labels.
     try:
         from PIL import Image,ImageDraw

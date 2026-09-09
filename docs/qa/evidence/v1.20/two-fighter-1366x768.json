@@ -1,0 +1,67 @@
+{
+  "coverage": {
+    "attack_heavy": true,
+    "attack_light": true,
+    "barrier": true,
+    "hit": true,
+    "hit_react": true,
+    "idle": true,
+    "impact": true
+  },
+  "errors": [
+    [],
+    []
+  ],
+  "event_hash": "14b19449e5f3f84f1b2590c0bafb5237a3053f20a7f208eea6da8d52a32913b9",
+  "resolution": [
+    1366,
+    768
+  ],
+  "samples": [
+    {
+      "draw_calls": 16.0,
+      "elapsed_s": 1.0,
+      "fps": 23.0,
+      "memory_bytes": 55775506,
+      "primitives": 110490.0,
+      "process_ms": 7.107,
+      "render_cpu_ms": 0.0850000008940697,
+      "render_gpu_ms": 0.119999997317791,
+      "texture_bytes": 139935808.0
+    },
+    {
+      "draw_calls": 20.0,
+      "elapsed_s": 2.00000000000001,
+      "fps": 165.0,
+      "memory_bytes": 55971102,
+      "primitives": 111066.0,
+      "process_ms": 7.25,
+      "render_cpu_ms": 0.0810000002384186,
+      "render_gpu_ms": 0.120999999344349,
+      "texture_bytes": 139935808.0
+    },
+    {
+      "draw_calls": 19.0,
+      "elapsed_s": 3.00110057575756,
+      "fps": 165.0,
+      "memory_bytes": 55920630,
+      "primitives": 111162.0,
+      "process_ms": 9.822,
+      "render_cpu_ms": 0.0900000035762787,
+      "render_gpu_ms": 0.108999997377396,
+      "texture_bytes": 139935808.0
+    },
+    {
+      "draw_calls": 19.0,
+      "elapsed_s": 4.00230784848481,
+      "fps": 165.0,
+      "memory_bytes": 55921634,
+      "primitives": 111162.0,
+      "process_ms": 9.169,
+      "render_cpu_ms": 0.0970000028610229,
+      "render_gpu_ms": 0.109999999403954,
+      "texture_bytes": 139935808.0
+    }
+  ],
+  "source": "desktop Vulkan Mobile; not a physical phone"
+}
