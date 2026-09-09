@@ -1,6 +1,6 @@
 # Hero Smash: pinned Blender MCP, configured 2026-09-09. Art work remains suspended.
 [mcp_servers.blender]
-command = "D:/Dev/Tools/blender-mcp/5f8ddaf6/venv/Scripts/blender-mcp.exe"
+command = "D:/Dev/Tools/blender-mcp/5f8ddaf6-hsfix1/venv/Scripts/blender-mcp.exe"
 cwd = "D:/Dev/HeroSmash/.work/blender-mcp-smoke"
 enabled = true
 startup_timeout_sec = 30
