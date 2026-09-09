@@ -73,3 +73,15 @@ Each stable validated block is committed/pushed and Draft PR #2 updated. Final
 report includes exact commits/SHA/tag, before/after metrics, art comparison classified
 matched/acceptable deviation/unresolved/requires owner review, captures, Android/APK/
 device metadata, CI maintenance, failed/skipped gates, debt and v1.21 recommendation.
+
+## Observed toolchain discrepancy
+
+The exact official 4.7.2 Android template is precompiled with target/compile API36
+and min API24. The explicitly requested SDK Platform35 and Build-Tools35.0.1 are
+installed; no SDK36 or engine upgrade is introduced. Standard non-Gradle export
+repackages the official template and signs successfully with Build-Tools35.0.1.
+Godot refuses min/target overrides without Gradle, so the preset leaves them empty.
+This QA APK inherits the official template's API36 target; it is not a claim of
+building Java against Platform35. apkanalyzer from the authorized latest command
+tools validates the manifest because aapt35 reports an API36 attribute type error.
+There is no store release requirement in this phase.
