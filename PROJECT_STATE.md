@@ -125,45 +125,51 @@ Report: `docs/qa/V1_20_POLISH_DEVICE_REPORT.md`.
 Art review: `docs/qa/evidence/v1.20/REVIEW.md`.
 Prior state/history: `docs/qa/V1_19_FIGHTER_PIPELINE_REPORT.md`.
 
-## Blender MCP integration preparation — 2026-09-09
+## Blender MCP bootstrap repair — 2026-09-09
 
-Capability note explicitly requested by the owner; no artistic macro phase is
-completed. Solkael art work remains suspended, including the pre-existing v003.
-Starting branch `revival/v1.20-solkael-polish-device-slice`, checkpoint
-`72170ba0295aa992ca1ac7a7954cdb41da5222d3`; no reset, new branch or tag change.
-All 45 recorded Solkael files remain byte-identical. Existing uncommitted art work
-is preserved and excluded from this integration's documentation commit.
+Owner-authorized integration repair; no artistic macro phase completed. Solkael
+art remains suspended. Original D:/Dev/HeroSmash stays on
+revival/v1.20-solkael-polish-device-slice at
+555d26c9fe9373379d316c4d655f7dbd8ff100cd, preserving its pre-existing v003 commit,
+tracked art-plan diff and untracked evidence. All 45 Solkael and 127 evidence files
+match their before/after hashes. Main, tags and production pipeline are unchanged.
 
-**CONFIGURED; RESTART REQUIRED; NOT OPERATIONAL.** Community Blender MCP is installed
-from mandatory commit `5f8ddaf6e987c4aa0c3467fcc548838b28f64477` in a dedicated
-Python 3.12.0 venv outside the game repository. Package 1.9.1, add-on 1.6/protocol 5,
-MCP SDK 1.30.0; existing Blender 5.2.1 LTS and toolchain unchanged. A dedicated GUI
-profile has add-on telemetry consent=False, all five cloud integrations=False and
-an actual loopback listener at 127.0.0.1:9876. Original unsaved GUI/profile preserved.
-The effective Codex TOML was backed up and extended only with the six-tool Blender
-entry, safety environment, finite timeouts and per-tool code approval prompt.
+The separate technical worktree D:/Dev/HeroSmash-mcp-bootstrap-fix uses
+chore/blender-mcp-bootstrap-fix, based directly on remote v1.20
+de770dff30dcc533d547074c975fdaa0962abda9. Only the inspected documentation commit
+555d26c was imported (as 7e0ab92); art commit72170ba is not an ancestor of this branch.
 
-**SESSION TOOLS DISCOVERED: NO. LIVE OPERATIONS VERIFIED: NO.** This session has no
-Blender tools or callable reload tool. All actual session MCP gates A–I are pending,
-including viewport images, reversible edits, save/reopen and reconnection. Local
-CLI/catalog/GUI checks do not substitute for MCP. No automatic Codex restart.
-Human code-approval behavior and the future managed server environment remain
-unverified. Safe mode, cwd and venv are not filesystem sandboxing.
+**CONFIGURATION WRITTEN / SERVER PREFLIGHT PASSED / SESSION TOOLS NOT DISCOVERED /
+LIVE OPERATIONS NOT VERIFIED. SESSION RECONNECT REQUIRED.** No automatic restart.
 
-An independent installed-module preflight failed because the mandatory upstream
-tree omits `blender_mcp.config`, imported by its telemetry collector before opt-out
-is checked. Restart alone cannot repair this defect. No substitute source revision
-or local patch was introduced; a correction needs separate authorization.
+Mandatory community upstream5f8ddaf6e987c4aa0c3467fcc548838b28f64477 plus explicit
+local patch hsfix1-telemetry-disabled, SHA-256
+c58383fdcd9c109cb819f0d91b9c0809fd5dcf74f98ae06b871f55e342700ad8.
+This is modified upstream, not a pristine upstream installation. The separate
+5f8ddaf6-hsfix1 venv uses the same 32 runtime dependency versions; original source,
+venv, add-on and dedicated preferences remain intact for rollback. Server1.9.1,
+add-on1.6/protocol5, MCP SDK1.30.0, Python3.12.0, Blender5.2.1LTS unchanged.
 
-Validation passed for dependency consistency, installed source hashes, TOML and
-existing configuration preservation, GUI consent/cloud/listener diagnostics and
-Solkael preservation. Production/gameplay gates were not rerun for this tooling-only
-task. No push: it would include pre-existing unpushed art commit `72170ba`; fetched
-origin remains `de770dff30dcc533d547074c975fdaa0962abda9`.
+The missing config import is bypassed only through an explicit disabled telemetry
+path. Missing optional config also fails closed with a warning. Real add-on consent
+reads remain distinct; opt-in prompts and trajectory capture are suppressed while
+disabled. No endpoints, credentials, safe-mode or execution-contract changes.
 
-Setup/rollback: `docs/codex/BLENDER_MCP_SETUP.md`.
-Evidence, exact hashes and pending gates: `docs/codex/BLENDER_MCP_SMOKE_TEST.md`.
-Local continuation: `.work/blender-mcp-smoke/HANDOFF.md`.
-Next action is only owner-controlled session refresh and completion of the MCP
-integration after addressing the pinned-source defect. Do not resume Solkael or
-start v1.21 automatically.
+PASS: 15 unit tests, six real decorated tool functions with simulated transport,
+instrumented zero telemetry attempts, safe-mode regression, source/patch hashes,
+fresh patch application, dependency consistency and preservation checks. Real
+STDIO initialize/initialized/tools-list returned 28 upstream tools and closed
+gracefully with exit0; Codex retains the separate six-tool allowlist. The diagnostic
+performed the normal read-only add-on handshake, with no tools/call or scene edits.
+
+Only the Codex server command changed after backup; prompt approval, safety env,
+STDIO/timeouts and other MCPs are preserved. Existing add-on consent=False/cloud
+opt-outs and loopback127.0.0.1:9876 are preserved. This is not OS filesystem or
+general network confinement. Human approval UI and real session tool availability
+still require verification. All original live A–I gates remain pending.
+
+Report, reproducible commands and residual upstream debt:
+docs/codex/BLENDER_MCP_BOOTSTRAP_FIX.md. Patch/tests: tools/mcp_bootstrap/.
+Local continuation: D:/Dev/HeroSmash/.work/blender-mcp-smoke/HANDOFF.md.
+After an owner-controlled reconnect, resume only the actual session MCP smoke
+tests on the disposable scene. Art remains suspended after those checks as well.

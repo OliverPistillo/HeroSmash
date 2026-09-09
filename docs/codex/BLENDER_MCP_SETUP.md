@@ -1,5 +1,17 @@
 # Blender MCP setup
 
+## Current repair supersedes the original installation below
+
+The owner authorized the minimal local hsfix1 repair on 2026-09-09. Current identity
+is upstream5f8ddaf6 plus the identified patch, in a separate installation.
+**SERVER PREFLIGHT PASSED / SESSION RECONNECT REQUIRED / LIVE NOT VERIFIED.**
+Use [the repair report and reproduction procedure](BLENDER_MCP_BOOTSTRAP_FIX.md).
+The example TOML now selects the repaired launcher. Original source/venv/add-on
+remain intact for rollback; the following sections document the earlier setup and
+its then-unresolved defect, not the current patched installation.
+
+## Historical original setup
+
 **CONFIGURED; RESTART REQUIRED; NOT OPERATIONAL.** Recorded 2026-09-09.
 This is tooling preparation, not completion of an artistic macro phase.
 

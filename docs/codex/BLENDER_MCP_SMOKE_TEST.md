@@ -1,5 +1,16 @@
 # Blender MCP smoke test record
 
+## Current bootstrap repair
+
+hsfix1 passed the 15-test unit preflight and real STDIO initialize/list/shutdown.
+See [the repair evidence](BLENDER_MCP_BOOTSTRAP_FIX.md). These newly authorized
+diagnostics validate server bootstrap; they do not satisfy any original live A–I
+gate below. Session tools are still absent. **SESSION RECONNECT REQUIRED.**
+All source/export hashes below remain identical after the repair. Historical
+statements about no separate diagnostic client apply to the earlier setup only.
+
+## Historical setup and pending live suite
+
 Recorded 2026-09-09. **CONFIGURED / RESTART REQUIRED / NOT OPERATIONAL.**
 Solkael art work remains suspended. This report separates preparation diagnostics
 from the required Codex-session MCP operations.
