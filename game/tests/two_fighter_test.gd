@@ -58,6 +58,23 @@ func run() -> void:
 		check(coverage.has(name),"real stream clip coverage:"+name)
 	for name: String in ["hit","vfx_spawn","barrier","periodic","reflection"]:
 		check(cues.has(name),"real stream cue coverage:"+name)
+	for index: int in range(2):
+		var attacker: SolkaelFighter = slice.fighters[index]
+		var defender: SolkaelFighter = slice.fighters[1-index]
+		for clip_name: String in ["attack_light","attack_heavy"]:
+			for fighter: SolkaelFighter in slice.fighters: fighter.seek_replay([],0)
+			attacker.adapter.current_clip = clip_name
+			attacker.adapter.clock_ms = 0
+			attacker.adapter.clip_started_ms = 0
+			attacker.show_clip(clip_name,.304 if clip_name=="attack_light" else .7)
+			defender.show_clip("idle",0)
+			slice.update_blocking()
+			await process_frame
+			var contact: Vector3 = attacker.socket_transform("socket_weapon_l" if clip_name=="attack_light" else "socket_weapon_r").origin
+			var target: Vector3 = defender.socket_transform("socket_hurtbox_chest").origin+defender.basis.z*.25
+			var gap: float = absf(contact.x-target.x)
+			contacts.append({"entity":attacker.entity_id,"clip":clip_name,"visual_step_in_m":.10 if clip_name=="attack_light" else .24,"target_axis_gap_m":gap})
+			check(gap<.09,"gauntlet reaches chest/guard plane:"+clip_name+str(gap))
 	for fighter: SolkaelFighter in slice.fighters:
 		for socket: String in ["socket_weapon_l","socket_weapon_r","socket_vfx_head","socket_vfx_chest","socket_hurtbox_head"]:
 			check(fighter.socket_transform(socket).origin.is_finite(),"finite contact anchor:"+socket)

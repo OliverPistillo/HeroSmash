@@ -59,6 +59,7 @@ def production_references() -> dict[str, dict]:
 def build() -> dict[str, bytes]:
     historical = read("docs/references/visual/reference_manifest.json")
     production = production_references()
+    generated = generated_asset_images()
     reviews = read("docs/references/visual/v1.18/review_decisions.json")
     groups: dict[str, dict] = {}
     origins: set[str] = set()
@@ -73,7 +74,7 @@ def build() -> dict[str, bytes]:
     tracked = subprocess.check_output(["git", "ls-files", "-z"], cwd=ROOT).decode().split("\0")
     excluded = []
     for path in sorted(p for p in tracked if Path(p).suffix.lower() in EXTENSIONS):
-        if path in production:
+        if path in production or path in generated:
             continue  # Separately hash-validated owner-approved v1.19 catalog.
         if path in origins:
             continue
@@ -93,6 +94,24 @@ def build() -> dict[str, bytes]:
     catalog = dict(schema_version=2, authority="metadata and reference direction only; no production admission without rights evidence", source_manifest="docs/references/visual/reference_manifest.json", hash_policy="Git blob bytes for tracked text/binaries; original file bytes for archive. Historical working hashes retained. SVG LF/CRLF equivalence is explicitly separate from byte duplicates.", rights_classes=sorted(RIGHTS), items=items)
     report = dict(schema_version=1, groups=len(items), origins=sum(len(i["origins"]) for i in items), duplicate_groups=len(duplicates), duplicate_extra_origins=sum(len(i["origins"])-1 for i in items), duplicates=duplicates, excluded_evidence=excluded, copied_images=0, deleted_images=0)
     return {"reference_inventory.json": encoded(catalog), "reference_duplicates.json": encoded(report)}
+
+
+def generated_asset_images() -> set[str]:
+    """Exact hashed authored outputs; never promotes them to approved references."""
+    manifest=ROOT/'docs/art/solkael_v002_generated_images.json'
+    if not manifest.exists():return set()
+    items=json.loads(manifest.read_text(encoding='utf-8'))['items']
+    channels=['base_color','normal','orm','emissive']
+    expected={'art/characters/solkael_lionheart/v002/textures/'+c+'.png' for c in channels}
+    expected|={'game/assets/characters/solkael_lionheart/chr_solkael_lionheart_v002_'+c+'.png' for c in channels}
+    expected.add('game/assets/qa_icon.svg')
+    assert {item['path'] for item in items}==expected and len(items)==len(expected)
+    for item in items:
+        raw=(ROOT/item['path']).read_bytes()
+        if item['path'].endswith('.svg'):raw=raw.replace(b'\r\n',b'\n')
+        assert digest(raw)==item['sha256'],item['path']
+        assert item['usage']=='authored QA asset output; not a design reference'
+    return expected
 
 
 def main():

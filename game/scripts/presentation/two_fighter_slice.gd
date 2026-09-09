@@ -188,7 +188,8 @@ func update_blocking() -> void:
 		fighter.position.x = -.65*direction
 		if fighter.adapter.current_clip in ["attack_light","attack_heavy"]:
 			var since_contact: float = float(fighter.adapter.clock_ms-fighter.adapter.clip_started_ms)/1000.0
-			fighter.position.x += direction*.24*maxf(0.0,1.0-since_contact/.35)
+			var step_in: float = .10 if fighter.adapter.current_clip=="attack_light" else .24
+			fighter.position.x += direction*step_in*maxf(0.0,1.0-since_contact/.35)
 
 
 func on_cue(cue: Dictionary, fighter: SolkaelFighter) -> void:

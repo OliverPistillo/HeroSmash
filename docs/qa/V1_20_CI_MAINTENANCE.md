@@ -22,4 +22,6 @@ Sources are the official repositories and exact versioned action.yml files:
 [setup-python](https://github.com/actions/setup-python/blob/ece7cb06caefa5fff74198d8649806c4678c61a1/action.yml),
 [setup-node](https://github.com/actions/setup-node/blob/249970729cb0ef3589644e2896645e5dc5ba9c38/action.yml),
 [upload-artifact](https://github.com/actions/upload-artifact/blob/b7c566a772e6b6bfb58ed0dc250532a479d7789f/action.yml).
-Remote execution and warning absence must be checked after this separate commit.
+Verified remote runs34322872209 and34322865634 at9f0a543 both succeeded.
+Both associated check-runs102373293716/102373271993 returned an empty annotations
+array: the prior Node20 Action-runtime deprecation warning is absent.

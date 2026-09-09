@@ -39,7 +39,7 @@ mass and uniform clumps still deviate from the reference's flowing natural mane.
 All ten clips retain timings/markers and no root motion. Added spine anticipation,
 head response and decaying tail recovery on punches/hit reaction. KO floor correction
 and idle loop continuity remain validated. The two-fighter stage adds the same
-0.24m visual step-in for either entity and decays it over350ms; it is presentation
+0.10m light/0.24m heavy visual step-in for either entity and decays it over350ms; it is presentation
 blocking only. Resolver timestamps, damage/status/death and hashes are unchanged.
 The first CombatStarted and attack may share t=0: a one-second intro prelude holds
 the playback clock before chronological replay starts. No simulated event is delayed.

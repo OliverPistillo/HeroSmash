@@ -279,7 +279,7 @@ def main():
         tracked=command(["git","ls-files","-z"]).split('\0')
         current={p for p in tracked if Path(p).suffix.lower() in rmodule.EXTENSIONS and not p.startswith('docs/qa/')}
         production_paths = set(rmodule.production_references())
-        assert current == repo_paths | production_paths, "tracked image audit scope incomplete"
+        assert current == repo_paths | production_paths | rmodule.generated_asset_images(), "tracked image audit scope incomplete"
         if args.archive:
             actual={p.relative_to(args.archive).as_posix() for p in args.archive.rglob('*') if p.is_file() and '.git' not in p.relative_to(args.archive).parts and p.suffix.lower() in rmodule.EXTENSIONS}
             assert actual == archive_paths, "archive image audit scope incomplete"
