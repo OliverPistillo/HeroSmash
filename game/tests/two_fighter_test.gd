@@ -16,6 +16,8 @@ func _initialize() -> void:
 
 func run() -> void:
 	var slice: TwoFighterSlice = (load("res://scenes/qa/two_fighter_slice.tscn") as PackedScene).instantiate() as TwoFighterSlice
+	if OS.get_environment("HERO_FIGHTER_ASSET_VERSION") == "v003":
+		slice.fighter_scene = load("res://scenes/characters/solkael_lionheart/hero_solkael_lionheart_v003.tscn") as PackedScene
 	root.add_child(slice)
 	slice.set_process(false)
 	await process_frame

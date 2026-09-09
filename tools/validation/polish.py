@@ -50,8 +50,8 @@ def uv_check(triangles):
     return dict(triangles=len(triangles),overlaps=0,degenerate=0,coverage_percent=total*100,method='128-cell broadphase + exact convex triangle clipping; shared edges excluded at 1e-10 UV area')
 
 
-def asset():
-    path=ROOT/'game/assets/characters/solkael_lionheart/chr_solkael_lionheart_v002.glb'
+def asset(path=None):
+    path=path or ROOT/'game/assets/characters/solkael_lionheart/chr_solkael_lionheart_v002.glb'
     metrics=validate(path,textured=True);glb=GLB(path);d=glb.doc
     assert metrics['materials']==1 and metrics['textures']==4
     material=d['materials'][0];pbr=material['pbrMetallicRoughness']

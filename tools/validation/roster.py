@@ -220,6 +220,8 @@ def main():
         allowed_files |= {"game/scripts/presentation/two_fighter_slice"+s for s in [".gd", ".gd.uid"]}
         allowed_files |= {"game/tests/"+n+s for n in ["polish_review", "two_fighter_test"] for s in [".gd", ".gd.uid"]}
         allowed_files |= {"game/scenes/qa/two_fighter_slice.tscn","game/assets/qa_icon.svg","game/assets/qa_icon.svg.import"}
+        # Owner-requested v003 review of the same fighter inside v1.20.
+        allowed_files.add("game/scenes/qa/two_fighter_slice_v003.tscn")
         for line in command(["git","diff","--name-status",BASELINE,"--","game","legacy/web-prototype"]).splitlines():
             status,path=line.split("\t",1)
             if path == "game/export_presets.cfg":
